@@ -607,9 +607,12 @@ th {
     font-size: 0.85em;
     line-height: 1.45;
     color: var(--text-secondary);
+    text-align: left;
 }
 
-/* figures are drawn on white; keep them readable in dark mode */
-.lesson-content figure img {
+/* figures are drawn on white; in dark mode show as light cards */
+[data-theme="dark"] .lesson-content figure img {
     background: #ffffff;
+    padding: 1rem;
+    border-radius: 0.375rem;
 }
