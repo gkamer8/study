@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="366" viewBox="0 0 720 366" role="img">
+<title>Sequencing assay workflows and the files they produce</title>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="16.0" y="22.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="13" text-anchor="start" fill="#222" font-weight="bold">From sample to file: four common assays</text>
+<text x="199.0" y="42.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10.5" text-anchor="middle" fill="#666" font-style="italic">wet lab</text>
+<text x="352.0" y="42.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10.5" text-anchor="middle" fill="#666" font-style="italic">sequencer</text>
+<text x="556.0" y="42.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10.5" text-anchor="middle" fill="#666" font-style="italic">computation</text>
+<text x="16.0" y="84.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="12" text-anchor="start" fill="#222" font-weight="bold">Bulk RNA-seq</text>
+<rect x="100.0" y="54.0" width="96.0" height="58.0" rx="3" fill="#e5eee2" stroke="#ccc" stroke-width="1"/>
+<text x="148.0" y="72.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">extract RNA</text>
+<text x="148.0" y="88.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">poly(A) select</text>
+<rect x="202.0" y="54.0" width="96.0" height="58.0" rx="3" fill="#e5eee2" stroke="#ccc" stroke-width="1"/>
+<text x="250.0" y="72.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">make cDNA</text>
+<text x="250.0" y="88.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">reverse</text>
+<text x="250.0" y="101.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">transcriptase</text>
+<line x1="196.5" y1="83.0" x2="197.9" y2="83.0" stroke="#222" stroke-width="1"/>
+<polygon points="201.5,83.0 198.0,84.9 198.0,81.1" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="304.0" y="54.0" width="96.0" height="58.0" rx="3" fill="#f1f1f1" stroke="#ccc" stroke-width="1"/>
+<text x="352.0" y="72.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">sequence</text>
+<text x="352.0" y="88.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">FASTQ</text>
+<line x1="298.5" y1="83.0" x2="299.9" y2="83.0" stroke="#222" stroke-width="1"/>
+<polygon points="303.5,83.0 300.0,84.9 300.0,81.1" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="406.0" y="54.0" width="96.0" height="58.0" rx="3" fill="#e4ecf5" stroke="#ccc" stroke-width="1"/>
+<text x="454.0" y="72.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">align</text>
+<text x="454.0" y="88.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">STAR → BAM</text>
+<text x="454.0" y="101.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">or salmon</text>
+<line x1="400.5" y1="83.0" x2="401.9" y2="83.0" stroke="#222" stroke-width="1"/>
+<polygon points="405.5,83.0 402.0,84.9 402.0,81.1" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="508.0" y="54.0" width="96.0" height="58.0" rx="3" fill="#e4ecf5" stroke="#ccc" stroke-width="1"/>
+<text x="556.0" y="72.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">count</text>
+<text x="556.0" y="88.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">gene × sample</text>
+<text x="556.0" y="101.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">counts</text>
+<line x1="502.5" y1="83.0" x2="503.9" y2="83.0" stroke="#222" stroke-width="1"/>
+<polygon points="507.5,83.0 504.0,84.9 504.0,81.1" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="610.0" y="54.0" width="96.0" height="58.0" rx="3" fill="#e4ecf5" stroke="#ccc" stroke-width="1"/>
+<text x="658.0" y="72.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">test</text>
+<text x="658.0" y="88.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">DESeq2:</text>
+<text x="658.0" y="101.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">log2FC, FDR</text>
+<line x1="604.5" y1="83.0" x2="605.9" y2="83.0" stroke="#222" stroke-width="1"/>
+<polygon points="609.5,83.0 606.0,84.9 606.0,81.1" fill="#222" stroke="none" stroke-width="1"/>
+<text x="16.0" y="156.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="12" text-anchor="start" fill="#222" font-weight="bold">scRNA-seq</text>
+<rect x="100.0" y="126.0" width="96.0" height="58.0" rx="3" fill="#e5eee2" stroke="#ccc" stroke-width="1"/>
+<text x="148.0" y="144.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">droplets</text>
+<text x="148.0" y="160.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">cell barcode</text>
+<text x="148.0" y="173.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">+ UMI</text>
+<rect x="202.0" y="126.0" width="96.0" height="58.0" rx="3" fill="#e5eee2" stroke="#ccc" stroke-width="1"/>
+<text x="250.0" y="144.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">library</text>
+<text x="250.0" y="160.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">cDNA</text>
+<line x1="196.5" y1="155.0" x2="197.9" y2="155.0" stroke="#222" stroke-width="1"/>
+<polygon points="201.5,155.0 198.0,156.9 198.0,153.1" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="304.0" y="126.0" width="96.0" height="58.0" rx="3" fill="#f1f1f1" stroke="#ccc" stroke-width="1"/>
+<text x="352.0" y="144.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">sequence</text>
+<text x="352.0" y="160.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">FASTQ</text>
+<line x1="298.5" y1="155.0" x2="299.9" y2="155.0" stroke="#222" stroke-width="1"/>
+<polygon points="303.5,155.0 300.0,156.9 300.0,153.1" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="406.0" y="126.0" width="96.0" height="58.0" rx="3" fill="#e4ecf5" stroke="#ccc" stroke-width="1"/>
+<text x="454.0" y="144.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">Cell Ranger</text>
+<text x="454.0" y="160.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">or STARsolo</text>
+<text x="454.0" y="173.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">→ BAM</text>
+<line x1="400.5" y1="155.0" x2="401.9" y2="155.0" stroke="#222" stroke-width="1"/>
+<polygon points="405.5,155.0 402.0,156.9 402.0,153.1" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="508.0" y="126.0" width="96.0" height="58.0" rx="3" fill="#e4ecf5" stroke="#ccc" stroke-width="1"/>
+<text x="556.0" y="144.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">count</text>
+<text x="556.0" y="160.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">cell × gene</text>
+<text x="556.0" y="173.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">.h5ad</text>
+<line x1="502.5" y1="155.0" x2="503.9" y2="155.0" stroke="#222" stroke-width="1"/>
+<polygon points="507.5,155.0 504.0,156.9 504.0,153.1" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="610.0" y="126.0" width="96.0" height="58.0" rx="3" fill="#e4ecf5" stroke="#ccc" stroke-width="1"/>
+<text x="658.0" y="144.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">analyze</text>
+<text x="658.0" y="160.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">QC, cluster</text>
+<text x="658.0" y="173.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">(scanpy)</text>
+<line x1="604.5" y1="155.0" x2="605.9" y2="155.0" stroke="#222" stroke-width="1"/>
+<polygon points="609.5,155.0 606.0,156.9 606.0,153.1" fill="#222" stroke="none" stroke-width="1"/>
+<text x="16.0" y="228.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="12" text-anchor="start" fill="#222" font-weight="bold">ChIP-seq</text>
+<rect x="100.0" y="198.0" width="96.0" height="58.0" rx="3" fill="#e5eee2" stroke="#ccc" stroke-width="1"/>
+<text x="148.0" y="216.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">crosslink</text>
+<text x="148.0" y="232.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">shear</text>
+<text x="148.0" y="245.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">chromatin</text>
+<rect x="202.0" y="198.0" width="96.0" height="58.0" rx="3" fill="#e5eee2" stroke="#ccc" stroke-width="1"/>
+<text x="250.0" y="216.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">pull down</text>
+<text x="250.0" y="232.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">antibody to a</text>
+<text x="250.0" y="245.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">TF or mark</text>
+<line x1="196.5" y1="227.0" x2="197.9" y2="227.0" stroke="#222" stroke-width="1"/>
+<polygon points="201.5,227.0 198.0,228.9 198.0,225.1" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="304.0" y="198.0" width="96.0" height="58.0" rx="3" fill="#f1f1f1" stroke="#ccc" stroke-width="1"/>
+<text x="352.0" y="216.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">sequence</text>
+<text x="352.0" y="232.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">FASTQ</text>
+<line x1="298.5" y1="227.0" x2="299.9" y2="227.0" stroke="#222" stroke-width="1"/>
+<polygon points="303.5,227.0 300.0,228.9 300.0,225.1" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="406.0" y="198.0" width="96.0" height="58.0" rx="3" fill="#e4ecf5" stroke="#ccc" stroke-width="1"/>
+<text x="454.0" y="216.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">align</text>
+<text x="454.0" y="232.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">Bowtie2 / BWA</text>
+<text x="454.0" y="245.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">→ BAM</text>
+<line x1="400.5" y1="227.0" x2="401.9" y2="227.0" stroke="#222" stroke-width="1"/>
+<polygon points="405.5,227.0 402.0,228.9 402.0,225.1" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="508.0" y="198.0" width="96.0" height="58.0" rx="3" fill="#e4ecf5" stroke="#ccc" stroke-width="1"/>
+<text x="556.0" y="216.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">call peaks</text>
+<text x="556.0" y="232.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">MACS2 vs.</text>
+<text x="556.0" y="245.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">input control</text>
+<line x1="502.5" y1="227.0" x2="503.9" y2="227.0" stroke="#222" stroke-width="1"/>
+<polygon points="507.5,227.0 504.0,228.9 504.0,225.1" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="610.0" y="198.0" width="96.0" height="58.0" rx="3" fill="#e4ecf5" stroke="#ccc" stroke-width="1"/>
+<text x="658.0" y="216.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">peaks</text>
+<text x="658.0" y="232.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">narrowPeak</text>
+<text x="658.0" y="245.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">(BED)</text>
+<line x1="604.5" y1="227.0" x2="605.9" y2="227.0" stroke="#222" stroke-width="1"/>
+<polygon points="609.5,227.0 606.0,228.9 606.0,225.1" fill="#222" stroke="none" stroke-width="1"/>
+<text x="16.0" y="300.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="12" text-anchor="start" fill="#222" font-weight="bold">ATAC-seq</text>
+<rect x="100.0" y="270.0" width="96.0" height="58.0" rx="3" fill="#e5eee2" stroke="#ccc" stroke-width="1"/>
+<text x="148.0" y="288.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">nuclei</text>
+<text x="148.0" y="304.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">isolate</text>
+<rect x="202.0" y="270.0" width="96.0" height="58.0" rx="3" fill="#e5eee2" stroke="#ccc" stroke-width="1"/>
+<text x="250.0" y="288.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">Tn5</text>
+<text x="250.0" y="304.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">inserts adapters</text>
+<text x="250.0" y="317.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">into open DNA</text>
+<line x1="196.5" y1="299.0" x2="197.9" y2="299.0" stroke="#222" stroke-width="1"/>
+<polygon points="201.5,299.0 198.0,300.9 198.0,297.1" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="304.0" y="270.0" width="96.0" height="58.0" rx="3" fill="#f1f1f1" stroke="#ccc" stroke-width="1"/>
+<text x="352.0" y="288.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">sequence</text>
+<text x="352.0" y="304.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">FASTQ</text>
+<line x1="298.5" y1="299.0" x2="299.9" y2="299.0" stroke="#222" stroke-width="1"/>
+<polygon points="303.5,299.0 300.0,300.9 300.0,297.1" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="406.0" y="270.0" width="96.0" height="58.0" rx="3" fill="#e4ecf5" stroke="#ccc" stroke-width="1"/>
+<text x="454.0" y="288.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">align</text>
+<text x="454.0" y="304.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">→ BAM</text>
+<line x1="400.5" y1="299.0" x2="401.9" y2="299.0" stroke="#222" stroke-width="1"/>
+<polygon points="405.5,299.0 402.0,300.9 402.0,297.1" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="508.0" y="270.0" width="96.0" height="58.0" rx="3" fill="#e4ecf5" stroke="#ccc" stroke-width="1"/>
+<text x="556.0" y="288.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">call peaks</text>
+<text x="556.0" y="304.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">MACS2</text>
+<line x1="502.5" y1="299.0" x2="503.9" y2="299.0" stroke="#222" stroke-width="1"/>
+<polygon points="507.5,299.0 504.0,300.9 504.0,297.1" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="610.0" y="270.0" width="96.0" height="58.0" rx="3" fill="#e4ecf5" stroke="#ccc" stroke-width="1"/>
+<text x="658.0" y="288.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">peaks</text>
+<text x="658.0" y="304.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">BED: open</text>
+<text x="658.0" y="317.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#666">chromatin</text>
+<line x1="604.5" y1="299.0" x2="605.9" y2="299.0" stroke="#222" stroke-width="1"/>
+<polygon points="609.5,299.0 606.0,300.9 606.0,297.1" fill="#222" stroke="none" stroke-width="1"/>
+<text x="16.0" y="354.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10.5" text-anchor="start" fill="#666">Green = wet lab, gray = sequencer, blue = computation. The FASTQ → BAM → table pattern is shared by almost every assay.</text>
+</svg>

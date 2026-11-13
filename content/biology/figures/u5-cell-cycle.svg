@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="400" viewBox="0 0 720 400" role="img">
+<title>The cell cycle, its cyclin–CDK drivers and checkpoints</title>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="16.0" y="22.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="13" text-anchor="start" fill="#222" font-weight="bold">The cell cycle: G1 → S → G2 → M</text>
+<path d="M210.0,65.0 A145.0,145.0 0 0 1 279.9,337.1 L263.5,307.3 A111.0,111.0 0 0 0 210.0,99.0 Z" fill="#e5eee2" stroke="#222" stroke-width="1" stroke-linejoin="round"/>
+<text x="334.0" y="183.2" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">G1</text>
+<text x="302.0" y="190.4" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10.5" text-anchor="middle" fill="#666">growth</text>
+<path d="M279.9,337.1 A145.0,145.0 0 0 1 67.6,237.2 L101.0,230.8 A111.0,111.0 0 0 0 263.5,307.3 Z" fill="#e4ecf5" stroke="#222" stroke-width="1" stroke-linejoin="round"/>
+<text x="155.5" y="330.8" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">S</text>
+<text x="169.6" y="300.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10.5" text-anchor="middle" fill="#666">DNA copied</text>
+<path d="M67.6,237.2 A145.0,145.0 0 0 1 124.8,92.7 L144.8,120.2 A111.0,111.0 0 0 0 101.0,230.8 Z" fill="#e5eee2" stroke="#222" stroke-width="1" stroke-linejoin="round"/>
+<text x="91.0" y="167.9" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">G2</text>
+<text x="121.7" y="179.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10.5" text-anchor="middle" fill="#666">prepare</text>
+<path d="M124.8,92.7 A145.0,145.0 0 0 1 210.0,65.0 L210.0,99.0 A111.0,111.0 0 0 0 144.8,120.2 Z" fill="#f5e4e0" stroke="#222" stroke-width="1" stroke-linejoin="round"/>
+<text x="170.4" y="93.3" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">M</text>
+<text x="180.6" y="123.6" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10.5" text-anchor="middle" fill="#666">mitosis</text>
+<path d="M230.7,146.3 L234.1,147.5 L237.4,148.8 L240.6,150.4 L243.7,152.1 L246.8,154.0 L249.7,156.0 L252.5,158.2 L255.2,160.6 L257.8,163.1 L260.3,165.7 L262.6,168.4 L264.7,171.3 L266.7,174.3 L268.5,177.4 L270.2,180.5 L271.7,183.8 L273.0,187.1 L274.1,190.5 L275.0,194.0 L275.8,197.4 L276.4,201.0 L276.8,204.5 L277.0,208.1 L277.0,211.7 L276.8,215.3 L276.4,218.8 L275.9,222.3 L275.1,225.8 L274.2,229.3 L273.0,232.7 L271.7,236.0 L270.3,239.3 L268.6,242.5 L266.8,245.5 L264.8,248.5 L262.7,251.4 L260.4,254.1 L258.0,256.8 L255.4,259.3 L252.7,261.6 L249.9,263.8 L247.0,265.9 L243.9,267.8 L240.8,269.5 L237.6,271.1 L234.3,272.4 L230.9,273.7 L227.5,274.7 L224.0,275.5 L220.5,276.2 L216.9,276.6 L213.4,276.9 L209.8,277.0 L206.2,276.9 L202.6,276.6 L199.1,276.1 L195.6,275.4 L192.1,274.6 L188.7,273.5 L185.3,272.3 L182.0,270.9 L178.8,269.3 L175.7,267.6 L172.7,265.6 L169.8,263.6 L167.0,261.4 L164.3,259.0 L161.7,256.5 L159.3,253.8 L157.1,251.1 L154.9,248.2 L153.0,245.2 L151.2,242.1 L149.6,238.9 L148.1,235.6 L146.8,232.3 L145.7,228.9 L144.8,225.4 L144.1,221.9 L143.5,218.4 L143.2,214.8 L143.0,211.3 L143.0,207.7 L143.3,204.1 L143.7,200.6 L144.3,197.0 L145.1,193.5 L146.0,190.1 L147.2,186.7 L148.5,183.4 L150.0,180.1 L151.7,177.0 L153.5,173.9 L155.5,171.0 L157.7,168.1 L160.0,165.4 L162.5,162.8" fill="none" stroke="#999" stroke-width="1.2" stroke-linejoin="round"/>
+<line x1="162.5" y1="162.8" x2="165.8" y2="159.9" stroke="#999" stroke-width="1.2"/>
+<polygon points="170.6,155.8 168.1,162.3 163.8,157.3" fill="#999" stroke="none" stroke-width="1"/>
+<line x1="282.7" y1="342.3" x2="260.6" y2="302.0" stroke="#a8473a" stroke-width="3"/>
+<text x="286.6" y="361.3" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10.5" text-anchor="end" fill="#a8473a" font-weight="bold">G1/S checkpoint</text>
+<line x1="121.2" y1="87.8" x2="148.3" y2="125.1" stroke="#a8473a" stroke-width="3"/>
+<text x="112.5" y="81.4" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10.5" text-anchor="end" fill="#a8473a" font-weight="bold">G2/M checkpoint</text>
+<line x1="189.2" y1="60.4" x2="195.5" y2="106.0" stroke="#a8473a" stroke-width="3"/>
+<text x="192.1" y="46.5" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10.5" text-anchor="start" fill="#a8473a" font-weight="bold">spindle checkpoint</text>
+<line x1="340.6" y1="281.8" x2="303.8" y2="261.5" stroke="#222" stroke-width="1.5" stroke-dasharray="3,2"/>
+<text x="294.8" y="255.7" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10.5" text-anchor="end" fill="#222">restriction</text>
+<text x="294.8" y="268.7" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10.5" text-anchor="end" fill="#222">point</text>
+<circle cx="346.2" cy="64.9" r="20" fill="#fff" stroke="#222" stroke-width="1"/>
+<text x="346.2" y="69.9" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="13" text-anchor="middle" fill="#222" font-weight="bold">G0</text>
+<text x="346.2" y="98.9" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10.5" text-anchor="middle" fill="#666">resting</text>
+<line x1="281.8" y1="79.4" x2="322.8" y2="73.6" stroke="#666" stroke-width="1"/>
+<text x="420.0" y="50.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="12" text-anchor="start" fill="#222" font-weight="bold">Cyclin–CDK pairs that drive each step</text>
+<text x="420.0" y="72.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11.5" text-anchor="start" fill="#222" font-weight="bold">G1</text>
+<text x="468.0" y="72.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11.5" text-anchor="start" fill="#222">cyclin D – CDK4/6</text>
+<text x="420.0" y="90.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11.5" text-anchor="start" fill="#222" font-weight="bold">G1/S</text>
+<text x="468.0" y="90.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11.5" text-anchor="start" fill="#222">cyclin E – CDK2</text>
+<text x="420.0" y="108.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11.5" text-anchor="start" fill="#222" font-weight="bold">S</text>
+<text x="468.0" y="108.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11.5" text-anchor="start" fill="#222">cyclin A – CDK2</text>
+<text x="420.0" y="126.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11.5" text-anchor="start" fill="#222" font-weight="bold">G2/M</text>
+<text x="468.0" y="126.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11.5" text-anchor="start" fill="#222">cyclin B – CDK1</text>
+<text x="420.0" y="172.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="12" text-anchor="start" fill="#222" font-weight="bold">Commitment in G1</text>
+<rect x="435.0" y="188.0" width="74.0" height="28.0" rx="4" fill="#fff" stroke="#222" stroke-width="1"/>
+<text x="472.0" y="206.1" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11.5" text-anchor="middle" fill="#222" font-weight="bold">CDK4/6</text>
+<rect x="548.0" y="188.0" width="44.0" height="28.0" rx="4" fill="#fff" stroke="#222" stroke-width="1"/>
+<text x="570.0" y="206.1" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11.5" text-anchor="middle" fill="#222" font-weight="bold">RB</text>
+<rect x="627.0" y="188.0" width="50.0" height="28.0" rx="4" fill="#fff" stroke="#222" stroke-width="1"/>
+<text x="652.0" y="206.1" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11.5" text-anchor="middle" fill="#222" font-weight="bold">E2F</text>
+<line x1="511.0" y1="202.0" x2="544.0" y2="202.0" stroke="#222" stroke-width="1.4"/>
+<line x1="544.0" y1="195.3" x2="544.0" y2="208.7" stroke="#222" stroke-width="2.2399999999999998"/>
+<line x1="594.0" y1="202.0" x2="623.0" y2="202.0" stroke="#222" stroke-width="1.4"/>
+<line x1="623.0" y1="195.3" x2="623.0" y2="208.7" stroke="#222" stroke-width="2.2399999999999998"/>
+<text x="520.0" y="194.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10" text-anchor="middle" fill="#222" font-weight="bold">P</text>
+<line x1="678.0" y1="202.0" x2="691.7" y2="202.0" stroke="#222" stroke-width="1.2"/>
+<polygon points="698.0,202.0 691.8,205.3 691.8,198.7" fill="#222" stroke="none" stroke-width="1"/>
+<text x="652.0" y="230.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10.5" text-anchor="middle" fill="#4f7d47">S-phase genes ON</text>
+<rect x="430.0" y="242.0" width="84.0" height="28.0" rx="4" fill="#fff" stroke="#222" stroke-width="1"/>
+<text x="472.0" y="260.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#222">p16 (INK4)</text>
+<line x1="472.0" y1="242.0" x2="472.0" y2="220.0" stroke="#222" stroke-width="1.3"/>
+<line x1="465.4" y1="220.0" x2="478.6" y2="220.0" stroke="#222" stroke-width="2.08"/>
+<text x="520.0" y="260.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10.5" text-anchor="start" fill="#666" font-style="italic">palbociclib also blocks CDK4/6</text>
+<text x="420.0" y="294.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="start" fill="#222">p21 and p27 (CIP/KIP) block CDK2 and CDK1.</text>
+<text x="420.0" y="314.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="start" fill="#a8473a">Checkpoints (red) halt the cycle: DNA damage</text>
+<text x="420.0" y="328.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="start" fill="#a8473a">at G1/S and G2/M; unattached chromosomes</text>
+<text x="420.0" y="342.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="start" fill="#a8473a">at the spindle checkpoint (before anaphase).</text>
+<text x="420.0" y="368.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="10.5" text-anchor="start" fill="#666">Phase lengths are typical, not fixed.</text>
+</svg>

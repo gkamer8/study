@@ -1,8 +1,19 @@
-// Simple markdown renderer with GFM tables and ^superscript^ support
+// Simple markdown renderer with GFM tables, ^superscript^, images and figures.
+//
+// Code spans, backslash escapes, images and links are swapped out for placeholders
+// before emphasis runs, so `*` and `_` inside code, URLs, alt text or IDs such as
+// NM_000546.6 are never turned into <em>. Underscore emphasis only applies at word
+// boundaries (as in GFM). A paragraph whose first line is only an image becomes
+// <figure><img><figcaption>rest of paragraph</figcaption></figure>.
+
+const P = '\u0000';
 
 export const Markdown = {
     render(text) {
         if (!text) return '';
+        const store = [];
+        const keep = (html) => `${P}${store.push(html) - 1}${P}`;
+        const attr = (s) => s.replace(/"/g, '&quot;');
 
         let html = text;
 
@@ -11,30 +22,46 @@ export const Markdown = {
                    .replace(/</g, '&lt;')
                    .replace(/>/g, '&gt;');
 
+        // Code blocks (fenced with ```) and inline code: protect contents
+        html = html.replace(/```([^`]+)```/g, (m, c) => keep(`<pre><code>${c}</code></pre>`));
+        html = html.replace(/`([^`]+)`/g, (m, c) => keep(`<code>${c}</code>`));
+
+        // Backslash escapes (\* \_ \[ etc.)
+        html = html.replace(/\\([\\`*_{}\[\]()#+\-.!|^])/g, (m, c) => keep(c));
+
+        const inline = (s) => {
+            // Images, then links (text may contain emphasis; URL is protected)
+            s = s.replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g,
+                (m, alt, src) => keep(`<img src="${attr(src)}" alt="${attr(alt)}" loading="lazy">`));
+            s = s.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g,
+                (m, t, href) => keep(`<a href="${attr(href)}" target="_blank" rel="noopener">${emph(t)}</a>`));
+            return emph(s);
+        };
+        const emph = (s) => {
+            s = s.replace(/\*\*(?=\S)([^\n]+?)\*\*/g, '<strong>$1</strong>');
+            s = s.replace(/(^|[^\w])__([^_\n]+)__(?!\w)/g, '$1<strong>$2</strong>');
+            s = s.replace(/\*([^*\n]+)\*/g, '<em>$1</em>');
+            s = s.replace(/(^|[^\w])_([^_\n]+)_(?!\w)/g, '$1<em>$2</em>');
+            s = s.replace(/\^([^\^\n]+)\^/g, '<sup>$1</sup>');
+            return s;
+        };
+
+        // Figures: a block whose first line is a lone image; the rest is the caption
+        html = html.split('\n\n').map(block => {
+            const m = block.trim().match(/^!\[([^\]]*)\]\(([^)\s]+)\)[ \t]*(?:\n([\s\S]*))?$/);
+            if (!m) return block;
+            const img = `<img src="${attr(m[2])}" alt="${attr(m[1])}" loading="lazy">`;
+            const cap = m[3] && m[3].trim() ? `<figcaption>${inline(m[3].trim())}</figcaption>` : '';
+            return keep(`<figure>${img}${cap}</figure>`);
+        }).join('\n\n');
+
         // Headers
         html = html.replace(/^### (.*$)/gm, '<h3>$1</h3>');
         html = html.replace(/^## (.*$)/gm, '<h2>$1</h2>');
         html = html.replace(/^# (.*$)/gm, '<h1>$1</h1>');
 
-        // Bold
-        html = html.replace(/\*\*([^\*]+)\*\*/g, '<strong>$1</strong>');
-        html = html.replace(/__([^_]+)__/g, '<strong>$1</strong>');
-
-        // Italic
-        html = html.replace(/\*([^\*]+)\*/g, '<em>$1</em>');
-        html = html.replace(/_([^_]+)_/g, '<em>$1</em>');
-
-        // Superscript (^text^)
-        html = html.replace(/\^([^\^]+)\^/g, '<sup>$1</sup>');
-
-        // Code blocks (fenced with ```)
-        html = html.replace(/```([^`]+)```/g, '<pre><code>$1</code></pre>');
-
-        // Inline code
-        html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
-
-        // Links
-        html = html.replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+        // Inline markup everywhere else
+        html = inline(html);
 
         // Tables (GFM-style)
         html = this.renderTables(html);
@@ -47,8 +74,13 @@ export const Markdown = {
             para = para.trim();
             if (!para) return '';
             if (para.startsWith('<')) return para; // Already HTML
+            if (/^\u0000\d+\u0000$/.test(para) && store[+para.slice(1, -1)].startsWith('<figure')) return para;
             return `<p>${para}</p>`;
         }).join('\n');
+
+        // Restore protected pieces (they may nest)
+        const re = /\u0000(\d+)\u0000/g;
+        while (re.test(html)) html = html.replace(re, (m, i) => store[+i]);
 
         return html;
     },

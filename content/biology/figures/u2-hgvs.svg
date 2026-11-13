@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="462" viewBox="0 0 720 462" role="img">
+<title>Anatomy of an HGVS variant description (BRAF V600E)</title>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="16.0" y="22.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="13" text-anchor="start" fill="#222" font-weight="bold">Transcript level (c.): what most papers and reports quote</text>
+<text x="46.5" y="84.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#3d6a9e" font-weight="bold">N</text>
+<text x="59.5" y="84.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#3d6a9e" font-weight="bold">M</text>
+<text x="72.5" y="84.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#3d6a9e" font-weight="bold">_</text>
+<text x="85.5" y="84.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">0</text>
+<text x="98.5" y="84.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">0</text>
+<text x="111.5" y="84.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">4</text>
+<text x="124.5" y="84.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">3</text>
+<text x="137.5" y="84.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">3</text>
+<text x="150.5" y="84.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">3</text>
+<text x="163.5" y="84.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#3d6a9e" font-weight="bold">.</text>
+<text x="176.5" y="84.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#3d6a9e" font-weight="bold">6</text>
+<text x="189.5" y="84.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#999" font-weight="bold">:</text>
+<text x="202.5" y="84.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#a8473a" font-weight="bold">c</text>
+<text x="215.5" y="84.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#a8473a" font-weight="bold">.</text>
+<text x="228.5" y="84.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">1</text>
+<text x="241.5" y="84.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">7</text>
+<text x="254.5" y="84.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">9</text>
+<text x="267.5" y="84.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">9</text>
+<text x="280.5" y="84.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">T</text>
+<text x="293.5" y="84.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#999" font-weight="bold">&gt;</text>
+<text x="306.5" y="84.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#a8473a" font-weight="bold">A</text>
+<path d="M41.0,95.0 L41.0,90.0 L78.0,90.0 L78.0,95.0" fill="none" stroke="#666" stroke-width="1" stroke-linejoin="round"/>
+<line x1="59.5" y1="95.0" x2="59.5" y2="100.0" stroke="#999" stroke-width="1"/>
+<text x="59.5" y="112.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#3d6a9e">RefSeq mRNA</text>
+<path d="M80.0,62.0 L80.0,67.0 L156.0,67.0 L156.0,62.0" fill="none" stroke="#666" stroke-width="1" stroke-linejoin="round"/>
+<line x1="118.0" y1="62.0" x2="118.0" y2="58.0" stroke="#999" stroke-width="1"/>
+<text x="118.0" y="54.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#666">accession number</text>
+<path d="M158.0,95.0 L158.0,90.0 L182.0,90.0 L182.0,95.0" fill="none" stroke="#666" stroke-width="1" stroke-linejoin="round"/>
+<line x1="170.0" y1="95.0" x2="170.0" y2="100.0" stroke="#999" stroke-width="1"/>
+<text x="170.0" y="112.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#3d6a9e">version</text>
+<path d="M197.0,62.0 L197.0,67.0 L221.0,67.0 L221.0,62.0" fill="none" stroke="#666" stroke-width="1" stroke-linejoin="round"/>
+<line x1="209.0" y1="62.0" x2="209.0" y2="58.0" stroke="#999" stroke-width="1"/>
+<text x="209.0" y="54.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#a8473a">coding DNA</text>
+<path d="M223.0,95.0 L223.0,90.0 L273.0,90.0 L273.0,95.0" fill="none" stroke="#666" stroke-width="1" stroke-linejoin="round"/>
+<line x1="248.0" y1="95.0" x2="248.0" y2="100.0" stroke="#999" stroke-width="1"/>
+<text x="248.0" y="112.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#666">position</text>
+<path d="M275.0,62.0 L275.0,67.0 L286.0,67.0 L286.0,62.0" fill="none" stroke="#666" stroke-width="1" stroke-linejoin="round"/>
+<line x1="280.5" y1="62.0" x2="280.5" y2="58.0" stroke="#999" stroke-width="1"/>
+<text x="280.5" y="54.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#666">ref base</text>
+<path d="M301.0,95.0 L301.0,90.0 L312.0,90.0 L312.0,95.0" fill="none" stroke="#666" stroke-width="1" stroke-linejoin="round"/>
+<line x1="306.5" y1="95.0" x2="306.5" y2="100.0" stroke="#999" stroke-width="1"/>
+<text x="306.5" y="112.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#a8473a">new base</text>
+<text x="329.0" y="84.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11.5" text-anchor="start" fill="#666">c.1 = the A of the ATG start codon</text>
+<text x="16.0" y="172.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="13" text-anchor="start" fill="#222" font-weight="bold">Protein level (p.)</text>
+<text x="46.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#3d6a9e" font-weight="bold">N</text>
+<text x="59.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#3d6a9e" font-weight="bold">P</text>
+<text x="72.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#3d6a9e" font-weight="bold">_</text>
+<text x="85.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">0</text>
+<text x="98.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">0</text>
+<text x="111.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">4</text>
+<text x="124.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">3</text>
+<text x="137.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">2</text>
+<text x="150.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">4</text>
+<text x="163.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#3d6a9e" font-weight="bold">.</text>
+<text x="176.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#3d6a9e" font-weight="bold">2</text>
+<text x="189.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#999" font-weight="bold">:</text>
+<text x="202.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#a8473a" font-weight="bold">p</text>
+<text x="215.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#a8473a" font-weight="bold">.</text>
+<text x="228.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">V</text>
+<text x="241.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">a</text>
+<text x="254.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">l</text>
+<text x="267.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">6</text>
+<text x="280.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">0</text>
+<text x="293.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">0</text>
+<text x="306.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#a8473a" font-weight="bold">G</text>
+<text x="319.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#a8473a" font-weight="bold">l</text>
+<text x="332.5" y="228.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#a8473a" font-weight="bold">u</text>
+<path d="M41.0,239.0 L41.0,234.0 L78.0,234.0 L78.0,239.0" fill="none" stroke="#666" stroke-width="1" stroke-linejoin="round"/>
+<line x1="59.5" y1="239.0" x2="59.5" y2="244.0" stroke="#999" stroke-width="1"/>
+<text x="59.5" y="256.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#3d6a9e">RefSeq protein</text>
+<path d="M80.0,206.0 L80.0,211.0 L156.0,211.0 L156.0,206.0" fill="none" stroke="#666" stroke-width="1" stroke-linejoin="round"/>
+<line x1="118.0" y1="206.0" x2="118.0" y2="202.0" stroke="#999" stroke-width="1"/>
+<text x="118.0" y="198.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#666">accession number</text>
+<path d="M158.0,239.0 L158.0,234.0 L182.0,234.0 L182.0,239.0" fill="none" stroke="#666" stroke-width="1" stroke-linejoin="round"/>
+<line x1="170.0" y1="239.0" x2="170.0" y2="244.0" stroke="#999" stroke-width="1"/>
+<text x="170.0" y="256.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#3d6a9e">version</text>
+<path d="M197.0,239.0 L197.0,234.0 L221.0,234.0 L221.0,239.0" fill="none" stroke="#666" stroke-width="1" stroke-linejoin="round"/>
+<line x1="209.0" y1="239.0" x2="209.0" y2="266.0" stroke="#999" stroke-width="1"/>
+<text x="209.0" y="278.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#a8473a">protein</text>
+<path d="M223.0,206.0 L223.0,211.0 L260.0,211.0 L260.0,206.0" fill="none" stroke="#666" stroke-width="1" stroke-linejoin="round"/>
+<line x1="241.5" y1="206.0" x2="241.5" y2="202.0" stroke="#999" stroke-width="1"/>
+<text x="241.5" y="198.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#666">ref amino acid</text>
+<path d="M262.0,239.0 L262.0,234.0 L299.0,234.0 L299.0,239.0" fill="none" stroke="#666" stroke-width="1" stroke-linejoin="round"/>
+<line x1="280.5" y1="239.0" x2="280.5" y2="244.0" stroke="#999" stroke-width="1"/>
+<text x="280.5" y="256.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#666">position</text>
+<path d="M301.0,239.0 L301.0,234.0 L338.0,234.0 L338.0,239.0" fill="none" stroke="#666" stroke-width="1" stroke-linejoin="round"/>
+<line x1="319.5" y1="239.0" x2="319.5" y2="266.0" stroke="#999" stroke-width="1"/>
+<text x="319.5" y="278.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#a8473a">new amino acid</text>
+<text x="355.0" y="228.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="12" text-anchor="start" fill="#222">short form: p.V600E</text>
+<text x="16.0" y="318.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="13" text-anchor="start" fill="#222" font-weight="bold">How the two connect: codon 600 = c.1798–c.1800</text>
+<text x="47.5" y="348.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">G</text>
+<text x="62.5" y="348.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#a8473a" font-weight="bold">T</text>
+<text x="77.5" y="348.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">G</text>
+<text x="95.0" y="348.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="13" text-anchor="start" fill="#222">Val</text>
+<line x1="125.0" y1="343.0" x2="156.7" y2="343.0" stroke="#222" stroke-width="1.3"/>
+<polygon points="163.0,343.0 156.8,346.3 156.8,339.7" fill="#222" stroke="none" stroke-width="1"/>
+<text x="182.5" y="348.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">G</text>
+<text x="197.5" y="348.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#a8473a" font-weight="bold">A</text>
+<text x="212.5" y="348.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="17" text-anchor="middle" fill="#222" font-weight="bold">G</text>
+<text x="230.0" y="348.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="13" text-anchor="start" fill="#a8473a">Glu</text>
+<text x="62.5" y="368.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11.5" text-anchor="start" fill="#666">c.1799 is the middle base of codon 600 (codon n spans c.3n−2 to c.3n)</text>
+<text x="16.0" y="396.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="13" text-anchor="start" fill="#222" font-weight="bold">Genome level (g.)</text>
+<text x="45.8" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#3d6a9e" font-weight="bold">N</text>
+<text x="57.2" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#3d6a9e" font-weight="bold">C</text>
+<text x="68.8" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#3d6a9e" font-weight="bold">_</text>
+<text x="80.2" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#222" font-weight="bold">0</text>
+<text x="91.8" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#222" font-weight="bold">0</text>
+<text x="103.2" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#222" font-weight="bold">0</text>
+<text x="114.8" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#222" font-weight="bold">0</text>
+<text x="126.2" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#222" font-weight="bold">0</text>
+<text x="137.8" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#222" font-weight="bold">7</text>
+<text x="149.2" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#3d6a9e" font-weight="bold">.</text>
+<text x="160.8" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#3d6a9e" font-weight="bold">1</text>
+<text x="172.2" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#3d6a9e" font-weight="bold">4</text>
+<text x="183.8" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#999" font-weight="bold">:</text>
+<text x="195.2" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#a8473a" font-weight="bold">g</text>
+<text x="206.8" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#a8473a" font-weight="bold">.</text>
+<text x="218.2" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#222" font-weight="bold">1</text>
+<text x="229.8" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#222" font-weight="bold">4</text>
+<text x="241.2" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#222" font-weight="bold">0</text>
+<text x="252.8" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#222" font-weight="bold">7</text>
+<text x="264.2" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#222" font-weight="bold">5</text>
+<text x="275.8" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#222" font-weight="bold">3</text>
+<text x="287.2" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#222" font-weight="bold">3</text>
+<text x="298.8" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#222" font-weight="bold">3</text>
+<text x="310.2" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#222" font-weight="bold">6</text>
+<text x="321.8" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#222" font-weight="bold">A</text>
+<text x="333.2" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#999" font-weight="bold">&gt;</text>
+<text x="344.8" y="422.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="15" text-anchor="middle" fill="#a8473a" font-weight="bold">T</text>
+<text x="364.5" y="422.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11.5" text-anchor="start" fill="#666">chromosome 7, GRCh38 (.14 = this build)</text>
+<text x="40.0" y="446.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11.5" text-anchor="start" fill="#222">BRAF lies on the minus strand, so T&gt;A on the transcript is A&gt;T on the genome's + strand.</text>
+</svg>

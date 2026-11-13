@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" viewBox="0 0 720 300" role="img">
+<title>TP53 identifiers across databases</title>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="16.0" y="22.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="13" text-anchor="start" fill="#222" font-weight="bold">One gene, many IDs: TP53 (human)</text>
+<text x="150.0" y="50.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="12.5" text-anchor="middle" fill="#222" font-weight="bold">Gene</text>
+<text x="350.0" y="50.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="12.5" text-anchor="middle" fill="#222" font-weight="bold">Transcript (RNA)</text>
+<text x="550.0" y="50.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="12.5" text-anchor="middle" fill="#222" font-weight="bold">Protein</text>
+<text x="16.0" y="88.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="12" text-anchor="start" fill="#666" font-weight="bold">HGNC</text>
+<rect x="74.4" y="71.0" width="151.2" height="24.0" rx="3" fill="#f1f1f1" stroke="#ccc" stroke-width="1"/>
+<text x="150.0" y="88.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="12" text-anchor="middle" fill="#222">TP53  ·  HGNC:11998</text>
+<text x="16.0" y="124.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="12" text-anchor="start" fill="#666" font-weight="bold">NCBI</text>
+<rect x="75.0" y="107.0" width="150.0" height="24.0" rx="3" fill="#e4ecf5" stroke="#ccc" stroke-width="1"/>
+<text x="150.0" y="124.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="12" text-anchor="middle" fill="#222">Gene ID 7157</text>
+<rect x="275.0" y="107.0" width="150.0" height="24.0" rx="3" fill="#e4ecf5" stroke="#ccc" stroke-width="1"/>
+<text x="350.0" y="124.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="12" text-anchor="middle" fill="#222">NM_000546.6</text>
+<rect x="475.0" y="107.0" width="150.0" height="24.0" rx="3" fill="#e4ecf5" stroke="#ccc" stroke-width="1"/>
+<text x="550.0" y="124.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="12" text-anchor="middle" fill="#222">NP_000537.3</text>
+<line x1="232.0" y1="120.0" x2="262.6" y2="120.0" stroke="#999" stroke-width="1"/>
+<polygon points="268.0,120.0 262.7,122.8 262.7,117.2" fill="#999" stroke="none" stroke-width="1"/>
+<line x1="432.0" y1="120.0" x2="462.6" y2="120.0" stroke="#999" stroke-width="1"/>
+<polygon points="468.0,120.0 462.7,122.8 462.7,117.2" fill="#999" stroke="none" stroke-width="1"/>
+<text x="16.0" y="160.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="12" text-anchor="start" fill="#666" font-weight="bold">Ensembl</text>
+<rect x="75.0" y="143.0" width="150.0" height="24.0" rx="3" fill="#e4ecf5" stroke="#ccc" stroke-width="1"/>
+<text x="150.0" y="160.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="12" text-anchor="middle" fill="#222">ENSG00000141510</text>
+<rect x="275.0" y="143.0" width="150.0" height="24.0" rx="3" fill="#e4ecf5" stroke="#ccc" stroke-width="1"/>
+<text x="350.0" y="160.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="12" text-anchor="middle" fill="#222">ENST00000269305</text>
+<rect x="475.0" y="143.0" width="150.0" height="24.0" rx="3" fill="#e4ecf5" stroke="#ccc" stroke-width="1"/>
+<text x="550.0" y="160.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="12" text-anchor="middle" fill="#222">ENSP00000269305</text>
+<line x1="232.0" y1="156.0" x2="262.6" y2="156.0" stroke="#999" stroke-width="1"/>
+<polygon points="268.0,156.0 262.7,158.8 262.7,153.2" fill="#999" stroke="none" stroke-width="1"/>
+<line x1="432.0" y1="156.0" x2="462.6" y2="156.0" stroke="#999" stroke-width="1"/>
+<polygon points="468.0,156.0 462.7,158.8 462.7,153.2" fill="#999" stroke="none" stroke-width="1"/>
+<text x="16.0" y="196.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="12" text-anchor="start" fill="#666" font-weight="bold">UniProt</text>
+<rect x="468.3" y="179.0" width="163.4" height="24.0" rx="3" fill="#f1f1f1" stroke="#ccc" stroke-width="1"/>
+<text x="550.0" y="196.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="12" text-anchor="middle" fill="#222">P04637  (P53_HUMAN)</text>
+<text x="16.0" y="232.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="12" text-anchor="start" fill="#666" font-weight="bold">Structures</text>
+<rect x="453.8" y="215.0" width="192.3" height="24.0" rx="3" fill="#f1f1f1" stroke="#ccc" stroke-width="1"/>
+<text x="550.0" y="232.0" font-family="Menlo, Consolas, DejaVu Sans Mono, Liberation Mono, monospace" font-size="12" text-anchor="middle" fill="#222">PDB 1TUP  ·  AF-P04637-F1</text>
+<rect x="273.0" y="105.0" width="154.0" height="28.0" rx="4" fill="none" stroke="#4f7d47" stroke-width="1.5"/>
+<rect x="273.0" y="141.0" width="154.0" height="28.0" rx="4" fill="none" stroke="#4f7d47" stroke-width="1.5"/>
+<text x="350.0" y="186.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11" text-anchor="middle" fill="#4f7d47" font-weight="bold">MANE Select pair</text>
+<text x="16.0" y="272.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11.5" text-anchor="start" fill="#4f7d47">NM_000546.6 and ENST00000269305 are the MANE Select pair: the same transcript sequence in both databases.</text>
+<text x="16.0" y="290.0" font-family="Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif" font-size="11.5" text-anchor="start" fill="#666">Gene → transcript → protein is one-to-many: TP53 has several transcripts; P04637-2 etc. are its other protein isoforms.</text>
+</svg>

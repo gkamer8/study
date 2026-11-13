@@ -2,14 +2,15 @@
   "subject": "biology",
   "title": "Practical molecular biology for reading papers",
   "description": "Undergraduate/practitioner-level molecular biology for an ML researcher: genes, proteins, pathways, naming, databases, data formats, and ML-for-biology papers. Every lesson defines its terms; no biology beyond high school assumed.",
-  "schema_version": 3,
+  "schema_version": 4,
   "generated": "2026-11-12",
   "changes": [
     "v2: every lesson opens with a Key terms glossary (also exported as the structured `glossary` array) and defines terms where they are first used",
     "v2: every card has an `accept` array for typed-answer checking; multi-part cards rewritten so the typed part is short",
     "v2: new basic-term cards appended to each unit (existing card ids unchanged)",
     "v3: every card audited for typed answers: one unambiguous short answer (≤ ~4 words), the expected form stated in parentheses at the end of the prompt, comparisons/lists split into separate cards (original id kept for the first part, new ids appended)",
-    "v3: glossary rewritten to one term per entry; each definition points to exactly one term and never contains it; glossary entries now carry an `accept` array for the Terms drill"
+    "v3: glossary rewritten to one term per entry; each definition points to exactly one term and never contains it; glossary entries now carry an `accept` array for the Terms drill",
+    "v4: 33 figures added to the lessons (32 SVG diagrams drawn for this site plus one public-domain NHGRI karyotype photo) in figures/; each lesson embeds them as a Markdown image line (`![alt](content/biology/figures/<file>)`) followed directly by a `**Figure U.N.** caption` line in the same paragraph. Requires the figure-aware js/markdown.js. Card, quiz and glossary content and ids unchanged; lesson_words now includes caption text"
   ],
   "units": [
     {
@@ -21,8 +22,9 @@
       "card_count": 80,
       "quiz_count": 13,
       "glossary_count": 38,
-      "lesson_words": 2122,
-      "prerequisites": []
+      "lesson_words": 2609,
+      "prerequisites": [],
+      "figure_count": 7
     },
     {
       "unit": 2,
@@ -33,10 +35,11 @@
       "card_count": 63,
       "quiz_count": 14,
       "glossary_count": 21,
-      "lesson_words": 1575,
+      "lesson_words": 1765,
       "prerequisites": [
         1
-      ]
+      ],
+      "figure_count": 4
     },
     {
       "unit": 3,
@@ -47,11 +50,12 @@
       "card_count": 55,
       "quiz_count": 14,
       "glossary_count": 26,
-      "lesson_words": 1504,
+      "lesson_words": 1665,
       "prerequisites": [
         1,
         2
-      ]
+      ],
+      "figure_count": 3
     },
     {
       "unit": 4,
@@ -62,10 +66,11 @@
       "card_count": 67,
       "quiz_count": 14,
       "glossary_count": 27,
-      "lesson_words": 1717,
+      "lesson_words": 2009,
       "prerequisites": [
         1
-      ]
+      ],
+      "figure_count": 5
     },
     {
       "unit": 5,
@@ -76,11 +81,12 @@
       "card_count": 66,
       "quiz_count": 15,
       "glossary_count": 33,
-      "lesson_words": 1742,
+      "lesson_words": 2030,
       "prerequisites": [
         1,
         4
-      ]
+      ],
+      "figure_count": 5
     },
     {
       "unit": 6,
@@ -91,12 +97,13 @@
       "card_count": 69,
       "quiz_count": 16,
       "glossary_count": 31,
-      "lesson_words": 2026,
+      "lesson_words": 2408,
       "prerequisites": [
         1,
         2,
         3
-      ]
+      ],
+      "figure_count": 6
     },
     {
       "unit": 7,
@@ -107,19 +114,21 @@
       "card_count": 56,
       "quiz_count": 14,
       "glossary_count": 24,
-      "lesson_words": 1692,
+      "lesson_words": 1877,
       "prerequisites": [
         1,
         2,
         3,
         4,
         6
-      ]
+      ],
+      "figure_count": 3
     }
   ],
   "totals": {
     "cards": 456,
     "quiz": 100,
-    "glossary_terms": 200
+    "glossary_terms": 200,
+    "figures": 33
   }
 }

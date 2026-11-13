@@ -1,4 +1,4 @@
-# Biology study content (schema v3)
+# Biology study content (schema v4)
 
 Content for the spaced-repetition study site. This folder holds only data; the site code lives elsewhere.
 
@@ -6,6 +6,7 @@ Content for the spaced-repetition study site. This folder holds only data; the s
 
 - `index.json`: subject metadata, a changelog, and the ordered list of units with counts and suggested prerequisites.
 - `NN-slug.json`: one file per unit.
+- `figures/`: lesson figures (SVG diagrams, one PNG photo), referenced from the lessons as `content/biology/figures/<file>`. Filenames use only lowercase letters, digits and hyphens.
 - `_src/`: generators. Each unit is built from three sources:
   - `lessons/uN.md`: the lesson Markdown
   - `cards_uN.py`: the flashcards
@@ -20,13 +21,14 @@ Content for the spaced-repetition study site. This folder holds only data; the s
 ```json
 {
   "subject": "biology", "title": "...", "description": "...",
-  "schema_version": 2, "generated": "YYYY-MM-DD", "changes": ["..."],
+  "schema_version": 4, "generated": "YYYY-MM-DD", "changes": ["..."],
   "units": [
     {"unit": 1, "slug": "central-dogma", "title": "...", "summary": "...",
      "file": "01-central-dogma.json", "card_count": 80, "quiz_count": 13,
-     "glossary_count": 38, "lesson_words": 2122, "prerequisites": []}
+     "glossary_count": 38, "lesson_words": 2609, "prerequisites": [],
+     "figure_count": 7}
   ],
-  "totals": {"cards": 456, "quiz": 100, "glossary_terms": 200}
+  "totals": {"cards": 456, "quiz": 100, "glossary_terms": 200, "figures": 33}
 }
 ```
 
@@ -52,6 +54,22 @@ Content for the spaced-repetition study site. This folder holds only data; the s
 - `common.py` enforces that each definition points to exactly one term: terms and definitions are unique within a unit, and no definition contains its own term or any accepted variant of 3+ characters. Each unit is self-contained for the drill; the same term may appear again in a later unit with a "(see Unit N)" note.
 - In the body, each technical term is defined in plain words where it first appears, usually bolded. Terms that belong to another unit are briefly re-defined or marked "(see Unit N)". The site can turn "Unit N" into a link.
 - Lesson Markdown uses GFM tables, fenced code blocks, and a few `^...^` superscripts (e.g. `p16^INK4a^`). Render those as `<sup>` or leave them as plain text.
+
+### Figures
+
+Each figure is one Markdown paragraph: an image line, then a caption line.
+
+```
+![Alt text describing what the figure shows.](content/biology/figures/u4-domains.svg)
+**Figure 4.3.** What to notice, in the lesson's own terms. Credits and links for real images go here.
+```
+
+- Render a paragraph whose first line is a lone image as `<figure><img src alt loading="lazy"><figcaption>…</figcaption></figure>`; the caption may contain inline Markdown (bold, links, `\*` escapes). Image `src` paths are relative to the site root.
+- Alt text and captions can contain `_` inside words (NM_000546.6) and `*` in alt text, so the renderer must handle images, links and code before emphasis, and treat `_` as emphasis only at word boundaries. A drop-in `js/markdown.js` that does this was delivered with v4.
+- Figures are drawn on a white background at 720 px wide (viewBox, so they scale); use `max-width: 100%`.
+- Sources: `_src/figures/`. `figlib.py` is a tiny SVG writer (palette, arrows, boxes, monospace grids), `uN_figs.py` draws each unit's figures, `build_all.py` writes them all into `figures/`, `render.py` renders PNGs for checking, and `placements.py` inserts the figure blocks (alt text, captions, position) into `lessons/uN.md` (idempotent). `data/` holds the AlphaFold p53 data used by `u4-alphafold-p53.svg` (CC-BY 4.0).
+- Rebuild: `python3 -m venv /workspace/figenv && /workspace/figenv/bin/pip install cairosvg pillow numpy`, then `cd _src/figures && /workspace/figenv/bin/python build_all.py && python3 placements.py`, then regenerate the units (`cd .. && python3 uN.py`). Only `render.py` needs cairosvg; `build_all.py` needs numpy and pillow (AlphaFold panel, karyotype labels) and the Liberation Sans fonts (`fonts-liberation`), which `figlib.tw()` uses to measure label widths.
+- Real images: `u1-karyotype.png` (NHGRI, public domain, Wikimedia Commons). Data-derived: `u4-alphafold-p53.svg` (AlphaFold DB AF-P04637-F1 v6, CC-BY 4.0). Everything else is drawn for this site; feature coordinates come from UniProt, InterPro, QuickGO, NCBI/Ensembl and UCSC (GRCh38).
 
 ### Card
 
