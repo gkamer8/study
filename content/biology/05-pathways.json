@@ -6,111 +6,303 @@
   "glossary": [
     {
       "term": "Signaling pathway",
-      "definition": "a chain of molecules that passes a message from a signal (often outside the cell) to a response inside it."
+      "definition": "a chain of molecules passing a message from a signal to a response inside the cell.",
+      "accept": [
+        "Signaling pathway",
+        "Signaling pathways",
+        "pathway",
+        "signalling pathway",
+        "signal transduction pathway"
+      ]
     },
     {
-      "term": "Ligand / receptor",
-      "definition": "a signal molecule / the protein that binds it and relays the message."
+      "term": "Ligand",
+      "definition": "a signal molecule that binds a receptor.",
+      "accept": [
+        "Ligand",
+        "Ligands"
+      ]
     },
     {
-      "term": "Growth factor / cytokine",
-      "definition": "protein signals that tell cells to grow and divide / that coordinate immune responses."
+      "term": "Receptor",
+      "definition": "a protein that binds a signal molecule and relays its message.",
+      "accept": [
+        "Receptor",
+        "Receptors"
+      ]
     },
     {
-      "term": "Kinase / phosphatase",
-      "definition": "an enzyme that adds a phosphate to a protein (often switching it on) / one that removes it."
+      "term": "Growth factor",
+      "definition": "a protein signal telling cells to grow and divide.",
+      "accept": [
+        "Growth factor",
+        "Growth factors"
+      ]
+    },
+    {
+      "term": "Cytokine",
+      "definition": "a protein signal coordinating immune responses.",
+      "accept": [
+        "Cytokine",
+        "Cytokines"
+      ]
+    },
+    {
+      "term": "Kinase",
+      "definition": "an enzyme that adds a phosphate group to a protein.",
+      "accept": [
+        "Kinase",
+        "Kinases"
+      ]
+    },
+    {
+      "term": "Phosphatase",
+      "definition": "an enzyme that removes a phosphate group from a protein.",
+      "accept": [
+        "Phosphatase",
+        "Phosphatases"
+      ]
     },
     {
       "term": "Phosphorylation",
-      "definition": "adding a phosphate group. Written \"p-ERK\" or \"pS473\" for the phosphorylated form or site."
+      "definition": "the addition of a phosphate group (written p-ERK or pS473).",
+      "accept": [
+        "Phosphorylation",
+        "Phosphorylations",
+        "phosphorylate"
+      ]
     },
     {
       "term": "GTPase",
-      "definition": "a protein switch that is ON when bound to GTP and OFF after cutting it to GDP."
+      "definition": "a protein switch that is ON when bound to GTP and OFF after cutting it to GDP.",
+      "accept": [
+        "GTPase"
+      ]
     },
     {
-      "term": "GEF / GAP",
-      "definition": "proteins that switch a GTPase on (GEF: swaps GDP for GTP) / off (GAP: speeds up GTP hydrolysis)."
+      "term": "GEF",
+      "definition": "a protein that switches a small GTPase ON by swapping its GDP for GTP.",
+      "accept": [
+        "GEF",
+        "guanine nucleotide exchange factor"
+      ]
+    },
+    {
+      "term": "GAP",
+      "definition": "a protein that switches a small GTPase OFF by speeding up its GTP hydrolysis.",
+      "accept": [
+        "GAP",
+        "GTPase-activating protein",
+        "GTPase activating protein"
+      ]
     },
     {
       "term": "Adaptor",
-      "definition": "a protein without enzyme activity that links other proteins together."
+      "definition": "a protein without enzyme activity that links other proteins together.",
+      "accept": [
+        "Adaptor",
+        "Adaptors",
+        "adapter",
+        "adaptor protein",
+        "adapter protein"
+      ]
     },
     {
-      "term": "Dimerize",
-      "definition": "two proteins pair up."
+      "term": "Dimerization",
+      "definition": "two proteins pairing up.",
+      "accept": [
+        "Dimerization",
+        "Dimerizations",
+        "dimerize",
+        "dimerisation",
+        "dimerise",
+        "dimer"
+      ]
     },
     {
-      "term": "Transcription factor (TF)",
-      "definition": "a protein that binds DNA to turn genes on or off (see Unit 1)."
+      "term": "Transcription factor",
+      "definition": "a protein that binds DNA to turn genes on or off (see Unit 1).",
+      "accept": [
+        "Transcription factor",
+        "TF",
+        "Transcription factors",
+        "TFs"
+      ]
     },
     {
       "term": "Target gene",
-      "definition": "a gene whose transcription a given TF controls."
+      "definition": "a gene whose transcription a given TF controls.",
+      "accept": [
+        "Target gene",
+        "Target genes"
+      ]
     },
     {
-      "term": "E3 ubiquitin ligase / proteasome",
-      "definition": "tags proteins with ubiquitin / destroys tagged proteins (see Unit 1)."
+      "term": "E3 ubiquitin ligase",
+      "definition": "an enzyme that attaches the small \"destroy me\" tag protein to specific targets.",
+      "accept": [
+        "E3 ubiquitin ligase",
+        "E3 ligase",
+        "E3",
+        "ubiquitin ligase"
+      ]
+    },
+    {
+      "term": "Proteasome",
+      "definition": "the cellular machine that shreds tagged proteins.",
+      "accept": [
+        "Proteasome",
+        "Proteasomes"
+      ]
     },
     {
       "term": "Negative feedback",
-      "definition": "a pathway's output switches off its own input."
+      "definition": "a pathway's output switching off its own input.",
+      "accept": [
+        "Negative feedback",
+        "Negative feedbacks"
+      ]
     },
     {
       "term": "Proliferation",
-      "definition": "cells dividing."
+      "definition": "cells dividing and multiplying in number.",
+      "accept": [
+        "Proliferation",
+        "Proliferations",
+        "cell proliferation"
+      ]
     },
     {
       "term": "Oncogene",
-      "definition": "a gene whose overactivity drives cancer (gain of function)."
+      "definition": "a gene whose overactivity (gain of function) drives cancer.",
+      "accept": [
+        "Oncogene",
+        "Oncogenes"
+      ]
     },
     {
       "term": "Tumor suppressor",
-      "definition": "a gene whose loss drives cancer (loss of function)."
+      "definition": "a gene whose loss of function drives cancer.",
+      "accept": [
+        "Tumor suppressor",
+        "Tumor suppressors",
+        "tumour suppressor",
+        "tumor suppressor gene",
+        "TSG"
+      ]
     },
     {
-      "term": "Amplification / fusion",
-      "definition": "extra copies of a gene / two genes joined into one by a chromosome rearrangement."
+      "term": "Amplification",
+      "definition": "extra copies of a gene in the genome.",
+      "accept": [
+        "Amplification",
+        "Amplifications",
+        "gene amplification"
+      ]
+    },
+    {
+      "term": "Fusion gene",
+      "definition": "two genes joined into one by a chromosome rearrangement.",
+      "accept": [
+        "Fusion gene",
+        "Fusion genes",
+        "fusion",
+        "gene fusion"
+      ]
     },
     {
       "term": "Apoptosis",
-      "definition": "programmed, orderly cell suicide."
+      "definition": "programmed, orderly cell suicide.",
+      "accept": [
+        "Apoptosis",
+        "programmed cell death"
+      ]
     },
     {
       "term": "Caspase",
-      "definition": "a protease (protein-cutting enzyme) that executes apoptosis."
+      "definition": "a protein-cutting enzyme that executes programmed cell death.",
+      "accept": [
+        "Caspase",
+        "Caspases"
+      ]
     },
     {
       "term": "Mitochondria",
-      "definition": "the cell's energy-producing compartments, also central to apoptosis."
+      "definition": "the cell's energy-producing compartments, also central to programmed cell death.",
+      "accept": [
+        "Mitochondria",
+        "Mitochondrias",
+        "mitochondrion"
+      ]
     },
     {
-      "term": "Cell cycle / mitosis",
-      "definition": "the sequence of phases by which a cell copies its DNA and divides / the division step itself."
+      "term": "Cell cycle",
+      "definition": "the sequence of phases by which a cell copies its DNA and divides.",
+      "accept": [
+        "Cell cycle",
+        "Cell cycles"
+      ]
+    },
+    {
+      "term": "Mitosis",
+      "definition": "the division step in which duplicated chromosomes separate.",
+      "accept": [
+        "Mitosis"
+      ]
     },
     {
       "term": "Checkpoint",
-      "definition": "a control point that halts the cell cycle if something is wrong."
+      "definition": "a control point that halts division if something is wrong.",
+      "accept": [
+        "Checkpoint",
+        "Checkpoints",
+        "cell cycle checkpoint"
+      ]
     },
     {
-      "term": "Cyclin / CDK",
-      "definition": "a regulatory protein / the cyclin-dependent kinase it activates. Together they drive the cell cycle."
+      "term": "Cyclin",
+      "definition": "a regulatory protein whose level rises and falls through division phases, activating a partner kinase.",
+      "accept": [
+        "Cyclin",
+        "Cyclins"
+      ]
+    },
+    {
+      "term": "CDK",
+      "definition": "the kinase that is switched on by binding a cyclin.",
+      "accept": [
+        "CDK",
+        "cyclin-dependent kinase",
+        "cyclin dependent kinase"
+      ]
     },
     {
       "term": "Synthetic lethality",
-      "definition": "losing either of two genes is survivable, but losing both kills the cell."
+      "definition": "losing either of two genes is survivable, but losing both kills the cell.",
+      "accept": [
+        "Synthetic lethality",
+        "Synthetic lethalities",
+        "synthetic lethal"
+      ]
     },
     {
       "term": "Western blot",
-      "definition": "a lab assay that detects a specific protein (or phospho-form) with antibodies."
+      "definition": "a lab assay that detects a specific protein (or phospho-form) with antibodies after gel separation.",
+      "accept": [
+        "Western blot",
+        "Western blots",
+        "immunoblot",
+        "western",
+        "western blotting"
+      ]
     }
   ],
-  "lesson": "### Key terms\n\n- **Signaling pathway**: a chain of molecules that passes a message from a signal (often outside the cell) to a response inside it.\n- **Ligand / receptor**: a signal molecule / the protein that binds it and relays the message.\n- **Growth factor / cytokine**: protein signals that tell cells to grow and divide / that coordinate immune responses.\n- **Kinase / phosphatase**: an enzyme that adds a phosphate to a protein (often switching it on) / one that removes it.\n- **Phosphorylation**: adding a phosphate group. Written \"p-ERK\" or \"pS473\" for the phosphorylated form or site.\n- **GTPase**: a protein switch that is ON when bound to GTP and OFF after cutting it to GDP.\n- **GEF / GAP**: proteins that switch a GTPase on (GEF: swaps GDP for GTP) / off (GAP: speeds up GTP hydrolysis).\n- **Adaptor**: a protein without enzyme activity that links other proteins together.\n- **Dimerize**: two proteins pair up.\n- **Transcription factor (TF)**: a protein that binds DNA to turn genes on or off (see Unit 1).\n- **Target gene**: a gene whose transcription a given TF controls.\n- **E3 ubiquitin ligase / proteasome**: tags proteins with ubiquitin / destroys tagged proteins (see Unit 1).\n- **Negative feedback**: a pathway's output switches off its own input.\n- **Proliferation**: cells dividing.\n- **Oncogene**: a gene whose overactivity drives cancer (gain of function).\n- **Tumor suppressor**: a gene whose loss drives cancer (loss of function).\n- **Amplification / fusion**: extra copies of a gene / two genes joined into one by a chromosome rearrangement.\n- **Apoptosis**: programmed, orderly cell suicide.\n- **Caspase**: a protease (protein-cutting enzyme) that executes apoptosis.\n- **Mitochondria**: the cell's energy-producing compartments, also central to apoptosis.\n- **Cell cycle / mitosis**: the sequence of phases by which a cell copies its DNA and divides / the division step itself.\n- **Checkpoint**: a control point that halts the cell cycle if something is wrong.\n- **Cyclin / CDK**: a regulatory protein / the cyclin-dependent kinase it activates. Together they drive the cell cycle.\n- **Synthetic lethality**: losing either of two genes is survivable, but losing both kills the cell.\n- **Western blot**: a lab assay that detects a specific protein (or phospho-form) with antibodies.\n\n## How to think about signaling\n\nA **signaling pathway** carries information: a **ligand** (a growth factor, a hormone, or an immune **cytokine**) binds a **receptor**, or an internal sensor detects damage. The message then passes along a chain of molecular switches. The two main switches are:\n\n1. **Phosphorylation**: a **kinase** attaches a phosphate group to a protein, changing its shape and activity. A **phosphatase** removes it.\n2. **GTP binding**: small **GTPase** proteins are ON when holding the molecule GTP and OFF after cutting it to GDP. A **GEF** turns them on by swapping GDP for GTP; a **GAP** turns them off by speeding up GTP cutting.\n\nThe chain ends at **transcription factors**, which change which genes are expressed, or at other effectors that change growth, metabolism, division or survival. **Negative feedback**, where the output dampens its own input, is everywhere.\n\nCancer is largely broken signaling. **Oncogenes** are stuck accelerators: a **gain-of-function** change (an activating mutation, extra gene copies from **amplification**, or a **fusion** of two genes) and one altered copy is enough. **Tumor suppressors** are broken brakes: **loss of function**, and usually both copies must be lost (Knudson's **two-hit** hypothesis).\n\nFigure conventions: → means activates, ⊣ means inhibits. \"p-ERK\" means phosphorylated (active) ERK. \"pS473\" means phosphorylated at serine 473. Phospho-levels are classically measured by **Western blot**, an antibody-based protein assay.\n\n## RTK → RAS → MAPK (proliferation)\n\n1. A growth factor such as EGF binds a **receptor tyrosine kinase (RTK)**, a membrane receptor whose inner part is a kinase that phosphorylates tyrosines. Examples: EGFR/ERBB family, MET, ALK. Two receptors **dimerize** (pair up) and phosphorylate each other (**autophosphorylation**).\n2. The **adaptor** protein **GRB2** grabs those phosphotyrosines with its SH2 domain (see Unit 4) and brings **SOS**, a GEF, which turns on **RAS** (KRAS, NRAS, HRAS) by loading GTP.\n3. RAS-GTP activates the kinase **RAF** (ARAF, BRAF, CRAF), which phosphorylates **MEK1/2**, which phosphorylate **ERK1/2** (official symbols MAPK3/MAPK1). This kinase chain is the **MAPK cascade** (mitogen-activated protein kinase; mitogen = something that triggers division). ERK enters the nucleus and switches on growth genes (via FOS, MYC).\n4. RAS switches itself off by cutting GTP, helped by **GAPs** such as **NF1**.\n\nIn cancer: **KRAS G12/G13/Q61** mutations block GTP cutting, so RAS stays on (common in pancreatic, colorectal and lung cancer). **BRAF V600E** makes BRAF permanently active (about half of melanomas). **EGFR** L858R and exon 19 deletions occur in lung adenocarcinoma. Losing NF1 removes a brake. Drugs: EGFR inhibitors (osimertinib), BRAF inhibitors (vemurafenib, dabrafenib), MEK inhibitors (trametinib), KRAS G12C inhibitors (sotorasib).\n\n## PI3K → AKT → mTOR (growth and survival)\n\nRTKs also activate **PI3K**, a lipid kinase that phosphorylates the membrane lipid PIP2 into **PIP3**. Its catalytic subunit p110α is encoded by **PIK3CA**. PIP3 acts as a docking flag that recruits the kinase **AKT** to the membrane, where it is activated by phosphorylation at **T308 (by PDK1)** and **S473 (by mTORC2)**. AKT promotes survival and growth. It inhibits the **TSC1/TSC2** complex, a GAP for the GTPase **RHEB**; with that brake off, RHEB activates **mTORC1**, a kinase complex that senses nutrients and boosts protein production by phosphorylating **S6K** and **4E-BP1**. The energy sensor AMPK inhibits mTORC1 when fuel is low. **PTEN** is a phosphatase that converts PIP3 back to PIP2, which makes it a major tumor suppressor. The drug **rapamycin** inhibits mTORC1. PIK3CA cancer hotspots: E545K, H1047R.\n\n## p53 and the DNA damage response\n\nDNA damage must be detected before the cell copies or divides its DNA.\n- Sensor kinases: **ATM** responds to double-strand breaks (both strands cut); **ATR** responds to single-stranded DNA and stalled DNA copying (\"replication stress\"). They activate the checkpoint kinases **CHK2** and **CHK1** respectively, and both lines phosphorylate **p53** (e.g., Ser15).\n- Normally p53 is kept scarce by **MDM2**, an **E3 ubiquitin ligase** that tags p53 for destruction by the proteasome. MDM2 is itself a p53 **target gene**, so p53 induces its own destroyer, a negative feedback loop. Damage-triggered phosphorylation blocks MDM2 binding, so p53 builds up.\n- p53 is a **transcription factor**. Its targets include **CDKN1A (p21)**, which pauses the cell cycle; **MDM2**; and the cell-death genes **BAX**, **PUMA (BBC3)** and **NOXA (PMAIP1)**. Outcomes: pause and repair, permanent arrest (**senescence**), or **apoptosis**.\n- **TP53** is the most frequently mutated gene in human cancer. Most mutations are missense changes in the DNA-binding domain (hotspots R175, R248, R273). Inherited TP53 mutations cause **Li-Fraumeni syndrome**, a high-risk cancer syndrome. **BRCA1/BRCA2** repair broken DNA by **homologous recombination** (using the sister copy as a template). Tumors lacking them are killed by **PARP inhibitors**, an example of **synthetic lethality**: losing either repair route is survivable, but losing both is not.\n\n## Wnt / β-catenin (development, stem cells)\n\nWithout a Wnt signal, a **destruction complex** (APC, AXIN, GSK3β, CK1) phosphorylates **β-catenin** (gene CTNNB1), which then gets ubiquitinated and destroyed. When Wnt binds its receptor **Frizzled** and co-receptor **LRP5/6**, the complex is blocked, β-catenin accumulates, enters the nucleus, and partners with **TCF/LEF** transcription factors to switch on targets (MYC, AXIN2, LGR5). Loss of **APC** starts most colorectal cancers.\n\n## NF-κB (inflammation)\n\nThe transcription factor **NF-κB** (classically the pair RELA/p65 + p50) is held in the cytoplasm by an inhibitor, **IκB**. Inflammatory signals (the cytokines TNF and IL-1, or **Toll-like receptors** that detect microbes) activate the **IKK complex** (IKKα, IKKβ, NEMO). IKK phosphorylates IκBα, marking it for destruction, so NF-κB is freed to enter the nucleus and turn on inflammatory and survival genes.\n\n## JAK-STAT (cytokine signaling)\n\nMany cytokine receptors (for interferons, interleukins, EPO) have no kinase of their own. Instead they carry **JAK** kinases (JAK1, JAK2, JAK3, TYK2). Ligand binding activates the JAKs, which phosphorylate the receptor and the **STAT** proteins. Phosphorylated STATs dimerize and enter the nucleus as transcription factors. **SOCS** proteins provide negative feedback. **JAK2 V617F** drives myeloproliferative neoplasms (blood cancers with overproduction of blood cells). JAK inhibitor: ruxolitinib.\n\n## Apoptosis (programmed cell death)\n\n**Apoptosis** is orderly cell suicide, carried out by **caspases**, protein-cutting enzymes (cysteine proteases that cut after aspartate).\n- **Intrinsic (mitochondrial) route**: stress shifts the balance within the **BCL-2 family**. \"BH3-only\" proteins (BIM, BID, PUMA, NOXA) overpower the protective members (BCL-2, BCL-XL, MCL-1), letting **BAX/BAK** punch holes in the outer membrane of the **mitochondria** (MOMP, mitochondrial outer membrane permeabilization). **Cytochrome c** leaks out and assembles with **APAF1** into the **apoptosome**, which activates **caspase-9**, then the executioner **caspases-3/7**. The drug **venetoclax** blocks BCL-2.\n- **Extrinsic route**: \"death ligands\" (FASL, TNF, TRAIL) bind death receptors, which recruit **FADD** and activate **caspase-8**. Caspase-8 also cuts BID, linking to the intrinsic route.\n- Lab markers: cleaved caspase-3 and cleaved PARP.\n\n## The cell cycle\n\nA dividing cell goes **G1** (growth) → **S** (DNA synthesis: the genome is copied) → **G2** (preparation) → **M** (**mitosis**: chromosomes separate and the cell splits). Non-dividing cells rest in **G0**. The cycle is driven by **cyclins**, proteins whose levels rise and fall with the cycle, each switching on a partner **cyclin-dependent kinase (CDK)**:\n- **Cyclin D–CDK4/6** (G1) phosphorylates the brake protein **RB**, releasing **E2F** transcription factors that switch on S-phase genes. Passing the **restriction point** commits the cell to dividing.\n- **Cyclin E–CDK2** (G1/S), **cyclin A–CDK2** (S), **cyclin B–CDK1** (G2/M).\n- CDK inhibitors: the **INK4** family (p16^INK4a^, from CDKN2A) blocks CDK4/6; the **CIP/KIP** family (p21, p27) blocks CDK2/CDK1.\n- **Checkpoints** halt the cycle when something is wrong: **G1/S** (DNA damage → p53 → p21), **G2/M** (damage → CHK1/2 → CDK1 kept off), and the **spindle assembly checkpoint**, which blocks chromosome separation (anaphase) until every chromosome is attached to the spindle (MAD2 inhibits APC/C–CDC20).\n- CDK4/6 inhibitors (palbociclib, ribociclib, abemaciclib) treat hormone-receptor-positive breast cancer.\n\n## Oncogenes and tumor suppressors to know\n\n**Oncogenes**: KRAS, NRAS, BRAF, EGFR, ERBB2 (HER2, amplified in some breast cancers), PIK3CA, MYC (amplified), ABL1 (the BCR-ABL fusion in chronic myeloid leukemia, treated with imatinib), ALK fusions, CCND1, MDM2 (amplified). **Tumor suppressors**: TP53, RB1, PTEN, APC, CDKN2A, BRCA1/2, NF1, VHL, SMAD4, ARID1A.\n\n## How you'll see this in a paper\n\n- \"KRAS-mutant vs wild-type\", \"BRAF^V600E^ melanoma\": samples grouped by driver mutation (wild-type = not mutated).\n- \"Hallmark gene sets (MSigDB): E2F targets, G2M checkpoint, TNFA signaling via NFKB, P53 pathway\": pathway activity scores computed from RNA-seq.\n- \"pERK/ERK ratio\": a readout of MAPK activity.\n- Perturbation-prediction models are often judged on whether they recover known pathway structure.\n",
+  "lesson": "### Key terms\n\n- **Signaling pathway**: a chain of molecules passing a message from a signal to a response inside the cell.\n- **Ligand**: a signal molecule that binds a receptor.\n- **Receptor**: a protein that binds a signal molecule and relays its message.\n- **Growth factor**: a protein signal telling cells to grow and divide.\n- **Cytokine**: a protein signal coordinating immune responses.\n- **Kinase**: an enzyme that adds a phosphate group to a protein.\n- **Phosphatase**: an enzyme that removes a phosphate group from a protein.\n- **Phosphorylation**: the addition of a phosphate group (written p-ERK or pS473).\n- **GTPase**: a protein switch that is ON when bound to GTP and OFF after cutting it to GDP.\n- **GEF**: a protein that switches a small GTPase ON by swapping its GDP for GTP.\n- **GAP**: a protein that switches a small GTPase OFF by speeding up its GTP hydrolysis.\n- **Adaptor**: a protein without enzyme activity that links other proteins together.\n- **Dimerization**: two proteins pairing up.\n- **Transcription factor (TF)**: a protein that binds DNA to turn genes on or off (see Unit 1).\n- **Target gene**: a gene whose transcription a given TF controls.\n- **E3 ubiquitin ligase**: an enzyme that attaches the small \"destroy me\" tag protein to specific targets.\n- **Proteasome**: the cellular machine that shreds tagged proteins.\n- **Negative feedback**: a pathway's output switching off its own input.\n- **Proliferation**: cells dividing and multiplying in number.\n- **Oncogene**: a gene whose overactivity (gain of function) drives cancer.\n- **Tumor suppressor**: a gene whose loss of function drives cancer.\n- **Amplification**: extra copies of a gene in the genome.\n- **Fusion gene**: two genes joined into one by a chromosome rearrangement.\n- **Apoptosis**: programmed, orderly cell suicide.\n- **Caspase**: a protein-cutting enzyme that executes programmed cell death.\n- **Mitochondria**: the cell's energy-producing compartments, also central to programmed cell death.\n- **Cell cycle**: the sequence of phases by which a cell copies its DNA and divides.\n- **Mitosis**: the division step in which duplicated chromosomes separate.\n- **Checkpoint**: a control point that halts division if something is wrong.\n- **Cyclin**: a regulatory protein whose level rises and falls through division phases, activating a partner kinase.\n- **CDK**: the kinase that is switched on by binding a cyclin.\n- **Synthetic lethality**: losing either of two genes is survivable, but losing both kills the cell.\n- **Western blot**: a lab assay that detects a specific protein (or phospho-form) with antibodies after gel separation.\n\n## How to think about signaling\n\nA **signaling pathway** carries information: a **ligand** (a growth factor, a hormone, or an immune **cytokine**) binds a **receptor**, or an internal sensor detects damage. The message then passes along a chain of molecular switches. The two main switches are:\n\n1. **Phosphorylation**: a **kinase** attaches a phosphate group to a protein, changing its shape and activity. A **phosphatase** removes it.\n2. **GTP binding**: small **GTPase** proteins are ON when holding the molecule GTP and OFF after cutting it to GDP. A **GEF** turns them on by swapping GDP for GTP; a **GAP** turns them off by speeding up GTP cutting.\n\nThe chain ends at **transcription factors**, which change which genes are expressed, or at other effectors that change growth, metabolism, division or survival. **Negative feedback**, where the output dampens its own input, is everywhere.\n\nCancer is largely broken signaling. **Oncogenes** are stuck accelerators: a **gain-of-function** change (an activating mutation, extra gene copies from **amplification**, or a **fusion** of two genes) and one altered copy is enough. **Tumor suppressors** are broken brakes: **loss of function**, and usually both copies must be lost (Knudson's **two-hit** hypothesis).\n\nFigure conventions: → means activates, ⊣ means inhibits. \"p-ERK\" means phosphorylated (active) ERK. \"pS473\" means phosphorylated at serine 473. Phospho-levels are classically measured by **Western blot**, an antibody-based protein assay.\n\n## RTK → RAS → MAPK (proliferation)\n\n1. A growth factor such as EGF binds a **receptor tyrosine kinase (RTK)**, a membrane receptor whose inner part is a kinase that phosphorylates tyrosines. Examples: EGFR/ERBB family, MET, ALK. Two receptors **dimerize** (pair up) and phosphorylate each other (**autophosphorylation**).\n2. The **adaptor** protein **GRB2** grabs those phosphotyrosines with its SH2 domain (see Unit 4) and brings **SOS**, a GEF, which turns on **RAS** (KRAS, NRAS, HRAS) by loading GTP.\n3. RAS-GTP activates the kinase **RAF** (ARAF, BRAF, CRAF), which phosphorylates **MEK1/2**, which phosphorylate **ERK1/2** (official symbols MAPK3/MAPK1). This kinase chain is the **MAPK cascade** (mitogen-activated protein kinase; mitogen = something that triggers division). ERK enters the nucleus and switches on growth genes (via FOS, MYC).\n4. RAS switches itself off by cutting GTP, helped by **GAPs** such as **NF1**.\n\nIn cancer: **KRAS G12/G13/Q61** mutations block GTP cutting, so RAS stays on (common in pancreatic, colorectal and lung cancer). **BRAF V600E** makes BRAF permanently active (about half of melanomas). **EGFR** L858R and exon 19 deletions occur in lung adenocarcinoma. Losing NF1 removes a brake. Drugs: EGFR inhibitors (osimertinib), BRAF inhibitors (vemurafenib, dabrafenib), MEK inhibitors (trametinib), KRAS G12C inhibitors (sotorasib).\n\n## PI3K → AKT → mTOR (growth and survival)\n\nRTKs also activate **PI3K**, a lipid kinase that phosphorylates the membrane lipid PIP2 into **PIP3**. Its catalytic subunit p110α is encoded by **PIK3CA**. PIP3 acts as a docking flag that recruits the kinase **AKT** to the membrane, where it is activated by phosphorylation at **T308 (by PDK1)** and **S473 (by mTORC2)**. AKT promotes survival and growth. It inhibits the **TSC1/TSC2** complex, a GAP for the GTPase **RHEB**; with that brake off, RHEB activates **mTORC1**, a kinase complex that senses nutrients and boosts protein production by phosphorylating **S6K** and **4E-BP1**. The energy sensor AMPK inhibits mTORC1 when fuel is low. **PTEN** is a phosphatase that converts PIP3 back to PIP2, which makes it a major tumor suppressor. The drug **rapamycin** inhibits mTORC1. PIK3CA cancer hotspots: E545K, H1047R.\n\n## p53 and the DNA damage response\n\nDNA damage must be detected before the cell copies or divides its DNA.\n- Sensor kinases: **ATM** responds to double-strand breaks (both strands cut); **ATR** responds to single-stranded DNA and stalled DNA copying (\"replication stress\"). They activate the checkpoint kinases **CHK2** and **CHK1** respectively, and both lines phosphorylate **p53** (e.g., Ser15).\n- Normally p53 is kept scarce by **MDM2**, an **E3 ubiquitin ligase** that tags p53 for destruction by the proteasome. MDM2 is itself a p53 **target gene**, so p53 induces its own destroyer, a negative feedback loop. Damage-triggered phosphorylation blocks MDM2 binding, so p53 builds up.\n- p53 is a **transcription factor**. Its targets include **CDKN1A (p21)**, which pauses the cell cycle; **MDM2**; and the cell-death genes **BAX**, **PUMA (BBC3)** and **NOXA (PMAIP1)**. Outcomes: pause and repair, permanent arrest (**senescence**), or **apoptosis**.\n- **TP53** is the most frequently mutated gene in human cancer. Most mutations are missense changes in the DNA-binding domain (hotspots R175, R248, R273). Inherited TP53 mutations cause **Li-Fraumeni syndrome**, a high-risk cancer syndrome. **BRCA1/BRCA2** repair broken DNA by **homologous recombination** (using the sister copy as a template). Tumors lacking them are killed by **PARP inhibitors**, an example of **synthetic lethality**: losing either repair route is survivable, but losing both is not.\n\n## Wnt / β-catenin (development, stem cells)\n\nWithout a Wnt signal, a **destruction complex** (APC, AXIN, GSK3β, CK1) phosphorylates **β-catenin** (gene CTNNB1), which then gets ubiquitinated and destroyed. When Wnt binds its receptor **Frizzled** and co-receptor **LRP5/6**, the complex is blocked, β-catenin accumulates, enters the nucleus, and partners with **TCF/LEF** transcription factors to switch on targets (MYC, AXIN2, LGR5). Loss of **APC** starts most colorectal cancers.\n\n## NF-κB (inflammation)\n\nThe transcription factor **NF-κB** (classically the pair RELA/p65 + p50) is held in the cytoplasm by an inhibitor, **IκB**. Inflammatory signals (the cytokines TNF and IL-1, or **Toll-like receptors** that detect microbes) activate the **IKK complex** (IKKα, IKKβ, NEMO). IKK phosphorylates IκBα, marking it for destruction, so NF-κB is freed to enter the nucleus and turn on inflammatory and survival genes.\n\n## JAK-STAT (cytokine signaling)\n\nMany cytokine receptors (for interferons, interleukins, EPO) have no kinase of their own. Instead they carry **JAK** kinases (JAK1, JAK2, JAK3, TYK2). Ligand binding activates the JAKs, which phosphorylate the receptor and the **STAT** proteins. Phosphorylated STATs dimerize and enter the nucleus as transcription factors. **SOCS** proteins provide negative feedback. **JAK2 V617F** drives myeloproliferative neoplasms (blood cancers with overproduction of blood cells). JAK inhibitor: ruxolitinib.\n\n## Apoptosis (programmed cell death)\n\n**Apoptosis** is orderly cell suicide, carried out by **caspases**, protein-cutting enzymes (cysteine proteases that cut after aspartate).\n- **Intrinsic (mitochondrial) route**: stress shifts the balance within the **BCL-2 family**. \"BH3-only\" proteins (BIM, BID, PUMA, NOXA) overpower the protective members (BCL-2, BCL-XL, MCL-1), letting **BAX/BAK** punch holes in the outer membrane of the **mitochondria** (MOMP, mitochondrial outer membrane permeabilization). **Cytochrome c** leaks out and assembles with **APAF1** into the **apoptosome**, which activates **caspase-9**, then the executioner **caspases-3/7**. The drug **venetoclax** blocks BCL-2.\n- **Extrinsic route**: \"death ligands\" (FASL, TNF, TRAIL) bind death receptors, which recruit **FADD** and activate **caspase-8**. Caspase-8 also cuts BID, linking to the intrinsic route.\n- Lab markers: cleaved caspase-3 and cleaved PARP.\n\n## The cell cycle\n\nA dividing cell goes **G1** (growth) → **S** (DNA synthesis: the genome is copied) → **G2** (preparation) → **M** (**mitosis**: chromosomes separate and the cell splits). Non-dividing cells rest in **G0**. The cycle is driven by **cyclins**, proteins whose levels rise and fall with the cycle, each switching on a partner **cyclin-dependent kinase (CDK)**:\n- **Cyclin D–CDK4/6** (G1) phosphorylates the brake protein **RB**, releasing **E2F** transcription factors that switch on S-phase genes. Passing the **restriction point** commits the cell to dividing.\n- **Cyclin E–CDK2** (G1/S), **cyclin A–CDK2** (S), **cyclin B–CDK1** (G2/M).\n- CDK inhibitors: the **INK4** family (p16^INK4a^, from CDKN2A) blocks CDK4/6; the **CIP/KIP** family (p21, p27) blocks CDK2/CDK1.\n- **Checkpoints** halt the cycle when something is wrong: **G1/S** (DNA damage → p53 → p21), **G2/M** (damage → CHK1/2 → CDK1 kept off), and the **spindle assembly checkpoint**, which blocks chromosome separation (anaphase) until every chromosome is attached to the spindle (MAD2 inhibits APC/C–CDC20).\n- CDK4/6 inhibitors (palbociclib, ribociclib, abemaciclib) treat hormone-receptor-positive breast cancer.\n\n## Oncogenes and tumor suppressors to know\n\n**Oncogenes**: KRAS, NRAS, BRAF, EGFR, ERBB2 (HER2, amplified in some breast cancers), PIK3CA, MYC (amplified), ABL1 (the BCR-ABL fusion in chronic myeloid leukemia, treated with imatinib), ALK fusions, CCND1, MDM2 (amplified). **Tumor suppressors**: TP53, RB1, PTEN, APC, CDKN2A, BRCA1/2, NF1, VHL, SMAD4, ARID1A.\n\n## How you'll see this in a paper\n\n- \"KRAS-mutant vs wild-type\", \"BRAF^V600E^ melanoma\": samples grouped by driver mutation (wild-type = not mutated).\n- \"Hallmark gene sets (MSigDB): E2F targets, G2M checkpoint, TNFA signaling via NFKB, P53 pathway\": pathway activity scores computed from RNA-seq.\n- \"pERK/ERK ratio\": a readout of MAPK activity.\n- Perturbation-prediction models are often judged on whether they recover known pathway structure.\n",
   "cards": [
     {
       "id": "u5-c01",
-      "front": "Gene whose overactivity (gain of function) drives cancer?",
-      "back": "Oncogene; one altered allele usually suffices (tumor suppressor: loss of function, both alleles)",
+      "front": "Gene whose overactivity (gain of function) drives cancer? (one word)",
+      "back": "Oncogene: one altered allele usually suffices (tumor suppressors need loss of function, usually of both alleles)",
       "accept": [
         "oncogene",
         "oncogenes",
@@ -123,15 +315,15 @@
     },
     {
       "id": "u5-c02",
-      "front": "Hypothesis that both alleles of a tumor suppressor must be inactivated?",
-      "back": "Knudson's two-hit hypothesis (e.g., RB1)",
+      "front": "Knudson's hypothesis that both alleles of a tumor suppressor must be inactivated? (hyphenated name)",
+      "back": "Two-hit hypothesis (classic example: RB1)",
       "accept": [
         "two-hit",
         "two hit",
-        "Knudson",
-        "Knudson two-hit",
         "two-hit hypothesis",
-        "Knudson's two-hit hypothesis"
+        "Knudson",
+        "Knudson's two-hit hypothesis",
+        "2-hit"
       ],
       "tags": [
         "cancer"
@@ -140,13 +332,14 @@
     },
     {
       "id": "u5-c03",
-      "front": "MAPK cascade: RAS → ? → MEK → ERK",
-      "back": "RAF (full: RTK → GRB2 → SOS → RAS → RAF → MEK → ERK)",
+      "front": "MAPK cascade: RAS → ? → MEK → ERK (protein family name)",
+      "back": "RAF. Full chain: RTK → GRB2 → SOS → RAS → RAF → MEK → ERK",
       "accept": [
         "RAF",
         "BRAF",
-        "RAF kinase",
-        "CRAF"
+        "CRAF",
+        "ARAF",
+        "RAF kinase"
       ],
       "tags": [
         "MAPK"
@@ -155,8 +348,8 @@
     },
     {
       "id": "u5-c04",
-      "front": "GEF that loads GTP onto RAS downstream of GRB2?",
-      "back": "SOS (SOS1)",
+      "front": "GEF that loads GTP onto RAS downstream of GRB2? (protein name)",
+      "back": "SOS (SOS1, 'Son of Sevenless')",
       "accept": [
         "SOS",
         "SOS1",
@@ -169,7 +362,7 @@
     },
     {
       "id": "u5-c05",
-      "front": "RAS GAP that is a tumor suppressor?",
+      "front": "RAS GAP that is a tumor suppressor? (gene symbol)",
       "back": "NF1 (neurofibromin)",
       "accept": [
         "NF1",
@@ -182,14 +375,13 @@
     },
     {
       "id": "u5-c06",
-      "front": "KRAS G12 mutations impair what activity, locking RAS on?",
-      "back": "GTP hydrolysis (GAP-stimulated)",
+      "front": "KRAS G12 mutations impair which RAS activity, locking it on? (two words)",
+      "back": "GTP hydrolysis (GAP-stimulated), so RAS stays GTP-bound",
       "accept": [
         "GTP hydrolysis",
         "GTPase activity",
         "GTPase",
-        "hydrolysis",
-        "GTP hydrolysis by RAS"
+        "hydrolysis"
       ],
       "tags": [
         "MAPK",
@@ -199,7 +391,7 @@
     },
     {
       "id": "u5-c07",
-      "front": "Cancer classically associated with BRAF V600E?",
+      "front": "Cancer type classically associated with BRAF V600E? (one word)",
       "back": "Melanoma (~half of cases; also thyroid, colorectal)",
       "accept": [
         "melanoma"
@@ -212,7 +404,7 @@
     },
     {
       "id": "u5-c08",
-      "front": "Official gene symbol for ERK2?",
+      "front": "Official gene symbol for ERK2? (gene symbol)",
       "back": "MAPK1 (ERK1 = MAPK3)",
       "accept": [
         "MAPK1"
@@ -225,8 +417,8 @@
     },
     {
       "id": "u5-c09",
-      "front": "Protein that switches a small GTPase ON (exchanges GDP→GTP)?",
-      "back": "GEF (guanine nucleotide exchange factor); GAP switches it off",
+      "front": "Protein class that switches a small GTPase ON by exchanging GDP for GTP? (acronym)",
+      "back": "GEF (guanine nucleotide exchange factor); a GAP switches it off",
       "accept": [
         "GEF",
         "guanine nucleotide exchange factor",
@@ -239,12 +431,11 @@
     },
     {
       "id": "u5-c10",
-      "front": "Lipid that PI3K produces from PIP2?",
+      "front": "Lipid that PI3K produces from PIP2? (abbreviation)",
       "back": "PIP3",
       "accept": [
         "PIP3",
-        "PI(3,4,5)P3",
-        "phosphatidylinositol (3,4,5)-trisphosphate"
+        "PI(3,4,5)P3"
       ],
       "tags": [
         "PI3K"
@@ -253,7 +444,7 @@
     },
     {
       "id": "u5-c11",
-      "front": "Gene encoding PI3K p110α?",
+      "front": "Gene encoding PI3K catalytic subunit p110α? (gene symbol)",
       "back": "PIK3CA",
       "accept": [
         "PIK3CA"
@@ -266,7 +457,7 @@
     },
     {
       "id": "u5-c12",
-      "front": "Phosphatase converting PIP3 → PIP2 (tumor suppressor)?",
+      "front": "Phosphatase converting PIP3 back to PIP2 (tumor suppressor)? (gene symbol)",
       "back": "PTEN",
       "accept": [
         "PTEN"
@@ -278,11 +469,12 @@
     },
     {
       "id": "u5-c13",
-      "front": "Which kinase complex phosphorylates AKT at S473?",
+      "front": "Kinase complex that phosphorylates AKT at S473? (complex name)",
       "back": "mTORC2 (PDK1 phosphorylates T308)",
       "accept": [
         "mTORC2",
-        "mTOR complex 2"
+        "mTOR complex 2",
+        "TORC2"
       ],
       "tags": [
         "PI3K"
@@ -291,15 +483,16 @@
     },
     {
       "id": "u5-c14",
-      "front": "AKT activates mTORC1 by inhibiting which complex?",
-      "back": "TSC1/TSC2 (so RHEB-GTP accumulates)",
+      "front": "AKT activates mTORC1 by inhibiting which complex? (abbreviation)",
+      "back": "TSC1/TSC2 (tuberous sclerosis complex), so RHEB-GTP accumulates",
       "accept": [
-        "TSC1/TSC2",
         "TSC",
+        "TSC1/TSC2",
         "TSC complex",
         "TSC2",
         "TSC1-TSC2",
-        "tuberous sclerosis complex"
+        "tuberous sclerosis complex",
+        "TSC1/2"
       ],
       "tags": [
         "PI3K",
@@ -309,15 +502,14 @@
     },
     {
       "id": "u5-c15",
-      "front": "Name one classic mTORC1 substrate.",
-      "back": "S6K or 4E-BP1",
+      "front": "mTORC1 substrate that is the ribosomal protein S6 kinase? (abbreviation)",
+      "back": "S6K (S6K1, p70S6K)",
       "accept": [
         "S6K",
-        "4E-BP1",
         "S6K1",
         "p70S6K",
-        "4EBP1",
-        "4E-BP"
+        "S6 kinase",
+        "RPS6KB1"
       ],
       "tags": [
         "mTOR"
@@ -326,13 +518,11 @@
     },
     {
       "id": "u5-c16",
-      "front": "Drug that inhibits mTORC1?",
-      "back": "Rapamycin (sirolimus) and rapalogs",
+      "front": "Natural-product drug that inhibits mTORC1? (drug name)",
+      "back": "Rapamycin (sirolimus); rapalogs like everolimus",
       "accept": [
         "rapamycin",
-        "sirolimus",
-        "everolimus",
-        "rapalog"
+        "sirolimus"
       ],
       "tags": [
         "mTOR",
@@ -342,11 +532,13 @@
     },
     {
       "id": "u5-c17",
-      "front": "PIK3CA kinase-domain hotspot (helical one is E545K)?",
+      "front": "PIK3CA kinase-domain hotspot mutation (the helical one is E545K)? (protein change)",
       "back": "H1047R",
       "accept": [
         "H1047R",
-        "H1047"
+        "p.H1047R",
+        "His1047Arg",
+        "p.His1047Arg"
       ],
       "tags": [
         "PI3K",
@@ -356,8 +548,8 @@
     },
     {
       "id": "u5-c18",
-      "front": "Sensor kinase for double-strand breaks (vs ATR for ssDNA)?",
-      "back": "ATM",
+      "front": "Sensor kinase that responds to double-strand breaks? (gene symbol)",
+      "back": "ATM (ATR senses ssDNA / replication stress)",
       "accept": [
         "ATM"
       ],
@@ -368,7 +560,7 @@
     },
     {
       "id": "u5-c19",
-      "front": "Checkpoint kinase downstream of ATR?",
+      "front": "Checkpoint kinase downstream of ATR? (protein name)",
       "back": "CHK1 (ATM → CHK2)",
       "accept": [
         "CHK1",
@@ -381,7 +573,7 @@
     },
     {
       "id": "u5-c20",
-      "front": "E3 ligase that keeps p53 low in unstressed cells?",
+      "front": "E3 ligase that keeps p53 low in unstressed cells? (gene symbol)",
       "back": "MDM2",
       "accept": [
         "MDM2",
@@ -394,12 +586,11 @@
     },
     {
       "id": "u5-c21",
-      "front": "p53 transcribes MDM2, which degrades p53. Loop type?",
-      "back": "Negative feedback loop",
+      "front": "p53 induces MDM2, which degrades p53. What kind of loop? (two words)",
+      "back": "Negative feedback",
       "accept": [
         "negative feedback",
-        "negative feedback loop",
-        "feedback"
+        "negative feedback loop"
       ],
       "tags": [
         "p53"
@@ -408,11 +599,10 @@
     },
     {
       "id": "u5-c22",
-      "front": "p53 target gene encoding p21 (cell cycle arrest)?",
-      "back": "CDKN1A (other targets: MDM2, BAX, BBC3/PUMA, PMAIP1/NOXA)",
+      "front": "p53 target gene encoding p21, which arrests the cell cycle? (gene symbol)",
+      "back": "CDKN1A. Other targets: MDM2, BAX, BBC3 (PUMA), PMAIP1 (NOXA)",
       "accept": [
-        "CDKN1A",
-        "p21"
+        "CDKN1A"
       ],
       "tags": [
         "p53"
@@ -421,13 +611,14 @@
     },
     {
       "id": "u5-c23",
-      "front": "Which p53 domain carries most cancer missense mutations?",
+      "front": "Which p53 domain carries most cancer missense mutations? (three words)",
       "back": "DNA-binding domain (hotspots R175, R248, R273)",
       "accept": [
         "DNA-binding domain",
         "DNA binding domain",
         "DBD",
-        "core domain"
+        "core domain",
+        "DNA-binding"
       ],
       "tags": [
         "p53",
@@ -437,7 +628,7 @@
     },
     {
       "id": "u5-c24",
-      "front": "Syndrome caused by germline TP53 mutation?",
+      "front": "Cancer syndrome caused by germline TP53 mutation? (name)",
       "back": "Li-Fraumeni syndrome",
       "accept": [
         "Li-Fraumeni",
@@ -452,8 +643,8 @@
     },
     {
       "id": "u5-c25",
-      "front": "Concept explaining PARP-inhibitor sensitivity of BRCA-deficient tumors?",
-      "back": "Synthetic lethality (HR loss + PARP inhibition)",
+      "front": "Concept behind PARP-inhibitor sensitivity of BRCA-deficient tumors? (two words)",
+      "back": "Synthetic lethality: loss of HR repair + PARP inhibition kills the cell",
       "accept": [
         "synthetic lethality",
         "synthetic lethal"
@@ -466,12 +657,11 @@
     },
     {
       "id": "u5-c26",
-      "front": "Without Wnt, which complex phosphorylates β-catenin for degradation?",
+      "front": "Without Wnt, which complex phosphorylates β-catenin for degradation? (two words)",
       "back": "Destruction complex (APC, AXIN, GSK3β, CK1)",
       "accept": [
         "destruction complex",
-        "APC complex",
-        "APC/AXIN complex",
+        "β-catenin destruction complex",
         "beta-catenin destruction complex"
       ],
       "tags": [
@@ -481,7 +671,7 @@
     },
     {
       "id": "u5-c27",
-      "front": "Main Wnt receptor family (with LRP5/6 co-receptor)?",
+      "front": "Main Wnt receptor family (with LRP5/6 co-receptor)? (name)",
       "back": "Frizzled",
       "accept": [
         "Frizzled",
@@ -495,7 +685,7 @@
     },
     {
       "id": "u5-c28",
-      "front": "Nuclear TF partners of β-catenin?",
+      "front": "Transcription factors that partner with nuclear β-catenin? (family name)",
       "back": "TCF/LEF",
       "accept": [
         "TCF/LEF",
@@ -511,7 +701,7 @@
     },
     {
       "id": "u5-c29",
-      "front": "Wnt pathway tumor suppressor lost in most colorectal cancers?",
+      "front": "Wnt-pathway tumor suppressor lost in most colorectal cancers? (gene symbol)",
       "back": "APC",
       "accept": [
         "APC"
@@ -524,14 +714,16 @@
     },
     {
       "id": "u5-c30",
-      "front": "Inhibitor protein that holds NF-κB in the cytoplasm?",
-      "back": "IκB (IkappaB)",
+      "front": "Inhibitor protein that holds NF-κB in the cytoplasm? (name)",
+      "back": "IκB (IkappaB; IκBα = NFKBIA)",
       "accept": [
         "IκB",
         "IkB",
         "IkappaB",
         "IκBα",
-        "NFKBIA"
+        "IkBa",
+        "NFKBIA",
+        "I kappa B"
       ],
       "tags": [
         "NFkB"
@@ -540,12 +732,13 @@
     },
     {
       "id": "u5-c31",
-      "front": "Kinase complex (IKKα/β, NEMO) that phosphorylates IκBα?",
+      "front": "Kinase complex (IKKα/β, NEMO) that phosphorylates IκBα? (abbreviation)",
       "back": "IKK complex",
       "accept": [
         "IKK",
         "IKK complex",
-        "IκB kinase"
+        "IκB kinase",
+        "IkB kinase"
       ],
       "tags": [
         "NFkB"
@@ -554,7 +747,7 @@
     },
     {
       "id": "u5-c32",
-      "front": "Proteins phosphorylated by JAKs that dimerize and enter the nucleus?",
+      "front": "Proteins phosphorylated by JAKs that dimerize and enter the nucleus? (abbreviation)",
       "back": "STATs",
       "accept": [
         "STAT",
@@ -568,7 +761,7 @@
     },
     {
       "id": "u5-c33",
-      "front": "Name the JAK family member that isn't called 'JAK'.",
+      "front": "The JAK family member whose name is not 'JAK'? (gene symbol)",
       "back": "TYK2 (others: JAK1, JAK2, JAK3)",
       "accept": [
         "TYK2"
@@ -580,14 +773,14 @@
     },
     {
       "id": "u5-c34",
-      "front": "JAK2 V617F causes which class of disease?",
-      "back": "Myeloproliferative neoplasms (e.g., polycythemia vera)",
+      "front": "JAK2 V617F causes which class of blood cancers? (abbreviation or name)",
+      "back": "Myeloproliferative neoplasms (MPN), e.g., polycythemia vera",
       "accept": [
-        "myeloproliferative neoplasms",
         "MPN",
+        "myeloproliferative neoplasms",
         "myeloproliferative neoplasm",
-        "polycythemia vera",
-        "MPNs"
+        "MPNs",
+        "polycythemia vera"
       ],
       "tags": [
         "JAK-STAT",
@@ -597,7 +790,7 @@
     },
     {
       "id": "u5-c35",
-      "front": "Protein family providing negative feedback on JAK-STAT?",
+      "front": "Protein family providing negative feedback on JAK-STAT? (acronym)",
       "back": "SOCS (suppressors of cytokine signaling)",
       "accept": [
         "SOCS",
@@ -611,12 +804,13 @@
     },
     {
       "id": "u5-c36",
-      "front": "Initiator caspase activated by the apoptosome?",
-      "back": "Caspase-9 (then executioners caspase-3/7)",
+      "front": "Initiator caspase activated by the apoptosome? (caspase-N)",
+      "back": "Caspase-9, which then activates executioners caspase-3/7",
       "accept": [
         "caspase-9",
         "caspase 9",
-        "CASP9"
+        "CASP9",
+        "caspase9"
       ],
       "tags": [
         "apoptosis"
@@ -625,12 +819,13 @@
     },
     {
       "id": "u5-c37",
-      "front": "Initiator caspase of the extrinsic (death receptor) pathway?",
-      "back": "Caspase-8 (via FADD)",
+      "front": "Initiator caspase of the extrinsic (death receptor) pathway? (caspase-N)",
+      "back": "Caspase-8 (recruited via FADD)",
       "accept": [
         "caspase-8",
         "caspase 8",
-        "CASP8"
+        "CASP8",
+        "caspase8"
       ],
       "tags": [
         "apoptosis"
@@ -639,12 +834,11 @@
     },
     {
       "id": "u5-c38",
-      "front": "Name an anti-apoptotic BCL-2 family member other than BCL-2.",
-      "back": "BCL-XL or MCL-1",
+      "front": "Anti-apoptotic BCL-2 family protein encoded by BCL2L1? (protein name)",
+      "back": "BCL-XL",
       "accept": [
         "BCL-XL",
-        "MCL-1",
-        "MCL1",
+        "BCLXL",
         "BCL2L1"
       ],
       "tags": [
@@ -654,8 +848,8 @@
     },
     {
       "id": "u5-c39",
-      "front": "Target of venetoclax?",
-      "back": "BCL-2 (a BH3 mimetic)",
+      "front": "Target of the drug venetoclax? (protein name)",
+      "back": "BCL-2 (venetoclax is a BH3 mimetic)",
       "accept": [
         "BCL-2",
         "BCL2"
@@ -668,14 +862,14 @@
     },
     {
       "id": "u5-c40",
-      "front": "Classic apoptosis marker on a Western blot?",
-      "back": "Cleaved caspase-3 (or cleaved PARP)",
+      "front": "Executioner caspase whose cleaved form is a classic apoptosis marker on Westerns? (caspase-N)",
+      "back": "Caspase-3 (cleaved caspase-3); cleaved PARP is the other classic marker",
       "accept": [
-        "cleaved caspase-3",
-        "cleaved PARP",
-        "cleaved caspase 3",
         "caspase-3",
-        "PARP cleavage"
+        "caspase 3",
+        "CASP3",
+        "caspase3",
+        "cleaved caspase-3"
       ],
       "tags": [
         "apoptosis"
@@ -684,7 +878,7 @@
     },
     {
       "id": "u5-c41",
-      "front": "Which CDK partners with cyclin B in mitosis?",
+      "front": "Which CDK partners with cyclin B to drive mitosis? (gene symbol)",
       "back": "CDK1 (D–CDK4/6, E–CDK2, A–CDK2)",
       "accept": [
         "CDK1",
@@ -697,8 +891,8 @@
     },
     {
       "id": "u5-c42",
-      "front": "Cyclin D–CDK4/6 phosphorylates which brake protein to release E2F?",
-      "back": "RB (RB1)",
+      "front": "Cyclin D–CDK4/6 phosphorylates which brake protein to release E2F? (abbreviation)",
+      "back": "RB (retinoblastoma protein, gene RB1)",
       "accept": [
         "RB",
         "RB1",
@@ -712,12 +906,11 @@
     },
     {
       "id": "u5-c43",
-      "front": "CDK inhibitor family containing p16 (blocks CDK4/6)?",
+      "front": "CDK inhibitor family containing p16 (blocks CDK4/6)? (family name)",
       "back": "INK4 (CIP/KIP = p21, p27)",
       "accept": [
         "INK4",
-        "INK4 family",
-        "CDKN2"
+        "INK4 family"
       ],
       "tags": [
         "cell-cycle"
@@ -726,8 +919,8 @@
     },
     {
       "id": "u5-c44",
-      "front": "Checkpoint that blocks anaphase until all kinetochores attach?",
-      "back": "Spindle assembly checkpoint (MAD2 inhibits APC/C–CDC20)",
+      "front": "Checkpoint that blocks anaphase until all kinetochores attach? (name or acronym)",
+      "back": "Spindle assembly checkpoint (SAC): MAD2 inhibits APC/C–CDC20",
       "accept": [
         "spindle assembly checkpoint",
         "SAC",
@@ -741,12 +934,11 @@
     },
     {
       "id": "u5-c45",
-      "front": "Name a CDK4/6 inhibitor drug.",
-      "back": "Palbociclib, ribociclib, or abemaciclib",
+      "front": "First CDK4/6 inhibitor approved by the FDA (2015)? (drug name)",
+      "back": "Palbociclib (later: ribociclib, abemaciclib)",
       "accept": [
         "palbociclib",
-        "ribociclib",
-        "abemaciclib"
+        "Ibrance"
       ],
       "tags": [
         "cell-cycle",
@@ -756,7 +948,7 @@
     },
     {
       "id": "u5-c46",
-      "front": "Drug for BCR-ABL-driven CML?",
+      "front": "Kinase inhibitor drug for BCR-ABL-driven CML? (drug name)",
       "back": "Imatinib (Philadelphia chromosome t(9;22))",
       "accept": [
         "imatinib",
@@ -771,8 +963,8 @@
     },
     {
       "id": "u5-c47",
-      "front": "HER2-amplified tumor: which gene is amplified?",
-      "back": "ERBB2; treat with anti-HER2 therapy (e.g., trastuzumab)",
+      "front": "A tumor is 'HER2-amplified'. Which gene is amplified? (gene symbol)",
+      "back": "ERBB2; treated with anti-HER2 therapy (e.g., trastuzumab)",
       "accept": [
         "ERBB2"
       ],
@@ -783,14 +975,13 @@
     },
     {
       "id": "u5-c48",
-      "front": "High 'E2F targets' and 'G2M checkpoint' hallmark scores suggest cells are…?",
+      "front": "High 'E2F targets' and 'G2M checkpoint' hallmark scores suggest cells are ___. (one word)",
       "back": "Proliferating (cycling)",
       "accept": [
         "proliferating",
         "proliferative",
         "cycling",
-        "dividing",
-        "highly proliferative"
+        "dividing"
       ],
       "tags": [
         "cell-cycle",
@@ -804,9 +995,8 @@
       "back": "Unlikely: mutant RAS is downstream of EGFR and constitutively active",
       "accept": [
         "no",
-        "unlikely",
         "n",
-        "probably not"
+        "unlikely"
       ],
       "tags": [
         "MAPK",
@@ -816,7 +1006,7 @@
     },
     {
       "id": "u5-c50",
-      "front": "Enzyme that removes phosphate groups from proteins?",
+      "front": "Enzyme that removes phosphate groups from proteins? (one word)",
       "back": "Phosphatase",
       "accept": [
         "phosphatase",
@@ -831,7 +1021,7 @@
     },
     {
       "id": "u5-c51",
-      "front": "A small GTPase is ON when bound to which nucleotide?",
+      "front": "A small GTPase is ON when bound to which nucleotide? (abbreviation)",
       "back": "GTP (OFF when bound to GDP)",
       "accept": [
         "GTP",
@@ -845,7 +1035,7 @@
     },
     {
       "id": "u5-c52",
-      "front": "Protein that switches a GTPase OFF by speeding GTP hydrolysis?",
+      "front": "Protein class that switches a GTPase OFF by speeding GTP hydrolysis? (acronym)",
       "back": "GAP (GTPase-activating protein)",
       "accept": [
         "GAP",
@@ -860,7 +1050,7 @@
     },
     {
       "id": "u5-c53",
-      "front": "Protein signal coordinating immune responses (e.g., interleukins)?",
+      "front": "Protein signal coordinating immune responses, e.g., interleukins? (one word)",
       "back": "Cytokine",
       "accept": [
         "cytokine",
@@ -874,7 +1064,7 @@
     },
     {
       "id": "u5-c54",
-      "front": "Gene whose loss of function drives cancer?",
+      "front": "Gene whose loss of function drives cancer? (two words)",
       "back": "Tumor suppressor",
       "accept": [
         "tumor suppressor",
@@ -890,12 +1080,11 @@
     },
     {
       "id": "u5-c55",
-      "front": "Extra copies of a gene (e.g., HER2 in breast cancer) is called…?",
+      "front": "Extra copies of a gene, e.g., HER2 in breast cancer? (one word)",
       "back": "Amplification",
       "accept": [
         "amplification",
         "gene amplification",
-        "copy number gain",
         "amplified"
       ],
       "tags": [
@@ -906,7 +1095,7 @@
     },
     {
       "id": "u5-c56",
-      "front": "Programmed, orderly cell suicide?",
+      "front": "Programmed, orderly cell suicide? (one word)",
       "back": "Apoptosis",
       "accept": [
         "apoptosis",
@@ -920,7 +1109,7 @@
     },
     {
       "id": "u5-c57",
-      "front": "Proteases that execute apoptosis?",
+      "front": "Protein-cutting enzymes that execute apoptosis? (one word)",
       "back": "Caspases",
       "accept": [
         "caspases",
@@ -934,7 +1123,7 @@
     },
     {
       "id": "u5-c58",
-      "front": "Cell-cycle phase in which DNA is copied?",
+      "front": "Cell-cycle phase in which DNA is copied? (letter)",
       "back": "S phase (synthesis)",
       "accept": [
         "S",
@@ -949,7 +1138,7 @@
     },
     {
       "id": "u5-c59",
-      "front": "Cell-cycle phase in which the cell divides?",
+      "front": "Cell-cycle phase in which the cell divides? (letter)",
       "back": "M phase (mitosis)",
       "accept": [
         "M",
@@ -964,13 +1153,13 @@
     },
     {
       "id": "u5-c60",
-      "front": "Resting, non-dividing cell state?",
+      "front": "Resting, non-dividing cell-cycle state? (letter + number)",
       "back": "G0 (quiescence)",
       "accept": [
         "G0",
+        "G zero",
         "quiescence",
-        "quiescent",
-        "G zero"
+        "quiescent"
       ],
       "tags": [
         "basics",
@@ -980,7 +1169,7 @@
     },
     {
       "id": "u5-c61",
-      "front": "What does CDK stand for?",
+      "front": "What does CDK stand for? (three words)",
       "back": "Cyclin-dependent kinase",
       "accept": [
         "cyclin-dependent kinase",
@@ -994,7 +1183,7 @@
     },
     {
       "id": "u5-c62",
-      "front": "Lab assay detecting a specific protein with antibodies after gel separation?",
+      "front": "Lab assay detecting a specific protein with antibodies after gel separation? (two words)",
       "back": "Western blot",
       "accept": [
         "Western blot",
@@ -1010,16 +1199,58 @@
     },
     {
       "id": "u5-c63",
-      "front": "Not mutated (normal) version of a gene is called…?",
+      "front": "Normal, non-mutated version of a gene? (hyphenated word)",
       "back": "Wild-type (WT)",
       "accept": [
         "wild-type",
         "wild type",
-        "WT",
-        "wildtype"
+        "wildtype",
+        "WT"
       ],
       "tags": [
         "basics"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c64",
+      "front": "mTORC1 substrate that binds and represses the translation factor eIF4E? (abbreviation)",
+      "back": "4E-BP1 (EIF4EBP1)",
+      "accept": [
+        "4E-BP1",
+        "4EBP1",
+        "4E-BP",
+        "EIF4EBP1"
+      ],
+      "tags": [
+        "mTOR"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c65",
+      "front": "Anti-apoptotic BCL-2 family protein named 'myeloid cell leukemia 1'? (protein name)",
+      "back": "MCL-1",
+      "accept": [
+        "MCL-1",
+        "MCL1"
+      ],
+      "tags": [
+        "apoptosis"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c66",
+      "front": "DNA-repair enzyme whose cleavage is a classic apoptosis marker? (acronym)",
+      "back": "PARP (PARP1), cleaved by caspase-3",
+      "accept": [
+        "PARP",
+        "PARP1",
+        "PARP-1"
+      ],
+      "tags": [
+        "apoptosis"
       ],
       "type": "recall"
     }

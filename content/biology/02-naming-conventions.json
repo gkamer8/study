@@ -6,91 +6,206 @@
   "glossary": [
     {
       "term": "Gene symbol",
-      "definition": "the short official name of a gene (e.g. TP53)."
+      "definition": "the short official name of a gene, e.g. TP53.",
+      "accept": [
+        "Gene symbol",
+        "Gene symbols",
+        "symbol"
+      ]
     },
     {
       "term": "Ortholog",
-      "definition": "the \"same\" gene in a different species (human TP53 ↔ mouse Trp53)."
+      "definition": "the corresponding gene in a different species (human TP53 ↔ mouse Trp53).",
+      "accept": [
+        "Ortholog",
+        "Orthologs",
+        "orthologue"
+      ]
     },
     {
       "term": "Paralog",
-      "definition": "a related gene in the same species that arose by duplication (e.g. KRAS, NRAS, HRAS)."
+      "definition": "a related gene in the same species that arose by duplication (e.g. KRAS and NRAS).",
+      "accept": [
+        "Paralog",
+        "Paralogs",
+        "paralogue"
+      ]
     },
     {
       "term": "Gene family",
-      "definition": "a group of related genes, usually named with a shared root plus numbers/letters."
+      "definition": "a group of related genes named with a shared root plus numbers or letters.",
+      "accept": [
+        "Gene family",
+        "Gene families"
+      ]
     },
     {
       "term": "Pseudogene",
-      "definition": "a broken, non-functional copy of a gene."
+      "definition": "a broken, non-functional copy of a gene.",
+      "accept": [
+        "Pseudogene",
+        "Pseudogenes"
+      ]
     },
     {
       "term": "Antisense RNA",
-      "definition": "an RNA transcribed from the opposite strand of another gene."
+      "definition": "an RNA transcribed from the opposite strand of another gene.",
+      "accept": [
+        "Antisense RNA"
+      ]
     },
     {
-      "term": "kDa (kilodalton)",
-      "definition": "unit of molecular mass. An average amino acid is ~110 Da, so a 53 kDa protein has roughly 480 amino acids."
+      "term": "Kilodalton",
+      "definition": "a unit of molecular mass equal to 1,000 Da; an average amino acid is ~0.11 of these.",
+      "accept": [
+        "Kilodalton",
+        "kDa",
+        "Kilodaltons",
+        "kD"
+      ]
     },
     {
-      "term": "Allele",
-      "definition": "(see Unit 1): one version of a locus. In mice, specific engineered versions get named."
+      "term": "Knockout",
+      "definition": "an organism (or cell) in which a gene has been deliberately deleted or disabled.",
+      "accept": [
+        "Knockout",
+        "Knockouts",
+        "KO",
+        "knock-out"
+      ]
     },
     {
-      "term": "Knockout / floxed / Cre",
-      "definition": "mouse-genetics tools. Knockout = gene deleted. Floxed = gene flanked by loxP sites. Cre = the enzyme that cuts between loxP sites."
+      "term": "Floxed",
+      "definition": "describes a gene flanked by loxP sites, so it can be deleted wherever Cre is active.",
+      "accept": [
+        "Floxed",
+        "Floxeds",
+        "flox"
+      ]
+    },
+    {
+      "term": "Cre",
+      "definition": "the recombinase enzyme that deletes DNA lying between two loxP sites.",
+      "accept": [
+        "Cre",
+        "Cres",
+        "Cre recombinase"
+      ]
     },
     {
       "term": "HLA",
-      "definition": "human leukocyte antigen genes, the very variable immune genes that display protein fragments to T cells (the human version of MHC)."
+      "definition": "the highly variable human immune genes that display protein fragments to T cells.",
+      "accept": [
+        "HLA",
+        "human leukocyte antigen",
+        "MHC"
+      ]
     },
     {
-      "term": "Variant / mutation",
-      "definition": "a difference from the reference. \"Mutation\" often implies disease or a somatic (tumor) change; \"variant\" is the neutral term."
+      "term": "Germline",
+      "definition": "describes a variant that is inherited and present in every cell of the body.",
+      "accept": [
+        "Germline",
+        "Germlines",
+        "germ line",
+        "germline variant"
+      ]
     },
     {
-      "term": "Germline / somatic",
-      "definition": "inherited and present in every cell, vs acquired in some cells (e.g. a tumor)."
+      "term": "Somatic",
+      "definition": "describes a variant acquired in some cells during life, e.g. in a tumor.",
+      "accept": [
+        "Somatic",
+        "Somatics",
+        "somatic variant",
+        "somatic mutation"
+      ]
     },
     {
       "term": "Reference sequence",
-      "definition": "the specific stored sequence (a chromosome, mRNA, or protein record) that coordinates are counted against."
+      "definition": "the specific stored sequence record that variant coordinates are counted against.",
+      "accept": [
+        "Reference sequence",
+        "Reference sequences",
+        "RefSeq"
+      ]
     },
     {
       "term": "Accession",
-      "definition": "a database's stable identifier for a record. A **version** suffix (.6) changes when the sequence changes."
+      "definition": "a database's stable identifier for a record.",
+      "accept": [
+        "Accession",
+        "Accessions",
+        "accession number",
+        "accession ID"
+      ]
     },
     {
-      "term": "Assembly / build",
-      "definition": "one released version of a reference genome (e.g. GRCh38; see Unit 6)."
+      "term": "Version",
+      "definition": "the number after the dot in an accession, which increments when the stored sequence changes.",
+      "accept": [
+        "Version",
+        "Versions",
+        "version number",
+        "sequence version"
+      ]
+    },
+    {
+      "term": "Assembly",
+      "definition": "one released edition of a reference genome, e.g. GRCh38.",
+      "accept": [
+        "Assembly",
+        "Assemblies",
+        "genome assembly",
+        "build",
+        "genome build"
+      ]
     },
     {
       "term": "HGVS",
-      "definition": "the standard notation for describing variants."
+      "definition": "the standard notation for describing variants (c., p., g. prefixes).",
+      "accept": [
+        "HGVS"
+      ]
     },
     {
       "term": "rsID",
-      "definition": "a dbSNP identifier for a known variant position."
+      "definition": "a dbSNP identifier for a known variant position.",
+      "accept": [
+        "rsID",
+        "rs number",
+        "rs ID"
+      ]
     },
     {
       "term": "Hotspot",
-      "definition": "a position mutated unusually often in cancer."
+      "definition": "a position mutated unusually often in cancer.",
+      "accept": [
+        "Hotspot",
+        "Hotspots",
+        "hot spot"
+      ]
     },
     {
       "term": "Canonical isoform",
-      "definition": "the transcript or protein version a database treats as the default."
+      "definition": "the transcript or protein version a database treats as the default.",
+      "accept": [
+        "Canonical isoform",
+        "Canonical isoforms",
+        "canonical transcript",
+        "canonical"
+      ]
     }
   ],
-  "lesson": "### Key terms\n\n- **Gene symbol**: the short official name of a gene (e.g. TP53).\n- **Ortholog**: the \"same\" gene in a different species (human TP53 ↔ mouse Trp53).\n- **Paralog**: a related gene in the same species that arose by duplication (e.g. KRAS, NRAS, HRAS).\n- **Gene family**: a group of related genes, usually named with a shared root plus numbers/letters.\n- **Pseudogene**: a broken, non-functional copy of a gene.\n- **Antisense RNA**: an RNA transcribed from the opposite strand of another gene.\n- **kDa (kilodalton)**: unit of molecular mass. An average amino acid is ~110 Da, so a 53 kDa protein has roughly 480 amino acids.\n- **Allele** (see Unit 1): one version of a locus. In mice, specific engineered versions get named.\n- **Knockout / floxed / Cre**: mouse-genetics tools. Knockout = gene deleted. Floxed = gene flanked by loxP sites. Cre = the enzyme that cuts between loxP sites.\n- **HLA**: human leukocyte antigen genes, the very variable immune genes that display protein fragments to T cells (the human version of MHC).\n- **Variant / mutation**: a difference from the reference. \"Mutation\" often implies disease or a somatic (tumor) change; \"variant\" is the neutral term.\n- **Germline / somatic**: inherited and present in every cell, vs acquired in some cells (e.g. a tumor).\n- **Reference sequence**: the specific stored sequence (a chromosome, mRNA, or protein record) that coordinates are counted against.\n- **Accession**: a database's stable identifier for a record. A **version** suffix (.6) changes when the sequence changes.\n- **Assembly / build**: one released version of a reference genome (e.g. GRCh38; see Unit 6).\n- **HGVS**: the standard notation for describing variants.\n- **rsID**: a dbSNP identifier for a known variant position.\n- **Hotspot**: a position mutated unusually often in cancer.\n- **Canonical isoform**: the transcript or protein version a database treats as the default.\n\n## Why naming matters\n\nBiology names one entity many ways. TP53, p53, *Trp53*, P04637, ENSG00000141510, Entrez Gene 7157 and HGNC:11998 all refer to the same human gene, its protein, or its mouse **ortholog** (the corresponding gene in another species). If you can parse names on sight you can join datasets, find the right record, and catch bugs such as mouse symbols in a human analysis or coordinates from the wrong genome version.\n\n## Human gene symbols (HGNC)\n\nThe **HUGO Gene Nomenclature Committee (HGNC)** assigns each human gene one official **symbol**, a stable ID (TP53 = **HGNC:11998**), and a descriptive name (\"tumor protein p53\"). Symbols use only **uppercase letters and digits**, with no Greek letters. The gene for β-catenin is **CTNNB1**; the gene for TGF-β1 is **TGFB1**.\n\nConventions:\n- **Gene in italics, protein in plain (roman) type**. *TP53* is the gene and TP53 (or p53) is its protein. Many papers are sloppy, but careful ones follow this.\n- **Family names with numbers**. A **gene family** is a set of related genes, often created by duplication; members of the same species are **paralogs**. *CYP2D6* = cytochrome P450 family 2, subfamily D, member 6 (a drug-metabolizing enzyme). *SLC2A1* = solute carrier family 2 member 1, the GLUT1 glucose transporter. KRT (keratins), ZNF (zinc fingers), HOX, OR (olfactory receptors) and HLA follow the same pattern.\n- **Placeholder names** for genes found before anyone knew what they do. *C9orf72* = \"chromosome 9 open reading frame 72\" (an ORF, or open reading frame, is a stretch that could encode protein; see Unit 1). *FAM*##A = \"family with sequence similarity\". *LINC*##### = long intergenic non-coding RNA, an RNA gene lying between protein-coding genes.\n- **Suffixes**. **P** + number = **pseudogene**, a broken gene copy (*PTENP1*). **-AS1** = **antisense RNA**, transcribed from the opposite strand of the named gene. **MIR**## = a microRNA gene (*MIR21*); the mature microRNA is written hsa-miR-21-5p (hsa = *Homo sapiens*, 5p = from the 5' arm of its hairpin).\n- **Symbols change**. In 2020 HGNC renamed genes that Excel silently converted to dates: SEPT1 → *SEPTIN1*, MARCH1 → *MARCHF1*. Old datasets still contain old symbols or mangled ones like \"1-Sep\". Map through previous symbols and aliases, or join on stable IDs instead.\n\n**Protein names vs gene symbols.** Many proteins keep historical names. \"p53\" means a protein of ~53 **kDa** (kilodaltons, a mass unit) as it appeared on a gel. Some pairs to memorize: HER2 is the product of *ERBB2*, CD45 of *PTPRC*, Ki-67 of *MKI67*, GLUT1 of *SLC2A1*. One gene can encode more than one protein: *CDKN2A* makes both **p16^INK4a^** and **p14^ARF^**, using different first exons and different reading frames (see Unit 1).\n\n## Other species\n\n- **Mouse and rat**: only the first letter is capitalized, in italics (*Trp53*, *Kras*). Proteins are written in all caps (TRP53). Engineered **alleles** go in superscript. *Kras^LSL-G12D^* has a \"lox-stop-lox\" cassette blocking expression of a G12D mutant until an enzyme called **Cre** removes it. *Trp53^fl/fl^* means both copies are **floxed**: flanked by **loxP** sites, so the gene is deleted only in cells that express Cre. This is how mouse studies delete a gene in one tissue.\n- **Yeast (*S. cerevisiae*)**: a normal (wild-type) gene is three uppercase letters plus a number in italics (*CDC28*). Lowercase (*cdc28*) is a recessive mutant allele. The protein is Cdc28 or Cdc28p. Systematic names encode location: **YFL039C** (*ACT1*) = Yeast, chromosome F (the 6th), Left arm, ORF 039, on the Crick strand (C; W = Watson; these are just yeast's names for the two DNA strands).\n- **Zebrafish**: all lowercase italic (*tp53*). **Fruit fly (*Drosophila*)**: names often come from the mutant's appearance (*white*, *hedgehog*).\n\n## Immune genes: HLA alleles\n\n**HLA** genes encode proteins that display fragments of proteins to immune T cells. They are the most variable genes in the human genome, so they have their own allele naming. **HLA-DRB1\\*15:01** reads: gene *HLA-DRB1*, then `*`, then **field 1 = allele group** (15), then **field 2 = the specific protein** (01). Optional field 3 records silent DNA differences inside the coding region, and field 4 records differences outside it (in introns or UTRs). A trailing N means a \"null\" allele that isn't expressed. \"Two-field\" (or \"four-digit\") typing means protein-level resolution.\n\n## Variant notation\n\nSome definitions first. A **variant** is any difference from the reference sequence. **Germline** variants are inherited and present in every cell; **somatic** variants arise in some cells, such as a tumor. A **hotspot** is a position mutated far more often than chance in cancer.\n\n**rsIDs** (rs1042522) come from **dbSNP**, NCBI's variant catalog. An rsID names a *position plus the alleles seen there*, not one specific change, and it isn't tied to a genome version.\n\n**HGVS** notation describes a change relative to a named **reference sequence**, which is a database record with an **accession** (a stable ID) and a **version** (the number after the dot, which increments when the sequence changes):\n\n- `NM_000546.6:c.215C>G`: a **c.** (coding DNA) position on mRNA record NM_000546 version 6. **c.1 is the A of the ATG start codon.** c.-14 is 14 bases before it (in the 5' UTR); c.\\*20 is 20 bases after the stop codon (in the 3' UTR). Intronic positions count from the nearest exon: c.88+1G>T is the first intron base after coding position 88, and c.89-2 is two bases before c.89.\n- `NP_000537.3:p.Pro72Arg` (short form `p.P72R`): a **p.** (protein) change, proline to arginine at amino acid 72. Parentheses, as in `p.(Pro72Arg)`, mean predicted rather than measured. `p.Arg196Ter` or `p.Arg196*` = nonsense (Arg becomes stop). `p.Arg213ProfsTer8` = frameshift: Arg213 becomes Pro and the new frame hits a stop 8 codons later.\n- `NC_000017.11:g.7676154G>C`: a **g.** (genomic) position on a chromosome record. The version (.11) pins the genome build.\n- Also `n.` (non-coding RNA), `m.` (mitochondrial DNA, e.g. m.3243A>G), and `r.` (RNA).\n- Indels: `c.5266dupC` (duplication), `c.68_69delAG` (deletion), `delins` (deletion-insertion).\n\nThose three examples are one variant written three ways: TP53 c.215C>G = p.Pro72Arg = rs1042522, a common harmless polymorphism. The genomic change reads G>C rather than C>G because TP53 lies on the minus strand. Cancer hotspots are usually quoted at the protein level: **BRAF V600E** (c.1799T>A), **KRAS G12D** (c.35G>A), **EGFR L858R**.\n\n## Identifier formats you must recognize\n\nThe databases themselves are covered in Unit 3; here is how to recognize their IDs.\n\n| Pattern | Source | Meaning |\n|---|---|---|\n| ENSG00000141510 | Ensembl | gene (ENST = transcript, ENSP = protein, ENSMUSG = mouse gene). A `.N` suffix is the version |\n| NM_000546.6 | RefSeq (NCBI) | curated mRNA. NR_ = curated non-coding RNA; XM_/XR_ = computationally predicted |\n| NP_000537.3 | RefSeq | curated protein (XP_ = predicted) |\n| NC_000017.11 | RefSeq | complete chromosome 17 (.11 = GRCh38, .10 = GRCh37). NG_ = a genomic region |\n| P04637, A0A024R1R8 | UniProt | protein accession, 6 or 10 characters. P53_HUMAN is the human-readable entry *name* |\n| P04637-2 | UniProt | isoform 2 of that protein |\n| 7157 | NCBI Gene (Entrez) | numeric gene ID |\n| HGNC:11998 | HGNC | gene ID |\n| 1TUP | PDB | experimental 3D structure: 4 characters, first is a digit |\n| AF-P04637-F1 | AlphaFold DB | predicted structure for UniProt P04637, fragment 1 |\n| rs1042522 | dbSNP | variant |\n| 191170 | OMIM | 6-digit entry number for a gene or genetic disease |\n\nWithin UniProt, **Swiss-Prot** entries are reviewed by curators and **TrEMBL** entries are automatic and unreviewed (the vast majority). **UniRef50/90/100** cluster all UniProt sequences at 50/90/100% identity and are the usual training sets for protein language models.\n\n## How you'll see this in a paper\n\n- \"Ensembl IDs were mapped to HGNC symbols with biomaRt\": joining annotation sources, usually after stripping version suffixes.\n- \"MARCH1\" or \"1-Mar\" in a supplementary table: a pre-2020 or Excel-mangled gene list.\n- \"R175H\", \"R248Q\", \"R273H\": TP53 hotspot missense mutations in one-letter protein shorthand.\n- \"Trained on UniRef50 (release 2021_03)\": UniProt clustered at 50% identity.\n- \"NM_000059.4:c.5946delT\": a BRCA2 frameshift on a specific transcript version. Exon numbering can change between versions, so the version matters.\n",
+  "lesson": "### Key terms\n\n- **Gene symbol**: the short official name of a gene, e.g. TP53.\n- **Ortholog**: the corresponding gene in a different species (human TP53 ↔ mouse Trp53).\n- **Paralog**: a related gene in the same species that arose by duplication (e.g. KRAS and NRAS).\n- **Gene family**: a group of related genes named with a shared root plus numbers or letters.\n- **Pseudogene**: a broken, non-functional copy of a gene.\n- **Antisense RNA**: an RNA transcribed from the opposite strand of another gene.\n- **Kilodalton (kDa)**: a unit of molecular mass equal to 1,000 Da; an average amino acid is ~0.11 of these.\n- **Knockout**: an organism (or cell) in which a gene has been deliberately deleted or disabled.\n- **Floxed**: describes a gene flanked by loxP sites, so it can be deleted wherever Cre is active.\n- **Cre**: the recombinase enzyme that deletes DNA lying between two loxP sites.\n- **HLA**: the highly variable human immune genes that display protein fragments to T cells.\n- **Germline**: describes a variant that is inherited and present in every cell of the body.\n- **Somatic**: describes a variant acquired in some cells during life, e.g. in a tumor.\n- **Reference sequence**: the specific stored sequence record that variant coordinates are counted against.\n- **Accession**: a database's stable identifier for a record.\n- **Version**: the number after the dot in an accession, which increments when the stored sequence changes.\n- **Assembly**: one released edition of a reference genome, e.g. GRCh38.\n- **HGVS**: the standard notation for describing variants (c., p., g. prefixes).\n- **rsID**: a dbSNP identifier for a known variant position.\n- **Hotspot**: a position mutated unusually often in cancer.\n- **Canonical isoform**: the transcript or protein version a database treats as the default.\n\n## Why naming matters\n\nBiology names one entity many ways. TP53, p53, *Trp53*, P04637, ENSG00000141510, Entrez Gene 7157 and HGNC:11998 all refer to the same human gene, its protein, or its mouse **ortholog** (the corresponding gene in another species). If you can parse names on sight you can join datasets, find the right record, and catch bugs such as mouse symbols in a human analysis or coordinates from the wrong genome version.\n\n## Human gene symbols (HGNC)\n\nThe **HUGO Gene Nomenclature Committee (HGNC)** assigns each human gene one official **symbol**, a stable ID (TP53 = **HGNC:11998**), and a descriptive name (\"tumor protein p53\"). Symbols use only **uppercase letters and digits**, with no Greek letters. The gene for β-catenin is **CTNNB1**; the gene for TGF-β1 is **TGFB1**.\n\nConventions:\n- **Gene in italics, protein in plain (roman) type**. *TP53* is the gene and TP53 (or p53) is its protein. Many papers are sloppy, but careful ones follow this.\n- **Family names with numbers**. A **gene family** is a set of related genes, often created by duplication; members of the same species are **paralogs**. *CYP2D6* = cytochrome P450 family 2, subfamily D, member 6 (a drug-metabolizing enzyme). *SLC2A1* = solute carrier family 2 member 1, the GLUT1 glucose transporter. KRT (keratins), ZNF (zinc fingers), HOX, OR (olfactory receptors) and HLA follow the same pattern.\n- **Placeholder names** for genes found before anyone knew what they do. *C9orf72* = \"chromosome 9 open reading frame 72\" (an ORF, or open reading frame, is a stretch that could encode protein; see Unit 1). *FAM*##A = \"family with sequence similarity\". *LINC*##### = long intergenic non-coding RNA, an RNA gene lying between protein-coding genes.\n- **Suffixes**. **P** + number = **pseudogene**, a broken gene copy (*PTENP1*). **-AS1** = **antisense RNA**, transcribed from the opposite strand of the named gene. **MIR**## = a microRNA gene (*MIR21*); the mature microRNA is written hsa-miR-21-5p (hsa = *Homo sapiens*, 5p = from the 5' arm of its hairpin).\n- **Symbols change**. In 2020 HGNC renamed genes that Excel silently converted to dates: SEPT1 → *SEPTIN1*, MARCH1 → *MARCHF1*. Old datasets still contain old symbols or mangled ones like \"1-Sep\". Map through previous symbols and aliases, or join on stable IDs instead.\n\n**Protein names vs gene symbols.** Many proteins keep historical names. \"p53\" means a protein of ~53 **kDa** (kilodaltons, a mass unit) as it appeared on a gel. Some pairs to memorize: HER2 is the product of *ERBB2*, CD45 of *PTPRC*, Ki-67 of *MKI67*, GLUT1 of *SLC2A1*. One gene can encode more than one protein: *CDKN2A* makes both **p16^INK4a^** and **p14^ARF^**, using different first exons and different reading frames (see Unit 1).\n\n## Other species\n\n- **Mouse and rat**: only the first letter is capitalized, in italics (*Trp53*, *Kras*). Proteins are written in all caps (TRP53). Engineered **alleles** go in superscript. *Kras^LSL-G12D^* has a \"lox-stop-lox\" cassette blocking expression of a G12D mutant until an enzyme called **Cre** removes it. *Trp53^fl/fl^* means both copies are **floxed**: flanked by **loxP** sites, so the gene is deleted only in cells that express Cre. This is how mouse studies delete a gene in one tissue.\n- **Yeast (*S. cerevisiae*)**: a normal (wild-type) gene is three uppercase letters plus a number in italics (*CDC28*). Lowercase (*cdc28*) is a recessive mutant allele. The protein is Cdc28 or Cdc28p. Systematic names encode location: **YFL039C** (*ACT1*) = Yeast, chromosome F (the 6th), Left arm, ORF 039, on the Crick strand (C; W = Watson; these are just yeast's names for the two DNA strands).\n- **Zebrafish**: all lowercase italic (*tp53*). **Fruit fly (*Drosophila*)**: names often come from the mutant's appearance (*white*, *hedgehog*).\n\n## Immune genes: HLA alleles\n\n**HLA** genes encode proteins that display fragments of proteins to immune T cells. They are the most variable genes in the human genome, so they have their own allele naming. **HLA-DRB1\\*15:01** reads: gene *HLA-DRB1*, then `*`, then **field 1 = allele group** (15), then **field 2 = the specific protein** (01). Optional field 3 records silent DNA differences inside the coding region, and field 4 records differences outside it (in introns or UTRs). A trailing N means a \"null\" allele that isn't expressed. \"Two-field\" (or \"four-digit\") typing means protein-level resolution.\n\n## Variant notation\n\nSome definitions first. A **variant** is any difference from the reference sequence. **Germline** variants are inherited and present in every cell; **somatic** variants arise in some cells, such as a tumor. A **hotspot** is a position mutated far more often than chance in cancer.\n\n**rsIDs** (rs1042522) come from **dbSNP**, NCBI's variant catalog. An rsID names a *position plus the alleles seen there*, not one specific change, and it isn't tied to a genome version.\n\n**HGVS** notation describes a change relative to a named **reference sequence**, which is a database record with an **accession** (a stable ID) and a **version** (the number after the dot, which increments when the sequence changes):\n\n- `NM_000546.6:c.215C>G`: a **c.** (coding DNA) position on mRNA record NM_000546 version 6. **c.1 is the A of the ATG start codon.** c.-14 is 14 bases before it (in the 5' UTR); c.\\*20 is 20 bases after the stop codon (in the 3' UTR). Intronic positions count from the nearest exon: c.88+1G>T is the first intron base after coding position 88, and c.89-2 is two bases before c.89.\n- `NP_000537.3:p.Pro72Arg` (short form `p.P72R`): a **p.** (protein) change, proline to arginine at amino acid 72. Parentheses, as in `p.(Pro72Arg)`, mean predicted rather than measured. `p.Arg196Ter` or `p.Arg196*` = nonsense (Arg becomes stop). `p.Arg213ProfsTer8` = frameshift: Arg213 becomes Pro and the new frame hits a stop 8 codons later.\n- `NC_000017.11:g.7676154G>C`: a **g.** (genomic) position on a chromosome record. The version (.11) pins the genome build.\n- Also `n.` (non-coding RNA), `m.` (mitochondrial DNA, e.g. m.3243A>G), and `r.` (RNA).\n- Indels: `c.5266dupC` (duplication), `c.68_69delAG` (deletion), `delins` (deletion-insertion).\n\nThose three examples are one variant written three ways: TP53 c.215C>G = p.Pro72Arg = rs1042522, a common harmless polymorphism. The genomic change reads G>C rather than C>G because TP53 lies on the minus strand. Cancer hotspots are usually quoted at the protein level: **BRAF V600E** (c.1799T>A), **KRAS G12D** (c.35G>A), **EGFR L858R**.\n\n## Identifier formats you must recognize\n\nThe databases themselves are covered in Unit 3; here is how to recognize their IDs.\n\n| Pattern | Source | Meaning |\n|---|---|---|\n| ENSG00000141510 | Ensembl | gene (ENST = transcript, ENSP = protein, ENSMUSG = mouse gene). A `.N` suffix is the version |\n| NM_000546.6 | RefSeq (NCBI) | curated mRNA. NR_ = curated non-coding RNA; XM_/XR_ = computationally predicted |\n| NP_000537.3 | RefSeq | curated protein (XP_ = predicted) |\n| NC_000017.11 | RefSeq | complete chromosome 17 (.11 = GRCh38, .10 = GRCh37). NG_ = a genomic region |\n| P04637, A0A024R1R8 | UniProt | protein accession, 6 or 10 characters. P53_HUMAN is the human-readable entry *name* |\n| P04637-2 | UniProt | isoform 2 of that protein |\n| 7157 | NCBI Gene (Entrez) | numeric gene ID |\n| HGNC:11998 | HGNC | gene ID |\n| 1TUP | PDB | experimental 3D structure: 4 characters, first is a digit |\n| AF-P04637-F1 | AlphaFold DB | predicted structure for UniProt P04637, fragment 1 |\n| rs1042522 | dbSNP | variant |\n| 191170 | OMIM | 6-digit entry number for a gene or genetic disease |\n\nWithin UniProt, **Swiss-Prot** entries are reviewed by curators and **TrEMBL** entries are automatic and unreviewed (the vast majority). **UniRef50/90/100** cluster all UniProt sequences at 50/90/100% identity and are the usual training sets for protein language models.\n\n## How you'll see this in a paper\n\n- \"Ensembl IDs were mapped to HGNC symbols with biomaRt\": joining annotation sources, usually after stripping version suffixes.\n- \"MARCH1\" or \"1-Mar\" in a supplementary table: a pre-2020 or Excel-mangled gene list.\n- \"R175H\", \"R248Q\", \"R273H\": TP53 hotspot missense mutations in one-letter protein shorthand.\n- \"Trained on UniRef50 (release 2021_03)\": UniProt clustered at 50% identity.\n- \"NM_000059.4:c.5946delT\": a BRCA2 frameshift on a specific transcript version. Exon numbering can change between versions, so the version matters.\n",
   "cards": [
     {
       "id": "u2-c01",
-      "front": "Which committee approves human gene symbols (acronym)?",
+      "front": "Committee that approves human gene symbols? (acronym)",
       "back": "HGNC (HUGO Gene Nomenclature Committee)",
       "accept": [
         "HGNC",
-        "HUGO Gene Nomenclature Committee",
-        "HUGO"
+        "HUGO Gene Nomenclature Committee"
       ],
       "tags": [
         "HGNC"
@@ -99,8 +214,8 @@
     },
     {
       "id": "u2-c02",
-      "front": "Correct HGNC symbol for the β-catenin gene?",
-      "back": "CTNNB1. HGNC symbols are uppercase letters + digits, no Greek letters",
+      "front": "Official HGNC symbol for the β-catenin gene? (gene symbol)",
+      "back": "CTNNB1. HGNC symbols use uppercase letters + digits, no Greek letters",
       "accept": [
         "CTNNB1"
       ],
@@ -111,8 +226,8 @@
     },
     {
       "id": "u2-c03",
-      "front": "Gene names are typeset in ___; protein names in roman.",
-      "back": "Italics (TP53 gene in italics, TP53/p53 protein in roman)",
+      "front": "Gene names are typeset in which style (protein names are roman)? (one word)",
+      "back": "Italics: TP53 gene in italics, TP53/p53 protein in roman",
       "accept": [
         "italics",
         "italic",
@@ -125,11 +240,10 @@
     },
     {
       "id": "u2-c04",
-      "front": "HGNC:11998 is the ID for which gene?",
+      "front": "HGNC:11998 is the ID of which gene? (gene symbol)",
       "back": "TP53",
       "accept": [
-        "TP53",
-        "p53"
+        "TP53"
       ],
       "tags": [
         "HGNC",
@@ -139,16 +253,13 @@
     },
     {
       "id": "u2-c05",
-      "front": "What does the 53 in p53 refer to?",
-      "back": "Apparent molecular mass of ~53 kDa on a gel",
+      "front": "The '53' in p53 is its apparent molecular mass in which unit? (abbreviation)",
+      "back": "kDa (kilodaltons), as it ran on an SDS-PAGE gel",
       "accept": [
-        "53 kDa",
-        "molecular weight",
-        "mass",
         "kDa",
-        "53 kilodaltons",
-        "apparent molecular weight",
-        "size"
+        "kilodaltons",
+        "kilodalton",
+        "kD"
       ],
       "tags": [
         "protein-names"
@@ -157,13 +268,11 @@
     },
     {
       "id": "u2-c06",
-      "front": "In CYP2D6, what is the '6'?",
-      "back": "Member 6 (cytochrome P450, family 2, subfamily D, member 6)",
+      "front": "In CYP2D6 (cytochrome P450, family 2, subfamily D, …6), what is the '6'? (one word)",
+      "back": "Member: CYP2D6 is member 6 of subfamily D",
       "accept": [
         "member",
-        "member 6",
-        "family member",
-        "the member number"
+        "member 6"
       ],
       "tags": [
         "families"
@@ -172,8 +281,8 @@
     },
     {
       "id": "u2-c07",
-      "front": "SLC2A1 is better known as?",
-      "back": "GLUT1 glucose transporter (solute carrier family 2 member 1)",
+      "front": "SLC2A1 encodes which glucose transporter? (protein name)",
+      "back": "GLUT1 (solute carrier family 2 member 1)",
       "accept": [
         "GLUT1",
         "GLUT-1",
@@ -187,12 +296,10 @@
     },
     {
       "id": "u2-c08",
-      "front": "Expand 'orf' in C9orf72.",
-      "back": "Open reading frame: placeholder name, 'chromosome 9 open reading frame 72'",
+      "front": "What does 'orf' stand for in C9orf72? (three words)",
+      "back": "Open reading frame: placeholder name 'chromosome 9 open reading frame 72'",
       "accept": [
-        "open reading frame",
-        "chromosome 9 open reading frame",
-        "chromosome 9 open reading frame 72"
+        "open reading frame"
       ],
       "tags": [
         "placeholders"
@@ -201,11 +308,10 @@
     },
     {
       "id": "u2-c09",
-      "front": "Gene symbol suffix 'P1' (e.g., PTENP1) means…?",
-      "back": "Pseudogene 1 of PTEN",
+      "front": "The gene-symbol suffix 'P1' (e.g., PTENP1) marks what kind of gene? (one word)",
+      "back": "Pseudogene (PTENP1 = PTEN pseudogene 1)",
       "accept": [
-        "pseudogene",
-        "pseudogene 1"
+        "pseudogene"
       ],
       "tags": [
         "suffixes"
@@ -214,12 +320,11 @@
     },
     {
       "id": "u2-c10",
-      "front": "Gene symbol suffix '-AS1' means…?",
-      "back": "Antisense RNA 1 (non-coding transcript from the opposite strand of the named gene)",
+      "front": "The gene-symbol suffix '-AS1' marks what kind of RNA? (two words)",
+      "back": "Antisense RNA: non-coding, transcribed from the opposite strand of the named gene",
       "accept": [
         "antisense RNA",
         "antisense",
-        "antisense RNA 1",
         "antisense transcript"
       ],
       "tags": [
@@ -229,13 +334,13 @@
     },
     {
       "id": "u2-c11",
-      "front": "LINC01234-style symbols denote…?",
-      "back": "Long intergenic non-protein-coding RNA",
+      "front": "LINC01234-style symbols denote which RNA class? (abbreviation)",
+      "back": "lincRNA: long intergenic non-protein-coding RNA (a kind of lncRNA)",
       "accept": [
         "lincRNA",
+        "lncRNA",
         "long intergenic non-coding RNA",
         "long intergenic noncoding RNA",
-        "lncRNA",
         "long intergenic non-protein coding RNA"
       ],
       "tags": [
@@ -245,13 +350,12 @@
     },
     {
       "id": "u2-c12",
-      "front": "MIR21 is a gene; what is hsa-miR-21-5p?",
-      "back": "The mature human microRNA from the 5' arm of the MIR21 hairpin",
+      "front": "hsa-miR-21-5p is a mature ___. (RNA class, one word)",
+      "back": "microRNA (miRNA), from the 5' arm of the MIR21 hairpin; hsa = Homo sapiens",
       "accept": [
-        "mature miRNA",
-        "mature microRNA",
         "microRNA",
-        "miRNA"
+        "miRNA",
+        "miR"
       ],
       "tags": [
         "suffixes"
@@ -260,13 +364,11 @@
     },
     {
       "id": "u2-c13",
-      "front": "Why were SEPT1 and MARCH1 renamed in 2020? (software)",
-      "back": "Excel auto-converted them to dates; now SEPTIN1 and MARCHF1",
+      "front": "Which software's auto-conversion led HGNC to rename SEPT1 and MARCH1 in 2020? (software name)",
+      "back": "Excel (now SEPTIN1 and MARCHF1)",
       "accept": [
         "Excel",
-        "spreadsheets",
-        "Microsoft Excel",
-        "date conversion"
+        "Microsoft Excel"
       ],
       "tags": [
         "HGNC",
@@ -276,11 +378,10 @@
     },
     {
       "id": "u2-c14",
-      "front": "'1-Mar' appears in a gene list. Which current HGNC symbol was mangled?",
+      "front": "'1-Mar' appears in a gene list. Which CURRENT gene symbol was mangled? (gene symbol)",
       "back": "MARCHF1 (formerly MARCH1), converted to a date by Excel",
       "accept": [
-        "MARCHF1",
-        "MARCH1"
+        "MARCHF1"
       ],
       "tags": [
         "data-hygiene"
@@ -289,7 +390,7 @@
     },
     {
       "id": "u2-c15",
-      "front": "HER2 protein is encoded by which gene?",
+      "front": "HER2 protein is encoded by which gene? (gene symbol)",
       "back": "ERBB2",
       "accept": [
         "ERBB2"
@@ -301,7 +402,7 @@
     },
     {
       "id": "u2-c16",
-      "front": "CD45 is encoded by which gene?",
+      "front": "CD45 is encoded by which gene? (gene symbol)",
       "back": "PTPRC",
       "accept": [
         "PTPRC"
@@ -313,7 +414,7 @@
     },
     {
       "id": "u2-c17",
-      "front": "Ki-67's gene symbol?",
+      "front": "Ki-67 is encoded by which gene? (gene symbol)",
       "back": "MKI67",
       "accept": [
         "MKI67"
@@ -325,7 +426,7 @@
     },
     {
       "id": "u2-c18",
-      "front": "Which gene encodes both p16INK4a and p14ARF?",
+      "front": "Which single gene encodes both p16INK4a and p14ARF? (gene symbol)",
       "back": "CDKN2A (alternative first exons, different reading frames)",
       "accept": [
         "CDKN2A"
@@ -337,8 +438,8 @@
     },
     {
       "id": "u2-c19",
-      "front": "Mouse ortholog symbol of human TP53?",
-      "back": "Trp53 (mouse style: first letter capital, italic; protein TRP53)",
+      "front": "Mouse ortholog of human TP53? (mouse gene symbol)",
+      "back": "Trp53 (mouse style: first letter capital; protein TRP53)",
       "accept": [
         "Trp53"
       ],
@@ -349,11 +450,11 @@
     },
     {
       "id": "u2-c20",
-      "front": "In Kras^LSL-G12D^, what does LSL stand for?",
-      "back": "Lox-Stop-Lox: Cre removes the stop cassette to express KRAS G12D",
+      "front": "In Kras^LSL-G12D^, what does LSL stand for? (three words)",
+      "back": "Lox-Stop-Lox: Cre removes the stop cassette so KRAS G12D is expressed",
       "accept": [
         "lox-stop-lox",
-        "Lox Stop Lox",
+        "lox stop lox",
         "loxP-stop-loxP"
       ],
       "tags": [
@@ -364,8 +465,8 @@
     },
     {
       "id": "u2-c21",
-      "front": "'fl/fl' on a mouse gene means homozygous ___.",
-      "back": "Floxed: both alleles flanked by loxP sites, deleted where Cre is expressed",
+      "front": "'fl/fl' on a mouse gene means both alleles are ___. (one word)",
+      "back": "Floxed: flanked by loxP sites, deleted wherever Cre is expressed",
       "accept": [
         "floxed",
         "flox",
@@ -378,13 +479,14 @@
     },
     {
       "id": "u2-c22",
-      "front": "Yeast: is 'cdc28' (lowercase) the wild-type gene, mutant allele, or protein?",
-      "back": "Recessive mutant allele (CDC28 = wild-type gene; Cdc28/Cdc28p = protein)",
+      "front": "Yeast: lowercase 'cdc28' denotes the wild-type gene, a mutant allele, or the protein? (two words)",
+      "back": "A recessive mutant allele (CDC28 = wild-type gene; Cdc28/Cdc28p = protein)",
       "accept": [
-        "mutant",
         "mutant allele",
+        "mutant",
         "recessive mutant",
-        "recessive mutant allele"
+        "recessive mutant allele",
+        "recessive allele"
       ],
       "tags": [
         "species"
@@ -393,8 +495,8 @@
     },
     {
       "id": "u2-c23",
-      "front": "Which chromosome is 'F' in yeast systematic name YFL039C?",
-      "back": "Chromosome VI (6th). Y=yeast, L=left arm, 039=ORF, C=Crick strand; this is ACT1",
+      "front": "Which chromosome is 'F' in yeast systematic name YFL039C? (number)",
+      "back": "Chromosome 6 (VI). Y = yeast, L = left arm, 039 = ORF, C = Crick strand; this is ACT1",
       "accept": [
         "6",
         "VI",
@@ -409,7 +511,7 @@
     },
     {
       "id": "u2-c24",
-      "front": "Zebrafish gene symbol style for p53?",
+      "front": "Zebrafish ortholog symbol for p53? (gene symbol)",
       "back": "tp53 (all lowercase italic)",
       "accept": [
         "tp53"
@@ -421,14 +523,12 @@
     },
     {
       "id": "u2-c25",
-      "front": "In HLA-DRB1*15:01, what is '15'?",
-      "back": "Allele group (field 1); 01 = specific protein (field 2)",
+      "front": "In HLA-DRB1*15:01, what does '15' denote? (two words)",
+      "back": "Allele group (field 1); '01' = the specific protein (field 2)",
       "accept": [
         "allele group",
         "allele family",
-        "group",
-        "field 1",
-        "serological group"
+        "field 1"
       ],
       "tags": [
         "HLA"
@@ -437,13 +537,11 @@
     },
     {
       "id": "u2-c26",
-      "front": "HLA field 3 encodes what kind of difference?",
-      "back": "Synonymous (silent) coding differences (field 4: non-coding differences)",
+      "front": "HLA allele field 3 records what kind of coding difference? (one word)",
+      "back": "Synonymous (silent) differences; field 4 records non-coding differences",
       "accept": [
         "synonymous",
-        "silent",
-        "synonymous coding",
-        "synonymous substitutions"
+        "silent"
       ],
       "tags": [
         "HLA"
@@ -452,7 +550,7 @@
     },
     {
       "id": "u2-c27",
-      "front": "Which database issues rsIDs?",
+      "front": "Which database issues rsIDs? (database name)",
       "back": "dbSNP. An rsID names a variant position plus its known alleles, independent of assembly",
       "accept": [
         "dbSNP",
@@ -465,8 +563,8 @@
     },
     {
       "id": "u2-c28",
-      "front": "HGVS prefix for a protein-level change?",
-      "back": "p. (c. coding DNA, g. genomic, n. non-coding RNA, m. mitochondrial)",
+      "front": "HGVS prefix for a protein-level change? (prefix)",
+      "back": "p. (c. = coding DNA, g. = genomic, n. = non-coding RNA, m. = mitochondrial)",
       "accept": [
         "p.",
         "p"
@@ -478,14 +576,13 @@
     },
     {
       "id": "u2-c29",
-      "front": "In HGVS c. numbering, c.1 is the A of which codon?",
-      "back": "The ATG start codon",
+      "front": "In HGVS c. numbering, c.1 is the A of the start or stop codon? (one word)",
+      "back": "Start (the A of ATG)",
       "accept": [
-        "ATG",
+        "start",
         "start codon",
-        "the start codon",
-        "AUG",
-        "start"
+        "ATG",
+        "AUG"
       ],
       "tags": [
         "HGVS"
@@ -494,13 +591,14 @@
     },
     {
       "id": "u2-c30",
-      "front": "Is c.*20 in the 5' UTR or 3' UTR?",
-      "back": "3' UTR (20 nt after the stop). c.-14 would be 5' UTR",
+      "front": "Is c.*20 in the 5' UTR or the 3' UTR? (5' or 3')",
+      "back": "3' UTR: 20 nt after the stop codon. c.-14 would be in the 5' UTR",
       "accept": [
+        "3'",
         "3' UTR",
         "3'UTR",
-        "3 prime UTR",
-        "3UTR"
+        "3 prime",
+        "3"
       ],
       "tags": [
         "HGVS"
@@ -509,13 +607,11 @@
     },
     {
       "id": "u2-c31",
-      "front": "c.88+1G>T: exon or intron?",
+      "front": "c.88+1G>T: exon or intron? (one word)",
       "back": "Intron: first base after coding position 88 (canonical splice donor)",
       "accept": [
         "intron",
-        "intronic",
-        "splice donor",
-        "splice site"
+        "intronic"
       ],
       "tags": [
         "HGVS"
@@ -524,13 +620,11 @@
     },
     {
       "id": "u2-c32",
-      "front": "Parentheses in p.(Arg248Gln) mean the change is…?",
-      "back": "Predicted, not experimentally confirmed",
+      "front": "Parentheses in p.(Arg248Gln) mean the change is ___. (one word)",
+      "back": "Predicted (not experimentally confirmed)",
       "accept": [
         "predicted",
-        "inferred",
-        "not confirmed",
-        "predicted only"
+        "inferred"
       ],
       "tags": [
         "HGVS"
@@ -539,13 +633,13 @@
     },
     {
       "id": "u2-c33",
-      "front": "Consequence class of p.Arg213ProfsTer8?",
-      "back": "Frameshift (Arg213→Pro, stop 8 codons later)",
+      "front": "Consequence class of p.Arg213ProfsTer8? (one word)",
+      "back": "Frameshift (Arg213→Pro, new frame hits a stop 8 codons later)",
       "accept": [
         "frameshift",
         "frame shift",
-        "fs",
-        "frame-shift"
+        "frame-shift",
+        "fs"
       ],
       "tags": [
         "HGVS"
@@ -554,12 +648,12 @@
     },
     {
       "id": "u2-c34",
-      "front": "Consequence class of p.Arg196Ter (p.Arg196*)?",
+      "front": "Consequence class of p.Arg196Ter (p.Arg196*)? (one word)",
       "back": "Nonsense (Arg196 replaced by a stop codon)",
       "accept": [
         "nonsense",
-        "stop gained",
         "stop-gained",
+        "stop gained",
         "stop gain"
       ],
       "tags": [
@@ -569,12 +663,11 @@
     },
     {
       "id": "u2-c35",
-      "front": "BRAF V600E coding DNA change?",
-      "back": "c.1799T>A (p.Val600Glu)",
+      "front": "BRAF V600E (c.____T>A): coding DNA position? (number)",
+      "back": "1799: c.1799T>A, p.Val600Glu",
       "accept": [
-        "c.1799T>A",
-        "1799T>A",
-        "c.1799 T>A"
+        "1799",
+        "c.1799"
       ],
       "tags": [
         "HGVS",
@@ -584,11 +677,10 @@
     },
     {
       "id": "u2-c36",
-      "front": "ENST prefix = Ensembl ___ ID",
-      "back": "Transcript (ENSG gene, ENSP protein)",
+      "front": "An Ensembl ENST ID identifies a ___. (one word)",
+      "back": "Transcript (ENSG = gene, ENSP = protein)",
       "accept": [
-        "transcript",
-        "transcript ID"
+        "transcript"
       ],
       "tags": [
         "identifiers",
@@ -598,13 +690,11 @@
     },
     {
       "id": "u2-c37",
-      "front": "ENSMUSG prefix denotes…?",
-      "back": "Ensembl mouse gene ID",
+      "front": "Ensembl prefix ENSMUSG identifies a gene from which species? (common name)",
+      "back": "Mouse (ENSMUSG = Ensembl mouse gene)",
       "accept": [
-        "mouse gene",
-        "Ensembl mouse gene",
-        "mouse gene ID",
-        "mouse"
+        "mouse",
+        "Mus musculus"
       ],
       "tags": [
         "identifiers",
@@ -614,14 +704,12 @@
     },
     {
       "id": "u2-c38",
-      "front": "RefSeq XM_ vs NM_: what does X signify?",
-      "back": "Predicted (computational) record; NM_ is curated",
+      "front": "In RefSeq, does an X prefix (XM_) mean curated or predicted? (one word)",
+      "back": "Predicted (computational); N prefixes (NM_) are curated",
       "accept": [
         "predicted",
-        "computationally predicted",
-        "model",
-        "automated",
-        "computational"
+        "computational",
+        "computationally predicted"
       ],
       "tags": [
         "identifiers",
@@ -631,13 +719,14 @@
     },
     {
       "id": "u2-c39",
-      "front": "RefSeq NR_ prefix?",
-      "back": "Curated non-coding RNA",
+      "front": "RefSeq NR_ records are curated ___. (two words)",
+      "back": "Non-coding RNAs",
       "accept": [
         "non-coding RNA",
         "noncoding RNA",
         "ncRNA",
-        "curated non-coding RNA"
+        "non-coding RNAs",
+        "non coding RNA"
       ],
       "tags": [
         "identifiers",
@@ -647,12 +736,10 @@
     },
     {
       "id": "u2-c40",
-      "front": "NP_000537.3: what type of record?",
-      "back": "RefSeq curated protein (TP53), version 3",
+      "front": "NP_000537.3 is a RefSeq record of what molecule type? (one word)",
+      "back": "Protein (curated TP53 protein, version 3)",
       "accept": [
-        "protein",
-        "RefSeq protein",
-        "curated protein"
+        "protein"
       ],
       "tags": [
         "identifiers",
@@ -662,7 +749,7 @@
     },
     {
       "id": "u2-c41",
-      "front": "NC_000017.11 is chromosome 17 in which assembly?",
+      "front": "NC_000017.11 is chromosome 17 in which assembly? (assembly name)",
       "back": "GRCh38 (.10 = GRCh37)",
       "accept": [
         "GRCh38",
@@ -676,13 +763,11 @@
     },
     {
       "id": "u2-c42",
-      "front": "P04637 is the UniProt accession for which protein?",
-      "back": "Human p53",
+      "front": "UniProt P04637 is which human protein? (protein name)",
+      "back": "p53",
       "accept": [
         "p53",
-        "TP53",
-        "human p53",
-        "P53_HUMAN"
+        "TP53"
       ],
       "tags": [
         "identifiers",
@@ -692,13 +777,12 @@
     },
     {
       "id": "u2-c43",
-      "front": "P53_HUMAN: accession or entry name?",
-      "back": "Entry name (mnemonic), not the stable accession",
+      "front": "Is P53_HUMAN a UniProt accession or entry name? (two words)",
+      "back": "Entry name (mnemonic). The stable accession is P04637",
       "accept": [
         "entry name",
         "name",
-        "mnemonic",
-        "entry mnemonic"
+        "mnemonic"
       ],
       "tags": [
         "identifiers",
@@ -708,12 +792,12 @@
     },
     {
       "id": "u2-c44",
-      "front": "What does '-2' in P04637-2 denote?",
-      "back": "Isoform 2",
+      "front": "P04637-2 denotes which isoform number? (number)",
+      "back": "Isoform 2 of P04637",
       "accept": [
+        "2",
         "isoform 2",
-        "isoform",
-        "2"
+        "two"
       ],
       "tags": [
         "identifiers",
@@ -723,13 +807,11 @@
     },
     {
       "id": "u2-c45",
-      "front": "UniProt accessions are how many characters?",
-      "back": "6 or 10 (e.g., P04637, A0A024R1R8)",
+      "front": "Shortest UniProt accession length? (number of characters)",
+      "back": "6 (e.g., P04637); newer ones can be 10",
       "accept": [
-        "6 or 10",
-        "6/10",
-        "six or ten",
-        "6 or 10 characters"
+        "6",
+        "six"
       ],
       "tags": [
         "identifiers",
@@ -739,7 +821,7 @@
     },
     {
       "id": "u2-c46",
-      "front": "Which part of UniProt is manually reviewed?",
+      "front": "Manually reviewed section of UniProtKB? (name)",
       "back": "Swiss-Prot (TrEMBL = unreviewed, automatic, much larger)",
       "accept": [
         "Swiss-Prot",
@@ -754,11 +836,10 @@
     },
     {
       "id": "u2-c47",
-      "front": "NCBI Gene ID 7157 is which gene?",
+      "front": "NCBI Gene ID 7157 is which gene? (gene symbol)",
       "back": "TP53",
       "accept": [
-        "TP53",
-        "p53"
+        "TP53"
       ],
       "tags": [
         "identifiers",
@@ -768,8 +849,8 @@
     },
     {
       "id": "u2-c48",
-      "front": "1TUP is an ID from which database?",
-      "back": "PDB (4 chars, starts with digit); p53 core domain bound to DNA",
+      "front": "1TUP is an ID from which database? (acronym)",
+      "back": "PDB (4 characters, first is a digit); p53 core domain bound to DNA",
       "accept": [
         "PDB",
         "Protein Data Bank",
@@ -784,7 +865,7 @@
     },
     {
       "id": "u2-c49",
-      "front": "AF-P04637-F1 comes from which database?",
+      "front": "AF-P04637-F1 comes from which database? (database name)",
       "back": "AlphaFold DB (model for UniProt P04637, fragment 1)",
       "accept": [
         "AlphaFold DB",
@@ -801,15 +882,12 @@
     },
     {
       "id": "u2-c50",
-      "front": "ENSG00000141510.18 won't join to your unversioned table. What do you strip?",
-      "back": "The '.18' version suffix",
+      "front": "ENSG00000141510.18 won't join to your unversioned table. The '.18' is the ___. (one word)",
+      "back": "Version suffix: strip it before joining",
       "accept": [
         "version",
-        "the version",
         "version suffix",
-        ".18",
-        "the .18 suffix",
-        "the version suffix"
+        "version number"
       ],
       "tags": [
         "data-hygiene"
@@ -818,13 +896,12 @@
     },
     {
       "id": "u2-c51",
-      "front": "Why cite NM_000546.6 rather than just 'TP53' for a c. variant? (one word: what differs between isoforms)",
-      "back": "Coordinates/numbering: different transcripts and versions number positions differently",
+      "front": "HGVS c. positions are counted along a specific reference ___. (one word)",
+      "back": "Transcript (with version), since isoforms number positions differently; e.g., NM_000546.6",
       "accept": [
-        "numbering",
-        "coordinates",
-        "positions",
-        "exon numbering"
+        "transcript",
+        "mRNA",
+        "sequence"
       ],
       "tags": [
         "HGVS"
@@ -833,7 +910,7 @@
     },
     {
       "id": "u2-c52",
-      "front": "The corresponding gene in a different species (human TP53 ↔ mouse Trp53)?",
+      "front": "Corresponding gene in a different species (human TP53 ↔ mouse Trp53)? (one word)",
       "back": "Ortholog",
       "accept": [
         "ortholog",
@@ -848,7 +925,7 @@
     },
     {
       "id": "u2-c53",
-      "front": "A related gene in the same species from duplication (e.g., KRAS/NRAS)?",
+      "front": "Related gene in the same species, from duplication (e.g., KRAS/NRAS)? (one word)",
       "back": "Paralog",
       "accept": [
         "paralog",
@@ -863,8 +940,8 @@
     },
     {
       "id": "u2-c54",
-      "front": "Variant inherited and present in every cell vs acquired in a tumor?",
-      "back": "Germline (inherited) vs somatic (acquired)",
+      "front": "Variant inherited and present in every cell? (one word)",
+      "back": "Germline",
       "accept": [
         "germline",
         "germ line",
@@ -878,7 +955,7 @@
     },
     {
       "id": "u2-c55",
-      "front": "Variant acquired in some body cells (e.g., a tumor), not inherited?",
+      "front": "Variant acquired in some body cells, e.g., a tumor? (one word)",
       "back": "Somatic",
       "accept": [
         "somatic"
@@ -891,7 +968,7 @@
     },
     {
       "id": "u2-c56",
-      "front": "A database's stable record identifier is called a(n)…?",
+      "front": "A database's stable record identifier? (one word)",
       "back": "Accession (often with a .version suffix)",
       "accept": [
         "accession",
@@ -906,12 +983,11 @@
     },
     {
       "id": "u2-c57",
-      "front": "What does the '.6' in NM_000546.6 indicate?",
+      "front": "In NM_000546.6, what is the '.6'? (one word)",
       "back": "Version: increments when the record's sequence changes",
       "accept": [
         "version",
-        "version number",
-        "sequence version"
+        "version number"
       ],
       "tags": [
         "basics",
@@ -921,12 +997,11 @@
     },
     {
       "id": "u2-c58",
-      "front": "What is a kDa?",
-      "back": "Kilodalton: 1,000 daltons, a unit of molecular mass (~110 Da per amino acid)",
+      "front": "kDa abbreviates which unit? (one word)",
+      "back": "Kilodalton = 1,000 daltons (~110 Da per amino acid)",
       "accept": [
         "kilodalton",
-        "kilodaltons",
-        "1000 daltons"
+        "kilodaltons"
       ],
       "tags": [
         "basics",
@@ -936,8 +1011,8 @@
     },
     {
       "id": "u2-c59",
-      "front": "Enzyme that deletes DNA between two loxP sites?",
-      "back": "Cre recombinase",
+      "front": "Enzyme that deletes DNA between two loxP sites? (one word)",
+      "back": "Cre (Cre recombinase)",
       "accept": [
         "Cre",
         "Cre recombinase"
@@ -950,12 +1025,12 @@
     },
     {
       "id": "u2-c60",
-      "front": "Position mutated far more often than chance in cancer?",
+      "front": "Position mutated far more often than chance in cancer? (one word)",
       "back": "Hotspot",
       "accept": [
         "hotspot",
-        "mutational hotspot",
-        "hot spot"
+        "hot spot",
+        "mutational hotspot"
       ],
       "tags": [
         "basics",
@@ -965,7 +1040,7 @@
     },
     {
       "id": "u2-c61",
-      "front": "The very polymorphic immune genes that present peptides to T cells (human)?",
+      "front": "Highly polymorphic human immune genes that present peptides to T cells? (abbreviation)",
       "back": "HLA (human leukocyte antigen; the human MHC)",
       "accept": [
         "HLA",
@@ -980,7 +1055,7 @@
     },
     {
       "id": "u2-c62",
-      "front": "Standard nomenclature for describing variants (c., p., g.)?",
+      "front": "Standard variant nomenclature with c., p., g. prefixes? (acronym)",
       "back": "HGVS (Human Genome Variation Society)",
       "accept": [
         "HGVS",
@@ -989,6 +1064,20 @@
       "tags": [
         "basics",
         "HGVS"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u2-c63",
+      "front": "Longest UniProt accession length? (number of characters)",
+      "back": "10 (e.g., A0A024R1R8); classic ones are 6",
+      "accept": [
+        "10",
+        "ten"
+      ],
+      "tags": [
+        "identifiers",
+        "UniProt"
       ],
       "type": "recall"
     }

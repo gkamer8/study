@@ -6,98 +6,247 @@
   "glossary": [
     {
       "term": "Amino acid",
-      "definition": "a protein building block. Each has the same backbone part (an amino group and a carboxyl group) plus a distinctive **side chain**."
+      "definition": "a protein building block: a shared backbone part plus a distinctive side chain.",
+      "accept": [
+        "Amino acid",
+        "Amino acids"
+      ]
     },
     {
-      "term": "Side chain (R group)",
-      "definition": "the variable part of an amino acid that gives it its chemistry."
+      "term": "Side chain",
+      "definition": "the variable part of an amino acid that gives it its chemistry.",
+      "accept": [
+        "Side chain",
+        "R group",
+        "Side chains",
+        "sidechain"
+      ]
     },
     {
       "term": "Peptide bond",
-      "definition": "the link joining one amino acid's carboxyl group to the next one's amino group."
+      "definition": "the link joining one amino acid's carboxyl group to the next one's amino group.",
+      "accept": [
+        "Peptide bond",
+        "Peptide bonds"
+      ]
     },
     {
       "term": "Residue",
-      "definition": "one amino acid within a protein chain (\"residue 175\")."
+      "definition": "one amino acid within a protein chain, e.g. \"position 175\".",
+      "accept": [
+        "Residue",
+        "Residues"
+      ]
     },
     {
       "term": "Backbone",
-      "definition": "the repeating chain of atoms formed by peptide bonds, without the side chains."
+      "definition": "the repeating chain of atoms formed by peptide bonds, excluding side chains.",
+      "accept": [
+        "Backbone",
+        "Backbones"
+      ]
     },
     {
-      "term": "N-terminus / C-terminus",
-      "definition": "the start (free amino group) and end (free carboxyl group) of a protein chain. Sequences are written N→C."
+      "term": "N-terminus",
+      "definition": "the start of a protein chain, with a free amino group.",
+      "accept": [
+        "N-terminus",
+        "N terminus",
+        "amino terminus",
+        "N-term"
+      ]
+    },
+    {
+      "term": "C-terminus",
+      "definition": "the end of a protein chain, with a free carboxyl group.",
+      "accept": [
+        "C-terminus",
+        "C terminus",
+        "carboxyl terminus",
+        "C-term"
+      ]
     },
     {
       "term": "Polypeptide",
-      "definition": "a chain of amino acids. A protein is one or more folded polypeptides."
+      "definition": "an unbranched chain of amino acids.",
+      "accept": [
+        "Polypeptide",
+        "Polypeptides",
+        "polypeptide chain"
+      ]
     },
     {
-      "term": "Hydrophobic / hydrophilic (polar)",
-      "definition": "\"water-fearing\" (oily; buried inside proteins and membranes) vs \"water-loving\"."
+      "term": "Hydrophobic",
+      "definition": "\"water-fearing\"; describes oily side chains buried inside proteins and membranes.",
+      "accept": [
+        "Hydrophobic",
+        "Hydrophobics",
+        "nonpolar",
+        "non-polar",
+        "apolar"
+      ]
+    },
+    {
+      "term": "Polar",
+      "definition": "\"water-loving\"; describes side chains that interact with water.",
+      "accept": [
+        "Polar",
+        "Polars",
+        "hydrophilic"
+      ]
     },
     {
       "term": "Charged",
-      "definition": "carrying a positive or negative charge at the cell's near-neutral pH (~7)."
+      "definition": "carrying a net positive or negative charge at the cell's near-neutral pH.",
+      "accept": [
+        "Charged",
+        "Chargeds"
+      ]
     },
     {
       "term": "Hydrogen bond",
-      "definition": "a weak attraction between a hydrogen on one atom (N or O) and another N or O. It holds secondary structure together."
+      "definition": "a weak attraction between an H atom on N or O and another N or O; holds helices and sheets together.",
+      "accept": [
+        "Hydrogen bond",
+        "Hydrogen bonds",
+        "H-bond",
+        "H bond"
+      ]
     },
     {
       "term": "Fold",
-      "definition": "the overall 3D arrangement of a protein chain."
+      "definition": "the overall 3D arrangement of a protein chain.",
+      "accept": [
+        "Fold",
+        "Folds",
+        "protein fold"
+      ]
     },
     {
       "term": "Domain",
-      "definition": "a compact, independently folding unit of a protein."
+      "definition": "a compact, independently folding unit of a protein.",
+      "accept": [
+        "Domain",
+        "Domains",
+        "protein domain"
+      ]
     },
     {
       "term": "Homolog",
-      "definition": "a protein (or gene) related by common ancestry. Homologs usually share structure."
+      "definition": "a protein or gene related to another by common ancestry.",
+      "accept": [
+        "Homolog",
+        "Homologs",
+        "homologue"
+      ]
     },
     {
       "term": "MSA",
-      "definition": "multiple sequence alignment, homologous sequences lined up position by position."
+      "definition": "many related sequences lined up position by position, so each column is an equivalent position.",
+      "accept": [
+        "MSA",
+        "multiple sequence alignment"
+      ]
     },
     {
-      "term": "Ångström (Å)",
-      "definition": "10⁻¹⁰ m. Atoms are ~1–2 Å apart."
+      "term": "Ångström",
+      "definition": "10⁻¹⁰ m; bonded atoms are ~1–2 of these apart.",
+      "accept": [
+        "Ångström",
+        "Å",
+        "angstrom",
+        "angstroms",
+        "A"
+      ]
     },
     {
       "term": "Enzyme",
-      "definition": "a protein that speeds up a chemical reaction. Its **substrate** is the molecule it acts on, and the **active site** is where that happens."
+      "definition": "a protein that speeds up a chemical reaction.",
+      "accept": [
+        "Enzyme",
+        "Enzymes"
+      ]
+    },
+    {
+      "term": "Substrate",
+      "definition": "the molecule an enzyme acts on.",
+      "accept": [
+        "Substrate",
+        "Substrates"
+      ]
+    },
+    {
+      "term": "Active site",
+      "definition": "the pocket where an enzyme's reaction happens.",
+      "accept": [
+        "Active site",
+        "Active sites"
+      ]
     },
     {
       "term": "Ligand",
-      "definition": "any molecule that binds a protein (a hormone, a drug)."
+      "definition": "any molecule that binds a protein, such as a hormone or drug.",
+      "accept": [
+        "Ligand",
+        "Ligands"
+      ]
     },
     {
       "term": "Receptor",
-      "definition": "a protein that binds a signal and relays it, often spanning the cell membrane."
+      "definition": "a protein that binds a signal and relays it, often spanning the membrane.",
+      "accept": [
+        "Receptor",
+        "Receptors"
+      ]
     },
     {
-      "term": "Transmembrane (TM)",
-      "definition": "crossing the cell membrane, the oily lipid layer around the cell."
+      "term": "Transmembrane",
+      "definition": "crossing the cell membrane.",
+      "accept": [
+        "Transmembrane",
+        "TM",
+        "Transmembranes",
+        "membrane-spanning"
+      ]
     },
     {
       "term": "ATP",
-      "definition": "the cell's energy currency and the phosphate donor for kinases."
+      "definition": "the cell's energy currency and the phosphate donor for kinases.",
+      "accept": [
+        "ATP",
+        "adenosine triphosphate"
+      ]
     },
     {
-      "term": "Antibody / antigen",
-      "definition": "an immune protein / the molecule it binds."
+      "term": "Antibody",
+      "definition": "an immune protein that binds one specific target molecule.",
+      "accept": [
+        "Antibody",
+        "Antibodies"
+      ]
+    },
+    {
+      "term": "Antigen",
+      "definition": "the target molecule an antibody binds.",
+      "accept": [
+        "Antigen",
+        "Antigens"
+      ]
     },
     {
       "term": "Inhibitor",
-      "definition": "a molecule (often a drug) that blocks a protein's activity."
+      "definition": "a molecule (often a drug) that blocks a protein's activity.",
+      "accept": [
+        "Inhibitor",
+        "Inhibitors"
+      ]
     }
   ],
-  "lesson": "### Key terms\n\n- **Amino acid**: a protein building block. Each has the same backbone part (an amino group and a carboxyl group) plus a distinctive **side chain**.\n- **Side chain (R group)**: the variable part of an amino acid that gives it its chemistry.\n- **Peptide bond**: the link joining one amino acid's carboxyl group to the next one's amino group.\n- **Residue**: one amino acid within a protein chain (\"residue 175\").\n- **Backbone**: the repeating chain of atoms formed by peptide bonds, without the side chains.\n- **N-terminus / C-terminus**: the start (free amino group) and end (free carboxyl group) of a protein chain. Sequences are written N→C.\n- **Polypeptide**: a chain of amino acids. A protein is one or more folded polypeptides.\n- **Hydrophobic / hydrophilic (polar)**: \"water-fearing\" (oily; buried inside proteins and membranes) vs \"water-loving\".\n- **Charged**: carrying a positive or negative charge at the cell's near-neutral pH (~7).\n- **Hydrogen bond**: a weak attraction between a hydrogen on one atom (N or O) and another N or O. It holds secondary structure together.\n- **Fold**: the overall 3D arrangement of a protein chain.\n- **Domain**: a compact, independently folding unit of a protein.\n- **Homolog**: a protein (or gene) related by common ancestry. Homologs usually share structure.\n- **MSA**: multiple sequence alignment, homologous sequences lined up position by position.\n- **Ångström (Å)**: 10⁻¹⁰ m. Atoms are ~1–2 Å apart.\n- **Enzyme**: a protein that speeds up a chemical reaction. Its **substrate** is the molecule it acts on, and the **active site** is where that happens.\n- **Ligand**: any molecule that binds a protein (a hormone, a drug).\n- **Receptor**: a protein that binds a signal and relays it, often spanning the cell membrane.\n- **Transmembrane (TM)**: crossing the cell membrane, the oily lipid layer around the cell.\n- **ATP**: the cell's energy currency and the phosphate donor for kinases.\n- **Antibody / antigen**: an immune protein / the molecule it binds.\n- **Inhibitor**: a molecule (often a drug) that blocks a protein's activity.\n\n## Reading a protein sequence\n\nA protein is a chain of **amino acids** linked by **peptide bonds**. Every amino acid shares the same backbone atoms (an amino group, a central carbon, a carboxyl group) and differs by its **side chain**. The chain has a start, the **N-terminus** (free amino group), and an end, the **C-terminus** (free carboxyl group). Sequences are always written N→C. Each amino acid in a chain is called a **residue**, so \"R175\" means the residue at position 175 is arginine. Proteins nearly always begin with M (methionine, from the start codon; see Unit 1).\n\nThere are 20 standard amino acids, written with **one-letter codes**. Learn them by chemistry. **Hydrophobic** (\"water-fearing\", oily) side chains cluster inside proteins and in membrane-crossing segments. **Polar** or **charged** side chains face the surrounding water and form bonds.\n\n| Class | Residues | Notes |\n|---|---|---|\n| Hydrophobic | **A** Ala, **V** Val, **L** Leu, **I** Ile, **M** Met | buried core, transmembrane helices |\n| Aromatic (ring-containing) | **F** Phe, **W** Trp, **Y** Tyr | W is the largest; Y can be phosphorylated |\n| Polar, uncharged | **S** Ser, **T** Thr, **N** Asn, **Q** Gln | S/T phosphorylated; N glycosylated |\n| Positively charged (basic) | **K** Lys, **R** Arg, **H** His | H is ~neutral at pH 7 and common in active sites and metal binding |\n| Negatively charged (acidic) | **D** Asp, **E** Glu | |\n| Special | **G** Gly, **P** Pro, **C** Cys | G: tiny and flexible. P: rigid ring, breaks helices. C: forms disulfide bonds |\n\nThe letters to drill are the ones that don't match the name: **F** Phe, **Y** Tyr, **W** Trp, **K** Lys, **R** Arg, **D** Asp, **E** Glu, **N** Asn, **Q** Gln. In sequence files: **X** = unknown, **B** = D or N, **Z** = E or Q, **U** = selenocysteine and **O** = pyrrolysine (rare extra amino acids), `*` = stop, `-` = gap in an alignment.\n\nThis chemistry predicts variant effects. Swapping similar residues (I→V) is usually mild. Reversing a charge (E→K), putting proline into a helix, replacing a glycine in a tight turn, or exposing a buried hydrophobic residue is usually damaging. **Substitution matrices** like **BLOSUM62** score how often each swap occurs between related proteins in nature, and they are used in alignment and as a variant-effect baseline.\n\n## Levels of structure\n\n- **Primary**: the sequence.\n- **Secondary**: local shapes held by **hydrogen bonds** (weak attractions between backbone N–H and C=O groups). In the **α-helix**, a spiral with 3.6 residues per turn, residue i bonds to residue i+4. **β-strands** are extended segments that pair side by side into **β-sheets**: *parallel* if the neighboring strands run the same N→C direction, *antiparallel* if opposite. Everything else is loops. The program DSSP assigns secondary structure from 3D coordinates.\n- **Tertiary**: the complete 3D **fold** of one chain, driven largely by hiding hydrophobic side chains from water.\n- **Quaternary**: several chains assembled together. Hemoglobin is two α and two β chains.\n\nMany proteins also contain **intrinsically disordered regions (IDRs)** with no stable shape, such as flexible linkers and signaling tails. p53's N-terminal region is disordered, while its central DNA-binding region is folded.\n\n## Domains\n\nA **domain** is a compact unit that folds on its own, often has a specific job, and recurs across many proteins. Proteins are often built from several domains like Lego. A receptor tyrosine kinase, for example, has a ligand-binding domain outside the cell, one **transmembrane** helix crossing the membrane, and a kinase domain inside. **Pfam** describes each domain family with a **profile HMM** (hidden Markov model), a statistical model of which residues are likely at each position, built from an alignment of family members. PF00069 = protein kinase domain. **InterPro** merges Pfam with other domain databases (SMART, PROSITE, CATH-Gene3D) into entries like IPR000719. **CATH** and **SCOP** classify domains by fold and are used to build train/test splits that separate folds (see Unit 7). Common domains: **SH2** (binds phosphorylated tyrosine), **SH3** (binds proline-rich segments), zinc finger and homeobox (both bind DNA), and the immunoglobulin (Ig) fold.\n\n## AlphaFold confidence: pLDDT and PAE\n\nAlphaFold predicts 3D coordinates for every residue and also says how much to trust them.\n\n- **pLDDT** (predicted local distance difference test, 0–100): per-residue confidence, stored in the \"B-factor\" column of AlphaFold's PDB files (a column that normally records atomic mobility in experimental structures). **>90** very high, side chains usually right. **70–90** confident, backbone good. **50–70** low. **<50** very low, often a disordered region. Low-pLDDT regions look like floating ribbons and should not be read as real structure.\n- **PAE** (predicted aligned error): a residue × residue matrix. Entry (x, y) is the expected error, in **Å** (ångströms, 10⁻¹⁰ m), in residue x's position if you superimpose the prediction on the true structure using residue y. Low-error blocks mark confidently placed domains. High PAE between two domains means their **relative orientation** is uncertain, even when each domain alone has high pLDDT.\n- For complexes (several chains): **pTM** and **ipTM** (interface predicted TM-score). ipTM above ~0.8 suggests a confident interface; below ~0.6 suggests a likely failed one.\n- Comparing two structures: **RMSD** (root-mean-square deviation of atom positions after superposition, in Å; sensitive to outliers), **TM-score** (0–1; above 0.5 generally means the same fold), **GDT_TS** (CASP's classic score), and **lDDT** (compares local inter-atom distances, so no superposition is needed).\n\n## MSAs and coevolution\n\n**Homologs** are proteins descended from a common ancestor; they usually share structure. A **multiple sequence alignment (MSA)** lines up many homologs so that each column holds the equivalent position in every sequence. Homologs are found by search tools such as JackHMMER, HHblits or **MMseqs2** (which ColabFold uses). An MSA carries two signals:\n\n1. **Conservation**: a column that never changes across evolution is probably essential, so mutations there are likely harmful. Variant-effect tools such as SIFT and EVE build on this.\n2. **Coevolution**: if residues i and j touch in 3D, a mutation at one is often compensated by a change at the other, so their columns vary together. Statistical models (Potts models, **direct coupling analysis**, or DCA) extract these pairs to predict which residues are in contact. AlphaFold2's Evoformer learns this from the MSA. Protein language models such as **ESM-2** absorb similar information from millions of single sequences, which is why ESMFold works without an MSA.\n\nThe depth of an MSA is often summarized as **Neff**, the effective number of sequences after down-weighting near-duplicates. Low Neff (few homologs, as in \"orphan\" or designed proteins) means less signal and worse predictions.\n\n## Families worth knowing\n\n- **Protein kinases** (~500 in humans, the \"kinome\"): **enzymes** that move a phosphate group from **ATP** (the cell's energy molecule) onto Ser/Thr or Tyr of a target protein. They share a two-lobed fold with the ATP pocket between the lobes, plus conserved features (the activation loop, the DFG motif, a \"gatekeeper\" residue). Most kinase drugs (imatinib, osimertinib) are **inhibitors** that compete with ATP in that pocket.\n- **GPCRs** (G protein-coupled receptors; ~800 human genes): **receptors** with seven transmembrane helices. They detect hormones, neurotransmitters, odors and light, and signal through G proteins and arrestins. Roughly a third of approved drugs target them. Pfam 7tm_1 covers the largest class, rhodopsin-like class A.\n- **Ion channels**: membrane proteins forming pores that let specific ions (Na⁺, K⁺, Ca²⁺, Cl⁻) through. They open in response to voltage or a bound ligand.\n- **Transcription factors** (~1,600 human): bind specific DNA motifs to regulate genes (see Unit 1), through DNA-binding domains: C2H2 zinc fingers (the largest class), homeodomains, bHLH, bZIP, nuclear receptors, forkhead.\n- **Antibodies (IgG)**: immune proteins that bind a target molecule, the **antigen**. Y-shaped, built from two heavy and two light chains joined by disulfide bonds. The two **Fab** arms bind antigen and the **Fc** stem recruits immune cells. Each arm's variable domains (VH, VL) carry three loops called **complementarity-determining regions (CDRs)**. **CDR-H3** (heavy chain, loop 3) is the most diverse and usually dominates binding. Diversity comes from **V(D)J recombination**, where gene segments are shuffled in each B cell, plus somatic hypermutation. Camelid **nanobodies (VHH)** are single-domain antibodies. Antibody language models train on the OAS repertoire database.\n- Others: proteases (cut proteins), E3 ubiquitin ligases (see Unit 1), and enzymes classified by **EC numbers** (EC 2.7.11.1 = a Ser/Thr kinase class).\n\n## How you'll see this in a paper\n\n- \"Residues with pLDDT < 70 were masked\": discarding low-confidence or disordered regions.\n- \"The predicted complex had ipTM 0.85\": a confident interface prediction.\n- \"MSAs generated with ColabFold's MMseqs2 pipeline against UniRef30.\"\n- \"ESM-2 650M embeddings, mean-pooled over residues\": one vector per protein from a protein language model.\n- \"Mutations cluster in the activation loop / DNA-binding domain\": interpreting variants by domain.\n",
+  "lesson": "### Key terms\n\n- **Amino acid**: a protein building block: a shared backbone part plus a distinctive side chain.\n- **Side chain (R group)**: the variable part of an amino acid that gives it its chemistry.\n- **Peptide bond**: the link joining one amino acid's carboxyl group to the next one's amino group.\n- **Residue**: one amino acid within a protein chain, e.g. \"position 175\".\n- **Backbone**: the repeating chain of atoms formed by peptide bonds, excluding side chains.\n- **N-terminus**: the start of a protein chain, with a free amino group.\n- **C-terminus**: the end of a protein chain, with a free carboxyl group.\n- **Polypeptide**: an unbranched chain of amino acids.\n- **Hydrophobic**: \"water-fearing\"; describes oily side chains buried inside proteins and membranes.\n- **Polar**: \"water-loving\"; describes side chains that interact with water.\n- **Charged**: carrying a net positive or negative charge at the cell's near-neutral pH.\n- **Hydrogen bond**: a weak attraction between an H atom on N or O and another N or O; holds helices and sheets together.\n- **Fold**: the overall 3D arrangement of a protein chain.\n- **Domain**: a compact, independently folding unit of a protein.\n- **Homolog**: a protein or gene related to another by common ancestry.\n- **MSA**: many related sequences lined up position by position, so each column is an equivalent position.\n- **Ångström (Å)**: 10⁻¹⁰ m; bonded atoms are ~1–2 of these apart.\n- **Enzyme**: a protein that speeds up a chemical reaction.\n- **Substrate**: the molecule an enzyme acts on.\n- **Active site**: the pocket where an enzyme's reaction happens.\n- **Ligand**: any molecule that binds a protein, such as a hormone or drug.\n- **Receptor**: a protein that binds a signal and relays it, often spanning the membrane.\n- **Transmembrane (TM)**: crossing the cell membrane.\n- **ATP**: the cell's energy currency and the phosphate donor for kinases.\n- **Antibody**: an immune protein that binds one specific target molecule.\n- **Antigen**: the target molecule an antibody binds.\n- **Inhibitor**: a molecule (often a drug) that blocks a protein's activity.\n\n## Reading a protein sequence\n\nA protein is a chain of **amino acids** linked by **peptide bonds**. Every amino acid shares the same backbone atoms (an amino group, a central carbon, a carboxyl group) and differs by its **side chain**. The chain has a start, the **N-terminus** (free amino group), and an end, the **C-terminus** (free carboxyl group). Sequences are always written N→C. Each amino acid in a chain is called a **residue**, so \"R175\" means the residue at position 175 is arginine. Proteins nearly always begin with M (methionine, from the start codon; see Unit 1).\n\nThere are 20 standard amino acids, written with **one-letter codes**. Learn them by chemistry. **Hydrophobic** (\"water-fearing\", oily) side chains cluster inside proteins and in membrane-crossing segments. **Polar** or **charged** side chains face the surrounding water and form bonds.\n\n| Class | Residues | Notes |\n|---|---|---|\n| Hydrophobic | **A** Ala, **V** Val, **L** Leu, **I** Ile, **M** Met | buried core, transmembrane helices |\n| Aromatic (ring-containing) | **F** Phe, **W** Trp, **Y** Tyr | W is the largest; Y can be phosphorylated |\n| Polar, uncharged | **S** Ser, **T** Thr, **N** Asn, **Q** Gln | S/T phosphorylated; N glycosylated |\n| Positively charged (basic) | **K** Lys, **R** Arg, **H** His | H is ~neutral at pH 7 and common in active sites and metal binding |\n| Negatively charged (acidic) | **D** Asp, **E** Glu | |\n| Special | **G** Gly, **P** Pro, **C** Cys | G: tiny and flexible. P: rigid ring, breaks helices. C: forms disulfide bonds |\n\nThe letters to drill are the ones that don't match the name: **F** Phe, **Y** Tyr, **W** Trp, **K** Lys, **R** Arg, **D** Asp, **E** Glu, **N** Asn, **Q** Gln. In sequence files: **X** = unknown, **B** = D or N, **Z** = E or Q, **U** = selenocysteine and **O** = pyrrolysine (rare extra amino acids), `*` = stop, `-` = gap in an alignment.\n\nThis chemistry predicts variant effects. Swapping similar residues (I→V) is usually mild. Reversing a charge (E→K), putting proline into a helix, replacing a glycine in a tight turn, or exposing a buried hydrophobic residue is usually damaging. **Substitution matrices** like **BLOSUM62** score how often each swap occurs between related proteins in nature, and they are used in alignment and as a variant-effect baseline.\n\n## Levels of structure\n\n- **Primary**: the sequence.\n- **Secondary**: local shapes held by **hydrogen bonds** (weak attractions between backbone N–H and C=O groups). In the **α-helix**, a spiral with 3.6 residues per turn, residue i bonds to residue i+4. **β-strands** are extended segments that pair side by side into **β-sheets**: *parallel* if the neighboring strands run the same N→C direction, *antiparallel* if opposite. Everything else is loops. The program DSSP assigns secondary structure from 3D coordinates.\n- **Tertiary**: the complete 3D **fold** of one chain, driven largely by hiding hydrophobic side chains from water.\n- **Quaternary**: several chains assembled together. Hemoglobin is two α and two β chains.\n\nMany proteins also contain **intrinsically disordered regions (IDRs)** with no stable shape, such as flexible linkers and signaling tails. p53's N-terminal region is disordered, while its central DNA-binding region is folded.\n\n## Domains\n\nA **domain** is a compact unit that folds on its own, often has a specific job, and recurs across many proteins. Proteins are often built from several domains like Lego. A receptor tyrosine kinase, for example, has a ligand-binding domain outside the cell, one **transmembrane** helix crossing the membrane, and a kinase domain inside. **Pfam** describes each domain family with a **profile HMM** (hidden Markov model), a statistical model of which residues are likely at each position, built from an alignment of family members. PF00069 = protein kinase domain. **InterPro** merges Pfam with other domain databases (SMART, PROSITE, CATH-Gene3D) into entries like IPR000719. **CATH** and **SCOP** classify domains by fold and are used to build train/test splits that separate folds (see Unit 7). Common domains: **SH2** (binds phosphorylated tyrosine), **SH3** (binds proline-rich segments), zinc finger and homeobox (both bind DNA), and the immunoglobulin (Ig) fold.\n\n## AlphaFold confidence: pLDDT and PAE\n\nAlphaFold predicts 3D coordinates for every residue and also says how much to trust them.\n\n- **pLDDT** (predicted local distance difference test, 0–100): per-residue confidence, stored in the \"B-factor\" column of AlphaFold's PDB files (a column that normally records atomic mobility in experimental structures). **>90** very high, side chains usually right. **70–90** confident, backbone good. **50–70** low. **<50** very low, often a disordered region. Low-pLDDT regions look like floating ribbons and should not be read as real structure.\n- **PAE** (predicted aligned error): a residue × residue matrix. Entry (x, y) is the expected error, in **Å** (ångströms, 10⁻¹⁰ m), in residue x's position if you superimpose the prediction on the true structure using residue y. Low-error blocks mark confidently placed domains. High PAE between two domains means their **relative orientation** is uncertain, even when each domain alone has high pLDDT.\n- For complexes (several chains): **pTM** and **ipTM** (interface predicted TM-score). ipTM above ~0.8 suggests a confident interface; below ~0.6 suggests a likely failed one.\n- Comparing two structures: **RMSD** (root-mean-square deviation of atom positions after superposition, in Å; sensitive to outliers), **TM-score** (0–1; above 0.5 generally means the same fold), **GDT_TS** (CASP's classic score), and **lDDT** (compares local inter-atom distances, so no superposition is needed).\n\n## MSAs and coevolution\n\n**Homologs** are proteins descended from a common ancestor; they usually share structure. A **multiple sequence alignment (MSA)** lines up many homologs so that each column holds the equivalent position in every sequence. Homologs are found by search tools such as JackHMMER, HHblits or **MMseqs2** (which ColabFold uses). An MSA carries two signals:\n\n1. **Conservation**: a column that never changes across evolution is probably essential, so mutations there are likely harmful. Variant-effect tools such as SIFT and EVE build on this.\n2. **Coevolution**: if residues i and j touch in 3D, a mutation at one is often compensated by a change at the other, so their columns vary together. Statistical models (Potts models, **direct coupling analysis**, or DCA) extract these pairs to predict which residues are in contact. AlphaFold2's Evoformer learns this from the MSA. Protein language models such as **ESM-2** absorb similar information from millions of single sequences, which is why ESMFold works without an MSA.\n\nThe depth of an MSA is often summarized as **Neff**, the effective number of sequences after down-weighting near-duplicates. Low Neff (few homologs, as in \"orphan\" or designed proteins) means less signal and worse predictions.\n\n## Families worth knowing\n\n- **Protein kinases** (~500 in humans, the \"kinome\"): **enzymes** that move a phosphate group from **ATP** (the cell's energy molecule) onto Ser/Thr or Tyr of a target protein. They share a two-lobed fold with the ATP pocket between the lobes, plus conserved features (the activation loop, the DFG motif, a \"gatekeeper\" residue). Most kinase drugs (imatinib, osimertinib) are **inhibitors** that compete with ATP in that pocket.\n- **GPCRs** (G protein-coupled receptors; ~800 human genes): **receptors** with seven transmembrane helices. They detect hormones, neurotransmitters, odors and light, and signal through G proteins and arrestins. Roughly a third of approved drugs target them. Pfam 7tm_1 covers the largest class, rhodopsin-like class A.\n- **Ion channels**: membrane proteins forming pores that let specific ions (Na⁺, K⁺, Ca²⁺, Cl⁻) through. They open in response to voltage or a bound ligand.\n- **Transcription factors** (~1,600 human): bind specific DNA motifs to regulate genes (see Unit 1), through DNA-binding domains: C2H2 zinc fingers (the largest class), homeodomains, bHLH, bZIP, nuclear receptors, forkhead.\n- **Antibodies (IgG)**: immune proteins that bind a target molecule, the **antigen**. Y-shaped, built from two heavy and two light chains joined by disulfide bonds. The two **Fab** arms bind antigen and the **Fc** stem recruits immune cells. Each arm's variable domains (VH, VL) carry three loops called **complementarity-determining regions (CDRs)**. **CDR-H3** (heavy chain, loop 3) is the most diverse and usually dominates binding. Diversity comes from **V(D)J recombination**, where gene segments are shuffled in each B cell, plus somatic hypermutation. Camelid **nanobodies (VHH)** are single-domain antibodies. Antibody language models train on the OAS repertoire database.\n- Others: proteases (cut proteins), E3 ubiquitin ligases (see Unit 1), and enzymes classified by **EC numbers** (EC 2.7.11.1 = a Ser/Thr kinase class).\n\n## How you'll see this in a paper\n\n- \"Residues with pLDDT < 70 were masked\": discarding low-confidence or disordered regions.\n- \"The predicted complex had ipTM 0.85\": a confident interface prediction.\n- \"MSAs generated with ColabFold's MMseqs2 pipeline against UniRef30.\"\n- \"ESM-2 650M embeddings, mean-pooled over residues\": one vector per protein from a protein language model.\n- \"Mutations cluster in the activation loop / DNA-binding domain\": interpreting variants by domain.\n",
   "cards": [
     {
       "id": "u4-c01",
-      "front": "One-letter code F = ?",
+      "front": "Amino acid with one-letter code F? (full name)",
       "back": "Phenylalanine (aromatic, hydrophobic)",
       "accept": [
         "phenylalanine",
@@ -110,7 +259,7 @@
     },
     {
       "id": "u4-c02",
-      "front": "One-letter code Y = ?",
+      "front": "Amino acid with one-letter code Y? (full name)",
       "back": "Tyrosine (aromatic; phosphorylatable)",
       "accept": [
         "tyrosine",
@@ -123,7 +272,7 @@
     },
     {
       "id": "u4-c03",
-      "front": "One-letter code W = ?",
+      "front": "Amino acid with one-letter code W? (full name)",
       "back": "Tryptophan (largest, aromatic)",
       "accept": [
         "tryptophan",
@@ -136,7 +285,7 @@
     },
     {
       "id": "u4-c04",
-      "front": "One-letter code K = ?",
+      "front": "Amino acid with one-letter code K? (full name)",
       "back": "Lysine (positive; ubiquitination/acetylation site)",
       "accept": [
         "lysine",
@@ -149,7 +298,7 @@
     },
     {
       "id": "u4-c05",
-      "front": "One-letter code R = ?",
+      "front": "Amino acid with one-letter code R? (full name)",
       "back": "Arginine (positive)",
       "accept": [
         "arginine",
@@ -162,8 +311,8 @@
     },
     {
       "id": "u4-c06",
-      "front": "One-letter code D = ?",
-      "back": "Aspartate / aspartic acid (negative); E = glutamate",
+      "front": "Amino acid with one-letter code D? (full name)",
+      "back": "Aspartate / aspartic acid (negative). E = glutamate",
       "accept": [
         "aspartate",
         "aspartic acid",
@@ -176,8 +325,8 @@
     },
     {
       "id": "u4-c07",
-      "front": "One-letter code N = ?",
-      "back": "Asparagine (polar uncharged); Q = glutamine",
+      "front": "Amino acid with one-letter code N? (full name)",
+      "back": "Asparagine (polar uncharged). Q = glutamine",
       "accept": [
         "asparagine",
         "Asn"
@@ -189,8 +338,8 @@
     },
     {
       "id": "u4-c08",
-      "front": "One-letter code H = ?",
-      "back": "Histidine: near-neutral at pH 7, metal binding, catalytic sites",
+      "front": "Amino acid with one-letter code H? (full name)",
+      "back": "Histidine: near-neutral at pH 7; metal binding; catalytic sites",
       "accept": [
         "histidine",
         "His"
@@ -202,16 +351,12 @@
     },
     {
       "id": "u4-c09",
-      "front": "Two clearly positively charged residues at pH 7 (one-letter)?",
-      "back": "K and R (H only partially)",
+      "front": "Besides lysine, the other strongly positively charged amino acid? (full name)",
+      "back": "Arginine (R). Histidine is only partially charged at pH 7",
       "accept": [
-        "KR",
-        "K R",
-        "K, R",
-        "K and R",
-        "RK",
-        "R and K",
-        "lysine arginine"
+        "arginine",
+        "Arg",
+        "R"
       ],
       "tags": [
         "amino-acids"
@@ -220,15 +365,13 @@
     },
     {
       "id": "u4-c10",
-      "front": "Two negatively charged residues (one-letter)?",
-      "back": "D and E",
+      "front": "Besides glutamate, the other negatively charged amino acid? (full name)",
+      "back": "Aspartate (D)",
       "accept": [
-        "DE",
-        "D E",
-        "D, E",
-        "D and E",
-        "ED",
-        "aspartate glutamate"
+        "aspartate",
+        "aspartic acid",
+        "Asp",
+        "D"
       ],
       "tags": [
         "amino-acids"
@@ -237,7 +380,7 @@
     },
     {
       "id": "u4-c11",
-      "front": "Is L (leucine) hydrophobic or polar?",
+      "front": "Is leucine (L) hydrophobic or polar? (one word)",
       "back": "Hydrophobic (with A, V, I, M)",
       "accept": [
         "hydrophobic",
@@ -252,12 +395,12 @@
     },
     {
       "id": "u4-c12",
-      "front": "Which residue is a rigid ring that breaks α-helices?",
+      "front": "Rigid ring-containing amino acid that breaks α-helices? (full name)",
       "back": "Proline (P). Glycine (G) is the very flexible one",
       "accept": [
         "proline",
-        "P",
-        "Pro"
+        "Pro",
+        "P"
       ],
       "tags": [
         "amino-acids"
@@ -266,13 +409,11 @@
     },
     {
       "id": "u4-c13",
-      "front": "In a protein sequence file, X means…?",
-      "back": "Unknown/any residue (U = selenocysteine, * = stop, - = gap)",
+      "front": "In a protein sequence file, 'X' means what kind of residue? (one word)",
+      "back": "Unknown (any) residue. U = selenocysteine, * = stop, - = gap",
       "accept": [
         "unknown",
-        "any",
-        "unknown residue",
-        "any amino acid"
+        "any"
       ],
       "tags": [
         "amino-acids",
@@ -282,15 +423,14 @@
     },
     {
       "id": "u4-c14",
-      "front": "Which is likely MILDEST: I→V, E→K in a buried salt bridge, or L→P in a helix?",
-      "back": "I→V (similar hydrophobics); the others reverse charge / break a helix",
+      "front": "Is the substitution I→V (isoleucine to valine) usually mild or damaging? (one word)",
+      "back": "Mild: both are similar small hydrophobics",
       "accept": [
-        "I→V",
-        "I>V",
-        "IV",
-        "I to V",
-        "I->V",
-        "I→V (isoleucine to valine)"
+        "mild",
+        "benign",
+        "tolerated",
+        "conservative",
+        "neutral"
       ],
       "tags": [
         "variants",
@@ -300,12 +440,12 @@
     },
     {
       "id": "u4-c15",
-      "front": "Classic amino acid substitution matrix from conserved blocks?",
+      "front": "Classic amino acid substitution matrix derived from conserved blocks? (name with number)",
       "back": "BLOSUM62",
       "accept": [
         "BLOSUM62",
-        "BLOSUM",
-        "BLOSUM 62"
+        "BLOSUM 62",
+        "BLOSUM-62"
       ],
       "tags": [
         "alignment"
@@ -314,11 +454,10 @@
     },
     {
       "id": "u4-c16",
-      "front": "An α-helix has ___ residues per turn.",
+      "front": "An α-helix has ___ residues per turn. (number)",
       "back": "3.6 (residue i H-bonds to i+4)",
       "accept": [
-        "3.6",
-        "3.6 residues"
+        "3.6"
       ],
       "tags": [
         "structure"
@@ -327,7 +466,7 @@
     },
     {
       "id": "u4-c17",
-      "front": "β-sheet whose neighboring strands run opposite N→C directions?",
+      "front": "β-sheet whose neighboring strands run in opposite N→C directions? (one word)",
       "back": "Antiparallel (same direction = parallel)",
       "accept": [
         "antiparallel",
@@ -340,11 +479,10 @@
     },
     {
       "id": "u4-c18",
-      "front": "Level of structure: assembly of multiple chains?",
+      "front": "Level of protein structure describing assembly of multiple chains? (one word)",
       "back": "Quaternary (tertiary = one chain's fold)",
       "accept": [
-        "quaternary",
-        "quaternary structure"
+        "quaternary"
       ],
       "tags": [
         "structure"
@@ -353,13 +491,12 @@
     },
     {
       "id": "u4-c19",
-      "front": "Abbreviation for a protein region with no stable 3D structure?",
+      "front": "Protein region with no stable 3D structure? (abbreviation)",
       "back": "IDR (intrinsically disordered region)",
       "accept": [
         "IDR",
         "intrinsically disordered region",
-        "disordered region",
-        "IDP"
+        "disordered region"
       ],
       "tags": [
         "structure"
@@ -368,7 +505,7 @@
     },
     {
       "id": "u4-c20",
-      "front": "Compact, independently folding, recurring protein unit?",
+      "front": "Compact, independently folding, recurring protein unit? (one word)",
       "back": "Domain",
       "accept": [
         "domain",
@@ -381,14 +518,15 @@
     },
     {
       "id": "u4-c21",
-      "front": "Pfam models domain families with what kind of statistical model?",
+      "front": "Pfam models domain families with what kind of statistical model? (abbreviation)",
       "back": "Profile HMMs (hidden Markov models)",
       "accept": [
-        "profile HMM",
         "HMM",
+        "profile HMM",
         "hidden Markov model",
         "profile hidden Markov model",
-        "HMMs"
+        "HMMs",
+        "profile HMMs"
       ],
       "tags": [
         "domains"
@@ -397,7 +535,7 @@
     },
     {
       "id": "u4-c22",
-      "front": "PF00069 is which Pfam family?",
+      "front": "Pfam PF00069 is which domain? (three words)",
       "back": "Protein kinase domain (Pkinase)",
       "accept": [
         "protein kinase domain",
@@ -413,7 +551,7 @@
     },
     {
       "id": "u4-c23",
-      "front": "IPR000719 is which InterPro entry?",
+      "front": "InterPro IPR000719 is which domain? (three words)",
       "back": "Protein kinase domain",
       "accept": [
         "protein kinase domain",
@@ -428,13 +566,10 @@
     },
     {
       "id": "u4-c24",
-      "front": "Name a structural classification used for fold-level splits.",
-      "back": "CATH or SCOP",
+      "front": "Structural classification named for Class, Architecture, Topology, Homologous superfamily? (acronym)",
+      "back": "CATH; used (like SCOP) for fold-level train/test splits",
       "accept": [
-        "CATH",
-        "SCOP",
-        "SCOPe",
-        "CATH or SCOP"
+        "CATH"
       ],
       "tags": [
         "domains",
@@ -444,14 +579,14 @@
     },
     {
       "id": "u4-c25",
-      "front": "SH2 domains bind phosphorylated ___.",
+      "front": "SH2 domains bind phosphorylated ___. (amino acid name)",
       "back": "Tyrosine (phosphotyrosine motifs)",
       "accept": [
         "tyrosine",
         "phosphotyrosine",
         "pTyr",
         "pY",
-        "Y"
+        "Tyr"
       ],
       "tags": [
         "domains",
@@ -461,7 +596,7 @@
     },
     {
       "id": "u4-c26",
-      "front": "AlphaFold's per-residue confidence score (0–100)?",
+      "front": "AlphaFold's per-residue confidence score (0–100)? (abbreviation)",
       "back": "pLDDT, stored in the B-factor column",
       "accept": [
         "pLDDT",
@@ -474,12 +609,10 @@
     },
     {
       "id": "u4-c27",
-      "front": "pLDDT threshold below which residues are 'very low' (often disordered)?",
+      "front": "pLDDT below which value counts as 'very low' (often disordered)? (number)",
       "back": "50 (>90 very high; 70–90 confident; 50–70 low)",
       "accept": [
-        "50",
-        "<50",
-        "pLDDT 50"
+        "50"
       ],
       "tags": [
         "AlphaFold"
@@ -488,7 +621,7 @@
     },
     {
       "id": "u4-c28",
-      "front": "AlphaFold's residue × residue matrix of expected position error (Å)?",
+      "front": "AlphaFold's residue × residue matrix of expected position error in Å? (abbreviation)",
       "back": "PAE (predicted aligned error)",
       "accept": [
         "PAE",
@@ -501,15 +634,16 @@
     },
     {
       "id": "u4-c29",
-      "front": "Two domains each pLDDT >90, inter-domain PAE ~25 Å. What is uncertain?",
-      "back": "Their relative orientation/placement",
+      "front": "Two domains each have pLDDT >90 but inter-domain PAE ~25 Å. What is uncertain? (two words)",
+      "back": "Their relative orientation (placement of one domain relative to the other)",
       "accept": [
         "relative orientation",
         "orientation",
         "relative position",
         "domain orientation",
+        "relative placement",
         "domain placement",
-        "relative placement"
+        "relative arrangement"
       ],
       "tags": [
         "AlphaFold"
@@ -518,7 +652,7 @@
     },
     {
       "id": "u4-c30",
-      "front": "AlphaFold complex metric for interface confidence (>0.8 good)?",
+      "front": "AlphaFold complex metric for interface confidence (>0.8 good)? (abbreviation)",
       "back": "ipTM (interface predicted TM-score); <~0.6 likely wrong",
       "accept": [
         "ipTM",
@@ -532,12 +666,12 @@
     },
     {
       "id": "u4-c31",
-      "front": "TM-score threshold for 'same fold'?",
+      "front": "TM-score above which two structures share the same fold? (number)",
       "back": "0.5",
       "accept": [
         "0.5",
-        ">0.5",
-        "0.50"
+        "0.50",
+        ".5"
       ],
       "tags": [
         "metrics"
@@ -546,7 +680,7 @@
     },
     {
       "id": "u4-c32",
-      "front": "Superposition-free, local structure similarity score?",
+      "front": "Superposition-free, local structure similarity score used in CASP? (abbreviation)",
       "back": "lDDT (not dominated by domain-motion outliers like RMSD)",
       "accept": [
         "lDDT",
@@ -559,13 +693,13 @@
     },
     {
       "id": "u4-c33",
-      "front": "Signal from MSA columns that covary, indicating contacts?",
-      "back": "Coevolution (the other signal is conservation)",
+      "front": "Signal from MSA columns that vary together, indicating contacts? (one word)",
+      "back": "Coevolution (the other MSA signal is conservation)",
       "accept": [
         "coevolution",
         "co-evolution",
         "covariation",
-        "correlated mutations"
+        "covariance"
       ],
       "tags": [
         "MSA"
@@ -574,15 +708,14 @@
     },
     {
       "id": "u4-c34",
-      "front": "Residues i and j covary across an MSA. What does that suggest structurally?",
-      "back": "They are in contact (compensating mutations)",
+      "front": "Residues i and j covary across an MSA. What does that suggest structurally? (one word)",
+      "back": "Contact: compensating mutations suggest they touch in 3D",
       "accept": [
         "contact",
-        "in contact",
-        "they touch",
-        "residue contact",
-        "close in 3D",
-        "physical contact"
+        "contacts",
+        "proximity",
+        "touching",
+        "interaction"
       ],
       "tags": [
         "MSA"
@@ -591,7 +724,7 @@
     },
     {
       "id": "u4-c35",
-      "front": "Potts-model method separating direct couplings from indirect correlations?",
+      "front": "Potts-model method that separates direct couplings from indirect correlations? (acronym)",
       "back": "DCA (direct coupling analysis)",
       "accept": [
         "DCA",
@@ -604,11 +737,12 @@
     },
     {
       "id": "u4-c36",
-      "front": "Effective number of non-redundant sequences in an MSA?",
+      "front": "Effective number of non-redundant sequences in an MSA? (abbreviation)",
       "back": "Neff; low Neff → harder prediction",
       "accept": [
         "Neff",
         "N_eff",
+        "N eff",
         "effective number of sequences"
       ],
       "tags": [
@@ -618,7 +752,7 @@
     },
     {
       "id": "u4-c37",
-      "front": "Search tool ColabFold uses to build MSAs?",
+      "front": "Search tool ColabFold uses to build MSAs? (tool name)",
       "back": "MMseqs2",
       "accept": [
         "MMseqs2",
@@ -632,12 +766,12 @@
     },
     {
       "id": "u4-c38",
-      "front": "Why can ESMFold skip MSAs? Its PLM learned ___ information implicitly.",
-      "back": "Evolutionary/coevolutionary information, from pretraining on millions of sequences",
+      "front": "ESMFold skips MSAs because its language model absorbed ___ information during pretraining. (one word)",
+      "back": "Evolutionary (coevolutionary) information, from millions of sequences",
       "accept": [
         "evolutionary",
         "coevolutionary",
-        "evolutionary information",
+        "evolution",
         "coevolution"
       ],
       "tags": [
@@ -647,12 +781,12 @@
     },
     {
       "id": "u4-c39",
-      "front": "Enzymes transferring ATP's phosphate onto Ser/Thr or Tyr?",
+      "front": "Enzymes that transfer ATP's phosphate onto Ser/Thr or Tyr? (two words)",
       "back": "Protein kinases",
       "accept": [
+        "protein kinases",
         "kinases",
         "kinase",
-        "protein kinases",
         "protein kinase"
       ],
       "tags": [
@@ -662,13 +796,12 @@
     },
     {
       "id": "u4-c40",
-      "front": "Approximate size of the human kinome?",
+      "front": "Approximate number of human protein kinases? (number)",
       "back": "~500 (518 in Manning et al. 2002)",
       "accept": [
         "500",
         "~500",
-        "518",
-        "about 500"
+        "518"
       ],
       "tags": [
         "families"
@@ -677,14 +810,11 @@
     },
     {
       "id": "u4-c41",
-      "front": "Most kinase inhibitor drugs bind which pocket?",
-      "back": "The ATP-binding pocket (ATP-competitive)",
+      "front": "Most kinase inhibitor drugs compete with which molecule for its pocket? (abbreviation)",
+      "back": "ATP (they are ATP-competitive)",
       "accept": [
-        "ATP pocket",
-        "ATP-binding pocket",
-        "ATP site",
-        "ATP binding site",
-        "ATP"
+        "ATP",
+        "adenosine triphosphate"
       ],
       "tags": [
         "families",
@@ -694,8 +824,8 @@
     },
     {
       "id": "u4-c42",
-      "front": "GPCRs have how many transmembrane helices?",
-      "back": "7 (signal via G proteins and arrestins)",
+      "front": "How many transmembrane helices does a GPCR have? (number)",
+      "back": "7; they signal via G proteins and arrestins",
       "accept": [
         "7",
         "seven"
@@ -707,16 +837,19 @@
     },
     {
       "id": "u4-c43",
-      "front": "Roughly what fraction of approved drugs target GPCRs?",
+      "front": "Roughly what fraction of approved drugs target GPCRs? (fraction)",
       "back": "About one third (~30–35%)",
       "accept": [
-        "one third",
         "1/3",
+        "one third",
         "a third",
+        "one-third",
         "33%",
-        "~30%",
         "30%",
-        "35%"
+        "35%",
+        "~30%",
+        "~33%",
+        "34%"
       ],
       "tags": [
         "families",
@@ -726,14 +859,14 @@
     },
     {
       "id": "u4-c44",
-      "front": "Largest class of human TF DNA-binding domains?",
+      "front": "Largest class of human TF DNA-binding domains? (name)",
       "back": "C2H2 zinc finger",
       "accept": [
         "C2H2 zinc finger",
         "zinc finger",
         "C2H2",
         "C2H2-ZF",
-        "ZNF"
+        "C2H2 ZF"
       ],
       "tags": [
         "families"
@@ -742,14 +875,12 @@
     },
     {
       "id": "u4-c45",
-      "front": "Antibody region that binds antigen (vs Fc)?",
-      "back": "Fab (2 heavy + 2 light chains overall)",
+      "front": "Antibody arm region that binds antigen (versus the Fc stem)? (abbreviation)",
+      "back": "Fab (fragment antigen-binding)",
       "accept": [
         "Fab",
-        "Fab arms",
-        "Fab region",
-        "variable region",
-        "Fv"
+        "Fab arm",
+        "Fab region"
       ],
       "tags": [
         "antibodies"
@@ -758,15 +889,14 @@
     },
     {
       "id": "u4-c46",
-      "front": "Most diverse antibody CDR loop?",
-      "back": "CDR-H3",
+      "front": "Most diverse antibody CDR loop? (name)",
+      "back": "CDR-H3 (heavy chain, loop 3)",
       "accept": [
         "CDR-H3",
         "CDRH3",
         "CDR H3",
-        "H3",
         "HCDR3",
-        "CDR3"
+        "H3"
       ],
       "tags": [
         "antibodies"
@@ -775,7 +905,7 @@
     },
     {
       "id": "u4-c47",
-      "front": "Gene-segment shuffling that generates antibody diversity?",
+      "front": "Gene-segment shuffling that generates antibody diversity? (name)",
       "back": "V(D)J recombination (plus somatic hypermutation)",
       "accept": [
         "V(D)J recombination",
@@ -790,12 +920,12 @@
     },
     {
       "id": "u4-c48",
-      "front": "Single-domain camelid antibody fragment?",
+      "front": "Single-domain camelid antibody fragment? (one word)",
       "back": "Nanobody (VHH)",
       "accept": [
         "nanobody",
-        "VHH",
         "nanobodies",
+        "VHH",
         "single-domain antibody",
         "sdAb"
       ],
@@ -806,7 +936,7 @@
     },
     {
       "id": "u4-c49",
-      "front": "Antibody repertoire database used to train antibody LMs?",
+      "front": "Antibody repertoire database used to train antibody language models? (acronym)",
       "back": "OAS (Observed Antibody Space)",
       "accept": [
         "OAS",
@@ -820,12 +950,11 @@
     },
     {
       "id": "u4-c50",
-      "front": "Bond linking adjacent amino acids in a protein?",
+      "front": "Bond linking adjacent amino acids in a protein? (two words)",
       "back": "Peptide bond",
       "accept": [
         "peptide bond",
-        "amide bond",
-        "peptide"
+        "amide bond"
       ],
       "tags": [
         "basics",
@@ -835,7 +964,7 @@
     },
     {
       "id": "u4-c51",
-      "front": "One amino acid within a protein chain is called a…?",
+      "front": "One amino acid within a protein chain is called a ___. (one word)",
       "back": "Residue",
       "accept": [
         "residue",
@@ -849,15 +978,14 @@
     },
     {
       "id": "u4-c52",
-      "front": "Proteins are written from which terminus to which?",
-      "back": "N-terminus → C-terminus",
+      "front": "Protein sequences are written starting from which terminus? (letter)",
+      "back": "N (N-terminus → C-terminus)",
       "accept": [
-        "N to C",
-        "N→C",
-        "N-terminus to C-terminus",
-        "N-C",
-        "amino to carboxyl",
-        "N->C"
+        "N",
+        "N-terminus",
+        "N terminus",
+        "amino terminus",
+        "N-term"
       ],
       "tags": [
         "basics",
@@ -867,13 +995,12 @@
     },
     {
       "id": "u4-c53",
-      "front": "Variable part of an amino acid that gives it its chemistry?",
+      "front": "Variable part of an amino acid that gives it its chemistry? (two words)",
       "back": "Side chain (R group)",
       "accept": [
         "side chain",
         "R group",
-        "sidechain",
-        "R"
+        "sidechain"
       ],
       "tags": [
         "basics",
@@ -883,13 +1010,13 @@
     },
     {
       "id": "u4-c54",
-      "front": "Weak N–H···O=C attraction that stabilizes helices and sheets?",
+      "front": "Weak N–H···O=C attraction that stabilizes helices and sheets? (two words)",
       "back": "Hydrogen bond",
       "accept": [
         "hydrogen bond",
         "H-bond",
-        "hydrogen bonds",
-        "H bond"
+        "H bond",
+        "hydrogen bonds"
       ],
       "tags": [
         "basics",
@@ -899,7 +1026,7 @@
     },
     {
       "id": "u4-c55",
-      "front": "Proteins related by common ancestry are…?",
+      "front": "Proteins related by common ancestry are called ___. (one word)",
       "back": "Homologs (orthologs or paralogs)",
       "accept": [
         "homologs",
@@ -915,7 +1042,7 @@
     },
     {
       "id": "u4-c56",
-      "front": "What does MSA stand for (in protein work)?",
+      "front": "What does MSA stand for in protein work? (three words)",
       "back": "Multiple sequence alignment",
       "accept": [
         "multiple sequence alignment"
@@ -928,7 +1055,7 @@
     },
     {
       "id": "u4-c57",
-      "front": "Molecule an enzyme acts on?",
+      "front": "Molecule an enzyme acts on? (one word)",
       "back": "Substrate",
       "accept": [
         "substrate"
@@ -940,7 +1067,7 @@
     },
     {
       "id": "u4-c58",
-      "front": "Any molecule that binds a protein (hormone, drug)?",
+      "front": "Any molecule that binds a protein, like a hormone or drug? (one word)",
       "back": "Ligand",
       "accept": [
         "ligand"
@@ -952,7 +1079,7 @@
     },
     {
       "id": "u4-c59",
-      "front": "Molecule that donates the phosphate in kinase reactions?",
+      "front": "Molecule that donates the phosphate in kinase reactions? (abbreviation)",
       "back": "ATP (adenosine triphosphate)",
       "accept": [
         "ATP",
@@ -966,11 +1093,10 @@
     },
     {
       "id": "u4-c60",
-      "front": "Molecule an antibody binds?",
+      "front": "Molecule an antibody binds? (one word)",
       "back": "Antigen",
       "accept": [
-        "antigen",
-        "epitope"
+        "antigen"
       ],
       "tags": [
         "basics",
@@ -980,7 +1106,7 @@
     },
     {
       "id": "u4-c61",
-      "front": "Residues that avoid water and pack in the protein core are…?",
+      "front": "Residues that avoid water and pack in the protein core are ___. (one word)",
       "back": "Hydrophobic",
       "accept": [
         "hydrophobic",
@@ -996,15 +1122,94 @@
     },
     {
       "id": "u4-c62",
-      "front": "Crossing the cell membrane, abbreviated TM, is called…?",
+      "front": "Crossing the cell membrane (abbreviated TM)? (one word)",
       "back": "Transmembrane",
       "accept": [
         "transmembrane",
-        "TM",
-        "membrane-spanning"
+        "membrane-spanning",
+        "TM"
       ],
       "tags": [
         "basics"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u4-c63",
+      "front": "Besides arginine, the other strongly positively charged amino acid? (full name)",
+      "back": "Lysine (K)",
+      "accept": [
+        "lysine",
+        "Lys",
+        "K"
+      ],
+      "tags": [
+        "amino-acids"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u4-c64",
+      "front": "Besides aspartate, the other negatively charged amino acid? (full name)",
+      "back": "Glutamate (E)",
+      "accept": [
+        "glutamate",
+        "glutamic acid",
+        "Glu",
+        "E"
+      ],
+      "tags": [
+        "amino-acids"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u4-c65",
+      "front": "Is introducing proline (L→P) inside an α-helix usually mild or damaging? (one word)",
+      "back": "Damaging: proline's rigid ring breaks helices",
+      "accept": [
+        "damaging",
+        "deleterious",
+        "severe",
+        "disruptive",
+        "destabilizing",
+        "harmful"
+      ],
+      "tags": [
+        "variants",
+        "amino-acids"
+      ],
+      "type": "apply"
+    },
+    {
+      "id": "u4-c66",
+      "front": "Is a charge reversal (E→K) in a buried salt bridge usually mild or damaging? (one word)",
+      "back": "Damaging: it breaks the stabilizing charge pair",
+      "accept": [
+        "damaging",
+        "deleterious",
+        "severe",
+        "disruptive",
+        "destabilizing",
+        "harmful"
+      ],
+      "tags": [
+        "variants",
+        "amino-acids"
+      ],
+      "type": "apply"
+    },
+    {
+      "id": "u4-c67",
+      "front": "Acronym of the 'Structural Classification of Proteins' database? (acronym)",
+      "back": "SCOP (SCOPe is the extended version); like CATH, used for fold-level splits",
+      "accept": [
+        "SCOP",
+        "SCOPe"
+      ],
+      "tags": [
+        "domains",
+        "ml"
       ],
       "type": "recall"
     }

@@ -2,12 +2,14 @@
   "subject": "biology",
   "title": "Practical molecular biology for reading papers",
   "description": "Undergraduate/practitioner-level molecular biology for an ML researcher: genes, proteins, pathways, naming, databases, data formats, and ML-for-biology papers. Every lesson defines its terms; no biology beyond high school assumed.",
-  "schema_version": 2,
+  "schema_version": 3,
   "generated": "2026-11-12",
   "changes": [
     "v2: every lesson opens with a Key terms glossary (also exported as the structured `glossary` array) and defines terms where they are first used",
     "v2: every card has an `accept` array for typed-answer checking; multi-part cards rewritten so the typed part is short",
-    "v2: new basic-term cards appended to each unit (existing card ids unchanged)"
+    "v2: new basic-term cards appended to each unit (existing card ids unchanged)",
+    "v3: every card audited for typed answers: one unambiguous short answer (≤ ~4 words), the expected form stated in parentheses at the end of the prompt, comparisons/lists split into separate cards (original id kept for the first part, new ids appended)",
+    "v3: glossary rewritten to one term per entry; each definition points to exactly one term and never contains it; glossary entries now carry an `accept` array for the Terms drill"
   ],
   "units": [
     {
@@ -16,10 +18,10 @@
       "title": "Central dogma for practitioners",
       "summary": "How genes are laid out in the genome, how they become transcripts and proteins, and which vocabulary (exons, UTRs, isoforms, reading frames, PTMs) shows up constantly in papers and data. This is the vocabulary everything else builds on.",
       "file": "01-central-dogma.json",
-      "card_count": 74,
+      "card_count": 80,
       "quiz_count": 13,
-      "glossary_count": 28,
-      "lesson_words": 2021,
+      "glossary_count": 38,
+      "lesson_words": 2122,
       "prerequisites": []
     },
     {
@@ -28,10 +30,10 @@
       "title": "Naming conventions and identifiers",
       "summary": "How to read gene and protein names across species, HLA alleles, HGVS variant notation and rsIDs, and the identifier formats from Ensembl, RefSeq, UniProt, PDB and others. Parsing these on sight is what lets you join datasets and read methods sections.",
       "file": "02-naming-conventions.json",
-      "card_count": 62,
+      "card_count": 63,
       "quiz_count": 14,
-      "glossary_count": 19,
-      "lesson_words": 1584,
+      "glossary_count": 21,
+      "lesson_words": 1575,
       "prerequisites": [
         1
       ]
@@ -44,8 +46,8 @@
       "file": "03-databases.json",
       "card_count": 55,
       "quiz_count": 14,
-      "glossary_count": 20,
-      "lesson_words": 1453,
+      "glossary_count": 26,
+      "lesson_words": 1504,
       "prerequisites": [
         1,
         2
@@ -57,10 +59,10 @@
       "title": "Proteins: sequence, structure, families",
       "summary": "Amino acid one-letter codes by chemistry, levels of protein structure, domains and the databases that catalog them, AlphaFold confidence metrics (pLDDT, PAE, ipTM), MSAs and coevolution, and the protein families you'll meet most often in papers.",
       "file": "04-proteins.json",
-      "card_count": 62,
+      "card_count": 67,
       "quiz_count": 14,
-      "glossary_count": 22,
-      "lesson_words": 1714,
+      "glossary_count": 27,
+      "lesson_words": 1717,
       "prerequisites": [
         1
       ]
@@ -71,10 +73,10 @@
       "title": "Key pathways and signaling",
       "summary": "The canonical signaling circuits that show up constantly in biology and cancer papers: RTK-RAS-MAPK, PI3K-AKT-mTOR, p53 and DNA damage, Wnt, NF-κB, JAK-STAT, apoptosis, and the cell cycle, plus the main oncogenes and tumor suppressors and the drugs that target them.",
       "file": "05-pathways.json",
-      "card_count": 63,
+      "card_count": 66,
       "quiz_count": 15,
-      "glossary_count": 25,
-      "lesson_words": 1692,
+      "glossary_count": 33,
+      "lesson_words": 1742,
       "prerequisites": [
         1,
         4
@@ -86,10 +88,10 @@
       "title": "Data formats and experiments",
       "summary": "The file formats (FASTA, FASTQ, SAM/BAM/CRAM, VCF, BED, GTF/GFF, h5ad) and coordinate conventions you'll handle, the reference genome builds, and how the main assays work: bulk and single-cell RNA-seq, ChIP-seq, ATAC-seq, CRISPR screens, and mass-spec proteomics.",
       "file": "06-data-formats-experiments.json",
-      "card_count": 66,
+      "card_count": 69,
       "quiz_count": 16,
-      "glossary_count": 26,
-      "lesson_words": 2009,
+      "glossary_count": 31,
+      "lesson_words": 2026,
       "prerequisites": [
         1,
         2,
@@ -102,10 +104,10 @@
       "title": "Reading ML-for-biology papers",
       "summary": "How to decode the tasks, benchmarks (CASP, ProteinGym/DMS, ClinVar), tokenization choices for proteins, DNA and single cells, leakage-aware data splits, and evaluation metrics in ML-for-biology papers, plus a checklist for reading one quickly.",
       "file": "07-ml-for-biology.json",
-      "card_count": 55,
+      "card_count": 56,
       "quiz_count": 14,
-      "glossary_count": 21,
-      "lesson_words": 1673,
+      "glossary_count": 24,
+      "lesson_words": 1692,
       "prerequisites": [
         1,
         2,
@@ -116,8 +118,8 @@
     }
   ],
   "totals": {
-    "cards": 437,
+    "cards": 456,
     "quiz": 100,
-    "glossary_terms": 161
+    "glossary_terms": 200
   }
 }

@@ -1,7 +1,7 @@
 from common import build
 import os
 lesson = open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"lessons","u7.md")).read()
-from cards_u7 import cards
+from cards_u7 import cards, glossary_accept
 quiz = [
 ("The primary ProteinGym DMS metric is:",["AUROC","Spearman's rank correlation","RMSD","Perplexity"],1,"Rank correlation between model scores and assay fitness, averaged across assays."),
 ("Why are protein datasets clustered by sequence identity before splitting?",["To speed up training","To prevent homologous sequences from appearing in both train and test","To balance amino acid composition","To remove disordered regions"],1,"Homology leakage inflates test performance."),
@@ -18,4 +18,4 @@ quiz = [
 ("Which is an inverse folding model?",["ProteinMPNN","Enformer","Geneformer","SpliceAI"],0,"ProteinMPNN designs sequences for a given backbone."),
 ("A 'temporal split' for a structure model means:",["Splitting by protein length","Testing on structures released after the training cutoff date","Splitting by organism","Splitting by resolution"],1,"Mimics CASP's prospective evaluation."),
 ]
-build(7,"ml-for-biology","Reading ML-for-biology papers","How to decode the tasks, benchmarks (CASP, ProteinGym/DMS, ClinVar), tokenization choices for proteins, DNA and single cells, leakage-aware data splits, and evaluation metrics in ML-for-biology papers, plus a checklist for reading one quickly.",lesson,cards,quiz)
+build(7,"ml-for-biology","Reading ML-for-biology papers","How to decode the tasks, benchmarks (CASP, ProteinGym/DMS, ClinVar), tokenization choices for proteins, DNA and single cells, leakage-aware data splits, and evaluation metrics in ML-for-biology papers, plus a checklist for reading one quickly.",lesson,cards,quiz,glossary_accept)

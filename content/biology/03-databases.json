@@ -6,96 +6,257 @@
   "glossary": [
     {
       "term": "Annotation",
-      "definition": "labels layered on raw sequence: where the genes, exons and other features are, and what they do."
+      "definition": "labels on raw sequence marking where genes, exons and other features are and what they do.",
+      "accept": [
+        "Annotation",
+        "Annotations"
+      ]
     },
     {
       "term": "Accession",
-      "definition": "(see Unit 2): a database's stable ID for a record."
+      "definition": "a database's stable ID for a record (see Unit 2).",
+      "accept": [
+        "Accession",
+        "Accessions",
+        "accession number"
+      ]
     },
     {
-      "term": "Reference genome / assembly",
-      "definition": "(see Unit 6): the standard genome sequence that coordinates refer to (hg19, hg38)."
+      "term": "Reference genome",
+      "definition": "the standard genome sequence that coordinates refer to, e.g. hg38 (see Unit 6).",
+      "accept": [
+        "Reference genome",
+        "Reference genomes",
+        "reference",
+        "reference assembly"
+      ]
     },
     {
       "term": "Track",
-      "definition": "one row of annotation drawn along genome coordinates in a browser."
+      "definition": "one row of data drawn along genome coordinates in a browser.",
+      "accept": [
+        "Track",
+        "Tracks"
+      ]
     },
     {
-      "term": "Ortholog / paralog",
-      "definition": "(see Unit 2): same gene in another species / related gene in the same species."
+      "term": "Ortholog",
+      "definition": "the same gene in another species (see Unit 2).",
+      "accept": [
+        "Ortholog",
+        "Orthologs",
+        "orthologue"
+      ]
+    },
+    {
+      "term": "Paralog",
+      "definition": "a related gene in the same species, from duplication (see Unit 2).",
+      "accept": [
+        "Paralog",
+        "Paralogs",
+        "paralogue"
+      ]
     },
     {
       "term": "Expression",
-      "definition": "how much RNA (or protein) a gene produces in a sample."
+      "definition": "how much RNA or protein a gene produces in a sample.",
+      "accept": [
+        "Expression",
+        "Expressions",
+        "gene expression"
+      ]
     },
     {
       "term": "eQTL",
-      "definition": "expression quantitative trait locus, a genetic variant associated with how much a gene is expressed."
+      "definition": "a genetic variant associated with how strongly a gene is expressed.",
+      "accept": [
+        "eQTL",
+        "expression quantitative trait locus",
+        "eQTLs"
+      ]
     },
     {
-      "term": "Allele frequency (AF)",
-      "definition": "the fraction of chromosomes in a population carrying a given allele."
+      "term": "Allele frequency",
+      "definition": "the fraction of chromosomes in a population carrying a particular variant version.",
+      "accept": [
+        "Allele frequency",
+        "AF",
+        "Allele frequencies"
+      ]
     },
     {
-      "term": "Exome / genome sequencing",
-      "definition": "sequencing only the exons (~1–2% of the genome) vs everything."
+      "term": "Exome sequencing",
+      "definition": "sequencing only the protein-coding exons (~1–2% of the genome).",
+      "accept": [
+        "Exome sequencing",
+        "Exome sequencings",
+        "WES",
+        "exome",
+        "whole-exome sequencing"
+      ]
+    },
+    {
+      "term": "Whole-genome sequencing",
+      "definition": "sequencing all of an individual's DNA.",
+      "accept": [
+        "Whole-genome sequencing",
+        "WGS",
+        "Whole-genome sequencings",
+        "whole genome sequencing",
+        "genome sequencing"
+      ]
     },
     {
       "term": "Mendelian disease",
-      "definition": "a disease caused mainly by variants in a single gene."
+      "definition": "a disease caused mainly by variants in a single gene.",
+      "accept": [
+        "Mendelian disease",
+        "Mendelian diseases",
+        "monogenic disease",
+        "Mendelian",
+        "monogenic",
+        "Mendelian disorder"
+      ]
     },
     {
-      "term": "Pathogenic / benign",
-      "definition": "disease-causing / harmless (clinical variant labels)."
+      "term": "Pathogenic",
+      "definition": "clinical label meaning disease-causing.",
+      "accept": [
+        "Pathogenic",
+        "Pathogenics"
+      ]
     },
     {
-      "term": "Loss-of-function (LoF)",
-      "definition": "a variant that destroys the gene product (nonsense, frameshift, splice-site)."
+      "term": "Benign",
+      "definition": "clinical label meaning harmless.",
+      "accept": [
+        "Benign",
+        "Benigns"
+      ]
+    },
+    {
+      "term": "Loss-of-function",
+      "definition": "describes a variant that destroys the gene product (nonsense, frameshift, splice-site).",
+      "accept": [
+        "Loss-of-function",
+        "LoF",
+        "Loss-of-functions",
+        "loss of function",
+        "pLoF"
+      ]
     },
     {
       "term": "Constraint",
-      "definition": "how strongly natural selection removes damaging variants from a gene."
+      "definition": "how strongly natural selection removes damaging variants from a gene.",
+      "accept": [
+        "Constraint",
+        "Constraints",
+        "gene constraint",
+        "selective constraint"
+      ]
     },
     {
-      "term": "X-ray crystallography / cryo-EM / NMR",
-      "definition": "experimental methods for determining 3D structures."
+      "term": "X-ray crystallography",
+      "definition": "determining a 3D structure from how a protein crystal diffracts radiation.",
+      "accept": [
+        "X-ray crystallography",
+        "X-ray crystallographies",
+        "crystallography",
+        "X-ray"
+      ]
+    },
+    {
+      "term": "Cryo-EM",
+      "definition": "determining a 3D structure by electron microscopy of flash-frozen samples.",
+      "accept": [
+        "Cryo-EM",
+        "cryoEM",
+        "cryo EM",
+        "cryo-electron microscopy"
+      ]
+    },
+    {
+      "term": "NMR",
+      "definition": "determining a 3D structure from magnetic resonance of molecules in solution.",
+      "accept": [
+        "NMR",
+        "nuclear magnetic resonance",
+        "NMR spectroscopy"
+      ]
     },
     {
       "term": "Domain",
-      "definition": "(see Unit 4): an independently folding unit of a protein."
+      "definition": "an independently folding unit of a protein (see Unit 4).",
+      "accept": [
+        "Domain",
+        "Domains"
+      ]
     },
     {
       "term": "Pathway",
-      "definition": "a set of molecules that act in sequence to carry out a process (see Unit 5)."
+      "definition": "a set of molecules acting in sequence to carry out a process (see Unit 5).",
+      "accept": [
+        "Pathway",
+        "Pathways"
+      ]
     },
     {
       "term": "Ontology",
-      "definition": "a controlled vocabulary of terms with defined relationships between them."
+      "definition": "a controlled vocabulary whose terms have defined relationships to each other.",
+      "accept": [
+        "Ontology",
+        "Ontologies"
+      ]
     },
     {
       "term": "Enrichment analysis",
-      "definition": "testing whether a gene list contains more members of some category than chance would predict."
+      "definition": "testing whether a gene list contains more members of some category than chance predicts.",
+      "accept": [
+        "Enrichment analysis",
+        "enrichment",
+        "over-representation analysis",
+        "GSEA",
+        "ORA"
+      ]
     },
     {
       "term": "Cell line",
-      "definition": "cells grown indefinitely in the lab, often derived from a tumor."
+      "definition": "cells that grow indefinitely in the lab, often derived from a tumor.",
+      "accept": [
+        "Cell line",
+        "Cell lines"
+      ]
     },
     {
-      "term": "Raw vs processed data",
-      "definition": "sequencer reads vs derived tables (counts, peaks)."
+      "term": "Raw data",
+      "definition": "the sequencer's original reads, before any processing.",
+      "accept": [
+        "Raw data",
+        "Raw datas",
+        "raw reads"
+      ]
+    },
+    {
+      "term": "Processed data",
+      "definition": "tables derived from reads, such as gene counts or peak calls.",
+      "accept": [
+        "Processed data",
+        "Processed datas",
+        "processed"
+      ]
     }
   ],
-  "lesson": "### Key terms\n\n- **Annotation**: labels layered on raw sequence: where the genes, exons and other features are, and what they do.\n- **Accession** (see Unit 2): a database's stable ID for a record.\n- **Reference genome / assembly** (see Unit 6): the standard genome sequence that coordinates refer to (hg19, hg38).\n- **Track**: one row of annotation drawn along genome coordinates in a browser.\n- **Ortholog / paralog** (see Unit 2): same gene in another species / related gene in the same species.\n- **Expression**: how much RNA (or protein) a gene produces in a sample.\n- **eQTL**: expression quantitative trait locus, a genetic variant associated with how much a gene is expressed.\n- **Allele frequency (AF)**: the fraction of chromosomes in a population carrying a given allele.\n- **Exome / genome sequencing**: sequencing only the exons (~1–2% of the genome) vs everything.\n- **Mendelian disease**: a disease caused mainly by variants in a single gene.\n- **Pathogenic / benign**: disease-causing / harmless (clinical variant labels).\n- **Loss-of-function (LoF)**: a variant that destroys the gene product (nonsense, frameshift, splice-site).\n- **Constraint**: how strongly natural selection removes damaging variants from a gene.\n- **X-ray crystallography / cryo-EM / NMR**: experimental methods for determining 3D structures.\n- **Domain** (see Unit 4): an independently folding unit of a protein.\n- **Pathway**: a set of molecules that act in sequence to carry out a process (see Unit 5).\n- **Ontology**: a controlled vocabulary of terms with defined relationships between them.\n- **Enrichment analysis**: testing whether a gene list contains more members of some category than chance would predict.\n- **Cell line**: cells grown indefinitely in the lab, often derived from a tumor.\n- **Raw vs processed data**: sequencer reads vs derived tables (counts, peaks).\n\n## The mental model: one question, one database\n\nMost lookups answer one of a few questions: *what is this gene?*, *what does its protein look like?*, *where is it expressed?*, *which variants exist and do they matter?*, *what does it interact with?*, or *where is the raw data?* Each has a standard resource. Learn the mapping and you'll know what a paper means by \"we downloaded X from Y\".\n\n## Genes and genomes\n\n- **NCBI Gene** (NCBI = the US National Center for Biotechnology Information): one page per gene with a numeric ID (TP53 = 7157), a plain-language summary, aliases, its RefSeq transcripts, and links. Good first stop for *\"what is this gene?\"*.\n- **Ensembl** (from EMBL-EBI, the European Bioinformatics Institute): genome **annotation** for hundreds of vertebrates. Annotation means the labels marking where genes, transcripts and exons are. Ensembl provides gene/transcript/protein models (ENSG/ENST/ENSP), **orthologs** and **paralogs**, the **VEP** (Variant Effect Predictor, which labels a variant as missense, splice, etc.), and **BioMart** for bulk ID conversion. **GENCODE** is the human and mouse gene annotation that Ensembl displays.\n- **UCSC Genome Browser** (University of California, Santa Cruz): a visual browser organized by genome coordinates on a specific **assembly** (hg19 or hg38, versions of the reference genome; see Unit 6). Data are drawn as stacked **tracks**: genes, conservation across species, regulatory data, repeats, variants. Tools: the **Table Browser** (downloads) and **liftOver** (converting coordinates between assemblies). It answers *\"what is at chr7:140,753,336?\"*.\n- **HGNC**: the authority on official human gene symbols, previous symbols and aliases (see Unit 2).\n\n## Proteins and structures\n\n- **UniProt** (UniProtKB): the reference for protein sequences and function, with one entry per protein. Each entry lists its function, **domains** (independently folding units; see Unit 4), modification sites, isoforms, disease variants, and links. **Swiss-Prot** entries are reviewed by curators; **TrEMBL** entries are automatic. **UniRef50/90/100** clusters are standard training sets for protein language models.\n- **PDB** (Protein Data Bank; run by RCSB in the US, PDBe in Europe and PDBj in Japan, together wwPDB): experimentally determined 3D structures. They come from **X-ray crystallography** (X-rays diffracted by a protein crystal), **cryo-EM** (electron microscopy of flash-frozen samples) and **NMR** (magnetic resonance in solution). There are roughly two hundred thousand entries, each with a 4-character ID. It answers *\"is there a measured structure, at what resolution, bound to what?\"*. Resolution is in ångströms (Å, 0.1 nm), and lower is sharper.\n- **AlphaFold DB** (Google DeepMind + EMBL-EBI): *predicted* structures for more than 200 million UniProt proteins, with per-residue confidence (pLDDT) and error plots (PAE); see Unit 4. IDs look like AF-P04637-F1.\n- **InterPro / Pfam**: catalogs of protein families and domains. Pfam (PF00069 = protein kinase domain) is now browsed through the InterPro website. It answers *\"what domains does this protein have?\"*.\n\n## Expression\n\n**Expression** means how much RNA (or protein) a gene makes in a given sample.\n\n- **GTEx** (Genotype-Tissue Expression): RNA sequencing of ~50 tissues from roughly 1,000 deceased donors, plus **eQTLs**. An eQTL is a genetic variant whose genotype correlates with a gene's expression level. GTEx answers *\"in which normal tissues is this gene on, and which variants change its level?\"*.\n- **Human Protein Atlas**: protein and RNA levels by tissue, cell type and location within the cell, with antibody-staining images.\n- **CELLxGENE** (Chan Zuckerberg Initiative): curated **single-cell** datasets, meaning expression measured cell by cell (see Unit 6). Its Census holds tens of millions of cells in one standard format. It is a common pretraining source for single-cell foundation models.\n- **GEO** (Gene Expression Omnibus, NCBI): archive for **processed** functional-genomics data (expression tables, peak files) and sample descriptions. Accessions: **GSE** (series = a study), **GSM** (sample), **GPL** (platform = the instrument or array type), GDS (curated dataset).\n- **SRA** (Sequence Read Archive, NCBI): **raw** sequencing reads. Accessions: **SRP** study, **SRX** experiment, **SRS** sample, **SRR** run (the actual files). European (ENA, ERR…) and Japanese (DDBJ, DRR…) archives mirror it. Related IDs: **BioProject** (PRJNA…) and **BioSample** (SAMN…).\n\n## Variants and disease\n\n- **dbSNP**: NCBI's catalog of short variants; issues rsIDs (see Unit 2).\n- **gnomAD** (Genome Aggregation Database): **allele frequencies**, the fraction of chromosomes carrying each variant, from hundreds of thousands of **exomes** (only the exons sequenced) and **genomes** (v4 ≈ 800k people), broken down by genetic ancestry. It also reports **gene constraint**: whether a gene has fewer **loss-of-function** (LoF, gene-breaking) variants than expected, because selection removes them. Scores: pLI and **LOEUF** (loss-of-function observed/expected upper bound fraction; low = intolerant). It answers *\"how common is this variant in the general population?\"*. A variant carried by many healthy people is unlikely to cause a severe disease.\n- **ClinVar**: clinical labs' interpretations of variants: **pathogenic** (disease-causing), likely pathogenic, **VUS** (variant of uncertain significance), likely benign, **benign**, with 0–4 review-status stars. Accessions: VCV (variant), RCV (variant + condition), SCV (one submission). It is the standard benchmark for variant-effect predictors.\n- **OMIM** (Online Mendelian Inheritance in Man): curated catalog of **Mendelian** (single-gene) disorders and their genes, with 6-digit numbers. Prefixes: `*` gene, `#` disease with known molecular cause, `%` disease with unknown cause, `+` gene and phenotype combined.\n- **COSMIC**, **cBioPortal**, **TCGA** (The Cancer Genome Atlas): somatic (tumor) mutations and multi-omic tumor cohorts.\n- **GWAS Catalog**: published trait–variant associations from GWAS (see Unit 1).\n\n## Function, pathways and interactions\n\n- **Gene Ontology (GO)**: an **ontology** is a controlled vocabulary with relationships between its terms, here arranged as a directed acyclic graph from general to specific. GO has three aspects: **Molecular Function** (e.g. \"kinase activity\"), **Biological Process** (e.g. \"apoptotic process\", GO:0006915), and **Cellular Component** (e.g. \"nucleus\"). Genes are annotated to terms with **evidence codes**; IEA (\"inferred from electronic annotation\") is automatic and weakest. GO powers **enrichment analysis**: testing whether a gene list (say, genes up in tumors) contains more genes from a category than chance would predict, against a background list.\n- **KEGG**: hand-drawn pathway maps (hsa04010 = human MAPK signaling) plus metabolism. Gene IDs look like hsa:7157. A **pathway** is a chain of molecules that together carry out a process (see Unit 5).\n- **Reactome**: open, curated, hierarchical pathways (R-HSA-…). Often used with KEGG and MSigDB gene sets for enrichment.\n- **STRING**: protein–protein **association** networks. It combines experiments, co-expression, text mining and genomic context into a confidence score (0–1, written 0–1000 in files). Edges are not always physical binding.\n- **BioGRID / IntAct**: curated, experimentally observed interactions.\n\n## Perturbation and chemistry\n\n- **DepMap** (Cancer Dependency Map): genome-wide CRISPR knockout screens (see Unit 6) across 1,000+ **cancer cell lines**, which are tumor-derived cells grown indefinitely in the lab. Gene effect (Chronos) scores show which genes each line needs to survive.\n- **ChEMBL**: bioactive molecules and their assay results (CHEMBL25 = aspirin). **PubChem**: chemical structures.\n- **ENCODE** (Encyclopedia of DNA Elements): experiments mapping regulatory activity (ChIP-seq, ATAC/DNase, RNA-seq; see Unit 6) and candidate regulatory elements (cCREs). A main training source for sequence-to-function models.\n\n## How you'll see this in a paper\n\n- \"Data are available at GEO under GSE123456\": processed tables are there, and raw reads are linked via SRA (SRR runs).\n- \"Variants with gnomAD AF > 0.01 were treated as benign\": a population-frequency filter.\n- \"Evaluated on ClinVar missense variants (≥1 star) not in the training set\": standard variant-effect benchmarking; watch for leakage (see Unit 7).\n- \"GO enrichment (FDR < 0.05)\": over-representation test with multiple-testing correction (FDR = false discovery rate).\n- \"Structures from AlphaFold DB where no PDB entry existed.\"\n",
+  "lesson": "### Key terms\n\n- **Annotation**: labels on raw sequence marking where genes, exons and other features are and what they do.\n- **Accession**: a database's stable ID for a record (see Unit 2).\n- **Reference genome**: the standard genome sequence that coordinates refer to, e.g. hg38 (see Unit 6).\n- **Track**: one row of data drawn along genome coordinates in a browser.\n- **Ortholog**: the same gene in another species (see Unit 2).\n- **Paralog**: a related gene in the same species, from duplication (see Unit 2).\n- **Expression**: how much RNA or protein a gene produces in a sample.\n- **eQTL**: a genetic variant associated with how strongly a gene is expressed.\n- **Allele frequency (AF)**: the fraction of chromosomes in a population carrying a particular variant version.\n- **Exome sequencing**: sequencing only the protein-coding exons (~1–2% of the genome).\n- **Whole-genome sequencing (WGS)**: sequencing all of an individual's DNA.\n- **Mendelian disease**: a disease caused mainly by variants in a single gene.\n- **Pathogenic**: clinical label meaning disease-causing.\n- **Benign**: clinical label meaning harmless.\n- **Loss-of-function (LoF)**: describes a variant that destroys the gene product (nonsense, frameshift, splice-site).\n- **Constraint**: how strongly natural selection removes damaging variants from a gene.\n- **X-ray crystallography**: determining a 3D structure from how a protein crystal diffracts radiation.\n- **Cryo-EM**: determining a 3D structure by electron microscopy of flash-frozen samples.\n- **NMR**: determining a 3D structure from magnetic resonance of molecules in solution.\n- **Domain**: an independently folding unit of a protein (see Unit 4).\n- **Pathway**: a set of molecules acting in sequence to carry out a process (see Unit 5).\n- **Ontology**: a controlled vocabulary whose terms have defined relationships to each other.\n- **Enrichment analysis**: testing whether a gene list contains more members of some category than chance predicts.\n- **Cell line**: cells that grow indefinitely in the lab, often derived from a tumor.\n- **Raw data**: the sequencer's original reads, before any processing.\n- **Processed data**: tables derived from reads, such as gene counts or peak calls.\n\n## The mental model: one question, one database\n\nMost lookups answer one of a few questions: *what is this gene?*, *what does its protein look like?*, *where is it expressed?*, *which variants exist and do they matter?*, *what does it interact with?*, or *where is the raw data?* Each has a standard resource. Learn the mapping and you'll know what a paper means by \"we downloaded X from Y\".\n\n## Genes and genomes\n\n- **NCBI Gene** (NCBI = the US National Center for Biotechnology Information): one page per gene with a numeric ID (TP53 = 7157), a plain-language summary, aliases, its RefSeq transcripts, and links. Good first stop for *\"what is this gene?\"*.\n- **Ensembl** (from EMBL-EBI, the European Bioinformatics Institute): genome **annotation** for hundreds of vertebrates. Annotation means the labels marking where genes, transcripts and exons are. Ensembl provides gene/transcript/protein models (ENSG/ENST/ENSP), **orthologs** and **paralogs**, the **VEP** (Variant Effect Predictor, which labels a variant as missense, splice, etc.), and **BioMart** for bulk ID conversion. **GENCODE** is the human and mouse gene annotation that Ensembl displays.\n- **UCSC Genome Browser** (University of California, Santa Cruz): a visual browser organized by genome coordinates on a specific **assembly** (hg19 or hg38, versions of the reference genome; see Unit 6). Data are drawn as stacked **tracks**: genes, conservation across species, regulatory data, repeats, variants. Tools: the **Table Browser** (downloads) and **liftOver** (converting coordinates between assemblies). It answers *\"what is at chr7:140,753,336?\"*.\n- **HGNC**: the authority on official human gene symbols, previous symbols and aliases (see Unit 2).\n\n## Proteins and structures\n\n- **UniProt** (UniProtKB): the reference for protein sequences and function, with one entry per protein. Each entry lists its function, **domains** (independently folding units; see Unit 4), modification sites, isoforms, disease variants, and links. **Swiss-Prot** entries are reviewed by curators; **TrEMBL** entries are automatic. **UniRef50/90/100** clusters are standard training sets for protein language models.\n- **PDB** (Protein Data Bank; run by RCSB in the US, PDBe in Europe and PDBj in Japan, together wwPDB): experimentally determined 3D structures. They come from **X-ray crystallography** (X-rays diffracted by a protein crystal), **cryo-EM** (electron microscopy of flash-frozen samples) and **NMR** (magnetic resonance in solution). There are roughly two hundred thousand entries, each with a 4-character ID. It answers *\"is there a measured structure, at what resolution, bound to what?\"*. Resolution is in ångströms (Å, 0.1 nm), and lower is sharper.\n- **AlphaFold DB** (Google DeepMind + EMBL-EBI): *predicted* structures for more than 200 million UniProt proteins, with per-residue confidence (pLDDT) and error plots (PAE); see Unit 4. IDs look like AF-P04637-F1.\n- **InterPro / Pfam**: catalogs of protein families and domains. Pfam (PF00069 = protein kinase domain) is now browsed through the InterPro website. It answers *\"what domains does this protein have?\"*.\n\n## Expression\n\n**Expression** means how much RNA (or protein) a gene makes in a given sample.\n\n- **GTEx** (Genotype-Tissue Expression): RNA sequencing of ~50 tissues from roughly 1,000 deceased donors, plus **eQTLs**. An eQTL is a genetic variant whose genotype correlates with a gene's expression level. GTEx answers *\"in which normal tissues is this gene on, and which variants change its level?\"*.\n- **Human Protein Atlas**: protein and RNA levels by tissue, cell type and location within the cell, with antibody-staining images.\n- **CELLxGENE** (Chan Zuckerberg Initiative): curated **single-cell** datasets, meaning expression measured cell by cell (see Unit 6). Its Census holds tens of millions of cells in one standard format. It is a common pretraining source for single-cell foundation models.\n- **GEO** (Gene Expression Omnibus, NCBI): archive for **processed** functional-genomics data (expression tables, peak files) and sample descriptions. Accessions: **GSE** (series = a study), **GSM** (sample), **GPL** (platform = the instrument or array type), GDS (curated dataset).\n- **SRA** (Sequence Read Archive, NCBI): **raw** sequencing reads. Accessions: **SRP** study, **SRX** experiment, **SRS** sample, **SRR** run (the actual files). European (ENA, ERR…) and Japanese (DDBJ, DRR…) archives mirror it. Related IDs: **BioProject** (PRJNA…) and **BioSample** (SAMN…).\n\n## Variants and disease\n\n- **dbSNP**: NCBI's catalog of short variants; issues rsIDs (see Unit 2).\n- **gnomAD** (Genome Aggregation Database): **allele frequencies**, the fraction of chromosomes carrying each variant, from hundreds of thousands of **exomes** (only the exons sequenced) and **genomes** (v4 ≈ 800k people), broken down by genetic ancestry. It also reports **gene constraint**: whether a gene has fewer **loss-of-function** (LoF, gene-breaking) variants than expected, because selection removes them. Scores: pLI and **LOEUF** (loss-of-function observed/expected upper bound fraction; low = intolerant). It answers *\"how common is this variant in the general population?\"*. A variant carried by many healthy people is unlikely to cause a severe disease.\n- **ClinVar**: clinical labs' interpretations of variants: **pathogenic** (disease-causing), likely pathogenic, **VUS** (variant of uncertain significance), likely benign, **benign**, with 0–4 review-status stars. Accessions: VCV (variant), RCV (variant + condition), SCV (one submission). It is the standard benchmark for variant-effect predictors.\n- **OMIM** (Online Mendelian Inheritance in Man): curated catalog of **Mendelian** (single-gene) disorders and their genes, with 6-digit numbers. Prefixes: `*` gene, `#` disease with known molecular cause, `%` disease with unknown cause, `+` gene and phenotype combined.\n- **COSMIC**, **cBioPortal**, **TCGA** (The Cancer Genome Atlas): somatic (tumor) mutations and multi-omic tumor cohorts.\n- **GWAS Catalog**: published trait–variant associations from GWAS (see Unit 1).\n\n## Function, pathways and interactions\n\n- **Gene Ontology (GO)**: an **ontology** is a controlled vocabulary with relationships between its terms, here arranged as a directed acyclic graph from general to specific. GO has three aspects: **Molecular Function** (e.g. \"kinase activity\"), **Biological Process** (e.g. \"apoptotic process\", GO:0006915), and **Cellular Component** (e.g. \"nucleus\"). Genes are annotated to terms with **evidence codes**; IEA (\"inferred from electronic annotation\") is automatic and weakest. GO powers **enrichment analysis**: testing whether a gene list (say, genes up in tumors) contains more genes from a category than chance would predict, against a background list.\n- **KEGG**: hand-drawn pathway maps (hsa04010 = human MAPK signaling) plus metabolism. Gene IDs look like hsa:7157. A **pathway** is a chain of molecules that together carry out a process (see Unit 5).\n- **Reactome**: open, curated, hierarchical pathways (R-HSA-…). Often used with KEGG and MSigDB gene sets for enrichment.\n- **STRING**: protein–protein **association** networks. It combines experiments, co-expression, text mining and genomic context into a confidence score (0–1, written 0–1000 in files). Edges are not always physical binding.\n- **BioGRID / IntAct**: curated, experimentally observed interactions.\n\n## Perturbation and chemistry\n\n- **DepMap** (Cancer Dependency Map): genome-wide CRISPR knockout screens (see Unit 6) across 1,000+ **cancer cell lines**, which are tumor-derived cells grown indefinitely in the lab. Gene effect (Chronos) scores show which genes each line needs to survive.\n- **ChEMBL**: bioactive molecules and their assay results (CHEMBL25 = aspirin). **PubChem**: chemical structures.\n- **ENCODE** (Encyclopedia of DNA Elements): experiments mapping regulatory activity (ChIP-seq, ATAC/DNase, RNA-seq; see Unit 6) and candidate regulatory elements (cCREs). A main training source for sequence-to-function models.\n\n## How you'll see this in a paper\n\n- \"Data are available at GEO under GSE123456\": processed tables are there, and raw reads are linked via SRA (SRR runs).\n- \"Variants with gnomAD AF > 0.01 were treated as benign\": a population-frequency filter.\n- \"Evaluated on ClinVar missense variants (≥1 star) not in the training set\": standard variant-effect benchmarking; watch for leakage (see Unit 7).\n- \"GO enrichment (FDR < 0.05)\": over-representation test with multiple-testing correction (FDR = false discovery rate).\n- \"Structures from AlphaFold DB where no PDB entry existed.\"\n",
   "cards": [
     {
       "id": "u3-c01",
-      "front": "Best first stop for 'what is this gene?', with numeric gene IDs?",
-      "back": "NCBI Gene: summary, aliases, Gene ID, RefSeq links",
+      "front": "NCBI database with one page and a numeric ID per gene (TP53 = 7157)? (database name)",
+      "back": "NCBI Gene (formerly Entrez Gene): summary, aliases, RefSeq links",
       "accept": [
         "NCBI Gene",
         "Entrez Gene",
-        "NCBI",
-        "Gene"
+        "Gene",
+        "Entrez"
       ],
       "tags": [
         "NCBI"
@@ -104,7 +265,7 @@
     },
     {
       "id": "u3-c02",
-      "front": "Which database provides ENSG/ENST IDs, VEP and BioMart?",
+      "front": "Database that issues ENSG/ENST IDs and hosts VEP and BioMart? (database name)",
       "back": "Ensembl",
       "accept": [
         "Ensembl"
@@ -116,7 +277,7 @@
     },
     {
       "id": "u3-c03",
-      "front": "Human/mouse gene annotation set underlying Ensembl gene models?",
+      "front": "Human/mouse gene annotation set underlying Ensembl gene models? (name)",
       "back": "GENCODE",
       "accept": [
         "GENCODE"
@@ -129,7 +290,7 @@
     },
     {
       "id": "u3-c04",
-      "front": "Ensembl tool that labels variant consequences (missense, splice…)?",
+      "front": "Ensembl tool that labels variant consequences (missense, splice…)? (acronym)",
       "back": "VEP (Variant Effect Predictor)",
       "accept": [
         "VEP",
@@ -144,7 +305,7 @@
     },
     {
       "id": "u3-c05",
-      "front": "Ensembl tool for bulk queries and ID conversion (ENSG → symbol)?",
+      "front": "Ensembl tool for bulk queries and ID conversion, e.g., ENSG → symbol? (tool name)",
       "back": "BioMart (biomaRt in R)",
       "accept": [
         "BioMart"
@@ -156,7 +317,7 @@
     },
     {
       "id": "u3-c06",
-      "front": "Coordinate-based browser with stacked tracks for hg19/hg38?",
+      "front": "Coordinate-based genome browser with stacked tracks for hg19/hg38, from Santa Cruz? (acronym)",
       "back": "UCSC Genome Browser",
       "accept": [
         "UCSC",
@@ -170,11 +331,10 @@
     },
     {
       "id": "u3-c07",
-      "front": "Tool that converts coordinates between assemblies (e.g., hg19 → hg38)?",
-      "back": "liftOver (also CrossMap)",
+      "front": "UCSC tool that converts coordinates between assemblies, e.g., hg19 → hg38? (tool name)",
+      "back": "liftOver (CrossMap is a standalone alternative)",
       "accept": [
         "liftOver",
-        "CrossMap",
         "lift over"
       ],
       "tags": [
@@ -185,7 +345,7 @@
     },
     {
       "id": "u3-c08",
-      "front": "Reference database for protein sequence and function annotations?",
+      "front": "Reference database for protein sequences and function annotations? (database name)",
       "back": "UniProt (UniProtKB)",
       "accept": [
         "UniProt",
@@ -198,7 +358,7 @@
     },
     {
       "id": "u3-c09",
-      "front": "UniProt clusters at 50/90/100% identity used for PLM training?",
+      "front": "UniProt sequence clusters at 50/90/100% identity used for PLM training? (name)",
       "back": "UniRef (UniRef50/90/100)",
       "accept": [
         "UniRef",
@@ -214,13 +374,13 @@
     },
     {
       "id": "u3-c10",
-      "front": "Database of experimentally determined 3D structures?",
+      "front": "Archive of experimentally determined 3D structures? (acronym)",
       "back": "PDB (Protein Data Bank): X-ray, cryo-EM, NMR",
       "accept": [
         "PDB",
         "Protein Data Bank",
         "RCSB PDB",
-        "wwPDB"
+        "RCSB"
       ],
       "tags": [
         "PDB"
@@ -229,7 +389,7 @@
     },
     {
       "id": "u3-c11",
-      "front": "Consortium of RCSB PDB, PDBe and PDBj?",
+      "front": "Consortium uniting RCSB PDB, PDBe and PDBj? (acronym)",
       "back": "wwPDB (Worldwide Protein Data Bank)",
       "accept": [
         "wwPDB",
@@ -243,13 +403,14 @@
     },
     {
       "id": "u3-c12",
-      "front": "Database of >200M predicted structures with pLDDT and PAE?",
+      "front": "Database of >200 million predicted structures with pLDDT and PAE? (database name)",
       "back": "AlphaFold DB",
       "accept": [
         "AlphaFold DB",
         "AlphaFold",
         "AFDB",
-        "AlphaFold Protein Structure Database"
+        "AlphaFold Protein Structure Database",
+        "AlphaFold database"
       ],
       "tags": [
         "AlphaFold"
@@ -258,7 +419,7 @@
     },
     {
       "id": "u3-c13",
-      "front": "Website now hosting Pfam domain annotations?",
+      "front": "Website that now hosts Pfam domain annotations? (database name)",
       "back": "InterPro",
       "accept": [
         "InterPro"
@@ -270,7 +431,7 @@
     },
     {
       "id": "u3-c14",
-      "front": "Resource for normal-tissue expression and eQTLs from deceased donors?",
+      "front": "Resource for normal-tissue expression and eQTLs from ~1,000 deceased donors? (acronym)",
       "back": "GTEx (Genotype-Tissue Expression)",
       "accept": [
         "GTEx",
@@ -284,7 +445,7 @@
     },
     {
       "id": "u3-c15",
-      "front": "Term: a variant associated with a gene's expression level.",
+      "front": "Term: a genetic variant associated with a gene's expression level. (abbreviation)",
       "back": "eQTL (expression quantitative trait locus)",
       "accept": [
         "eQTL",
@@ -299,12 +460,13 @@
     },
     {
       "id": "u3-c16",
-      "front": "CZI portal of curated single-cell data (and Census)?",
+      "front": "Chan Zuckerberg portal of curated single-cell data, with the Census? (name)",
       "back": "CELLxGENE",
       "accept": [
         "CELLxGENE",
         "CZ CELLxGENE",
-        "CELLxGENE Census"
+        "CELLxGENE Census",
+        "cell x gene"
       ],
       "tags": [
         "single-cell"
@@ -313,8 +475,8 @@
     },
     {
       "id": "u3-c17",
-      "front": "Which archive holds raw sequencing reads: GEO or SRA?",
-      "back": "SRA (GEO holds processed data and metadata)",
+      "front": "Which archive holds raw sequencing reads: GEO or SRA? (acronym)",
+      "back": "SRA. GEO holds processed data and metadata",
       "accept": [
         "SRA",
         "Sequence Read Archive"
@@ -327,8 +489,8 @@
     },
     {
       "id": "u3-c18",
-      "front": "GSE prefix in GEO denotes a…?",
-      "back": "Series (study). GSM = sample, GPL = platform",
+      "front": "A GEO accession starting with GSE denotes a ___. (one word)",
+      "back": "Series (a study). GSM = sample, GPL = platform",
       "accept": [
         "series",
         "study",
@@ -342,11 +504,10 @@
     },
     {
       "id": "u3-c19",
-      "front": "Which SRA accession type is the downloadable read file: SRP, SRX, SRS or SRR?",
-      "back": "SRR (run). SRP study, SRX experiment, SRS sample",
+      "front": "Which SRA accession type is a downloadable run of reads: SRP, SRX, SRS or SRR? (prefix)",
+      "back": "SRR (run). SRP = study, SRX = experiment, SRS = sample",
       "accept": [
-        "SRR",
-        "run"
+        "SRR"
       ],
       "tags": [
         "SRA",
@@ -356,12 +517,11 @@
     },
     {
       "id": "u3-c20",
-      "front": "ERR1234567: which archive?",
+      "front": "ERR1234567 comes from which European archive? (acronym)",
       "back": "ENA (European Nucleotide Archive), an INSDC mirror of SRA (DRR = DDBJ)",
       "accept": [
         "ENA",
-        "European Nucleotide Archive",
-        "EBI ENA"
+        "European Nucleotide Archive"
       ],
       "tags": [
         "SRA",
@@ -371,8 +531,8 @@
     },
     {
       "id": "u3-c21",
-      "front": "PRJNA123456 is a…?",
-      "back": "NCBI BioProject accession (SAMN… = BioSample)",
+      "front": "PRJNA123456 is which kind of NCBI accession? (one word)",
+      "back": "BioProject (SAMN… = BioSample)",
       "accept": [
         "BioProject",
         "NCBI BioProject"
@@ -384,8 +544,8 @@
     },
     {
       "id": "u3-c22",
-      "front": "Database of population allele frequencies by ancestry, plus gene constraint?",
-      "back": "gnomAD",
+      "front": "Database of population allele frequencies by ancestry, plus gene constraint scores? (database name)",
+      "back": "gnomAD (Genome Aggregation Database)",
       "accept": [
         "gnomAD",
         "Genome Aggregation Database"
@@ -398,13 +558,11 @@
     },
     {
       "id": "u3-c23",
-      "front": "Low LOEUF means a gene is ___ to loss-of-function.",
-      "back": "Intolerant (constrained): fewer LoF variants than expected",
+      "front": "A low LOEUF score means a gene is ___ to loss-of-function. (one word)",
+      "back": "Intolerant (constrained): it has fewer LoF variants than expected",
       "accept": [
         "intolerant",
-        "constrained",
-        "not tolerant",
-        "sensitive"
+        "constrained"
       ],
       "tags": [
         "gnomAD"
@@ -413,13 +571,12 @@
     },
     {
       "id": "u3-c24",
-      "front": "A candidate variant for a rare severe dominant disorder has gnomAD AF 5%. Likely causal? (yes/no)",
+      "front": "Candidate variant for a rare severe dominant disorder has gnomAD AF 5%. Likely causal? (yes/no)",
       "back": "No: far too common in the general population",
       "accept": [
         "no",
-        "unlikely",
         "n",
-        "not likely"
+        "unlikely"
       ],
       "tags": [
         "gnomAD",
@@ -429,7 +586,7 @@
     },
     {
       "id": "u3-c25",
-      "front": "Database of submitted clinical variant interpretations (P/LP/VUS/LB/B)?",
+      "front": "Database of submitted clinical variant interpretations (pathogenic … benign)? (database name)",
       "back": "ClinVar",
       "accept": [
         "ClinVar"
@@ -441,7 +598,7 @@
     },
     {
       "id": "u3-c26",
-      "front": "ClinVar accession type for one individual lab submission?",
+      "front": "ClinVar accession prefix for one individual lab submission? (three letters)",
       "back": "SCV (VCV = variant, RCV = variant–condition)",
       "accept": [
         "SCV"
@@ -454,12 +611,11 @@
     },
     {
       "id": "u3-c27",
-      "front": "What does VUS stand for?",
+      "front": "What does VUS stand for? (four words)",
       "back": "Variant of uncertain significance",
       "accept": [
         "variant of uncertain significance",
-        "variant of unknown significance",
-        "uncertain significance"
+        "variant of unknown significance"
       ],
       "tags": [
         "ClinVar"
@@ -468,7 +624,7 @@
     },
     {
       "id": "u3-c28",
-      "front": "Curated catalog of Mendelian genes and disorders with 6-digit numbers?",
+      "front": "Curated catalog of Mendelian genes and disorders with 6-digit numbers? (acronym)",
       "back": "OMIM (Online Mendelian Inheritance in Man)",
       "accept": [
         "OMIM",
@@ -481,11 +637,10 @@
     },
     {
       "id": "u3-c29",
-      "front": "OMIM prefix '#' marks a…?",
-      "back": "Phenotype (disease) with known molecular basis (* = gene)",
+      "front": "An OMIM entry prefixed '#' is a gene or a phenotype? (one word)",
+      "back": "Phenotype with known molecular basis ('*' = gene)",
       "accept": [
         "phenotype",
-        "phenotype with known molecular basis",
         "disease",
         "disorder"
       ],
@@ -496,7 +651,7 @@
     },
     {
       "id": "u3-c30",
-      "front": "NCBI's catalog of short variants that issues rsIDs?",
+      "front": "NCBI's catalog of short variants that issues rsIDs? (database name)",
       "back": "dbSNP",
       "accept": [
         "dbSNP"
@@ -508,8 +663,8 @@
     },
     {
       "id": "u3-c31",
-      "front": "Cancer somatic mutation catalog run by the Sanger Institute?",
-      "back": "COSMIC (also cBioPortal, TCGA for tumor cohorts)",
+      "front": "Sanger Institute catalog of somatic mutations in cancer? (acronym)",
+      "back": "COSMIC (cBioPortal and TCGA cover tumor cohorts)",
       "accept": [
         "COSMIC",
         "Catalogue of Somatic Mutations in Cancer"
@@ -521,13 +676,11 @@
     },
     {
       "id": "u3-c32",
-      "front": "Three GO aspects: Molecular Function, Biological Process, and…?",
+      "front": "GO aspects are Molecular Function, Biological Process, and ___. (two words)",
       "back": "Cellular Component",
       "accept": [
         "Cellular Component",
-        "cellular compartment",
-        "CC",
-        "cellular location"
+        "CC"
       ],
       "tags": [
         "GO"
@@ -536,7 +689,7 @@
     },
     {
       "id": "u3-c33",
-      "front": "GO:0006915 is the term for…?",
+      "front": "GO:0006915 is which term? (two words)",
       "back": "Apoptotic process",
       "accept": [
         "apoptotic process",
@@ -550,7 +703,7 @@
     },
     {
       "id": "u3-c34",
-      "front": "GO evidence code for automatic, unreviewed annotation?",
+      "front": "GO evidence code for automatic, unreviewed annotation? (three letters)",
       "back": "IEA (Inferred from Electronic Annotation)",
       "accept": [
         "IEA",
@@ -563,8 +716,8 @@
     },
     {
       "id": "u3-c35",
-      "front": "KEGG pathway hsa04010?",
-      "back": "Human MAPK signaling pathway",
+      "front": "KEGG pathway hsa04010 is which signaling pathway? (abbreviation)",
+      "back": "MAPK signaling pathway (human)",
       "accept": [
         "MAPK",
         "MAPK signaling",
@@ -579,11 +732,10 @@
     },
     {
       "id": "u3-c36",
-      "front": "KEGG gene hsa:7157 is which gene?",
+      "front": "KEGG gene hsa:7157 is which gene? (gene symbol)",
       "back": "TP53 (KEGG reuses NCBI Gene IDs)",
       "accept": [
-        "TP53",
-        "p53"
+        "TP53"
       ],
       "tags": [
         "KEGG",
@@ -593,8 +745,8 @@
     },
     {
       "id": "u3-c37",
-      "front": "R-HSA-109581: which database (and pathway)?",
-      "back": "Reactome (human): Apoptosis",
+      "front": "R-HSA-109581 comes from which pathway database? (database name)",
+      "back": "Reactome (human 'Apoptosis' pathway)",
       "accept": [
         "Reactome"
       ],
@@ -606,12 +758,11 @@
     },
     {
       "id": "u3-c38",
-      "front": "Network database whose edges are functional associations with a combined score?",
-      "back": "STRING (not necessarily physical binding)",
+      "front": "Network database whose edges are functional associations with a combined score? (database name)",
+      "back": "STRING (edges are not necessarily physical binding)",
       "accept": [
         "STRING",
-        "STRING-db",
-        "STRING db"
+        "STRING-db"
       ],
       "tags": [
         "STRING"
@@ -620,7 +771,7 @@
     },
     {
       "id": "u3-c39",
-      "front": "Resource of CRISPR screens showing which genes cancer cell lines depend on?",
+      "front": "Resource of CRISPR screens showing which genes cancer cell lines depend on? (name)",
       "back": "DepMap (Chronos gene effect scores)",
       "accept": [
         "DepMap",
@@ -634,8 +785,8 @@
     },
     {
       "id": "u3-c40",
-      "front": "Consortium mapping regulatory elements (ChIP-seq, DNase/ATAC, cCREs)?",
-      "back": "ENCODE",
+      "front": "Consortium mapping regulatory elements (ChIP-seq, DNase/ATAC, cCREs)? (acronym)",
+      "back": "ENCODE (Encyclopedia of DNA Elements)",
       "accept": [
         "ENCODE",
         "Encyclopedia of DNA Elements"
@@ -647,7 +798,7 @@
     },
     {
       "id": "u3-c41",
-      "front": "CHEMBL25 is which compound?",
+      "front": "CHEMBL25 is which compound? (common name)",
       "back": "Aspirin",
       "accept": [
         "aspirin",
@@ -661,13 +812,10 @@
     },
     {
       "id": "u3-c42",
-      "front": "Paper lists GSE123456; you need raw FASTQs. Which accession type do you download?",
+      "front": "Paper lists GSE123456; you need raw FASTQs. Which SRA accession prefix do you download? (prefix)",
       "back": "SRR runs (GEO series → linked SRA project → SRR, e.g., via SRA Toolkit)",
       "accept": [
-        "SRR",
-        "SRR runs",
-        "runs",
-        "SRA runs"
+        "SRR"
       ],
       "tags": [
         "GEO",
@@ -677,7 +825,7 @@
     },
     {
       "id": "u3-c43",
-      "front": "Is there an experimental structure of this protein bound to a drug? Where?",
+      "front": "Is there an experimental structure of this protein bound to a drug? Which database? (acronym)",
       "back": "PDB (RCSB/PDBe), searched by UniProt accession",
       "accept": [
         "PDB",
@@ -693,7 +841,7 @@
     },
     {
       "id": "u3-c44",
-      "front": "Which tissues express a protein, with staining images?",
+      "front": "Which resource shows tissue protein expression with antibody-staining images? (name)",
       "back": "Human Protein Atlas",
       "accept": [
         "Human Protein Atlas",
@@ -707,7 +855,7 @@
     },
     {
       "id": "u3-c45",
-      "front": "Labels marking where genes/exons are on a sequence and what they do?",
+      "front": "Labels marking where genes and exons lie on a sequence, and what they do? (one word)",
       "back": "Annotation",
       "accept": [
         "annotation",
@@ -721,13 +869,12 @@
     },
     {
       "id": "u3-c46",
-      "front": "Fraction of chromosomes in a population carrying an allele?",
+      "front": "Fraction of chromosomes in a population carrying an allele? (two words)",
       "back": "Allele frequency (AF)",
       "accept": [
         "allele frequency",
         "AF",
-        "minor allele frequency",
-        "MAF"
+        "allele frequencies"
       ],
       "tags": [
         "basics",
@@ -737,14 +884,14 @@
     },
     {
       "id": "u3-c47",
-      "front": "Sequencing only the exons (~1–2% of the genome) is called…?",
+      "front": "Sequencing only the exons (~1–2% of the genome) is called ___ sequencing. (one word)",
       "back": "Exome sequencing (WES)",
       "accept": [
-        "exome sequencing",
         "exome",
+        "exome sequencing",
         "WES",
-        "whole-exome sequencing",
-        "whole exome sequencing"
+        "whole-exome",
+        "whole exome"
       ],
       "tags": [
         "basics"
@@ -753,13 +900,11 @@
     },
     {
       "id": "u3-c48",
-      "front": "Disease caused mainly by variants in a single gene?",
-      "back": "Mendelian (monogenic) disease",
+      "front": "Adjective for a disease caused mainly by variants in a single gene? (one word)",
+      "back": "Mendelian (monogenic)",
       "accept": [
         "Mendelian",
-        "monogenic",
-        "Mendelian disease",
-        "single-gene disease"
+        "monogenic"
       ],
       "tags": [
         "basics"
@@ -768,7 +913,7 @@
     },
     {
       "id": "u3-c49",
-      "front": "Variant that destroys the gene product (nonsense, frameshift, splice-site), abbreviated?",
+      "front": "Variant that destroys the gene product (nonsense, frameshift, splice-site)? (abbreviation)",
       "back": "LoF (loss-of-function)",
       "accept": [
         "LoF",
@@ -784,11 +929,10 @@
     },
     {
       "id": "u3-c50",
-      "front": "Controlled vocabulary with defined relationships between terms (like GO)?",
+      "front": "Controlled vocabulary with defined relationships between terms, like GO? (one word)",
       "back": "Ontology",
       "accept": [
-        "ontology",
-        "an ontology"
+        "ontology"
       ],
       "tags": [
         "basics",
@@ -798,15 +942,16 @@
     },
     {
       "id": "u3-c51",
-      "front": "Testing if a gene list contains more of a category than chance?",
-      "back": "Enrichment analysis (over-representation / GSEA)",
+      "front": "Testing whether a gene list contains more of a category than chance? (two words)",
+      "back": "Enrichment analysis (over-representation analysis or GSEA)",
       "accept": [
         "enrichment analysis",
         "enrichment",
         "over-representation analysis",
+        "overrepresentation analysis",
         "ORA",
-        "GSEA",
-        "gene set enrichment"
+        "gene set enrichment analysis",
+        "GSEA"
       ],
       "tags": [
         "basics",
@@ -816,7 +961,7 @@
     },
     {
       "id": "u3-c52",
-      "front": "Cells grown indefinitely in the lab, often tumor-derived?",
+      "front": "Cells grown indefinitely in the lab, often tumor-derived? (two words)",
       "back": "Cell line",
       "accept": [
         "cell line",
@@ -830,13 +975,13 @@
     },
     {
       "id": "u3-c53",
-      "front": "Structure method imaging flash-frozen samples with electrons?",
+      "front": "Structure method imaging flash-frozen samples with electrons? (abbreviation)",
       "back": "Cryo-EM (cryo-electron microscopy)",
       "accept": [
         "cryo-EM",
         "cryoEM",
-        "cryo-electron microscopy",
-        "cryo EM"
+        "cryo EM",
+        "cryo-electron microscopy"
       ],
       "tags": [
         "basics",
@@ -846,13 +991,12 @@
     },
     {
       "id": "u3-c54",
-      "front": "Unit of structural resolution (0.1 nm)?",
+      "front": "Unit of structural resolution equal to 0.1 nm? (unit name)",
       "back": "Ångström (Å); lower = sharper",
       "accept": [
         "angstrom",
         "ångström",
         "Å",
-        "A",
         "angstroms"
       ],
       "tags": [
@@ -863,11 +1007,10 @@
     },
     {
       "id": "u3-c55",
-      "front": "Clinical label meaning disease-causing?",
+      "front": "Clinical variant label meaning disease-causing? (one word)",
       "back": "Pathogenic",
       "accept": [
-        "pathogenic",
-        "P"
+        "pathogenic"
       ],
       "tags": [
         "basics",

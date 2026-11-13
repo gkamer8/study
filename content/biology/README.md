@@ -1,4 +1,4 @@
-# Biology study content (schema v2)
+# Biology study content (schema v3)
 
 Content for the spaced-repetition study site. This folder holds only data; the site code lives elsewhere.
 
@@ -11,6 +11,8 @@ Content for the spaced-repetition study site. This folder holds only data; the s
   - `cards_uN.py`: the flashcards
   - `uN.py`: metadata and quiz questions; it also calls `common.build`
 
+  - `glossaries.py`: the source of every lesson's Key terms block. Run `python3 glossaries.py` to write the blocks into `lessons/uN.md`
+
   Edit those, then run `cd _src && python3 uN.py` to regenerate. `common.py` assigns IDs, validates fields, extracts the glossary, dedupes `accept` entries, and shuffles quiz choices. After changing counts, regenerate `index.json` too.
 
 ## index.json
@@ -21,10 +23,10 @@ Content for the spaced-repetition study site. This folder holds only data; the s
   "schema_version": 2, "generated": "YYYY-MM-DD", "changes": ["..."],
   "units": [
     {"unit": 1, "slug": "central-dogma", "title": "...", "summary": "...",
-     "file": "01-central-dogma.json", "card_count": 74, "quiz_count": 13,
-     "glossary_count": 28, "lesson_words": 2021, "prerequisites": []}
+     "file": "01-central-dogma.json", "card_count": 80, "quiz_count": 13,
+     "glossary_count": 38, "lesson_words": 2122, "prerequisites": []}
   ],
-  "totals": {"cards": 437, "quiz": 100, "glossary_terms": 161}
+  "totals": {"cards": 456, "quiz": 100, "glossary_terms": 200}
 }
 ```
 
@@ -38,27 +40,29 @@ Content for the spaced-repetition study site. This folder holds only data; the s
 | `slug` | string | URL-safe identifier |
 | `title` | string | |
 | `summary` | string | 2–4 sentences |
-| `glossary` | array of `{term, definition}` | Same content as the lesson's Key terms list, pre-parsed. Use it for hover tooltips, a glossary page, or a terms drill |
+| `glossary` | array of `{term, definition, accept}` | Same content as the lesson's Key terms list, pre-parsed. Use it for tooltips, a glossary page, and the Terms drill (show `definition`, the user types the term, check against `accept`) |
 | `lesson` | string | Markdown, ~1,450–2,000 words. See the glossary convention below |
 | `cards` | array | flashcards |
 | `quiz` | array | multiple-choice questions |
 
 ### Lesson / glossary convention
 
-- Every lesson **starts** with a `### Key terms` heading, then a bullet list in the form `- **Term**: one-line plain-language definition.`, then a blank line. `common.py` enforces this.
+- Every lesson **starts** with a `### Key terms` heading, then a bullet list with **one term per bullet**, then a blank line. Bullets look like `- **Term**: definition` or `- **Term (ABBR)**: definition`.
+- Glossary `accept` is built automatically from the term, the parenthesized abbreviation, and a simple plural, plus extra variants listed in `glossary_accept` in `cards_uN.py`.
+- `common.py` enforces that each definition points to exactly one term: terms and definitions are unique within a unit, and no definition contains its own term or any accepted variant of 3+ characters. Each unit is self-contained for the drill; the same term may appear again in a later unit with a "(see Unit N)" note.
 - In the body, each technical term is defined in plain words where it first appears, usually bolded. Terms that belong to another unit are briefly re-defined or marked "(see Unit N)". The site can turn "Unit N" into a link.
 - Lesson Markdown uses GFM tables, fenced code blocks, and a few `^...^` superscripts (e.g. `p16^INK4a^`). Render those as `<sup>` or leave them as plain text.
 
 ### Card
 
 ```json
-{"id": "u1-c55", "front": "Term: one copy of each chromosome (as in eggs and sperm).",
- "back": "Haploid (n)", "accept": ["haploid", "1n", "n", "monoploid"],
+{"id": "u1-c55", "front": "Term: one copy of each chromosome, as in eggs and sperm. (one word)",
+ "back": "Haploid (n)", "accept": ["haploid", "1n", "n"],
  "tags": ["basics", "ploidy"], "type": "recall"}
 ```
 
-- `id`: stable, `u<unit>-c<NN>`. Key spaced-repetition state on it. v2 kept every v1 ID on the same topic (some cards were reworded so the answer is typeable) and appended new cards after the old ones. Always append; never insert.
-- `front`: the prompt. It asks for something short: a term, ID, number, or a few words.
+- `id`: stable, `u<unit>-c<NN>`. Key spaced-repetition state on it. Every v1/v2 ID still tests the same fact. When a card was split, the original ID kept the first part and the other parts got new IDs appended at the end (in `cards_uN.py` they sit in `splits`). Always append; never insert or reuse an ID.
+- `front`: the prompt. As of v3, every prompt has exactly one unambiguous answer of at most ~4 words, and ends with the **expected form in parentheses**, e.g. `(gene symbol)`, `(one word)`, `(letter)`, `(number, in Gb)`, `(5' or 3')`, `(yes/no)`. No answer depends on formatting, ordering, or separators. Comparisons and lists are split into separate cards.
 - `back`: the canonical answer plus a short explanation. Show it after every attempt, right or wrong.
 - `accept`: acceptable typed answers. The **first entry is the canonical short answer** (use it for "the answer was…"), followed by synonyms, abbreviations and alternate spellings. Entries are already deduped case-insensitively.
 - `type`: `recall` (question → answer), `cloze` (`front` contains `___`), `identify` (an ID, symbol or notation → what it is), or `apply` (a short scenario).

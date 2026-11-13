@@ -6,119 +6,291 @@
   "glossary": [
     {
       "term": "Sequencing",
-      "definition": "reading the order of bases in DNA or RNA molecules."
+      "definition": "reading the order of bases in DNA or RNA molecules.",
+      "accept": [
+        "Sequencing",
+        "Sequencings"
+      ]
     },
     {
       "term": "Read",
-      "definition": "one sequenced fragment, usually 50–300 bases with short-read (Illumina) machines."
+      "definition": "one sequenced fragment, typically 50–300 bases on Illumina machines.",
+      "accept": [
+        "Read",
+        "Reads",
+        "sequencing read"
+      ]
     },
     {
       "term": "Paired-end",
-      "definition": "both ends of each DNA fragment are read, giving two linked reads (R1, R2)."
+      "definition": "describes reading both ends of each DNA fragment, giving two linked reads (R1, R2).",
+      "accept": [
+        "Paired-end",
+        "Paired-ends",
+        "paired end",
+        "PE"
+      ]
     },
     {
       "term": "Library",
-      "definition": "the prepared pool of DNA fragments (with attached adapter sequences) that goes into the sequencer."
+      "definition": "the prepared pool of adapter-tagged DNA fragments loaded onto the sequencer.",
+      "accept": [
+        "Library",
+        "Libraries"
+      ]
     },
     {
       "term": "PCR",
-      "definition": "a reaction that copies DNA many times. It creates **duplicates** of the same original molecule."
+      "definition": "a reaction that copies DNA many times, creating duplicates of each molecule.",
+      "accept": [
+        "PCR",
+        "polymerase chain reaction"
+      ]
     },
     {
-      "term": "Reference genome / assembly / build",
-      "definition": "the standard genome sequence that reads are compared against, released in versions (GRCh38…)."
+      "term": "Reference genome",
+      "definition": "the standard genome sequence that reads are compared against.",
+      "accept": [
+        "Reference genome",
+        "Reference genomes",
+        "reference"
+      ]
     },
     {
-      "term": "Alignment (mapping)",
-      "definition": "finding where each read came from in the reference."
+      "term": "Genome build",
+      "definition": "one released edition of the reference genome, e.g. GRCh38.",
+      "accept": [
+        "Genome build",
+        "Genome builds",
+        "build",
+        "assembly",
+        "genome assembly"
+      ]
     },
     {
-      "term": "Coverage (depth)",
-      "definition": "how many reads overlap a given position."
+      "term": "Alignment",
+      "definition": "finding where each read came from in the reference.",
+      "accept": [
+        "Alignment",
+        "Alignments",
+        "mapping",
+        "read alignment"
+      ]
+    },
+    {
+      "term": "Coverage",
+      "definition": "how many reads overlap a given position.",
+      "accept": [
+        "Coverage",
+        "Coverages",
+        "depth",
+        "read depth",
+        "sequencing depth"
+      ]
     },
     {
       "term": "Genotype",
-      "definition": "which alleles an individual carries at a locus (see Unit 1)."
+      "definition": "which alleles an individual carries at a locus.",
+      "accept": [
+        "Genotype",
+        "Genotypes"
+      ]
     },
     {
       "term": "Phased",
-      "definition": "it is known which alleles sit together on the same chromosome copy."
+      "definition": "describes genotypes where it is known which alleles sit together on the same chromosome copy.",
+      "accept": [
+        "Phased",
+        "Phaseds",
+        "phasing"
+      ]
     },
     {
       "term": "Interval",
-      "definition": "a region given as chromosome, start, end."
+      "definition": "a region given as chromosome, start and end.",
+      "accept": [
+        "Interval",
+        "Intervals"
+      ]
     },
     {
-      "term": "0-based / 1-based",
-      "definition": "whether the first base of a chromosome is numbered 0 or 1."
+      "term": "0-based",
+      "definition": "coordinate convention in which the first base of a chromosome is numbered zero.",
+      "accept": [
+        "0-based",
+        "zero-based",
+        "0 based"
+      ]
+    },
+    {
+      "term": "1-based",
+      "definition": "coordinate convention in which the first base of a chromosome is numbered one.",
+      "accept": [
+        "1-based",
+        "one-based",
+        "1 based"
+      ]
     },
     {
       "term": "cDNA",
-      "definition": "DNA copied from RNA by the enzyme reverse transcriptase, so RNA can be sequenced."
+      "definition": "DNA copied from RNA by reverse transcriptase.",
+      "accept": [
+        "cDNA",
+        "complementary DNA"
+      ]
     },
     {
       "term": "Normalization",
-      "definition": "rescaling counts so samples are comparable."
+      "definition": "rescaling counts so that samples are comparable.",
+      "accept": [
+        "Normalization",
+        "Normalizations",
+        "normalisation"
+      ]
     },
     {
       "term": "Fold change",
-      "definition": "the ratio of expression between conditions, usually reported as log2."
+      "definition": "the ratio of expression between two conditions, usually reported on a log2 scale.",
+      "accept": [
+        "Fold change",
+        "Fold changes",
+        "log2 fold change",
+        "log2FC",
+        "LFC"
+      ]
     },
     {
       "term": "FDR",
-      "definition": "false discovery rate, the expected fraction of false positives among results called significant."
+      "definition": "the expected fraction of false positives among results called significant.",
+      "accept": [
+        "FDR",
+        "false discovery rate"
+      ]
     },
     {
-      "term": "Barcode / UMI",
-      "definition": "short tags identifying the cell / the original molecule a read came from."
+      "term": "Cell barcode",
+      "definition": "a short tag identifying which cell a read came from.",
+      "accept": [
+        "Cell barcode",
+        "Cell barcodes",
+        "barcode",
+        "CB"
+      ]
+    },
+    {
+      "term": "UMI",
+      "definition": "a short random tag identifying which original molecule a read came from.",
+      "accept": [
+        "UMI",
+        "unique molecular identifier"
+      ]
     },
     {
       "term": "Sparse matrix",
-      "definition": "a matrix that is mostly zeros, stored efficiently."
+      "definition": "a matrix that is mostly zeros, stored efficiently.",
+      "accept": [
+        "Sparse matrix",
+        "sparse"
+      ]
     },
     {
       "term": "Batch effect",
-      "definition": "technical differences between samples processed at different times, places or ways."
+      "definition": "technical differences between samples processed at different times, places or ways.",
+      "accept": [
+        "Batch effect",
+        "Batch effects"
+      ]
     },
     {
       "term": "Peak",
-      "definition": "a genomic region with many more reads than background (a binding site or open region)."
+      "definition": "a genomic region with many more reads than background.",
+      "accept": [
+        "Peak",
+        "Peaks"
+      ]
     },
     {
       "term": "Nucleosome",
-      "definition": "~147 bp of DNA wrapped around a histone core, the basic unit of chromatin."
+      "definition": "~147 bp of DNA wrapped around a histone protein core.",
+      "accept": [
+        "Nucleosome",
+        "Nucleosomes"
+      ]
     },
     {
       "term": "Histone mark",
-      "definition": "a chemical modification on a histone tail that signals chromatin state (e.g. H3K27ac)."
+      "definition": "a chemical tag on the proteins DNA wraps around that signals chromatin state, e.g. H3K27ac.",
+      "accept": [
+        "Histone mark",
+        "Histone marks",
+        "histone modification"
+      ]
     },
     {
-      "term": "CRISPR-Cas9 / sgRNA",
-      "definition": "a programmable DNA-cutting system / the short guide RNA that points it at a target."
+      "term": "CRISPR-Cas9",
+      "definition": "a programmable DNA-cutting system steered by a short RNA.",
+      "accept": [
+        "CRISPR-Cas9",
+        "CRISPR",
+        "Cas9",
+        "CRISPR/Cas9"
+      ]
     },
     {
-      "term": "Lentivirus / MOI",
-      "definition": "a virus used to insert genes into cells / multiplicity of infection, the viruses per cell."
+      "term": "sgRNA",
+      "definition": "the short RNA that points Cas9 at its target sequence.",
+      "accept": [
+        "sgRNA",
+        "guide RNA",
+        "gRNA",
+        "single guide RNA"
+      ]
     },
     {
-      "term": "Mass spectrometry (MS)",
-      "definition": "measures the mass-to-charge ratio (m/z) of ionized molecules."
+      "term": "Lentivirus",
+      "definition": "a virus used to insert genes permanently into cells' genomes.",
+      "accept": [
+        "Lentivirus"
+      ]
+    },
+    {
+      "term": "MOI",
+      "definition": "the average number of viruses delivered per cell.",
+      "accept": [
+        "MOI",
+        "multiplicity of infection"
+      ]
+    },
+    {
+      "term": "Mass spectrometry",
+      "definition": "a technique measuring the mass-to-charge ratio (m/z) of ionized molecules.",
+      "accept": [
+        "Mass spectrometry",
+        "Mass spectrometries",
+        "MS",
+        "mass spec"
+      ]
     },
     {
       "term": "Peptide",
-      "definition": "a short piece of protein."
+      "definition": "a short piece of protein.",
+      "accept": [
+        "Peptide",
+        "Peptides"
+      ]
     }
   ],
-  "lesson": "### Key terms\n\n- **Sequencing**: reading the order of bases in DNA or RNA molecules.\n- **Read**: one sequenced fragment, usually 50–300 bases with short-read (Illumina) machines.\n- **Paired-end**: both ends of each DNA fragment are read, giving two linked reads (R1, R2).\n- **Library**: the prepared pool of DNA fragments (with attached adapter sequences) that goes into the sequencer.\n- **PCR**: a reaction that copies DNA many times. It creates **duplicates** of the same original molecule.\n- **Reference genome / assembly / build**: the standard genome sequence that reads are compared against, released in versions (GRCh38…).\n- **Alignment (mapping)**: finding where each read came from in the reference.\n- **Coverage (depth)**: how many reads overlap a given position.\n- **Genotype**: which alleles an individual carries at a locus (see Unit 1).\n- **Phased**: it is known which alleles sit together on the same chromosome copy.\n- **Interval**: a region given as chromosome, start, end.\n- **0-based / 1-based**: whether the first base of a chromosome is numbered 0 or 1.\n- **cDNA**: DNA copied from RNA by the enzyme reverse transcriptase, so RNA can be sequenced.\n- **Normalization**: rescaling counts so samples are comparable.\n- **Fold change**: the ratio of expression between conditions, usually reported as log2.\n- **FDR**: false discovery rate, the expected fraction of false positives among results called significant.\n- **Barcode / UMI**: short tags identifying the cell / the original molecule a read came from.\n- **Sparse matrix**: a matrix that is mostly zeros, stored efficiently.\n- **Batch effect**: technical differences between samples processed at different times, places or ways.\n- **Peak**: a genomic region with many more reads than background (a binding site or open region).\n- **Nucleosome**: ~147 bp of DNA wrapped around a histone core, the basic unit of chromatin.\n- **Histone mark**: a chemical modification on a histone tail that signals chromatin state (e.g. H3K27ac).\n- **CRISPR-Cas9 / sgRNA**: a programmable DNA-cutting system / the short guide RNA that points it at a target.\n- **Lentivirus / MOI**: a virus used to insert genes into cells / multiplicity of infection, the viruses per cell.\n- **Mass spectrometry (MS)**: measures the mass-to-charge ratio (m/z) of ionized molecules.\n- **Peptide**: a short piece of protein.\n\n## Sequencing basics\n\nMost data come from **short-read sequencing** (Illumina). DNA (or RNA copied into DNA) is broken into fragments, short known **adapter** sequences are attached (making a **library**), the fragments are copied by **PCR**, and the machine reads 50–300 bases from each fragment. Each output string is a **read**. With **paired-end** sequencing, both ends of each fragment are read, giving files R1 and R2. Long-read technologies (PacBio, Oxford Nanopore) read thousands of bases per molecule but are noisier and cost more per base.\n\n## Sequence files\n\n**FASTA**: a header line starting with `>`, then the sequence. It is used for genomes, transcripts and proteins. A UniProt header looks like `>sp|P04637|P53_HUMAN Cellular tumor antigen p53 OS=Homo sapiens OX=9606 GN=TP53`, where sp = Swiss-Prot (tr = TrEMBL), OX = NCBI taxonomy ID (9606 human, 10090 mouse), and GN = gene name.\n\n**FASTQ**: raw reads with quality scores, 4 lines per read:\n```\n@read_id\nACGTTGCA...\n+\nIIIIHHG#...\n```\nLine 4 gives one quality character per base. A **Phred score** is Q = −10·log10(P_error): Q10 = 1 in 10 chance the base is wrong, Q20 = 1%, **Q30 = 0.1%** (the usual quality bar), Q40 = 0.01%. Characters encode Q + 33 as ASCII (\"Phred+33\"): `!` = Q0, `+` = Q10, `5` = Q20, `?` = Q30, `I` = Q40.\n\n## Alignments: SAM/BAM/CRAM\n\n**Alignment** (mapping) finds where each read came from in the **reference genome**, the standard sequence everyone compares against. DNA aligners: BWA-MEM, Bowtie2. RNA aligners must handle reads that span spliced-out introns (see Unit 1): STAR, HISAT2. The output is **SAM** (text), **BAM** (compressed binary; sort by position and index with a `.bai` file for fast lookup), or **CRAM** (smaller, because it stores only differences from the reference, so you need that exact reference to read it). **Coverage** or **depth** is how many reads overlap a position (\"30× genome\").\n\nEach SAM line has 11 required fields: QNAME (read name), **FLAG**, RNAME (chromosome), **POS** (1-based leftmost position), **MAPQ**, **CIGAR**, RNEXT/PNEXT/TLEN (mate information), SEQ, QUAL. Optional tags follow (NM:i:, and CB:Z: for the cell barcode in single-cell data).\n\n- **FLAG** is a bitfield of yes/no properties summed together: 1 paired, 2 properly paired, **4 unmapped**, **16 reverse strand**, 256 secondary alignment, **1024 duplicate** (a PCR or optical copy of another read), 2048 supplementary (a read split across two locations).\n- **CIGAR** spells out the alignment: `M` aligned (match or mismatch), `I` insertion, `D` deletion, **`N` skipped reference (an intron, for RNA)**, `S` soft clip (unaligned bases kept in the record), `H` hard clip (removed). `50M1000N50M` = a read split across a 1-kb intron.\n- **MAPQ**: Phred-scaled confidence that the read is placed correctly. 0 usually means it fits equally well in several places (a **multi-mapper**).\n\n## Variants: VCF\n\n**VCF** lists variants. Columns: CHROM, POS (1-based), ID (rsID), REF (reference allele), ALT (alternative allele), QUAL, FILTER (PASS if it passed filters), INFO (key=value annotations such as AF = allele frequency, DP = depth), FORMAT, then one column per sample. A **genotype** (GT) says which alleles that person has: `0/0` both reference (homozygous ref), `0/1` one of each (heterozygous), `1/1` both alternative. A `|` instead of `/` (`0|1`) means **phased**: we know which chromosome copy carries which allele. Indels include the preceding base: `chr1 100 . A AT` = insertion of T after position 100.\n\n## Intervals and annotations: BED and GTF/GFF\n\nCoordinates come in two conventions. **1-based, inclusive** counts the first base as 1 and includes both ends. **0-based, half-open** counts the first base as 0 and excludes the end (like Python slicing).\n\n**BED**: `chrom start end [name score strand …]`, **0-based, half-open**. `chr1 0 100` = the first 100 bases (1-based 1–100). Used for **peaks**, target regions and blacklists (regions known to give artifacts). narrowPeak is an extended BED from the peak caller MACS.\n\n**GTF/GFF3**: gene annotation (see Unit 3) with **9 columns**: seqname, source, feature (gene/transcript/exon/CDS/UTR…), **start, end (1-based, inclusive)**, score, strand, frame, attributes. GTF attributes: `gene_id \"ENSG…\"; transcript_id \"ENST…\";`. GFF3 attributes: `ID=…;Parent=…`. GENCODE and Ensembl distribute GTFs that quantification tools read.\n\nMixing BED (0-based) with VCF/GTF/SAM (1-based) is a classic off-by-one bug.\n\n## Reference genome builds\n\nA reference genome is periodically rebuilt as an improved **assembly** (build).\n- **GRCh37 ≈ hg19** (2009) and **GRCh38 ≈ hg38** (2013). GRC = Genome Reference Consortium names; hg = UCSC names. The main chromosome sequences match between each pair, but UCSC writes `chr1`/`chrM` while GRC/Ensembl writes `1`/`MT`, and the hg19 mitochondrial sequence differs from GRCh37's.\n- **Coordinates differ between builds.** BRAF V600E is chr7:140,453,136 in hg19 and chr7:140,753,336 in hg38. Convert with liftOver or CrossMap (see Unit 3). Never mix builds.\n- **T2T-CHM13** (2022) is the first complete, gap-free human assembly. GRCh38 is still the default. Mouse: mm10 (GRCm38), mm39 (GRCm39).\n- The gene annotation release (GENCODE vXX / Ensembl release) is separate from the build. Report both.\n\n## Bulk RNA-seq\n\nRNA-seq measures **gene expression** (how much RNA each gene makes) in a sample. RNA is extracted, mRNA is enriched by its poly(A) tail (or abundant ribosomal RNA is removed), then copied into **cDNA** by reverse transcriptase and sequenced. Reads are either aligned (STAR) and counted per gene (featureCounts, HTSeq), or **pseudoaligned** to transcripts (salmon, kallisto), which is faster and skips exact base-by-base alignment. Units:\n- **Raw counts**: integers per gene. Required by **DESeq2/edgeR**, which model counts with a negative binomial distribution.\n- **CPM**: counts per million reads (corrects for sequencing depth only).\n- **RPKM/FPKM**: correct for depth, then gene length (per kilobase). Totals differ between samples, so values compare poorly across samples.\n- **TPM**: correct for length first, then scale so each sample sums to 1,000,000. Better for comparisons within and across samples. Neither replaces proper statistical normalization.\n- **Differential expression** reports **log2 fold change** (log2 of the ratio between conditions; +1 = doubled) and p-values adjusted for testing thousands of genes, controlling the **false discovery rate (FDR)** with the Benjamini–Hochberg method. Results are shown as volcano plots.\n\n## Single-cell RNA-seq\n\nBulk RNA-seq averages over millions of cells. Single-cell RNA-seq measures each cell separately. In droplet methods (10x Genomics Chromium), each cell is captured in an oil droplet with a bead carrying a **cell barcode** (which cell) and a **UMI**, a unique molecular identifier (which original RNA molecule). Counting distinct UMIs per gene ignores PCR copies. Cell Ranger (or STARsolo, alevin-fry) outputs a **sparse** (mostly zeros) cell-by-gene count matrix. 10x's MTX files are genes × cells, while **AnnData (.h5ad)**, the Python (scanpy) standard, is **cells × genes**:\n- `adata.X`: the matrix, rows = cells (obs), columns = genes (var)\n- `adata.obs`: per-cell metadata (cell type, donor, batch, QC metrics)\n- `adata.var`: per-gene metadata (Ensembl ID, symbol)\n- `adata.obsm`: low-dimensional embeddings (X_pca, X_umap); `adata.layers`: alternative matrices (raw counts); `adata.uns`: everything else\n\nStandard pipeline: quality control (drop cells with few genes, cells with a high **mitochondrial read fraction**, a sign of broken cells, and **doublets**, droplets holding two cells), `normalize_total` + `log1p`, select highly variable genes, PCA, nearest-neighbor graph, **Leiden** clustering, **UMAP** for 2D plots, then name clusters by **marker genes** (genes specific to a cell type). **Batch effects**, technical differences between runs, are corrected with Harmony or scVI. R users use Seurat.\n\n## Chromatin assays\n\nDNA in the nucleus is wrapped around histone proteins in units called **nucleosomes** (~147 bp each). Tightly packed chromatin is mostly inactive and open chromatin is active.\n- **ChIP-seq** (chromatin immunoprecipitation): proteins are crosslinked to DNA, the DNA is fragmented, an antibody pulls down one TF or histone mark, and the attached DNA is sequenced. **Peaks**, regions with far more reads than a control, are called with MACS2/3. **Histone marks** to know: **H3K4me3** = active promoters, **H3K27ac** = active enhancers and promoters, **H3K4me1** = enhancers, **H3K27me3** = Polycomb-silenced genes, **H3K36me3** = bodies of transcribed genes, **H3K9me3** = tightly packed heterochromatin. (H3K27ac = histone H3, lysine 27, acetylated.) CUT&RUN and CUT&Tag are lower-input alternatives.\n- **ATAC-seq**: the enzyme **Tn5 transposase** inserts sequencing adapters wherever DNA is accessible, mapping **open chromatin**. scATAC-seq does this per cell. DNase-seq is the older method.\n- **Hi-C**: measures which parts of the genome touch in 3D (TADs and loops; see Unit 1).\n\n## CRISPR screens\n\n**CRISPR-Cas9** is a DNA-cutting enzyme guided by a short RNA (**sgRNA**, ~20 bases matching the target). Cuts in a gene usually create frameshift indels that knock it out. In a **pooled screen**, a library with ~4–10 guides per gene (e.g. Brunello) is delivered by **lentivirus** (a virus that inserts DNA into the cell's genome) at low **MOI** (multiplicity of infection, ~1 guide per cell). Cells are then put under selection (growth, drug, sorting), and guides are counted by sequencing before and after. **Depleted** guides mark genes the cells need (essential genes \"drop out\"); enriched guides mark genes whose loss helps (e.g. drug resistance). Analysis tools: MAGeCK, BAGEL, Chronos (DepMap; see Unit 3). Variants: knockout (Cas9), **CRISPRi** (inactive dCas9 fused to the KRAB repressor turns genes down), **CRISPRa** (activation), base and prime editing. **Perturb-seq** reads out each perturbation with single-cell RNA-seq, a major data type for perturbation-prediction models.\n\n## Mass-spectrometry proteomics\n\n**Mass spectrometry** measures the mass-to-charge ratio (**m/z**) of ionized molecules. In **bottom-up** proteomics, proteins are cut into **peptides** by the enzyme **trypsin** (which cuts after K or R, but not before P). Peptides are separated by liquid chromatography and measured by tandem MS (**LC-MS/MS**): one scan measures intact peptides, then selected ones are fragmented and their fragments measured. Fragment spectra are matched to peptides predicted from a protein database, with false hits controlled by a **target-decoy** search against reversed or shuffled sequences. Acquisition modes: **DDA** (data-dependent: fragment the most intense peptides) and **DIA** (data-independent: fragment everything in m/z windows; more reproducible). Quantification is label-free (LFQ) or uses isobaric **TMT** tags to multiplex samples. Tools: MaxQuant, DIA-NN, FragPipe. Data repository: PRIDE.\n\n## How you'll see this in a paper\n\n- \"Aligned to GRCh38 with STAR (GENCODE v38), quantified with salmon\": build, annotation and tool.\n- \"Cells with <200 genes or >20% mitochondrial reads were removed\": single-cell QC.\n- \"Peaks called with MACS2 (q < 0.01); ENCODE blacklist regions excluded.\"\n- \"One-hot encoded 131 kb sequences predicting ENCODE coverage tracks\": a genomics model's input and labels.\n",
+  "lesson": "### Key terms\n\n- **Sequencing**: reading the order of bases in DNA or RNA molecules.\n- **Read**: one sequenced fragment, typically 50–300 bases on Illumina machines.\n- **Paired-end**: describes reading both ends of each DNA fragment, giving two linked reads (R1, R2).\n- **Library**: the prepared pool of adapter-tagged DNA fragments loaded onto the sequencer.\n- **PCR**: a reaction that copies DNA many times, creating duplicates of each molecule.\n- **Reference genome**: the standard genome sequence that reads are compared against.\n- **Genome build**: one released edition of the reference genome, e.g. GRCh38.\n- **Alignment**: finding where each read came from in the reference.\n- **Coverage**: how many reads overlap a given position.\n- **Genotype**: which alleles an individual carries at a locus.\n- **Phased**: describes genotypes where it is known which alleles sit together on the same chromosome copy.\n- **Interval**: a region given as chromosome, start and end.\n- **0-based**: coordinate convention in which the first base of a chromosome is numbered zero.\n- **1-based**: coordinate convention in which the first base of a chromosome is numbered one.\n- **cDNA**: DNA copied from RNA by reverse transcriptase.\n- **Normalization**: rescaling counts so that samples are comparable.\n- **Fold change**: the ratio of expression between two conditions, usually reported on a log2 scale.\n- **FDR**: the expected fraction of false positives among results called significant.\n- **Cell barcode**: a short tag identifying which cell a read came from.\n- **UMI**: a short random tag identifying which original molecule a read came from.\n- **Sparse matrix**: a matrix that is mostly zeros, stored efficiently.\n- **Batch effect**: technical differences between samples processed at different times, places or ways.\n- **Peak**: a genomic region with many more reads than background.\n- **Nucleosome**: ~147 bp of DNA wrapped around a histone protein core.\n- **Histone mark**: a chemical tag on the proteins DNA wraps around that signals chromatin state, e.g. H3K27ac.\n- **CRISPR-Cas9**: a programmable DNA-cutting system steered by a short RNA.\n- **sgRNA**: the short RNA that points Cas9 at its target sequence.\n- **Lentivirus**: a virus used to insert genes permanently into cells' genomes.\n- **MOI**: the average number of viruses delivered per cell.\n- **Mass spectrometry**: a technique measuring the mass-to-charge ratio (m/z) of ionized molecules.\n- **Peptide**: a short piece of protein.\n\n## Sequencing basics\n\nMost data come from **short-read sequencing** (Illumina). DNA (or RNA copied into DNA) is broken into fragments, short known **adapter** sequences are attached (making a **library**), the fragments are copied by **PCR**, and the machine reads 50–300 bases from each fragment. Each output string is a **read**. With **paired-end** sequencing, both ends of each fragment are read, giving files R1 and R2. Long-read technologies (PacBio, Oxford Nanopore) read thousands of bases per molecule but are noisier and cost more per base.\n\n## Sequence files\n\n**FASTA**: a header line starting with `>`, then the sequence. It is used for genomes, transcripts and proteins. A UniProt header looks like `>sp|P04637|P53_HUMAN Cellular tumor antigen p53 OS=Homo sapiens OX=9606 GN=TP53`, where sp = Swiss-Prot (tr = TrEMBL), OX = NCBI taxonomy ID (9606 human, 10090 mouse), and GN = gene name.\n\n**FASTQ**: raw reads with quality scores, 4 lines per read:\n```\n@read_id\nACGTTGCA...\n+\nIIIIHHG#...\n```\nLine 4 gives one quality character per base. A **Phred score** is Q = −10·log10(P_error): Q10 = 1 in 10 chance the base is wrong, Q20 = 1%, **Q30 = 0.1%** (the usual quality bar), Q40 = 0.01%. Characters encode Q + 33 as ASCII (\"Phred+33\"): `!` = Q0, `+` = Q10, `5` = Q20, `?` = Q30, `I` = Q40.\n\n## Alignments: SAM/BAM/CRAM\n\n**Alignment** (mapping) finds where each read came from in the **reference genome**, the standard sequence everyone compares against. DNA aligners: BWA-MEM, Bowtie2. RNA aligners must handle reads that span spliced-out introns (see Unit 1): STAR, HISAT2. The output is **SAM** (text), **BAM** (compressed binary; sort by position and index with a `.bai` file for fast lookup), or **CRAM** (smaller, because it stores only differences from the reference, so you need that exact reference to read it). **Coverage** or **depth** is how many reads overlap a position (\"30× genome\").\n\nEach SAM line has 11 required fields: QNAME (read name), **FLAG**, RNAME (chromosome), **POS** (1-based leftmost position), **MAPQ**, **CIGAR**, RNEXT/PNEXT/TLEN (mate information), SEQ, QUAL. Optional tags follow (NM:i:, and CB:Z: for the cell barcode in single-cell data).\n\n- **FLAG** is a bitfield of yes/no properties summed together: 1 paired, 2 properly paired, **4 unmapped**, **16 reverse strand**, 256 secondary alignment, **1024 duplicate** (a PCR or optical copy of another read), 2048 supplementary (a read split across two locations).\n- **CIGAR** spells out the alignment: `M` aligned (match or mismatch), `I` insertion, `D` deletion, **`N` skipped reference (an intron, for RNA)**, `S` soft clip (unaligned bases kept in the record), `H` hard clip (removed). `50M1000N50M` = a read split across a 1-kb intron.\n- **MAPQ**: Phred-scaled confidence that the read is placed correctly. 0 usually means it fits equally well in several places (a **multi-mapper**).\n\n## Variants: VCF\n\n**VCF** lists variants. Columns: CHROM, POS (1-based), ID (rsID), REF (reference allele), ALT (alternative allele), QUAL, FILTER (PASS if it passed filters), INFO (key=value annotations such as AF = allele frequency, DP = depth), FORMAT, then one column per sample. A **genotype** (GT) says which alleles that person has: `0/0` both reference (homozygous ref), `0/1` one of each (heterozygous), `1/1` both alternative. A `|` instead of `/` (`0|1`) means **phased**: we know which chromosome copy carries which allele. Indels include the preceding base: `chr1 100 . A AT` = insertion of T after position 100.\n\n## Intervals and annotations: BED and GTF/GFF\n\nCoordinates come in two conventions. **1-based, inclusive** counts the first base as 1 and includes both ends. **0-based, half-open** counts the first base as 0 and excludes the end (like Python slicing).\n\n**BED**: `chrom start end [name score strand …]`, **0-based, half-open**. `chr1 0 100` = the first 100 bases (1-based 1–100). Used for **peaks**, target regions and blacklists (regions known to give artifacts). narrowPeak is an extended BED from the peak caller MACS.\n\n**GTF/GFF3**: gene annotation (see Unit 3) with **9 columns**: seqname, source, feature (gene/transcript/exon/CDS/UTR…), **start, end (1-based, inclusive)**, score, strand, frame, attributes. GTF attributes: `gene_id \"ENSG…\"; transcript_id \"ENST…\";`. GFF3 attributes: `ID=…;Parent=…`. GENCODE and Ensembl distribute GTFs that quantification tools read.\n\nMixing BED (0-based) with VCF/GTF/SAM (1-based) is a classic off-by-one bug.\n\n## Reference genome builds\n\nA reference genome is periodically rebuilt as an improved **assembly** (build).\n- **GRCh37 ≈ hg19** (2009) and **GRCh38 ≈ hg38** (2013). GRC = Genome Reference Consortium names; hg = UCSC names. The main chromosome sequences match between each pair, but UCSC writes `chr1`/`chrM` while GRC/Ensembl writes `1`/`MT`, and the hg19 mitochondrial sequence differs from GRCh37's.\n- **Coordinates differ between builds.** BRAF V600E is chr7:140,453,136 in hg19 and chr7:140,753,336 in hg38. Convert with liftOver or CrossMap (see Unit 3). Never mix builds.\n- **T2T-CHM13** (2022) is the first complete, gap-free human assembly. GRCh38 is still the default. Mouse: mm10 (GRCm38), mm39 (GRCm39).\n- The gene annotation release (GENCODE vXX / Ensembl release) is separate from the build. Report both.\n\n## Bulk RNA-seq\n\nRNA-seq measures **gene expression** (how much RNA each gene makes) in a sample. RNA is extracted, mRNA is enriched by its poly(A) tail (or abundant ribosomal RNA is removed), then copied into **cDNA** by reverse transcriptase and sequenced. Reads are either aligned (STAR) and counted per gene (featureCounts, HTSeq), or **pseudoaligned** to transcripts (salmon, kallisto), which is faster and skips exact base-by-base alignment. Units:\n- **Raw counts**: integers per gene. Required by **DESeq2/edgeR**, which model counts with a negative binomial distribution.\n- **CPM**: counts per million reads (corrects for sequencing depth only).\n- **RPKM/FPKM**: correct for depth, then gene length (per kilobase). Totals differ between samples, so values compare poorly across samples.\n- **TPM**: correct for length first, then scale so each sample sums to 1,000,000. Better for comparisons within and across samples. Neither replaces proper statistical normalization.\n- **Differential expression** reports **log2 fold change** (log2 of the ratio between conditions; +1 = doubled) and p-values adjusted for testing thousands of genes, controlling the **false discovery rate (FDR)** with the Benjamini–Hochberg method. Results are shown as volcano plots.\n\n## Single-cell RNA-seq\n\nBulk RNA-seq averages over millions of cells. Single-cell RNA-seq measures each cell separately. In droplet methods (10x Genomics Chromium), each cell is captured in an oil droplet with a bead carrying a **cell barcode** (which cell) and a **UMI**, a unique molecular identifier (which original RNA molecule). Counting distinct UMIs per gene ignores PCR copies. Cell Ranger (or STARsolo, alevin-fry) outputs a **sparse** (mostly zeros) cell-by-gene count matrix. 10x's MTX files are genes × cells, while **AnnData (.h5ad)**, the Python (scanpy) standard, is **cells × genes**:\n- `adata.X`: the matrix, rows = cells (obs), columns = genes (var)\n- `adata.obs`: per-cell metadata (cell type, donor, batch, QC metrics)\n- `adata.var`: per-gene metadata (Ensembl ID, symbol)\n- `adata.obsm`: low-dimensional embeddings (X_pca, X_umap); `adata.layers`: alternative matrices (raw counts); `adata.uns`: everything else\n\nStandard pipeline: quality control (drop cells with few genes, cells with a high **mitochondrial read fraction**, a sign of broken cells, and **doublets**, droplets holding two cells), `normalize_total` + `log1p`, select highly variable genes, PCA, nearest-neighbor graph, **Leiden** clustering, **UMAP** for 2D plots, then name clusters by **marker genes** (genes specific to a cell type). **Batch effects**, technical differences between runs, are corrected with Harmony or scVI. R users use Seurat.\n\n## Chromatin assays\n\nDNA in the nucleus is wrapped around histone proteins in units called **nucleosomes** (~147 bp each). Tightly packed chromatin is mostly inactive and open chromatin is active.\n- **ChIP-seq** (chromatin immunoprecipitation): proteins are crosslinked to DNA, the DNA is fragmented, an antibody pulls down one TF or histone mark, and the attached DNA is sequenced. **Peaks**, regions with far more reads than a control, are called with MACS2/3. **Histone marks** to know: **H3K4me3** = active promoters, **H3K27ac** = active enhancers and promoters, **H3K4me1** = enhancers, **H3K27me3** = Polycomb-silenced genes, **H3K36me3** = bodies of transcribed genes, **H3K9me3** = tightly packed heterochromatin. (H3K27ac = histone H3, lysine 27, acetylated.) CUT&RUN and CUT&Tag are lower-input alternatives.\n- **ATAC-seq**: the enzyme **Tn5 transposase** inserts sequencing adapters wherever DNA is accessible, mapping **open chromatin**. scATAC-seq does this per cell. DNase-seq is the older method.\n- **Hi-C**: measures which parts of the genome touch in 3D (TADs and loops; see Unit 1).\n\n## CRISPR screens\n\n**CRISPR-Cas9** is a DNA-cutting enzyme guided by a short RNA (**sgRNA**, ~20 bases matching the target). Cuts in a gene usually create frameshift indels that knock it out. In a **pooled screen**, a library with ~4–10 guides per gene (e.g. Brunello) is delivered by **lentivirus** (a virus that inserts DNA into the cell's genome) at low **MOI** (multiplicity of infection, ~1 guide per cell). Cells are then put under selection (growth, drug, sorting), and guides are counted by sequencing before and after. **Depleted** guides mark genes the cells need (essential genes \"drop out\"); enriched guides mark genes whose loss helps (e.g. drug resistance). Analysis tools: MAGeCK, BAGEL, Chronos (DepMap; see Unit 3). Variants: knockout (Cas9), **CRISPRi** (inactive dCas9 fused to the KRAB repressor turns genes down), **CRISPRa** (activation), base and prime editing. **Perturb-seq** reads out each perturbation with single-cell RNA-seq, a major data type for perturbation-prediction models.\n\n## Mass-spectrometry proteomics\n\n**Mass spectrometry** measures the mass-to-charge ratio (**m/z**) of ionized molecules. In **bottom-up** proteomics, proteins are cut into **peptides** by the enzyme **trypsin** (which cuts after K or R, but not before P). Peptides are separated by liquid chromatography and measured by tandem MS (**LC-MS/MS**): one scan measures intact peptides, then selected ones are fragmented and their fragments measured. Fragment spectra are matched to peptides predicted from a protein database, with false hits controlled by a **target-decoy** search against reversed or shuffled sequences. Acquisition modes: **DDA** (data-dependent: fragment the most intense peptides) and **DIA** (data-independent: fragment everything in m/z windows; more reproducible). Quantification is label-free (LFQ) or uses isobaric **TMT** tags to multiplex samples. Tools: MaxQuant, DIA-NN, FragPipe. Data repository: PRIDE.\n\n## How you'll see this in a paper\n\n- \"Aligned to GRCh38 with STAR (GENCODE v38), quantified with salmon\": build, annotation and tool.\n- \"Cells with <200 genes or >20% mitochondrial reads were removed\": single-cell QC.\n- \"Peaks called with MACS2 (q < 0.01); ENCODE blacklist regions excluded.\"\n- \"One-hot encoded 131 kb sequences predicting ENCODE coverage tracks\": a genomics model's input and labels.\n",
   "cards": [
     {
       "id": "u6-c01",
-      "front": "FASTA header lines start with which character?",
-      "back": "'>'",
+      "front": "FASTA header lines start with which character? (symbol)",
+      "back": "'>' (greater-than sign)",
       "accept": [
         ">",
         "greater-than",
-        "greater than sign"
+        "greater than",
+        "greater-than sign"
       ],
       "tags": [
         "FASTA"
@@ -127,13 +299,11 @@
     },
     {
       "id": "u6-c02",
-      "front": "In a UniProt FASTA header, OX=9606 means…?",
-      "back": "NCBI taxonomy ID 9606 = human (sp = Swiss-Prot, GN = gene name)",
+      "front": "In a UniProt FASTA header, OX=9606 denotes which species? (common name)",
+      "back": "Human (NCBI taxonomy ID 9606). sp = Swiss-Prot, GN = gene name",
       "accept": [
         "human",
-        "Homo sapiens",
-        "taxonomy ID human",
-        "taxon 9606"
+        "Homo sapiens"
       ],
       "tags": [
         "FASTA",
@@ -143,7 +313,7 @@
     },
     {
       "id": "u6-c03",
-      "front": "NCBI taxonomy ID for mouse?",
+      "front": "NCBI taxonomy ID for mouse? (number)",
       "back": "10090 (human = 9606)",
       "accept": [
         "10090"
@@ -155,8 +325,8 @@
     },
     {
       "id": "u6-c04",
-      "front": "How many lines per FASTQ record?",
-      "back": "4: @id; sequence; '+'; quality string",
+      "front": "How many lines per FASTQ record? (number)",
+      "back": "4: @id, sequence, '+', quality string",
       "accept": [
         "4",
         "four"
@@ -168,15 +338,11 @@
     },
     {
       "id": "u6-c05",
-      "front": "Phred quality formula?",
-      "back": "Q = −10·log10(P_error)",
+      "front": "Phred Q = −10·log10(P_error). Q for an error probability of 0.01? (number)",
+      "back": "20 (Q10 = 10%, Q30 = 0.1%, Q40 = 0.01%)",
       "accept": [
-        "-10log10(p)",
-        "Q=-10log10(P)",
-        "-10 log10 P",
-        "-10*log10(p)",
-        "Q = -10 log10(P_error)",
-        "-10log10P"
+        "20",
+        "Q20"
       ],
       "tags": [
         "FASTQ"
@@ -185,10 +351,11 @@
     },
     {
       "id": "u6-c06",
-      "front": "Error probability at Q30?",
-      "back": "0.1% (1 in 1,000); Q20 = 1%",
+      "front": "Error probability at Q30? (percent)",
+      "back": "0.1% (1 in 1,000)",
       "accept": [
         "0.1%",
+        "0.1",
         "0.001",
         "1 in 1000",
         "1/1000",
@@ -201,8 +368,8 @@
     },
     {
       "id": "u6-c07",
-      "front": "Phred+33: which Q does 'I' encode?",
-      "back": "Q40 ('!' = Q0)",
+      "front": "Under Phred+33, which Q score does the character 'I' encode? (number)",
+      "back": "40 ('!' = Q0)",
       "accept": [
         "40",
         "Q40"
@@ -214,7 +381,7 @@
     },
     {
       "id": "u6-c08",
-      "front": "Alignment format that compresses relative to the reference (needs it to decode)?",
+      "front": "Alignment format compressed relative to the reference (needs it to decode)? (format name)",
       "back": "CRAM (SAM = text, BAM = compressed binary)",
       "accept": [
         "CRAM"
@@ -226,13 +393,13 @@
     },
     {
       "id": "u6-c09",
-      "front": "Is SAM POS 0- or 1-based?",
-      "back": "1-based (leftmost mapped base)",
+      "front": "Is SAM's POS field 0-based or 1-based? (number)",
+      "back": "1: POS is the 1-based leftmost mapped position",
       "accept": [
-        "1-based",
         "1",
-        "one-based",
-        "1 based"
+        "1-based",
+        "one",
+        "one-based"
       ],
       "tags": [
         "SAM",
@@ -242,8 +409,8 @@
     },
     {
       "id": "u6-c10",
-      "front": "SAM FLAG 1024 means…?",
-      "back": "PCR/optical duplicate (4 = unmapped, 16 = reverse strand)",
+      "front": "SAM FLAG 1024 marks a read as a ___. (one word)",
+      "back": "Duplicate (PCR/optical). 4 = unmapped, 16 = reverse strand",
       "accept": [
         "duplicate",
         "PCR duplicate",
@@ -257,13 +424,12 @@
     },
     {
       "id": "u6-c11",
-      "front": "SAM FLAG 2048 means…?",
-      "back": "Supplementary (split/chimeric) alignment; 256 = secondary",
+      "front": "SAM FLAG 2048 marks what kind of alignment? (one word)",
+      "back": "Supplementary (split/chimeric). 256 = secondary",
       "accept": [
         "supplementary",
-        "supplementary alignment",
         "chimeric",
-        "split read"
+        "split"
       ],
       "tags": [
         "SAM"
@@ -272,14 +438,13 @@
     },
     {
       "id": "u6-c12",
-      "front": "In CIGAR 50M1000N50M, what is the 1000N?",
-      "back": "A 1,000-bp skipped reference region (an intron) in a spliced read",
+      "front": "In CIGAR 50M1000N50M, the 1000N is what RNA feature? (one word)",
+      "back": "Intron: 1,000 bp of reference skipped in a spliced read",
       "accept": [
         "intron",
-        "skipped region",
         "splice junction",
-        "spliced intron",
-        "1000 bp intron"
+        "skipped region",
+        "junction"
       ],
       "tags": [
         "SAM",
@@ -289,12 +454,13 @@
     },
     {
       "id": "u6-c13",
-      "front": "CIGAR 'S' means…?",
+      "front": "CIGAR operation 'S' means? (two words)",
       "back": "Soft clip: bases kept in SEQ but not aligned (H = hard clip, removed)",
       "accept": [
         "soft clip",
         "soft clipping",
         "soft-clip",
+        "soft-clipped",
         "soft clipped"
       ],
       "tags": [
@@ -304,15 +470,16 @@
     },
     {
       "id": "u6-c14",
-      "front": "MAPQ 0 usually indicates a…?",
-      "back": "Multi-mapping read (position ambiguous)",
+      "front": "A MAPQ of 0 usually indicates what kind of read? (one word)",
+      "back": "Multi-mapper: the read fits equally well in several places",
       "accept": [
         "multi-mapper",
         "multimapper",
-        "multi-mapping read",
+        "multi-mapping",
         "multimapping",
-        "ambiguous mapping",
-        "multi-mapped"
+        "multi-mapped",
+        "ambiguous",
+        "repetitive"
       ],
       "tags": [
         "SAM"
@@ -321,8 +488,8 @@
     },
     {
       "id": "u6-c15",
-      "front": "VCF column holding key=value annotations like AF and DP?",
-      "back": "INFO (columns: CHROM POS ID REF ALT QUAL FILTER INFO FORMAT samples)",
+      "front": "VCF column holding key=value annotations like AF and DP? (column name)",
+      "back": "INFO. Columns: CHROM POS ID REF ALT QUAL FILTER INFO FORMAT samples",
       "accept": [
         "INFO"
       ],
@@ -333,13 +500,10 @@
     },
     {
       "id": "u6-c16",
-      "front": "VCF genotype 0|1 means…?",
-      "back": "Phased heterozygote (0/1 = unphased het; 1/1 = hom alt)",
+      "front": "VCF genotype 0|1: phased or unphased? (one word)",
+      "back": "Phased (heterozygous). 0/1 would be unphased; 1/1 = homozygous alt",
       "accept": [
-        "phased heterozygous",
-        "phased het",
-        "phased heterozygote",
-        "heterozygous phased"
+        "phased"
       ],
       "tags": [
         "VCF"
@@ -348,14 +512,13 @@
     },
     {
       "id": "u6-c17",
-      "front": "BED coordinate system?",
-      "back": "0-based, half-open",
+      "front": "Is BED 0-based or 1-based? (number)",
+      "back": "0 (0-based starts; intervals are half-open)",
       "accept": [
-        "0-based half-open",
+        "0",
         "0-based",
-        "zero-based",
-        "0-based, half-open",
-        "zero-based half-open"
+        "zero",
+        "zero-based"
       ],
       "tags": [
         "BED",
@@ -365,11 +528,10 @@
     },
     {
       "id": "u6-c18",
-      "front": "BED line 'chr1 99 100' covers which 1-based position?",
-      "back": "100 (one base)",
+      "front": "BED line 'chr1 99 100' covers which 1-based position? (number)",
+      "back": "100 (a single base)",
       "accept": [
-        "100",
-        "position 100"
+        "100"
       ],
       "tags": [
         "BED",
@@ -379,14 +541,13 @@
     },
     {
       "id": "u6-c19",
-      "front": "GTF/GFF coordinate system?",
-      "back": "1-based, inclusive (start and end)",
+      "front": "Are GTF/GFF coordinates 0-based or 1-based? (number)",
+      "back": "1 (1-based, inclusive start and end)",
       "accept": [
-        "1-based inclusive",
+        "1",
         "1-based",
-        "one-based",
-        "1-based, inclusive",
-        "fully closed"
+        "one",
+        "one-based"
       ],
       "tags": [
         "GTF",
@@ -396,7 +557,7 @@
     },
     {
       "id": "u6-c20",
-      "front": "Annotation format using ID=…;Parent=… attributes?",
+      "front": "Annotation format whose attributes look like ID=…;Parent=…? (format name)",
       "back": "GFF3 (GTF uses gene_id \"…\"; transcript_id \"…\";)",
       "accept": [
         "GFF3",
@@ -410,7 +571,7 @@
     },
     {
       "id": "u6-c21",
-      "front": "UCSC name for GRCh38?",
+      "front": "UCSC name for GRCh38? (name)",
       "back": "hg38 (GRCh37 = hg19)",
       "accept": [
         "hg38"
@@ -422,7 +583,7 @@
     },
     {
       "id": "u6-c22",
-      "front": "UCSC writes 'chrM'; Ensembl/GRC writes…?",
+      "front": "UCSC writes the mitochondrial chromosome as 'chrM'. What does Ensembl/GRC write? (two letters)",
       "back": "MT (and '1' instead of 'chr1')",
       "accept": [
         "MT"
@@ -434,11 +595,10 @@
     },
     {
       "id": "u6-c23",
-      "front": "VCF on hg19, BED on hg38. What tool before intersecting?",
-      "back": "liftOver (or CrossMap) one onto the other build",
+      "front": "VCF on hg19, BED on hg38. Which UCSC tool converts one to the other's build? (tool name)",
+      "back": "liftOver (CrossMap is a standalone alternative)",
       "accept": [
         "liftOver",
-        "CrossMap",
         "lift over"
       ],
       "tags": [
@@ -448,14 +608,15 @@
     },
     {
       "id": "u6-c24",
-      "front": "First complete gap-free human assembly (2022)?",
+      "front": "First complete gap-free human assembly (2022)? (name)",
       "back": "T2T-CHM13",
       "accept": [
         "T2T-CHM13",
         "T2T",
         "CHM13",
         "CHM13v2",
-        "T2T CHM13"
+        "T2T CHM13",
+        "CHM13v2.0"
       ],
       "tags": [
         "assemblies"
@@ -464,8 +625,8 @@
     },
     {
       "id": "u6-c25",
-      "front": "Latest mouse assembly (UCSC name)?",
-      "back": "mm39 (GRCm39); previous mm10 (GRCm38)",
+      "front": "Latest mouse assembly, UCSC name? (name)",
+      "back": "mm39 (GRCm39); previously mm10 (GRCm38)",
       "accept": [
         "mm39",
         "GRCm39"
@@ -477,11 +638,14 @@
     },
     {
       "id": "u6-c26",
-      "front": "Name a pseudoaligner for RNA-seq.",
-      "back": "salmon or kallisto",
+      "front": "RNA-seq quantifiers like salmon and kallisto that skip base-level alignment are called? (one word)",
+      "back": "Pseudoaligners",
       "accept": [
-        "salmon",
-        "kallisto"
+        "pseudoaligners",
+        "pseudoaligner",
+        "pseudo-aligners",
+        "pseudo-aligner",
+        "pseudoalignment"
       ],
       "tags": [
         "RNA-seq"
@@ -490,14 +654,15 @@
     },
     {
       "id": "u6-c27",
-      "front": "DESeq2/edgeR require what input?",
-      "back": "Raw integer counts (negative binomial models)",
+      "front": "DESeq2 and edgeR require what input? (two words)",
+      "back": "Raw counts (integer; modeled as negative binomial)",
       "accept": [
         "raw counts",
         "counts",
         "raw integer counts",
         "integer counts",
-        "read counts"
+        "read counts",
+        "raw read counts"
       ],
       "tags": [
         "RNA-seq"
@@ -506,7 +671,7 @@
     },
     {
       "id": "u6-c28",
-      "front": "Which unit normalizes for gene length FIRST, then depth?",
+      "front": "Which expression unit normalizes for gene length FIRST, then depth? (acronym)",
       "back": "TPM (FPKM: depth first, then length)",
       "accept": [
         "TPM",
@@ -519,7 +684,7 @@
     },
     {
       "id": "u6-c29",
-      "front": "Which unit sums to the same total (1e6) in every sample: TPM or FPKM?",
+      "front": "Which unit sums to 1,000,000 in every sample: TPM or FPKM? (acronym)",
       "back": "TPM",
       "accept": [
         "TPM",
@@ -532,8 +697,8 @@
     },
     {
       "id": "u6-c30",
-      "front": "What does UMI stand for?",
-      "back": "Unique molecular identifier: random tag on each original molecule to collapse PCR duplicates",
+      "front": "What does UMI stand for? (three words)",
+      "back": "Unique molecular identifier: random tag on each original molecule, to collapse PCR duplicates",
       "accept": [
         "unique molecular identifier",
         "unique molecular identifiers"
@@ -545,7 +710,7 @@
     },
     {
       "id": "u6-c31",
-      "front": "Tag identifying which cell/droplet a read came from?",
+      "front": "Tag identifying which cell/droplet a read came from? (two words)",
       "back": "Cell barcode (UMI = which molecule)",
       "accept": [
         "cell barcode",
@@ -560,14 +725,14 @@
     },
     {
       "id": "u6-c32",
-      "front": "AnnData X orientation?",
-      "back": "Cells (obs) × genes (var)",
+      "front": "In AnnData's X matrix, what does each row represent? (one word)",
+      "back": "A cell (rows = obs = cells)",
       "accept": [
-        "cells x genes",
-        "cells × genes",
-        "cells by genes",
-        "obs x var",
-        "cell by gene"
+        "cell",
+        "cells",
+        "observation",
+        "observations",
+        "obs"
       ],
       "tags": [
         "single-cell",
@@ -577,8 +742,8 @@
     },
     {
       "id": "u6-c33",
-      "front": "Which AnnData slot holds per-cell metadata?",
-      "back": "adata.obs (var = gene metadata, obsm = embeddings, layers = alt matrices)",
+      "front": "Which AnnData attribute holds per-cell metadata? (attribute name)",
+      "back": "obs (adata.obs). var = gene metadata, obsm = embeddings, layers = alternative matrices",
       "accept": [
         "obs",
         "adata.obs",
@@ -591,15 +756,16 @@
     },
     {
       "id": "u6-c34",
-      "front": "High mitochondrial read fraction in a cell suggests it is…?",
+      "front": "A high mitochondrial read fraction suggests a cell is ___. (one word)",
       "back": "Damaged/dying (cytoplasmic mRNA lost)",
       "accept": [
         "damaged",
         "dying",
-        "damaged cell",
-        "low quality",
+        "dead",
         "broken",
-        "dead"
+        "stressed",
+        "low-quality",
+        "lysed"
       ],
       "tags": [
         "single-cell"
@@ -608,11 +774,12 @@
     },
     {
       "id": "u6-c35",
-      "front": "Graph clustering algorithm used in the standard scanpy pipeline?",
-      "back": "Leiden (pipeline: QC → normalize_total → log1p → HVGs → PCA → neighbors → Leiden → UMAP)",
+      "front": "Graph clustering algorithm in the standard scanpy pipeline? (name)",
+      "back": "Leiden (QC → normalize_total → log1p → HVGs → PCA → neighbors → Leiden → UMAP)",
       "accept": [
         "Leiden",
-        "Leiden clustering"
+        "Leiden clustering",
+        "Leiden algorithm"
       ],
       "tags": [
         "single-cell"
@@ -621,7 +788,7 @@
     },
     {
       "id": "u6-c36",
-      "front": "A droplet containing two cells is a…?",
+      "front": "A droplet containing two cells is a ___. (one word)",
       "back": "Doublet",
       "accept": [
         "doublet",
@@ -635,13 +802,11 @@
     },
     {
       "id": "u6-c37",
-      "front": "H3K4me3 marks…?",
-      "back": "Active promoters",
+      "front": "H3K4me3 marks active ___. (one word)",
+      "back": "Promoters",
       "accept": [
-        "active promoters",
         "promoters",
-        "promoter",
-        "active promoter"
+        "promoter"
       ],
       "tags": [
         "ChIP-seq"
@@ -650,7 +815,7 @@
     },
     {
       "id": "u6-c38",
-      "front": "Histone mark for active enhancers (and promoters)?",
+      "front": "Histone mark for active enhancers (and promoters)? (mark name)",
       "back": "H3K27ac",
       "accept": [
         "H3K27ac"
@@ -662,15 +827,14 @@
     },
     {
       "id": "u6-c39",
-      "front": "H3K27me3 marks…?",
-      "back": "Polycomb-repressed chromatin",
+      "front": "H3K27me3 marks chromatin repressed by which protein complex family? (one word)",
+      "back": "Polycomb",
       "accept": [
-        "Polycomb repression",
-        "polycomb",
-        "repressed",
-        "Polycomb-repressed chromatin",
-        "repression",
-        "facultative heterochromatin"
+        "Polycomb",
+        "PRC2",
+        "polycomb repressive complex",
+        "Polycomb repressive complex 2",
+        "PRC"
       ],
       "tags": [
         "ChIP-seq"
@@ -679,14 +843,12 @@
     },
     {
       "id": "u6-c40",
-      "front": "H3K36me3 marks…?",
-      "back": "Bodies of actively transcribed genes",
+      "front": "H3K36me3 marks the bodies of actively ___ genes. (one word)",
+      "back": "Transcribed",
       "accept": [
-        "gene bodies",
-        "transcribed gene bodies",
-        "gene body",
-        "transcribed genes",
-        "active gene bodies"
+        "transcribed",
+        "expressed",
+        "transcribing"
       ],
       "tags": [
         "ChIP-seq"
@@ -695,7 +857,7 @@
     },
     {
       "id": "u6-c41",
-      "front": "Standard ChIP-seq peak caller?",
+      "front": "Standard ChIP-seq peak caller? (tool name)",
       "back": "MACS2/MACS3",
       "accept": [
         "MACS2",
@@ -709,7 +871,7 @@
     },
     {
       "id": "u6-c42",
-      "front": "Enzyme ATAC-seq uses to tag open chromatin?",
+      "front": "Enzyme ATAC-seq uses to tag open chromatin? (name)",
       "back": "Tn5 transposase",
       "accept": [
         "Tn5",
@@ -723,15 +885,16 @@
     },
     {
       "id": "u6-c43",
-      "front": "Pooled CRISPR KO screen: what is counted by sequencing?",
-      "back": "sgRNA abundance (before vs after selection)",
+      "front": "Pooled CRISPR KO screen: what molecule's abundance is counted by sequencing? (abbreviation)",
+      "back": "sgRNAs (guides), before vs after selection",
       "accept": [
+        "sgRNA",
         "sgRNAs",
         "guides",
         "guide RNAs",
-        "sgRNA counts",
-        "guide counts",
-        "sgRNA abundance"
+        "gRNA",
+        "gRNAs",
+        "guide RNA"
       ],
       "tags": [
         "CRISPR"
@@ -740,14 +903,12 @@
     },
     {
       "id": "u6-c44",
-      "front": "Guides for gene X strongly deplete after 3 weeks of growth. Gene X is…?",
+      "front": "Guides for gene X strongly deplete after 3 weeks of growth. Gene X is ___. (one word)",
       "back": "Essential (required for proliferation)",
       "accept": [
         "essential",
-        "essential gene",
-        "required for proliferation",
-        "a fitness gene",
-        "fitness gene"
+        "required",
+        "necessary"
       ],
       "tags": [
         "CRISPR"
@@ -756,7 +917,7 @@
     },
     {
       "id": "u6-c45",
-      "front": "dCas9-KRAB represses genes. Name of this approach?",
+      "front": "dCas9-KRAB represses genes. Name of this approach? (one word)",
       "back": "CRISPRi (CRISPR interference); CRISPRa activates",
       "accept": [
         "CRISPRi",
@@ -769,13 +930,13 @@
     },
     {
       "id": "u6-c46",
-      "front": "Pooled CRISPR perturbations + scRNA-seq readout?",
-      "back": "Perturb-seq",
+      "front": "Pooled CRISPR perturbations with a single-cell RNA-seq readout? (method name)",
+      "back": "Perturb-seq (also CROP-seq)",
       "accept": [
         "Perturb-seq",
         "Perturbseq",
-        "CROP-seq",
-        "perturb seq"
+        "perturb seq",
+        "CROP-seq"
       ],
       "tags": [
         "CRISPR",
@@ -785,16 +946,12 @@
     },
     {
       "id": "u6-c47",
-      "front": "Trypsin cleaves after which residues?",
-      "back": "K or R (not before P)",
+      "front": "Trypsin cleaves after lysine and which other amino acid? (full name)",
+      "back": "Arginine (R): trypsin cuts after K or R",
       "accept": [
-        "K and R",
-        "K/R",
-        "KR",
-        "lysine and arginine",
-        "K or R",
-        "R and K",
-        "lysine or arginine"
+        "arginine",
+        "Arg",
+        "R"
       ],
       "tags": [
         "proteomics"
@@ -803,8 +960,8 @@
     },
     {
       "id": "u6-c48",
-      "front": "MS acquisition mode that fragments all precursors in m/z windows?",
-      "back": "DIA (data-independent acquisition); DDA picks top precursors",
+      "front": "MS acquisition mode that fragments all precursors in m/z windows? (acronym)",
+      "back": "DIA (data-independent acquisition); DDA picks the top precursors",
       "accept": [
         "DIA",
         "data-independent acquisition",
@@ -817,14 +974,14 @@
     },
     {
       "id": "u6-c49",
-      "front": "Approach to control FDR in peptide identification?",
-      "back": "Target-decoy search (reversed/shuffled decoy database)",
+      "front": "Search strategy used to control FDR in peptide identification? (hyphenated term)",
+      "back": "Target-decoy (search against reversed/shuffled decoy sequences)",
       "accept": [
         "target-decoy",
         "target decoy",
-        "decoy database",
+        "decoy",
         "target-decoy search",
-        "decoys"
+        "decoy database"
       ],
       "tags": [
         "proteomics"
@@ -833,13 +990,12 @@
     },
     {
       "id": "u6-c50",
-      "front": "Isobaric labels for multiplexed MS quantification?",
+      "front": "Isobaric labels for multiplexed MS quantification? (acronym)",
       "back": "TMT (tandem mass tags)",
       "accept": [
         "TMT",
         "tandem mass tag",
-        "tandem mass tags",
-        "iTRAQ"
+        "tandem mass tags"
       ],
       "tags": [
         "proteomics"
@@ -848,7 +1004,7 @@
     },
     {
       "id": "u6-c51",
-      "front": "One sequenced DNA fragment is called a…?",
+      "front": "One sequenced DNA fragment is called a ___. (one word)",
       "back": "Read",
       "accept": [
         "read",
@@ -863,13 +1019,12 @@
     },
     {
       "id": "u6-c52",
-      "front": "Reading both ends of each fragment is called…?",
-      "back": "Paired-end sequencing (R1, R2)",
+      "front": "Reading both ends of each fragment is called ___ sequencing. (hyphenated word)",
+      "back": "Paired-end (gives R1 and R2)",
       "accept": [
         "paired-end",
         "paired end",
-        "PE",
-        "paired-end sequencing"
+        "PE"
       ],
       "tags": [
         "basics",
@@ -879,14 +1034,14 @@
     },
     {
       "id": "u6-c53",
-      "front": "Finding where each read came from in the reference?",
+      "front": "Finding where each read came from in the reference? (one word)",
       "back": "Alignment (mapping)",
       "accept": [
         "alignment",
         "mapping",
+        "aligning",
         "read alignment",
-        "read mapping",
-        "aligning"
+        "read mapping"
       ],
       "tags": [
         "basics",
@@ -896,7 +1051,7 @@
     },
     {
       "id": "u6-c54",
-      "front": "Number of reads overlapping a position?",
+      "front": "Number of reads overlapping a position? (one word)",
       "back": "Coverage (depth)",
       "accept": [
         "coverage",
@@ -912,7 +1067,7 @@
     },
     {
       "id": "u6-c55",
-      "front": "Reaction that copies DNA many times (creating duplicates)?",
+      "front": "Reaction that copies DNA many times, creating duplicates? (acronym)",
       "back": "PCR (polymerase chain reaction)",
       "accept": [
         "PCR",
@@ -926,7 +1081,7 @@
     },
     {
       "id": "u6-c56",
-      "front": "DNA made from RNA by reverse transcriptase?",
+      "front": "DNA made from RNA by reverse transcriptase? (abbreviation)",
       "back": "cDNA (complementary DNA)",
       "accept": [
         "cDNA",
@@ -940,7 +1095,7 @@
     },
     {
       "id": "u6-c57",
-      "front": "Ratio of expression between conditions, usually reported as log2?",
+      "front": "Ratio of expression between conditions, usually on a log2 scale? (two words)",
       "back": "Fold change (log2FC)",
       "accept": [
         "fold change",
@@ -957,7 +1112,7 @@
     },
     {
       "id": "u6-c58",
-      "front": "Expected fraction of false positives among significant calls?",
+      "front": "Expected fraction of false positives among significant calls? (acronym)",
       "back": "FDR (false discovery rate)",
       "accept": [
         "FDR",
@@ -971,15 +1126,17 @@
     },
     {
       "id": "u6-c59",
-      "front": "log2 fold change of +1 means expression…?",
-      "back": "Doubled (2×)",
+      "front": "A log2 fold change of +1 means expression changed by what factor? (number)",
+      "back": "2 (doubled)",
       "accept": [
-        "doubled",
+        "2",
         "2x",
+        "doubled",
+        "two",
+        "twofold",
         "2-fold",
-        "two-fold increase",
-        "2 fold",
-        "twice"
+        "two-fold",
+        "x2"
       ],
       "tags": [
         "basics",
@@ -989,12 +1146,11 @@
     },
     {
       "id": "u6-c60",
-      "front": "Technical differences between samples processed at different times/places?",
+      "front": "Technical differences between samples processed at different times or places? (two words)",
       "back": "Batch effect",
       "accept": [
         "batch effect",
-        "batch effects",
-        "batch"
+        "batch effects"
       ],
       "tags": [
         "basics",
@@ -1004,7 +1160,7 @@
     },
     {
       "id": "u6-c61",
-      "front": "Unit of ~147 bp of DNA wrapped around histones?",
+      "front": "Unit of ~147 bp of DNA wrapped around histones? (one word)",
       "back": "Nucleosome",
       "accept": [
         "nucleosome",
@@ -1018,12 +1174,11 @@
     },
     {
       "id": "u6-c62",
-      "front": "Region with far more reads than background in ChIP/ATAC data?",
+      "front": "Region with far more reads than background in ChIP/ATAC data? (one word)",
       "back": "Peak",
       "accept": [
         "peak",
-        "peaks",
-        "enriched region"
+        "peaks"
       ],
       "tags": [
         "basics",
@@ -1033,14 +1188,13 @@
     },
     {
       "id": "u6-c63",
-      "front": "Short guide RNA that targets Cas9?",
+      "front": "Short guide RNA that targets Cas9? (abbreviation)",
       "back": "sgRNA (single guide RNA)",
       "accept": [
         "sgRNA",
-        "guide RNA",
         "gRNA",
-        "single guide RNA",
-        "guide"
+        "guide RNA",
+        "single guide RNA"
       ],
       "tags": [
         "basics",
@@ -1050,8 +1204,8 @@
     },
     {
       "id": "u6-c64",
-      "front": "What does MOI stand for in a screen?",
-      "back": "Multiplicity of infection (viruses per cell; low MOI ≈ 1 guide/cell)",
+      "front": "What does MOI stand for in a viral screen? (three words)",
+      "back": "Multiplicity of infection: viruses per cell; low MOI ≈ 1 guide per cell",
       "accept": [
         "multiplicity of infection"
       ],
@@ -1063,13 +1217,14 @@
     },
     {
       "id": "u6-c65",
-      "front": "List of genomic regions known to give artifactual signal, excluded from ChIP/ATAC analyses?",
-      "back": "Blacklist (ENCODE blacklist regions)",
+      "front": "List of genomic regions known to give artifactual signal, excluded from ChIP/ATAC analyses? (one word)",
+      "back": "Blacklist (ENCODE blacklist)",
       "accept": [
         "blacklist",
         "ENCODE blacklist",
         "blacklisted regions",
-        "blacklist regions"
+        "blacklist regions",
+        "exclusion list"
       ],
       "tags": [
         "basics",
@@ -1079,15 +1234,63 @@
     },
     {
       "id": "u6-c66",
-      "front": "In a VCF, '|' between alleles (0|1) means the genotype is…?",
-      "back": "Phased",
+      "front": "In a VCF, '|' between alleles (0|1) means the genotype is ___. (one word)",
+      "back": "Phased: we know which chromosome copy carries which allele",
       "accept": [
-        "phased",
-        "phasing"
+        "phased"
       ],
       "tags": [
         "basics",
         "VCF"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c67",
+      "front": "Are BED intervals closed or half-open? (one word)",
+      "back": "Half-open: start included, end excluded (like Python slicing)",
+      "accept": [
+        "half-open",
+        "half open",
+        "halfopen",
+        "right-open"
+      ],
+      "tags": [
+        "BED",
+        "coordinates"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c68",
+      "front": "In AnnData's X matrix, what does each column represent? (one word)",
+      "back": "A gene (columns = var = genes)",
+      "accept": [
+        "gene",
+        "genes",
+        "variable",
+        "variables",
+        "var",
+        "feature",
+        "features"
+      ],
+      "tags": [
+        "single-cell",
+        "AnnData"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c69",
+      "front": "Trypsin does not cut when the next residue is which amino acid? (full name)",
+      "back": "Proline (P)",
+      "accept": [
+        "proline",
+        "Pro",
+        "P"
+      ],
+      "tags": [
+        "proteomics"
       ],
       "type": "recall"
     }

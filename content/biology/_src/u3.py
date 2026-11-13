@@ -1,7 +1,7 @@
 from common import build
 import os
 lesson = open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"lessons","u3.md")).read()
-from cards_u3 import cards
+from cards_u3 import cards, glossary_accept
 quiz = [
 ("You want to know how frequent a missense variant is among healthy people of different ancestries. Best resource?",["ClinVar","gnomAD","OMIM","PDB"],1,"gnomAD aggregates population allele frequencies by ancestry."),
 ("An SRR accession refers to:",["A GEO sample","A sequencing run (raw reads)","A study","A BioProject"],1,"SRR = run; the downloadable reads."),
@@ -18,4 +18,4 @@ quiz = [
 ("Which database would you use to find which genes are essential across cancer cell lines?",["DepMap","gnomAD","GTEx","ChEMBL"],0,"DepMap aggregates CRISPR knockout screens across cell lines."),
 ("Which resource issues rsIDs?",["ClinVar","dbSNP","Ensembl","HGNC"],1,"dbSNP assigns Reference SNP (rs) IDs."),
 ]
-build(3,"databases","Databases and where to find things","A map from biological questions to the canonical database that answers them: genes, proteins and structures, expression, variants and disease, pathways and interactions, and raw data archives. Includes the accession formats you'll see in data-availability statements.",lesson,cards,quiz)
+build(3,"databases","Databases and where to find things","A map from biological questions to the canonical database that answers them: genes, proteins and structures, expression, variants and disease, pathways and interactions, and raw data archives. Includes the accession formats you'll see in data-availability statements.",lesson,cards,quiz,glossary_accept)

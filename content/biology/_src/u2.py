@@ -1,7 +1,7 @@
 from common import build
 import os
 lesson = open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"lessons","u2.md")).read()
-from cards_u2 import cards
+from cards_u2 import cards, glossary_accept
 quiz = [
 ("Which is the correct HGNC symbol for the β-catenin gene?",["β-CAT","CTNNB1","Ctnnb1","CATNB"],1,"HGNC symbols avoid Greek letters; CTNNB1 = catenin beta 1. Ctnnb1 is the mouse style."),
 ("In NM_000546.6:c.215C>G, what does c.215 refer to?",["Position 215 of chromosome 17","Position 215 counting from the A of the ATG start codon","Amino acid 215","Position 215 from the transcription start site"],1,"c. numbering starts at the A of the start codon (c.1)."),
@@ -18,4 +18,4 @@ quiz = [
 ("Which HGNC symbol indicates a pseudogene?",["PTENP1","PTEN-AS1","MIR21","LINC00473"],0,"A 'P' + number suffix marks a pseudogene."),
 ("Which database's IDs look like ENSG00000141510?",["NCBI RefSeq","Ensembl","UniProt","HGNC"],1,"ENS + species code + feature type (G/T/P) + 11 digits."),
 ]
-build(2,"naming-conventions","Naming conventions and identifiers","How to read gene and protein names across species, HLA alleles, HGVS variant notation and rsIDs, and the identifier formats from Ensembl, RefSeq, UniProt, PDB and others. Parsing these on sight is what lets you join datasets and read methods sections.",lesson,cards,quiz)
+build(2,"naming-conventions","Naming conventions and identifiers","How to read gene and protein names across species, HLA alleles, HGVS variant notation and rsIDs, and the identifier formats from Ensembl, RefSeq, UniProt, PDB and others. Parsing these on sight is what lets you join datasets and read methods sections.",lesson,cards,quiz,glossary_accept)

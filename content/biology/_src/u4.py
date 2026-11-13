@@ -1,7 +1,7 @@
 from common import build
 import os
 lesson = open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"lessons","u4.md")).read()
-from cards_u4 import cards
+from cards_u4 import cards, glossary_accept
 quiz = [
 ("In a sequence, which letter denotes lysine?",["L","K","Y","I"],1,"K = Lys; L = Leu, Y = Tyr, I = Ile."),
 ("A residue with pLDDT 42 in an AlphaFold model most likely:",["Is highly accurate","Lies in a disordered or unconfident region","Is a catalytic residue","Is in a β-sheet"],1,"pLDDT < 50 is very low confidence, often indicating disorder."),
@@ -18,4 +18,4 @@ quiz = [
 ("Where are pLDDT values stored in AlphaFold PDB files?",["Occupancy column","B-factor column","Header remarks only","Chain ID"],1,"AlphaFold writes pLDDT into the B-factor field."),
 ("Most clinically used kinase inhibitors are:",["Allosteric activators","ATP-competitive","Covalent DNA binders","GPCR agonists"],1,"Most target the ATP pocket; some are covalent (e.g., osimertinib binds Cys797) but still in the ATP site."),
 ]
-build(4,"proteins","Proteins: sequence, structure, families","Amino acid one-letter codes by chemistry, levels of protein structure, domains and the databases that catalog them, AlphaFold confidence metrics (pLDDT, PAE, ipTM), MSAs and coevolution, and the protein families you'll meet most often in papers.",lesson,cards,quiz)
+build(4,"proteins","Proteins: sequence, structure, families","Amino acid one-letter codes by chemistry, levels of protein structure, domains and the databases that catalog them, AlphaFold confidence metrics (pLDDT, PAE, ipTM), MSAs and coevolution, and the protein families you'll meet most often in papers.",lesson,cards,quiz,glossary_accept)

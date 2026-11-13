@@ -943,22 +943,40 @@ class StudyApp {
         }
 
         // Convert glossary to card-like format for review
-        const termCards = unit.glossary.map((entry, idx) => ({
-            id: `u${unit.unit}-g-${this.slugify(entry.term)}`,
-            front: entry.definition,
-            back: entry.term,
-            accept: [entry.term],
-            type: 'identify',
-            tags: ['glossary']
-        }));
+        const termCards = unit.glossary.map((entry, idx) => {
+            // Use glossary's accept array, fallback to term if missing
+            const accept = entry.accept || [entry.term];
+            return {
+                id: `u${unit.unit}-g-${this.slugify(entry.term)}`,
+                front: entry.definition,
+                back: accept[0], // First entry is canonical
+                accept: accept,
+                type: 'identify',
+                tags: ['glossary']
+            };
+        });
 
         const progress = Storage.getAllCardProgress();
         const settings = Storage.getSettings();
 
-        const dueCardIds = SpacedRepetition.getDueCards(progress);
+        // Get valid card IDs (some glossary entries may have been split/removed)
+        const validCardIds = new Set(termCards.map(c => c.id));
+        
+        // Filter progress to only include valid cards (drop orphaned IDs)
+        const validProgress = {};
+        for (const [cardId, cardProgress] of Object.entries(progress)) {
+            if (cardId.startsWith(`u${unit.unit}-g-`) && validCardIds.has(cardId)) {
+                validProgress[cardId] = cardProgress;
+            } else if (!cardId.startsWith(`u${unit.unit}-g-`)) {
+                // Keep non-glossary progress
+                validProgress[cardId] = cardProgress;
+            }
+        }
+
+        const dueCardIds = SpacedRepetition.getDueCards(validProgress);
         const dueCards = termCards.filter(c => dueCardIds.includes(c.id));
         
-        const newCardIds = SpacedRepetition.getNewCards(termCards, progress, settings.newCardsPerDay);
+        const newCardIds = SpacedRepetition.getNewCards(termCards, validProgress, settings.newCardsPerDay);
         const newCards = termCards.filter(c => newCardIds.includes(c.id));
 
         const queue = [...dueCards, ...newCards];

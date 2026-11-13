@@ -1,7 +1,7 @@
 from common import build
 import os
 lesson = open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"lessons","u1.md")).read()
-from cards_u1 import cards
+from cards_u1 import cards, glossary_accept
 quiz = [
 ("Which segment of a mature mRNA is translated?",["5' UTR","Coding sequence (CDS)","3' UTR","Poly(A) tail"],1,"Only the CDS from start to stop codon is translated; UTRs are transcribed but not translated."),
 ("A variant changes GAA (Glu) to GAG (Glu). This is:",["Missense","Nonsense","Synonymous","Frameshift"],2,"Both codons encode glutamate, so the protein is unchanged."),
@@ -17,4 +17,4 @@ quiz = [
 ("A gene's 'isoforms' arise mainly from:",["Different chromosomes","Alternative promoters, splicing and polyadenylation","Codon degeneracy","Post-translational modification only"],1,"Alternative transcript processing creates multiple RNAs and proteins from one gene."),
 ("What does 'q' denote in a cytoband like 9q34?",["Short arm","Long arm","Centromere","Telomere"],1,"p is the short arm, q is the long arm."),
 ]
-build(1,"central-dogma","Central dogma for practitioners","How genes are laid out in the genome, how they become transcripts and proteins, and which vocabulary (exons, UTRs, isoforms, reading frames, PTMs) shows up constantly in papers and data. This is the vocabulary everything else builds on.",lesson,cards,quiz)
+build(1,"central-dogma","Central dogma for practitioners","How genes are laid out in the genome, how they become transcripts and proteins, and which vocabulary (exons, UTRs, isoforms, reading frames, PTMs) shows up constantly in papers and data. This is the vocabulary everything else builds on.",lesson,cards,quiz,glossary_accept)
