@@ -1,18 +1,28 @@
-// SM-2 algorithm for spaced repetition
-// Based on SuperMemo 2 (Wozniak, 1990)
+// FSRS (Free Spaced Repetition Scheduler) algorithm
+// Simplified implementation with SM-2 fallback for compatibility
 
 export const SpacedRepetition = {
-    // Initialize card state
+    // Initialize card state (FSRS format, compatible with old SM-2)
     initCard() {
         return {
+            // FSRS parameters
+            stability: 0,
+            difficulty: 5,
+            
+            // SM-2 compatibility
             interval: 0,
             repetitions: 0,
             easeFactor: 2.5,
+            
             nextReview: Date.now(),
             lastReview: null,
-            isNew: true
+            isNew: true,
+            algorithm: 'fsrs' // Track which algorithm is in use
         };
     },
+
+    // FSRS parameters
+    w: [0.4, 0.6, 2.4, 5.8, 4.93, 0.94, 0.86, 0.01, 1.49, 0.14, 0.94, 2.18, 0.05, 0.34, 1.26, 0.29, 2.61],
 
     // Grade a card review
     // quality: 0 = Again, 1 = Hard, 2 = Good, 3 = Easy
@@ -23,38 +33,82 @@ export const SpacedRepetition = {
         state.lastReview = now;
         state.isNew = false;
 
-        // Update ease factor
+        // Use FSRS if available, otherwise fall back to SM-2
+        if (state.algorithm === 'fsrs' || !state.algorithm) {
+            return this.gradeCardFSRS(state, quality, now);
+        } else {
+            return this.gradeCardSM2(state, quality, now);
+        }
+    },
+
+    // FSRS implementation (simplified)
+    gradeCardFSRS(state, quality, now) {
+        const elapsed = state.lastReview ? (now - state.lastReview) / (24 * 60 * 60 * 1000) : 0;
+
+        // Update difficulty
+        const deltaD = quality - 2;
+        state.difficulty = Math.max(1, Math.min(10, state.difficulty - this.w[6] * deltaD));
+
+        if (quality === 0) {
+            // Again: reset
+            state.stability = Math.max(1, state.stability * this.w[11]);
+            state.repetitions = 0;
+        } else {
+            // Calculate new stability
+            let S = 0;
+            if (state.repetitions === 0) {
+                S = this.w[quality];
+            } else {
+                const retrievability = Math.pow(1 + elapsed / (9 * state.stability), -1);
+                S = state.stability * (1 + Math.exp(this.w[8]) * 
+                    (11 - state.difficulty) * 
+                    Math.pow(state.stability, -this.w[9]) * 
+                    (Math.exp((1 - retrievability) * this.w[10]) - 1));
+            }
+            state.stability = Math.max(0.1, S);
+            state.repetitions += 1;
+        }
+
+        // Calculate interval in days
+        state.interval = Math.max(1, Math.round(state.stability * 9 * (1 / 0.9 - 1)));
+        
+        // Calculate next review date
+        const intervalMs = state.interval * 24 * 60 * 60 * 1000;
+        state.nextReview = now + intervalMs;
+
+        state.algorithm = 'fsrs';
+        return state;
+    },
+
+    // SM-2 fallback for old cards
+    gradeCardSM2(state, quality, now) {
         const oldEF = state.easeFactor;
         state.easeFactor = Math.max(1.3, oldEF + (0.1 - (3 - quality) * (0.08 + (3 - quality) * 0.02)));
 
         if (quality < 2) {
-            // Again or Hard: reset repetitions but keep ease factor
             state.repetitions = 0;
-            state.interval = quality === 0 ? 1 : 10; // 1 min or 10 min
+            state.interval = quality === 0 ? 1 / (24 * 60) : 10 / (24 * 60); // minutes to days
         } else {
-            // Good or Easy
             state.repetitions += 1;
-
             if (state.repetitions === 1) {
-                state.interval = 1; // 1 day
+                state.interval = 1;
             } else if (state.repetitions === 2) {
-                state.interval = 6; // 6 days
+                state.interval = 6;
             } else {
                 state.interval = Math.round(state.interval * state.easeFactor);
                 if (quality === 3) {
-                    // Easy: add bonus
                     state.interval = Math.round(state.interval * 1.3);
                 }
             }
         }
 
-        // Calculate next review date
         const intervalMs = state.interval < 1 
-            ? state.interval * 60 * 1000 // minutes
-            : state.interval * 24 * 60 * 60 * 1000; // days
+            ? state.interval * 24 * 60 * 60 * 1000
+            : state.interval * 24 * 60 * 60 * 1000;
         
         state.nextReview = now + intervalMs;
-
+        state.algorithm = 'sm2';
+        
         return state;
     },
 

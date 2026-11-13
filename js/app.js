@@ -2,14 +2,14 @@ import { Router } from './router.js';
 import { Storage } from './storage.js';
 import { SpacedRepetition } from './spaced-repetition.js';
 import { Markdown } from './markdown.js';
+import { AnswerChecker } from './answer-checker.js';
 
 class StudyApp {
     constructor() {
         this.router = new Router();
         this.appEl = document.getElementById('app');
         this.subjects = null;
-        this.currentSubject = null;
-        this.currentUnit = null;
+        this.currentCleanup = null; // Track cleanup function for current view
         
         this.initTheme();
         this.setupRoutes();
@@ -17,7 +17,6 @@ class StudyApp {
     }
 
     async init() {
-        // Load subjects
         try {
             const response = await fetch('content/subjects.json');
             this.subjects = await response.json();
@@ -46,7 +45,7 @@ class StudyApp {
 
     updateThemeIcon(theme) {
         const icon = document.querySelector('.theme-icon');
-        icon.textContent = theme === 'light' ? '🌙' : '☀️';
+        icon.textContent = theme === 'light' ? '☾' : '☼';
     }
 
     setupRoutes() {
@@ -66,6 +65,13 @@ class StudyApp {
         this.router.on('/settings', () => this.renderSettings());
     }
 
+    cleanup() {
+        if (this.currentCleanup) {
+            this.currentCleanup();
+            this.currentCleanup = null;
+        }
+    }
+
     async loadSubjectIndex(subjectId) {
         const response = await fetch(`content/${subjectId}/index.json`);
         return await response.json();
@@ -76,15 +82,14 @@ class StudyApp {
         return await response.json();
     }
 
-    // Dashboard
     async renderDashboard() {
+        this.cleanup();
         if (!this.subjects) await this.init();
 
         const stats = Storage.getStats();
         const progress = Storage.getAllCardProgress();
         const settings = Storage.getSettings();
 
-        // Calculate statistics
         let totalCards = 0;
         let dueCards = 0;
         let newCardsAvailable = 0;
@@ -128,155 +133,113 @@ class StudyApp {
         const limitedNewCards = Math.min(newCardsAvailable, settings.newCardsPerDay);
 
         this.appEl.innerHTML = `
-            <div>
-                <h1>Dashboard</h1>
-                
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <span class="stat-value">${dueCards + limitedNewCards}</span>
-                        <span class="stat-label">Cards to Review</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-value">${limitedNewCards}</span>
-                        <span class="stat-label">New Cards Available</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-value">${stats.streak}</span>
-                        <span class="stat-label">Day Streak</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-value">${stats.totalReviews}</span>
-                        <span class="stat-label">Total Reviews</span>
-                    </div>
+            <h1>Dashboard</h1>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-value">${dueCards + limitedNewCards}</span>
+                    <span class="stat-label">Cards to Review</span>
                 </div>
-
-                ${dueCards + limitedNewCards > 0 ? `
-                    <div class="card">
-                        <h2>Ready to Study</h2>
-                        <p>You have ${dueCards + limitedNewCards} cards waiting for review.</p>
-                        <div class="action-buttons">
-                            ${this.subjects.subjects.map(s => 
-                                `<a href="#/review/${s.id}" class="btn">Review ${s.title}</a>`
-                            ).join('')}
-                        </div>
-                    </div>
-                ` : `
-                    <div class="empty-state">
-                        <div class="empty-state-icon">✅</div>
-                        <p>All caught up! Come back later for more reviews.</p>
-                    </div>
-                `}
-
-                <div class="card">
-                    <h2>Unit Progress</h2>
-                    <div class="unit-list">
-                        ${Object.values(unitMastery).sort((a, b) => a.unit - b.unit).map(unit => `
-                            <div class="unit-card">
-                                <div class="unit-header">
-                                    <div>
-                                        <div class="unit-title">Unit ${unit.unit}: ${unit.title}</div>
-                                        ${unit.due > 0 ? `<span class="unit-badge">${unit.due} due</span>` : ''}
-                                    </div>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" style="width: ${unit.mastery}%"></div>
-                                </div>
-                                <div class="unit-meta">
-                                    <span>${unit.mastery}% mastered</span>
-                                    <span>${unit.card_count} cards</span>
-                                </div>
-                                <div class="action-buttons">
-                                    <a href="#/lesson/${unit.subjectId}/${unit.slug}" class="btn btn-sm">Lesson</a>
-                                    <a href="#/review/${unit.subjectId}/${unit.slug}" class="btn btn-sm">Review</a>
-                                    <a href="#/quiz/${unit.subjectId}/${unit.slug}" class="btn btn-sm">Quiz</a>
-                                    <a href="#/match/${unit.subjectId}/${unit.slug}" class="btn btn-sm">Match</a>
-                                </div>
-                            </div>
-                        `).join('')}
-                    </div>
+                <div class="stat-card">
+                    <span class="stat-value">${limitedNewCards}</span>
+                    <span class="stat-label">New Cards</span>
                 </div>
-
-                <div class="action-buttons">
-                    <a href="#/subjects" class="btn btn-secondary">Browse Subjects</a>
-                    <a href="#/settings" class="btn btn-secondary">Settings</a>
+                <div class="stat-card">
+                    <span class="stat-value">${stats.streak}</span>
+                    <span class="stat-label">Streak</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">${stats.totalReviews}</span>
+                    <span class="stat-label">Reviews</span>
                 </div>
             </div>
+
+            ${dueCards + limitedNewCards > 0 ? `
+                <p>${dueCards + limitedNewCards} cards waiting. ${this.subjects.subjects.map(s => 
+                    `<a href="#/review/${s.id}">Review ${s.title}</a>`
+                ).join(' | ')}</p>
+            ` : '<p>All caught up.</p>'}
+
+            <h2>Units</h2>
+            <div class="unit-list">
+                ${Object.values(unitMastery).sort((a, b) => a.unit - b.unit).map(unit => `
+                    <div class="unit-card">
+                        <div class="unit-title">Unit ${unit.unit}: ${unit.title}</div>
+                        <div class="unit-summary">${unit.summary}</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: ${unit.mastery}%"></div>
+                        </div>
+                        <div class="unit-meta">
+                            <span>${unit.mastery}% mastered</span>
+                            <span>${unit.card_count} cards</span>
+                            ${unit.due > 0 ? `<span>${unit.due} due</span>` : ''}
+                        </div>
+                        <div>
+                            <a href="#/lesson/${unit.subjectId}/${unit.slug}" class="btn">Lesson</a>
+                            <a href="#/review/${unit.subjectId}/${unit.slug}" class="btn">Review</a>
+                            <a href="#/quiz/${unit.subjectId}/${unit.slug}" class="btn">Quiz</a>
+                            <a href="#/match/${unit.subjectId}/${unit.slug}" class="btn">Match</a>
+                        </div>
+                    </div>
+                `).join('')}
+            </div>
+
+            <p><a href="#/settings">Settings</a></p>
         `;
     }
 
-    // Subjects list
     async renderSubjects() {
+        this.cleanup();
         if (!this.subjects) await this.init();
 
         this.appEl.innerHTML = `
-            <div>
-                <h1>Subjects</h1>
-                <div class="unit-list">
-                    ${this.subjects.subjects.map(subject => `
-                        <a href="#/subject/${subject.id}" class="unit-card">
-                            <div class="unit-title">${subject.title}</div>
-                            <div class="unit-summary">${subject.description}</div>
-                        </a>
-                    `).join('')}
-                </div>
+            <h1>Subjects</h1>
+            <div class="unit-list">
+                ${this.subjects.subjects.map(subject => `
+                    <a href="#/subject/${subject.id}" class="unit-card">
+                        <div class="unit-title">${subject.title}</div>
+                        <div class="unit-summary">${subject.description}</div>
+                    </a>
+                `).join('')}
             </div>
         `;
     }
 
-    // Subject detail (units)
     async renderSubject(subjectId) {
+        this.cleanup();
         const index = await this.loadSubjectIndex(subjectId);
-        const progress = Storage.getAllCardProgress();
 
         this.appEl.innerHTML = `
-            <div>
-                <h1>${index.title}</h1>
-                <p>${index.description}</p>
-                
-                <div class="card">
-                    <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
-                        <span><strong>${index.totals.cards}</strong> cards</span>
-                        <span><strong>${index.totals.quiz}</strong> quiz questions</span>
+            <h1>${index.title}</h1>
+            <p>${index.description}</p>
+            
+            <p><strong>${index.totals.cards}</strong> cards, <strong>${index.totals.quiz}</strong> quiz questions. <a href="#/review/${subjectId}">Review all units</a></p>
+
+            <h2>Units</h2>
+            <div class="unit-list">
+                ${index.units.map(unit => `
+                    <div class="unit-card">
+                        <div class="unit-title">Unit ${unit.unit}: ${unit.title}</div>
+                        <div class="unit-summary">${unit.summary}</div>
+                        <div class="unit-meta">
+                            <span>${unit.card_count} cards</span>
+                            <span>${unit.quiz_count} quiz</span>
+                            ${unit.prerequisites.length > 0 ? `<span>Prereq: ${unit.prerequisites.join(', ')}</span>` : ''}
+                        </div>
+                        <div>
+                            <a href="#/lesson/${subjectId}/${unit.slug}" class="btn">Lesson</a>
+                            <a href="#/review/${subjectId}/${unit.slug}" class="btn">Review</a>
+                            <a href="#/quiz/${subjectId}/${unit.slug}" class="btn">Quiz</a>
+                            <a href="#/match/${subjectId}/${unit.slug}" class="btn">Match</a>
+                        </div>
                     </div>
-                    <a href="#/review/${subjectId}" class="btn">Review All Units</a>
-                </div>
-
-                <h2>Units</h2>
-                <div class="unit-list">
-                    ${index.units.map(unit => {
-                        // Calculate progress for this unit
-                        const dueCount = 0; // We'd need to load each unit to count
-                        const prereqText = unit.prerequisites.length > 0 
-                            ? `Prerequisites: Unit ${unit.prerequisites.join(', ')}` 
-                            : '';
-
-                        return `
-                            <div class="unit-card">
-                                <div class="unit-header">
-                                    <div class="unit-title">Unit ${unit.unit}: ${unit.title}</div>
-                                </div>
-                                <div class="unit-summary">${unit.summary}</div>
-                                <div class="unit-meta">
-                                    <span>${unit.card_count} cards</span>
-                                    <span>${unit.quiz_count} quiz questions</span>
-                                </div>
-                                ${prereqText ? `<div class="prerequisites">${prereqText}</div>` : ''}
-                                <div class="action-buttons">
-                                    <a href="#/lesson/${subjectId}/${unit.slug}" class="btn btn-sm">Read Lesson</a>
-                                    <a href="#/review/${subjectId}/${unit.slug}" class="btn btn-sm">Review Cards</a>
-                                    <a href="#/quiz/${subjectId}/${unit.slug}" class="btn btn-sm">Take Quiz</a>
-                                    <a href="#/match/${subjectId}/${unit.slug}" class="btn btn-sm">Match Game</a>
-                                </div>
-                            </div>
-                        `;
-                    }).join('')}
-                </div>
+                `).join('')}
             </div>
         `;
     }
 
-    // Lesson viewer
     async renderLesson(subjectId, unitSlug) {
+        this.cleanup();
         const index = await this.loadSubjectIndex(subjectId);
         const unitInfo = index.units.find(u => u.slug === unitSlug);
         const unit = await this.loadUnit(subjectId, unitInfo.file);
@@ -284,51 +247,41 @@ class StudyApp {
         const lessonHtml = Markdown.render(unit.lesson);
 
         this.appEl.innerHTML = `
-            <div>
-                <div style="margin-bottom: 1rem;">
-                    <a href="#/subject/${subjectId}" class="btn btn-secondary btn-sm">← Back to ${index.title}</a>
-                </div>
-                
-                <h1>Unit ${unit.unit}: ${unit.title}</h1>
-                <p style="color: var(--text-secondary); margin-bottom: 2rem;">${unit.summary}</p>
+            <p><a href="#/subject/${subjectId}">← Back</a></p>
+            
+            <h1>Unit ${unit.unit}: ${unit.title}</h1>
+            <p>${unit.summary}</p>
 
-                <div class="lesson-content">
-                    ${lessonHtml}
-                </div>
-
-                <div class="card" style="margin-top: 2rem;">
-                    <h3>Ready to practice?</h3>
-                    <div class="action-buttons">
-                        <a href="#/review/${subjectId}/${unitSlug}" class="btn">Review Cards</a>
-                        <a href="#/quiz/${subjectId}/${unitSlug}" class="btn">Take Quiz</a>
-                        <a href="#/match/${subjectId}/${unitSlug}" class="btn">Match Game</a>
-                    </div>
-                </div>
+            <div class="lesson-content">
+                ${lessonHtml}
             </div>
+
+            <p>
+                <a href="#/review/${subjectId}/${unitSlug}" class="btn">Review</a>
+                <a href="#/quiz/${subjectId}/${unitSlug}" class="btn">Quiz</a>
+                <a href="#/match/${subjectId}/${unitSlug}" class="btn">Match</a>
+            </p>
         `;
     }
 
-    // Flashcard review
     async renderReview(subjectId, unitSlug, mode) {
+        this.cleanup();
         const index = await this.loadSubjectIndex(subjectId);
         const progress = Storage.getAllCardProgress();
         const settings = Storage.getSettings();
 
-        // Collect cards
         let allCards = [];
         if (mode === 'unit') {
             const unitInfo = index.units.find(u => u.slug === unitSlug);
             const unit = await this.loadUnit(subjectId, unitInfo.file);
             allCards = unit.cards;
         } else {
-            // All units
             for (const unitInfo of index.units) {
                 const unit = await this.loadUnit(subjectId, unitInfo.file);
                 allCards.push(...unit.cards);
             }
         }
 
-        // Build review queue: due cards + new cards up to limit
         const dueCardIds = SpacedRepetition.getDueCards(progress);
         const dueCardsInSet = allCards.filter(c => dueCardIds.includes(c.id));
         
@@ -340,28 +293,32 @@ class StudyApp {
         if (queue.length === 0) {
             this.appEl.innerHTML = `
                 <div class="empty-state">
-                    <div class="empty-state-icon">✅</div>
-                    <h2>All done!</h2>
-                    <p>No cards to review right now. Come back later!</p>
-                    <div class="action-buttons">
-                        <a href="#/" class="btn">Back to Dashboard</a>
-                        ${mode === 'unit' ? `<a href="#/subject/${subjectId}" class="btn btn-secondary">Back to Subject</a>` : ''}
-                    </div>
+                    <h2>All done</h2>
+                    <p>No cards to review right now.</p>
+                    <p><a href="#/">Dashboard</a></p>
                 </div>
             `;
             return;
         }
 
-        this.startReviewSession(queue, subjectId, unitSlug, mode);
+        this.startReviewSession(queue, subjectId, unitSlug, mode, settings.typedAnswers);
     }
 
-    startReviewSession(queue, subjectId, unitSlug, mode) {
+    startReviewSession(queue, subjectId, unitSlug, mode, typedMode) {
         let currentIndex = 0;
-        let flipped = false;
-        let sessionStats = { again: 0, hard: 0, good: 0, easy: 0 };
+        let sessionStats = { correct: 0, incorrect: 0 };
+        let answered = false;
+        let userAnswer = '';
+        let startTime = Date.now();
+
+        const cleanup = () => {
+            document.removeEventListener('keydown', keyHandler);
+        };
+        this.currentCleanup = cleanup;
 
         const render = () => {
             if (currentIndex >= queue.length) {
+                cleanup();
                 this.showReviewComplete(sessionStats, subjectId, unitSlug, mode);
                 return;
             }
@@ -370,108 +327,205 @@ class StudyApp {
             const progress = Storage.getCardProgress(card.id);
             const isNew = !progress || progress.isNew;
 
-            this.appEl.innerHTML = `
-                <div>
-                    <div class="flashcard-info">
-                        <span>Card ${currentIndex + 1} / ${queue.length}</span>
-                        <span>${isNew ? 'New' : 'Review'}</span>
-                    </div>
-
-                    <div class="flashcard">
-                        <div class="flashcard-inner ${flipped ? 'flipped' : ''}">
-                            <div class="flashcard-face flashcard-front">
-                                <div class="flashcard-label">${this.getCardTypeLabel(card.type)}</div>
-                                <div class="flashcard-text">${this.escapeHtml(card.front)}</div>
-                            </div>
-                            <div class="flashcard-face flashcard-back">
-                                <div class="flashcard-label">Answer</div>
-                                <div class="flashcard-text">${this.escapeHtml(card.back)}</div>
-                                ${card.tags && card.tags.length > 0 ? `
-                                    <div style="margin-top: 1rem; font-size: 0.75rem; color: var(--text-secondary);">
-                                        Tags: ${card.tags.join(', ')}
-                                    </div>
-                                ` : ''}
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flashcard-controls">
-                        ${!flipped ? `
-                            <button class="btn" id="reveal-btn">
-                                Reveal Answer (Space)
-                            </button>
-                        ` : `
-                            <div class="grade-buttons">
-                                <button class="btn" data-grade="0" style="background: var(--error);">
-                                    <span>Again</span>
-                                    <span class="key">1</span>
-                                </button>
-                                <button class="btn" data-grade="1" style="background: var(--warning);">
-                                    <span>Hard</span>
-                                    <span class="key">2</span>
-                                </button>
-                                <button class="btn" data-grade="2" style="background: var(--success);">
-                                    <span>Good</span>
-                                    <span class="key">3</span>
-                                </button>
-                                <button class="btn" data-grade="3" style="background: var(--accent);">
-                                    <span>Easy</span>
-                                    <span class="key">4</span>
-                                </button>
-                            </div>
-                        `}
-                    </div>
-                </div>
-            `;
-
-            // Event listeners
-            const revealBtn = document.getElementById('reveal-btn');
-            if (revealBtn) {
-                revealBtn.addEventListener('click', () => {
-                    flipped = true;
-                    render();
-                });
-            }
-
-            document.querySelectorAll('[data-grade]').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    const grade = parseInt(e.currentTarget.getAttribute('data-grade'));
-                    this.gradeCard(card, grade, sessionStats);
-                    flipped = false;
-                    currentIndex++;
-                    render();
-                });
-            });
-
-            // Keyboard shortcuts
-            const keyHandler = (e) => {
-                if (e.key === ' ' || e.key === 'Spacebar') {
-                    e.preventDefault();
-                    if (!flipped) {
-                        flipped = true;
+            if (typedMode) {
+                this.renderTypedAnswerCard(card, isNew, currentIndex, queue.length, answered, userAnswer, 
+                    () => {
+                        // Next card
+                        answered = false;
+                        userAnswer = '';
+                        currentIndex++;
+                        startTime = Date.now();
+                        render();
+                    },
+                    (result) => {
+                        // Submit answer
+                        answered = true;
+                        const responseTime = Date.now() - startTime;
+                        if (result === 'correct') {
+                            sessionStats.correct++;
+                            const quality = responseTime < 5000 ? 3 : 2; // Easy if < 5s, Good otherwise
+                            this.gradeCard(card, quality);
+                        } else {
+                            sessionStats.incorrect++;
+                            this.gradeCard(card, 0); // Again
+                        }
                         render();
                     }
-                } else if (flipped && e.key >= '1' && e.key <= '4') {
-                    e.preventDefault();
-                    const grade = parseInt(e.key) - 1;
-                    this.gradeCard(card, grade, sessionStats);
-                    flipped = false;
-                    currentIndex++;
-                    render();
-                }
-            };
-
-            document.removeEventListener('keydown', keyHandler);
-            document.addEventListener('keydown', keyHandler);
+                );
+            } else {
+                this.renderSelfGradeCard(card, isNew, currentIndex, queue.length, answered,
+                    () => {
+                        // Reveal
+                        answered = true;
+                        render();
+                    },
+                    (grade) => {
+                        // Grade and next
+                        this.gradeCard(card, grade);
+                        if (grade >= 2) sessionStats.correct++; else sessionStats.incorrect++;
+                        answered = false;
+                        currentIndex++;
+                        render();
+                    }
+                );
+            }
         };
 
+        const keyHandler = (e) => {
+            if (e.key === 'Escape' && typedMode && !answered) {
+                // Show answer on Esc
+                answered = true;
+                sessionStats.incorrect++;
+                this.gradeCard(queue[currentIndex], 0);
+                render();
+            }
+        };
+
+        document.addEventListener('keydown', keyHandler);
         render();
     }
 
-    gradeCard(card, grade, sessionStats) {
-        const gradeNames = ['again', 'hard', 'good', 'easy'];
-        sessionStats[gradeNames[grade]]++;
+    renderTypedAnswerCard(card, isNew, index, total, answered, userAnswer, onNext, onSubmit) {
+        const correctAnswer = card.back;
+        const alternates = card.accept || [];
+        
+        let isCorrect = false;
+        if (answered) {
+            isCorrect = AnswerChecker.check(userAnswer, correctAnswer, alternates);
+        }
 
+        this.appEl.innerHTML = `
+            <div class="flashcard-container">
+                <div class="flashcard-info">
+                    <span>Card ${index + 1} / ${total}</span>
+                    <span>${isNew ? 'New' : 'Review'}</span>
+                </div>
+
+                <div class="flashcard-question">
+                    <div class="flashcard-label">${this.getCardTypeLabel(card.type)}</div>
+                    <div class="flashcard-text">${this.escapeHtml(card.front)}</div>
+                </div>
+
+                ${!answered ? `
+                    <form id="answer-form">
+                        <input type="text" class="answer-input" id="answer-input" 
+                               placeholder="Type your answer..." autocomplete="off" autofocus>
+                        <button type="submit" class="btn">Submit (Enter)</button>
+                        <button type="button" class="btn" id="show-answer-btn">I don't know (Esc)</button>
+                    </form>
+                ` : `
+                    <div class="answer-result ${isCorrect ? 'correct' : 'incorrect'}">
+                        <strong>${isCorrect ? 'Correct' : 'Incorrect'}</strong>
+                        <p><strong>Your answer:</strong> ${this.escapeHtml(userAnswer)}</p>
+                        <p><strong>Correct answer:</strong> ${this.escapeHtml(correctAnswer)}</p>
+                        ${card.tags && card.tags.length > 0 ? `<p style="margin-top: 0.5rem; font-size: 0.9rem;">Tags: ${card.tags.join(', ')}</p>` : ''}
+                    </div>
+                    ${!isCorrect ? `<button class="btn" id="override-btn">I was actually right</button>` : ''}
+                    <button class="btn" id="next-btn">Next</button>
+                `}
+            </div>
+        `;
+
+        if (!answered) {
+            const form = document.getElementById('answer-form');
+            const input = document.getElementById('answer-input');
+            const showBtn = document.getElementById('show-answer-btn');
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                userAnswer = input.value.trim();
+                if (userAnswer) {
+                    onSubmit('check');
+                }
+            });
+
+            showBtn.addEventListener('click', () => {
+                userAnswer = '';
+                onSubmit('incorrect');
+            });
+        } else {
+            const nextBtn = document.getElementById('next-btn');
+            nextBtn.addEventListener('click', onNext);
+
+            const overrideBtn = document.getElementById('override-btn');
+            if (overrideBtn) {
+                overrideBtn.addEventListener('click', () => {
+                    // Override: change to correct and regrade
+                    sessionStats.incorrect--;
+                    sessionStats.correct++;
+                    this.gradeCard(card, 2); // Good
+                    onNext();
+                });
+            }
+        }
+    }
+
+    renderSelfGradeCard(card, isNew, index, total, flipped, onReveal, onGrade) {
+        this.appEl.innerHTML = `
+            <div class="flashcard-container">
+                <div class="flashcard-info">
+                    <span>Card ${index + 1} / ${total}</span>
+                    <span>${isNew ? 'New' : 'Review'}</span>
+                </div>
+
+                ${!flipped ? `
+                    <div class="flashcard-question">
+                        <div class="flashcard-label">${this.getCardTypeLabel(card.type)}</div>
+                        <div class="flashcard-text">${this.escapeHtml(card.front)}</div>
+                    </div>
+                    <button class="btn" id="reveal-btn">Reveal (Space)</button>
+                ` : `
+                    <div class="flashcard-question">
+                        <div class="flashcard-label">Question</div>
+                        <div class="flashcard-text">${this.escapeHtml(card.front)}</div>
+                    </div>
+                    <div class="flashcard-question">
+                        <div class="flashcard-label">Answer</div>
+                        <div class="flashcard-text">${this.escapeHtml(card.back)}</div>
+                        ${card.tags && card.tags.length > 0 ? `<p style="margin-top: 0.5rem; font-size: 0.9rem;">Tags: ${card.tags.join(', ')}</p>` : ''}
+                    </div>
+                    <div>
+                        <button class="btn" data-grade="0">Again (1)</button>
+                        <button class="btn" data-grade="1">Hard (2)</button>
+                        <button class="btn" data-grade="2">Good (3)</button>
+                        <button class="btn" data-grade="3">Easy (4)</button>
+                    </div>
+                `}
+            </div>
+        `;
+
+        if (!flipped) {
+            const revealBtn = document.getElementById('reveal-btn');
+            revealBtn.addEventListener('click', onReveal);
+
+            const spaceHandler = (e) => {
+                if (e.key === ' ' || e.key === 'Spacebar') {
+                    e.preventDefault();
+                    document.removeEventListener('keydown', spaceHandler);
+                    onReveal();
+                }
+            };
+            document.addEventListener('keydown', spaceHandler);
+        } else {
+            document.querySelectorAll('[data-grade]').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const grade = parseInt(e.currentTarget.getAttribute('data-grade'));
+                    onGrade(grade);
+                });
+            });
+
+            const numHandler = (e) => {
+                if (e.key >= '1' && e.key <= '4') {
+                    e.preventDefault();
+                    document.removeEventListener('keydown', numHandler);
+                    onGrade(parseInt(e.key) - 1);
+                }
+            };
+            document.addEventListener('keydown', numHandler);
+        }
+    }
+
+    gradeCard(card, grade) {
         let progress = Storage.getCardProgress(card.id);
         if (!progress) {
             progress = SpacedRepetition.initCard();
@@ -480,7 +534,6 @@ class StudyApp {
         progress = SpacedRepetition.gradeCard(progress, grade);
         Storage.setCardProgress(card.id, progress);
 
-        // Update stats
         const stats = Storage.getStats();
         Storage.updateStats({
             totalReviews: stats.totalReviews + 1
@@ -489,37 +542,17 @@ class StudyApp {
     }
 
     showReviewComplete(sessionStats, subjectId, unitSlug, mode) {
-        const total = sessionStats.again + sessionStats.hard + sessionStats.good + sessionStats.easy;
+        const total = sessionStats.correct + sessionStats.incorrect;
 
         this.appEl.innerHTML = `
             <div class="empty-state">
-                <div class="empty-state-icon">🎉</div>
-                <h2>Session Complete!</h2>
+                <h2>Session Complete</h2>
                 <p>You reviewed ${total} cards.</p>
-                
-                <div class="stats-grid" style="max-width: 600px; margin: 2rem auto;">
-                    <div class="stat-card">
-                        <span class="stat-value">${sessionStats.again}</span>
-                        <span class="stat-label">Again</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-value">${sessionStats.hard}</span>
-                        <span class="stat-label">Hard</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-value">${sessionStats.good}</span>
-                        <span class="stat-label">Good</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-value">${sessionStats.easy}</span>
-                        <span class="stat-label">Easy</span>
-                    </div>
-                </div>
-
-                <div class="action-buttons">
-                    <a href="#/" class="btn">Back to Dashboard</a>
-                    ${mode === 'unit' ? `<a href="#/subject/${subjectId}" class="btn btn-secondary">Back to Subject</a>` : ''}
-                </div>
+                <p>Correct: ${sessionStats.correct} | Incorrect: ${sessionStats.incorrect}</p>
+                <p>
+                    <a href="#/" class="btn">Dashboard</a>
+                    ${mode === 'unit' ? `<a href="#/subject/${subjectId}" class="btn">Back</a>` : ''}
+                </p>
             </div>
         `;
     }
@@ -534,8 +567,8 @@ class StudyApp {
         return labels[type] || 'Question';
     }
 
-    // Quiz mode
     async renderQuiz(subjectId, unitSlug) {
+        this.cleanup();
         const index = await this.loadSubjectIndex(subjectId);
         const unitInfo = index.units.find(u => u.slug === unitSlug);
         const unit = await this.loadUnit(subjectId, unitInfo.file);
@@ -543,9 +576,8 @@ class StudyApp {
         if (unit.quiz.length === 0) {
             this.appEl.innerHTML = `
                 <div class="empty-state">
-                    <div class="empty-state-icon">📝</div>
-                    <p>No quiz questions available for this unit.</p>
-                    <a href="#/subject/${subjectId}" class="btn">Back to Subject</a>
+                    <p>No quiz questions available.</p>
+                    <p><a href="#/subject/${subjectId}">Back</a></p>
                 </div>
             `;
             return;
@@ -559,17 +591,19 @@ class StudyApp {
         let score = 0;
         let answered = false;
         let selectedChoice = null;
-        let missedQuestions = [];
+
+        const cleanup = () => {};
+        this.currentCleanup = cleanup;
 
         const render = () => {
             if (currentIndex >= questions.length) {
-                this.showQuizComplete(score, questions.length, missedQuestions, subjectId, unitSlug);
+                cleanup();
+                this.showQuizComplete(score, questions.length, subjectId, unitSlug);
                 return;
             }
 
             const question = questions[currentIndex];
             
-            // Shuffle choices
             const shuffled = question.choices.map((choice, idx) => ({ choice, idx }));
             for (let i = shuffled.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
@@ -579,17 +613,13 @@ class StudyApp {
 
             this.appEl.innerHTML = `
                 <div class="quiz-question">
-                    <div style="margin-bottom: 1rem;">
-                        <a href="#/subject/${subjectId}" class="btn btn-secondary btn-sm">← Back</a>
-                    </div>
+                    <p><a href="#/subject/${subjectId}">← Back</a></p>
 
-                    <div class="quiz-progress">
-                        <h2>${unitTitle} - Quiz</h2>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: ${(currentIndex / questions.length) * 100}%"></div>
-                        </div>
-                        <p>Question ${currentIndex + 1} of ${questions.length}</p>
+                    <h2>${unitTitle} - Quiz</h2>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: ${(currentIndex / questions.length) * 100}%"></div>
                     </div>
+                    <p>Question ${currentIndex + 1} of ${questions.length}</p>
 
                     <div class="question-text">${this.escapeHtml(question.question)}</div>
 
@@ -606,22 +636,18 @@ class StudyApp {
                                 className += ' selected';
                             }
 
-                            return `
-                                <div class="${className}" data-choice="${idx}">
-                                    ${this.escapeHtml(item.choice)}
-                                </div>
-                            `;
+                            return `<div class="${className}" data-choice="${idx}">${this.escapeHtml(item.choice)}</div>`;
                         }).join('')}
                     </div>
 
                     ${answered ? `
                         <div class="explanation">
                             <div class="explanation-label">
-                                ${selectedChoice === correctShuffledIndex ? '✅ Correct!' : '❌ Incorrect'}
+                                ${selectedChoice === correctShuffledIndex ? 'Correct' : 'Incorrect'}
                             </div>
                             <p>${this.escapeHtml(question.explanation)}</p>
                         </div>
-                        <button class="btn" id="next-btn">Next Question</button>
+                        <button class="btn" id="next-btn">Next</button>
                     ` : ''}
                 </div>
             `;
@@ -634,8 +660,6 @@ class StudyApp {
                         
                         if (selectedChoice === correctShuffledIndex) {
                             score++;
-                        } else {
-                            missedQuestions.push(question);
                         }
                         
                         render();
@@ -654,10 +678,9 @@ class StudyApp {
         render();
     }
 
-    showQuizComplete(score, total, missedQuestions, subjectId, unitSlug) {
+    showQuizComplete(score, total, subjectId, unitSlug) {
         const percentage = Math.round((score / total) * 100);
         
-        // Update stats
         const stats = Storage.getStats();
         Storage.updateStats({
             quizAttempts: stats.quizAttempts + 1
@@ -665,37 +688,22 @@ class StudyApp {
 
         this.appEl.innerHTML = `
             <div class="empty-state">
-                <div class="empty-state-icon">${percentage >= 80 ? '🎉' : '📝'}</div>
-                <h2>Quiz Complete!</h2>
-                <p>You scored ${score} out of ${total} (${percentage}%)</p>
-
-                ${missedQuestions.length > 0 ? `
-                    <div class="card" style="max-width: 600px; margin: 2rem auto; text-align: left;">
-                        <h3>Review Missed Questions</h3>
-                        <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1rem;">
-                            These questions have been added to your review queue.
-                        </p>
-                    </div>
-                ` : `
-                    <p>Perfect score! 🌟</p>
-                `}
-
-                <div class="action-buttons">
-                    <a href="#/quiz/${subjectId}/${unitSlug}" class="btn">Retake Quiz</a>
-                    <a href="#/subject/${subjectId}" class="btn btn-secondary">Back to Subject</a>
-                    <a href="#/" class="btn btn-secondary">Dashboard</a>
-                </div>
+                <h2>Quiz Complete</h2>
+                <p>Score: ${score} / ${total} (${percentage}%)</p>
+                <p>
+                    <a href="#/quiz/${subjectId}/${unitSlug}" class="btn">Retake</a>
+                    <a href="#/subject/${subjectId}" class="btn">Back</a>
+                </p>
             </div>
         `;
     }
 
-    // Match game
     async renderMatch(subjectId, unitSlug) {
+        this.cleanup();
         const index = await this.loadSubjectIndex(subjectId);
         const unitInfo = index.units.find(u => u.slug === unitSlug);
         const unit = await this.loadUnit(subjectId, unitInfo.file);
 
-        // Select cards suitable for matching (recall and identify types)
         const matchableCards = unit.cards.filter(c => 
             c.type === 'recall' || c.type === 'identify'
         );
@@ -703,25 +711,21 @@ class StudyApp {
         if (matchableCards.length < 4) {
             this.appEl.innerHTML = `
                 <div class="empty-state">
-                    <div class="empty-state-icon">🎮</div>
-                    <p>Not enough cards for a match game in this unit.</p>
-                    <a href="#/subject/${subjectId}" class="btn">Back to Subject</a>
+                    <p>Not enough cards for match game.</p>
+                    <p><a href="#/subject/${subjectId}">Back</a></p>
                 </div>
             `;
             return;
         }
 
-        // Pick 6 random cards
         const selected = matchableCards.sort(() => Math.random() - 0.5).slice(0, 6);
         
-        // Create pairs
         const pairs = [];
         selected.forEach(card => {
             pairs.push({ text: card.front, pairId: card.id, type: 'front' });
             pairs.push({ text: card.back, pairId: card.id, type: 'back' });
         });
 
-        // Shuffle
         pairs.sort(() => Math.random() - 0.5);
 
         this.startMatchGame(pairs, subjectId, unitSlug, unit.title);
@@ -731,7 +735,15 @@ class StudyApp {
         let selected = [];
         let matched = new Set();
         let startTime = Date.now();
-        let timerInterval;
+        let timerInterval = null;
+
+        const cleanup = () => {
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+            }
+        };
+        this.currentCleanup = cleanup;
 
         const render = () => {
             const elapsed = Math.floor((Date.now() - startTime) / 1000);
@@ -740,15 +752,13 @@ class StudyApp {
 
             this.appEl.innerHTML = `
                 <div class="match-game">
-                    <div style="margin-bottom: 1rem;">
-                        <a href="#/subject/${subjectId}" class="btn btn-secondary btn-sm">← Back</a>
-                    </div>
+                    <p><a href="#/subject/${subjectId}">← Back</a></p>
 
                     <div class="match-header">
-                        <h2>${unitTitle} - Match Game</h2>
+                        <h2>${unitTitle} - Match</h2>
                         <div class="match-timer">${minutes}:${seconds.toString().padStart(2, '0')}</div>
                     </div>
-                    <p>Match ${pairs.length / 2} pairs as fast as you can!</p>
+                    <p>Match ${pairs.length / 2} pairs.</p>
 
                     <div class="match-grid">
                         ${pairs.map((pair, idx) => {
@@ -756,24 +766,17 @@ class StudyApp {
                             if (matched.has(idx)) className += ' matched';
                             if (selected.includes(idx)) className += ' selected';
 
-                            return `
-                                <div class="${className}" data-idx="${idx}" data-pair="${pair.pairId}">
-                                    ${this.escapeHtml(pair.text)}
-                                </div>
-                            `;
+                            return `<div class="${className}" data-idx="${idx}" data-pair="${pair.pairId}">${this.escapeHtml(pair.text)}</div>`;
                         }).join('')}
                     </div>
 
-                    <p style="margin-top: 1rem; color: var(--text-secondary);">
-                        Matched: ${matched.size / 2} / ${pairs.length / 2}
-                    </p>
+                    <p>Matched: ${matched.size / 2} / ${pairs.length / 2}</p>
                 </div>
             `;
 
             document.querySelectorAll('.match-card:not(.matched)').forEach(el => {
                 el.addEventListener('click', (e) => {
                     const idx = parseInt(e.currentTarget.getAttribute('data-idx'));
-                    const pairId = e.currentTarget.getAttribute('data-pair');
 
                     if (selected.includes(idx)) {
                         selected = selected.filter(i => i !== idx);
@@ -791,16 +794,16 @@ class StudyApp {
                                 selected = [];
 
                                 if (matched.size === pairs.length) {
-                                    clearInterval(timerInterval);
+                                    cleanup();
                                     const finalTime = Math.floor((Date.now() - startTime) / 1000);
-                                    setTimeout(() => this.showMatchComplete(finalTime, subjectId, unitSlug), 500);
+                                    setTimeout(() => this.showMatchComplete(finalTime, subjectId, unitSlug), 300);
                                     return;
                                 }
                             } else {
                                 setTimeout(() => {
                                     selected = [];
                                     render();
-                                }, 1000);
+                                }, 800);
                             }
                         }
                     }
@@ -820,81 +823,70 @@ class StudyApp {
 
         this.appEl.innerHTML = `
             <div class="empty-state">
-                <div class="empty-state-icon">🏆</div>
-                <h2>Game Complete!</h2>
+                <h2>Complete</h2>
                 <p>Time: ${minutes}:${secs.toString().padStart(2, '0')}</p>
-
-                <div class="action-buttons">
+                <p>
                     <a href="#/match/${subjectId}/${unitSlug}" class="btn">Play Again</a>
-                    <a href="#/subject/${subjectId}" class="btn btn-secondary">Back to Subject</a>
-                </div>
+                    <a href="#/subject/${subjectId}" class="btn">Back</a>
+                </p>
             </div>
         `;
     }
 
-    // Settings
     renderSettings() {
+        this.cleanup();
         const settings = Storage.getSettings();
         const stats = Storage.getStats();
 
         this.appEl.innerHTML = `
-            <div>
-                <h1>Settings</h1>
+            <h1>Settings</h1>
 
-                <div class="card">
-                    <h3>Study Settings</h3>
-                    <div class="input-group">
-                        <label for="new-cards-per-day">New cards per day</label>
-                        <input type="number" id="new-cards-per-day" value="${settings.newCardsPerDay}" min="1" max="100">
-                    </div>
-                    <button class="btn" id="save-settings-btn">Save Settings</button>
+            <h3>Study Settings</h3>
+            <div class="input-group">
+                <label for="new-cards-per-day">New cards per day</label>
+                <input type="number" id="new-cards-per-day" value="${settings.newCardsPerDay}" min="1" max="100">
+            </div>
+            <div class="input-group">
+                <label>
+                    <input type="checkbox" id="typed-answers" ${settings.typedAnswers ? 'checked' : ''}>
+                    Typed answers (with lenient checking)
+                </label>
+            </div>
+            <button class="btn" id="save-settings-btn">Save</button>
+
+            <h3>Progress Data</h3>
+            <p>Export your progress to move between devices.</p>
+            <button class="btn" id="export-btn">Export</button>
+            <button class="btn" id="import-btn">Import</button>
+            <input type="file" id="import-file" accept=".json" style="display: none;">
+
+            <h3>Statistics</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-value">${stats.totalReviews}</span>
+                    <span class="stat-label">Reviews</span>
                 </div>
-
-                <div class="card">
-                    <h3>Progress Data</h3>
-                    <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1rem;">
-                        Export your progress to move it between devices.
-                    </p>
-                    <div class="action-buttons">
-                        <button class="btn" id="export-btn">Export Progress</button>
-                        <button class="btn btn-secondary" id="import-btn">Import Progress</button>
-                    </div>
-                    <input type="file" id="import-file" accept=".json" style="display: none;">
+                <div class="stat-card">
+                    <span class="stat-value">${stats.quizAttempts}</span>
+                    <span class="stat-label">Quizzes</span>
                 </div>
-
-                <div class="card">
-                    <h3>Statistics</h3>
-                    <div class="stats-grid">
-                        <div class="stat-card">
-                            <span class="stat-value">${stats.totalReviews}</span>
-                            <span class="stat-label">Total Reviews</span>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-value">${stats.quizAttempts}</span>
-                            <span class="stat-label">Quizzes Taken</span>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-value">${stats.streak}</span>
-                            <span class="stat-label">Day Streak</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Danger Zone</h3>
-                    <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1rem;">
-                        This will delete all your progress and cannot be undone.
-                    </p>
-                    <button class="btn" id="reset-btn" style="background: var(--error);">Reset All Data</button>
+                <div class="stat-card">
+                    <span class="stat-value">${stats.streak}</span>
+                    <span class="stat-label">Streak</span>
                 </div>
             </div>
+
+            <h3>Danger Zone</h3>
+            <p>Delete all progress (cannot be undone).</p>
+            <button class="btn" id="reset-btn">Reset All Data</button>
         `;
 
-        // Event listeners
         document.getElementById('save-settings-btn').addEventListener('click', () => {
             const newCardsPerDay = parseInt(document.getElementById('new-cards-per-day').value);
+            const typedAnswers = document.getElementById('typed-answers').checked;
             Storage.setSetting('newCardsPerDay', newCardsPerDay);
-            this.showAlert('Settings saved!', 'success');
+            Storage.setSetting('typedAnswers', typedAnswers);
+            this.showAlert('Settings saved', 'success');
         });
 
         document.getElementById('export-btn').addEventListener('click', () => {
@@ -920,10 +912,10 @@ class StudyApp {
                     try {
                         const data = JSON.parse(e.target.result);
                         Storage.importData(data);
-                        this.showAlert('Progress imported successfully!', 'success');
+                        this.showAlert('Progress imported', 'success');
                         setTimeout(() => window.location.reload(), 1500);
                     } catch (error) {
-                        this.showAlert('Failed to import: Invalid file format', 'error');
+                        this.showAlert('Failed to import', 'error');
                     }
                 };
                 reader.readAsText(file);
@@ -931,8 +923,8 @@ class StudyApp {
         });
 
         document.getElementById('reset-btn').addEventListener('click', () => {
-            if (confirm('Are you sure? This will delete ALL your progress and cannot be undone.')) {
-                if (confirm('Really delete everything? This is your last chance!')) {
+            if (confirm('Delete all progress? Cannot be undone.')) {
+                if (confirm('Really delete everything?')) {
                     Storage.clearAllData();
                     window.location.reload();
                 }
@@ -949,13 +941,12 @@ class StudyApp {
         alert.style.right = '1rem';
         alert.style.zIndex = '10000';
         document.body.appendChild(alert);
-        setTimeout(() => alert.remove(), 3000);
+        setTimeout(() => alert.remove(), 2000);
     }
 
     showError(message) {
         this.appEl.innerHTML = `
             <div class="empty-state">
-                <div class="empty-state-icon">⚠️</div>
                 <h2>Error</h2>
                 <p>${this.escapeHtml(message)}</p>
             </div>
@@ -969,6 +960,5 @@ class StudyApp {
     }
 }
 
-// Initialize app
 const app = new StudyApp();
 app.init();

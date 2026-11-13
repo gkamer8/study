@@ -29,7 +29,8 @@ export const Storage = {
         const raw = localStorage.getItem(STORAGE_KEYS.SETTINGS);
         return raw ? JSON.parse(raw) : {
             newCardsPerDay: 20,
-            theme: 'light'
+            theme: 'light',
+            typedAnswers: true  // Default to typed answers
         };
     },
 
