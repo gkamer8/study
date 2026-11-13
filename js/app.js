@@ -62,6 +62,8 @@ class StudyApp {
             this.renderQuiz(params.subjectId, params.unitSlug));
         this.router.on('/match/:subjectId/:unitSlug', (params) => 
             this.renderMatch(params.subjectId, params.unitSlug));
+        this.router.on('/terms/:subjectId/:unitSlug', (params) => 
+            this.renderTermsDrill(params.subjectId, params.unitSlug));
         this.router.on('/settings', () => this.renderSettings());
     }
 
@@ -178,6 +180,7 @@ class StudyApp {
                             <a href="#/lesson/${unit.subjectId}/${unit.slug}" class="btn">Lesson</a>
                             <a href="#/review/${unit.subjectId}/${unit.slug}" class="btn">Review</a>
                             <a href="#/quiz/${unit.subjectId}/${unit.slug}" class="btn">Quiz</a>
+                            <a href="#/terms/${unit.subjectId}/${unit.slug}" class="btn">Terms</a>
                             <a href="#/match/${unit.subjectId}/${unit.slug}" class="btn">Match</a>
                         </div>
                     </div>
@@ -230,6 +233,7 @@ class StudyApp {
                             <a href="#/lesson/${subjectId}/${unit.slug}" class="btn">Lesson</a>
                             <a href="#/review/${subjectId}/${unit.slug}" class="btn">Review</a>
                             <a href="#/quiz/${subjectId}/${unit.slug}" class="btn">Quiz</a>
+                            <a href="#/terms/${subjectId}/${unit.slug}" class="btn">Terms</a>
                             <a href="#/match/${subjectId}/${unit.slug}" class="btn">Match</a>
                         </div>
                     </div>
@@ -245,6 +249,8 @@ class StudyApp {
         const unit = await this.loadUnit(subjectId, unitInfo.file);
 
         const lessonHtml = Markdown.render(unit.lesson);
+        const glossaryHtml = this.renderGlossary(unit.glossary || []);
+        const lessonWithTooltips = this.addGlossaryTooltips(lessonHtml, unit.glossary || []);
 
         this.appEl.innerHTML = `
             <p><a href="#/subject/${subjectId}">← Back</a></p>
@@ -252,16 +258,104 @@ class StudyApp {
             <h1>Unit ${unit.unit}: ${unit.title}</h1>
             <p>${unit.summary}</p>
 
+            ${glossaryHtml}
+
             <div class="lesson-content">
-                ${lessonHtml}
+                ${lessonWithTooltips}
             </div>
 
             <p>
                 <a href="#/review/${subjectId}/${unitSlug}" class="btn">Review</a>
                 <a href="#/quiz/${subjectId}/${unitSlug}" class="btn">Quiz</a>
                 <a href="#/match/${subjectId}/${unitSlug}" class="btn">Match</a>
+                <a href="#/terms/${subjectId}/${unitSlug}" class="btn">Terms</a>
             </p>
         `;
+
+        this.setupTooltips();
+    }
+
+    renderGlossary(glossary) {
+        if (!glossary || glossary.length === 0) return '';
+
+        return `
+            <details class="glossary" open>
+                <summary><strong>Key terms</strong></summary>
+                <dl class="glossary-list">
+                    ${glossary.map(entry => `
+                        <dt>${this.escapeHtml(entry.term)}</dt>
+                        <dd>${this.escapeHtml(entry.definition)}</dd>
+                    `).join('')}
+                </dl>
+            </details>
+        `;
+    }
+
+    addGlossaryTooltips(html, glossary) {
+        if (!glossary || glossary.length === 0) return html;
+
+        // Sort terms by length (longest first) to avoid partial matches
+        const sortedGlossary = [...glossary].sort((a, b) => b.term.length - a.term.length);
+
+        let result = html;
+        for (const entry of sortedGlossary) {
+            const term = entry.term;
+            const definition = entry.definition;
+            
+            // Create a pattern that matches the term as a whole word
+            // Don't match if already inside a tag
+            const pattern = new RegExp(`(?<![<>])\\b(${this.escapeRegex(term)})\\b(?![^<>]*>)`, 'gi');
+            
+            result = result.replace(pattern, (match) => {
+                return `<span class="glossary-term" data-definition="${this.escapeHtml(definition)}">${match}</span>`;
+            });
+        }
+
+        return result;
+    }
+
+    setupTooltips() {
+        // Add tooltip behavior to glossary terms
+        document.querySelectorAll('.glossary-term').forEach(el => {
+            el.addEventListener('mouseenter', (e) => {
+                const definition = e.target.getAttribute('data-definition');
+                this.showTooltip(e.target, definition);
+            });
+
+            el.addEventListener('mouseleave', () => {
+                this.hideTooltip();
+            });
+
+            el.addEventListener('click', (e) => {
+                e.preventDefault();
+                const definition = e.target.getAttribute('data-definition');
+                this.showTooltip(e.target, definition);
+            });
+        });
+    }
+
+    showTooltip(element, text) {
+        this.hideTooltip();
+        
+        const tooltip = document.createElement('div');
+        tooltip.className = 'tooltip';
+        tooltip.textContent = text;
+        document.body.appendChild(tooltip);
+
+        const rect = element.getBoundingClientRect();
+        tooltip.style.left = rect.left + 'px';
+        tooltip.style.top = (rect.bottom + 5) + 'px';
+    }
+
+    hideTooltip() {
+        const existing = document.querySelector('.tooltip');
+        if (existing) {
+            existing.remove();
+        }
+    }
+
+    escapeRegex(string) {
+        return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     }
 
     async renderReview(subjectId, unitSlug, mode) {
@@ -386,12 +480,11 @@ class StudyApp {
     }
 
     renderTypedAnswerCard(card, isNew, index, total, answered, userAnswer, onNext, onSubmit) {
-        const correctAnswer = card.back;
-        const alternates = card.accept || [];
+        const correctAnswer = card.accept ? card.accept[0] : card.back;
         
         let isCorrect = false;
         if (answered) {
-            isCorrect = AnswerChecker.check(userAnswer, correctAnswer, alternates);
+            isCorrect = AnswerChecker.check(userAnswer, card);
         }
 
         this.appEl.innerHTML = `
@@ -831,6 +924,63 @@ class StudyApp {
                 </p>
             </div>
         `;
+    }
+
+    async renderTermsDrill(subjectId, unitSlug) {
+        this.cleanup();
+        const index = await this.loadSubjectIndex(subjectId);
+        const unitInfo = index.units.find(u => u.slug === unitSlug);
+        const unit = await this.loadUnit(subjectId, unitInfo.file);
+
+        if (!unit.glossary || unit.glossary.length === 0) {
+            this.appEl.innerHTML = `
+                <div class="empty-state">
+                    <p>No glossary terms available.</p>
+                    <p><a href="#/subject/${subjectId}">Back</a></p>
+                </div>
+            `;
+            return;
+        }
+
+        // Convert glossary to card-like format for review
+        const termCards = unit.glossary.map((entry, idx) => ({
+            id: `u${unit.unit}-g-${this.slugify(entry.term)}`,
+            front: entry.definition,
+            back: entry.term,
+            accept: [entry.term],
+            type: 'identify',
+            tags: ['glossary']
+        }));
+
+        const progress = Storage.getAllCardProgress();
+        const settings = Storage.getSettings();
+
+        const dueCardIds = SpacedRepetition.getDueCards(progress);
+        const dueCards = termCards.filter(c => dueCardIds.includes(c.id));
+        
+        const newCardIds = SpacedRepetition.getNewCards(termCards, progress, settings.newCardsPerDay);
+        const newCards = termCards.filter(c => newCardIds.includes(c.id));
+
+        const queue = [...dueCards, ...newCards];
+
+        if (queue.length === 0) {
+            this.appEl.innerHTML = `
+                <div class="empty-state">
+                    <h2>All terms mastered</h2>
+                    <p>Come back later for review.</p>
+                    <p><a href="#/lesson/${subjectId}/${unitSlug}">Back to Lesson</a></p>
+                </div>
+            `;
+            return;
+        }
+
+        this.startReviewSession(queue, subjectId, unitSlug, 'terms', settings.typedAnswers);
+    }
+
+    slugify(text) {
+        return text.toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '');
     }
 
     renderSettings() {

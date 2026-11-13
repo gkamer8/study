@@ -1,29 +1,68 @@
 // Lenient answer checking for typed flashcard responses
 
 export const AnswerChecker = {
-    // Main checking function
-    check(userAnswer, correctAnswer, alternates = []) {
-        if (!userAnswer || !correctAnswer) return false;
+    // Main checking function - uses accept array if present
+    check(userAnswer, card) {
+        if (!userAnswer) return false;
 
-        // Check against main answer and all alternates
-        const allAnswers = [correctAnswer, ...alternates];
+        // Use accept array if present, otherwise fall back to back field
+        const acceptedAnswers = card.accept || [card.back];
         
-        for (const answer of allAnswers) {
-            if (this.matchesAnswer(userAnswer, answer)) {
-                return true;
+        // First entry in accept is canonical
+        const canonical = acceptedAnswers[0];
+        
+        // Check if this looks like it needs exact matching
+        const needsExact = this.needsExactMatch(canonical);
+        
+        for (const answer of acceptedAnswers) {
+            if (needsExact) {
+                if (this.exactMatch(userAnswer, answer)) {
+                    return true;
+                }
+            } else {
+                if (this.matchesAnswer(userAnswer, answer)) {
+                    return true;
+                }
             }
         }
         
         return false;
     },
 
-    // Check if user answer matches a single correct answer
+    // Determine if answer needs exact matching (no typo tolerance)
+    needsExactMatch(answer) {
+        const normalized = this.normalize(answer);
+        
+        // Very short answers (≤3 chars) need exact match
+        if (normalized.length <= 3) return true;
+        
+        // Gene symbols: capital letters with numbers, or format like TP53, BRCA1
+        if (/^[A-Z]{2,}[0-9]+/.test(answer) || /^[A-Z]{3,}[0-9]*$/.test(answer)) {
+            return true;
+        }
+        
+        // Identifiers: contains underscores, dots, or colon patterns
+        if (/[_.:]+/.test(answer)) return true;
+        
+        // Numbers with units need exact match
+        if (/^[\d.,]+\s*(bp|kb|Mb|Gb|nt|aa|kDa|Da|%|mM|μM|nM)/.test(answer)) {
+            return true;
+        }
+        
+        return false;
+    },
+
+    // Exact match after normalization (no typo tolerance)
+    exactMatch(user, correct) {
+        return this.normalize(user) === this.normalize(correct);
+    },
+
+    // Lenient matching with typo tolerance
     matchesAnswer(user, correct) {
-        // Normalize both strings
         const u = this.normalize(user);
         const c = this.normalize(correct);
 
-        // Exact match after normalization
+        // Exact match
         if (u === c) return true;
 
         // For short answers, check edit distance
@@ -53,7 +92,17 @@ export const AnswerChecker = {
         s = s.replace(/\s+/g, ' ').trim();
         
         // Normalize hyphens and dashes
-        s = s.replace(/[-–—]/g, ' ');
+        s = s.replace(/[-–—]/g, '');
+        
+        // Normalize primes (5' / 5′ / 5 prime)
+        s = s.replace(/['′´`]/g, '');
+        s = s.replace(/\b(\d+)\s*prime\b/g, '$1');
+        
+        // Normalize arrows
+        s = s.replace(/[→←↔⇒⇐⇔]/g, 'to');
+        
+        // k-mer and kmer are the same
+        s = s.replace(/(\d+)\s*-\s*mer\b/g, '$1mer');
         
         // Greek letter normalization
         const greekMap = {
@@ -77,7 +126,6 @@ export const AnswerChecker = {
             'trna': 'transfer rna',
             'rrna': 'ribosomal rna',
             'atp': 'adenosine triphosphate',
-            'dna': 'deoxyribonucleic acid',
             'pcr': 'polymerase chain reaction'
         };
         
@@ -124,7 +172,6 @@ export const AnswerChecker = {
 
     // Check if user answer contains key terms from correct answer
     containsKeyTerms(user, correct) {
-        // Split into words, filter out common words
         const commonWords = new Set(['the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 'from', 'is', 'are', 'was', 'were', 'be', 'been', 'being']);
         
         const correctWords = correct.split(/\s+/).filter(w => 
@@ -133,7 +180,6 @@ export const AnswerChecker = {
         
         if (correctWords.length === 0) return false;
 
-        // Check how many key terms are present
         let matches = 0;
         for (const word of correctWords) {
             if (user.includes(word)) {
@@ -141,13 +187,7 @@ export const AnswerChecker = {
             }
         }
 
-        // Require at least 60% of key terms
         const threshold = Math.ceil(correctWords.length * 0.6);
         return matches >= threshold;
-    },
-
-    // Extract key terms from a multi-part answer (separated by semicolons)
-    extractParts(answer) {
-        return answer.split(/[;/]/).map(p => p.trim()).filter(p => p);
     }
 };
