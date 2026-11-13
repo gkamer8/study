@@ -1,0 +1,103 @@
+{
+  "subject": "biology",
+  "title": "Practical molecular biology for reading papers",
+  "description": "Undergraduate/practitioner-level molecular biology for an ML researcher: genes, proteins, pathways, naming, databases, data formats, and ML-for-biology papers.",
+  "schema_version": 1,
+  "generated": "2026-11-12",
+  "units": [
+    {
+      "unit": 1,
+      "slug": "central-dogma",
+      "title": "Central dogma for practitioners",
+      "summary": "How genes are laid out in the genome, how they become transcripts and proteins, and which vocabulary (exons, UTRs, isoforms, reading frames, PTMs) shows up constantly in papers and data. This is the vocabulary everything else builds on.",
+      "file": "01-central-dogma.json",
+      "card_count": 42,
+      "quiz_count": 13,
+      "prerequisites": []
+    },
+    {
+      "unit": 2,
+      "slug": "naming-conventions",
+      "title": "Naming conventions and identifiers",
+      "summary": "How to read gene and protein names across species, HLA alleles, HGVS variant notation and rsIDs, and the identifier formats from Ensembl, RefSeq, UniProt, PDB and others. Parsing these on sight is what lets you join datasets and read methods sections.",
+      "file": "02-naming-conventions.json",
+      "card_count": 51,
+      "quiz_count": 14,
+      "prerequisites": [
+        1
+      ]
+    },
+    {
+      "unit": 3,
+      "slug": "databases",
+      "title": "Databases and where to find things",
+      "summary": "A map from biological questions to the canonical database that answers them: genes, proteins and structures, expression, variants and disease, pathways and interactions, and raw data archives. Includes the accession formats you'll see in data-availability statements.",
+      "file": "03-databases.json",
+      "card_count": 44,
+      "quiz_count": 14,
+      "prerequisites": [
+        1,
+        2
+      ]
+    },
+    {
+      "unit": 4,
+      "slug": "proteins",
+      "title": "Proteins: sequence, structure, families",
+      "summary": "Amino acid one-letter codes by chemistry, levels of protein structure, domains and the databases that catalog them, AlphaFold confidence metrics (pLDDT, PAE, ipTM), MSAs and coevolution, and the protein families you'll meet most often in papers.",
+      "file": "04-proteins.json",
+      "card_count": 49,
+      "quiz_count": 14,
+      "prerequisites": [
+        1
+      ]
+    },
+    {
+      "unit": 5,
+      "slug": "pathways",
+      "title": "Key pathways and signaling",
+      "summary": "The canonical signaling circuits that show up constantly in biology and cancer papers: RTK-RAS-MAPK, PI3K-AKT-mTOR, p53 and DNA damage, Wnt, NF-κB, JAK-STAT, apoptosis, and the cell cycle, plus the main oncogenes and tumor suppressors and the drugs that target them.",
+      "file": "05-pathways.json",
+      "card_count": 49,
+      "quiz_count": 15,
+      "prerequisites": [
+        1,
+        4
+      ]
+    },
+    {
+      "unit": 6,
+      "slug": "data-formats-experiments",
+      "title": "Data formats and experiments",
+      "summary": "The file formats (FASTA, FASTQ, SAM/BAM/CRAM, VCF, BED, GTF/GFF, h5ad) and coordinate conventions you'll handle, the reference genome builds, and how the main assays work: bulk and single-cell RNA-seq, ChIP-seq, ATAC-seq, CRISPR screens, and mass-spec proteomics.",
+      "file": "06-data-formats-experiments.json",
+      "card_count": 50,
+      "quiz_count": 16,
+      "prerequisites": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "unit": 7,
+      "slug": "ml-for-biology",
+      "title": "Reading ML-for-biology papers",
+      "summary": "How to decode the tasks, benchmarks (CASP, ProteinGym/DMS, ClinVar), tokenization choices for proteins, DNA and single cells, leakage-aware data splits, and evaluation metrics in ML-for-biology papers, plus a checklist for reading one quickly.",
+      "file": "07-ml-for-biology.json",
+      "card_count": 42,
+      "quiz_count": 14,
+      "prerequisites": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ]
+    }
+  ],
+  "totals": {
+    "cards": 327,
+    "quiz": 100
+  }
+}

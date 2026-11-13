@@ -1,0 +1,10 @@
+{
+  "subjects": [
+    {
+      "id": "biology",
+      "title": "Practical molecular biology for reading papers",
+      "description": "Undergraduate/practitioner-level molecular biology for an ML researcher",
+      "path": "biology"
+    }
+  ]
+}

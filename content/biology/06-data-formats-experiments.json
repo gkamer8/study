@@ -1,0 +1,661 @@
+{
+  "unit": 6,
+  "slug": "data-formats-experiments",
+  "title": "Data formats and experiments",
+  "summary": "The file formats (FASTA, FASTQ, SAM/BAM/CRAM, VCF, BED, GTF/GFF, h5ad) and coordinate conventions you'll handle, the reference genome builds, and how the main assays work: bulk and single-cell RNA-seq, ChIP-seq, ATAC-seq, CRISPR screens, and mass-spec proteomics.",
+  "lesson": "## Sequence files\n\n**FASTA**: a header line starting with `>`, then sequence lines. It is used for references, proteins and transcripts. UniProt headers look like `>sp|P04637|P53_HUMAN Cellular tumor antigen p53 OS=Homo sapiens OX=9606 GN=TP53 …`, where `sp` = Swiss-Prot (`tr` = TrEMBL) and OX is the NCBI taxonomy ID (9606 = human, 10090 = mouse).\n\n**FASTQ**: raw reads, **4 lines per record**:\n```\n@read_id\nACGTTGCA...\n+\nIIIIHHG#...\n```\nLine 4 holds per-base quality as ASCII characters. **Phred score Q = −10·log10(P_error)**: Q10 = 1 in 10 errors, Q20 = 1%, **Q30 = 0.1%** (the usual quality bar), Q40 = 0.01%. Modern encoding is **Phred+33**: character = chr(Q+33), so `!` = Q0, `+` = Q10, `5` = Q20, `?` = Q30, `I` = Q40. Paired-end runs produce `_R1`/`_R2` files from the two ends of each fragment.\n\n## Alignments: SAM/BAM/CRAM\n\nAligners map reads to a reference. DNA aligners include BWA-MEM and Bowtie2; RNA aligners are splice-aware (STAR, HISAT2). Output is **SAM** (text), **BAM** (compressed binary, indexed by `.bai` after coordinate sorting), or **CRAM** (compressed relative to the reference, so smaller, but you need the exact reference to decode). Each SAM line has **11 mandatory fields**: QNAME, **FLAG**, RNAME, **POS** (1-based leftmost), **MAPQ**, **CIGAR**, RNEXT, PNEXT, TLEN, SEQ, QUAL, followed by optional tags (NM:i:, MD:Z:, and cell-barcode tags like CB:Z: in single-cell data).\n\n- **FLAG** is a bitfield: 1 paired, 2 proper pair, **4 unmapped**, **16 reverse strand**, 256 secondary, **1024 PCR/optical duplicate**, 2048 supplementary (split/chimeric).\n- **CIGAR** describes the alignment: `M` match/mismatch, `I` insertion, `D` deletion, **`N` skipped region (an intron in RNA-seq)**, `S` soft clip, `H` hard clip. Example: `50M1000N50M` is a spliced read.\n- **MAPQ** = Phred-scaled confidence that the mapping position is correct. MAPQ 0 usually means a multi-mapper.\n\n## Variants: VCF\n\n**VCF** columns: CHROM, POS (1-based), ID (rsID), REF, ALT, QUAL, FILTER (PASS), INFO (key=value pairs such as AF, DP, or annotations), FORMAT, then one column per sample. Genotypes: `0/0` hom-ref, `0/1` het, `1/1` hom-alt; `|` means phased (`0|1`). gVCFs also record non-variant blocks. Indels are left-aligned, and REF includes the preceding base: `chr1 100 . A AT` is an insertion of T.\n\n## Intervals and annotations: BED and GTF/GFF\n\n**BED**: `chrom start end [name score strand …]`, **0-based, half-open**. `chr1 0 100` means the first 100 bases (1-based positions 1–100). Used for peaks, target regions and blacklists. narrowPeak (from MACS) is an extended BED.\n\n**GTF/GFF3**: gene annotation with **9 columns**: seqname, source, feature (gene/transcript/exon/CDS/UTR/start_codon), **start, end (1-based, inclusive)**, score, strand, frame, attributes. GTF attributes look like `gene_id \"ENSG…\"; transcript_id \"ENST…\";`. GFF3 uses `ID=…;Parent=…`. GENCODE and Ensembl distribute GTFs that quantification tools consume.\n\nThe **off-by-one** trap between BED (0-based) and VCF/GTF/SAM (1-based) causes real bugs.\n\n## Reference genome builds\n\n- **GRCh37 ≈ hg19** (2009) and **GRCh38 ≈ hg38** (2013). GRC names come from the Genome Reference Consortium; hg names come from UCSC. They contain the same sequence for the primary chromosomes, but UCSC uses `chr1` naming while GRC/Ensembl uses `1`, and the mitochondrial sequence differed in hg19 (chrM) vs GRCh37 (MT, the rCRS).\n- Coordinates **differ between builds**: BRAF V600E is chr7:140,453,136 in hg19 and chr7:140,753,336 in hg38. Convert with liftOver or CrossMap, and never mix builds.\n- **T2T-CHM13** (2022) is the first gap-free human assembly. GRCh38 is still the default in most pipelines. Mouse builds: mm10 (GRCm38), mm39 (GRCm39).\n- Annotation versions (GENCODE vXX / Ensembl release) are separate from the assembly. Report both.\n\n## Bulk RNA-seq\n\nWorkflow: extract RNA, enrich poly(A) or deplete rRNA, make cDNA, sequence, then either align (STAR) and count reads per gene (featureCounts/HTSeq), or **pseudoalign** (salmon, kallisto) to transcripts. Units:\n- **Raw counts**: integers. Required by **DESeq2/edgeR**, which model counts with a negative binomial distribution.\n- **CPM**: counts per million (depth only).\n- **RPKM/FPKM**: normalize by depth, then by gene length (per kb). Values are not comparable across samples because the totals differ.\n- **TPM**: normalize by length first, then scale so each sample sums to 1,000,000. Better for within-sample comparison. Neither TPM nor FPKM replaces proper DE normalization.\n- Differential expression reports **log2 fold change** and **BH-adjusted p-values (FDR)**, often shown as volcano plots.\n\n## Single-cell RNA-seq\n\nDroplet platforms (10x Genomics Chromium) tag every transcript with a **cell barcode** (which cell) and a **UMI** (unique molecular identifier, which original molecule). Counting unique UMIs per gene removes PCR duplicates. Cell Ranger (or STARsolo, alevin-fry) outputs a sparse **cell-by-gene count matrix**. 10x MTX files are genes × cells, while **AnnData (.h5ad)**, the scanpy/Python standard, is **cells × genes**:\n- `adata.X`: the matrix, rows = cells (obs) and columns = genes (var)\n- `adata.obs`: per-cell metadata (cell type, donor, batch, QC)\n- `adata.var`: per-gene metadata (Ensembl ID, symbol, highly_variable)\n- `adata.obsm`: embeddings (X_pca, X_umap); `adata.layers`: alternative matrices (e.g., raw counts); `adata.uns`: unstructured metadata\n\nStandard processing: QC (remove cells with few genes or high **mitochondrial read fraction**, and remove doublets), `normalize_total` + `log1p`, highly variable genes, PCA, kNN graph, **Leiden** clustering, **UMAP** for visualization, then annotate cell types with marker genes. Batch effects are corrected with Harmony or scVI. Data are very sparse (mostly zeros). R users use Seurat objects.\n\n## Chromatin assays\n\n- **ChIP-seq**: crosslink, fragment, immunoprecipitate with an antibody against a TF or histone mark, then sequence. Peaks are called with MACS2/3 against an input control. Marks: **H3K4me3** active promoters, **H3K27ac** active enhancers and promoters, **H3K4me1** enhancers, **H3K27me3** Polycomb repression, **H3K36me3** transcribed gene bodies, **H3K9me3** heterochromatin. CUT&RUN and CUT&Tag are lower-input alternatives.\n- **ATAC-seq**: hyperactive **Tn5 transposase** inserts adapters into **open chromatin**, giving a map of accessibility. scATAC-seq does this per cell. DNase-seq is the older equivalent.\n- **Hi-C**: 3D contact maps (TADs, loops).\n\n## CRISPR screens\n\nA **pooled** library of sgRNAs (typically 4–10 per gene, e.g. Brunello) is delivered by lentivirus at low MOI (about one guide per cell). Cells are selected (proliferation, drug, FACS sort), and guides are counted by sequencing. **Depleted** guides mark genes required under the condition (essential genes drop out). Enriched guides mark resistance genes. Analysis uses MAGeCK, BAGEL, or Chronos (DepMap). Variants: knockout (Cas9), **CRISPRi** (dCas9-KRAB, repression), **CRISPRa** (activation), base and prime editing screens. **Perturb-seq** pairs perturbations with scRNA-seq readouts, a major dataset type for perturbation-prediction models.\n\n## Mass-spectrometry proteomics\n\nIn **bottom-up** proteomics, proteins are digested with **trypsin** (which cleaves after K/R, not before P), peptides are separated by liquid chromatography, and they are analyzed by tandem MS (**LC-MS/MS**). Spectra are matched to peptides from a protein database, and FDR is controlled with a **target-decoy** approach. Acquisition modes are **DDA** (data-dependent, picks top precursors) and **DIA** (data-independent, more reproducible). Quantification uses label-free methods (LFQ) or isobaric tags (**TMT**). Tools: MaxQuant, DIA-NN, FragPipe. Repository: PRIDE. Phosphoproteomics adds enrichment of phosphopeptides.\n\n## How you'll see this in a paper\n\n- \"Reads were aligned to GRCh38 with STAR (GENCODE v38) and quantified with salmon\": build, annotation and quantifier.\n- \"Cells with <200 genes or >20% mitochondrial reads were removed\": standard scRNA-seq QC.\n- \"Peaks were called with MACS2 (q < 0.01)\" and \"ATAC peaks overlapping the ENCODE blacklist were excluded\".\n- Genomics models: \"one-hot encoded 131 kb sequences predicting coverage tracks from ENCODE/FANTOM\".\n",
+  "cards": [
+    {
+      "id": "u6-c01",
+      "front": "FASTA header starts with which character?",
+      "back": "'>'",
+      "tags": [
+        "FASTA"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c02",
+      "front": ">sp|P04637|P53_HUMAN … OX=9606 GN=TP53",
+      "back": "UniProt Swiss-Prot FASTA header: accession, entry name, taxon ID 9606 (human), gene name",
+      "tags": [
+        "FASTA",
+        "UniProt"
+      ],
+      "type": "identify"
+    },
+    {
+      "id": "u6-c03",
+      "front": "NCBI taxonomy IDs for human and mouse?",
+      "back": "9606 (human), 10090 (mouse)",
+      "tags": [
+        "identifiers"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c04",
+      "front": "Four lines of a FASTQ record?",
+      "back": "@id; sequence; '+'; quality string",
+      "tags": [
+        "FASTQ"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c05",
+      "front": "Phred quality formula?",
+      "back": "Q = −10·log10(P_error)",
+      "tags": [
+        "FASTQ"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c06",
+      "front": "Error probability at Q20 and Q30?",
+      "back": "Q20 = 1%; Q30 = 0.1%",
+      "tags": [
+        "FASTQ"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c07",
+      "front": "Phred+33: what are '!' and 'I'?",
+      "back": "'!' = Q0; 'I' = Q40",
+      "tags": [
+        "FASTQ"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c08",
+      "front": "SAM vs BAM vs CRAM?",
+      "back": "SAM text; BAM compressed binary; CRAM reference-based compression (needs the reference)",
+      "tags": [
+        "SAM"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c09",
+      "front": "Is SAM POS 0- or 1-based?",
+      "back": "1-based (leftmost mapped base)",
+      "tags": [
+        "SAM",
+        "coordinates"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c10",
+      "front": "SAM FLAG 4 / 16 / 1024",
+      "back": "Unmapped / reverse strand / duplicate",
+      "tags": [
+        "SAM"
+      ],
+      "type": "identify"
+    },
+    {
+      "id": "u6-c11",
+      "front": "SAM FLAG 256 vs 2048",
+      "back": "Secondary alignment vs supplementary (split/chimeric) alignment",
+      "tags": [
+        "SAM"
+      ],
+      "type": "identify"
+    },
+    {
+      "id": "u6-c12",
+      "front": "CIGAR 50M1000N50M",
+      "back": "Spliced read: 50 aligned, 1000-bp intron skipped, 50 aligned",
+      "tags": [
+        "SAM",
+        "RNA-seq"
+      ],
+      "type": "identify"
+    },
+    {
+      "id": "u6-c13",
+      "front": "CIGAR S vs H",
+      "back": "Soft clip (bases kept in SEQ) vs hard clip (bases removed)",
+      "tags": [
+        "SAM"
+      ],
+      "type": "identify"
+    },
+    {
+      "id": "u6-c14",
+      "front": "What does MAPQ 0 usually indicate?",
+      "back": "Multi-mapping read (position ambiguous)",
+      "tags": [
+        "SAM"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c15",
+      "front": "VCF fixed columns?",
+      "back": "CHROM, POS, ID, REF, ALT, QUAL, FILTER, INFO (+ FORMAT and samples)",
+      "tags": [
+        "VCF"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c16",
+      "front": "Genotypes 0/1 vs 0|1 vs 1/1",
+      "back": "Het unphased / het phased / homozygous alt",
+      "tags": [
+        "VCF"
+      ],
+      "type": "identify"
+    },
+    {
+      "id": "u6-c17",
+      "front": "BED coordinate system?",
+      "back": "0-based, half-open",
+      "tags": [
+        "BED",
+        "coordinates"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c18",
+      "front": "BED line 'chr1 99 100' covers which 1-based position?",
+      "back": "Position 100 (one base)",
+      "tags": [
+        "BED",
+        "coordinates"
+      ],
+      "type": "apply"
+    },
+    {
+      "id": "u6-c19",
+      "front": "GTF/GFF coordinate system?",
+      "back": "1-based, inclusive (start and end)",
+      "tags": [
+        "GTF",
+        "coordinates"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c20",
+      "front": "GTF vs GFF3 attribute style?",
+      "back": "GTF: gene_id \"…\"; transcript_id \"…\";  GFF3: ID=…;Parent=…",
+      "tags": [
+        "GTF"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c21",
+      "front": "GRCh37 and GRCh38 correspond to which UCSC names?",
+      "back": "hg19 and hg38",
+      "tags": [
+        "assemblies"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c22",
+      "front": "Chromosome naming difference UCSC vs Ensembl?",
+      "back": "UCSC 'chr1', 'chrM'; Ensembl/GRC '1', 'MT'",
+      "tags": [
+        "assemblies"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c23",
+      "front": "A VCF in hg19 and a BED in hg38. What must you do before intersecting?",
+      "back": "Lift one over to the other build (liftOver/CrossMap)",
+      "tags": [
+        "assemblies"
+      ],
+      "type": "apply"
+    },
+    {
+      "id": "u6-c24",
+      "front": "What is T2T-CHM13?",
+      "back": "First complete gap-free human genome assembly (2022)",
+      "tags": [
+        "assemblies"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c25",
+      "front": "Mouse current assemblies?",
+      "back": "mm10 (GRCm38) and mm39 (GRCm39)",
+      "tags": [
+        "assemblies"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c26",
+      "front": "Which tools pseudoalign RNA-seq reads?",
+      "back": "salmon, kallisto",
+      "tags": [
+        "RNA-seq"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c27",
+      "front": "What input do DESeq2/edgeR require?",
+      "back": "Raw integer counts (negative binomial models)",
+      "tags": [
+        "RNA-seq"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c28",
+      "front": "TPM vs FPKM order of operations?",
+      "back": "TPM: length first, then depth (sums to 1e6); FPKM: depth first, then length",
+      "tags": [
+        "RNA-seq"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c29",
+      "front": "Why is TPM preferred over FPKM for comparing samples?",
+      "back": "TPM sums to the same total in every sample; FPKM totals vary",
+      "tags": [
+        "RNA-seq"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c30",
+      "front": "What is a UMI?",
+      "back": "Unique molecular identifier: random barcode tagging each original molecule to collapse PCR duplicates",
+      "tags": [
+        "single-cell"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c31",
+      "front": "Cell barcode vs UMI?",
+      "back": "Barcode: which cell/droplet; UMI: which molecule",
+      "tags": [
+        "single-cell"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c32",
+      "front": "AnnData X orientation?",
+      "back": "Cells (obs) × genes (var)",
+      "tags": [
+        "single-cell",
+        "AnnData"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c33",
+      "front": "adata.obs / adata.var / adata.obsm / adata.layers",
+      "back": "Cell metadata / gene metadata / embeddings (PCA, UMAP) / alternative matrices (e.g., raw counts)",
+      "tags": [
+        "AnnData"
+      ],
+      "type": "identify"
+    },
+    {
+      "id": "u6-c34",
+      "front": "Why remove cells with high mitochondrial read fraction?",
+      "back": "Indicates damaged/dying cells (cytoplasmic mRNA lost)",
+      "tags": [
+        "single-cell"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c35",
+      "front": "Standard scanpy pipeline?",
+      "back": "QC → normalize_total → log1p → HVGs → PCA → neighbors → Leiden → UMAP",
+      "tags": [
+        "single-cell"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c36",
+      "front": "What is a doublet?",
+      "back": "A droplet containing two cells, giving a mixed profile",
+      "tags": [
+        "single-cell"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c37",
+      "front": "H3K4me3 marks…?",
+      "back": "Active promoters",
+      "tags": [
+        "ChIP-seq"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c38",
+      "front": "H3K27ac marks…?",
+      "back": "Active enhancers and promoters",
+      "tags": [
+        "ChIP-seq"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c39",
+      "front": "H3K27me3 marks…?",
+      "back": "Polycomb-repressed chromatin",
+      "tags": [
+        "ChIP-seq"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c40",
+      "front": "H3K36me3 marks…?",
+      "back": "Bodies of actively transcribed genes",
+      "tags": [
+        "ChIP-seq"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c41",
+      "front": "Standard ChIP-seq peak caller?",
+      "back": "MACS2/MACS3",
+      "tags": [
+        "ChIP-seq"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c42",
+      "front": "ATAC-seq measures what, using which enzyme?",
+      "back": "Chromatin accessibility; Tn5 transposase",
+      "tags": [
+        "ATAC-seq"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c43",
+      "front": "Pooled CRISPR KO screen readout?",
+      "back": "sgRNA abundance by sequencing before vs after selection",
+      "tags": [
+        "CRISPR"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c44",
+      "front": "Guides for gene X are strongly depleted after 3 weeks of growth. Interpretation?",
+      "back": "Gene X is required for proliferation (essential/fitness gene)",
+      "tags": [
+        "CRISPR"
+      ],
+      "type": "apply"
+    },
+    {
+      "id": "u6-c45",
+      "front": "CRISPRi vs CRISPRa?",
+      "back": "dCas9-KRAB represses; dCas9-activator (e.g., VP64/VPR) activates; no DNA cut",
+      "tags": [
+        "CRISPR"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c46",
+      "front": "What is Perturb-seq?",
+      "back": "Pooled CRISPR perturbations with single-cell RNA-seq readout",
+      "tags": [
+        "CRISPR",
+        "single-cell"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c47",
+      "front": "Trypsin cleavage rule?",
+      "back": "After K or R, not before P",
+      "tags": [
+        "proteomics"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c48",
+      "front": "DDA vs DIA?",
+      "back": "DDA: selects top precursors for MS2; DIA: fragments all precursors in m/z windows (more reproducible)",
+      "tags": [
+        "proteomics"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c49",
+      "front": "How is FDR controlled in peptide identification?",
+      "back": "Target-decoy search (reversed/shuffled decoy database)",
+      "tags": [
+        "proteomics"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u6-c50",
+      "front": "What is TMT?",
+      "back": "Tandem mass tag: isobaric labels for multiplexed quantification",
+      "tags": [
+        "proteomics"
+      ],
+      "type": "recall"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "u6-q01",
+      "question": "A FASTQ quality character 'I' under Phred+33 encodes:",
+      "choices": [
+        "Q40",
+        "Q73",
+        "Q20",
+        "Q30"
+      ],
+      "answer_index": 0,
+      "explanation": "ord('I') = 73; 73 − 33 = 40."
+    },
+    {
+      "id": "u6-q02",
+      "question": "A BED entry 'chr2 1000 1005' covers which 1-based positions?",
+      "choices": [
+        "1000–1004",
+        "1001–1005",
+        "1001–1006",
+        "1000–1005"
+      ],
+      "answer_index": 1,
+      "explanation": "BED is 0-based half-open: start+1 to end in 1-based coordinates."
+    },
+    {
+      "id": "u6-q03",
+      "question": "Which CIGAR operation indicates an intron in an RNA-seq alignment?",
+      "choices": [
+        "I",
+        "N",
+        "S",
+        "D"
+      ],
+      "answer_index": 1,
+      "explanation": "N = skipped region from the reference."
+    },
+    {
+      "id": "u6-q04",
+      "question": "Which quantity sums to 1,000,000 in every sample?",
+      "choices": [
+        "TPM",
+        "RPKM",
+        "Raw counts",
+        "FPKM"
+      ],
+      "answer_index": 0,
+      "explanation": "TPM normalizes for length first, then scales to 1e6."
+    },
+    {
+      "id": "u6-q05",
+      "question": "DESeq2 should be given:",
+      "choices": [
+        "TPM",
+        "Log-normalized values",
+        "FPKM",
+        "Raw integer counts"
+      ],
+      "answer_index": 3,
+      "explanation": "Its negative binomial model expects raw counts."
+    },
+    {
+      "id": "u6-q06",
+      "question": "In AnnData, adata.X rows correspond to:",
+      "choices": [
+        "Batches",
+        "Genes",
+        "Clusters",
+        "Cells"
+      ],
+      "answer_index": 3,
+      "explanation": "AnnData is obs × var = cells × genes."
+    },
+    {
+      "id": "u6-q07",
+      "question": "Purpose of UMIs in scRNA-seq:",
+      "choices": [
+        "Mark the gene strand",
+        "Identify the cell of origin",
+        "Indicate read quality",
+        "Collapse PCR duplicates of the same molecule"
+      ],
+      "answer_index": 3,
+      "explanation": "Each original molecule gets a UMI; duplicates share it."
+    },
+    {
+      "id": "u6-q08",
+      "question": "A SAM FLAG of 16 means:",
+      "choices": [
+        "Read mapped to reverse strand",
+        "Unmapped",
+        "PCR duplicate",
+        "Secondary alignment"
+      ],
+      "answer_index": 0,
+      "explanation": "Bit 0x10 = reverse complemented."
+    },
+    {
+      "id": "u6-q09",
+      "question": "Which histone mark best indicates active enhancers?",
+      "choices": [
+        "H3K27ac",
+        "H3K36me3",
+        "H3K9me3",
+        "H3K27me3"
+      ],
+      "answer_index": 0,
+      "explanation": "H3K27ac marks active enhancers and promoters."
+    },
+    {
+      "id": "u6-q10",
+      "question": "ATAC-seq primarily measures:",
+      "choices": [
+        "3D contacts",
+        "DNA methylation",
+        "Chromatin accessibility",
+        "Protein-DNA binding of a specific TF"
+      ],
+      "answer_index": 2,
+      "explanation": "Tn5 inserts into open chromatin."
+    },
+    {
+      "id": "u6-q11",
+      "question": "hg19 corresponds to:",
+      "choices": [
+        "GRCh37",
+        "GRCh38",
+        "T2T-CHM13",
+        "GRCm39"
+      ],
+      "answer_index": 0,
+      "explanation": "UCSC hg19 ≈ GRC GRCh37."
+    },
+    {
+      "id": "u6-q12",
+      "question": "In a VCF, '0|1' denotes:",
+      "choices": [
+        "Phased heterozygote",
+        "Homozygous reference",
+        "Unphased heterozygote",
+        "Missing genotype"
+      ],
+      "answer_index": 0,
+      "explanation": "'|' indicates phased genotypes."
+    },
+    {
+      "id": "u6-q13",
+      "question": "Trypsin cleaves peptide bonds:",
+      "choices": [
+        "At random",
+        "After aromatic residues",
+        "Before D/E",
+        "After K/R, not before P"
+      ],
+      "answer_index": 3,
+      "explanation": "This predictable rule enables database search."
+    },
+    {
+      "id": "u6-q14",
+      "question": "In a pooled CRISPR knockout proliferation screen, essential genes show:",
+      "choices": [
+        "Depleted guides",
+        "Enriched guides",
+        "Increased UMIs",
+        "No change"
+      ],
+      "answer_index": 0,
+      "explanation": "Cells losing essential genes drop out, so their guides decline."
+    },
+    {
+      "id": "u6-q15",
+      "question": "CRAM files differ from BAM mainly by:",
+      "choices": [
+        "Lacking quality scores entirely",
+        "Storing only unmapped reads",
+        "Compressing relative to a reference sequence",
+        "Being text"
+      ],
+      "answer_index": 2,
+      "explanation": "CRAM stores differences from the reference and needs it to decode."
+    },
+    {
+      "id": "u6-q16",
+      "question": "A single-cell QC step removes cells with >20% mitochondrial reads because they are likely:",
+      "choices": [
+        "Doublets",
+        "Damaged or dying cells",
+        "Immune cells",
+        "Highly proliferative"
+      ],
+      "answer_index": 1,
+      "explanation": "Damaged cells lose cytoplasmic mRNA, inflating the mitochondrial fraction."
+    }
+  ]
+}

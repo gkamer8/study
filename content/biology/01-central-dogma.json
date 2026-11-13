@@ -1,0 +1,561 @@
+{
+  "unit": 1,
+  "slug": "central-dogma",
+  "title": "Central dogma for practitioners",
+  "summary": "How genes are laid out in the genome, how they become transcripts and proteins, and which vocabulary (exons, UTRs, isoforms, reading frames, PTMs) shows up constantly in papers and data. This is the vocabulary everything else builds on.",
+  "lesson": "## The genome as a data structure\n\nThe human nuclear genome is about **3.1 billion base pairs** (haploid), split across 22 autosomes plus X and Y, with a separate ~16.6 kb circular **mitochondrial genome** (chrM). Each cell has two copies of each autosome (diploid). DNA is double-stranded and antiparallel: one strand runs 5'→3', its complement runs the other way. Reference genomes store only one strand (the **forward/plus** strand); a gene can sit on either strand. TP53, for example, is on the minus strand of chromosome 17, so its mRNA is the reverse complement of the reference sequence there.\n\nOnly about **1.5%** of the genome codes for protein. GENCODE annotates roughly **20,000 protein-coding genes** and a larger number of non-coding genes (lncRNAs, microRNAs, snRNAs, pseudogenes), about 60,000 genes in total. The rest is introns, regulatory elements, repeats (about half the genome is transposon-derived, e.g. Alu and LINE-1 elements), and sequence of unclear function.\n\nChromosome positions are given either as coordinates (chr17:7,668,402) or as **cytogenetic bands**: 17p13.1 means chromosome 17, short arm (**p**), region 1, band 3, sub-band 1. The long arm is **q**.\n\n## Anatomy of a protein-coding gene\n\nReading 5'→3' along the gene's own strand:\n\n1. **Promoter**: sequence just upstream of the **transcription start site (TSS)** where RNA polymerase II and general transcription factors assemble. Many human promoters sit in **CpG islands**; some have a TATA box ~25–30 bp upstream of the TSS.\n2. **Exons and introns**: the gene is transcribed into a pre-mRNA containing both. Introns are removed by **splicing**; exons are joined. Human genes average roughly 8–10 exons; introns are often far longer than exons.\n3. **5' UTR**: the exonic sequence between the TSS and the start codon. Transcribed, not translated.\n4. **Coding sequence (CDS)**: from the **start codon (ATG, methionine)** to a **stop codon (TAA, TAG, TGA)**. It can span many exons.\n5. **3' UTR**: after the stop codon; contains microRNA binding sites and the **polyadenylation signal (AATAAA)**, after which the transcript is cleaved and a poly(A) tail added.\n\nThe mature mRNA also gets a **5' cap** (7-methylguanosine). Note the difference between exons and CDS: the first and last exons usually contain UTR sequence, so \"exon\" ≠ \"coding\".\n\n**Enhancers** are regulatory elements that boost transcription and can sit tens to hundreds of kilobases away, upstream, downstream, or inside introns. They act by DNA looping, usually within **topologically associating domains (TADs)** bounded by CTCF and cohesin. **Transcription factors (TFs)** bind short motifs (6–12 bp) in promoters and enhancers. Most disease-associated GWAS variants fall in non-coding regions, frequently in enhancers, which is why genomics models (Enformer, Borzoi, AlphaGenome-style models) try to predict regulatory activity from sequence.\n\n## Transcripts, isoforms, splicing\n\nOne gene usually produces **several transcripts (isoforms)** through alternative promoters, alternative splicing (exon skipping, alternative 5'/3' splice sites, intron retention, mutually exclusive exons), and alternative polyadenylation. Most multi-exon human genes are alternatively spliced. Databases pick a representative: **MANE Select** is the one transcript per protein-coding gene that NCBI RefSeq and Ensembl agreed to match exactly, and it is now the default for clinical variant reporting.\n\nIntrons nearly always start with **GT** and end with **AG** (GU…AG in RNA), with a **branch point** A and a **polypyrimidine tract** upstream of the 3' site. The **spliceosome** (snRNPs plus proteins) does the cutting. Variants at the ±1/±2 positions of an intron (canonical splice sites) usually break splicing. SpliceAI is the standard ML model for predicting this.\n\n## Codons and reading frames\n\nTranslation reads the mRNA in non-overlapping triplets. There are 64 codons: 61 encode the 20 amino acids and 3 are stops. The code is **degenerate**: most amino acids have several codons, and the third position is often \"wobble\". Therefore:\n\n- **Synonymous** (silent) variant: codon changes, amino acid doesn't.\n- **Missense**: amino acid changes.\n- **Nonsense**: creates a premature stop. Transcripts with a premature stop more than ~50 nt upstream of the last exon-exon junction are typically degraded by **nonsense-mediated decay (NMD)**.\n- **Frameshift**: insertion or deletion not divisible by 3, scrambling everything downstream.\n- **In-frame indel**: multiple of 3, adds/removes amino acids.\n\nAny DNA sequence has **six possible reading frames** (three per strand). An **open reading frame (ORF)** is a stretch from ATG to stop with no internal stop. The start codon usually sits in a **Kozak context** (gccRccATGG).\n\n## From protein to function\n\nRibosomes translate mRNA into a polypeptide N-terminus to C-terminus. Proteins destined for secretion or membranes carry an N-terminal **signal peptide** that is cleaved. **Post-translational modifications (PTMs)** then change activity, localization, or lifetime:\n\n- **Phosphorylation** on Ser, Thr, Tyr by kinases (removed by phosphatases): the main currency of signaling.\n- **Ubiquitination** on Lys by E3 ligases; K48-linked chains typically target proteins to the proteasome.\n- **Acetylation** and **methylation** on Lys (and Arg for methylation), especially histone tails (H3K27ac, H3K4me3).\n- **Glycosylation**: N-linked on Asn in the N-X-S/T motif (X ≠ Pro), O-linked on Ser/Thr.\n- **Disulfide bonds** between Cys residues, typical of extracellular proteins.\n\n## Not everything is protein-coding\n\nKnow these RNA classes: **mRNA**; **rRNA** and **tRNA** (translation machinery); **miRNA** (~22 nt, represses target mRNAs via 3' UTR); **lncRNA** (>200 nt, non-coding, e.g. XIST); **snRNA** (spliceosome). Pseudogenes are gene copies that lost function, which can confuse read mapping.\n\n## How you'll see this in a paper\n\n- \"We used the canonical/MANE Select transcript\": they picked one isoform per gene to define coordinates and protein sequence.\n- \"Variants were annotated with VEP as missense, synonymous, stop-gained, splice-donor…\": these are the consequence categories above.\n- \"Input: 196 kb of sequence centered on the TSS\" (Enformer): models need long context because enhancers are distal.\n- \"Reads were assigned to genes using GENCODE v44\": the annotation version decides which exons count.\n- Protein language models train on UniProt protein sequences, which are already translated and spliced; DNA models see introns, UTRs and intergenic sequence.\n",
+  "cards": [
+    {
+      "id": "u1-c01",
+      "front": "Roughly how large is the haploid human nuclear genome?",
+      "back": "~3.1 billion base pairs (3.1 Gb)",
+      "tags": [
+        "genome"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c02",
+      "front": "Approximately how many protein-coding genes do humans have?",
+      "back": "~20,000 (≈19–20k in GENCODE)",
+      "tags": [
+        "genome",
+        "genes"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c03",
+      "front": "Only about ___% of the human genome is protein-coding sequence.",
+      "back": "~1.5%",
+      "tags": [
+        "genome"
+      ],
+      "type": "cloze"
+    },
+    {
+      "id": "u1-c04",
+      "front": "Decode the cytogenetic band 17p13.1.",
+      "back": "Chromosome 17, short arm (p), region 1, band 3, sub-band 1",
+      "tags": [
+        "genome",
+        "coordinates"
+      ],
+      "type": "identify"
+    },
+    {
+      "id": "u1-c05",
+      "front": "p arm vs q arm?",
+      "back": "p = short arm; q = long arm",
+      "tags": [
+        "genome",
+        "coordinates"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c06",
+      "front": "What does a reference genome store regarding strands?",
+      "back": "Only the forward (+) strand; minus-strand genes are read as the reverse complement",
+      "tags": [
+        "genome",
+        "strand"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c07",
+      "front": "What is the TSS?",
+      "back": "Transcription start site: first nucleotide transcribed into RNA",
+      "tags": [
+        "gene-structure"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c08",
+      "front": "Order the parts of a mature protein-coding mRNA 5'→3'.",
+      "back": "5' cap – 5' UTR – CDS (ATG…stop) – 3' UTR – poly(A) tail",
+      "tags": [
+        "gene-structure",
+        "mRNA"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c09",
+      "front": "An exon contains both 5' UTR and the start codon. Is all of that exon 'coding'?",
+      "back": "No. Exons ≠ CDS; first/last exons often contain UTR sequence that is not translated",
+      "tags": [
+        "gene-structure"
+      ],
+      "type": "apply"
+    },
+    {
+      "id": "u1-c10",
+      "front": "What is a promoter?",
+      "back": "Region at/just upstream of the TSS where RNA Pol II and general TFs assemble to start transcription",
+      "tags": [
+        "regulation"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c11",
+      "front": "What is an enhancer and how does it act at a distance?",
+      "back": "A TF-bound regulatory element that increases transcription; acts via DNA looping, often 10s–100s of kb away, usually within a TAD",
+      "tags": [
+        "regulation"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c12",
+      "front": "What bounds TADs?",
+      "back": "CTCF binding sites plus cohesin (loop extrusion)",
+      "tags": [
+        "regulation",
+        "3D-genome"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c13",
+      "front": "What are CpG islands and where are they common?",
+      "back": "CG-dinucleotide-rich stretches, typically unmethylated, found at many human promoters",
+      "tags": [
+        "regulation"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c14",
+      "front": "Where do most GWAS hits fall?",
+      "back": "Non-coding regions, often regulatory elements like enhancers",
+      "tags": [
+        "regulation",
+        "genetics"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c15",
+      "front": "Introns almost always begin with ___ and end with ___ (DNA).",
+      "back": "GT … AG",
+      "tags": [
+        "splicing"
+      ],
+      "type": "cloze"
+    },
+    {
+      "id": "u1-c16",
+      "front": "What machine removes introns?",
+      "back": "The spliceosome (snRNPs + proteins)",
+      "tags": [
+        "splicing"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c17",
+      "front": "Name four types of alternative splicing.",
+      "back": "Exon skipping, alternative 5'/3' splice sites, intron retention, mutually exclusive exons",
+      "tags": [
+        "splicing",
+        "isoforms"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c18",
+      "front": "What is MANE Select?",
+      "back": "One representative transcript per protein-coding gene, matched exactly between RefSeq and Ensembl; default for clinical reporting",
+      "tags": [
+        "isoforms",
+        "annotation"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c19",
+      "front": "Gene vs transcript vs isoform?",
+      "back": "Gene = locus; transcript = one RNA product of it; isoform = an alternative transcript (or the protein it encodes)",
+      "tags": [
+        "isoforms"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c20",
+      "front": "Which ML model is the standard for predicting splice-altering variants?",
+      "back": "SpliceAI",
+      "tags": [
+        "splicing",
+        "ml"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c21",
+      "front": "How many codons are there and how many are stops?",
+      "back": "64 codons; 3 stops (TAA, TAG, TGA); 61 sense codons for 20 amino acids",
+      "tags": [
+        "genetic-code"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c22",
+      "front": "Standard start codon and its amino acid?",
+      "back": "ATG (AUG in RNA) → methionine",
+      "tags": [
+        "genetic-code"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c23",
+      "front": "Why are many third-position changes silent?",
+      "back": "Code is degenerate; third (wobble) position often doesn't change the amino acid",
+      "tags": [
+        "genetic-code"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c24",
+      "front": "How many reading frames does a double-stranded DNA sequence have?",
+      "back": "Six: three on each strand",
+      "tags": [
+        "genetic-code"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c25",
+      "front": "Define ORF.",
+      "back": "Open reading frame: stretch from a start codon to a stop codon with no internal stop, in one frame",
+      "tags": [
+        "genetic-code"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c26",
+      "front": "A 7-bp deletion lands in a CDS. Consequence class?",
+      "back": "Frameshift (not divisible by 3) → downstream sequence scrambled, usually premature stop",
+      "tags": [
+        "variants"
+      ],
+      "type": "apply"
+    },
+    {
+      "id": "u1-c27",
+      "front": "A 6-bp deletion in a CDS?",
+      "back": "In-frame deletion: removes two amino acids, rest of protein intact",
+      "tags": [
+        "variants"
+      ],
+      "type": "apply"
+    },
+    {
+      "id": "u1-c28",
+      "front": "Missense vs nonsense vs synonymous?",
+      "back": "Missense: amino acid changes; nonsense: premature stop; synonymous: codon changes but amino acid doesn't",
+      "tags": [
+        "variants"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c29",
+      "front": "What is NMD?",
+      "back": "Nonsense-mediated decay: degradation of mRNAs with a premature stop (typically >~50 nt upstream of the last exon junction)",
+      "tags": [
+        "variants",
+        "mRNA"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c30",
+      "front": "A premature stop codon is in the last exon. Is NMD likely?",
+      "back": "Usually not; truncated protein may be made (NMD needs a downstream exon junction)",
+      "tags": [
+        "variants"
+      ],
+      "type": "apply"
+    },
+    {
+      "id": "u1-c31",
+      "front": "What is the polyadenylation signal?",
+      "back": "AATAAA (AAUAAA) in the 3' UTR, directing cleavage and poly(A) addition",
+      "tags": [
+        "mRNA"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c32",
+      "front": "Where do microRNAs usually bind their targets?",
+      "back": "3' UTR of the target mRNA",
+      "tags": [
+        "regulation",
+        "RNA-classes"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c33",
+      "front": "What is a signal peptide?",
+      "back": "N-terminal sequence targeting a protein to the secretory pathway/membrane; usually cleaved off",
+      "tags": [
+        "PTM",
+        "proteins"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c34",
+      "front": "Which residues get phosphorylated?",
+      "back": "Ser, Thr, Tyr (S/T/Y)",
+      "tags": [
+        "PTM"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c35",
+      "front": "What does K48-linked polyubiquitin usually signal?",
+      "back": "Degradation by the proteasome",
+      "tags": [
+        "PTM"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c36",
+      "front": "N-linked glycosylation occurs on Asn in the motif N-X-___ (X ≠ Pro).",
+      "back": "S/T",
+      "tags": [
+        "PTM"
+      ],
+      "type": "cloze"
+    },
+    {
+      "id": "u1-c37",
+      "front": "Which amino acid forms disulfide bonds?",
+      "back": "Cysteine",
+      "tags": [
+        "PTM",
+        "proteins"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c38",
+      "front": "What is a lncRNA?",
+      "back": "Long non-coding RNA, >200 nt, not translated (e.g., XIST)",
+      "tags": [
+        "RNA-classes"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c39",
+      "front": "Why might pseudogenes confuse an analysis?",
+      "back": "They resemble the parent gene, so reads can mis-map between them",
+      "tags": [
+        "RNA-classes",
+        "data"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u1-c40",
+      "front": "Why does Enformer use ~200 kb of input sequence?",
+      "back": "Enhancers regulating a gene can lie far from its TSS; long context captures distal regulation",
+      "tags": [
+        "regulation",
+        "ml"
+      ],
+      "type": "apply"
+    },
+    {
+      "id": "u1-c41",
+      "front": "A protein language model and a DNA language model: which sees introns?",
+      "back": "The DNA model; PLMs train on translated protein sequences (introns already spliced out)",
+      "tags": [
+        "ml"
+      ],
+      "type": "apply"
+    },
+    {
+      "id": "u1-c42",
+      "front": "How big is the human mitochondrial genome?",
+      "back": "~16.6 kb circular (chrM), maternally inherited",
+      "tags": [
+        "genome"
+      ],
+      "type": "recall"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "u1-q01",
+      "question": "Which segment of a mature mRNA is translated?",
+      "choices": [
+        "Coding sequence (CDS)",
+        "3' UTR",
+        "Poly(A) tail",
+        "5' UTR"
+      ],
+      "answer_index": 0,
+      "explanation": "Only the CDS from start to stop codon is translated; UTRs are transcribed but not translated."
+    },
+    {
+      "id": "u1-q02",
+      "question": "A variant changes GAA (Glu) to GAG (Glu). This is:",
+      "choices": [
+        "Nonsense",
+        "Synonymous",
+        "Frameshift",
+        "Missense"
+      ],
+      "answer_index": 1,
+      "explanation": "Both codons encode glutamate, so the protein is unchanged."
+    },
+    {
+      "id": "u1-q03",
+      "question": "A gene lies on the minus strand. Its mRNA sequence relative to the reference genome is:",
+      "choices": [
+        "Identical to the reference",
+        "The complement without reversal",
+        "The reverse complement of the reference",
+        "Unrelated to the reference"
+      ],
+      "answer_index": 2,
+      "explanation": "Reference genomes store the plus strand; minus-strand transcripts are the reverse complement."
+    },
+    {
+      "id": "u1-q04",
+      "question": "Which feature most commonly lies tens of kilobases from the gene it regulates?",
+      "choices": [
+        "Enhancer",
+        "Promoter",
+        "Polyadenylation signal",
+        "Kozak sequence"
+      ],
+      "answer_index": 0,
+      "explanation": "Enhancers act through looping and can be far from the TSS."
+    },
+    {
+      "id": "u1-q05",
+      "question": "What does MANE Select provide?",
+      "choices": [
+        "A single matched RefSeq/Ensembl transcript per protein-coding gene",
+        "A database of splicing variants",
+        "The longest open reading frame",
+        "A list of all isoforms of each gene"
+      ],
+      "answer_index": 0,
+      "explanation": "MANE Select is one transcript per gene, identical in RefSeq and Ensembl."
+    },
+    {
+      "id": "u1-q06",
+      "question": "A variant at the +1 position of an intron (the G of GT) most likely:",
+      "choices": [
+        "Changes the polyadenylation site",
+        "Has no effect",
+        "Disrupts splicing",
+        "Creates a new start codon"
+      ],
+      "answer_index": 2,
+      "explanation": "The canonical GT donor dinucleotide is nearly invariant; changing it usually breaks splicing."
+    },
+    {
+      "id": "u1-q07",
+      "question": "Roughly what fraction of the human genome encodes protein?",
+      "choices": [
+        "~10%",
+        "~25%",
+        "~50%",
+        "~1.5%"
+      ],
+      "answer_index": 3,
+      "explanation": "About 1–2% is coding; about half the genome is repeat-derived."
+    },
+    {
+      "id": "u1-q08",
+      "question": "Which is NOT a stop codon?",
+      "choices": [
+        "TAG",
+        "TGG",
+        "TAA",
+        "TGA"
+      ],
+      "answer_index": 1,
+      "explanation": "TGG encodes tryptophan."
+    },
+    {
+      "id": "u1-q09",
+      "question": "A premature stop codon in exon 3 of a 10-exon gene most likely leads to:",
+      "choices": [
+        "Increased expression",
+        "Exon skipping only",
+        "A normal-length protein",
+        "Nonsense-mediated decay of the mRNA"
+      ],
+      "answer_index": 3,
+      "explanation": "Premature stops upstream of exon junctions trigger NMD."
+    },
+    {
+      "id": "u1-q10",
+      "question": "A frameshift is caused by an indel whose length is:",
+      "choices": [
+        "Not a multiple of 3",
+        "Exactly 3 bp",
+        "Greater than 100 bp",
+        "Any multiple of 3"
+      ],
+      "answer_index": 0,
+      "explanation": "Indels not divisible by 3 shift the reading frame."
+    },
+    {
+      "id": "u1-q11",
+      "question": "Which PTM most directly targets a protein to the proteasome?",
+      "choices": [
+        "Disulfide bond formation",
+        "Tyrosine phosphorylation",
+        "K48-linked polyubiquitination",
+        "N-linked glycosylation"
+      ],
+      "answer_index": 2,
+      "explanation": "K48-linked ubiquitin chains are the classical degradation signal."
+    },
+    {
+      "id": "u1-q12",
+      "question": "A gene's 'isoforms' arise mainly from:",
+      "choices": [
+        "Alternative promoters, splicing and polyadenylation",
+        "Post-translational modification only",
+        "Different chromosomes",
+        "Codon degeneracy"
+      ],
+      "answer_index": 0,
+      "explanation": "Alternative transcript processing creates multiple RNAs and proteins from one gene."
+    },
+    {
+      "id": "u1-q13",
+      "question": "What does 'q' denote in a cytoband like 9q34?",
+      "choices": [
+        "Long arm",
+        "Telomere",
+        "Centromere",
+        "Short arm"
+      ],
+      "answer_index": 0,
+      "explanation": "p is the short arm, q is the long arm."
+    }
+  ]
+}

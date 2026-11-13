@@ -1,0 +1,576 @@
+{
+  "unit": 7,
+  "slug": "ml-for-biology",
+  "title": "Reading ML-for-biology papers",
+  "summary": "How to decode the tasks, benchmarks (CASP, ProteinGym/DMS, ClinVar), tokenization choices for proteins, DNA and single cells, leakage-aware data splits, and evaluation metrics in ML-for-biology papers, plus a checklist for reading one quickly.",
+  "lesson": "## What problem is this paper solving?\n\nML-for-biology papers usually fall into a few task families. Identify which one, then ask: what is the input, what is the label, where did the data come from, and how was it split?\n\n- **Structure prediction**: sequence → 3D coordinates (AlphaFold2/3, ESMFold, RoseTTAFold). The benchmark is **CASP**, a biennial blind competition running since 1994 that scores unreleased structures with GDT_TS and lDDT. **CAMEO** runs continuously. AlphaFold2 dominated CASP14 (2020).\n- **Variant effect prediction (VEP)**: given a variant, predict its functional or clinical impact. Models include EVE, ESM-1v, AlphaMissense, GEMME, and SpliceAI (for splicing). Labels come from **DMS** experiments or **ClinVar**.\n- **Fitness prediction and protein design**: score or generate sequences with a desired property (stability, binding, activity). Supervised versions train on assay data; generative design uses ProteinMPNN (inverse folding), RFdiffusion, etc.\n- **Regulatory genomics**: DNA sequence → functional tracks (expression, accessibility, ChIP). Models include Basenji, Enformer, Borzoi, and DNA language models (DNABERT, Nucleotide Transformer, HyenaDNA, Caduceus, Evo).\n- **Single-cell foundation models**: pretrain on tens of millions of cells (Geneformer, scGPT, scFoundation, UCE), then fine-tune or probe for cell-type annotation, batch integration, perturbation response, or gene-network inference.\n- **Function annotation**: predict GO terms, EC numbers, localization (CAFA benchmark), or protein-protein interactions.\n\n## Deep mutational scanning and ProteinGym\n\n**Deep mutational scanning (DMS)** builds a library containing nearly every single amino acid substitution of a protein (saturation mutagenesis), applies selection for a function (growth, binding, fluorescence, stability), and counts variants by sequencing before and after. The result is a fitness score for thousands of variants per protein.\n\n**ProteinGym** (Notin et al., 2023) is the standard benchmark built on such data: **217 DMS substitution assays (~2.5M mutants)**, 66 indel assays, and clinical variant sets from ClinVar. Models are mostly evaluated **zero-shot**, without fitness labels, by checking whether model scores rank variants like the assay does. The headline metric is **Spearman's ρ** per assay, averaged across assays and grouped by function type (activity, binding, expression, organismal fitness, stability). Secondary metrics include AUC, MCC, NDCG and top-k recall. Average Spearman around 0.4–0.5 is typical of strong models, so the task is far from solved. Why Spearman? DMS scores come from different assays on different scales, often nonlinearly related to the underlying effect, so only rank order is comparable.\n\n**Zero-shot scoring with a PLM**: the **masked marginal** score is log p(mutant aa | context) − log p(wild-type aa | context) at the masked position. Negative values mean the model finds the mutant less plausible. Autoregressive models use the log-likelihood ratio of whole sequences. The implicit assumption is that **evolutionary plausibility ≈ fitness**.\n\n## What gets tokenized\n\n- **Proteins**: usually **one token per amino acid** (vocabulary of ~20 plus special tokens; ESM-2, ProGen, ESM3). ESM3 adds structure tokens and function tokens. Sequence lengths reach a few hundred to ~1,000 residues, and long proteins are cropped.\n- **DNA**: choices vary and matter.\n  - **Single nucleotide**: HyenaDNA, Caduceus, Evo, and the one-hot inputs of Enformer/Borzoi.\n  - **Overlapping k-mers**: DNABERT (3–6-mers). This leaks neighboring tokens under masking.\n  - **Non-overlapping 6-mers**: Nucleotide Transformer.\n  - **BPE**: DNABERT-2.\n  Key issues are context length (enhancers can be ~100 kb away), reverse-complement equivariance (both strands are equivalent; Caduceus builds this in), and how much of the genome is repetitive or non-functional.\n- **Genes as tokens (single-cell)**: a cell becomes a set or sequence of gene tokens. **Geneformer** uses **rank-value encoding**: genes are ordered by expression normalized against their corpus-wide level, and the expression values themselves are dropped. **scGPT** uses gene tokens plus **binned expression values**. The \"sequence\" has no natural order, the data are sparse, and batch effects are severe. Several papers have found that simple baselines (HVGs + PCA, linear models, or the mean expression of training perturbations) match or beat foundation models on some tasks. Read single-cell foundation model claims critically.\n\n## Data splits and leakage\n\nBiology data are full of near-duplicates: proteins have homologs, genomes have repeats and paralogs, and cells come from shared donors and batches. **Random splits overestimate generalization.**\n\n- **Sequence identity clustering**: cluster all sequences with **MMseqs2** (`easy-cluster --min-seq-id 0.3`) or **CD-HIT** (CD-HIT's protein threshold bottoms out at 40%), then assign whole clusters to train or test. Common thresholds are 30%, 40%, 50% and 90% identity. Stricter is harder and more honest.\n- **Fold/superfamily splits** (CATH/SCOP) for structure tasks; homologs can share a fold at <30% identity.\n- **Temporal splits**: train on PDB structures released before a cutoff date and test on later ones (CASP-style). Pretraining on UniRef/PDB can still include test proteins' homologs.\n- **Pretraining contamination**: a PLM pretrained on UniRef has seen the wild-type sequences of DMS proteins. That is usually accepted for zero-shot benchmarks, but it matters for claims of novelty.\n- **Genomics**: hold out **entire chromosomes** (e.g., chr8/chr9 test sets in Basenji/Enformer). Even then, paralogous regions can leak.\n- **Variant effect circularity**: ClinVar labels are partly informed by computational predictors, and well-studied genes are over-represented. Training on some variants of a gene and testing on others lets models learn per-gene priors (type 1/type 2 circularity, Grimm et al. 2015). Evaluate per gene, or hold out whole genes.\n- **DMS**: random splits within one protein reveal positional effects. Use **position-based** or contiguous splits (ProteinGym's supervised track uses random, modulo and contiguous folds).\n- **Single-cell**: split by donor, study or batch, not by cell. For perturbation prediction, hold out perturbations or cell types entirely.\n- **PPI and drug-target**: hold out proteins, not pairs. A model can memorize that one partner is \"sticky\".\n\n## Metrics glossary\n\n- **Spearman ρ**: rank correlation. Standard for DMS and fitness.\n- **AUROC / AUPRC**: classification (pathogenic vs benign). Use AUPRC when positives are rare.\n- **Pearson r on log-counts**: genomics track prediction (Enformer reports correlation across tracks and genes).\n- **lDDT / GDT_TS / TM-score / RMSD**: structure accuracy. DockQ for interfaces.\n- **Precision@L** for contact prediction: precision of the top L predicted contacts, where L is sequence length. Long-range contacts (|i−j| ≥ 24) are the hard ones.\n- **Perplexity**: language-model fit. Lower is better, but it is only loosely correlated with downstream usefulness.\n\n## How to read one of these papers fast\n\n1. Task and labels: DMS, ClinVar, structure, tracks, or cell types?\n2. Pretraining corpus and its size (UniRef50 vs UniRef90, CELLxGENE, genomes of how many species).\n3. Tokenization and context length.\n4. Split strategy. Does it control for homology, chromosome, donor or gene?\n5. Baselines. Is there a strong simple baseline (BLOSUM, conservation, mean prediction, PCA)?\n6. Metric choice and aggregation (per-assay average vs pooled).\n\n## How you'll see this in a paper\n\n- \"Average Spearman across 217 ProteinGym DMS assays\": zero-shot fitness benchmark.\n- \"Clustered at 30% sequence identity with MMseqs2 to prevent leakage.\"\n- \"We evaluate on held-out chromosomes 8 and 9.\"\n- \"Rank-value encoding of the top 2,048 genes\": Geneformer-style tokenization.\n- \"ipTM > 0.8 used as a filter for designed binders\": structure confidence as a design oracle.\n",
+  "cards": [
+    {
+      "id": "u7-c01",
+      "front": "What is CASP?",
+      "back": "Critical Assessment of protein Structure Prediction: biennial blind benchmark since 1994",
+      "tags": [
+        "benchmarks",
+        "structure"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c02",
+      "front": "Main CASP accuracy metrics?",
+      "back": "GDT_TS (and lDDT; TM-score; interface metrics for complexes)",
+      "tags": [
+        "benchmarks",
+        "metrics"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c03",
+      "front": "What is deep mutational scanning?",
+      "back": "Saturation mutagenesis library + functional selection + sequencing → fitness score per variant",
+      "tags": [
+        "DMS"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c04",
+      "front": "What is ProteinGym?",
+      "back": "Benchmark of DMS assays (217 substitution, 66 indel) plus clinical variants for fitness/variant-effect prediction",
+      "tags": [
+        "benchmarks",
+        "DMS"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c05",
+      "front": "ProteinGym headline metric?",
+      "back": "Spearman correlation per assay, averaged (grouped by function type)",
+      "tags": [
+        "benchmarks",
+        "metrics"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c06",
+      "front": "Why Spearman rather than Pearson for DMS?",
+      "back": "Assays use different, often nonlinear scales; only rank order is comparable",
+      "tags": [
+        "metrics"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c07",
+      "front": "Zero-shot variant effect prediction means…?",
+      "back": "Scoring variants without training on any fitness labels (e.g., PLM likelihoods)",
+      "tags": [
+        "VEP"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c08",
+      "front": "Masked marginal score?",
+      "back": "log p(mut aa) − log p(wt aa) at the masked position",
+      "tags": [
+        "VEP",
+        "PLM"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c09",
+      "front": "Core assumption of zero-shot PLM fitness scoring?",
+      "back": "Evolutionary plausibility (likelihood) correlates with fitness",
+      "tags": [
+        "VEP"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c10",
+      "front": "Name three variant effect predictors.",
+      "back": "EVE, ESM-1v, AlphaMissense (also GEMME, SIFT, PolyPhen-2, CADD)",
+      "tags": [
+        "VEP"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c11",
+      "front": "Two main label sources for variant effect benchmarks?",
+      "back": "DMS fitness scores and ClinVar clinical labels",
+      "tags": [
+        "VEP"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c12",
+      "front": "Typical protein LM tokenization?",
+      "back": "One token per amino acid (~20 + special tokens)",
+      "tags": [
+        "tokenization"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c13",
+      "front": "DNABERT tokenization?",
+      "back": "Overlapping k-mers (k = 3–6)",
+      "tags": [
+        "tokenization",
+        "DNA"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c14",
+      "front": "Nucleotide Transformer tokenization?",
+      "back": "Non-overlapping 6-mers",
+      "tags": [
+        "tokenization",
+        "DNA"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c15",
+      "front": "DNABERT-2 tokenization?",
+      "back": "Byte-pair encoding (BPE)",
+      "tags": [
+        "tokenization",
+        "DNA"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c16",
+      "front": "Name DNA models using single-nucleotide resolution.",
+      "back": "HyenaDNA, Caduceus, Evo (and one-hot Enformer/Borzoi)",
+      "tags": [
+        "tokenization",
+        "DNA"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c17",
+      "front": "Problem with masking overlapping k-mers?",
+      "back": "Neighboring tokens share bases, so the masked token leaks from context",
+      "tags": [
+        "tokenization",
+        "DNA"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c18",
+      "front": "What is reverse-complement equivariance and why care?",
+      "back": "Both DNA strands carry the same information; models should give consistent predictions for a sequence and its reverse complement",
+      "tags": [
+        "DNA"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c19",
+      "front": "Geneformer input encoding?",
+      "back": "Rank-value encoding: genes ordered by expression normalized to corpus-wide levels; values discarded",
+      "tags": [
+        "tokenization",
+        "single-cell"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c20",
+      "front": "scGPT input encoding?",
+      "back": "Gene tokens plus binned expression value tokens",
+      "tags": [
+        "tokenization",
+        "single-cell"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c21",
+      "front": "Common critique of single-cell foundation models?",
+      "back": "Simple baselines (HVG+PCA, linear/mean models) often match them on several tasks",
+      "tags": [
+        "single-cell"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c22",
+      "front": "Why do random splits overestimate performance on proteins?",
+      "back": "Homologous near-duplicates land in both train and test",
+      "tags": [
+        "splits"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c23",
+      "front": "Tools for sequence identity clustering?",
+      "back": "MMseqs2 (easy-cluster/linclust), CD-HIT",
+      "tags": [
+        "splits",
+        "tools"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c24",
+      "front": "Lowest protein identity threshold supported by CD-HIT?",
+      "back": "~40% (use MMseqs2 or PSI-CD-HIT for lower)",
+      "tags": [
+        "splits",
+        "tools"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c25",
+      "front": "Common identity thresholds for train/test separation?",
+      "back": "30%, 40%, 50%, 90%; lower = stricter",
+      "tags": [
+        "splits"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c26",
+      "front": "Fold-level split?",
+      "back": "Hold out whole CATH/SCOP folds or superfamilies, since homologs can share folds below 30% identity",
+      "tags": [
+        "splits"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c27",
+      "front": "Temporal split in structure prediction?",
+      "back": "Train on PDB entries before a date cutoff, test on later ones",
+      "tags": [
+        "splits"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c28",
+      "front": "Standard genomics split?",
+      "back": "Hold out entire chromosomes (e.g., chr8/9 test)",
+      "tags": [
+        "splits",
+        "DNA"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c29",
+      "front": "What is circularity in variant effect evaluation?",
+      "back": "Labels or gene-level priors shared between training and test (e.g., ClinVar labels influenced by predictors; same genes in train/test)",
+      "tags": [
+        "splits",
+        "VEP"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c30",
+      "front": "How should single-cell data be split?",
+      "back": "By donor, study or batch (not by cell); hold out perturbations for perturbation tasks",
+      "tags": [
+        "splits",
+        "single-cell"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c31",
+      "front": "How should PPI data be split?",
+      "back": "Hold out proteins (not just pairs) to avoid memorizing promiscuous partners",
+      "tags": [
+        "splits"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c32",
+      "front": "Within-protein DMS split that avoids position leakage?",
+      "back": "Position-based (modulo) or contiguous-region splits",
+      "tags": [
+        "splits",
+        "DMS"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c33",
+      "front": "When prefer AUPRC over AUROC?",
+      "back": "When positives are rare (class imbalance)",
+      "tags": [
+        "metrics"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c34",
+      "front": "Precision@L for contact prediction?",
+      "back": "Precision of top-L predicted contacts (L = sequence length), usually long-range (|i−j|≥24)",
+      "tags": [
+        "metrics"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c35",
+      "front": "Perplexity in PLM papers?",
+      "back": "exp(mean negative log-likelihood); lower = better fit, only loosely tied to downstream utility",
+      "tags": [
+        "metrics"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c36",
+      "front": "What is inverse folding?",
+      "back": "Predicting a sequence that folds into a given backbone (e.g., ProteinMPNN)",
+      "tags": [
+        "design"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c37",
+      "front": "What is CAFA?",
+      "back": "Critical Assessment of Functional Annotation: protein function (GO) prediction benchmark",
+      "tags": [
+        "benchmarks"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c38",
+      "front": "What does Enformer predict?",
+      "back": "Thousands of functional genomic tracks (CAGE, DNase, ChIP) from ~200 kb of DNA sequence",
+      "tags": [
+        "genomics-models"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u7-c39",
+      "front": "A paper splits a PLM fine-tuning set randomly and reports 0.95 accuracy. First concern?",
+      "back": "Homology leakage: re-split by sequence identity clusters",
+      "tags": [
+        "splits"
+      ],
+      "type": "apply"
+    },
+    {
+      "id": "u7-c40",
+      "front": "A VEP trained on ClinVar variants from BRCA1 is tested on other BRCA1 ClinVar variants. Issue?",
+      "back": "Gene-level circularity: the model can learn a per-gene pathogenicity prior",
+      "tags": [
+        "splits",
+        "VEP"
+      ],
+      "type": "apply"
+    },
+    {
+      "id": "u7-c41",
+      "front": "Model A has higher perplexity than B but better ProteinGym Spearman. Contradiction?",
+      "back": "No: perplexity and fitness correlation are only loosely related",
+      "tags": [
+        "metrics"
+      ],
+      "type": "apply"
+    },
+    {
+      "id": "u7-c42",
+      "front": "A single-cell perturbation model beats a 'no change' baseline. Is that enough?",
+      "back": "No: also compare against the mean-of-training-perturbations and linear baselines",
+      "tags": [
+        "single-cell"
+      ],
+      "type": "apply"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "u7-q01",
+      "question": "The primary ProteinGym DMS metric is:",
+      "choices": [
+        "AUROC",
+        "Spearman's rank correlation",
+        "RMSD",
+        "Perplexity"
+      ],
+      "answer_index": 1,
+      "explanation": "Rank correlation between model scores and assay fitness, averaged across assays."
+    },
+    {
+      "id": "u7-q02",
+      "question": "Why are protein datasets clustered by sequence identity before splitting?",
+      "choices": [
+        "To balance amino acid composition",
+        "To prevent homologous sequences from appearing in both train and test",
+        "To remove disordered regions",
+        "To speed up training"
+      ],
+      "answer_index": 1,
+      "explanation": "Homology leakage inflates test performance."
+    },
+    {
+      "id": "u7-q03",
+      "question": "Which DNA model uses non-overlapping 6-mer tokens?",
+      "choices": [
+        "HyenaDNA",
+        "Enformer",
+        "DNABERT",
+        "Nucleotide Transformer"
+      ],
+      "answer_index": 3,
+      "explanation": "Nucleotide Transformer uses 6-mers; DNABERT uses overlapping k-mers; HyenaDNA uses single nucleotides."
+    },
+    {
+      "id": "u7-q04",
+      "question": "Geneformer represents a cell as:",
+      "choices": [
+        "Genes ranked by normalized expression",
+        "A one-hot DNA sequence",
+        "A protein sequence",
+        "A k-mer count vector"
+      ],
+      "answer_index": 0,
+      "explanation": "Rank-value encoding orders genes by expression relative to corpus-wide levels."
+    },
+    {
+      "id": "u7-q05",
+      "question": "A masked-marginal PLM score of −4 for a mutation means:",
+      "choices": [
+        "The mutation is synonymous",
+        "The mutant is much less likely than wild type",
+        "The mutant is more likely than wild type",
+        "The position is disordered"
+      ],
+      "answer_index": 1,
+      "explanation": "log p(mut) − log p(wt) < 0 means the model disfavors the mutant."
+    },
+    {
+      "id": "u7-q06",
+      "question": "Standard split strategy in sequence-to-expression genomics models:",
+      "choices": [
+        "Held-out chromosomes",
+        "Held-out reads",
+        "Held-out nucleotides",
+        "Random 1-kb windows"
+      ],
+      "answer_index": 0,
+      "explanation": "Entire chromosomes are held out to reduce leakage between nearby regions."
+    },
+    {
+      "id": "u7-q07",
+      "question": "CASP is best described as:",
+      "choices": [
+        "A biennial blind structure prediction assessment",
+        "A continuous benchmark of DMS assays",
+        "A single-cell atlas",
+        "A clinical variant database"
+      ],
+      "answer_index": 0,
+      "explanation": "Since 1994, held every two years with unreleased structures."
+    },
+    {
+      "id": "u7-q08",
+      "question": "Which tool is commonly used to cluster sequences at 30% identity?",
+      "choices": [
+        "MMseqs2",
+        "CD-HIT (default settings)",
+        "STAR",
+        "BLAST2GO"
+      ],
+      "answer_index": 0,
+      "explanation": "MMseqs2 handles low thresholds; CD-HIT's protein mode bottoms out around 40%."
+    },
+    {
+      "id": "u7-q09",
+      "question": "For a pathogenic vs benign classifier where only 2% of variants are pathogenic, the more informative metric is:",
+      "choices": [
+        "AUPRC",
+        "Accuracy",
+        "Perplexity",
+        "RMSD"
+      ],
+      "answer_index": 0,
+      "explanation": "AUPRC is sensitive to performance on the rare positive class."
+    },
+    {
+      "id": "u7-q10",
+      "question": "Which split best tests generalization of a single-cell model to new people?",
+      "choices": [
+        "Held-out UMIs",
+        "Random cells",
+        "Held-out donors",
+        "Held-out genes"
+      ],
+      "answer_index": 2,
+      "explanation": "Cells from the same donor share genotype and batch effects."
+    },
+    {
+      "id": "u7-q11",
+      "question": "Overlapping k-mer tokenization causes a problem in masked language modeling because:",
+      "choices": [
+        "It ignores the reverse strand",
+        "Vocabulary is too small",
+        "Masked tokens can be inferred from overlapping neighbors",
+        "It requires MSAs"
+      ],
+      "answer_index": 2,
+      "explanation": "Neighbors share k−1 bases with the masked token."
+    },
+    {
+      "id": "u7-q12",
+      "question": "A deep mutational scan measures:",
+      "choices": [
+        "Chromatin accessibility",
+        "Protein structure at atomic resolution",
+        "Gene expression across tissues",
+        "Functional effects of many variants of one protein in parallel"
+      ],
+      "answer_index": 3,
+      "explanation": "A variant library is selected for function and counted by sequencing."
+    },
+    {
+      "id": "u7-q13",
+      "question": "Which is an inverse folding model?",
+      "choices": [
+        "Enformer",
+        "Geneformer",
+        "ProteinMPNN",
+        "SpliceAI"
+      ],
+      "answer_index": 2,
+      "explanation": "ProteinMPNN designs sequences for a given backbone."
+    },
+    {
+      "id": "u7-q14",
+      "question": "A 'temporal split' for a structure model means:",
+      "choices": [
+        "Testing on structures released after the training cutoff date",
+        "Splitting by resolution",
+        "Splitting by protein length",
+        "Splitting by organism"
+      ],
+      "answer_index": 0,
+      "explanation": "Mimics CASP's prospective evaluation."
+    }
+  ]
+}

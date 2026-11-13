@@ -1,0 +1,594 @@
+{
+  "unit": 3,
+  "slug": "databases",
+  "title": "Databases and where to find things",
+  "summary": "A map from biological questions to the canonical database that answers them: genes, proteins and structures, expression, variants and disease, pathways and interactions, and raw data archives. Includes the accession formats you'll see in data-availability statements.",
+  "lesson": "## The mental model: one question, one database\n\nMost biological lookups answer one of a few questions: *what is this gene?*, *what does its protein look like?*, *where and when is it expressed?*, *what variants exist and do they matter?*, *what does it interact with?*, or *where is the raw data?* Each has a canonical resource. Learn the mapping and you'll always know where to look, and what a paper means by \"we downloaded X from Y\".\n\n## Genes and genomes\n\n- **NCBI Gene**: one page per gene with a numeric ID (TP53 = 7157), a summary, aliases, RefSeq transcripts, and links out. It is a good first stop for *\"what is this gene?\"*.\n- **Ensembl** (EMBL-EBI): genome annotation for hundreds of vertebrates. It holds gene, transcript and protein models (ENSG/ENST/ENSP), comparative genomics (orthologs, paralogs), the **VEP** variant annotator, and **BioMart** for bulk ID conversion. **GENCODE** is the human/mouse annotation set behind Ensembl's human and mouse gene models.\n- **UCSC Genome Browser**: a visual genome browser built on assembly coordinates (hg19, hg38). Its tracks stack genes, conservation, ENCODE regulatory data, repeats, and variants at any locus. Tools include the **Table Browser** for downloads and **liftOver** for converting coordinates between assemblies. Use it to answer *\"what's at chr7:140,753,336?\"*.\n- **HGNC**: the authority on approved human gene symbols, previous symbols and aliases.\n\n## Proteins and structures\n\n- **UniProt** (UniProtKB): the reference for protein sequences and function. Each entry has a curated function summary, domains, PTM sites, isoforms, disease variants, and cross-references. Swiss-Prot entries are reviewed; TrEMBL entries are unreviewed. **UniRef** clusters (UniRef50/90/100) are standard pretraining sets for protein language models.\n- **PDB** (RCSB PDB in the US, PDBe in Europe, PDBj in Japan; together wwPDB): experimentally determined 3D structures from X-ray crystallography, cryo-EM and NMR. It holds roughly a couple of hundred thousand entries, each with a 4-character ID. It answers *\"is there an experimental structure, at what resolution, bound to what?\"*.\n- **AlphaFold DB** (DeepMind + EMBL-EBI): predicted structures for more than 200 million UniProt sequences, colored by pLDDT, with PAE plots. IDs look like AF-P04637-F1.\n- **InterPro / Pfam**: protein families and domains. Pfam (PF00069 = protein kinase domain) is now served through the InterPro website. These answer *\"what domains does this protein have?\"*.\n\n## Expression\n\n- **GTEx** (Genotype-Tissue Expression): bulk RNA-seq across ~50 tissues from roughly 1,000 post-mortem donors, plus **eQTLs** (variants associated with expression levels). It answers *\"in which normal tissues is this gene expressed, and which variants change its expression?\"*.\n- **Human Protein Atlas**: protein and RNA expression by tissue, cell type and subcellular location, with antibody staining images.\n- **CELLxGENE** (CZI): curated single-cell datasets and the Census, tens of millions of cells in a standard AnnData schema. It is a common pretraining source for single-cell foundation models.\n- **GEO** (Gene Expression Omnibus, NCBI): the archive for processed functional-genomics data such as expression matrices and peak files. Accessions: **GSE** (series/study), **GSM** (sample), **GPL** (platform), GDS (curated dataset).\n- **SRA** (Sequence Read Archive): raw sequencing reads. Accessions: **SRP** study, **SRX** experiment, **SRS** sample, **SRR** run (the files you download). ENA (ERR…) and DDBJ (DRR…) mirror it as part of INSDC. Related IDs: **BioProject** (PRJNA…) and **BioSample** (SAMN…).\n\n## Variants and disease\n\n- **dbSNP**: catalog of short variants and their rsIDs.\n- **gnomAD** (Genome Aggregation Database): allele frequencies from hundreds of thousands of exomes and genomes (v4 ≈ 800k individuals), broken down by genetic ancestry. It also provides **gene constraint** scores: pLI and **LOEUF** (loss-of-function observed/expected upper bound fraction; low = intolerant of loss of function). It answers *\"how common is this variant in the general population?\"*. A variant seen in many healthy people is unlikely to cause severe dominant disease.\n- **ClinVar**: submitted clinical interpretations. Labels are pathogenic, likely pathogenic, **VUS** (uncertain significance), likely benign, benign, with a review-status star rating. Accessions: VCV (variant), RCV (variant-condition), SCV (submission). It is the standard benchmark source for variant-effect predictors.\n- **OMIM**: curated catalog of Mendelian genes and phenotypes with 6-digit MIM numbers. Prefix symbols: `*` gene, `#` phenotype with known molecular basis, `%` phenotype with unknown basis, `+` gene and phenotype combined.\n- **COSMIC**, **cBioPortal**, **TCGA**: somatic mutations in cancer and multi-omic tumor cohorts.\n- **GWAS Catalog**: published trait-variant associations.\n\n## Function, pathways and interactions\n\n- **Gene Ontology (GO)**: a controlled vocabulary in three aspects: **Molecular Function**, **Biological Process**, **Cellular Component**. Terms are GO:0006915 (\"apoptotic process\") style, arranged in a DAG. Annotations carry evidence codes; IEA marks automatic electronic annotation, the weakest kind. GO is used in **enrichment analysis**.\n- **KEGG**: pathway maps (hsa04010 = human MAPK signaling) plus metabolism; gene IDs look like hsa:7157.\n- **Reactome**: open, curated, hierarchical pathway database (R-HSA-…). Often used with KEGG and MSigDB for gene-set enrichment.\n- **STRING**: protein-protein *association* networks that combine experiments, co-expression, text mining and genomic context into a combined confidence score (0–1, shown as 0–1000 in files). Not every edge is a physical interaction.\n- **BioGRID / IntAct**: curated experimental interactions.\n\n## Perturbation and chemistry\n\n- **DepMap**: CRISPR knockout screens across ~1,000+ cancer cell lines. Gene effect (Chronos) scores show which genes cells depend on.\n- **ChEMBL**: bioactive molecules and assay data (CHEMBL25 = aspirin). **PubChem**: chemical structures.\n- **ENCODE**: functional-genomics experiments (ChIP-seq, ATAC/DNase, RNA-seq) and candidate cis-regulatory elements (cCREs). It is a main training source for sequence-to-function models.\n\n## How you'll see this in a paper\n\n- \"Data are available at GEO under accession GSE123456\": processed matrices are there, and the raw FASTQs are linked through SRA (SRR runs).\n- \"Variants with gnomAD AF > 0.01 were treated as benign\": a frequency filter.\n- \"Evaluated on ClinVar missense variants (≥1 star) not in the training set\": standard variant-effect benchmarking. Check for circularity.\n- \"GO enrichment (FDR < 0.05) revealed…\": gene-set over-representation, usually against a background list.\n- \"Structures were taken from AlphaFold DB where no PDB entry existed.\"\n",
+  "cards": [
+    {
+      "id": "u3-c01",
+      "front": "NCBI Gene: what question does it answer?",
+      "back": "'What is this gene?' Summary, aliases, numeric Gene ID, RefSeq links",
+      "tags": [
+        "NCBI"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c02",
+      "front": "Ensembl: main offerings?",
+      "back": "Genome annotation (ENSG/ENST/ENSP), orthologs/paralogs, VEP, BioMart",
+      "tags": [
+        "Ensembl"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c03",
+      "front": "What is GENCODE?",
+      "back": "The human/mouse gene annotation set underlying Ensembl gene models",
+      "tags": [
+        "Ensembl",
+        "annotation"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c04",
+      "front": "What is VEP?",
+      "back": "Ensembl's Variant Effect Predictor: annotates variant consequences (missense, splice, etc.)",
+      "tags": [
+        "Ensembl",
+        "variants"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c05",
+      "front": "What is BioMart used for?",
+      "back": "Bulk queries and ID conversion (e.g., ENSG → HGNC symbol)",
+      "tags": [
+        "Ensembl"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c06",
+      "front": "UCSC Genome Browser: what question does it answer?",
+      "back": "'What's at this locus?' Coordinate-based tracks: genes, conservation, regulation, variants",
+      "tags": [
+        "UCSC"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c07",
+      "front": "What does liftOver do?",
+      "back": "Converts coordinates between genome assemblies (e.g., hg19 → hg38)",
+      "tags": [
+        "UCSC",
+        "assemblies"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c08",
+      "front": "UniProt: what question does it answer?",
+      "back": "'What does this protein do?' Sequence, function, domains, PTMs, isoforms, variants",
+      "tags": [
+        "UniProt"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c09",
+      "front": "What are UniRef50/90/100?",
+      "back": "UniProt sequences clustered at 50/90/100% identity; common PLM training sets",
+      "tags": [
+        "UniProt",
+        "ml"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c10",
+      "front": "PDB: what does it contain?",
+      "back": "Experimentally determined 3D structures (X-ray, cryo-EM, NMR)",
+      "tags": [
+        "PDB"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c11",
+      "front": "What is wwPDB?",
+      "back": "Worldwide PDB consortium: RCSB PDB (US), PDBe (EU), PDBj (Japan), and others",
+      "tags": [
+        "PDB"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c12",
+      "front": "AlphaFold DB: what does it contain?",
+      "back": "Predicted structures for >200M UniProt sequences, with pLDDT and PAE",
+      "tags": [
+        "AlphaFold"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c13",
+      "front": "Pfam and InterPro: what question?",
+      "back": "'What domains/families is this protein in?' Pfam is now accessed via InterPro",
+      "tags": [
+        "domains"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c14",
+      "front": "GTEx: what question does it answer?",
+      "back": "'Where is this gene expressed in normal tissues, and which variants affect expression (eQTLs)?'",
+      "tags": [
+        "GTEx",
+        "expression"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c15",
+      "front": "What is an eQTL?",
+      "back": "A genetic variant associated with expression level of a gene",
+      "tags": [
+        "GTEx",
+        "genetics"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c16",
+      "front": "CELLxGENE: what is it?",
+      "back": "CZI's curated single-cell data portal and Census; standard schema, common scFM pretraining source",
+      "tags": [
+        "single-cell"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c17",
+      "front": "GEO vs SRA?",
+      "back": "GEO: processed functional-genomics data and metadata; SRA: raw sequencing reads",
+      "tags": [
+        "GEO",
+        "SRA"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c18",
+      "front": "GSE / GSM / GPL",
+      "back": "GEO series (study) / sample / platform",
+      "tags": [
+        "GEO",
+        "identifiers"
+      ],
+      "type": "identify"
+    },
+    {
+      "id": "u3-c19",
+      "front": "SRP / SRX / SRS / SRR",
+      "back": "SRA study / experiment / sample / run (downloadable read files)",
+      "tags": [
+        "SRA",
+        "identifiers"
+      ],
+      "type": "identify"
+    },
+    {
+      "id": "u3-c20",
+      "front": "ERR1234567 or DRR…",
+      "back": "Run accessions from ENA (E) or DDBJ (D), INSDC mirrors of SRA",
+      "tags": [
+        "SRA",
+        "identifiers"
+      ],
+      "type": "identify"
+    },
+    {
+      "id": "u3-c21",
+      "front": "PRJNA123456 / SAMN01234567",
+      "back": "NCBI BioProject / BioSample accessions",
+      "tags": [
+        "identifiers"
+      ],
+      "type": "identify"
+    },
+    {
+      "id": "u3-c22",
+      "front": "gnomAD: what question does it answer?",
+      "back": "'How common is this variant in the general population (by ancestry)?' Also gene constraint",
+      "tags": [
+        "gnomAD",
+        "variants"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c23",
+      "front": "What does a low LOEUF mean?",
+      "back": "Gene has fewer loss-of-function variants than expected → intolerant to LoF (constrained)",
+      "tags": [
+        "gnomAD"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c24",
+      "front": "A candidate 'disease' variant has allele frequency 5% in gnomAD. Implication for a rare severe dominant disorder?",
+      "back": "Very unlikely causal; too common in the general population",
+      "tags": [
+        "gnomAD",
+        "variants"
+      ],
+      "type": "apply"
+    },
+    {
+      "id": "u3-c25",
+      "front": "ClinVar: what does it hold?",
+      "back": "Submitted clinical interpretations of variants (P/LP/VUS/LB/B) with review stars",
+      "tags": [
+        "ClinVar"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c26",
+      "front": "VCV / RCV / SCV",
+      "back": "ClinVar variant / variant-condition record / individual submission",
+      "tags": [
+        "ClinVar",
+        "identifiers"
+      ],
+      "type": "identify"
+    },
+    {
+      "id": "u3-c27",
+      "front": "What is a VUS?",
+      "back": "Variant of uncertain significance",
+      "tags": [
+        "ClinVar"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c28",
+      "front": "OMIM: what is it?",
+      "back": "Curated catalog of Mendelian genes and phenotypes (6-digit MIM numbers)",
+      "tags": [
+        "OMIM"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c29",
+      "front": "OMIM prefix # vs *",
+      "back": "# = phenotype with known molecular basis; * = gene",
+      "tags": [
+        "OMIM"
+      ],
+      "type": "identify"
+    },
+    {
+      "id": "u3-c30",
+      "front": "dbSNP?",
+      "back": "NCBI's catalog of short variants; issues rsIDs",
+      "tags": [
+        "variants"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c31",
+      "front": "COSMIC / cBioPortal / TCGA?",
+      "back": "Cancer somatic mutation catalog / tumor cohort explorer / The Cancer Genome Atlas multi-omic data",
+      "tags": [
+        "cancer"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c32",
+      "front": "Three aspects of GO?",
+      "back": "Molecular Function, Biological Process, Cellular Component",
+      "tags": [
+        "GO"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c33",
+      "front": "GO:0006915",
+      "back": "Gene Ontology term 'apoptotic process'",
+      "tags": [
+        "GO",
+        "identifiers"
+      ],
+      "type": "identify"
+    },
+    {
+      "id": "u3-c34",
+      "front": "GO evidence code IEA?",
+      "back": "Inferred from Electronic Annotation: automatic, unreviewed (weakest)",
+      "tags": [
+        "GO"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c35",
+      "front": "hsa04010",
+      "back": "KEGG pathway: human MAPK signaling",
+      "tags": [
+        "KEGG",
+        "identifiers"
+      ],
+      "type": "identify"
+    },
+    {
+      "id": "u3-c36",
+      "front": "hsa:7157",
+      "back": "KEGG gene ID for human TP53 (uses NCBI Gene ID)",
+      "tags": [
+        "KEGG",
+        "identifiers"
+      ],
+      "type": "identify"
+    },
+    {
+      "id": "u3-c37",
+      "front": "R-HSA-109581",
+      "back": "Reactome pathway ID (human): Apoptosis; R-HSA- prefix",
+      "tags": [
+        "Reactome",
+        "identifiers"
+      ],
+      "type": "identify"
+    },
+    {
+      "id": "u3-c38",
+      "front": "STRING: what do edges represent?",
+      "back": "Functional associations (experiments, co-expression, text mining, etc.), with a combined confidence score, not necessarily physical binding",
+      "tags": [
+        "STRING"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c39",
+      "front": "DepMap: what question?",
+      "back": "'Which genes do cancer cell lines depend on?' Genome-wide CRISPR screen gene effect scores",
+      "tags": [
+        "DepMap"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c40",
+      "front": "ENCODE?",
+      "back": "Consortium functional-genomics data (ChIP-seq, DNase/ATAC, RNA-seq) and candidate cis-regulatory elements",
+      "tags": [
+        "ENCODE"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u3-c41",
+      "front": "CHEMBL25",
+      "back": "ChEMBL compound ID (aspirin)",
+      "tags": [
+        "ChEMBL",
+        "identifiers"
+      ],
+      "type": "identify"
+    },
+    {
+      "id": "u3-c42",
+      "front": "You need raw FASTQs for a paper that lists GSE123456. Path?",
+      "back": "GEO series → linked SRA project → download SRR runs (e.g., with SRA Toolkit)",
+      "tags": [
+        "GEO",
+        "SRA"
+      ],
+      "type": "apply"
+    },
+    {
+      "id": "u3-c43",
+      "front": "You want to know if a protein has an experimental structure bound to a drug. Where?",
+      "back": "PDB (RCSB/PDBe), searched by UniProt accession",
+      "tags": [
+        "PDB"
+      ],
+      "type": "apply"
+    },
+    {
+      "id": "u3-c44",
+      "front": "You want which tissues express a gene at the protein level, with images.",
+      "back": "Human Protein Atlas",
+      "tags": [
+        "expression"
+      ],
+      "type": "apply"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "u3-q01",
+      "question": "You want to know how frequent a missense variant is among healthy people of different ancestries. Best resource?",
+      "choices": [
+        "PDB",
+        "OMIM",
+        "gnomAD",
+        "ClinVar"
+      ],
+      "answer_index": 2,
+      "explanation": "gnomAD aggregates population allele frequencies by ancestry."
+    },
+    {
+      "id": "u3-q02",
+      "question": "An SRR accession refers to:",
+      "choices": [
+        "A GEO sample",
+        "A study",
+        "A BioProject",
+        "A sequencing run (raw reads)"
+      ],
+      "answer_index": 3,
+      "explanation": "SRR = run; the downloadable reads."
+    },
+    {
+      "id": "u3-q03",
+      "question": "Which resource provides tissue-level expression and eQTLs from post-mortem donors?",
+      "choices": [
+        "STRING",
+        "KEGG",
+        "ENCODE",
+        "GTEx"
+      ],
+      "answer_index": 3,
+      "explanation": "GTEx = Genotype-Tissue Expression."
+    },
+    {
+      "id": "u3-q04",
+      "question": "Which is NOT one of the three GO aspects?",
+      "choices": [
+        "Pathway Topology",
+        "Biological Process",
+        "Molecular Function",
+        "Cellular Component"
+      ],
+      "answer_index": 0,
+      "explanation": "GO has MF, BP and CC."
+    },
+    {
+      "id": "u3-q05",
+      "question": "STRING edges primarily represent:",
+      "choices": [
+        "Transcription factor binding",
+        "Genetic linkage",
+        "Only crystal-structure contacts",
+        "Functional associations from multiple evidence types"
+      ],
+      "answer_index": 3,
+      "explanation": "STRING integrates experiments, co-expression, text mining, and more."
+    },
+    {
+      "id": "u3-q06",
+      "question": "A variant is labeled 'VUS' in ClinVar. This means:",
+      "choices": [
+        "Validated as pathogenic",
+        "Variant under selection",
+        "Very unusual somatic",
+        "Uncertain significance"
+      ],
+      "answer_index": 3,
+      "explanation": "VUS = variant of uncertain significance."
+    },
+    {
+      "id": "u3-q07",
+      "question": "Which tool converts genomic coordinates from hg19 to hg38?",
+      "choices": [
+        "liftOver",
+        "VEP",
+        "BioMart",
+        "BLAST"
+      ],
+      "answer_index": 0,
+      "explanation": "UCSC liftOver (or CrossMap) converts between assemblies."
+    },
+    {
+      "id": "u3-q08",
+      "question": "Pfam domain annotations are now accessed through:",
+      "choices": [
+        "KEGG",
+        "PDB",
+        "UniProt only",
+        "InterPro"
+      ],
+      "answer_index": 3,
+      "explanation": "The Pfam website was retired and its data are served via InterPro."
+    },
+    {
+      "id": "u3-q09",
+      "question": "A paper's single-cell foundation model pretraining corpus most likely came from:",
+      "choices": [
+        "PDB",
+        "OMIM",
+        "ClinVar",
+        "CELLxGENE Census"
+      ],
+      "answer_index": 3,
+      "explanation": "CELLxGENE provides large standardized single-cell datasets."
+    },
+    {
+      "id": "u3-q10",
+      "question": "Low LOEUF for a gene indicates:",
+      "choices": [
+        "Tolerance to loss-of-function",
+        "High expression",
+        "Intolerance to loss-of-function",
+        "Many pathogenic ClinVar entries"
+      ],
+      "answer_index": 2,
+      "explanation": "Fewer observed LoF variants than expected means constraint."
+    },
+    {
+      "id": "u3-q11",
+      "question": "Where are predicted structures with per-residue pLDDT for most UniProt proteins found?",
+      "choices": [
+        "AlphaFold DB",
+        "GEO",
+        "Reactome",
+        "PDB"
+      ],
+      "answer_index": 0,
+      "explanation": "AlphaFold DB hosts >200M predictions."
+    },
+    {
+      "id": "u3-q12",
+      "question": "OMIM entry prefixed with '#' denotes:",
+      "choices": [
+        "A gene",
+        "A phenotype with unknown basis",
+        "A withdrawn entry",
+        "A phenotype with known molecular basis"
+      ],
+      "answer_index": 3,
+      "explanation": "# = phenotype with known molecular basis; * = gene; % = unknown basis."
+    },
+    {
+      "id": "u3-q13",
+      "question": "Which database would you use to find which genes are essential across cancer cell lines?",
+      "choices": [
+        "gnomAD",
+        "ChEMBL",
+        "GTEx",
+        "DepMap"
+      ],
+      "answer_index": 3,
+      "explanation": "DepMap aggregates CRISPR knockout screens across cell lines."
+    },
+    {
+      "id": "u3-q14",
+      "question": "Which resource issues rsIDs?",
+      "choices": [
+        "HGNC",
+        "dbSNP",
+        "ClinVar",
+        "Ensembl"
+      ],
+      "answer_index": 1,
+      "explanation": "dbSNP assigns Reference SNP (rs) IDs."
+    }
+  ]
+}

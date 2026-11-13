@@ -1,0 +1,648 @@
+{
+  "unit": 5,
+  "slug": "pathways",
+  "title": "Key pathways and signaling",
+  "summary": "The canonical signaling circuits that show up constantly in biology and cancer papers: RTK-RAS-MAPK, PI3K-AKT-mTOR, p53 and DNA damage, Wnt, NF-κB, JAK-STAT, apoptosis, and the cell cycle, plus the main oncogenes and tumor suppressors and the drugs that target them.",
+  "lesson": "## How to think about signaling\n\nSignaling pathways are information-processing circuits. A signal (growth factor, cytokine, DNA damage) activates a receptor or sensor. The receptor flips molecular switches, mostly **phosphorylation** by kinases and **GTP binding** by small GTPases. The cascade ends at transcription factors or effectors that change gene expression, metabolism, division or survival. **Negative feedback** is everywhere. Cancer is largely the story of these switches getting stuck: **oncogenes** are stuck-on accelerators (gain of function, usually one allele is enough) and **tumor suppressors** are broken brakes (loss of function, usually both alleles: Knudson's **two-hit** hypothesis).\n\nConventions in figures: arrows mean activation, flat-headed (⊣) lines mean inhibition. \"p-ERK\" or \"pERK\" means the phosphorylated (active) form. Western blots of phospho-proteins are the classic readout of pathway activity.\n\n## RTK → RAS → MAPK\n\n1. A growth factor (EGF) binds a **receptor tyrosine kinase** (EGFR/ERBB family, MET, ALK, etc.). Receptors dimerize and **autophosphorylate** tyrosines.\n2. Adaptor **GRB2** binds the phosphotyrosines through its SH2 domain and recruits **SOS**, a **GEF** that swaps GDP for GTP on **RAS** (KRAS, NRAS, HRAS).\n3. RAS-GTP activates **RAF** (ARAF/BRAF/CRAF), which phosphorylates **MEK1/2**, which phosphorylate **ERK1/2** (MAPK3/MAPK1). ERK enters the nucleus and drives proliferation genes (e.g., via FOS, MYC).\n4. RAS turns itself off by hydrolyzing GTP, helped by **GAPs** such as **NF1**.\n\nCancer mutations: **KRAS G12/G13/Q61** impair GTP hydrolysis, locking RAS on (common in pancreatic, colorectal and lung cancers). **BRAF V600E** (melanoma, ~half of cases) makes BRAF constitutively active. **EGFR** L858R/exon 19 deletions occur in lung adenocarcinoma. Loss of NF1 removes the brake. Drugs: EGFR inhibitors (osimertinib), BRAF inhibitors (vemurafenib, dabrafenib), MEK inhibitors (trametinib), KRAS G12C inhibitors (sotorasib).\n\n## PI3K → AKT → mTOR\n\nRTKs also activate **PI3K** (catalytic subunit p110α is encoded by **PIK3CA**), which phosphorylates the membrane lipid **PIP2 → PIP3**. PIP3 recruits **AKT**, which is activated by phosphorylation at **T308 (by PDK1)** and **S473 (by mTORC2)**. AKT promotes survival and growth. It inhibits the **TSC1/TSC2** complex, freeing the small GTPase **RHEB** to activate **mTORC1**. mTORC1 phosphorylates **S6K** and **4E-BP1** to increase protein synthesis, and it integrates nutrient and energy signals (AMPK inhibits it). **PTEN** dephosphorylates PIP3 back to PIP2 and is a major tumor suppressor. **Rapamycin** inhibits mTORC1. PIK3CA hotspots: E545K, H1047R.\n\n## p53 and the DNA damage response\n\n- Sensors: **ATM** responds to double-strand breaks; **ATR** responds to single-stranded DNA and replication stress. They phosphorylate the checkpoint kinases **CHK2** and **CHK1** respectively, and both phosphorylate **p53** (e.g., Ser15).\n- Normally p53 is kept low by **MDM2**, an E3 ubiquitin ligase that targets it for degradation. MDM2 is itself a p53 target gene, forming a negative feedback loop. Damage-induced phosphorylation blocks MDM2 binding, so p53 accumulates.\n- p53 is a **transcription factor**. Its targets include **CDKN1A (p21)** for cell cycle arrest, **MDM2**, and pro-apoptotic **BAX**, **PUMA (BBC3)** and **NOXA (PMAIP1)**. Outcomes: arrest and repair, senescence, or apoptosis.\n- **TP53** is the most frequently mutated gene in human cancer. Most mutations are missense in the DNA-binding domain (hotspots R175, R248, R273). Germline TP53 mutations cause **Li-Fraumeni syndrome**. BRCA1/BRCA2 work in homologous recombination repair; their loss sensitizes cells to **PARP inhibitors** (synthetic lethality).\n\n## Wnt/β-catenin\n\nWithout Wnt, a **destruction complex** (APC, AXIN, GSK3β, CK1) phosphorylates **β-catenin (CTNNB1)**, which is then ubiquitinated and degraded. Wnt binds **Frizzled** plus **LRP5/6** co-receptors, the destruction complex is inhibited, and β-catenin accumulates, enters the nucleus, and partners with **TCF/LEF** to activate targets (MYC, AXIN2, LGR5). **APC** loss starts most colorectal cancers. Wnt also maintains stem cells.\n\n## NF-κB\n\nInactive **NF-κB** dimers (classically **RELA/p65 + p50**) are held in the cytoplasm by **IκB**. Stimuli (TNF, IL-1, Toll-like receptors) activate the **IKK complex** (IKKα, IKKβ, NEMO), which phosphorylates IκBα, leading to its ubiquitination and degradation. NF-κB then enters the nucleus to drive inflammatory and survival genes. It is central to innate immunity and inflammation.\n\n## JAK-STAT\n\nCytokine receptors (interferons, interleukins, EPO) lack intrinsic kinase activity. They associate with **JAKs** (JAK1, JAK2, JAK3, TYK2). Ligand binding activates JAKs, which phosphorylate the receptor and recruit **STATs**. STATs are phosphorylated, dimerize, and enter the nucleus as transcription factors. **SOCS** proteins provide negative feedback. **JAK2 V617F** drives myeloproliferative neoplasms; JAK inhibitors include ruxolitinib.\n\n## Apoptosis\n\n- **Intrinsic (mitochondrial)**: stress tips the balance in the **BCL-2 family**. BH3-only proteins (BIM, BID, PUMA, NOXA) override anti-apoptotic proteins (BCL-2, BCL-XL, MCL-1), letting **BAX/BAK** permeabilize the mitochondrial outer membrane (MOMP). **Cytochrome c** is released and forms the **apoptosome** with **APAF1**, which activates **caspase-9** and then executioner **caspases-3/7**. The BCL-2 inhibitor **venetoclax** exploits this.\n- **Extrinsic**: death ligands (FASL, TNF, TRAIL) bind death receptors, which recruit **FADD** and activate **caspase-8**. Caspase-8 cleaves BID to link to the intrinsic path.\n- Caspases are cysteine proteases that cleave after Asp. Cleaved caspase-3 and cleaved PARP are classic markers.\n\n## Cell cycle\n\nPhases: **G1 → S** (DNA replication) **→ G2 → M** (mitosis), with G0 for quiescent cells. Engines are **cyclin–CDK** pairs:\n- **Cyclin D–CDK4/6** (G1): phosphorylates **RB**, releasing **E2F** TFs to transcribe S-phase genes. Passing the **restriction point** commits the cell to dividing.\n- **Cyclin E–CDK2** (G1/S), **cyclin A–CDK2** (S), **cyclin B–CDK1** (G2/M).\n- Brakes: **INK4** family (p16^INK4a, encoded by CDKN2A) inhibits CDK4/6. **CIP/KIP** family (p21, p27) inhibits CDK2/CDK1.\n- Checkpoints: **G1/S** (DNA damage → p53 → p21), **G2/M** (damage → CHK1/2 → CDK1 held inactive), and the **spindle assembly checkpoint** (blocks anaphase via MAD2 inhibiting APC/C–CDC20 until all chromosomes are attached).\n- CDK4/6 inhibitors: palbociclib, ribociclib, abemaciclib (in HR+ breast cancer).\n\n## Oncogenes and tumor suppressors to know\n\n**Oncogenes**: KRAS, NRAS, BRAF, EGFR, ERBB2 (HER2 amplification), PIK3CA, MYC (amplification), ABL1 (BCR-ABL fusion in CML, treated with imatinib), ALK fusions, CCND1, MDM2 amplification. **Tumor suppressors**: TP53, RB1, PTEN, APC, CDKN2A, BRCA1/2, NF1, VHL, SMAD4, ARID1A.\n\n## How you'll see this in a paper\n\n- \"KRAS-mutant vs wild-type\", \"BRAF^V600E^ melanoma\": stratification by driver.\n- \"Hallmark gene sets (MSigDB): E2F targets, G2M checkpoint, TNFA signaling via NFKB, P53 pathway\": pathway activity scores in RNA-seq.\n- \"pERK/ERK ratio\": MAPK activity readout.\n- Perturbation models (e.g., predicting Perturb-seq responses) are often evaluated on whether they recover known pathway structure.\n",
+  "cards": [
+    {
+      "id": "u5-c01",
+      "front": "Oncogene vs tumor suppressor (mechanism and allele count)?",
+      "back": "Oncogene: gain of function, usually one allele; TS: loss of function, usually both alleles (two-hit)",
+      "tags": [
+        "cancer"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c02",
+      "front": "Knudson two-hit hypothesis?",
+      "back": "Both alleles of a tumor suppressor must be inactivated (e.g., RB1)",
+      "tags": [
+        "cancer"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c03",
+      "front": "Order the MAPK cascade from receptor.",
+      "back": "RTK → GRB2 → SOS → RAS → RAF → MEK → ERK",
+      "tags": [
+        "MAPK"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c04",
+      "front": "Role of SOS?",
+      "back": "GEF that loads GTP onto RAS (activates it)",
+      "tags": [
+        "MAPK"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c05",
+      "front": "Role of NF1?",
+      "back": "RAS GAP: accelerates GTP hydrolysis (turns RAS off); tumor suppressor",
+      "tags": [
+        "MAPK"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c06",
+      "front": "Why do KRAS G12 mutations activate RAS?",
+      "back": "Impair GAP-stimulated GTP hydrolysis → RAS stuck in GTP-bound on state",
+      "tags": [
+        "MAPK",
+        "cancer"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c07",
+      "front": "BRAF V600E is classically associated with which cancer?",
+      "back": "Melanoma (~half of cases); also thyroid, colorectal",
+      "tags": [
+        "MAPK",
+        "cancer"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c08",
+      "front": "Gene names for ERK1/ERK2?",
+      "back": "MAPK3 / MAPK1",
+      "tags": [
+        "MAPK",
+        "naming"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c09",
+      "front": "What does a GEF vs a GAP do for a small GTPase?",
+      "back": "GEF: exchanges GDP→GTP (on); GAP: stimulates GTP hydrolysis (off)",
+      "tags": [
+        "signaling"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c10",
+      "front": "What does PI3K produce?",
+      "back": "PIP3 from PIP2 (phosphorylates the 3' position of the inositol ring)",
+      "tags": [
+        "PI3K"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c11",
+      "front": "Which gene encodes PI3K p110α?",
+      "back": "PIK3CA",
+      "tags": [
+        "PI3K",
+        "naming"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c12",
+      "front": "Role of PTEN?",
+      "back": "Lipid phosphatase converting PIP3 → PIP2; opposes PI3K; tumor suppressor",
+      "tags": [
+        "PI3K"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c13",
+      "front": "AKT activating phosphorylation sites and kinases?",
+      "back": "T308 by PDK1; S473 by mTORC2",
+      "tags": [
+        "PI3K"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c14",
+      "front": "How does AKT activate mTORC1?",
+      "back": "Inhibits TSC1/TSC2 → RHEB-GTP accumulates → activates mTORC1",
+      "tags": [
+        "PI3K",
+        "mTOR"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c15",
+      "front": "Two classic mTORC1 substrates?",
+      "back": "S6K and 4E-BP1",
+      "tags": [
+        "mTOR"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c16",
+      "front": "Which drug inhibits mTORC1?",
+      "back": "Rapamycin (sirolimus) and rapalogs",
+      "tags": [
+        "mTOR",
+        "drugs"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c17",
+      "front": "PIK3CA hotspot mutations?",
+      "back": "E545K (helical domain), H1047R (kinase domain)",
+      "tags": [
+        "PI3K",
+        "cancer"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c18",
+      "front": "ATM vs ATR: what damage do they sense?",
+      "back": "ATM: double-strand breaks; ATR: ssDNA / replication stress",
+      "tags": [
+        "DDR"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c19",
+      "front": "Checkpoint kinases downstream of ATM and ATR?",
+      "back": "ATM → CHK2; ATR → CHK1",
+      "tags": [
+        "DDR"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c20",
+      "front": "What keeps p53 low in unstressed cells?",
+      "back": "MDM2, an E3 ubiquitin ligase targeting p53 for degradation",
+      "tags": [
+        "p53"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c21",
+      "front": "Why is the p53–MDM2 relationship a negative feedback loop?",
+      "back": "p53 transcribes MDM2, which degrades p53",
+      "tags": [
+        "p53"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c22",
+      "front": "Key p53 target genes?",
+      "back": "CDKN1A (p21) arrest; MDM2 feedback; BAX, BBC3 (PUMA), PMAIP1 (NOXA) apoptosis",
+      "tags": [
+        "p53"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c23",
+      "front": "Where do most TP53 cancer mutations fall?",
+      "back": "Missense in the DNA-binding domain (hotspots R175, R248, R273)",
+      "tags": [
+        "p53",
+        "cancer"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c24",
+      "front": "Germline TP53 mutation syndrome?",
+      "back": "Li-Fraumeni syndrome",
+      "tags": [
+        "p53"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c25",
+      "front": "Why are BRCA-deficient tumors sensitive to PARP inhibitors?",
+      "back": "Synthetic lethality: HR repair loss + PARP inhibition → unrepaired lethal DNA damage",
+      "tags": [
+        "DDR",
+        "drugs"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c26",
+      "front": "Wnt off state: what happens to β-catenin?",
+      "back": "Destruction complex (APC, AXIN, GSK3β, CK1) phosphorylates it → ubiquitinated and degraded",
+      "tags": [
+        "Wnt"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c27",
+      "front": "Wnt receptors?",
+      "back": "Frizzled + LRP5/6 co-receptor",
+      "tags": [
+        "Wnt"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c28",
+      "front": "Nuclear partners of β-catenin?",
+      "back": "TCF/LEF transcription factors",
+      "tags": [
+        "Wnt"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c29",
+      "front": "Which Wnt pathway gene is lost in most colorectal cancers?",
+      "back": "APC",
+      "tags": [
+        "Wnt",
+        "cancer"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c30",
+      "front": "How is NF-κB kept inactive?",
+      "back": "Bound in cytoplasm by IκB",
+      "tags": [
+        "NFkB"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c31",
+      "front": "What activates canonical NF-κB?",
+      "back": "IKK complex (IKKα/β, NEMO) phosphorylates IκBα → degraded → RELA/p50 enters nucleus",
+      "tags": [
+        "NFkB"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c32",
+      "front": "JAK-STAT signal flow?",
+      "back": "Cytokine → receptor-associated JAK activation → STAT phosphorylation → dimerization → nucleus",
+      "tags": [
+        "JAK-STAT"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c33",
+      "front": "Name the four JAKs.",
+      "back": "JAK1, JAK2, JAK3, TYK2",
+      "tags": [
+        "JAK-STAT"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c34",
+      "front": "JAK2 V617F causes?",
+      "back": "Myeloproliferative neoplasms (e.g., polycythemia vera)",
+      "tags": [
+        "JAK-STAT",
+        "cancer"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c35",
+      "front": "Negative feedback regulators of JAK-STAT?",
+      "back": "SOCS proteins (also PIAS, phosphatases)",
+      "tags": [
+        "JAK-STAT"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c36",
+      "front": "Intrinsic apoptosis core steps?",
+      "back": "BH3-only activation → BAX/BAK MOMP → cytochrome c → APAF1 apoptosome → caspase-9 → caspase-3/7",
+      "tags": [
+        "apoptosis"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c37",
+      "front": "Extrinsic apoptosis initiator caspase?",
+      "back": "Caspase-8 (via death receptor → FADD)",
+      "tags": [
+        "apoptosis"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c38",
+      "front": "Anti-apoptotic BCL-2 family members?",
+      "back": "BCL-2, BCL-XL, MCL-1",
+      "tags": [
+        "apoptosis"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c39",
+      "front": "Venetoclax target?",
+      "back": "BCL-2 (a BH3 mimetic)",
+      "tags": [
+        "apoptosis",
+        "drugs"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c40",
+      "front": "Classic apoptosis markers on a blot?",
+      "back": "Cleaved caspase-3, cleaved PARP",
+      "tags": [
+        "apoptosis"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c41",
+      "front": "Cyclin–CDK pairs by phase?",
+      "back": "D–CDK4/6 (G1), E–CDK2 (G1/S), A–CDK2 (S), B–CDK1 (M)",
+      "tags": [
+        "cell-cycle"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c42",
+      "front": "How does cyclin D–CDK4/6 drive S-phase entry?",
+      "back": "Phosphorylates RB → releases E2F transcription factors",
+      "tags": [
+        "cell-cycle"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c43",
+      "front": "INK4 vs CIP/KIP inhibitors?",
+      "back": "INK4 (p16) inhibit CDK4/6; CIP/KIP (p21, p27) inhibit CDK2/CDK1",
+      "tags": [
+        "cell-cycle"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c44",
+      "front": "Spindle assembly checkpoint mechanism?",
+      "back": "Unattached kinetochores → MAD2 inhibits APC/C–CDC20 → anaphase blocked",
+      "tags": [
+        "cell-cycle"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c45",
+      "front": "Examples of CDK4/6 inhibitors?",
+      "back": "Palbociclib, ribociclib, abemaciclib",
+      "tags": [
+        "cell-cycle",
+        "drugs"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c46",
+      "front": "BCR-ABL: what disease, what drug?",
+      "back": "CML (Philadelphia chromosome t(9;22)); imatinib",
+      "tags": [
+        "cancer",
+        "drugs"
+      ],
+      "type": "recall"
+    },
+    {
+      "id": "u5-c47",
+      "front": "A tumor has HER2 amplification. Which gene and drug class?",
+      "back": "ERBB2; anti-HER2 therapy (e.g., trastuzumab)",
+      "tags": [
+        "cancer"
+      ],
+      "type": "apply"
+    },
+    {
+      "id": "u5-c48",
+      "front": "RNA-seq shows high 'E2F targets' and 'G2M checkpoint' hallmark scores. Interpretation?",
+      "back": "Highly proliferative samples / cycling cells",
+      "tags": [
+        "cell-cycle",
+        "papers"
+      ],
+      "type": "apply"
+    },
+    {
+      "id": "u5-c49",
+      "front": "A KRAS G12D tumor: would an EGFR inhibitor alone likely work?",
+      "back": "Unlikely: mutant RAS is downstream of EGFR and constitutively active",
+      "tags": [
+        "MAPK",
+        "cancer"
+      ],
+      "type": "apply"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "u5-q01",
+      "question": "Which protein directly activates RAS by loading GTP?",
+      "choices": [
+        "NF1",
+        "RAF",
+        "GRB2",
+        "SOS"
+      ],
+      "answer_index": 3,
+      "explanation": "SOS is the GEF; GRB2 is the adaptor; NF1 is a GAP."
+    },
+    {
+      "id": "u5-q02",
+      "question": "PTEN loss leads to:",
+      "choices": [
+        "Decreased PIP3",
+        "Increased PIP3 and AKT activity",
+        "Increased p53",
+        "Inactivation of mTORC1"
+      ],
+      "answer_index": 1,
+      "explanation": "PTEN converts PIP3 to PIP2; without it, PIP3 accumulates."
+    },
+    {
+      "id": "u5-q03",
+      "question": "In unstressed cells, p53 is low mainly because of:",
+      "choices": [
+        "BAX",
+        "ATM",
+        "MDM2-mediated degradation",
+        "p21"
+      ],
+      "answer_index": 2,
+      "explanation": "MDM2 ubiquitinates p53 for proteasomal degradation."
+    },
+    {
+      "id": "u5-q04",
+      "question": "Which complex degrades β-catenin when Wnt is absent?",
+      "choices": [
+        "Apoptosome",
+        "IKK complex",
+        "Destruction complex (APC/AXIN/GSK3β/CK1)",
+        "mTORC1"
+      ],
+      "answer_index": 2,
+      "explanation": "The destruction complex phosphorylates β-catenin for degradation."
+    },
+    {
+      "id": "u5-q05",
+      "question": "Which event directly frees E2F to drive S-phase genes?",
+      "choices": [
+        "MAD2 activation",
+        "Cyclin B degradation",
+        "p21 binding CDK2",
+        "RB phosphorylation by cyclin D–CDK4/6"
+      ],
+      "answer_index": 3,
+      "explanation": "Phosphorylated RB releases E2F."
+    },
+    {
+      "id": "u5-q06",
+      "question": "Cytochrome c release from mitochondria leads to activation of:",
+      "choices": [
+        "JAK2",
+        "Caspase-8",
+        "NF-κB",
+        "Caspase-9 via the apoptosome"
+      ],
+      "answer_index": 3,
+      "explanation": "Cytochrome c + APAF1 form the apoptosome activating caspase-9."
+    },
+    {
+      "id": "u5-q07",
+      "question": "Which kinase primarily responds to double-strand breaks?",
+      "choices": [
+        "ATR",
+        "CDK4",
+        "ATM",
+        "AKT"
+      ],
+      "answer_index": 2,
+      "explanation": "ATM senses DSBs; ATR senses ssDNA and replication stress."
+    },
+    {
+      "id": "u5-q08",
+      "question": "Which is a tumor suppressor?",
+      "choices": [
+        "MYC",
+        "PIK3CA",
+        "ERBB2",
+        "APC"
+      ],
+      "answer_index": 3,
+      "explanation": "APC is a tumor suppressor in the Wnt pathway; the others are oncogenes."
+    },
+    {
+      "id": "u5-q09",
+      "question": "NF-κB is released when:",
+      "choices": [
+        "STATs dimerize",
+        "RB is phosphorylated",
+        "IκB is phosphorylated and degraded",
+        "β-catenin is degraded"
+      ],
+      "answer_index": 2,
+      "explanation": "IKK phosphorylates IκB, leading to its degradation and NF-κB nuclear entry."
+    },
+    {
+      "id": "u5-q10",
+      "question": "Which mutation is associated with myeloproliferative neoplasms?",
+      "choices": [
+        "JAK2 V617F",
+        "EGFR L858R",
+        "BRAF V600E",
+        "KRAS G12C"
+      ],
+      "answer_index": 0,
+      "explanation": "JAK2 V617F constitutively activates JAK-STAT signaling."
+    },
+    {
+      "id": "u5-q11",
+      "question": "The spindle assembly checkpoint prevents:",
+      "choices": [
+        "Anaphase until all kinetochores are attached",
+        "Cytokinesis after anaphase",
+        "Entry into S phase",
+        "DNA replication origin firing"
+      ],
+      "answer_index": 0,
+      "explanation": "SAC inhibits APC/C–CDC20 until attachment is complete."
+    },
+    {
+      "id": "u5-q12",
+      "question": "p21 (CDKN1A) is induced by p53 to:",
+      "choices": [
+        "Inhibit CDKs and arrest the cell cycle",
+        "Promote apoptosis via MOMP",
+        "Degrade MDM2",
+        "Activate RAS"
+      ],
+      "answer_index": 0,
+      "explanation": "p21 is a CIP/KIP CDK inhibitor."
+    },
+    {
+      "id": "u5-q13",
+      "question": "Rapamycin inhibits:",
+      "choices": [
+        "mTORC1",
+        "MEK",
+        "PI3K",
+        "CDK4/6"
+      ],
+      "answer_index": 0,
+      "explanation": "Rapamycin with FKBP12 allosterically inhibits mTORC1."
+    },
+    {
+      "id": "u5-q14",
+      "question": "Synthetic lethality with PARP inhibitors is exploited in tumors lacking:",
+      "choices": [
+        "BRCA1/2",
+        "EGFR",
+        "MYC",
+        "KRAS"
+      ],
+      "answer_index": 0,
+      "explanation": "BRCA loss impairs homologous recombination; PARP inhibition is then lethal."
+    },
+    {
+      "id": "u5-q15",
+      "question": "ERK1 and ERK2 correspond to which official gene symbols?",
+      "choices": [
+        "MAP2K1/MAP2K2",
+        "MAPK3/MAPK1",
+        "MAPK8/MAPK9",
+        "RAF1/BRAF"
+      ],
+      "answer_index": 1,
+      "explanation": "ERK1 = MAPK3, ERK2 = MAPK1; MEK1/2 = MAP2K1/2; JNKs = MAPK8/9."
+    }
+  ]
+}
