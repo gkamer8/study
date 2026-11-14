@@ -1,0 +1,5351 @@
+{
+ "subject": "bible",
+ "kind": "verses",
+ "title": "Bible verses (Douay-Rheims)",
+ "description": "Memorize well-known verses in the Douay-Rheims Bible (Challoner revision), the traditional Catholic English translation. Two typed drills: text to reference, and reference to text with a cloze ramp.",
+ "schema_version": 1,
+ "generated": "2026-11-14",
+ "translation": {
+  "name": "Douay-Rheims Bible, Challoner revision",
+  "edition": "American edition of 1899 (Challoner text, 1749–1752 revision of the 1582/1609–10 Douay-Rheims)",
+  "license": "Public domain",
+  "numbering": "Vulgate (psalms use the Greek/Vulgate numbers)"
+ },
+ "sources": {
+  "primary": "https://ebible.org/Scriptures/engDRA_usfm.zip",
+  "primary_retrieved": "2026-11-14",
+  "crosscheck": "https://www.drbo.org/chapter/BBCCC.htm",
+  "crosscheck_retrieved": "2026-11-14",
+  "modern_numbering_check": "https://ebible.org/Scriptures/eng-web_usfm.zip",
+  "crosscheck_summary": {
+   "exact": 104,
+   "punctuation_only": 0,
+   "reviewed": 1
+  }
+ },
+ "units": [
+  {
+   "unit": 1,
+   "slug": "gospels",
+   "title": "Words of Christ",
+   "summary": "Famous sayings of Jesus from the four Gospels, plus the prologue of John.",
+   "file": "01-gospels.json",
+   "item_count": 13,
+   "card_count": 26,
+   "quiz_count": 0,
+   "glossary_count": 0,
+   "lesson_words": 0,
+   "prerequisites": [],
+   "figure_count": 0
+  },
+  {
+   "unit": 2,
+   "slug": "sermon",
+   "title": "Sermon on the Mount",
+   "summary": "Matthew 5–7: the eight Beatitudes (one card each), the Our Father as one passage, and other famous lines.",
+   "file": "02-sermon.json",
+   "item_count": 15,
+   "card_count": 30,
+   "quiz_count": 0,
+   "glossary_count": 0,
+   "lesson_words": 0,
+   "prerequisites": [],
+   "figure_count": 0
+  },
+  {
+   "unit": 3,
+   "slug": "psalms",
+   "title": "Psalms",
+   "summary": "The best-known psalms in the Douay (Vulgate/Greek) numbering, which is usually one lower than modern Bibles.",
+   "file": "03-psalms.json",
+   "item_count": 13,
+   "card_count": 26,
+   "quiz_count": 0,
+   "glossary_count": 0,
+   "lesson_words": 0,
+   "prerequisites": [],
+   "figure_count": 0
+  },
+  {
+   "unit": 4,
+   "slug": "old-testament",
+   "title": "Law, history and wisdom",
+   "summary": "Genesis to Ecclesiasticus: creation, the Law, the historical books (under their Douay names) and the wisdom books.",
+   "file": "04-old-testament.json",
+   "item_count": 12,
+   "card_count": 24,
+   "quiz_count": 0,
+   "glossary_count": 0,
+   "lesson_words": 0,
+   "prerequisites": [],
+   "figure_count": 0
+  },
+  {
+   "unit": 5,
+   "slug": "prophets",
+   "title": "Prophets",
+   "summary": "Isaias, Jeremias, Ezechiel and the minor prophets, mostly the Advent and Lenten readings.",
+   "file": "05-prophets.json",
+   "item_count": 12,
+   "card_count": 24,
+   "quiz_count": 0,
+   "glossary_count": 0,
+   "lesson_words": 0,
+   "prerequisites": [],
+   "figure_count": 0
+  },
+  {
+   "unit": 6,
+   "slug": "epistles",
+   "title": "Epistles",
+   "summary": "St. Paul and the other apostolic letters.",
+   "file": "06-epistles.json",
+   "item_count": 12,
+   "card_count": 24,
+   "quiz_count": 0,
+   "glossary_count": 0,
+   "lesson_words": 0,
+   "prerequisites": [],
+   "figure_count": 0
+  },
+  {
+   "unit": 7,
+   "slug": "doctrine",
+   "title": "Catholic doctrine and the Mass",
+   "summary": "Verses the Church cites for the papacy, the sacraments, Mary, tradition and prayer for the dead, and words said at Mass.",
+   "file": "07-doctrine.json",
+   "item_count": 15,
+   "card_count": 30,
+   "quiz_count": 0,
+   "glossary_count": 0,
+   "lesson_words": 0,
+   "prerequisites": [],
+   "figure_count": 0
+  },
+  {
+   "unit": 8,
+   "slug": "passion",
+   "title": "Passion and Resurrection",
+   "summary": "Gethsemane, the Seven Last Words from the cross, the prophecies of the Passion, and Easter.",
+   "file": "08-passion.json",
+   "item_count": 13,
+   "card_count": 26,
+   "quiz_count": 0,
+   "glossary_count": 0,
+   "lesson_words": 0,
+   "prerequisites": [],
+   "figure_count": 0
+  }
+ ],
+ "totals": {
+  "items": 105,
+  "cards": 210,
+  "quiz": 0,
+  "glossary_terms": 0,
+  "figures": 0
+ },
+ "books": [
+  {
+   "usfm": "GEN",
+   "drb": "Genesis",
+   "modern": "Genesis",
+   "drb_aliases": [
+    "gen",
+    "ge",
+    "gn",
+    "genesis"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "EXO",
+   "drb": "Exodus",
+   "modern": "Exodus",
+   "drb_aliases": [
+    "ex",
+    "exo",
+    "exod",
+    "exodus"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "LEV",
+   "drb": "Leviticus",
+   "modern": "Leviticus",
+   "drb_aliases": [
+    "lev",
+    "lv",
+    "le",
+    "leviticus"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "NUM",
+   "drb": "Numbers",
+   "modern": "Numbers",
+   "drb_aliases": [
+    "num",
+    "nm",
+    "nu",
+    "numb",
+    "numbers"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "DEU",
+   "drb": "Deuteronomy",
+   "modern": "Deuteronomy",
+   "drb_aliases": [
+    "deut",
+    "dt",
+    "deu",
+    "de",
+    "deuteronomy"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "JOS",
+   "drb": "Josue",
+   "modern": "Joshua",
+   "drb_aliases": [
+    "jos",
+    "josue"
+   ],
+   "modern_aliases": [
+    "josh",
+    "jsh",
+    "joshua"
+   ]
+  },
+  {
+   "usfm": "JDG",
+   "drb": "Judges",
+   "modern": "Judges",
+   "drb_aliases": [
+    "judg",
+    "jdg",
+    "jgs",
+    "jg",
+    "judges"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "RUT",
+   "drb": "Ruth",
+   "modern": "Ruth",
+   "drb_aliases": [
+    "ru",
+    "rut",
+    "ruth",
+    "rth"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "1SA",
+   "drb": "1 Kings",
+   "modern": "1 Samuel",
+   "drb_aliases": [
+    "1kings",
+    "1kgs",
+    "1ki",
+    "1kg",
+    "1k",
+    "1reg",
+    "1regum"
+   ],
+   "modern_aliases": [
+    "1sam",
+    "1sa",
+    "1sm",
+    "1s",
+    "1samuel"
+   ]
+  },
+  {
+   "usfm": "2SA",
+   "drb": "2 Kings",
+   "modern": "2 Samuel",
+   "drb_aliases": [
+    "2kings",
+    "2kgs",
+    "2ki",
+    "2kg",
+    "2k",
+    "2reg",
+    "2regum"
+   ],
+   "modern_aliases": [
+    "2sam",
+    "2sa",
+    "2sm",
+    "2s",
+    "2samuel"
+   ]
+  },
+  {
+   "usfm": "1KI",
+   "drb": "3 Kings",
+   "modern": "1 Kings",
+   "drb_aliases": [
+    "3kings",
+    "3kgs",
+    "3ki",
+    "3kg",
+    "3k",
+    "3reg",
+    "3regum"
+   ],
+   "modern_aliases": [
+    "1kings",
+    "1kgs",
+    "1ki",
+    "1kg",
+    "1k"
+   ]
+  },
+  {
+   "usfm": "2KI",
+   "drb": "4 Kings",
+   "modern": "2 Kings",
+   "drb_aliases": [
+    "4kings",
+    "4kgs",
+    "4ki",
+    "4kg",
+    "4k",
+    "4reg",
+    "4regum"
+   ],
+   "modern_aliases": [
+    "2kings",
+    "2kgs",
+    "2ki",
+    "2kg",
+    "2k"
+   ]
+  },
+  {
+   "usfm": "1CH",
+   "drb": "1 Paralipomenon",
+   "modern": "1 Chronicles",
+   "drb_aliases": [
+    "1paralipomenon",
+    "1par",
+    "1paral"
+   ],
+   "modern_aliases": [
+    "1chronicles",
+    "1chron",
+    "1chr",
+    "1ch"
+   ]
+  },
+  {
+   "usfm": "2CH",
+   "drb": "2 Paralipomenon",
+   "modern": "2 Chronicles",
+   "drb_aliases": [
+    "2paralipomenon",
+    "2par",
+    "2paral"
+   ],
+   "modern_aliases": [
+    "2chronicles",
+    "2chron",
+    "2chr",
+    "2ch"
+   ]
+  },
+  {
+   "usfm": "EZR",
+   "drb": "1 Esdras",
+   "modern": "Ezra",
+   "drb_aliases": [
+    "1esdras",
+    "1esd",
+    "1es"
+   ],
+   "modern_aliases": [
+    "ezra",
+    "ezr"
+   ]
+  },
+  {
+   "usfm": "NEH",
+   "drb": "2 Esdras",
+   "modern": "Nehemiah",
+   "drb_aliases": [
+    "2esdras",
+    "2esd",
+    "2es",
+    "nehemias"
+   ],
+   "modern_aliases": [
+    "nehemiah",
+    "neh",
+    "ne"
+   ]
+  },
+  {
+   "usfm": "TOB",
+   "drb": "Tobias",
+   "modern": "Tobit",
+   "drb_aliases": [
+    "tobias",
+    "tob",
+    "tb"
+   ],
+   "modern_aliases": [
+    "tobit"
+   ]
+  },
+  {
+   "usfm": "JDT",
+   "drb": "Judith",
+   "modern": "Judith",
+   "drb_aliases": [
+    "judith",
+    "jdt",
+    "jdth"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "EST",
+   "drb": "Esther",
+   "modern": "Esther",
+   "drb_aliases": [
+    "esther",
+    "est",
+    "esth"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "JOB",
+   "drb": "Job",
+   "modern": "Job",
+   "drb_aliases": [
+    "job",
+    "jb"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "PSA",
+   "drb": "Psalms",
+   "modern": "Psalms",
+   "drb_aliases": [
+    "ps",
+    "psa",
+    "psalm",
+    "psalms",
+    "pss",
+    "psm",
+    "pslm"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "PRO",
+   "drb": "Proverbs",
+   "modern": "Proverbs",
+   "drb_aliases": [
+    "prov",
+    "pro",
+    "prv",
+    "pr",
+    "proverbs"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "ECC",
+   "drb": "Ecclesiastes",
+   "modern": "Ecclesiastes",
+   "drb_aliases": [
+    "eccl",
+    "eccles",
+    "ecc",
+    "ecclesiastes",
+    "eccle"
+   ],
+   "modern_aliases": [
+    "qoh",
+    "qoheleth",
+    "qo"
+   ]
+  },
+  {
+   "usfm": "SNG",
+   "drb": "Canticle of Canticles",
+   "modern": "Song of Songs",
+   "drb_aliases": [
+    "canticleofcanticles",
+    "canticles",
+    "canticle",
+    "cant",
+    "cnt",
+    "ct"
+   ],
+   "modern_aliases": [
+    "songofsongs",
+    "songofsolomon",
+    "song",
+    "sg",
+    "sos",
+    "ss",
+    "sng"
+   ]
+  },
+  {
+   "usfm": "WIS",
+   "drb": "Wisdom",
+   "modern": "Wisdom",
+   "drb_aliases": [
+    "wisdom",
+    "wis",
+    "ws",
+    "wisdomofsolomon"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "SIR",
+   "drb": "Ecclesiasticus",
+   "modern": "Sirach",
+   "drb_aliases": [
+    "ecclesiasticus",
+    "ecclus",
+    "eccli"
+   ],
+   "modern_aliases": [
+    "sirach",
+    "sir",
+    "bensira",
+    "bensirach"
+   ]
+  },
+  {
+   "usfm": "ISA",
+   "drb": "Isaias",
+   "modern": "Isaiah",
+   "drb_aliases": [
+    "isaias",
+    "isa",
+    "is"
+   ],
+   "modern_aliases": [
+    "isaiah"
+   ]
+  },
+  {
+   "usfm": "JER",
+   "drb": "Jeremias",
+   "modern": "Jeremiah",
+   "drb_aliases": [
+    "jeremias",
+    "jer",
+    "je",
+    "jr"
+   ],
+   "modern_aliases": [
+    "jeremiah"
+   ]
+  },
+  {
+   "usfm": "LAM",
+   "drb": "Lamentations",
+   "modern": "Lamentations",
+   "drb_aliases": [
+    "lamentations",
+    "lam",
+    "la"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "BAR",
+   "drb": "Baruch",
+   "modern": "Baruch",
+   "drb_aliases": [
+    "baruch",
+    "bar",
+    "ba"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "EZK",
+   "drb": "Ezechiel",
+   "modern": "Ezekiel",
+   "drb_aliases": [
+    "ezechiel",
+    "ezech",
+    "ez"
+   ],
+   "modern_aliases": [
+    "ezekiel",
+    "ezek",
+    "ezk"
+   ]
+  },
+  {
+   "usfm": "DAN",
+   "drb": "Daniel",
+   "modern": "Daniel",
+   "drb_aliases": [
+    "daniel",
+    "dan",
+    "dn",
+    "da"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "HOS",
+   "drb": "Osee",
+   "modern": "Hosea",
+   "drb_aliases": [
+    "osee",
+    "os"
+   ],
+   "modern_aliases": [
+    "hosea",
+    "hos",
+    "ho"
+   ]
+  },
+  {
+   "usfm": "JOL",
+   "drb": "Joel",
+   "modern": "Joel",
+   "drb_aliases": [
+    "joel",
+    "jl",
+    "joe"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "AMO",
+   "drb": "Amos",
+   "modern": "Amos",
+   "drb_aliases": [
+    "amos",
+    "am",
+    "amo"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "OBA",
+   "drb": "Abdias",
+   "modern": "Obadiah",
+   "drb_aliases": [
+    "abdias",
+    "abd",
+    "ab"
+   ],
+   "modern_aliases": [
+    "obadiah",
+    "obad",
+    "ob"
+   ]
+  },
+  {
+   "usfm": "JON",
+   "drb": "Jonas",
+   "modern": "Jonah",
+   "drb_aliases": [
+    "jonas",
+    "jon"
+   ],
+   "modern_aliases": [
+    "jonah",
+    "jnh"
+   ]
+  },
+  {
+   "usfm": "MIC",
+   "drb": "Micheas",
+   "modern": "Micah",
+   "drb_aliases": [
+    "micheas",
+    "mich"
+   ],
+   "modern_aliases": [
+    "micah",
+    "mic",
+    "mi"
+   ]
+  },
+  {
+   "usfm": "NAM",
+   "drb": "Nahum",
+   "modern": "Nahum",
+   "drb_aliases": [
+    "nahum",
+    "nah",
+    "na"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "HAB",
+   "drb": "Habacuc",
+   "modern": "Habakkuk",
+   "drb_aliases": [
+    "habacuc",
+    "hab"
+   ],
+   "modern_aliases": [
+    "habakkuk",
+    "hb"
+   ]
+  },
+  {
+   "usfm": "ZEP",
+   "drb": "Sophonias",
+   "modern": "Zephaniah",
+   "drb_aliases": [
+    "sophonias",
+    "soph"
+   ],
+   "modern_aliases": [
+    "zephaniah",
+    "zeph",
+    "zep"
+   ]
+  },
+  {
+   "usfm": "HAG",
+   "drb": "Aggeus",
+   "modern": "Haggai",
+   "drb_aliases": [
+    "aggeus",
+    "agg",
+    "ag"
+   ],
+   "modern_aliases": [
+    "haggai",
+    "hag",
+    "hg"
+   ]
+  },
+  {
+   "usfm": "ZEC",
+   "drb": "Zacharias",
+   "modern": "Zechariah",
+   "drb_aliases": [
+    "zacharias",
+    "zach"
+   ],
+   "modern_aliases": [
+    "zechariah",
+    "zech",
+    "zec"
+   ]
+  },
+  {
+   "usfm": "MAL",
+   "drb": "Malachias",
+   "modern": "Malachi",
+   "drb_aliases": [
+    "malachias",
+    "mal"
+   ],
+   "modern_aliases": [
+    "malachi",
+    "ml"
+   ]
+  },
+  {
+   "usfm": "1MA",
+   "drb": "1 Machabees",
+   "modern": "1 Maccabees",
+   "drb_aliases": [
+    "1machabees",
+    "1mach",
+    "1mac"
+   ],
+   "modern_aliases": [
+    "1maccabees",
+    "1macc",
+    "1ma",
+    "1mc"
+   ]
+  },
+  {
+   "usfm": "2MA",
+   "drb": "2 Machabees",
+   "modern": "2 Maccabees",
+   "drb_aliases": [
+    "2machabees",
+    "2mach",
+    "2mac"
+   ],
+   "modern_aliases": [
+    "2maccabees",
+    "2macc",
+    "2ma",
+    "2mc"
+   ]
+  },
+  {
+   "usfm": "MAT",
+   "drb": "Matthew",
+   "modern": "Matthew",
+   "drb_aliases": [
+    "matthew",
+    "matt",
+    "mat",
+    "mt"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "MRK",
+   "drb": "Mark",
+   "modern": "Mark",
+   "drb_aliases": [
+    "mark",
+    "mk",
+    "mar",
+    "mrk",
+    "mr"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "LUK",
+   "drb": "Luke",
+   "modern": "Luke",
+   "drb_aliases": [
+    "luke",
+    "lk",
+    "luk",
+    "lu"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "JHN",
+   "drb": "John",
+   "modern": "John",
+   "drb_aliases": [
+    "john",
+    "jn",
+    "jo",
+    "joh",
+    "jhn"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "ACT",
+   "drb": "Acts",
+   "modern": "Acts",
+   "drb_aliases": [
+    "acts",
+    "act",
+    "ac",
+    "actsoftheapostles"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "ROM",
+   "drb": "Romans",
+   "modern": "Romans",
+   "drb_aliases": [
+    "romans",
+    "rom",
+    "ro",
+    "rm"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "1CO",
+   "drb": "1 Corinthians",
+   "modern": "1 Corinthians",
+   "drb_aliases": [
+    "1corinthians",
+    "1cor",
+    "1co"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "2CO",
+   "drb": "2 Corinthians",
+   "modern": "2 Corinthians",
+   "drb_aliases": [
+    "2corinthians",
+    "2cor",
+    "2co"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "GAL",
+   "drb": "Galatians",
+   "modern": "Galatians",
+   "drb_aliases": [
+    "galatians",
+    "gal",
+    "ga"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "EPH",
+   "drb": "Ephesians",
+   "modern": "Ephesians",
+   "drb_aliases": [
+    "ephesians",
+    "eph",
+    "ep"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "PHP",
+   "drb": "Philippians",
+   "modern": "Philippians",
+   "drb_aliases": [
+    "philippians",
+    "phil",
+    "php",
+    "phili"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "COL",
+   "drb": "Colossians",
+   "modern": "Colossians",
+   "drb_aliases": [
+    "colossians",
+    "col"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "1TH",
+   "drb": "1 Thessalonians",
+   "modern": "1 Thessalonians",
+   "drb_aliases": [
+    "1thessalonians",
+    "1thess",
+    "1thes",
+    "1th"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "2TH",
+   "drb": "2 Thessalonians",
+   "modern": "2 Thessalonians",
+   "drb_aliases": [
+    "2thessalonians",
+    "2thess",
+    "2thes",
+    "2th"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "1TI",
+   "drb": "1 Timothy",
+   "modern": "1 Timothy",
+   "drb_aliases": [
+    "1timothy",
+    "1tim",
+    "1ti",
+    "1tm"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "2TI",
+   "drb": "2 Timothy",
+   "modern": "2 Timothy",
+   "drb_aliases": [
+    "2timothy",
+    "2tim",
+    "2ti",
+    "2tm"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "TIT",
+   "drb": "Titus",
+   "modern": "Titus",
+   "drb_aliases": [
+    "titus",
+    "tit",
+    "ti"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "PHM",
+   "drb": "Philemon",
+   "modern": "Philemon",
+   "drb_aliases": [
+    "philemon",
+    "philem",
+    "phlm",
+    "phm"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "HEB",
+   "drb": "Hebrews",
+   "modern": "Hebrews",
+   "drb_aliases": [
+    "hebrews",
+    "heb",
+    "he"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "JAS",
+   "drb": "James",
+   "modern": "James",
+   "drb_aliases": [
+    "james",
+    "jas",
+    "jm",
+    "jam",
+    "ja"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "1PE",
+   "drb": "1 Peter",
+   "modern": "1 Peter",
+   "drb_aliases": [
+    "1peter",
+    "1pet",
+    "1pe",
+    "1pt",
+    "1p"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "2PE",
+   "drb": "2 Peter",
+   "modern": "2 Peter",
+   "drb_aliases": [
+    "2peter",
+    "2pet",
+    "2pe",
+    "2pt",
+    "2p"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "1JN",
+   "drb": "1 John",
+   "modern": "1 John",
+   "drb_aliases": [
+    "1john",
+    "1jn",
+    "1jo",
+    "1joh",
+    "1jhn",
+    "1j"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "2JN",
+   "drb": "2 John",
+   "modern": "2 John",
+   "drb_aliases": [
+    "2john",
+    "2jn",
+    "2jo",
+    "2joh",
+    "2jhn",
+    "2j"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "3JN",
+   "drb": "3 John",
+   "modern": "3 John",
+   "drb_aliases": [
+    "3john",
+    "3jn",
+    "3jo",
+    "3joh",
+    "3jhn",
+    "3j"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "JUD",
+   "drb": "Jude",
+   "modern": "Jude",
+   "drb_aliases": [
+    "jude",
+    "jd",
+    "jde"
+   ],
+   "modern_aliases": []
+  },
+  {
+   "usfm": "REV",
+   "drb": "Apocalypse",
+   "modern": "Revelation",
+   "drb_aliases": [
+    "apocalypse",
+    "apoc",
+    "apo",
+    "ap"
+   ],
+   "modern_aliases": [
+    "revelation",
+    "revelations",
+    "rev",
+    "rv",
+    "re"
+   ]
+  }
+ ],
+ "scoring": {
+  "reference": {
+   "normalize": "lowercase; ordinals/roman numerals before a book name -> digit (first/1st/i -> 1, second/2nd/ii -> 2, third/3rd/iii -> 3, fourth/4th/iv -> 4); drop 'st.'/'saint', 'the', 'book of', 'gospel of/according to', 'epistle to/of'; '.' after a book abbreviation removed; between numbers any of ':' '.' ',' ' ' 'v' 'vs' -> ':'; dashes (- – —) -> '-'; remove remaining spaces inside the book part",
+   "grades": {
+    "correct": 2,
+    "correct_fast_ms": 5000,
+    "correct_fast": 3,
+    "close": 1,
+    "wrong": 0,
+    "bail": 0,
+    "override_right": 2
+   },
+   "close_rule": "same book (any alias, either naming system) and same chapter under one of the item's numberings, with the verse off by exactly 1",
+   "passage_rule": "for a multi-verse item, the starting verse alone or the exact full range is correct"
+  },
+  "text": {
+   "normalize": [
+    "Unicode NFKD, strip combining marks",
+    "lowercase",
+    "curly quotes -> straight",
+    "remove apostrophes (mother's -> mothers, justice' -> justice)",
+    "hyphens and dashes -> space",
+    "every other non [a-z0-9] char -> space",
+    "split on whitespace",
+    "map each token through spelling_variants",
+    "merge rule: two adjacent tokens on one side that concatenate to one token on the other side match it at cost 0 (to day = today, any one = anyone)"
+   ],
+   "spelling_variants": {
+    "labour": "labor",
+    "labours": "labors",
+    "laboured": "labored",
+    "neighbour": "neighbor",
+    "neighbours": "neighbors",
+    "saviour": "savior",
+    "armour": "armor",
+    "honour": "honor",
+    "honours": "honors",
+    "honoured": "honored",
+    "favour": "favor",
+    "colour": "color",
+    "counsellor": "counselor",
+    "fulness": "fullness",
+    "behaviour": "behavior",
+    "shew": "show",
+    "shewed": "showed",
+    "sheweth": "showeth",
+    "shewn": "shown",
+    "oh": "o",
+    "zion": "sion",
+    "judgement": "judgment",
+    "grey": "gray",
+    "towards": "toward",
+    "amongst": "among",
+    "whilst": "while"
+   },
+   "typo_rule": "tokens match as a 'typo' (cost 0, shown amber in the diff) when the reference token has >= 6 letters and Damerau-Levenshtein distance is 1. Shorter tokens must match exactly, so shall/shalt, thee/they, unto/into, hath/has, saith/said are real errors",
+   "alignment": "word-level Levenshtein (substitute/insert/delete cost 1; exact, variant, typo and merge matches cost 0); backtrace gives the diff",
+   "score": "score = max(0, 1 - errors / n) where n = number of reference tokens",
+   "verdict": {
+    "correct": "errors == 0, OR (n >= 6 AND (score >= 0.95 OR errors <= 1))",
+    "close": "not correct AND (score >= 0.80 OR (n <= 5 AND errors == 1))",
+    "wrong": "otherwise"
+   },
+   "grades": {
+    "correct": 2,
+    "close": 1,
+    "wrong": 0,
+    "bail": 0,
+    "override_right": 2
+   },
+   "diff": "always shown after submit: each reference token marked ok / typo / missing / wrong (with what was typed); extra typed tokens shown struck through at their position"
+  },
+  "cloze": {
+   "steps": [
+    {
+     "step": 0,
+     "name": "every third word hidden",
+     "rule": "hide token i when i % 3 == 2"
+    },
+    {
+     "step": 1,
+     "name": "half hidden",
+     "rule": "hide token i when i % 2 == 1"
+    },
+    {
+     "step": 2,
+     "name": "first letters",
+     "rule": "show only the first letter of every token, keep punctuation"
+    },
+    {
+     "step": 3,
+     "name": "full recall",
+     "rule": "show only the reference and the optional context hint"
+    }
+   ],
+   "tokens": "cloze tokens are the whitespace-separated words of `recite` as printed (punctuation stays attached and visible); a hidden word is drawn as underscores, one per letter, capped at 8",
+   "pass": "the user always types the whole verse; a step passes when the text verdict is 'correct'",
+   "graduate": "the -text card gets its first FSRS grade only after step 3 is passed: Good (2) if no step failed in the run, Hard (1) otherwise",
+   "relearn": "after a review graded Again (wrong or bail), the next showing starts at step 2 (first letters), then step 3"
+  }
+ },
+ "items": [
+  {
+   "id": "bible-gospels-01",
+   "ref_drb": "Luke 1:37",
+   "book": "LUK",
+   "book_drb": "Luke",
+   "book_modern": "Luke",
+   "chapter": 1,
+   "verse_start": 37,
+   "verse_end": 37,
+   "text": "Because no word shall be impossible with God.",
+   "recite": "Because no word shall be impossible with God.",
+   "word_count": 8,
+   "context": "The angel Gabriel to Mary at the Annunciation, after telling her of Elizabeth's pregnancy.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 37,
+     "verse_end": 37
+    }
+   ],
+   "accept": [
+    "Luke 1:37",
+    "lk 1:37",
+    "luk 1:37",
+    "lu 1:37"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-02",
+   "ref_drb": "John 8:32",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 8,
+   "verse_start": 32,
+   "verse_end": 32,
+   "text": "And you shall know the truth, and the truth shall make you free.",
+   "recite": "And you shall know the truth, and the truth shall make you free.",
+   "word_count": 13,
+   "context": "Jesus, to the Jews who had believed in him, in the Temple.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 8,
+     "verse_start": 32,
+     "verse_end": 32
+    }
+   ],
+   "accept": [
+    "John 8:32",
+    "jn 8:32",
+    "jo 8:32",
+    "joh 8:32",
+    "jhn 8:32"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-03",
+   "ref_drb": "Matthew 11:28",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 11,
+   "verse_start": 28,
+   "verse_end": 28,
+   "text": "Come to me, all you that labour, and are burdened, and I will refresh you.",
+   "recite": "Come to me, all you that labour, and are burdened, and I will refresh you.",
+   "word_count": 15,
+   "context": "Jesus' invitation to the weary, after praising the Father for revealing things to little ones.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 11,
+     "verse_start": 28,
+     "verse_end": 28
+    }
+   ],
+   "accept": [
+    "Matthew 11:28",
+    "matt 11:28",
+    "mat 11:28",
+    "mt 11:28"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-04",
+   "ref_drb": "John 1:1",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 1,
+   "verse_start": 1,
+   "verse_end": 1,
+   "text": "In the beginning was the Word, and the Word was with God, and the Word was God.",
+   "recite": "In the beginning was the Word, and the Word was with God, and the Word was God.",
+   "word_count": 17,
+   "context": "The opening words of St. John's Gospel, about the eternal Word.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 1,
+     "verse_end": 1
+    }
+   ],
+   "accept": [
+    "John 1:1",
+    "jn 1:1",
+    "jo 1:1",
+    "joh 1:1",
+    "jhn 1:1"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-05",
+   "ref_drb": "John 15:13",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 15,
+   "verse_start": 13,
+   "verse_end": 13,
+   "text": "Greater love than this no man hath, that a man lay down his life for his friends.",
+   "recite": "Greater love than this no man hath, that a man lay down his life for his friends.",
+   "word_count": 17,
+   "context": "Jesus at the Last Supper, in the discourse on the vine and the branches.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 15,
+     "verse_start": 13,
+     "verse_end": 13
+    }
+   ],
+   "accept": [
+    "John 15:13",
+    "jn 15:13",
+    "jo 15:13",
+    "joh 15:13",
+    "jhn 15:13"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-06",
+   "ref_drb": "Mark 8:36",
+   "book": "MRK",
+   "book_drb": "Mark",
+   "book_modern": "Mark",
+   "chapter": 8,
+   "verse_start": 36,
+   "verse_end": 36,
+   "text": "For what shall it profit a man, if he gain the whole world, and suffer the loss of his soul?",
+   "recite": "For what shall it profit a man, if he gain the whole world, and suffer the loss of his soul?",
+   "word_count": 20,
+   "context": "Jesus to the crowd and disciples, after first foretelling his Passion.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 8,
+     "verse_start": 36,
+     "verse_end": 36
+    }
+   ],
+   "accept": [
+    "Mark 8:36",
+    "mk 8:36",
+    "mar 8:36",
+    "mrk 8:36",
+    "mr 8:36"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-07",
+   "ref_drb": "Matthew 18:20",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 18,
+   "verse_start": 20,
+   "verse_end": 20,
+   "text": "For where there are two or three gathered together in my name, there am I in the midst of them.",
+   "recite": "For where there are two or three gathered together in my name, there am I in the midst of them.",
+   "word_count": 20,
+   "context": "Jesus to the disciples, teaching about prayer together.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 18,
+     "verse_start": 20,
+     "verse_end": 20
+    }
+   ],
+   "accept": [
+    "Matthew 18:20",
+    "matt 18:20",
+    "mat 18:20",
+    "mt 18:20"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-08",
+   "ref_drb": "John 13:34",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 13,
+   "verse_start": 34,
+   "verse_end": 34,
+   "text": "A new commandment I give unto you: That you love one another, as I have loved you, that you also love one another.",
+   "recite": "A new commandment I give unto you: That you love one another, as I have loved you, that you also love one another.",
+   "word_count": 23,
+   "context": "Jesus at the Last Supper, after Judas had gone out.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 13,
+     "verse_start": 34,
+     "verse_end": 34
+    }
+   ],
+   "accept": [
+    "John 13:34",
+    "jn 13:34",
+    "jo 13:34",
+    "joh 13:34",
+    "jhn 13:34"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-09",
+   "ref_drb": "John 14:6",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 14,
+   "verse_start": 6,
+   "verse_end": 6,
+   "text": "Jesus saith to him: I am the way, and the truth, and the life. No man cometh to the Father, but by me.",
+   "recite": "Jesus saith to him: I am the way, and the truth, and the life. No man cometh to the Father, but by me.",
+   "word_count": 23,
+   "context": "Jesus to Thomas at the Last Supper, who asked how they could know the way.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 14,
+     "verse_start": 6,
+     "verse_end": 6
+    }
+   ],
+   "accept": [
+    "John 14:6",
+    "jn 14:6",
+    "jo 14:6",
+    "joh 14:6",
+    "jhn 14:6"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-10",
+   "ref_drb": "Luke 9:23",
+   "book": "LUK",
+   "book_drb": "Luke",
+   "book_modern": "Luke",
+   "chapter": 9,
+   "verse_start": 23,
+   "verse_end": 23,
+   "text": "And he said to all: If any man will come after me, let him deny himself, and take up his cross daily, and follow me.",
+   "recite": "And he said to all: If any man will come after me, let him deny himself, and take up his cross daily, and follow me.",
+   "word_count": 25,
+   "context": "Jesus to all, right after first foretelling his Passion.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 9,
+     "verse_start": 23,
+     "verse_end": 23
+    }
+   ],
+   "accept": [
+    "Luke 9:23",
+    "lk 9:23",
+    "luk 9:23",
+    "lu 9:23"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-11",
+   "ref_drb": "Matthew 22:37",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 22,
+   "verse_start": 37,
+   "verse_end": 37,
+   "text": "Jesus said to him: Thou shalt love the Lord thy God with thy whole heart, and with thy whole soul, and with thy whole mind.",
+   "recite": "Jesus said to him: Thou shalt love the Lord thy God with thy whole heart, and with thy whole soul, and with thy whole mind.",
+   "word_count": 25,
+   "context": "Jesus answering a Pharisee lawyer who asked which is the great commandment.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 22,
+     "verse_start": 37,
+     "verse_end": 37
+    }
+   ],
+   "accept": [
+    "Matthew 22:37",
+    "matt 22:37",
+    "mat 22:37",
+    "mt 22:37"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-12",
+   "ref_drb": "John 3:16",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 3,
+   "verse_start": 16,
+   "verse_end": 16,
+   "text": "For God so loved the world, as to give his only begotten Son; that whosoever believeth in him, may not perish, but may have life everlasting.",
+   "recite": "For God so loved the world, as to give his only begotten Son; that whosoever believeth in him, may not perish, but may have life everlasting.",
+   "word_count": 26,
+   "context": "Jesus speaking with Nicodemus, who came to him by night.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 3,
+     "verse_start": 16,
+     "verse_end": 16
+    }
+   ],
+   "accept": [
+    "John 3:16",
+    "jn 3:16",
+    "jo 3:16",
+    "joh 3:16",
+    "jhn 3:16"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-13",
+   "ref_drb": "John 1:14",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 1,
+   "verse_start": 14,
+   "verse_end": 14,
+   "text": "And the Word was made flesh, and dwelt among us, (and we saw his glory, the glory as it were of the only begotten of the Father,) full of grace and truth.",
+   "recite": "And the Word was made flesh, and dwelt among us, (and we saw his glory, the glory as it were of the only begotten of the Father,) full of grace and truth.",
+   "word_count": 32,
+   "context": "St. John's prologue: the Incarnation (said at the Angelus and the end of the old Mass).",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 14,
+     "verse_end": 14
+    }
+   ],
+   "accept": [
+    "John 1:14",
+    "jn 1:14",
+    "jo 1:14",
+    "joh 1:14",
+    "jhn 1:14"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-01",
+   "ref_drb": "Matthew 7:1",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 7,
+   "verse_start": 1,
+   "verse_end": 1,
+   "text": "Judge not, that you may not be judged,",
+   "recite": "Judge not, that you may not be judged,",
+   "word_count": 8,
+   "context": "Jesus in the Sermon on the Mount, on judging others.",
+   "deck": "sermon",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 7,
+     "verse_start": 1,
+     "verse_end": 1
+    }
+   ],
+   "accept": [
+    "Matthew 7:1",
+    "matt 7:1",
+    "mat 7:1",
+    "mt 7:1"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-02",
+   "ref_drb": "Matthew 6:21",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 6,
+   "verse_start": 21,
+   "verse_end": 21,
+   "text": "For where thy treasure is, there is thy heart also.",
+   "recite": "For where thy treasure is, there is thy heart also.",
+   "word_count": 10,
+   "context": "Jesus in the Sermon on the Mount, on treasure in heaven.",
+   "deck": "sermon",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 6,
+     "verse_start": 21,
+     "verse_end": 21
+    }
+   ],
+   "accept": [
+    "Matthew 6:21",
+    "matt 6:21",
+    "mat 6:21",
+    "mt 6:21"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-03",
+   "ref_drb": "Matthew 5:48",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 5,
+   "verse_start": 48,
+   "verse_end": 48,
+   "text": "Be you therefore perfect, as also your heavenly Father is perfect.",
+   "recite": "Be you therefore perfect, as also your heavenly Father is perfect.",
+   "word_count": 11,
+   "context": "Jesus in the Sermon on the Mount, ending the teaching on loving enemies.",
+   "deck": "sermon",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 48,
+     "verse_end": 48
+    }
+   ],
+   "accept": [
+    "Matthew 5:48",
+    "matt 5:48",
+    "mat 5:48",
+    "mt 5:48"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-04",
+   "ref_drb": "Matthew 5:3",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 5,
+   "verse_start": 3,
+   "verse_end": 3,
+   "text": "Blessed are the poor in spirit: for theirs is the kingdom of heaven.",
+   "recite": "Blessed are the poor in spirit: for theirs is the kingdom of heaven.",
+   "word_count": 13,
+   "context": "The first Beatitude, opening the Sermon on the Mount.",
+   "deck": "sermon",
+   "group": "beatitudes",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 3,
+     "verse_end": 3
+    }
+   ],
+   "accept": [
+    "Matthew 5:3",
+    "matt 5:3",
+    "mat 5:3",
+    "mt 5:3"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-05",
+   "ref_drb": "Matthew 5:4",
+   "ref_modern": "Matthew 5:5",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 5,
+   "verse_start": 4,
+   "verse_end": 4,
+   "text": "Blessed are the meek: for they shall possess the land.",
+   "recite": "Blessed are the meek: for they shall possess the land.",
+   "word_count": 10,
+   "context": "The second Beatitude (the meek; the order of 5:4 and 5:5 is swapped in many modern Bibles).",
+   "deck": "sermon",
+   "group": "beatitudes",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 4,
+     "verse_end": 4
+    },
+    {
+     "system": "modern",
+     "chapter": 5,
+     "verse_start": 5,
+     "verse_end": 5
+    }
+   ],
+   "accept": [
+    "Matthew 5:4",
+    "matt 5:4",
+    "mat 5:4",
+    "mt 5:4",
+    "Matthew 5:5",
+    "matt 5:5",
+    "mat 5:5",
+    "mt 5:5"
+   ],
+   "note": "Douay-Rheims follows the Vulgate verse numbering here: Matthew 5:4 in the Douay is Matthew 5:5 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-06",
+   "ref_drb": "Matthew 5:5",
+   "ref_modern": "Matthew 5:4",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 5,
+   "verse_start": 5,
+   "verse_end": 5,
+   "text": "Blessed are they that mourn: for they shall be comforted.",
+   "recite": "Blessed are they that mourn: for they shall be comforted.",
+   "word_count": 10,
+   "context": "The third Beatitude (those that mourn; 5:4 in many modern Bibles).",
+   "deck": "sermon",
+   "group": "beatitudes",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 5,
+     "verse_end": 5
+    },
+    {
+     "system": "modern",
+     "chapter": 5,
+     "verse_start": 4,
+     "verse_end": 4
+    }
+   ],
+   "accept": [
+    "Matthew 5:5",
+    "matt 5:5",
+    "mat 5:5",
+    "mt 5:5",
+    "Matthew 5:4",
+    "matt 5:4",
+    "mat 5:4",
+    "mt 5:4"
+   ],
+   "note": "Douay-Rheims follows the Vulgate verse numbering here: Matthew 5:5 in the Douay is Matthew 5:4 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-07",
+   "ref_drb": "Matthew 5:6",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 5,
+   "verse_start": 6,
+   "verse_end": 6,
+   "text": "Blessed are they that hunger and thirst after justice: for they shall have their fill.",
+   "recite": "Blessed are they that hunger and thirst after justice: for they shall have their fill.",
+   "word_count": 15,
+   "context": "The fourth Beatitude.",
+   "deck": "sermon",
+   "group": "beatitudes",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 6,
+     "verse_end": 6
+    }
+   ],
+   "accept": [
+    "Matthew 5:6",
+    "matt 5:6",
+    "mat 5:6",
+    "mt 5:6"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-08",
+   "ref_drb": "Matthew 5:7",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 5,
+   "verse_start": 7,
+   "verse_end": 7,
+   "text": "Blessed are the merciful: for they shall obtain mercy.",
+   "recite": "Blessed are the merciful: for they shall obtain mercy.",
+   "word_count": 9,
+   "context": "The fifth Beatitude.",
+   "deck": "sermon",
+   "group": "beatitudes",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 7,
+     "verse_end": 7
+    }
+   ],
+   "accept": [
+    "Matthew 5:7",
+    "matt 5:7",
+    "mat 5:7",
+    "mt 5:7"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-09",
+   "ref_drb": "Matthew 5:8",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 5,
+   "verse_start": 8,
+   "verse_end": 8,
+   "text": "Blessed are the clean of heart: for they shall see God.",
+   "recite": "Blessed are the clean of heart: for they shall see God.",
+   "word_count": 11,
+   "context": "The sixth Beatitude.",
+   "deck": "sermon",
+   "group": "beatitudes",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 8,
+     "verse_end": 8
+    }
+   ],
+   "accept": [
+    "Matthew 5:8",
+    "matt 5:8",
+    "mat 5:8",
+    "mt 5:8"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-10",
+   "ref_drb": "Matthew 5:9",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 5,
+   "verse_start": 9,
+   "verse_end": 9,
+   "text": "Blessed are the peacemakers: for they shall be called children of God.",
+   "recite": "Blessed are the peacemakers: for they shall be called children of God.",
+   "word_count": 12,
+   "context": "The seventh Beatitude.",
+   "deck": "sermon",
+   "group": "beatitudes",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 9,
+     "verse_end": 9
+    }
+   ],
+   "accept": [
+    "Matthew 5:9",
+    "matt 5:9",
+    "mat 5:9",
+    "mt 5:9"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-11",
+   "ref_drb": "Matthew 5:10",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 5,
+   "verse_start": 10,
+   "verse_end": 10,
+   "text": "Blessed are they that suffer persecution for justice’ sake: for theirs is the kingdom of heaven.",
+   "recite": "Blessed are they that suffer persecution for justice’ sake: for theirs is the kingdom of heaven.",
+   "word_count": 16,
+   "context": "The eighth Beatitude.",
+   "deck": "sermon",
+   "group": "beatitudes",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 10,
+     "verse_end": 10
+    }
+   ],
+   "accept": [
+    "Matthew 5:10",
+    "matt 5:10",
+    "mat 5:10",
+    "mt 5:10"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-12",
+   "ref_drb": "Matthew 5:14",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 5,
+   "verse_start": 14,
+   "verse_end": 14,
+   "text": "You are the light of the world. A city seated on a mountain cannot be hid.",
+   "recite": "You are the light of the world. A city seated on a mountain cannot be hid.",
+   "word_count": 16,
+   "context": "Jesus to his disciples in the Sermon on the Mount, right after the Beatitudes.",
+   "deck": "sermon",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 14,
+     "verse_end": 14
+    }
+   ],
+   "accept": [
+    "Matthew 5:14",
+    "matt 5:14",
+    "mat 5:14",
+    "mt 5:14"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-13",
+   "ref_drb": "Matthew 6:33",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 6,
+   "verse_start": 33,
+   "verse_end": 33,
+   "text": "Seek ye therefore first the kingdom of God, and his justice, and all these things shall be added unto you.",
+   "recite": "Seek ye therefore first the kingdom of God, and his justice, and all these things shall be added unto you.",
+   "word_count": 20,
+   "context": "Jesus in the Sermon on the Mount, after the lilies of the field.",
+   "deck": "sermon",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 6,
+     "verse_start": 33,
+     "verse_end": 33
+    }
+   ],
+   "accept": [
+    "Matthew 6:33",
+    "matt 6:33",
+    "mat 6:33",
+    "mt 6:33"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-14",
+   "ref_drb": "Matthew 7:7",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 7,
+   "verse_start": 7,
+   "verse_end": 7,
+   "text": "Ask, and it shall be given you: seek, and you shall find: knock, and it shall be opened to you.",
+   "recite": "Ask, and it shall be given you: seek, and you shall find: knock, and it shall be opened to you.",
+   "word_count": 20,
+   "context": "Jesus in the Sermon on the Mount, on prayer.",
+   "deck": "sermon",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 7,
+     "verse_start": 7,
+     "verse_end": 7
+    }
+   ],
+   "accept": [
+    "Matthew 7:7",
+    "matt 7:7",
+    "mat 7:7",
+    "mt 7:7"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-15",
+   "ref_drb": "Matthew 6:9–13",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 6,
+   "verse_start": 9,
+   "verse_end": 13,
+   "verses": [
+    {
+     "verse": 9,
+     "text": "Thus therefore shall you pray: Our Father who art in heaven, hallowed be thy name."
+    },
+    {
+     "verse": 10,
+     "text": "Thy kingdom come. Thy will be done on earth as it is in heaven."
+    },
+    {
+     "verse": 11,
+     "text": "Give us this day our supersubstantial bread."
+    },
+    {
+     "verse": 12,
+     "text": "And forgive us our debts, as we also forgive our debtors."
+    },
+    {
+     "verse": 13,
+     "text": "And lead us not into temptation. But deliver us from evil. Amen."
+    }
+   ],
+   "text": "Thus therefore shall you pray: Our Father who art in heaven, hallowed be thy name. Thy kingdom come. Thy will be done on earth as it is in heaven. Give us this day our supersubstantial bread. And forgive us our debts, as we also forgive our debtors. And lead us not into temptation. But deliver us from evil. Amen.",
+   "recite": "Thus therefore shall you pray: Our Father who art in heaven, hallowed be thy name. Thy kingdom come. Thy will be done on earth as it is in heaven. Give us this day our supersubstantial bread. And forgive us our debts, as we also forgive our debtors. And lead us not into temptation. But deliver us from evil. Amen.",
+   "word_count": 59,
+   "context": "Jesus teaching the disciples how to pray: the Our Father.",
+   "deck": "sermon",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 6,
+     "verse_start": 9,
+     "verse_end": 13
+    }
+   ],
+   "accept": [
+    "Matthew 6:9",
+    "Matthew 6:9-13",
+    "matt 6:9",
+    "matt 6:9-13",
+    "mat 6:9",
+    "mat 6:9-13",
+    "mt 6:9",
+    "mt 6:9-13"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-01",
+   "ref_drb": "Psalm 22:1",
+   "ref_modern": "Psalm 23:1",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 22,
+   "verse_start": 1,
+   "verse_end": 1,
+   "text": "A psalm for David. The Lord ruleth me: and I shall want nothing.",
+   "recite": "The Lord ruleth me: and I shall want nothing.",
+   "recite_prefix": "A psalm for David.",
+   "word_count": 9,
+   "context": "Psalm of David, the Good Shepherd psalm: the opening line.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 22,
+     "verse_start": 1,
+     "verse_end": 1
+    },
+    {
+     "system": "modern",
+     "chapter": 23,
+     "verse_start": 1,
+     "verse_end": 1
+    }
+   ],
+   "accept": [
+    "Psalms 22:1",
+    "ps 22:1",
+    "psa 22:1",
+    "psalm 22:1",
+    "pss 22:1",
+    "psm 22:1",
+    "pslm 22:1",
+    "Psalms 23:1",
+    "ps 23:1",
+    "psa 23:1",
+    "psalm 23:1",
+    "pss 23:1",
+    "psm 23:1",
+    "pslm 23:1"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 22:1 in the Douay is Psalm 23:1 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-02",
+   "ref_drb": "Psalm 94:8",
+   "ref_modern": "Psalm 95:7–8",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 94,
+   "verse_start": 8,
+   "verse_end": 8,
+   "text": "Today if you shall hear his voice, harden not your hearts:",
+   "recite": "Today if you shall hear his voice, harden not your hearts:",
+   "word_count": 11,
+   "context": "The Invitatory psalm (Venite) that opens the Divine Office each day.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 94,
+     "verse_start": 8,
+     "verse_end": 8
+    },
+    {
+     "system": "modern",
+     "chapter": 95,
+     "verse_start": 7,
+     "verse_end": 8
+    },
+    {
+     "system": "modern",
+     "chapter": 95,
+     "verse_start": 8,
+     "verse_end": 8
+    }
+   ],
+   "accept": [
+    "Psalms 94:8",
+    "ps 94:8",
+    "psa 94:8",
+    "psalm 94:8",
+    "pss 94:8",
+    "psm 94:8",
+    "pslm 94:8",
+    "Psalms 95:7",
+    "Psalms 95:7-8",
+    "ps 95:7",
+    "ps 95:7-8",
+    "psa 95:7",
+    "psa 95:7-8",
+    "psalm 95:7",
+    "psalm 95:7-8",
+    "pss 95:7",
+    "pss 95:7-8",
+    "psm 95:7",
+    "psm 95:7-8",
+    "pslm 95:7",
+    "pslm 95:7-8",
+    "Psalms 95:8",
+    "ps 95:8",
+    "psa 95:8",
+    "psalm 95:8",
+    "pss 95:8",
+    "psm 95:8",
+    "pslm 95:8"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 94:8 in the Douay is Psalm 95:7–8 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-03",
+   "ref_drb": "Psalm 129:1",
+   "ref_modern": "Psalm 130:1",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 129,
+   "verse_start": 1,
+   "verse_end": 1,
+   "text": "Out of the depths I have cried to thee, O Lord:",
+   "recite": "Out of the depths I have cried to thee, O Lord:",
+   "word_count": 11,
+   "context": "Opening of the De profundis, prayed for the dead.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 129,
+     "verse_start": 1,
+     "verse_end": 1
+    },
+    {
+     "system": "modern",
+     "chapter": 130,
+     "verse_start": 1,
+     "verse_end": 1
+    }
+   ],
+   "accept": [
+    "Psalms 129:1",
+    "ps 129:1",
+    "psa 129:1",
+    "psalm 129:1",
+    "pss 129:1",
+    "psm 129:1",
+    "pslm 129:1",
+    "Psalms 130:1",
+    "ps 130:1",
+    "psa 130:1",
+    "psalm 130:1",
+    "pss 130:1",
+    "psm 130:1",
+    "pslm 130:1"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 129:1 in the Douay is Psalm 130:1 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-04",
+   "ref_drb": "Psalm 118:105",
+   "ref_modern": "Psalm 119:105",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 118,
+   "verse_start": 105,
+   "verse_end": 105,
+   "text": "NUN. Thy word is a lamp to my feet, and a light to my paths.",
+   "recite": "Thy word is a lamp to my feet, and a light to my paths.",
+   "recite_prefix": "NUN.",
+   "word_count": 14,
+   "context": "The long psalm on God's law, in the section for the Hebrew letter Nun.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 118,
+     "verse_start": 105,
+     "verse_end": 105
+    },
+    {
+     "system": "modern",
+     "chapter": 119,
+     "verse_start": 105,
+     "verse_end": 105
+    }
+   ],
+   "accept": [
+    "Psalms 118:105",
+    "ps 118:105",
+    "psa 118:105",
+    "psalm 118:105",
+    "pss 118:105",
+    "psm 118:105",
+    "pslm 118:105",
+    "Psalms 119:105",
+    "ps 119:105",
+    "psa 119:105",
+    "psalm 119:105",
+    "pss 119:105",
+    "psm 119:105",
+    "pslm 119:105"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 118:105 in the Douay is Psalm 119:105 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "reviewed",
+    "review_note": "eBible prints the Hebrew acrostic letter 'NUN.' at the start of the verse; drbo.org shows it as a section heading. It is not memorized (recite_prefix)."
+   }
+  },
+  {
+   "id": "bible-psalms-05",
+   "ref_drb": "Psalm 50:12",
+   "ref_modern": "Psalm 51:10",
+   "ref_nabre": "Psalm 51:12",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 50,
+   "verse_start": 12,
+   "verse_end": 12,
+   "text": "Create a clean heart in me, O God: and renew a right spirit within my bowels.",
+   "recite": "Create a clean heart in me, O God: and renew a right spirit within my bowels.",
+   "word_count": 16,
+   "context": "The Miserere, David's psalm of repentance after his sin with Bethsabee.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 50,
+     "verse_start": 12,
+     "verse_end": 12
+    },
+    {
+     "system": "modern",
+     "chapter": 51,
+     "verse_start": 10,
+     "verse_end": 10
+    },
+    {
+     "system": "nabre",
+     "chapter": 51,
+     "verse_start": 12,
+     "verse_end": 12
+    }
+   ],
+   "accept": [
+    "Psalms 50:12",
+    "ps 50:12",
+    "psa 50:12",
+    "psalm 50:12",
+    "pss 50:12",
+    "psm 50:12",
+    "pslm 50:12",
+    "Psalms 51:10",
+    "ps 51:10",
+    "psa 51:10",
+    "psalm 51:10",
+    "pss 51:10",
+    "psm 51:10",
+    "pslm 51:10",
+    "Psalms 51:12",
+    "ps 51:12",
+    "psa 51:12",
+    "psalm 51:12",
+    "pss 51:12",
+    "psm 51:12",
+    "pslm 51:12"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 50:12 in the Douay is Psalm 51:10 in most modern Bibles (Psalm 51:12 in the NABRE).",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-06",
+   "ref_drb": "Psalm 90:11",
+   "ref_modern": "Psalm 91:11",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 90,
+   "verse_start": 11,
+   "verse_end": 11,
+   "text": "For he hath given his angels charge over thee; to keep thee in all thy ways.",
+   "recite": "For he hath given his angels charge over thee; to keep thee in all thy ways.",
+   "word_count": 16,
+   "context": "Psalm of trust (Compline); the devil quotes it when tempting Christ.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 90,
+     "verse_start": 11,
+     "verse_end": 11
+    },
+    {
+     "system": "modern",
+     "chapter": 91,
+     "verse_start": 11,
+     "verse_end": 11
+    }
+   ],
+   "accept": [
+    "Psalms 90:11",
+    "ps 90:11",
+    "psa 90:11",
+    "psalm 90:11",
+    "pss 90:11",
+    "psm 90:11",
+    "pslm 90:11",
+    "Psalms 91:11",
+    "ps 91:11",
+    "psa 91:11",
+    "psalm 91:11",
+    "pss 91:11",
+    "psm 91:11",
+    "pslm 91:11"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 90:11 in the Douay is Psalm 91:11 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-07",
+   "ref_drb": "Psalm 117:24",
+   "ref_modern": "Psalm 118:24",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 117,
+   "verse_start": 24,
+   "verse_end": 24,
+   "text": "This is the day which the Lord hath made: let us be glad and rejoice therein.",
+   "recite": "This is the day which the Lord hath made: let us be glad and rejoice therein.",
+   "word_count": 16,
+   "context": "Easter psalm, sung throughout the Easter octave.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 117,
+     "verse_start": 24,
+     "verse_end": 24
+    },
+    {
+     "system": "modern",
+     "chapter": 118,
+     "verse_start": 24,
+     "verse_end": 24
+    }
+   ],
+   "accept": [
+    "Psalms 117:24",
+    "ps 117:24",
+    "psa 117:24",
+    "psalm 117:24",
+    "pss 117:24",
+    "psm 117:24",
+    "pslm 117:24",
+    "Psalms 118:24",
+    "ps 118:24",
+    "psa 118:24",
+    "psalm 118:24",
+    "pss 118:24",
+    "psm 118:24",
+    "pslm 118:24"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 117:24 in the Douay is Psalm 118:24 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-08",
+   "ref_drb": "Psalm 33:9",
+   "ref_modern": "Psalm 34:8",
+   "ref_nabre": "Psalm 34:9",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 33,
+   "verse_start": 9,
+   "verse_end": 9,
+   "text": "O taste, and see that the Lord is sweet: blessed is the man that hopeth in him.",
+   "recite": "O taste, and see that the Lord is sweet: blessed is the man that hopeth in him.",
+   "word_count": 17,
+   "context": "David's psalm of thanksgiving, sung as a Communion chant.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 33,
+     "verse_start": 9,
+     "verse_end": 9
+    },
+    {
+     "system": "modern",
+     "chapter": 34,
+     "verse_start": 8,
+     "verse_end": 8
+    },
+    {
+     "system": "nabre",
+     "chapter": 34,
+     "verse_start": 9,
+     "verse_end": 9
+    }
+   ],
+   "accept": [
+    "Psalms 33:9",
+    "ps 33:9",
+    "psa 33:9",
+    "psalm 33:9",
+    "pss 33:9",
+    "psm 33:9",
+    "pslm 33:9",
+    "Psalms 34:8",
+    "ps 34:8",
+    "psa 34:8",
+    "psalm 34:8",
+    "pss 34:8",
+    "psm 34:8",
+    "pslm 34:8",
+    "Psalms 34:9",
+    "ps 34:9",
+    "psa 34:9",
+    "psalm 34:9",
+    "pss 34:9",
+    "psm 34:9",
+    "pslm 34:9"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 33:9 in the Douay is Psalm 34:8 in most modern Bibles (Psalm 34:9 in the NABRE).",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-09",
+   "ref_drb": "Psalm 41:2",
+   "ref_modern": "Psalm 42:1",
+   "ref_nabre": "Psalm 42:2",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 41,
+   "verse_start": 2,
+   "verse_end": 2,
+   "text": "As the hart panteth after the fountains of water; so my soul panteth after thee, O God.",
+   "recite": "As the hart panteth after the fountains of water; so my soul panteth after thee, O God.",
+   "word_count": 17,
+   "context": "Psalm of longing for God; its Latin is 'Sicut cervus'.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 41,
+     "verse_start": 2,
+     "verse_end": 2
+    },
+    {
+     "system": "modern",
+     "chapter": 42,
+     "verse_start": 1,
+     "verse_end": 1
+    },
+    {
+     "system": "nabre",
+     "chapter": 42,
+     "verse_start": 2,
+     "verse_end": 2
+    }
+   ],
+   "accept": [
+    "Psalms 41:2",
+    "ps 41:2",
+    "psa 41:2",
+    "psalm 41:2",
+    "pss 41:2",
+    "psm 41:2",
+    "pslm 41:2",
+    "Psalms 42:1",
+    "ps 42:1",
+    "psa 42:1",
+    "psalm 42:1",
+    "pss 42:1",
+    "psm 42:1",
+    "pslm 42:1",
+    "Psalms 42:2",
+    "ps 42:2",
+    "psa 42:2",
+    "psalm 42:2",
+    "pss 42:2",
+    "psm 42:2",
+    "pslm 42:2"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 41:2 in the Douay is Psalm 42:1 in most modern Bibles (Psalm 42:2 in the NABRE).",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-10",
+   "ref_drb": "Psalm 45:11",
+   "ref_modern": "Psalm 46:10",
+   "ref_nabre": "Psalm 46:11",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 45,
+   "verse_start": 11,
+   "verse_end": 11,
+   "text": "Be still and see that I am God; I will be exalted among the nations, and I will be exalted in the earth.",
+   "recite": "Be still and see that I am God; I will be exalted among the nations, and I will be exalted in the earth.",
+   "word_count": 23,
+   "context": "God speaking in a psalm of trust ('God is our refuge and strength').",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 45,
+     "verse_start": 11,
+     "verse_end": 11
+    },
+    {
+     "system": "modern",
+     "chapter": 46,
+     "verse_start": 10,
+     "verse_end": 10
+    },
+    {
+     "system": "nabre",
+     "chapter": 46,
+     "verse_start": 11,
+     "verse_end": 11
+    }
+   ],
+   "accept": [
+    "Psalms 45:11",
+    "ps 45:11",
+    "psa 45:11",
+    "psalm 45:11",
+    "pss 45:11",
+    "psm 45:11",
+    "pslm 45:11",
+    "Psalms 46:10",
+    "ps 46:10",
+    "psa 46:10",
+    "psalm 46:10",
+    "pss 46:10",
+    "psm 46:10",
+    "pslm 46:10",
+    "Psalms 46:11",
+    "ps 46:11",
+    "psa 46:11",
+    "psalm 46:11",
+    "pss 46:11",
+    "psm 46:11",
+    "pslm 46:11"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 45:11 in the Douay is Psalm 46:10 in most modern Bibles (Psalm 46:11 in the NABRE).",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-11",
+   "ref_drb": "Psalm 50:3",
+   "ref_modern": "Psalm 51:1",
+   "ref_nabre": "Psalm 51:3",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 50,
+   "verse_start": 3,
+   "verse_end": 3,
+   "text": "Have mercy on me, O God, according to thy great mercy. And according to the multitude of thy tender mercies blot out my iniquity.",
+   "recite": "Have mercy on me, O God, according to thy great mercy. And according to the multitude of thy tender mercies blot out my iniquity.",
+   "word_count": 24,
+   "context": "Opening plea of the Miserere, David's psalm of repentance.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 50,
+     "verse_start": 3,
+     "verse_end": 3
+    },
+    {
+     "system": "modern",
+     "chapter": 51,
+     "verse_start": 1,
+     "verse_end": 1
+    },
+    {
+     "system": "nabre",
+     "chapter": 51,
+     "verse_start": 3,
+     "verse_end": 3
+    }
+   ],
+   "accept": [
+    "Psalms 50:3",
+    "ps 50:3",
+    "psa 50:3",
+    "psalm 50:3",
+    "pss 50:3",
+    "psm 50:3",
+    "pslm 50:3",
+    "Psalms 51:1",
+    "ps 51:1",
+    "psa 51:1",
+    "psalm 51:1",
+    "pss 51:1",
+    "psm 51:1",
+    "pslm 51:1",
+    "Psalms 51:3",
+    "ps 51:3",
+    "psa 51:3",
+    "psalm 51:3",
+    "pss 51:3",
+    "psm 51:3",
+    "pslm 51:3"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 50:3 in the Douay is Psalm 51:1 in most modern Bibles (Psalm 51:3 in the NABRE).",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-12",
+   "ref_drb": "Psalm 26:1",
+   "ref_modern": "Psalm 27:1",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 26,
+   "verse_start": 1,
+   "verse_end": 1,
+   "text": "The psalm of David before he was anointed. The Lord is my light and my salvation, whom shall I fear? The Lord is the protector of my life: of whom shall I be afraid?",
+   "recite": "The Lord is my light and my salvation, whom shall I fear? The Lord is the protector of my life: of whom shall I be afraid?",
+   "recite_prefix": "The psalm of David before he was anointed.",
+   "word_count": 26,
+   "context": "Psalm of David's confidence in God.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 26,
+     "verse_start": 1,
+     "verse_end": 1
+    },
+    {
+     "system": "modern",
+     "chapter": 27,
+     "verse_start": 1,
+     "verse_end": 1
+    }
+   ],
+   "accept": [
+    "Psalms 26:1",
+    "ps 26:1",
+    "psa 26:1",
+    "psalm 26:1",
+    "pss 26:1",
+    "psm 26:1",
+    "pslm 26:1",
+    "Psalms 27:1",
+    "ps 27:1",
+    "psa 27:1",
+    "psalm 27:1",
+    "pss 27:1",
+    "psm 27:1",
+    "pslm 27:1"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 26:1 in the Douay is Psalm 27:1 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-13",
+   "ref_drb": "Psalm 22:4",
+   "ref_modern": "Psalm 23:4",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 22,
+   "verse_start": 4,
+   "verse_end": 4,
+   "text": "For though I should walk in the midst of the shadow of death, I will fear no evils, for thou art with me. Thy rod and thy staff, they have comforted me.",
+   "recite": "For though I should walk in the midst of the shadow of death, I will fear no evils, for thou art with me. Thy rod and thy staff, they have comforted me.",
+   "word_count": 32,
+   "context": "Psalm of David, the Good Shepherd psalm: walking through the valley of death.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 22,
+     "verse_start": 4,
+     "verse_end": 4
+    },
+    {
+     "system": "modern",
+     "chapter": 23,
+     "verse_start": 4,
+     "verse_end": 4
+    }
+   ],
+   "accept": [
+    "Psalms 22:4",
+    "ps 22:4",
+    "psa 22:4",
+    "psalm 22:4",
+    "pss 22:4",
+    "psm 22:4",
+    "pslm 22:4",
+    "Psalms 23:4",
+    "ps 23:4",
+    "psa 23:4",
+    "psalm 23:4",
+    "pss 23:4",
+    "psm 23:4",
+    "pslm 23:4"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 22:4 in the Douay is Psalm 23:4 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-01",
+   "ref_drb": "Genesis 1:1",
+   "book": "GEN",
+   "book_drb": "Genesis",
+   "book_modern": "Genesis",
+   "chapter": 1,
+   "verse_start": 1,
+   "verse_end": 1,
+   "text": "In the beginning God created heaven, and earth.",
+   "recite": "In the beginning God created heaven, and earth.",
+   "word_count": 8,
+   "context": "The first verse of the Bible.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 1,
+     "verse_end": 1
+    }
+   ],
+   "accept": [
+    "Genesis 1:1",
+    "gen 1:1",
+    "ge 1:1",
+    "gn 1:1"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-02",
+   "ref_drb": "Ecclesiastes 1:2",
+   "book": "ECC",
+   "book_drb": "Ecclesiastes",
+   "book_modern": "Ecclesiastes",
+   "chapter": 1,
+   "verse_start": 2,
+   "verse_end": 2,
+   "text": "Vanity of vanities, said Ecclesiastes vanity of vanities, and all is vanity.",
+   "recite": "Vanity of vanities, said Ecclesiastes vanity of vanities, and all is vanity.",
+   "word_count": 12,
+   "context": "The opening cry of the Preacher (Ecclesiastes).",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 2,
+     "verse_end": 2
+    }
+   ],
+   "accept": [
+    "Ecclesiastes 1:2",
+    "eccl 1:2",
+    "eccles 1:2",
+    "ecc 1:2",
+    "eccle 1:2",
+    "qoh 1:2",
+    "qoheleth 1:2",
+    "qo 1:2"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-03",
+   "ref_drb": "Proverbs 3:5",
+   "book": "PRO",
+   "book_drb": "Proverbs",
+   "book_modern": "Proverbs",
+   "chapter": 3,
+   "verse_start": 5,
+   "verse_end": 5,
+   "text": "Have confidence in the Lord with all thy heart, and lean not upon thy own prudence.",
+   "recite": "Have confidence in the Lord with all thy heart, and lean not upon thy own prudence.",
+   "word_count": 16,
+   "context": "A father's instruction to his son in Proverbs.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 3,
+     "verse_start": 5,
+     "verse_end": 5
+    }
+   ],
+   "accept": [
+    "Proverbs 3:5",
+    "prov 3:5",
+    "pro 3:5",
+    "prv 3:5",
+    "pr 3:5"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-04",
+   "ref_drb": "Job 19:25",
+   "book": "JOB",
+   "book_drb": "Job",
+   "book_modern": "Job",
+   "chapter": 19,
+   "verse_start": 25,
+   "verse_end": 25,
+   "text": "For I know that my Redeemer liveth, and in the last day I shall rise out of the earth.",
+   "recite": "For I know that my Redeemer liveth, and in the last day I shall rise out of the earth.",
+   "word_count": 19,
+   "context": "Job, in his suffering, professing faith in the resurrection.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 19,
+     "verse_start": 25,
+     "verse_end": 25
+    }
+   ],
+   "accept": [
+    "Job 19:25",
+    "jb 19:25"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-05",
+   "ref_drb": "Wisdom 3:1",
+   "book": "WIS",
+   "book_drb": "Wisdom",
+   "book_modern": "Wisdom",
+   "chapter": 3,
+   "verse_start": 1,
+   "verse_end": 1,
+   "text": "But the souls of the just are in the hand of God, and the torment of death shall not touch them.",
+   "recite": "But the souls of the just are in the hand of God, and the torment of death shall not touch them.",
+   "word_count": 21,
+   "context": "Wisdom on the fate of the just; a common funeral reading.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 3,
+     "verse_start": 1,
+     "verse_end": 1
+    }
+   ],
+   "accept": [
+    "Wisdom 3:1",
+    "wis 3:1",
+    "ws 3:1",
+    "wisdomofsolomon 3:1"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-06",
+   "ref_drb": "Deuteronomy 6:5",
+   "book": "DEU",
+   "book_drb": "Deuteronomy",
+   "book_modern": "Deuteronomy",
+   "chapter": 6,
+   "verse_start": 5,
+   "verse_end": 5,
+   "text": "Thou shalt love the Lord thy God with thy whole heart, and with thy whole soul, and with thy whole strength.",
+   "recite": "Thou shalt love the Lord thy God with thy whole heart, and with thy whole soul, and with thy whole strength.",
+   "word_count": 21,
+   "context": "Moses giving the Shema; Jesus later calls it the first commandment.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 6,
+     "verse_start": 5,
+     "verse_end": 5
+    }
+   ],
+   "accept": [
+    "Deuteronomy 6:5",
+    "deut 6:5",
+    "dt 6:5",
+    "deu 6:5",
+    "de 6:5"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-07",
+   "ref_drb": "Genesis 1:27",
+   "book": "GEN",
+   "book_drb": "Genesis",
+   "book_modern": "Genesis",
+   "chapter": 1,
+   "verse_start": 27,
+   "verse_end": 27,
+   "text": "And God created man to his own image: to the image of God he created him: male and female he created them.",
+   "recite": "And God created man to his own image: to the image of God he created him: male and female he created them.",
+   "word_count": 22,
+   "context": "The creation of man on the sixth day.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 27,
+     "verse_end": 27
+    }
+   ],
+   "accept": [
+    "Genesis 1:27",
+    "gen 1:27",
+    "ge 1:27",
+    "gn 1:27"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-08",
+   "ref_drb": "3 Kings 19:12",
+   "ref_modern": "1 Kings 19:12",
+   "book": "1KI",
+   "book_drb": "3 Kings",
+   "book_modern": "1 Kings",
+   "chapter": 19,
+   "verse_start": 12,
+   "verse_end": 12,
+   "text": "And after the earthquake a fire: the Lord is not in the fire, and after the fire a whistling of a gentle air.",
+   "recite": "And after the earthquake a fire: the Lord is not in the fire, and after the fire a whistling of a gentle air.",
+   "word_count": 23,
+   "context": "Elias on Mount Horeb: God is not in the wind, earthquake or fire, but in the gentle air.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 19,
+     "verse_start": 12,
+     "verse_end": 12
+    }
+   ],
+   "accept": [
+    "3 Kings 19:12",
+    "1 Kings 19:12",
+    "3kgs 19:12",
+    "3ki 19:12",
+    "3kg 19:12",
+    "3k 19:12",
+    "3reg 19:12",
+    "3regum 19:12",
+    "1kgs 19:12",
+    "1ki 19:12",
+    "1kg 19:12",
+    "1k 19:12"
+   ],
+   "note": "3 Kings is the Douay name for 1 Kings.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-09",
+   "ref_drb": "1 Kings 3:10",
+   "ref_modern": "1 Samuel 3:10",
+   "book": "1SA",
+   "book_drb": "1 Kings",
+   "book_modern": "1 Samuel",
+   "chapter": 3,
+   "verse_start": 10,
+   "verse_end": 10,
+   "text": "And the Lord came and stood: and he called, as he had called the other times: Samuel, Samuel. And Samuel said: Speak, Lord, for thy servant heareth.",
+   "recite": "And the Lord came and stood: and he called, as he had called the other times: Samuel, Samuel. And Samuel said: Speak, Lord, for thy servant heareth.",
+   "word_count": 27,
+   "context": "The boy Samuel, sleeping in the temple at Silo, answers God's call.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 3,
+     "verse_start": 10,
+     "verse_end": 10
+    }
+   ],
+   "accept": [
+    "1 Kings 3:10",
+    "1 Samuel 3:10",
+    "1kgs 3:10",
+    "1ki 3:10",
+    "1kg 3:10",
+    "1k 3:10",
+    "1reg 3:10",
+    "1regum 3:10",
+    "1sam 3:10",
+    "1sa 3:10",
+    "1sm 3:10",
+    "1s 3:10"
+   ],
+   "note": "1 Kings is the Douay name for 1 Samuel.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-10",
+   "ref_drb": "Exodus 3:14",
+   "book": "EXO",
+   "book_drb": "Exodus",
+   "book_modern": "Exodus",
+   "chapter": 3,
+   "verse_start": 14,
+   "verse_end": 14,
+   "text": "God said to Moses: I AM WHO AM. He said: Thus shalt thou say to the children of Israel: HE WHO IS, hath sent me to you.",
+   "recite": "God said to Moses: I AM WHO AM. He said: Thus shalt thou say to the children of Israel: HE WHO IS, hath sent me to you.",
+   "word_count": 27,
+   "context": "God reveals his name to Moses from the burning bush.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 3,
+     "verse_start": 14,
+     "verse_end": 14
+    }
+   ],
+   "accept": [
+    "Exodus 3:14",
+    "ex 3:14",
+    "exo 3:14",
+    "exod 3:14"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-11",
+   "ref_drb": "Canticle of Canticles 8:6",
+   "ref_modern": "Song of Songs 8:6",
+   "book": "SNG",
+   "book_drb": "Canticle of Canticles",
+   "book_modern": "Song of Songs",
+   "chapter": 8,
+   "verse_start": 6,
+   "verse_end": 6,
+   "text": "Put me as a seal upon thy heart, as a seal upon thy arm, for love is strong as death, jealousy as hard as hell, the lamps thereof are fire and flames.",
+   "recite": "Put me as a seal upon thy heart, as a seal upon thy arm, for love is strong as death, jealousy as hard as hell, the lamps thereof are fire and flames.",
+   "word_count": 32,
+   "context": "The bride to the bridegroom near the end of the Canticle.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 8,
+     "verse_start": 6,
+     "verse_end": 6
+    }
+   ],
+   "accept": [
+    "Canticle of Canticles 8:6",
+    "Song of Songs 8:6",
+    "canticles 8:6",
+    "canticle 8:6",
+    "cant 8:6",
+    "cnt 8:6",
+    "ct 8:6",
+    "songofsolomon 8:6",
+    "song 8:6",
+    "sg 8:6",
+    "sos 8:6",
+    "ss 8:6",
+    "sng 8:6"
+   ],
+   "note": "Canticle of Canticles is the Douay name for Song of Songs.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-12",
+   "ref_drb": "Job 1:21",
+   "book": "JOB",
+   "book_drb": "Job",
+   "book_modern": "Job",
+   "chapter": 1,
+   "verse_start": 21,
+   "verse_end": 21,
+   "text": "And said: Naked came I out of my mother’s womb, and naked shall I return thither: the Lord gave, and the Lord hath taken away: as it hath pleased the Lord so is it done: blessed be the name of the Lord.",
+   "recite": "And said: Naked came I out of my mother’s womb, and naked shall I return thither: the Lord gave, and the Lord hath taken away: as it hath pleased the Lord so is it done: blessed be the name of the Lord.",
+   "word_count": 42,
+   "context": "Job's response after losing his children and all his goods in one day.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 21,
+     "verse_end": 21
+    }
+   ],
+   "accept": [
+    "Job 1:21",
+    "jb 1:21"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-01",
+   "ref_drb": "Isaias 55:8",
+   "ref_modern": "Isaiah 55:8",
+   "book": "ISA",
+   "book_drb": "Isaias",
+   "book_modern": "Isaiah",
+   "chapter": 55,
+   "verse_start": 8,
+   "verse_end": 8,
+   "text": "For my thoughts are not your thoughts: nor your ways my ways, saith the Lord.",
+   "recite": "For my thoughts are not your thoughts: nor your ways my ways, saith the Lord.",
+   "word_count": 15,
+   "context": "God through Isaias, calling the people to return to him.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 55,
+     "verse_start": 8,
+     "verse_end": 8
+    }
+   ],
+   "accept": [
+    "Isaias 55:8",
+    "Isaiah 55:8",
+    "isa 55:8",
+    "is 55:8"
+   ],
+   "note": "Isaias is the Douay name for Isaiah.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-02",
+   "ref_drb": "Isaias 6:3",
+   "ref_modern": "Isaiah 6:3",
+   "book": "ISA",
+   "book_drb": "Isaias",
+   "book_modern": "Isaiah",
+   "chapter": 6,
+   "verse_start": 3,
+   "verse_end": 3,
+   "text": "And they cried one to another, and said: Holy, holy, holy, the Lord God of hosts, all the earth is full of his glory.",
+   "recite": "And they cried one to another, and said: Holy, holy, holy, the Lord God of hosts, all the earth is full of his glory.",
+   "word_count": 24,
+   "context": "The seraphim crying before God's throne in Isaias' vision (the Sanctus).",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 6,
+     "verse_start": 3,
+     "verse_end": 3
+    }
+   ],
+   "accept": [
+    "Isaias 6:3",
+    "Isaiah 6:3",
+    "isa 6:3",
+    "is 6:3"
+   ],
+   "note": "Isaias is the Douay name for Isaiah.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-03",
+   "ref_drb": "Isaias 7:14",
+   "ref_modern": "Isaiah 7:14",
+   "book": "ISA",
+   "book_drb": "Isaias",
+   "book_modern": "Isaiah",
+   "chapter": 7,
+   "verse_start": 14,
+   "verse_end": 14,
+   "text": "Therefore the Lord himself shall give you a sign. Behold a virgin shall conceive, and bear a son, and his name shall be called Emmanuel.",
+   "recite": "Therefore the Lord himself shall give you a sign. Behold a virgin shall conceive, and bear a son, and his name shall be called Emmanuel.",
+   "word_count": 25,
+   "context": "Isaias to King Achaz: the sign of Emmanuel, quoted in Matthew 1.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 7,
+     "verse_start": 14,
+     "verse_end": 14
+    }
+   ],
+   "accept": [
+    "Isaias 7:14",
+    "Isaiah 7:14",
+    "isa 7:14",
+    "is 7:14"
+   ],
+   "note": "Isaias is the Douay name for Isaiah.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-04",
+   "ref_drb": "Isaias 40:3",
+   "ref_modern": "Isaiah 40:3",
+   "book": "ISA",
+   "book_drb": "Isaias",
+   "book_modern": "Isaiah",
+   "chapter": 40,
+   "verse_start": 3,
+   "verse_end": 3,
+   "text": "The voice of one crying in the desert: Prepare ye the way of the Lord, make straight in the wilderness the paths of our God.",
+   "recite": "The voice of one crying in the desert: Prepare ye the way of the Lord, make straight in the wilderness the paths of our God.",
+   "word_count": 25,
+   "context": "Isaias' prophecy of the forerunner, applied to John the Baptist.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 40,
+     "verse_start": 3,
+     "verse_end": 3
+    }
+   ],
+   "accept": [
+    "Isaias 40:3",
+    "Isaiah 40:3",
+    "isa 40:3",
+    "is 40:3"
+   ],
+   "note": "Isaias is the Douay name for Isaiah.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-05",
+   "ref_drb": "Isaias 6:8",
+   "ref_modern": "Isaiah 6:8",
+   "book": "ISA",
+   "book_drb": "Isaias",
+   "book_modern": "Isaiah",
+   "chapter": 6,
+   "verse_start": 8,
+   "verse_end": 8,
+   "text": "And I heard the voice of the Lord, saying: Whom shall I send? and who shall go for us? And I said: Lo, here am I, send me.",
+   "recite": "And I heard the voice of the Lord, saying: Whom shall I send? and who shall go for us? And I said: Lo, here am I, send me.",
+   "word_count": 28,
+   "context": "Isaias answering God's call after his lips were cleansed with a coal.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 6,
+     "verse_start": 8,
+     "verse_end": 8
+    }
+   ],
+   "accept": [
+    "Isaias 6:8",
+    "Isaiah 6:8",
+    "isa 6:8",
+    "is 6:8"
+   ],
+   "note": "Isaias is the Douay name for Isaiah.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-06",
+   "ref_drb": "Isaias 49:15",
+   "ref_modern": "Isaiah 49:15",
+   "book": "ISA",
+   "book_drb": "Isaias",
+   "book_modern": "Isaiah",
+   "chapter": 49,
+   "verse_start": 15,
+   "verse_end": 15,
+   "text": "Can a woman forget her infant, so as not to have pity on the son of her womb? and if she should forget, yet will not I forget thee.",
+   "recite": "Can a woman forget her infant, so as not to have pity on the son of her womb? and if she should forget, yet will not I forget thee.",
+   "word_count": 29,
+   "context": "God to Sion, who complains that the Lord has forgotten her.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 49,
+     "verse_start": 15,
+     "verse_end": 15
+    }
+   ],
+   "accept": [
+    "Isaias 49:15",
+    "Isaiah 49:15",
+    "isa 49:15",
+    "is 49:15"
+   ],
+   "note": "Isaias is the Douay name for Isaiah.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-07",
+   "ref_drb": "Micheas 6:8",
+   "ref_modern": "Micah 6:8",
+   "book": "MIC",
+   "book_drb": "Micheas",
+   "book_modern": "Micah",
+   "chapter": 6,
+   "verse_start": 8,
+   "verse_end": 8,
+   "text": "I will shew thee, O man, what is good, and what the Lord requireth of thee: Verily, to do judgment, and to love mercy, and to walk solicitous with thy God.",
+   "recite": "I will shew thee, O man, what is good, and what the Lord requireth of thee: Verily, to do judgment, and to love mercy, and to walk solicitous with thy God.",
+   "word_count": 31,
+   "context": "Micheas telling Israel what God really asks of them.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 6,
+     "verse_start": 8,
+     "verse_end": 8
+    }
+   ],
+   "accept": [
+    "Micheas 6:8",
+    "Micah 6:8",
+    "mich 6:8",
+    "mic 6:8",
+    "mi 6:8"
+   ],
+   "note": "Micheas is the Douay name for Micah.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-08",
+   "ref_drb": "Jeremias 1:5",
+   "ref_modern": "Jeremiah 1:5",
+   "book": "JER",
+   "book_drb": "Jeremias",
+   "book_modern": "Jeremiah",
+   "chapter": 1,
+   "verse_start": 5,
+   "verse_end": 5,
+   "text": "Before I formed thee in the bowels of thy mother, I knew thee: and before thou camest forth out of the womb, I sanctified thee, and made thee a prophet unto the nations.",
+   "recite": "Before I formed thee in the bowels of thy mother, I knew thee: and before thou camest forth out of the womb, I sanctified thee, and made thee a prophet unto the nations.",
+   "word_count": 33,
+   "context": "God calling Jeremias to be a prophet.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 5,
+     "verse_end": 5
+    }
+   ],
+   "accept": [
+    "Jeremias 1:5",
+    "Jeremiah 1:5",
+    "jer 1:5",
+    "je 1:5",
+    "jr 1:5"
+   ],
+   "note": "Jeremias is the Douay name for Jeremiah.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-09",
+   "ref_drb": "Joel 2:13",
+   "book": "JOL",
+   "book_drb": "Joel",
+   "book_modern": "Joel",
+   "chapter": 2,
+   "verse_start": 13,
+   "verse_end": 13,
+   "text": "And rend your hearts, and not your garments, and turn to the Lord your God: for he is gracious and merciful, patient and rich in mercy, and ready to repent of the evil.",
+   "recite": "And rend your hearts, and not your garments, and turn to the Lord your God: for he is gracious and merciful, patient and rich in mercy, and ready to repent of the evil.",
+   "word_count": 33,
+   "context": "Joel calling the people to fast and repent; read on Ash Wednesday.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 2,
+     "verse_start": 13,
+     "verse_end": 13
+    }
+   ],
+   "accept": [
+    "Joel 2:13",
+    "jl 2:13",
+    "joe 2:13"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-10",
+   "ref_drb": "Ezechiel 36:26",
+   "ref_modern": "Ezekiel 36:26",
+   "book": "EZK",
+   "book_drb": "Ezechiel",
+   "book_modern": "Ezekiel",
+   "chapter": 36,
+   "verse_start": 26,
+   "verse_end": 26,
+   "text": "And I will give you a new heart, and put a new spirit within you: and I will take away the stony heart out of your flesh, and will give you a heart of flesh.",
+   "recite": "And I will give you a new heart, and put a new spirit within you: and I will take away the stony heart out of your flesh, and will give you a heart of flesh.",
+   "word_count": 35,
+   "context": "God's promise of a new heart, through Ezechiel.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 36,
+     "verse_start": 26,
+     "verse_end": 26
+    }
+   ],
+   "accept": [
+    "Ezechiel 36:26",
+    "Ezekiel 36:26",
+    "ezech 36:26",
+    "ez 36:26",
+    "ezek 36:26",
+    "ezk 36:26"
+   ],
+   "note": "Ezechiel is the Douay name for Ezekiel.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-11",
+   "ref_drb": "Isaias 1:18",
+   "ref_modern": "Isaiah 1:18",
+   "book": "ISA",
+   "book_drb": "Isaias",
+   "book_modern": "Isaiah",
+   "chapter": 1,
+   "verse_start": 18,
+   "verse_end": 18,
+   "text": "And then come, and accuse me, saith the Lord: if your sins be as scarlet, they shall be made as white as snow: and if they be red as crimson, they shall be white as wool.",
+   "recite": "And then come, and accuse me, saith the Lord: if your sins be as scarlet, they shall be made as white as snow: and if they be red as crimson, they shall be white as wool.",
+   "word_count": 36,
+   "context": "God inviting Juda to repent, at the start of Isaias.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 18,
+     "verse_end": 18
+    }
+   ],
+   "accept": [
+    "Isaias 1:18",
+    "Isaiah 1:18",
+    "isa 1:18",
+    "is 1:18"
+   ],
+   "note": "Isaias is the Douay name for Isaiah.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-12",
+   "ref_drb": "Isaias 9:6",
+   "ref_modern": "Isaiah 9:6",
+   "ref_nabre": "Isaiah 9:5",
+   "book": "ISA",
+   "book_drb": "Isaias",
+   "book_modern": "Isaiah",
+   "chapter": 9,
+   "verse_start": 6,
+   "verse_end": 6,
+   "text": "For a CHILD IS BORN to us, and a son is given to us, and the government is upon his shoulder: and his name shall be called, Wonderful, Counsellor, God the Mighty, the Father of the world to come, the Prince of Peace.",
+   "recite": "For a CHILD IS BORN to us, and a son is given to us, and the government is upon his shoulder: and his name shall be called, Wonderful, Counsellor, God the Mighty, the Father of the world to come, the Prince of Peace.",
+   "word_count": 43,
+   "context": "Isaias' prophecy of the royal child; read at Christmas Midnight Mass.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 9,
+     "verse_start": 6,
+     "verse_end": 6
+    },
+    {
+     "system": "nabre",
+     "chapter": 9,
+     "verse_start": 5,
+     "verse_end": 5
+    }
+   ],
+   "accept": [
+    "Isaias 9:6",
+    "Isaiah 9:6",
+    "isa 9:6",
+    "is 9:6",
+    "Isaias 9:5",
+    "Isaiah 9:5",
+    "isa 9:5",
+    "is 9:5"
+   ],
+   "note": "Isaias is the Douay name for Isaiah. The NABRE numbers this Isaiah 9:5.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-01",
+   "ref_drb": "1 Thessalonians 5:17",
+   "book": "1TH",
+   "book_drb": "1 Thessalonians",
+   "book_modern": "1 Thessalonians",
+   "chapter": 5,
+   "verse_start": 17,
+   "verse_end": 17,
+   "text": "Pray without ceasing.",
+   "recite": "Pray without ceasing.",
+   "word_count": 3,
+   "context": "St. Paul's closing exhortations to the Thessalonians.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 17,
+     "verse_end": 17
+    }
+   ],
+   "accept": [
+    "1 Thessalonians 5:17",
+    "1thess 5:17",
+    "1thes 5:17",
+    "1th 5:17"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-02",
+   "ref_drb": "Hebrews 13:8",
+   "book": "HEB",
+   "book_drb": "Hebrews",
+   "book_modern": "Hebrews",
+   "chapter": 13,
+   "verse_start": 8,
+   "verse_end": 8,
+   "text": "Jesus Christ, yesterday, and today; and the same for ever.",
+   "recite": "Jesus Christ, yesterday, and today; and the same for ever.",
+   "word_count": 10,
+   "context": "The closing exhortations of the Epistle to the Hebrews.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 13,
+     "verse_start": 8,
+     "verse_end": 8
+    }
+   ],
+   "accept": [
+    "Hebrews 13:8",
+    "heb 13:8",
+    "he 13:8"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-03",
+   "ref_drb": "1 John 4:8",
+   "book": "1JN",
+   "book_drb": "1 John",
+   "book_modern": "1 John",
+   "chapter": 4,
+   "verse_start": 8,
+   "verse_end": 8,
+   "text": "He that loveth not, knoweth not God: for God is charity.",
+   "recite": "He that loveth not, knoweth not God: for God is charity.",
+   "word_count": 11,
+   "context": "St. John on love as the mark of those born of God.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 4,
+     "verse_start": 8,
+     "verse_end": 8
+    }
+   ],
+   "accept": [
+    "1 John 4:8",
+    "1jn 4:8",
+    "1jo 4:8",
+    "1joh 4:8",
+    "1jhn 4:8",
+    "1j 4:8"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-04",
+   "ref_drb": "Philippians 4:13",
+   "book": "PHP",
+   "book_drb": "Philippians",
+   "book_modern": "Philippians",
+   "chapter": 4,
+   "verse_start": 13,
+   "verse_end": 13,
+   "text": "I can do all these things in him who strengtheneth me.",
+   "recite": "I can do all these things in him who strengtheneth me.",
+   "word_count": 11,
+   "context": "St. Paul from prison, on being content in plenty and in want.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 4,
+     "verse_start": 13,
+     "verse_end": 13
+    }
+   ],
+   "accept": [
+    "Philippians 4:13",
+    "phil 4:13",
+    "php 4:13",
+    "phili 4:13"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-05",
+   "ref_drb": "1 Corinthians 13:4",
+   "book": "1CO",
+   "book_drb": "1 Corinthians",
+   "book_modern": "1 Corinthians",
+   "chapter": 13,
+   "verse_start": 4,
+   "verse_end": 4,
+   "text": "Charity is patient, is kind: charity envieth not, dealeth not perversely; is not puffed up;",
+   "recite": "Charity is patient, is kind: charity envieth not, dealeth not perversely; is not puffed up;",
+   "word_count": 15,
+   "context": "St. Paul's hymn to charity: what charity is and is not.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 13,
+     "verse_start": 4,
+     "verse_end": 4
+    }
+   ],
+   "accept": [
+    "1 Corinthians 13:4",
+    "1cor 13:4",
+    "1co 13:4"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-06",
+   "ref_drb": "2 Timothy 4:7",
+   "book": "2TI",
+   "book_drb": "2 Timothy",
+   "book_modern": "2 Timothy",
+   "chapter": 4,
+   "verse_start": 7,
+   "verse_end": 7,
+   "text": "I have fought a good fight, I have finished my course, I have kept the faith.",
+   "recite": "I have fought a good fight, I have finished my course, I have kept the faith.",
+   "word_count": 16,
+   "context": "St. Paul near his death, writing to Timothy.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 4,
+     "verse_start": 7,
+     "verse_end": 7
+    }
+   ],
+   "accept": [
+    "2 Timothy 4:7",
+    "2tim 4:7",
+    "2ti 4:7",
+    "2tm 4:7"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-07",
+   "ref_drb": "Romans 8:31",
+   "book": "ROM",
+   "book_drb": "Romans",
+   "book_modern": "Romans",
+   "chapter": 8,
+   "verse_start": 31,
+   "verse_end": 31,
+   "text": "What shall we then say to these things? If God be for us, who is against us?",
+   "recite": "What shall we then say to these things? If God be for us, who is against us?",
+   "word_count": 17,
+   "context": "St. Paul to the Romans, after describing God's plan of salvation.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 8,
+     "verse_start": 31,
+     "verse_end": 31
+    }
+   ],
+   "accept": [
+    "Romans 8:31",
+    "rom 8:31",
+    "ro 8:31",
+    "rm 8:31"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-08",
+   "ref_drb": "1 Corinthians 13:13",
+   "book": "1CO",
+   "book_drb": "1 Corinthians",
+   "book_modern": "1 Corinthians",
+   "chapter": 13,
+   "verse_start": 13,
+   "verse_end": 13,
+   "text": "And now there remain faith, hope, and charity, these three: but the greatest of these is charity.",
+   "recite": "And now there remain faith, hope, and charity, these three: but the greatest of these is charity.",
+   "word_count": 17,
+   "context": "The close of St. Paul's hymn to charity.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 13,
+     "verse_start": 13,
+     "verse_end": 13
+    }
+   ],
+   "accept": [
+    "1 Corinthians 13:13",
+    "1cor 13:13",
+    "1co 13:13"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-09",
+   "ref_drb": "Hebrews 11:1",
+   "book": "HEB",
+   "book_drb": "Hebrews",
+   "book_modern": "Hebrews",
+   "chapter": 11,
+   "verse_start": 1,
+   "verse_end": 1,
+   "text": "Now faith is the substance of things to be hoped for, the evidence of things that appear not.",
+   "recite": "Now faith is the substance of things to be hoped for, the evidence of things that appear not.",
+   "word_count": 18,
+   "context": "The opening definition of faith in Hebrews 11.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 11,
+     "verse_start": 1,
+     "verse_end": 1
+    }
+   ],
+   "accept": [
+    "Hebrews 11:1",
+    "heb 11:1",
+    "he 11:1"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-10",
+   "ref_drb": "1 John 1:9",
+   "book": "1JN",
+   "book_drb": "1 John",
+   "book_modern": "1 John",
+   "chapter": 1,
+   "verse_start": 9,
+   "verse_end": 9,
+   "text": "If we confess our sins, he is faithful and just, to forgive us our sins, and to cleanse us from all iniquity.",
+   "recite": "If we confess our sins, he is faithful and just, to forgive us our sins, and to cleanse us from all iniquity.",
+   "word_count": 22,
+   "context": "St. John on confessing our sins.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 9,
+     "verse_end": 9
+    }
+   ],
+   "accept": [
+    "1 John 1:9",
+    "1jn 1:9",
+    "1jo 1:9",
+    "1joh 1:9",
+    "1jhn 1:9",
+    "1j 1:9"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-11",
+   "ref_drb": "Romans 8:28",
+   "book": "ROM",
+   "book_drb": "Romans",
+   "book_modern": "Romans",
+   "chapter": 8,
+   "verse_start": 28,
+   "verse_end": 28,
+   "text": "And we know that to them that love God, all things work together unto good, to such as, according to his purpose, are called to be saints.",
+   "recite": "And we know that to them that love God, all things work together unto good, to such as, according to his purpose, are called to be saints.",
+   "word_count": 27,
+   "context": "St. Paul on God's providence for those who love him.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 8,
+     "verse_start": 28,
+     "verse_end": 28
+    }
+   ],
+   "accept": [
+    "Romans 8:28",
+    "rom 8:28",
+    "ro 8:28",
+    "rm 8:28"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-12",
+   "ref_drb": "Galatians 2:20",
+   "book": "GAL",
+   "book_drb": "Galatians",
+   "book_modern": "Galatians",
+   "chapter": 2,
+   "verse_start": 20,
+   "verse_end": 20,
+   "text": "And I live, now not I; but Christ liveth in me. And that I live now in the flesh: I live in the faith of the Son of God, who loved me, and delivered himself for me.",
+   "recite": "And I live, now not I; but Christ liveth in me. And that I live now in the flesh: I live in the faith of the Son of God, who loved me, and delivered himself for me.",
+   "word_count": 37,
+   "context": "St. Paul on his life in Christ, after describing his dispute with Peter.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 2,
+     "verse_start": 20,
+     "verse_end": 20
+    }
+   ],
+   "accept": [
+    "Galatians 2:20",
+    "gal 2:20",
+    "ga 2:20"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-01",
+   "ref_drb": "John 6:56",
+   "ref_modern": "John 6:55",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 6,
+   "verse_start": 56,
+   "verse_end": 56,
+   "text": "For my flesh is meat indeed: and my blood is drink indeed.",
+   "recite": "For my flesh is meat indeed: and my blood is drink indeed.",
+   "word_count": 12,
+   "context": "Jesus in the Bread of Life discourse at Capharnaum.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 6,
+     "verse_start": 56,
+     "verse_end": 56
+    },
+    {
+     "system": "modern",
+     "chapter": 6,
+     "verse_start": 55,
+     "verse_end": 55
+    }
+   ],
+   "accept": [
+    "John 6:56",
+    "jn 6:56",
+    "jo 6:56",
+    "joh 6:56",
+    "jhn 6:56",
+    "John 6:55",
+    "jn 6:55",
+    "jo 6:55",
+    "joh 6:55",
+    "jhn 6:55"
+   ],
+   "note": "Douay-Rheims follows the Vulgate verse numbering here: John 6:56 in the Douay is John 6:55 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-02",
+   "ref_drb": "James 2:24",
+   "book": "JAS",
+   "book_drb": "James",
+   "book_modern": "James",
+   "chapter": 2,
+   "verse_start": 24,
+   "verse_end": 24,
+   "text": "Do you see that by works a man is justified; and not by faith only?",
+   "recite": "Do you see that by works a man is justified; and not by faith only?",
+   "word_count": 15,
+   "context": "St. James on faith and works.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 2,
+     "verse_start": 24,
+     "verse_end": 24
+    }
+   ],
+   "accept": [
+    "James 2:24",
+    "jas 2:24",
+    "jm 2:24",
+    "jam 2:24",
+    "ja 2:24"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-03",
+   "ref_drb": "John 20:23",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 20,
+   "verse_start": 23,
+   "verse_end": 23,
+   "text": "Whose sins you shall forgive, they are forgiven them; and whose sins you shall retain, they are retained.",
+   "recite": "Whose sins you shall forgive, they are forgiven them; and whose sins you shall retain, they are retained.",
+   "word_count": 18,
+   "context": "The risen Jesus to the apostles on Easter evening, after breathing on them.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 20,
+     "verse_start": 23,
+     "verse_end": 23
+    }
+   ],
+   "accept": [
+    "John 20:23",
+    "jn 20:23",
+    "jo 20:23",
+    "joh 20:23",
+    "jhn 20:23"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-04",
+   "ref_drb": "2 Thessalonians 2:14",
+   "ref_modern": "2 Thessalonians 2:15",
+   "book": "2TH",
+   "book_drb": "2 Thessalonians",
+   "book_modern": "2 Thessalonians",
+   "chapter": 2,
+   "verse_start": 14,
+   "verse_end": 14,
+   "text": "Therefore, brethren, stand fast; and hold the traditions which you have learned, whether by word, or by our epistle.",
+   "recite": "Therefore, brethren, stand fast; and hold the traditions which you have learned, whether by word, or by our epistle.",
+   "word_count": 19,
+   "context": "St. Paul to the Thessalonians, on holding to apostolic tradition.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 2,
+     "verse_start": 14,
+     "verse_end": 14
+    },
+    {
+     "system": "modern",
+     "chapter": 2,
+     "verse_start": 15,
+     "verse_end": 15
+    }
+   ],
+   "accept": [
+    "2 Thessalonians 2:14",
+    "2thess 2:14",
+    "2thes 2:14",
+    "2th 2:14",
+    "2 Thessalonians 2:15",
+    "2thess 2:15",
+    "2thes 2:15",
+    "2th 2:15"
+   ],
+   "note": "Douay-Rheims follows the Vulgate verse numbering here: 2 Thessalonians 2:14 in the Douay is 2 Thessalonians 2:15 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-05",
+   "ref_drb": "2 Machabees 12:46",
+   "ref_modern": "2 Maccabees 12:45",
+   "book": "2MA",
+   "book_drb": "2 Machabees",
+   "book_modern": "2 Maccabees",
+   "chapter": 12,
+   "verse_start": 46,
+   "verse_end": 46,
+   "text": "It is therefore a holy and wholesome thought to pray for the dead, that they may be loosed from sins.",
+   "recite": "It is therefore a holy and wholesome thought to pray for the dead, that they may be loosed from sins.",
+   "word_count": 20,
+   "context": "Judas Machabeus sends an offering to Jerusalem for the fallen soldiers.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 12,
+     "verse_start": 46,
+     "verse_end": 46
+    },
+    {
+     "system": "modern",
+     "chapter": 12,
+     "verse_start": 45,
+     "verse_end": 45
+    }
+   ],
+   "accept": [
+    "2 Machabees 12:46",
+    "2 Maccabees 12:46",
+    "2mach 12:46",
+    "2mac 12:46",
+    "2macc 12:46",
+    "2ma 12:46",
+    "2mc 12:46",
+    "2 Machabees 12:45",
+    "2 Maccabees 12:45",
+    "2mach 12:45",
+    "2mac 12:45",
+    "2macc 12:45",
+    "2ma 12:45",
+    "2mc 12:45"
+   ],
+   "note": "2 Machabees is the Douay name for 2 Maccabees. Douay-Rheims follows the Vulgate verse numbering here: 2 Machabees 12:46 in the Douay is 2 Maccabees 12:45 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-06",
+   "ref_drb": "Luke 1:28",
+   "book": "LUK",
+   "book_drb": "Luke",
+   "book_modern": "Luke",
+   "chapter": 1,
+   "verse_start": 28,
+   "verse_end": 28,
+   "text": "And the angel being come in, said unto her: Hail, full of grace, the Lord is with thee: blessed art thou among women.",
+   "recite": "And the angel being come in, said unto her: Hail, full of grace, the Lord is with thee: blessed art thou among women.",
+   "word_count": 23,
+   "context": "The angel Gabriel greeting Mary at the Annunciation (first line of the Hail Mary).",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 28,
+     "verse_end": 28
+    }
+   ],
+   "accept": [
+    "Luke 1:28",
+    "lk 1:28",
+    "luk 1:28",
+    "lu 1:28"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-07",
+   "ref_drb": "Luke 1:42",
+   "book": "LUK",
+   "book_drb": "Luke",
+   "book_modern": "Luke",
+   "chapter": 1,
+   "verse_start": 42,
+   "verse_end": 42,
+   "text": "And she cried out with a loud voice, and said: Blessed art thou among women, and blessed is the fruit of thy womb.",
+   "recite": "And she cried out with a loud voice, and said: Blessed art thou among women, and blessed is the fruit of thy womb.",
+   "word_count": 23,
+   "context": "Elizabeth greeting Mary at the Visitation (second line of the Hail Mary).",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 42,
+     "verse_end": 42
+    }
+   ],
+   "accept": [
+    "Luke 1:42",
+    "lk 1:42",
+    "luk 1:42",
+    "lu 1:42"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-08",
+   "ref_drb": "Matthew 28:19",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 28,
+   "verse_start": 19,
+   "verse_end": 19,
+   "text": "Going therefore, teach ye all nations; baptizing them in the name of the Father, and of the Son, and of the Holy Ghost.",
+   "recite": "Going therefore, teach ye all nations; baptizing them in the name of the Father, and of the Son, and of the Holy Ghost.",
+   "word_count": 23,
+   "context": "The risen Jesus giving the Great Commission on a mountain in Galilee.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 28,
+     "verse_start": 19,
+     "verse_end": 19
+    }
+   ],
+   "accept": [
+    "Matthew 28:19",
+    "matt 28:19",
+    "mat 28:19",
+    "mt 28:19"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-09",
+   "ref_drb": "Matthew 16:18",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 16,
+   "verse_start": 18,
+   "verse_end": 18,
+   "text": "And I say to thee: That thou art Peter; and upon this rock I will build my church, and the gates of hell shall not prevail against it.",
+   "recite": "And I say to thee: That thou art Peter; and upon this rock I will build my church, and the gates of hell shall not prevail against it.",
+   "word_count": 28,
+   "context": "Jesus to Simon Peter at Caesarea Philippi, after Peter confesses him the Christ.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 16,
+     "verse_start": 18,
+     "verse_end": 18
+    }
+   ],
+   "accept": [
+    "Matthew 16:18",
+    "matt 16:18",
+    "mat 16:18",
+    "mt 16:18"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-10",
+   "ref_drb": "Genesis 3:15",
+   "book": "GEN",
+   "book_drb": "Genesis",
+   "book_modern": "Genesis",
+   "chapter": 3,
+   "verse_start": 15,
+   "verse_end": 15,
+   "text": "I will put enmities between thee and the woman, and thy seed and her seed: she shall crush thy head, and thou shalt lie in wait for her heel.",
+   "recite": "I will put enmities between thee and the woman, and thy seed and her seed: she shall crush thy head, and thou shalt lie in wait for her heel.",
+   "word_count": 29,
+   "context": "God to the serpent after the Fall: the Protoevangelium.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 3,
+     "verse_start": 15,
+     "verse_end": 15
+    }
+   ],
+   "accept": [
+    "Genesis 3:15",
+    "gen 3:15",
+    "ge 3:15",
+    "gn 3:15"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-11",
+   "ref_drb": "Matthew 8:8",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 8,
+   "verse_start": 8,
+   "verse_end": 8,
+   "text": "And the centurion making answer, said: Lord, I am not worthy that thou shouldst enter under my roof: but only say the word, and my servant shall be healed.",
+   "recite": "And the centurion making answer, said: Lord, I am not worthy that thou shouldst enter under my roof: but only say the word, and my servant shall be healed.",
+   "word_count": 29,
+   "context": "The centurion at Capharnaum, asking Jesus to heal his servant (said before Communion).",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 8,
+     "verse_start": 8,
+     "verse_end": 8
+    }
+   ],
+   "accept": [
+    "Matthew 8:8",
+    "matt 8:8",
+    "mat 8:8",
+    "mt 8:8"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-12",
+   "ref_drb": "Luke 22:19",
+   "book": "LUK",
+   "book_drb": "Luke",
+   "book_modern": "Luke",
+   "chapter": 22,
+   "verse_start": 19,
+   "verse_end": 19,
+   "text": "And taking bread, he gave thanks, and brake; and gave to them, saying: This is my body, which is given for you. Do this for a commemoration of me.",
+   "recite": "And taking bread, he gave thanks, and brake; and gave to them, saying: This is my body, which is given for you. Do this for a commemoration of me.",
+   "word_count": 29,
+   "context": "Jesus at the Last Supper, instituting the Eucharist.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 22,
+     "verse_start": 19,
+     "verse_end": 19
+    }
+   ],
+   "accept": [
+    "Luke 22:19",
+    "lk 22:19",
+    "luk 22:19",
+    "lu 22:19"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-13",
+   "ref_drb": "James 5:14",
+   "book": "JAS",
+   "book_drb": "James",
+   "book_modern": "James",
+   "chapter": 5,
+   "verse_start": 14,
+   "verse_end": 14,
+   "text": "Is any man sick among you? Let him bring in the priests of the church, and let them pray over him, anointing him with oil in the name of the Lord.",
+   "recite": "Is any man sick among you? Let him bring in the priests of the church, and let them pray over him, anointing him with oil in the name of the Lord.",
+   "word_count": 31,
+   "context": "St. James on the anointing of the sick.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 14,
+     "verse_end": 14
+    }
+   ],
+   "accept": [
+    "James 5:14",
+    "jas 5:14",
+    "jm 5:14",
+    "jam 5:14",
+    "ja 5:14"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-14",
+   "ref_drb": "John 6:54",
+   "ref_modern": "John 6:53",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 6,
+   "verse_start": 54,
+   "verse_end": 54,
+   "text": "Then Jesus said to them: Amen, amen I say unto you: Except you eat the flesh of the Son of man, and drink his blood, you shall not have life in you.",
+   "recite": "Then Jesus said to them: Amen, amen I say unto you: Except you eat the flesh of the Son of man, and drink his blood, you shall not have life in you.",
+   "word_count": 32,
+   "context": "Jesus in the Bread of Life discourse, after the Jews ask how he can give his flesh.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 6,
+     "verse_start": 54,
+     "verse_end": 54
+    },
+    {
+     "system": "modern",
+     "chapter": 6,
+     "verse_start": 53,
+     "verse_end": 53
+    }
+   ],
+   "accept": [
+    "John 6:54",
+    "jn 6:54",
+    "jo 6:54",
+    "joh 6:54",
+    "jhn 6:54",
+    "John 6:53",
+    "jn 6:53",
+    "jo 6:53",
+    "joh 6:53",
+    "jhn 6:53"
+   ],
+   "note": "Douay-Rheims follows the Vulgate verse numbering here: John 6:54 in the Douay is John 6:53 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-15",
+   "ref_drb": "Matthew 16:19",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 16,
+   "verse_start": 19,
+   "verse_end": 19,
+   "text": "And I will give to thee the keys of the kingdom of heaven. And whatsoever thou shalt bind upon earth, it shall be bound also in heaven: and whatsoever thou shalt loose upon earth, it shall be loosed also in heaven.",
+   "recite": "And I will give to thee the keys of the kingdom of heaven. And whatsoever thou shalt bind upon earth, it shall be bound also in heaven: and whatsoever thou shalt loose upon earth, it shall be loosed also in heaven.",
+   "word_count": 41,
+   "context": "Jesus to Peter, right after naming him the rock: the keys of the kingdom.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 16,
+     "verse_start": 19,
+     "verse_end": 19
+    }
+   ],
+   "accept": [
+    "Matthew 16:19",
+    "matt 16:19",
+    "mat 16:19",
+    "mt 16:19"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-01",
+   "ref_drb": "John 20:28",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 20,
+   "verse_start": 28,
+   "verse_end": 28,
+   "text": "Thomas answered, and said to him: My Lord, and my God.",
+   "recite": "Thomas answered, and said to him: My Lord, and my God.",
+   "word_count": 11,
+   "context": "Thomas, seeing the risen Jesus' wounds a week after Easter.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 20,
+     "verse_start": 28,
+     "verse_end": 28
+    }
+   ],
+   "accept": [
+    "John 20:28",
+    "jn 20:28",
+    "jo 20:28",
+    "joh 20:28",
+    "jhn 20:28"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-02",
+   "ref_drb": "Philippians 2:8",
+   "book": "PHP",
+   "book_drb": "Philippians",
+   "book_modern": "Philippians",
+   "chapter": 2,
+   "verse_start": 8,
+   "verse_end": 8,
+   "text": "He humbled himself, becoming obedient unto death, even to the death of the cross.",
+   "recite": "He humbled himself, becoming obedient unto death, even to the death of the cross.",
+   "word_count": 14,
+   "context": "St. Paul's hymn on Christ's self-emptying (sung in Holy Week).",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 2,
+     "verse_start": 8,
+     "verse_end": 8
+    }
+   ],
+   "accept": [
+    "Philippians 2:8",
+    "phil 2:8",
+    "php 2:8",
+    "phili 2:8"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-03",
+   "ref_drb": "John 19:28",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 19,
+   "verse_start": 28,
+   "verse_end": 28,
+   "text": "Afterwards, Jesus knowing that all things were now accomplished, that the scripture might be fulfilled, said: I thirst.",
+   "recite": "Afterwards, Jesus knowing that all things were now accomplished, that the scripture might be fulfilled, said: I thirst.",
+   "word_count": 18,
+   "context": "Jesus on the cross: the fifth of the Seven Last Words.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 19,
+     "verse_start": 28,
+     "verse_end": 28
+    }
+   ],
+   "accept": [
+    "John 19:28",
+    "jn 19:28",
+    "jo 19:28",
+    "joh 19:28",
+    "jhn 19:28"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-04",
+   "ref_drb": "Luke 23:43",
+   "book": "LUK",
+   "book_drb": "Luke",
+   "book_modern": "Luke",
+   "chapter": 23,
+   "verse_start": 43,
+   "verse_end": 43,
+   "text": "And Jesus said to him: Amen I say to thee, this day thou shalt be with me in paradise.",
+   "recite": "And Jesus said to him: Amen I say to thee, this day thou shalt be with me in paradise.",
+   "word_count": 19,
+   "context": "Jesus on the cross to the good thief: the second Word.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 23,
+     "verse_start": 43,
+     "verse_end": 43
+    }
+   ],
+   "accept": [
+    "Luke 23:43",
+    "lk 23:43",
+    "luk 23:43",
+    "lu 23:43"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-05",
+   "ref_drb": "Luke 23:34",
+   "book": "LUK",
+   "book_drb": "Luke",
+   "book_modern": "Luke",
+   "chapter": 23,
+   "verse_start": 34,
+   "verse_end": 34,
+   "text": "And Jesus said: Father, forgive them, for they know not what they do. But they, dividing his garments, cast lots.",
+   "recite": "And Jesus said: Father, forgive them, for they know not what they do. But they, dividing his garments, cast lots.",
+   "word_count": 20,
+   "context": "Jesus on the cross, as he is crucified: the first Word.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 23,
+     "verse_start": 34,
+     "verse_end": 34
+    }
+   ],
+   "accept": [
+    "Luke 23:34",
+    "lk 23:34",
+    "luk 23:34",
+    "lu 23:34"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-06",
+   "ref_drb": "John 19:30",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 19,
+   "verse_start": 30,
+   "verse_end": 30,
+   "text": "Jesus therefore, when he had taken the vinegar, said: It is consummated. And bowing his head, he gave up the ghost.",
+   "recite": "Jesus therefore, when he had taken the vinegar, said: It is consummated. And bowing his head, he gave up the ghost.",
+   "word_count": 21,
+   "context": "Jesus on the cross: the sixth Word, and his death.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 19,
+     "verse_start": 30,
+     "verse_end": 30
+    }
+   ],
+   "accept": [
+    "John 19:30",
+    "jn 19:30",
+    "jo 19:30",
+    "joh 19:30",
+    "jhn 19:30"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-07",
+   "ref_drb": "Matthew 28:6",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 28,
+   "verse_start": 6,
+   "verse_end": 6,
+   "text": "He is not here, for he is risen, as he said. Come, and see the place where the Lord was laid.",
+   "recite": "He is not here, for he is risen, as he said. Come, and see the place where the Lord was laid.",
+   "word_count": 21,
+   "context": "The angel at the empty tomb, speaking to the women on Easter morning.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 28,
+     "verse_start": 6,
+     "verse_end": 6
+    }
+   ],
+   "accept": [
+    "Matthew 28:6",
+    "matt 28:6",
+    "mat 28:6",
+    "mt 28:6"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-08",
+   "ref_drb": "Luke 23:46",
+   "book": "LUK",
+   "book_drb": "Luke",
+   "book_modern": "Luke",
+   "chapter": 23,
+   "verse_start": 46,
+   "verse_end": 46,
+   "text": "And Jesus crying out with a loud voice, said: Father, into thy hands I commend my spirit. And saying this, he gave up the ghost.",
+   "recite": "And Jesus crying out with a loud voice, said: Father, into thy hands I commend my spirit. And saying this, he gave up the ghost.",
+   "word_count": 25,
+   "context": "Jesus on the cross: the seventh and last Word.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 23,
+     "verse_start": 46,
+     "verse_end": 46
+    }
+   ],
+   "accept": [
+    "Luke 23:46",
+    "lk 23:46",
+    "luk 23:46",
+    "lu 23:46"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-09",
+   "ref_drb": "Matthew 27:46",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 27,
+   "verse_start": 46,
+   "verse_end": 46,
+   "text": "And about the ninth hour Jesus cried with a loud voice, saying: Eli, Eli, lamma sabacthani? that is, My God, my God, why hast thou forsaken me?",
+   "recite": "And about the ninth hour Jesus cried with a loud voice, saying: Eli, Eli, lamma sabacthani? that is, My God, my God, why hast thou forsaken me?",
+   "word_count": 27,
+   "context": "Jesus on the cross at the ninth hour: the fourth Word.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 27,
+     "verse_start": 46,
+     "verse_end": 46
+    }
+   ],
+   "accept": [
+    "Matthew 27:46",
+    "matt 27:46",
+    "mat 27:46",
+    "mt 27:46"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-10",
+   "ref_drb": "Isaias 53:5",
+   "ref_modern": "Isaiah 53:5",
+   "book": "ISA",
+   "book_drb": "Isaias",
+   "book_modern": "Isaiah",
+   "chapter": 53,
+   "verse_start": 5,
+   "verse_end": 5,
+   "text": "But he was wounded for our iniquities, he was bruised for our sins: the chastisement of our peace was upon him, and by his bruises we are healed.",
+   "recite": "But he was wounded for our iniquities, he was bruised for our sins: the chastisement of our peace was upon him, and by his bruises we are healed.",
+   "word_count": 28,
+   "context": "Isaias' fourth Servant Song, read on Good Friday.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 53,
+     "verse_start": 5,
+     "verse_end": 5
+    }
+   ],
+   "accept": [
+    "Isaias 53:5",
+    "Isaiah 53:5",
+    "isa 53:5",
+    "is 53:5"
+   ],
+   "note": "Isaias is the Douay name for Isaiah.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-11",
+   "ref_drb": "Matthew 26:39",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 26,
+   "verse_start": 39,
+   "verse_end": 39,
+   "text": "And going a little further, he fell upon his face, praying, and saying: My Father, if it be possible, let this chalice pass from me. Nevertheless not as I will, but as thou wilt.",
+   "recite": "And going a little further, he fell upon his face, praying, and saying: My Father, if it be possible, let this chalice pass from me. Nevertheless not as I will, but as thou wilt.",
+   "word_count": 34,
+   "context": "Jesus praying in the garden of Gethsemani.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 26,
+     "verse_start": 39,
+     "verse_end": 39
+    }
+   ],
+   "accept": [
+    "Matthew 26:39",
+    "matt 26:39",
+    "mat 26:39",
+    "mt 26:39"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-12",
+   "ref_drb": "Lamentations 1:12",
+   "book": "LAM",
+   "book_drb": "Lamentations",
+   "book_modern": "Lamentations",
+   "chapter": 1,
+   "verse_start": 12,
+   "verse_end": 12,
+   "text": "Lamed. O all ye that pass by the way, attend, and see if there be any sorrow like to my sorrow: for he hath made a vintage of me, as the Lord spoke in the day of his fierce anger.",
+   "recite": "O all ye that pass by the way, attend, and see if there be any sorrow like to my sorrow: for he hath made a vintage of me, as the Lord spoke in the day of his fierce anger.",
+   "recite_prefix": "Lamed.",
+   "word_count": 39,
+   "context": "Jerusalem lamenting her ruin; applied to Christ and Our Lady in Holy Week.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 12,
+     "verse_end": 12
+    }
+   ],
+   "accept": [
+    "Lamentations 1:12",
+    "lam 1:12",
+    "la 1:12"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-13",
+   "ref_drb": "John 19:26–27",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 19,
+   "verse_start": 26,
+   "verse_end": 27,
+   "verses": [
+    {
+     "verse": 26,
+     "text": "When Jesus therefore had seen his mother and the disciple standing whom he loved, he saith to his mother: Woman, behold thy son."
+    },
+    {
+     "verse": 27,
+     "text": "After that, he saith to the disciple: Behold thy mother. And from that hour, the disciple took her to his own."
+    }
+   ],
+   "text": "When Jesus therefore had seen his mother and the disciple standing whom he loved, he saith to his mother: Woman, behold thy son. After that, he saith to the disciple: Behold thy mother. And from that hour, the disciple took her to his own.",
+   "recite": "When Jesus therefore had seen his mother and the disciple standing whom he loved, he saith to his mother: Woman, behold thy son. After that, he saith to the disciple: Behold thy mother. And from that hour, the disciple took her to his own.",
+   "word_count": 44,
+   "context": "Jesus on the cross to his mother and the beloved disciple: the third Word.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 19,
+     "verse_start": 26,
+     "verse_end": 27
+    }
+   ],
+   "accept": [
+    "John 19:26",
+    "John 19:26-27",
+    "jn 19:26",
+    "jn 19:26-27",
+    "jo 19:26",
+    "jo 19:26-27",
+    "joh 19:26",
+    "joh 19:26-27",
+    "jhn 19:26",
+    "jhn 19:26-27"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  }
+ ]
+}

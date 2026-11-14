@@ -1,0 +1,861 @@
+{
+ "unit": 5,
+ "slug": "prophets",
+ "title": "Prophets",
+ "summary": "Isaias, Jeremias, Ezechiel and the minor prophets, mostly the Advent and Lenten readings.",
+ "kind": "verses",
+ "items": [
+  {
+   "id": "bible-prophets-01",
+   "ref_drb": "Isaias 55:8",
+   "ref_modern": "Isaiah 55:8",
+   "book": "ISA",
+   "book_drb": "Isaias",
+   "book_modern": "Isaiah",
+   "chapter": 55,
+   "verse_start": 8,
+   "verse_end": 8,
+   "text": "For my thoughts are not your thoughts: nor your ways my ways, saith the Lord.",
+   "recite": "For my thoughts are not your thoughts: nor your ways my ways, saith the Lord.",
+   "word_count": 15,
+   "context": "God through Isaias, calling the people to return to him.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 55,
+     "verse_start": 8,
+     "verse_end": 8
+    }
+   ],
+   "accept": [
+    "Isaias 55:8",
+    "Isaiah 55:8",
+    "isa 55:8",
+    "is 55:8"
+   ],
+   "note": "Isaias is the Douay name for Isaiah.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-02",
+   "ref_drb": "Isaias 6:3",
+   "ref_modern": "Isaiah 6:3",
+   "book": "ISA",
+   "book_drb": "Isaias",
+   "book_modern": "Isaiah",
+   "chapter": 6,
+   "verse_start": 3,
+   "verse_end": 3,
+   "text": "And they cried one to another, and said: Holy, holy, holy, the Lord God of hosts, all the earth is full of his glory.",
+   "recite": "And they cried one to another, and said: Holy, holy, holy, the Lord God of hosts, all the earth is full of his glory.",
+   "word_count": 24,
+   "context": "The seraphim crying before God's throne in Isaias' vision (the Sanctus).",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 6,
+     "verse_start": 3,
+     "verse_end": 3
+    }
+   ],
+   "accept": [
+    "Isaias 6:3",
+    "Isaiah 6:3",
+    "isa 6:3",
+    "is 6:3"
+   ],
+   "note": "Isaias is the Douay name for Isaiah.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-03",
+   "ref_drb": "Isaias 7:14",
+   "ref_modern": "Isaiah 7:14",
+   "book": "ISA",
+   "book_drb": "Isaias",
+   "book_modern": "Isaiah",
+   "chapter": 7,
+   "verse_start": 14,
+   "verse_end": 14,
+   "text": "Therefore the Lord himself shall give you a sign. Behold a virgin shall conceive, and bear a son, and his name shall be called Emmanuel.",
+   "recite": "Therefore the Lord himself shall give you a sign. Behold a virgin shall conceive, and bear a son, and his name shall be called Emmanuel.",
+   "word_count": 25,
+   "context": "Isaias to King Achaz: the sign of Emmanuel, quoted in Matthew 1.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 7,
+     "verse_start": 14,
+     "verse_end": 14
+    }
+   ],
+   "accept": [
+    "Isaias 7:14",
+    "Isaiah 7:14",
+    "isa 7:14",
+    "is 7:14"
+   ],
+   "note": "Isaias is the Douay name for Isaiah.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-04",
+   "ref_drb": "Isaias 40:3",
+   "ref_modern": "Isaiah 40:3",
+   "book": "ISA",
+   "book_drb": "Isaias",
+   "book_modern": "Isaiah",
+   "chapter": 40,
+   "verse_start": 3,
+   "verse_end": 3,
+   "text": "The voice of one crying in the desert: Prepare ye the way of the Lord, make straight in the wilderness the paths of our God.",
+   "recite": "The voice of one crying in the desert: Prepare ye the way of the Lord, make straight in the wilderness the paths of our God.",
+   "word_count": 25,
+   "context": "Isaias' prophecy of the forerunner, applied to John the Baptist.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 40,
+     "verse_start": 3,
+     "verse_end": 3
+    }
+   ],
+   "accept": [
+    "Isaias 40:3",
+    "Isaiah 40:3",
+    "isa 40:3",
+    "is 40:3"
+   ],
+   "note": "Isaias is the Douay name for Isaiah.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-05",
+   "ref_drb": "Isaias 6:8",
+   "ref_modern": "Isaiah 6:8",
+   "book": "ISA",
+   "book_drb": "Isaias",
+   "book_modern": "Isaiah",
+   "chapter": 6,
+   "verse_start": 8,
+   "verse_end": 8,
+   "text": "And I heard the voice of the Lord, saying: Whom shall I send? and who shall go for us? And I said: Lo, here am I, send me.",
+   "recite": "And I heard the voice of the Lord, saying: Whom shall I send? and who shall go for us? And I said: Lo, here am I, send me.",
+   "word_count": 28,
+   "context": "Isaias answering God's call after his lips were cleansed with a coal.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 6,
+     "verse_start": 8,
+     "verse_end": 8
+    }
+   ],
+   "accept": [
+    "Isaias 6:8",
+    "Isaiah 6:8",
+    "isa 6:8",
+    "is 6:8"
+   ],
+   "note": "Isaias is the Douay name for Isaiah.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-06",
+   "ref_drb": "Isaias 49:15",
+   "ref_modern": "Isaiah 49:15",
+   "book": "ISA",
+   "book_drb": "Isaias",
+   "book_modern": "Isaiah",
+   "chapter": 49,
+   "verse_start": 15,
+   "verse_end": 15,
+   "text": "Can a woman forget her infant, so as not to have pity on the son of her womb? and if she should forget, yet will not I forget thee.",
+   "recite": "Can a woman forget her infant, so as not to have pity on the son of her womb? and if she should forget, yet will not I forget thee.",
+   "word_count": 29,
+   "context": "God to Sion, who complains that the Lord has forgotten her.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 49,
+     "verse_start": 15,
+     "verse_end": 15
+    }
+   ],
+   "accept": [
+    "Isaias 49:15",
+    "Isaiah 49:15",
+    "isa 49:15",
+    "is 49:15"
+   ],
+   "note": "Isaias is the Douay name for Isaiah.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-07",
+   "ref_drb": "Micheas 6:8",
+   "ref_modern": "Micah 6:8",
+   "book": "MIC",
+   "book_drb": "Micheas",
+   "book_modern": "Micah",
+   "chapter": 6,
+   "verse_start": 8,
+   "verse_end": 8,
+   "text": "I will shew thee, O man, what is good, and what the Lord requireth of thee: Verily, to do judgment, and to love mercy, and to walk solicitous with thy God.",
+   "recite": "I will shew thee, O man, what is good, and what the Lord requireth of thee: Verily, to do judgment, and to love mercy, and to walk solicitous with thy God.",
+   "word_count": 31,
+   "context": "Micheas telling Israel what God really asks of them.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 6,
+     "verse_start": 8,
+     "verse_end": 8
+    }
+   ],
+   "accept": [
+    "Micheas 6:8",
+    "Micah 6:8",
+    "mich 6:8",
+    "mic 6:8",
+    "mi 6:8"
+   ],
+   "note": "Micheas is the Douay name for Micah.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-08",
+   "ref_drb": "Jeremias 1:5",
+   "ref_modern": "Jeremiah 1:5",
+   "book": "JER",
+   "book_drb": "Jeremias",
+   "book_modern": "Jeremiah",
+   "chapter": 1,
+   "verse_start": 5,
+   "verse_end": 5,
+   "text": "Before I formed thee in the bowels of thy mother, I knew thee: and before thou camest forth out of the womb, I sanctified thee, and made thee a prophet unto the nations.",
+   "recite": "Before I formed thee in the bowels of thy mother, I knew thee: and before thou camest forth out of the womb, I sanctified thee, and made thee a prophet unto the nations.",
+   "word_count": 33,
+   "context": "God calling Jeremias to be a prophet.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 5,
+     "verse_end": 5
+    }
+   ],
+   "accept": [
+    "Jeremias 1:5",
+    "Jeremiah 1:5",
+    "jer 1:5",
+    "je 1:5",
+    "jr 1:5"
+   ],
+   "note": "Jeremias is the Douay name for Jeremiah.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-09",
+   "ref_drb": "Joel 2:13",
+   "book": "JOL",
+   "book_drb": "Joel",
+   "book_modern": "Joel",
+   "chapter": 2,
+   "verse_start": 13,
+   "verse_end": 13,
+   "text": "And rend your hearts, and not your garments, and turn to the Lord your God: for he is gracious and merciful, patient and rich in mercy, and ready to repent of the evil.",
+   "recite": "And rend your hearts, and not your garments, and turn to the Lord your God: for he is gracious and merciful, patient and rich in mercy, and ready to repent of the evil.",
+   "word_count": 33,
+   "context": "Joel calling the people to fast and repent; read on Ash Wednesday.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 2,
+     "verse_start": 13,
+     "verse_end": 13
+    }
+   ],
+   "accept": [
+    "Joel 2:13",
+    "jl 2:13",
+    "joe 2:13"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-10",
+   "ref_drb": "Ezechiel 36:26",
+   "ref_modern": "Ezekiel 36:26",
+   "book": "EZK",
+   "book_drb": "Ezechiel",
+   "book_modern": "Ezekiel",
+   "chapter": 36,
+   "verse_start": 26,
+   "verse_end": 26,
+   "text": "And I will give you a new heart, and put a new spirit within you: and I will take away the stony heart out of your flesh, and will give you a heart of flesh.",
+   "recite": "And I will give you a new heart, and put a new spirit within you: and I will take away the stony heart out of your flesh, and will give you a heart of flesh.",
+   "word_count": 35,
+   "context": "God's promise of a new heart, through Ezechiel.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 36,
+     "verse_start": 26,
+     "verse_end": 26
+    }
+   ],
+   "accept": [
+    "Ezechiel 36:26",
+    "Ezekiel 36:26",
+    "ezech 36:26",
+    "ez 36:26",
+    "ezek 36:26",
+    "ezk 36:26"
+   ],
+   "note": "Ezechiel is the Douay name for Ezekiel.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-11",
+   "ref_drb": "Isaias 1:18",
+   "ref_modern": "Isaiah 1:18",
+   "book": "ISA",
+   "book_drb": "Isaias",
+   "book_modern": "Isaiah",
+   "chapter": 1,
+   "verse_start": 18,
+   "verse_end": 18,
+   "text": "And then come, and accuse me, saith the Lord: if your sins be as scarlet, they shall be made as white as snow: and if they be red as crimson, they shall be white as wool.",
+   "recite": "And then come, and accuse me, saith the Lord: if your sins be as scarlet, they shall be made as white as snow: and if they be red as crimson, they shall be white as wool.",
+   "word_count": 36,
+   "context": "God inviting Juda to repent, at the start of Isaias.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 18,
+     "verse_end": 18
+    }
+   ],
+   "accept": [
+    "Isaias 1:18",
+    "Isaiah 1:18",
+    "isa 1:18",
+    "is 1:18"
+   ],
+   "note": "Isaias is the Douay name for Isaiah.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-prophets-12",
+   "ref_drb": "Isaias 9:6",
+   "ref_modern": "Isaiah 9:6",
+   "ref_nabre": "Isaiah 9:5",
+   "book": "ISA",
+   "book_drb": "Isaias",
+   "book_modern": "Isaiah",
+   "chapter": 9,
+   "verse_start": 6,
+   "verse_end": 6,
+   "text": "For a CHILD IS BORN to us, and a son is given to us, and the government is upon his shoulder: and his name shall be called, Wonderful, Counsellor, God the Mighty, the Father of the world to come, the Prince of Peace.",
+   "recite": "For a CHILD IS BORN to us, and a son is given to us, and the government is upon his shoulder: and his name shall be called, Wonderful, Counsellor, God the Mighty, the Father of the world to come, the Prince of Peace.",
+   "word_count": 43,
+   "context": "Isaias' prophecy of the royal child; read at Christmas Midnight Mass.",
+   "deck": "prophets",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 9,
+     "verse_start": 6,
+     "verse_end": 6
+    },
+    {
+     "system": "nabre",
+     "chapter": 9,
+     "verse_start": 5,
+     "verse_end": 5
+    }
+   ],
+   "accept": [
+    "Isaias 9:6",
+    "Isaiah 9:6",
+    "isa 9:6",
+    "is 9:6",
+    "Isaias 9:5",
+    "Isaiah 9:5",
+    "isa 9:5",
+    "is 9:5"
+   ],
+   "note": "Isaias is the Douay name for Isaiah. The NABRE numbers this Isaiah 9:5.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  }
+ ],
+ "cards": [
+  {
+   "id": "bible-prophets-01-text",
+   "item": "bible-prophets-01",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Isaias 55:8 (Isaiah 55:8 in modern Bibles)",
+   "hint": "God through Isaias, calling the people to return to him.",
+   "answer_form": "the verse, word for word",
+   "back": "For my thoughts are not your thoughts: nor your ways my ways, saith the Lord.",
+   "tags": [
+    "prophets",
+    "isa"
+   ]
+  },
+  {
+   "id": "bible-prophets-01-ref",
+   "item": "bible-prophets-01",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "For my thoughts are not your thoughts: nor your ways my ways, saith the Lord.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Isaias 55:8 (Isaiah 55:8 in modern Bibles)",
+   "accept": [
+    "Isaias 55:8",
+    "Isaiah 55:8",
+    "isa 55:8",
+    "is 55:8"
+   ],
+   "tags": [
+    "prophets",
+    "isa"
+   ]
+  },
+  {
+   "id": "bible-prophets-02-text",
+   "item": "bible-prophets-02",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Isaias 6:3 (Isaiah 6:3 in modern Bibles)",
+   "hint": "The seraphim crying before God's throne in Isaias' vision (the Sanctus).",
+   "answer_form": "the verse, word for word",
+   "back": "And they cried one to another, and said: Holy, holy, holy, the Lord God of hosts, all the earth is full of his glory.",
+   "tags": [
+    "prophets",
+    "isa"
+   ]
+  },
+  {
+   "id": "bible-prophets-02-ref",
+   "item": "bible-prophets-02",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And they cried one to another, and said: Holy, holy, holy, the Lord God of hosts, all the earth is full of his glory.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Isaias 6:3 (Isaiah 6:3 in modern Bibles)",
+   "accept": [
+    "Isaias 6:3",
+    "Isaiah 6:3",
+    "isa 6:3",
+    "is 6:3"
+   ],
+   "tags": [
+    "prophets",
+    "isa"
+   ]
+  },
+  {
+   "id": "bible-prophets-03-text",
+   "item": "bible-prophets-03",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Isaias 7:14 (Isaiah 7:14 in modern Bibles)",
+   "hint": "Isaias to King Achaz: the sign of Emmanuel, quoted in Matthew 1.",
+   "answer_form": "the verse, word for word",
+   "back": "Therefore the Lord himself shall give you a sign. Behold a virgin shall conceive, and bear a son, and his name shall be called Emmanuel.",
+   "tags": [
+    "prophets",
+    "isa"
+   ]
+  },
+  {
+   "id": "bible-prophets-03-ref",
+   "item": "bible-prophets-03",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Therefore the Lord himself shall give you a sign. Behold a virgin shall conceive, and bear a son, and his name shall be called Emmanuel.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Isaias 7:14 (Isaiah 7:14 in modern Bibles)",
+   "accept": [
+    "Isaias 7:14",
+    "Isaiah 7:14",
+    "isa 7:14",
+    "is 7:14"
+   ],
+   "tags": [
+    "prophets",
+    "isa"
+   ]
+  },
+  {
+   "id": "bible-prophets-04-text",
+   "item": "bible-prophets-04",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Isaias 40:3 (Isaiah 40:3 in modern Bibles)",
+   "hint": "Isaias' prophecy of the forerunner, applied to John the Baptist.",
+   "answer_form": "the verse, word for word",
+   "back": "The voice of one crying in the desert: Prepare ye the way of the Lord, make straight in the wilderness the paths of our God.",
+   "tags": [
+    "prophets",
+    "isa"
+   ]
+  },
+  {
+   "id": "bible-prophets-04-ref",
+   "item": "bible-prophets-04",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "The voice of one crying in the desert: Prepare ye the way of the Lord, make straight in the wilderness the paths of our God.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Isaias 40:3 (Isaiah 40:3 in modern Bibles)",
+   "accept": [
+    "Isaias 40:3",
+    "Isaiah 40:3",
+    "isa 40:3",
+    "is 40:3"
+   ],
+   "tags": [
+    "prophets",
+    "isa"
+   ]
+  },
+  {
+   "id": "bible-prophets-05-text",
+   "item": "bible-prophets-05",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Isaias 6:8 (Isaiah 6:8 in modern Bibles)",
+   "hint": "Isaias answering God's call after his lips were cleansed with a coal.",
+   "answer_form": "the verse, word for word",
+   "back": "And I heard the voice of the Lord, saying: Whom shall I send? and who shall go for us? And I said: Lo, here am I, send me.",
+   "tags": [
+    "prophets",
+    "isa"
+   ]
+  },
+  {
+   "id": "bible-prophets-05-ref",
+   "item": "bible-prophets-05",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And I heard the voice of the Lord, saying: Whom shall I send? and who shall go for us? And I said: Lo, here am I, send me.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Isaias 6:8 (Isaiah 6:8 in modern Bibles)",
+   "accept": [
+    "Isaias 6:8",
+    "Isaiah 6:8",
+    "isa 6:8",
+    "is 6:8"
+   ],
+   "tags": [
+    "prophets",
+    "isa"
+   ]
+  },
+  {
+   "id": "bible-prophets-06-text",
+   "item": "bible-prophets-06",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Isaias 49:15 (Isaiah 49:15 in modern Bibles)",
+   "hint": "God to Sion, who complains that the Lord has forgotten her.",
+   "answer_form": "the verse, word for word",
+   "back": "Can a woman forget her infant, so as not to have pity on the son of her womb? and if she should forget, yet will not I forget thee.",
+   "tags": [
+    "prophets",
+    "isa"
+   ]
+  },
+  {
+   "id": "bible-prophets-06-ref",
+   "item": "bible-prophets-06",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Can a woman forget her infant, so as not to have pity on the son of her womb? and if she should forget, yet will not I forget thee.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Isaias 49:15 (Isaiah 49:15 in modern Bibles)",
+   "accept": [
+    "Isaias 49:15",
+    "Isaiah 49:15",
+    "isa 49:15",
+    "is 49:15"
+   ],
+   "tags": [
+    "prophets",
+    "isa"
+   ]
+  },
+  {
+   "id": "bible-prophets-07-text",
+   "item": "bible-prophets-07",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Micheas 6:8 (Micah 6:8 in modern Bibles)",
+   "hint": "Micheas telling Israel what God really asks of them.",
+   "answer_form": "the verse, word for word",
+   "back": "I will shew thee, O man, what is good, and what the Lord requireth of thee: Verily, to do judgment, and to love mercy, and to walk solicitous with thy God.",
+   "tags": [
+    "prophets",
+    "mic"
+   ]
+  },
+  {
+   "id": "bible-prophets-07-ref",
+   "item": "bible-prophets-07",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "I will shew thee, O man, what is good, and what the Lord requireth of thee: Verily, to do judgment, and to love mercy, and to walk solicitous with thy God.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Micheas 6:8 (Micah 6:8 in modern Bibles)",
+   "accept": [
+    "Micheas 6:8",
+    "Micah 6:8",
+    "mich 6:8",
+    "mic 6:8",
+    "mi 6:8"
+   ],
+   "tags": [
+    "prophets",
+    "mic"
+   ]
+  },
+  {
+   "id": "bible-prophets-08-text",
+   "item": "bible-prophets-08",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Jeremias 1:5 (Jeremiah 1:5 in modern Bibles)",
+   "hint": "God calling Jeremias to be a prophet.",
+   "answer_form": "the verse, word for word",
+   "back": "Before I formed thee in the bowels of thy mother, I knew thee: and before thou camest forth out of the womb, I sanctified thee, and made thee a prophet unto the nations.",
+   "tags": [
+    "prophets",
+    "jer"
+   ]
+  },
+  {
+   "id": "bible-prophets-08-ref",
+   "item": "bible-prophets-08",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Before I formed thee in the bowels of thy mother, I knew thee: and before thou camest forth out of the womb, I sanctified thee, and made thee a prophet unto the nations.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Jeremias 1:5 (Jeremiah 1:5 in modern Bibles)",
+   "accept": [
+    "Jeremias 1:5",
+    "Jeremiah 1:5",
+    "jer 1:5",
+    "je 1:5",
+    "jr 1:5"
+   ],
+   "tags": [
+    "prophets",
+    "jer"
+   ]
+  },
+  {
+   "id": "bible-prophets-09-text",
+   "item": "bible-prophets-09",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Joel 2:13",
+   "hint": "Joel calling the people to fast and repent; read on Ash Wednesday.",
+   "answer_form": "the verse, word for word",
+   "back": "And rend your hearts, and not your garments, and turn to the Lord your God: for he is gracious and merciful, patient and rich in mercy, and ready to repent of the evil.",
+   "tags": [
+    "prophets",
+    "jol"
+   ]
+  },
+  {
+   "id": "bible-prophets-09-ref",
+   "item": "bible-prophets-09",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And rend your hearts, and not your garments, and turn to the Lord your God: for he is gracious and merciful, patient and rich in mercy, and ready to repent of the evil.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Joel 2:13",
+   "accept": [
+    "Joel 2:13",
+    "jl 2:13",
+    "joe 2:13"
+   ],
+   "tags": [
+    "prophets",
+    "jol"
+   ]
+  },
+  {
+   "id": "bible-prophets-10-text",
+   "item": "bible-prophets-10",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Ezechiel 36:26 (Ezekiel 36:26 in modern Bibles)",
+   "hint": "God's promise of a new heart, through Ezechiel.",
+   "answer_form": "the verse, word for word",
+   "back": "And I will give you a new heart, and put a new spirit within you: and I will take away the stony heart out of your flesh, and will give you a heart of flesh.",
+   "tags": [
+    "prophets",
+    "ezk"
+   ]
+  },
+  {
+   "id": "bible-prophets-10-ref",
+   "item": "bible-prophets-10",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And I will give you a new heart, and put a new spirit within you: and I will take away the stony heart out of your flesh, and will give you a heart of flesh.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Ezechiel 36:26 (Ezekiel 36:26 in modern Bibles)",
+   "accept": [
+    "Ezechiel 36:26",
+    "Ezekiel 36:26",
+    "ezech 36:26",
+    "ez 36:26",
+    "ezek 36:26",
+    "ezk 36:26"
+   ],
+   "tags": [
+    "prophets",
+    "ezk"
+   ]
+  },
+  {
+   "id": "bible-prophets-11-text",
+   "item": "bible-prophets-11",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Isaias 1:18 (Isaiah 1:18 in modern Bibles)",
+   "hint": "God inviting Juda to repent, at the start of Isaias.",
+   "answer_form": "the verse, word for word",
+   "back": "And then come, and accuse me, saith the Lord: if your sins be as scarlet, they shall be made as white as snow: and if they be red as crimson, they shall be white as wool.",
+   "tags": [
+    "prophets",
+    "isa"
+   ]
+  },
+  {
+   "id": "bible-prophets-11-ref",
+   "item": "bible-prophets-11",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And then come, and accuse me, saith the Lord: if your sins be as scarlet, they shall be made as white as snow: and if they be red as crimson, they shall be white as wool.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Isaias 1:18 (Isaiah 1:18 in modern Bibles)",
+   "accept": [
+    "Isaias 1:18",
+    "Isaiah 1:18",
+    "isa 1:18",
+    "is 1:18"
+   ],
+   "tags": [
+    "prophets",
+    "isa"
+   ]
+  },
+  {
+   "id": "bible-prophets-12-text",
+   "item": "bible-prophets-12",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Isaias 9:6 (Isaiah 9:6 in modern Bibles)",
+   "hint": "Isaias' prophecy of the royal child; read at Christmas Midnight Mass.",
+   "answer_form": "the verse, word for word",
+   "back": "For a CHILD IS BORN to us, and a son is given to us, and the government is upon his shoulder: and his name shall be called, Wonderful, Counsellor, God the Mighty, the Father of the world to come, the Prince of Peace.",
+   "tags": [
+    "prophets",
+    "isa"
+   ]
+  },
+  {
+   "id": "bible-prophets-12-ref",
+   "item": "bible-prophets-12",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "For a CHILD IS BORN to us, and a son is given to us, and the government is upon his shoulder: and his name shall be called, Wonderful, Counsellor, God the Mighty, the Father of the world to come, the Prince of Peace.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Isaias 9:6 (Isaiah 9:6 in modern Bibles)",
+   "accept": [
+    "Isaias 9:6",
+    "Isaiah 9:6",
+    "isa 9:6",
+    "is 9:6",
+    "Isaias 9:5",
+    "Isaiah 9:5",
+    "isa 9:5",
+    "is 9:5"
+   ],
+   "tags": [
+    "prophets",
+    "isa"
+   ]
+  }
+ ],
+ "lesson": "",
+ "glossary": [],
+ "quiz": []
+}

@@ -616,3 +616,52 @@ th {
     padding: 1rem;
     border-radius: 0.375rem;
 }
+
+/* Verse card styles */
+.vt-scaffold { 
+    white-space: pre-wrap; 
+    line-height: 1.5; 
+    margin: .25rem 0 .5rem; 
+}
+
+.vt-input { 
+    width: 100%; 
+    font: inherit; 
+}
+
+.vt-diff { 
+    line-height: 1.6; 
+    margin: 0.5rem 0;
+}
+
+.vt-typo { 
+    background: #fff3c4; 
+}
+
+.vt-miss { 
+    color: #b00020; 
+    text-decoration: underline; 
+}
+
+.vt-typed, .vt-extra { 
+    color: #888; 
+    margin-left: .2em; 
+}
+
+.answer-result.close {
+    background: #fff9e6;
+    border-left: 4px solid #ffa500;
+}
+
+@media (prefers-color-scheme: dark) { 
+    .vt-typo { 
+        background: #5a4a00; 
+    }
+    .vt-miss { 
+        color: #ff6b81; 
+    }
+    .answer-result.close {
+        background: #3a3000;
+        border-left: 4px solid #ffa500;
+    }
+}

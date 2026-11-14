@@ -1,0 +1,878 @@
+{
+ "unit": 4,
+ "slug": "old-testament",
+ "title": "Law, history and wisdom",
+ "summary": "Genesis to Ecclesiasticus: creation, the Law, the historical books (under their Douay names) and the wisdom books.",
+ "kind": "verses",
+ "items": [
+  {
+   "id": "bible-old-testament-01",
+   "ref_drb": "Genesis 1:1",
+   "book": "GEN",
+   "book_drb": "Genesis",
+   "book_modern": "Genesis",
+   "chapter": 1,
+   "verse_start": 1,
+   "verse_end": 1,
+   "text": "In the beginning God created heaven, and earth.",
+   "recite": "In the beginning God created heaven, and earth.",
+   "word_count": 8,
+   "context": "The first verse of the Bible.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 1,
+     "verse_end": 1
+    }
+   ],
+   "accept": [
+    "Genesis 1:1",
+    "gen 1:1",
+    "ge 1:1",
+    "gn 1:1"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-02",
+   "ref_drb": "Ecclesiastes 1:2",
+   "book": "ECC",
+   "book_drb": "Ecclesiastes",
+   "book_modern": "Ecclesiastes",
+   "chapter": 1,
+   "verse_start": 2,
+   "verse_end": 2,
+   "text": "Vanity of vanities, said Ecclesiastes vanity of vanities, and all is vanity.",
+   "recite": "Vanity of vanities, said Ecclesiastes vanity of vanities, and all is vanity.",
+   "word_count": 12,
+   "context": "The opening cry of the Preacher (Ecclesiastes).",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 2,
+     "verse_end": 2
+    }
+   ],
+   "accept": [
+    "Ecclesiastes 1:2",
+    "eccl 1:2",
+    "eccles 1:2",
+    "ecc 1:2",
+    "eccle 1:2",
+    "qoh 1:2",
+    "qoheleth 1:2",
+    "qo 1:2"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-03",
+   "ref_drb": "Proverbs 3:5",
+   "book": "PRO",
+   "book_drb": "Proverbs",
+   "book_modern": "Proverbs",
+   "chapter": 3,
+   "verse_start": 5,
+   "verse_end": 5,
+   "text": "Have confidence in the Lord with all thy heart, and lean not upon thy own prudence.",
+   "recite": "Have confidence in the Lord with all thy heart, and lean not upon thy own prudence.",
+   "word_count": 16,
+   "context": "A father's instruction to his son in Proverbs.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 3,
+     "verse_start": 5,
+     "verse_end": 5
+    }
+   ],
+   "accept": [
+    "Proverbs 3:5",
+    "prov 3:5",
+    "pro 3:5",
+    "prv 3:5",
+    "pr 3:5"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-04",
+   "ref_drb": "Job 19:25",
+   "book": "JOB",
+   "book_drb": "Job",
+   "book_modern": "Job",
+   "chapter": 19,
+   "verse_start": 25,
+   "verse_end": 25,
+   "text": "For I know that my Redeemer liveth, and in the last day I shall rise out of the earth.",
+   "recite": "For I know that my Redeemer liveth, and in the last day I shall rise out of the earth.",
+   "word_count": 19,
+   "context": "Job, in his suffering, professing faith in the resurrection.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 19,
+     "verse_start": 25,
+     "verse_end": 25
+    }
+   ],
+   "accept": [
+    "Job 19:25",
+    "jb 19:25"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-05",
+   "ref_drb": "Wisdom 3:1",
+   "book": "WIS",
+   "book_drb": "Wisdom",
+   "book_modern": "Wisdom",
+   "chapter": 3,
+   "verse_start": 1,
+   "verse_end": 1,
+   "text": "But the souls of the just are in the hand of God, and the torment of death shall not touch them.",
+   "recite": "But the souls of the just are in the hand of God, and the torment of death shall not touch them.",
+   "word_count": 21,
+   "context": "Wisdom on the fate of the just; a common funeral reading.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 3,
+     "verse_start": 1,
+     "verse_end": 1
+    }
+   ],
+   "accept": [
+    "Wisdom 3:1",
+    "wis 3:1",
+    "ws 3:1",
+    "wisdomofsolomon 3:1"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-06",
+   "ref_drb": "Deuteronomy 6:5",
+   "book": "DEU",
+   "book_drb": "Deuteronomy",
+   "book_modern": "Deuteronomy",
+   "chapter": 6,
+   "verse_start": 5,
+   "verse_end": 5,
+   "text": "Thou shalt love the Lord thy God with thy whole heart, and with thy whole soul, and with thy whole strength.",
+   "recite": "Thou shalt love the Lord thy God with thy whole heart, and with thy whole soul, and with thy whole strength.",
+   "word_count": 21,
+   "context": "Moses giving the Shema; Jesus later calls it the first commandment.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 6,
+     "verse_start": 5,
+     "verse_end": 5
+    }
+   ],
+   "accept": [
+    "Deuteronomy 6:5",
+    "deut 6:5",
+    "dt 6:5",
+    "deu 6:5",
+    "de 6:5"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-07",
+   "ref_drb": "Genesis 1:27",
+   "book": "GEN",
+   "book_drb": "Genesis",
+   "book_modern": "Genesis",
+   "chapter": 1,
+   "verse_start": 27,
+   "verse_end": 27,
+   "text": "And God created man to his own image: to the image of God he created him: male and female he created them.",
+   "recite": "And God created man to his own image: to the image of God he created him: male and female he created them.",
+   "word_count": 22,
+   "context": "The creation of man on the sixth day.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 27,
+     "verse_end": 27
+    }
+   ],
+   "accept": [
+    "Genesis 1:27",
+    "gen 1:27",
+    "ge 1:27",
+    "gn 1:27"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-08",
+   "ref_drb": "3 Kings 19:12",
+   "ref_modern": "1 Kings 19:12",
+   "book": "1KI",
+   "book_drb": "3 Kings",
+   "book_modern": "1 Kings",
+   "chapter": 19,
+   "verse_start": 12,
+   "verse_end": 12,
+   "text": "And after the earthquake a fire: the Lord is not in the fire, and after the fire a whistling of a gentle air.",
+   "recite": "And after the earthquake a fire: the Lord is not in the fire, and after the fire a whistling of a gentle air.",
+   "word_count": 23,
+   "context": "Elias on Mount Horeb: God is not in the wind, earthquake or fire, but in the gentle air.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 19,
+     "verse_start": 12,
+     "verse_end": 12
+    }
+   ],
+   "accept": [
+    "3 Kings 19:12",
+    "1 Kings 19:12",
+    "3kgs 19:12",
+    "3ki 19:12",
+    "3kg 19:12",
+    "3k 19:12",
+    "3reg 19:12",
+    "3regum 19:12",
+    "1kgs 19:12",
+    "1ki 19:12",
+    "1kg 19:12",
+    "1k 19:12"
+   ],
+   "note": "3 Kings is the Douay name for 1 Kings.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-09",
+   "ref_drb": "1 Kings 3:10",
+   "ref_modern": "1 Samuel 3:10",
+   "book": "1SA",
+   "book_drb": "1 Kings",
+   "book_modern": "1 Samuel",
+   "chapter": 3,
+   "verse_start": 10,
+   "verse_end": 10,
+   "text": "And the Lord came and stood: and he called, as he had called the other times: Samuel, Samuel. And Samuel said: Speak, Lord, for thy servant heareth.",
+   "recite": "And the Lord came and stood: and he called, as he had called the other times: Samuel, Samuel. And Samuel said: Speak, Lord, for thy servant heareth.",
+   "word_count": 27,
+   "context": "The boy Samuel, sleeping in the temple at Silo, answers God's call.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 3,
+     "verse_start": 10,
+     "verse_end": 10
+    }
+   ],
+   "accept": [
+    "1 Kings 3:10",
+    "1 Samuel 3:10",
+    "1kgs 3:10",
+    "1ki 3:10",
+    "1kg 3:10",
+    "1k 3:10",
+    "1reg 3:10",
+    "1regum 3:10",
+    "1sam 3:10",
+    "1sa 3:10",
+    "1sm 3:10",
+    "1s 3:10"
+   ],
+   "note": "1 Kings is the Douay name for 1 Samuel.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-10",
+   "ref_drb": "Exodus 3:14",
+   "book": "EXO",
+   "book_drb": "Exodus",
+   "book_modern": "Exodus",
+   "chapter": 3,
+   "verse_start": 14,
+   "verse_end": 14,
+   "text": "God said to Moses: I AM WHO AM. He said: Thus shalt thou say to the children of Israel: HE WHO IS, hath sent me to you.",
+   "recite": "God said to Moses: I AM WHO AM. He said: Thus shalt thou say to the children of Israel: HE WHO IS, hath sent me to you.",
+   "word_count": 27,
+   "context": "God reveals his name to Moses from the burning bush.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 3,
+     "verse_start": 14,
+     "verse_end": 14
+    }
+   ],
+   "accept": [
+    "Exodus 3:14",
+    "ex 3:14",
+    "exo 3:14",
+    "exod 3:14"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-11",
+   "ref_drb": "Canticle of Canticles 8:6",
+   "ref_modern": "Song of Songs 8:6",
+   "book": "SNG",
+   "book_drb": "Canticle of Canticles",
+   "book_modern": "Song of Songs",
+   "chapter": 8,
+   "verse_start": 6,
+   "verse_end": 6,
+   "text": "Put me as a seal upon thy heart, as a seal upon thy arm, for love is strong as death, jealousy as hard as hell, the lamps thereof are fire and flames.",
+   "recite": "Put me as a seal upon thy heart, as a seal upon thy arm, for love is strong as death, jealousy as hard as hell, the lamps thereof are fire and flames.",
+   "word_count": 32,
+   "context": "The bride to the bridegroom near the end of the Canticle.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 8,
+     "verse_start": 6,
+     "verse_end": 6
+    }
+   ],
+   "accept": [
+    "Canticle of Canticles 8:6",
+    "Song of Songs 8:6",
+    "canticles 8:6",
+    "canticle 8:6",
+    "cant 8:6",
+    "cnt 8:6",
+    "ct 8:6",
+    "songofsolomon 8:6",
+    "song 8:6",
+    "sg 8:6",
+    "sos 8:6",
+    "ss 8:6",
+    "sng 8:6"
+   ],
+   "note": "Canticle of Canticles is the Douay name for Song of Songs.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-old-testament-12",
+   "ref_drb": "Job 1:21",
+   "book": "JOB",
+   "book_drb": "Job",
+   "book_modern": "Job",
+   "chapter": 1,
+   "verse_start": 21,
+   "verse_end": 21,
+   "text": "And said: Naked came I out of my mother’s womb, and naked shall I return thither: the Lord gave, and the Lord hath taken away: as it hath pleased the Lord so is it done: blessed be the name of the Lord.",
+   "recite": "And said: Naked came I out of my mother’s womb, and naked shall I return thither: the Lord gave, and the Lord hath taken away: as it hath pleased the Lord so is it done: blessed be the name of the Lord.",
+   "word_count": 42,
+   "context": "Job's response after losing his children and all his goods in one day.",
+   "deck": "old-testament",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 21,
+     "verse_end": 21
+    }
+   ],
+   "accept": [
+    "Job 1:21",
+    "jb 1:21"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  }
+ ],
+ "cards": [
+  {
+   "id": "bible-old-testament-01-text",
+   "item": "bible-old-testament-01",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Genesis 1:1",
+   "hint": "The first verse of the Bible.",
+   "answer_form": "the verse, word for word",
+   "back": "In the beginning God created heaven, and earth.",
+   "tags": [
+    "old-testament",
+    "gen"
+   ]
+  },
+  {
+   "id": "bible-old-testament-01-ref",
+   "item": "bible-old-testament-01",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "In the beginning God created heaven, and earth.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Genesis 1:1",
+   "accept": [
+    "Genesis 1:1",
+    "gen 1:1",
+    "ge 1:1",
+    "gn 1:1"
+   ],
+   "tags": [
+    "old-testament",
+    "gen"
+   ]
+  },
+  {
+   "id": "bible-old-testament-02-text",
+   "item": "bible-old-testament-02",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Ecclesiastes 1:2",
+   "hint": "The opening cry of the Preacher (Ecclesiastes).",
+   "answer_form": "the verse, word for word",
+   "back": "Vanity of vanities, said Ecclesiastes vanity of vanities, and all is vanity.",
+   "tags": [
+    "old-testament",
+    "ecc"
+   ]
+  },
+  {
+   "id": "bible-old-testament-02-ref",
+   "item": "bible-old-testament-02",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Vanity of vanities, said Ecclesiastes vanity of vanities, and all is vanity.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Ecclesiastes 1:2",
+   "accept": [
+    "Ecclesiastes 1:2",
+    "eccl 1:2",
+    "eccles 1:2",
+    "ecc 1:2",
+    "eccle 1:2",
+    "qoh 1:2",
+    "qoheleth 1:2",
+    "qo 1:2"
+   ],
+   "tags": [
+    "old-testament",
+    "ecc"
+   ]
+  },
+  {
+   "id": "bible-old-testament-03-text",
+   "item": "bible-old-testament-03",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Proverbs 3:5",
+   "hint": "A father's instruction to his son in Proverbs.",
+   "answer_form": "the verse, word for word",
+   "back": "Have confidence in the Lord with all thy heart, and lean not upon thy own prudence.",
+   "tags": [
+    "old-testament",
+    "pro"
+   ]
+  },
+  {
+   "id": "bible-old-testament-03-ref",
+   "item": "bible-old-testament-03",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Have confidence in the Lord with all thy heart, and lean not upon thy own prudence.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Proverbs 3:5",
+   "accept": [
+    "Proverbs 3:5",
+    "prov 3:5",
+    "pro 3:5",
+    "prv 3:5",
+    "pr 3:5"
+   ],
+   "tags": [
+    "old-testament",
+    "pro"
+   ]
+  },
+  {
+   "id": "bible-old-testament-04-text",
+   "item": "bible-old-testament-04",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Job 19:25",
+   "hint": "Job, in his suffering, professing faith in the resurrection.",
+   "answer_form": "the verse, word for word",
+   "back": "For I know that my Redeemer liveth, and in the last day I shall rise out of the earth.",
+   "tags": [
+    "old-testament",
+    "job"
+   ]
+  },
+  {
+   "id": "bible-old-testament-04-ref",
+   "item": "bible-old-testament-04",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "For I know that my Redeemer liveth, and in the last day I shall rise out of the earth.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Job 19:25",
+   "accept": [
+    "Job 19:25",
+    "jb 19:25"
+   ],
+   "tags": [
+    "old-testament",
+    "job"
+   ]
+  },
+  {
+   "id": "bible-old-testament-05-text",
+   "item": "bible-old-testament-05",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Wisdom 3:1",
+   "hint": "Wisdom on the fate of the just; a common funeral reading.",
+   "answer_form": "the verse, word for word",
+   "back": "But the souls of the just are in the hand of God, and the torment of death shall not touch them.",
+   "tags": [
+    "old-testament",
+    "wis"
+   ]
+  },
+  {
+   "id": "bible-old-testament-05-ref",
+   "item": "bible-old-testament-05",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "But the souls of the just are in the hand of God, and the torment of death shall not touch them.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Wisdom 3:1",
+   "accept": [
+    "Wisdom 3:1",
+    "wis 3:1",
+    "ws 3:1",
+    "wisdomofsolomon 3:1"
+   ],
+   "tags": [
+    "old-testament",
+    "wis"
+   ]
+  },
+  {
+   "id": "bible-old-testament-06-text",
+   "item": "bible-old-testament-06",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Deuteronomy 6:5",
+   "hint": "Moses giving the Shema; Jesus later calls it the first commandment.",
+   "answer_form": "the verse, word for word",
+   "back": "Thou shalt love the Lord thy God with thy whole heart, and with thy whole soul, and with thy whole strength.",
+   "tags": [
+    "old-testament",
+    "deu"
+   ]
+  },
+  {
+   "id": "bible-old-testament-06-ref",
+   "item": "bible-old-testament-06",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Thou shalt love the Lord thy God with thy whole heart, and with thy whole soul, and with thy whole strength.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Deuteronomy 6:5",
+   "accept": [
+    "Deuteronomy 6:5",
+    "deut 6:5",
+    "dt 6:5",
+    "deu 6:5",
+    "de 6:5"
+   ],
+   "tags": [
+    "old-testament",
+    "deu"
+   ]
+  },
+  {
+   "id": "bible-old-testament-07-text",
+   "item": "bible-old-testament-07",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Genesis 1:27",
+   "hint": "The creation of man on the sixth day.",
+   "answer_form": "the verse, word for word",
+   "back": "And God created man to his own image: to the image of God he created him: male and female he created them.",
+   "tags": [
+    "old-testament",
+    "gen"
+   ]
+  },
+  {
+   "id": "bible-old-testament-07-ref",
+   "item": "bible-old-testament-07",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And God created man to his own image: to the image of God he created him: male and female he created them.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Genesis 1:27",
+   "accept": [
+    "Genesis 1:27",
+    "gen 1:27",
+    "ge 1:27",
+    "gn 1:27"
+   ],
+   "tags": [
+    "old-testament",
+    "gen"
+   ]
+  },
+  {
+   "id": "bible-old-testament-08-text",
+   "item": "bible-old-testament-08",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "3 Kings 19:12 (1 Kings 19:12 in modern Bibles)",
+   "hint": "Elias on Mount Horeb: God is not in the wind, earthquake or fire, but in the gentle air.",
+   "answer_form": "the verse, word for word",
+   "back": "And after the earthquake a fire: the Lord is not in the fire, and after the fire a whistling of a gentle air.",
+   "tags": [
+    "old-testament",
+    "1ki"
+   ]
+  },
+  {
+   "id": "bible-old-testament-08-ref",
+   "item": "bible-old-testament-08",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And after the earthquake a fire: the Lord is not in the fire, and after the fire a whistling of a gentle air.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "3 Kings 19:12 (1 Kings 19:12 in modern Bibles)",
+   "accept": [
+    "3 Kings 19:12",
+    "1 Kings 19:12",
+    "3kgs 19:12",
+    "3ki 19:12",
+    "3kg 19:12",
+    "3k 19:12",
+    "3reg 19:12",
+    "3regum 19:12",
+    "1kgs 19:12",
+    "1ki 19:12",
+    "1kg 19:12",
+    "1k 19:12"
+   ],
+   "tags": [
+    "old-testament",
+    "1ki"
+   ]
+  },
+  {
+   "id": "bible-old-testament-09-text",
+   "item": "bible-old-testament-09",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "1 Kings 3:10 (1 Samuel 3:10 in modern Bibles)",
+   "hint": "The boy Samuel, sleeping in the temple at Silo, answers God's call.",
+   "answer_form": "the verse, word for word",
+   "back": "And the Lord came and stood: and he called, as he had called the other times: Samuel, Samuel. And Samuel said: Speak, Lord, for thy servant heareth.",
+   "tags": [
+    "old-testament",
+    "1sa"
+   ]
+  },
+  {
+   "id": "bible-old-testament-09-ref",
+   "item": "bible-old-testament-09",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And the Lord came and stood: and he called, as he had called the other times: Samuel, Samuel. And Samuel said: Speak, Lord, for thy servant heareth.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "1 Kings 3:10 (1 Samuel 3:10 in modern Bibles)",
+   "accept": [
+    "1 Kings 3:10",
+    "1 Samuel 3:10",
+    "1kgs 3:10",
+    "1ki 3:10",
+    "1kg 3:10",
+    "1k 3:10",
+    "1reg 3:10",
+    "1regum 3:10",
+    "1sam 3:10",
+    "1sa 3:10",
+    "1sm 3:10",
+    "1s 3:10"
+   ],
+   "tags": [
+    "old-testament",
+    "1sa"
+   ]
+  },
+  {
+   "id": "bible-old-testament-10-text",
+   "item": "bible-old-testament-10",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Exodus 3:14",
+   "hint": "God reveals his name to Moses from the burning bush.",
+   "answer_form": "the verse, word for word",
+   "back": "God said to Moses: I AM WHO AM. He said: Thus shalt thou say to the children of Israel: HE WHO IS, hath sent me to you.",
+   "tags": [
+    "old-testament",
+    "exo"
+   ]
+  },
+  {
+   "id": "bible-old-testament-10-ref",
+   "item": "bible-old-testament-10",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "God said to Moses: I AM WHO AM. He said: Thus shalt thou say to the children of Israel: HE WHO IS, hath sent me to you.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Exodus 3:14",
+   "accept": [
+    "Exodus 3:14",
+    "ex 3:14",
+    "exo 3:14",
+    "exod 3:14"
+   ],
+   "tags": [
+    "old-testament",
+    "exo"
+   ]
+  },
+  {
+   "id": "bible-old-testament-11-text",
+   "item": "bible-old-testament-11",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Canticle of Canticles 8:6 (Song of Songs 8:6 in modern Bibles)",
+   "hint": "The bride to the bridegroom near the end of the Canticle.",
+   "answer_form": "the verse, word for word",
+   "back": "Put me as a seal upon thy heart, as a seal upon thy arm, for love is strong as death, jealousy as hard as hell, the lamps thereof are fire and flames.",
+   "tags": [
+    "old-testament",
+    "sng"
+   ]
+  },
+  {
+   "id": "bible-old-testament-11-ref",
+   "item": "bible-old-testament-11",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Put me as a seal upon thy heart, as a seal upon thy arm, for love is strong as death, jealousy as hard as hell, the lamps thereof are fire and flames.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Canticle of Canticles 8:6 (Song of Songs 8:6 in modern Bibles)",
+   "accept": [
+    "Canticle of Canticles 8:6",
+    "Song of Songs 8:6",
+    "canticles 8:6",
+    "canticle 8:6",
+    "cant 8:6",
+    "cnt 8:6",
+    "ct 8:6",
+    "songofsolomon 8:6",
+    "song 8:6",
+    "sg 8:6",
+    "sos 8:6",
+    "ss 8:6",
+    "sng 8:6"
+   ],
+   "tags": [
+    "old-testament",
+    "sng"
+   ]
+  },
+  {
+   "id": "bible-old-testament-12-text",
+   "item": "bible-old-testament-12",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Job 1:21",
+   "hint": "Job's response after losing his children and all his goods in one day.",
+   "answer_form": "the verse, word for word",
+   "back": "And said: Naked came I out of my mother’s womb, and naked shall I return thither: the Lord gave, and the Lord hath taken away: as it hath pleased the Lord so is it done: blessed be the name of the Lord.",
+   "tags": [
+    "old-testament",
+    "job"
+   ]
+  },
+  {
+   "id": "bible-old-testament-12-ref",
+   "item": "bible-old-testament-12",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And said: Naked came I out of my mother’s womb, and naked shall I return thither: the Lord gave, and the Lord hath taken away: as it hath pleased the Lord so is it done: blessed be the name of the Lord.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Job 1:21",
+   "accept": [
+    "Job 1:21",
+    "jb 1:21"
+   ],
+   "tags": [
+    "old-testament",
+    "job"
+   ]
+  }
+ ],
+ "lesson": "",
+ "glossary": [],
+ "quiz": []
+}

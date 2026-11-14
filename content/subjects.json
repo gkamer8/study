@@ -5,6 +5,12 @@
       "title": "Practical molecular biology for reading papers",
       "description": "Undergraduate/practitioner-level molecular biology for an ML researcher",
       "path": "biology"
+    },
+    {
+      "id": "bible",
+      "title": "Bible verses (Douay-Rheims)",
+      "description": "Memorize well-known verses in the traditional Catholic English Bible",
+      "path": "bible"
     }
   ]
 }

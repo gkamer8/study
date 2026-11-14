@@ -3,7 +3,8 @@
 const STORAGE_KEYS = {
     CARD_PROGRESS: 'study_card_progress',
     SETTINGS: 'study_settings',
-    STATS: 'study_stats'
+    STATS: 'study_stats',
+    CLOZE: 'study_cloze_state'
 };
 
 export const Storage = {
@@ -22,6 +23,27 @@ export const Storage = {
         const data = this.getAllCardProgress();
         data[cardId] = progress;
         localStorage.setItem(STORAGE_KEYS.CARD_PROGRESS, JSON.stringify(data));
+    },
+
+    // Cloze state (for Bible learning steps)
+    getCloze(cardId) {
+        const raw = localStorage.getItem(STORAGE_KEYS.CLOZE);
+        const data = raw ? JSON.parse(raw) : {};
+        return data[cardId] || null;
+    },
+
+    setCloze(cardId, state) {
+        const raw = localStorage.getItem(STORAGE_KEYS.CLOZE);
+        const data = raw ? JSON.parse(raw) : {};
+        data[cardId] = state;
+        localStorage.setItem(STORAGE_KEYS.CLOZE, JSON.stringify(data));
+    },
+
+    clearCloze(cardId) {
+        const raw = localStorage.getItem(STORAGE_KEYS.CLOZE);
+        const data = raw ? JSON.parse(raw) : {};
+        delete data[cardId];
+        localStorage.setItem(STORAGE_KEYS.CLOZE, JSON.stringify(data));
     },
 
     // Settings
@@ -78,10 +100,13 @@ export const Storage = {
 
     // Export/Import
     exportData() {
+        const raw = localStorage.getItem(STORAGE_KEYS.CLOZE);
+        const cloze = raw ? JSON.parse(raw) : {};
         return {
             cardProgress: this.getAllCardProgress(),
             settings: this.getSettings(),
             stats: this.getStats(),
+            cloze: cloze,
             exportDate: new Date().toISOString()
         };
     },
@@ -96,11 +121,15 @@ export const Storage = {
         if (data.stats) {
             localStorage.setItem(STORAGE_KEYS.STATS, JSON.stringify(data.stats));
         }
+        if (data.cloze) {
+            localStorage.setItem(STORAGE_KEYS.CLOZE, JSON.stringify(data.cloze));
+        }
     },
 
     clearAllData() {
         localStorage.removeItem(STORAGE_KEYS.CARD_PROGRESS);
         localStorage.removeItem(STORAGE_KEYS.SETTINGS);
         localStorage.removeItem(STORAGE_KEYS.STATS);
+        localStorage.removeItem(STORAGE_KEYS.CLOZE);
     }
 };

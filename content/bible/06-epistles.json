@@ -1,0 +1,816 @@
+{
+ "unit": 6,
+ "slug": "epistles",
+ "title": "Epistles",
+ "summary": "St. Paul and the other apostolic letters.",
+ "kind": "verses",
+ "items": [
+  {
+   "id": "bible-epistles-01",
+   "ref_drb": "1 Thessalonians 5:17",
+   "book": "1TH",
+   "book_drb": "1 Thessalonians",
+   "book_modern": "1 Thessalonians",
+   "chapter": 5,
+   "verse_start": 17,
+   "verse_end": 17,
+   "text": "Pray without ceasing.",
+   "recite": "Pray without ceasing.",
+   "word_count": 3,
+   "context": "St. Paul's closing exhortations to the Thessalonians.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 17,
+     "verse_end": 17
+    }
+   ],
+   "accept": [
+    "1 Thessalonians 5:17",
+    "1thess 5:17",
+    "1thes 5:17",
+    "1th 5:17"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-02",
+   "ref_drb": "Hebrews 13:8",
+   "book": "HEB",
+   "book_drb": "Hebrews",
+   "book_modern": "Hebrews",
+   "chapter": 13,
+   "verse_start": 8,
+   "verse_end": 8,
+   "text": "Jesus Christ, yesterday, and today; and the same for ever.",
+   "recite": "Jesus Christ, yesterday, and today; and the same for ever.",
+   "word_count": 10,
+   "context": "The closing exhortations of the Epistle to the Hebrews.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 13,
+     "verse_start": 8,
+     "verse_end": 8
+    }
+   ],
+   "accept": [
+    "Hebrews 13:8",
+    "heb 13:8",
+    "he 13:8"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-03",
+   "ref_drb": "1 John 4:8",
+   "book": "1JN",
+   "book_drb": "1 John",
+   "book_modern": "1 John",
+   "chapter": 4,
+   "verse_start": 8,
+   "verse_end": 8,
+   "text": "He that loveth not, knoweth not God: for God is charity.",
+   "recite": "He that loveth not, knoweth not God: for God is charity.",
+   "word_count": 11,
+   "context": "St. John on love as the mark of those born of God.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 4,
+     "verse_start": 8,
+     "verse_end": 8
+    }
+   ],
+   "accept": [
+    "1 John 4:8",
+    "1jn 4:8",
+    "1jo 4:8",
+    "1joh 4:8",
+    "1jhn 4:8",
+    "1j 4:8"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-04",
+   "ref_drb": "Philippians 4:13",
+   "book": "PHP",
+   "book_drb": "Philippians",
+   "book_modern": "Philippians",
+   "chapter": 4,
+   "verse_start": 13,
+   "verse_end": 13,
+   "text": "I can do all these things in him who strengtheneth me.",
+   "recite": "I can do all these things in him who strengtheneth me.",
+   "word_count": 11,
+   "context": "St. Paul from prison, on being content in plenty and in want.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 4,
+     "verse_start": 13,
+     "verse_end": 13
+    }
+   ],
+   "accept": [
+    "Philippians 4:13",
+    "phil 4:13",
+    "php 4:13",
+    "phili 4:13"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-05",
+   "ref_drb": "1 Corinthians 13:4",
+   "book": "1CO",
+   "book_drb": "1 Corinthians",
+   "book_modern": "1 Corinthians",
+   "chapter": 13,
+   "verse_start": 4,
+   "verse_end": 4,
+   "text": "Charity is patient, is kind: charity envieth not, dealeth not perversely; is not puffed up;",
+   "recite": "Charity is patient, is kind: charity envieth not, dealeth not perversely; is not puffed up;",
+   "word_count": 15,
+   "context": "St. Paul's hymn to charity: what charity is and is not.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 13,
+     "verse_start": 4,
+     "verse_end": 4
+    }
+   ],
+   "accept": [
+    "1 Corinthians 13:4",
+    "1cor 13:4",
+    "1co 13:4"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-06",
+   "ref_drb": "2 Timothy 4:7",
+   "book": "2TI",
+   "book_drb": "2 Timothy",
+   "book_modern": "2 Timothy",
+   "chapter": 4,
+   "verse_start": 7,
+   "verse_end": 7,
+   "text": "I have fought a good fight, I have finished my course, I have kept the faith.",
+   "recite": "I have fought a good fight, I have finished my course, I have kept the faith.",
+   "word_count": 16,
+   "context": "St. Paul near his death, writing to Timothy.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 4,
+     "verse_start": 7,
+     "verse_end": 7
+    }
+   ],
+   "accept": [
+    "2 Timothy 4:7",
+    "2tim 4:7",
+    "2ti 4:7",
+    "2tm 4:7"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-07",
+   "ref_drb": "Romans 8:31",
+   "book": "ROM",
+   "book_drb": "Romans",
+   "book_modern": "Romans",
+   "chapter": 8,
+   "verse_start": 31,
+   "verse_end": 31,
+   "text": "What shall we then say to these things? If God be for us, who is against us?",
+   "recite": "What shall we then say to these things? If God be for us, who is against us?",
+   "word_count": 17,
+   "context": "St. Paul to the Romans, after describing God's plan of salvation.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 8,
+     "verse_start": 31,
+     "verse_end": 31
+    }
+   ],
+   "accept": [
+    "Romans 8:31",
+    "rom 8:31",
+    "ro 8:31",
+    "rm 8:31"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-08",
+   "ref_drb": "1 Corinthians 13:13",
+   "book": "1CO",
+   "book_drb": "1 Corinthians",
+   "book_modern": "1 Corinthians",
+   "chapter": 13,
+   "verse_start": 13,
+   "verse_end": 13,
+   "text": "And now there remain faith, hope, and charity, these three: but the greatest of these is charity.",
+   "recite": "And now there remain faith, hope, and charity, these three: but the greatest of these is charity.",
+   "word_count": 17,
+   "context": "The close of St. Paul's hymn to charity.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 13,
+     "verse_start": 13,
+     "verse_end": 13
+    }
+   ],
+   "accept": [
+    "1 Corinthians 13:13",
+    "1cor 13:13",
+    "1co 13:13"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-09",
+   "ref_drb": "Hebrews 11:1",
+   "book": "HEB",
+   "book_drb": "Hebrews",
+   "book_modern": "Hebrews",
+   "chapter": 11,
+   "verse_start": 1,
+   "verse_end": 1,
+   "text": "Now faith is the substance of things to be hoped for, the evidence of things that appear not.",
+   "recite": "Now faith is the substance of things to be hoped for, the evidence of things that appear not.",
+   "word_count": 18,
+   "context": "The opening definition of faith in Hebrews 11.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 11,
+     "verse_start": 1,
+     "verse_end": 1
+    }
+   ],
+   "accept": [
+    "Hebrews 11:1",
+    "heb 11:1",
+    "he 11:1"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-10",
+   "ref_drb": "1 John 1:9",
+   "book": "1JN",
+   "book_drb": "1 John",
+   "book_modern": "1 John",
+   "chapter": 1,
+   "verse_start": 9,
+   "verse_end": 9,
+   "text": "If we confess our sins, he is faithful and just, to forgive us our sins, and to cleanse us from all iniquity.",
+   "recite": "If we confess our sins, he is faithful and just, to forgive us our sins, and to cleanse us from all iniquity.",
+   "word_count": 22,
+   "context": "St. John on confessing our sins.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 9,
+     "verse_end": 9
+    }
+   ],
+   "accept": [
+    "1 John 1:9",
+    "1jn 1:9",
+    "1jo 1:9",
+    "1joh 1:9",
+    "1jhn 1:9",
+    "1j 1:9"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-11",
+   "ref_drb": "Romans 8:28",
+   "book": "ROM",
+   "book_drb": "Romans",
+   "book_modern": "Romans",
+   "chapter": 8,
+   "verse_start": 28,
+   "verse_end": 28,
+   "text": "And we know that to them that love God, all things work together unto good, to such as, according to his purpose, are called to be saints.",
+   "recite": "And we know that to them that love God, all things work together unto good, to such as, according to his purpose, are called to be saints.",
+   "word_count": 27,
+   "context": "St. Paul on God's providence for those who love him.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 8,
+     "verse_start": 28,
+     "verse_end": 28
+    }
+   ],
+   "accept": [
+    "Romans 8:28",
+    "rom 8:28",
+    "ro 8:28",
+    "rm 8:28"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-epistles-12",
+   "ref_drb": "Galatians 2:20",
+   "book": "GAL",
+   "book_drb": "Galatians",
+   "book_modern": "Galatians",
+   "chapter": 2,
+   "verse_start": 20,
+   "verse_end": 20,
+   "text": "And I live, now not I; but Christ liveth in me. And that I live now in the flesh: I live in the faith of the Son of God, who loved me, and delivered himself for me.",
+   "recite": "And I live, now not I; but Christ liveth in me. And that I live now in the flesh: I live in the faith of the Son of God, who loved me, and delivered himself for me.",
+   "word_count": 37,
+   "context": "St. Paul on his life in Christ, after describing his dispute with Peter.",
+   "deck": "epistles",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 2,
+     "verse_start": 20,
+     "verse_end": 20
+    }
+   ],
+   "accept": [
+    "Galatians 2:20",
+    "gal 2:20",
+    "ga 2:20"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  }
+ ],
+ "cards": [
+  {
+   "id": "bible-epistles-01-text",
+   "item": "bible-epistles-01",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "1 Thessalonians 5:17",
+   "hint": "St. Paul's closing exhortations to the Thessalonians.",
+   "answer_form": "the verse, word for word",
+   "back": "Pray without ceasing.",
+   "tags": [
+    "epistles",
+    "1th"
+   ]
+  },
+  {
+   "id": "bible-epistles-01-ref",
+   "item": "bible-epistles-01",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Pray without ceasing.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "1 Thessalonians 5:17",
+   "accept": [
+    "1 Thessalonians 5:17",
+    "1thess 5:17",
+    "1thes 5:17",
+    "1th 5:17"
+   ],
+   "tags": [
+    "epistles",
+    "1th"
+   ]
+  },
+  {
+   "id": "bible-epistles-02-text",
+   "item": "bible-epistles-02",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Hebrews 13:8",
+   "hint": "The closing exhortations of the Epistle to the Hebrews.",
+   "answer_form": "the verse, word for word",
+   "back": "Jesus Christ, yesterday, and today; and the same for ever.",
+   "tags": [
+    "epistles",
+    "heb"
+   ]
+  },
+  {
+   "id": "bible-epistles-02-ref",
+   "item": "bible-epistles-02",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Jesus Christ, yesterday, and today; and the same for ever.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Hebrews 13:8",
+   "accept": [
+    "Hebrews 13:8",
+    "heb 13:8",
+    "he 13:8"
+   ],
+   "tags": [
+    "epistles",
+    "heb"
+   ]
+  },
+  {
+   "id": "bible-epistles-03-text",
+   "item": "bible-epistles-03",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "1 John 4:8",
+   "hint": "St. John on love as the mark of those born of God.",
+   "answer_form": "the verse, word for word",
+   "back": "He that loveth not, knoweth not God: for God is charity.",
+   "tags": [
+    "epistles",
+    "1jn"
+   ]
+  },
+  {
+   "id": "bible-epistles-03-ref",
+   "item": "bible-epistles-03",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "He that loveth not, knoweth not God: for God is charity.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "1 John 4:8",
+   "accept": [
+    "1 John 4:8",
+    "1jn 4:8",
+    "1jo 4:8",
+    "1joh 4:8",
+    "1jhn 4:8",
+    "1j 4:8"
+   ],
+   "tags": [
+    "epistles",
+    "1jn"
+   ]
+  },
+  {
+   "id": "bible-epistles-04-text",
+   "item": "bible-epistles-04",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Philippians 4:13",
+   "hint": "St. Paul from prison, on being content in plenty and in want.",
+   "answer_form": "the verse, word for word",
+   "back": "I can do all these things in him who strengtheneth me.",
+   "tags": [
+    "epistles",
+    "php"
+   ]
+  },
+  {
+   "id": "bible-epistles-04-ref",
+   "item": "bible-epistles-04",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "I can do all these things in him who strengtheneth me.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Philippians 4:13",
+   "accept": [
+    "Philippians 4:13",
+    "phil 4:13",
+    "php 4:13",
+    "phili 4:13"
+   ],
+   "tags": [
+    "epistles",
+    "php"
+   ]
+  },
+  {
+   "id": "bible-epistles-05-text",
+   "item": "bible-epistles-05",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "1 Corinthians 13:4",
+   "hint": "St. Paul's hymn to charity: what charity is and is not.",
+   "answer_form": "the verse, word for word",
+   "back": "Charity is patient, is kind: charity envieth not, dealeth not perversely; is not puffed up;",
+   "tags": [
+    "epistles",
+    "1co"
+   ]
+  },
+  {
+   "id": "bible-epistles-05-ref",
+   "item": "bible-epistles-05",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Charity is patient, is kind: charity envieth not, dealeth not perversely; is not puffed up;",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "1 Corinthians 13:4",
+   "accept": [
+    "1 Corinthians 13:4",
+    "1cor 13:4",
+    "1co 13:4"
+   ],
+   "tags": [
+    "epistles",
+    "1co"
+   ]
+  },
+  {
+   "id": "bible-epistles-06-text",
+   "item": "bible-epistles-06",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "2 Timothy 4:7",
+   "hint": "St. Paul near his death, writing to Timothy.",
+   "answer_form": "the verse, word for word",
+   "back": "I have fought a good fight, I have finished my course, I have kept the faith.",
+   "tags": [
+    "epistles",
+    "2ti"
+   ]
+  },
+  {
+   "id": "bible-epistles-06-ref",
+   "item": "bible-epistles-06",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "I have fought a good fight, I have finished my course, I have kept the faith.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "2 Timothy 4:7",
+   "accept": [
+    "2 Timothy 4:7",
+    "2tim 4:7",
+    "2ti 4:7",
+    "2tm 4:7"
+   ],
+   "tags": [
+    "epistles",
+    "2ti"
+   ]
+  },
+  {
+   "id": "bible-epistles-07-text",
+   "item": "bible-epistles-07",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Romans 8:31",
+   "hint": "St. Paul to the Romans, after describing God's plan of salvation.",
+   "answer_form": "the verse, word for word",
+   "back": "What shall we then say to these things? If God be for us, who is against us?",
+   "tags": [
+    "epistles",
+    "rom"
+   ]
+  },
+  {
+   "id": "bible-epistles-07-ref",
+   "item": "bible-epistles-07",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "What shall we then say to these things? If God be for us, who is against us?",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Romans 8:31",
+   "accept": [
+    "Romans 8:31",
+    "rom 8:31",
+    "ro 8:31",
+    "rm 8:31"
+   ],
+   "tags": [
+    "epistles",
+    "rom"
+   ]
+  },
+  {
+   "id": "bible-epistles-08-text",
+   "item": "bible-epistles-08",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "1 Corinthians 13:13",
+   "hint": "The close of St. Paul's hymn to charity.",
+   "answer_form": "the verse, word for word",
+   "back": "And now there remain faith, hope, and charity, these three: but the greatest of these is charity.",
+   "tags": [
+    "epistles",
+    "1co"
+   ]
+  },
+  {
+   "id": "bible-epistles-08-ref",
+   "item": "bible-epistles-08",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And now there remain faith, hope, and charity, these three: but the greatest of these is charity.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "1 Corinthians 13:13",
+   "accept": [
+    "1 Corinthians 13:13",
+    "1cor 13:13",
+    "1co 13:13"
+   ],
+   "tags": [
+    "epistles",
+    "1co"
+   ]
+  },
+  {
+   "id": "bible-epistles-09-text",
+   "item": "bible-epistles-09",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Hebrews 11:1",
+   "hint": "The opening definition of faith in Hebrews 11.",
+   "answer_form": "the verse, word for word",
+   "back": "Now faith is the substance of things to be hoped for, the evidence of things that appear not.",
+   "tags": [
+    "epistles",
+    "heb"
+   ]
+  },
+  {
+   "id": "bible-epistles-09-ref",
+   "item": "bible-epistles-09",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Now faith is the substance of things to be hoped for, the evidence of things that appear not.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Hebrews 11:1",
+   "accept": [
+    "Hebrews 11:1",
+    "heb 11:1",
+    "he 11:1"
+   ],
+   "tags": [
+    "epistles",
+    "heb"
+   ]
+  },
+  {
+   "id": "bible-epistles-10-text",
+   "item": "bible-epistles-10",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "1 John 1:9",
+   "hint": "St. John on confessing our sins.",
+   "answer_form": "the verse, word for word",
+   "back": "If we confess our sins, he is faithful and just, to forgive us our sins, and to cleanse us from all iniquity.",
+   "tags": [
+    "epistles",
+    "1jn"
+   ]
+  },
+  {
+   "id": "bible-epistles-10-ref",
+   "item": "bible-epistles-10",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "If we confess our sins, he is faithful and just, to forgive us our sins, and to cleanse us from all iniquity.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "1 John 1:9",
+   "accept": [
+    "1 John 1:9",
+    "1jn 1:9",
+    "1jo 1:9",
+    "1joh 1:9",
+    "1jhn 1:9",
+    "1j 1:9"
+   ],
+   "tags": [
+    "epistles",
+    "1jn"
+   ]
+  },
+  {
+   "id": "bible-epistles-11-text",
+   "item": "bible-epistles-11",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Romans 8:28",
+   "hint": "St. Paul on God's providence for those who love him.",
+   "answer_form": "the verse, word for word",
+   "back": "And we know that to them that love God, all things work together unto good, to such as, according to his purpose, are called to be saints.",
+   "tags": [
+    "epistles",
+    "rom"
+   ]
+  },
+  {
+   "id": "bible-epistles-11-ref",
+   "item": "bible-epistles-11",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And we know that to them that love God, all things work together unto good, to such as, according to his purpose, are called to be saints.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Romans 8:28",
+   "accept": [
+    "Romans 8:28",
+    "rom 8:28",
+    "ro 8:28",
+    "rm 8:28"
+   ],
+   "tags": [
+    "epistles",
+    "rom"
+   ]
+  },
+  {
+   "id": "bible-epistles-12-text",
+   "item": "bible-epistles-12",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Galatians 2:20",
+   "hint": "St. Paul on his life in Christ, after describing his dispute with Peter.",
+   "answer_form": "the verse, word for word",
+   "back": "And I live, now not I; but Christ liveth in me. And that I live now in the flesh: I live in the faith of the Son of God, who loved me, and delivered himself for me.",
+   "tags": [
+    "epistles",
+    "gal"
+   ]
+  },
+  {
+   "id": "bible-epistles-12-ref",
+   "item": "bible-epistles-12",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And I live, now not I; but Christ liveth in me. And that I live now in the flesh: I live in the faith of the Son of God, who loved me, and delivered himself for me.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Galatians 2:20",
+   "accept": [
+    "Galatians 2:20",
+    "gal 2:20",
+    "ga 2:20"
+   ],
+   "tags": [
+    "epistles",
+    "gal"
+   ]
+  }
+ ],
+ "lesson": "",
+ "glossary": [],
+ "quiz": []
+}

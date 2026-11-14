@@ -1,0 +1,101 @@
+{
+ "reference": {
+  "normalize": "lowercase; ordinals/roman numerals before a book name -> digit (first/1st/i -> 1, second/2nd/ii -> 2, third/3rd/iii -> 3, fourth/4th/iv -> 4); drop 'st.'/'saint', 'the', 'book of', 'gospel of/according to', 'epistle to/of'; '.' after a book abbreviation removed; between numbers any of ':' '.' ',' ' ' 'v' 'vs' -> ':'; dashes (- – —) -> '-'; remove remaining spaces inside the book part",
+  "grades": {
+   "correct": 2,
+   "correct_fast_ms": 5000,
+   "correct_fast": 3,
+   "close": 1,
+   "wrong": 0,
+   "bail": 0,
+   "override_right": 2
+  },
+  "close_rule": "same book (any alias, either naming system) and same chapter under one of the item's numberings, with the verse off by exactly 1",
+  "passage_rule": "for a multi-verse item, the starting verse alone or the exact full range is correct"
+ },
+ "text": {
+  "normalize": [
+   "Unicode NFKD, strip combining marks",
+   "lowercase",
+   "curly quotes -> straight",
+   "remove apostrophes (mother's -> mothers, justice' -> justice)",
+   "hyphens and dashes -> space",
+   "every other non [a-z0-9] char -> space",
+   "split on whitespace",
+   "map each token through spelling_variants",
+   "merge rule: two adjacent tokens on one side that concatenate to one token on the other side match it at cost 0 (to day = today, any one = anyone)"
+  ],
+  "spelling_variants": {
+   "labour": "labor",
+   "labours": "labors",
+   "laboured": "labored",
+   "neighbour": "neighbor",
+   "neighbours": "neighbors",
+   "saviour": "savior",
+   "armour": "armor",
+   "honour": "honor",
+   "honours": "honors",
+   "honoured": "honored",
+   "favour": "favor",
+   "colour": "color",
+   "counsellor": "counselor",
+   "fulness": "fullness",
+   "behaviour": "behavior",
+   "shew": "show",
+   "shewed": "showed",
+   "sheweth": "showeth",
+   "shewn": "shown",
+   "oh": "o",
+   "zion": "sion",
+   "judgement": "judgment",
+   "grey": "gray",
+   "towards": "toward",
+   "amongst": "among",
+   "whilst": "while"
+  },
+  "typo_rule": "tokens match as a 'typo' (cost 0, shown amber in the diff) when the reference token has >= 6 letters and Damerau-Levenshtein distance is 1. Shorter tokens must match exactly, so shall/shalt, thee/they, unto/into, hath/has, saith/said are real errors",
+  "alignment": "word-level Levenshtein (substitute/insert/delete cost 1; exact, variant, typo and merge matches cost 0); backtrace gives the diff",
+  "score": "score = max(0, 1 - errors / n) where n = number of reference tokens",
+  "verdict": {
+   "correct": "errors == 0, OR (n >= 6 AND (score >= 0.95 OR errors <= 1))",
+   "close": "not correct AND (score >= 0.80 OR (n <= 5 AND errors == 1))",
+   "wrong": "otherwise"
+  },
+  "grades": {
+   "correct": 2,
+   "close": 1,
+   "wrong": 0,
+   "bail": 0,
+   "override_right": 2
+  },
+  "diff": "always shown after submit: each reference token marked ok / typo / missing / wrong (with what was typed); extra typed tokens shown struck through at their position"
+ },
+ "cloze": {
+  "steps": [
+   {
+    "step": 0,
+    "name": "every third word hidden",
+    "rule": "hide token i when i % 3 == 2"
+   },
+   {
+    "step": 1,
+    "name": "half hidden",
+    "rule": "hide token i when i % 2 == 1"
+   },
+   {
+    "step": 2,
+    "name": "first letters",
+    "rule": "show only the first letter of every token, keep punctuation"
+   },
+   {
+    "step": 3,
+    "name": "full recall",
+    "rule": "show only the reference and the optional context hint"
+   }
+  ],
+  "tokens": "cloze tokens are the whitespace-separated words of `recite` as printed (punctuation stays attached and visible); a hidden word is drawn as underscores, one per letter, capped at 8",
+  "pass": "the user always types the whole verse; a step passes when the text verdict is 'correct'",
+  "graduate": "the -text card gets its first FSRS grade only after step 3 is passed: Good (2) if no step failed in the run, Hard (1) otherwise",
+  "relearn": "after a review graded Again (wrong or bail), the next showing starts at step 2 (first letters), then step 3"
+ }
+}

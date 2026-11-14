@@ -1,0 +1,914 @@
+{
+ "unit": 8,
+ "slug": "passion",
+ "title": "Passion and Resurrection",
+ "summary": "Gethsemane, the Seven Last Words from the cross, the prophecies of the Passion, and Easter.",
+ "kind": "verses",
+ "items": [
+  {
+   "id": "bible-passion-01",
+   "ref_drb": "John 20:28",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 20,
+   "verse_start": 28,
+   "verse_end": 28,
+   "text": "Thomas answered, and said to him: My Lord, and my God.",
+   "recite": "Thomas answered, and said to him: My Lord, and my God.",
+   "word_count": 11,
+   "context": "Thomas, seeing the risen Jesus' wounds a week after Easter.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 20,
+     "verse_start": 28,
+     "verse_end": 28
+    }
+   ],
+   "accept": [
+    "John 20:28",
+    "jn 20:28",
+    "jo 20:28",
+    "joh 20:28",
+    "jhn 20:28"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-02",
+   "ref_drb": "Philippians 2:8",
+   "book": "PHP",
+   "book_drb": "Philippians",
+   "book_modern": "Philippians",
+   "chapter": 2,
+   "verse_start": 8,
+   "verse_end": 8,
+   "text": "He humbled himself, becoming obedient unto death, even to the death of the cross.",
+   "recite": "He humbled himself, becoming obedient unto death, even to the death of the cross.",
+   "word_count": 14,
+   "context": "St. Paul's hymn on Christ's self-emptying (sung in Holy Week).",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 2,
+     "verse_start": 8,
+     "verse_end": 8
+    }
+   ],
+   "accept": [
+    "Philippians 2:8",
+    "phil 2:8",
+    "php 2:8",
+    "phili 2:8"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-03",
+   "ref_drb": "John 19:28",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 19,
+   "verse_start": 28,
+   "verse_end": 28,
+   "text": "Afterwards, Jesus knowing that all things were now accomplished, that the scripture might be fulfilled, said: I thirst.",
+   "recite": "Afterwards, Jesus knowing that all things were now accomplished, that the scripture might be fulfilled, said: I thirst.",
+   "word_count": 18,
+   "context": "Jesus on the cross: the fifth of the Seven Last Words.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 19,
+     "verse_start": 28,
+     "verse_end": 28
+    }
+   ],
+   "accept": [
+    "John 19:28",
+    "jn 19:28",
+    "jo 19:28",
+    "joh 19:28",
+    "jhn 19:28"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-04",
+   "ref_drb": "Luke 23:43",
+   "book": "LUK",
+   "book_drb": "Luke",
+   "book_modern": "Luke",
+   "chapter": 23,
+   "verse_start": 43,
+   "verse_end": 43,
+   "text": "And Jesus said to him: Amen I say to thee, this day thou shalt be with me in paradise.",
+   "recite": "And Jesus said to him: Amen I say to thee, this day thou shalt be with me in paradise.",
+   "word_count": 19,
+   "context": "Jesus on the cross to the good thief: the second Word.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 23,
+     "verse_start": 43,
+     "verse_end": 43
+    }
+   ],
+   "accept": [
+    "Luke 23:43",
+    "lk 23:43",
+    "luk 23:43",
+    "lu 23:43"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-05",
+   "ref_drb": "Luke 23:34",
+   "book": "LUK",
+   "book_drb": "Luke",
+   "book_modern": "Luke",
+   "chapter": 23,
+   "verse_start": 34,
+   "verse_end": 34,
+   "text": "And Jesus said: Father, forgive them, for they know not what they do. But they, dividing his garments, cast lots.",
+   "recite": "And Jesus said: Father, forgive them, for they know not what they do. But they, dividing his garments, cast lots.",
+   "word_count": 20,
+   "context": "Jesus on the cross, as he is crucified: the first Word.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 23,
+     "verse_start": 34,
+     "verse_end": 34
+    }
+   ],
+   "accept": [
+    "Luke 23:34",
+    "lk 23:34",
+    "luk 23:34",
+    "lu 23:34"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-06",
+   "ref_drb": "John 19:30",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 19,
+   "verse_start": 30,
+   "verse_end": 30,
+   "text": "Jesus therefore, when he had taken the vinegar, said: It is consummated. And bowing his head, he gave up the ghost.",
+   "recite": "Jesus therefore, when he had taken the vinegar, said: It is consummated. And bowing his head, he gave up the ghost.",
+   "word_count": 21,
+   "context": "Jesus on the cross: the sixth Word, and his death.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 19,
+     "verse_start": 30,
+     "verse_end": 30
+    }
+   ],
+   "accept": [
+    "John 19:30",
+    "jn 19:30",
+    "jo 19:30",
+    "joh 19:30",
+    "jhn 19:30"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-07",
+   "ref_drb": "Matthew 28:6",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 28,
+   "verse_start": 6,
+   "verse_end": 6,
+   "text": "He is not here, for he is risen, as he said. Come, and see the place where the Lord was laid.",
+   "recite": "He is not here, for he is risen, as he said. Come, and see the place where the Lord was laid.",
+   "word_count": 21,
+   "context": "The angel at the empty tomb, speaking to the women on Easter morning.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 28,
+     "verse_start": 6,
+     "verse_end": 6
+    }
+   ],
+   "accept": [
+    "Matthew 28:6",
+    "matt 28:6",
+    "mat 28:6",
+    "mt 28:6"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-08",
+   "ref_drb": "Luke 23:46",
+   "book": "LUK",
+   "book_drb": "Luke",
+   "book_modern": "Luke",
+   "chapter": 23,
+   "verse_start": 46,
+   "verse_end": 46,
+   "text": "And Jesus crying out with a loud voice, said: Father, into thy hands I commend my spirit. And saying this, he gave up the ghost.",
+   "recite": "And Jesus crying out with a loud voice, said: Father, into thy hands I commend my spirit. And saying this, he gave up the ghost.",
+   "word_count": 25,
+   "context": "Jesus on the cross: the seventh and last Word.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 23,
+     "verse_start": 46,
+     "verse_end": 46
+    }
+   ],
+   "accept": [
+    "Luke 23:46",
+    "lk 23:46",
+    "luk 23:46",
+    "lu 23:46"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-09",
+   "ref_drb": "Matthew 27:46",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 27,
+   "verse_start": 46,
+   "verse_end": 46,
+   "text": "And about the ninth hour Jesus cried with a loud voice, saying: Eli, Eli, lamma sabacthani? that is, My God, my God, why hast thou forsaken me?",
+   "recite": "And about the ninth hour Jesus cried with a loud voice, saying: Eli, Eli, lamma sabacthani? that is, My God, my God, why hast thou forsaken me?",
+   "word_count": 27,
+   "context": "Jesus on the cross at the ninth hour: the fourth Word.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 27,
+     "verse_start": 46,
+     "verse_end": 46
+    }
+   ],
+   "accept": [
+    "Matthew 27:46",
+    "matt 27:46",
+    "mat 27:46",
+    "mt 27:46"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-10",
+   "ref_drb": "Isaias 53:5",
+   "ref_modern": "Isaiah 53:5",
+   "book": "ISA",
+   "book_drb": "Isaias",
+   "book_modern": "Isaiah",
+   "chapter": 53,
+   "verse_start": 5,
+   "verse_end": 5,
+   "text": "But he was wounded for our iniquities, he was bruised for our sins: the chastisement of our peace was upon him, and by his bruises we are healed.",
+   "recite": "But he was wounded for our iniquities, he was bruised for our sins: the chastisement of our peace was upon him, and by his bruises we are healed.",
+   "word_count": 28,
+   "context": "Isaias' fourth Servant Song, read on Good Friday.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 53,
+     "verse_start": 5,
+     "verse_end": 5
+    }
+   ],
+   "accept": [
+    "Isaias 53:5",
+    "Isaiah 53:5",
+    "isa 53:5",
+    "is 53:5"
+   ],
+   "note": "Isaias is the Douay name for Isaiah.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-11",
+   "ref_drb": "Matthew 26:39",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 26,
+   "verse_start": 39,
+   "verse_end": 39,
+   "text": "And going a little further, he fell upon his face, praying, and saying: My Father, if it be possible, let this chalice pass from me. Nevertheless not as I will, but as thou wilt.",
+   "recite": "And going a little further, he fell upon his face, praying, and saying: My Father, if it be possible, let this chalice pass from me. Nevertheless not as I will, but as thou wilt.",
+   "word_count": 34,
+   "context": "Jesus praying in the garden of Gethsemani.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 26,
+     "verse_start": 39,
+     "verse_end": 39
+    }
+   ],
+   "accept": [
+    "Matthew 26:39",
+    "matt 26:39",
+    "mat 26:39",
+    "mt 26:39"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-12",
+   "ref_drb": "Lamentations 1:12",
+   "book": "LAM",
+   "book_drb": "Lamentations",
+   "book_modern": "Lamentations",
+   "chapter": 1,
+   "verse_start": 12,
+   "verse_end": 12,
+   "text": "Lamed. O all ye that pass by the way, attend, and see if there be any sorrow like to my sorrow: for he hath made a vintage of me, as the Lord spoke in the day of his fierce anger.",
+   "recite": "O all ye that pass by the way, attend, and see if there be any sorrow like to my sorrow: for he hath made a vintage of me, as the Lord spoke in the day of his fierce anger.",
+   "recite_prefix": "Lamed.",
+   "word_count": 39,
+   "context": "Jerusalem lamenting her ruin; applied to Christ and Our Lady in Holy Week.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 12,
+     "verse_end": 12
+    }
+   ],
+   "accept": [
+    "Lamentations 1:12",
+    "lam 1:12",
+    "la 1:12"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-passion-13",
+   "ref_drb": "John 19:26–27",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 19,
+   "verse_start": 26,
+   "verse_end": 27,
+   "verses": [
+    {
+     "verse": 26,
+     "text": "When Jesus therefore had seen his mother and the disciple standing whom he loved, he saith to his mother: Woman, behold thy son."
+    },
+    {
+     "verse": 27,
+     "text": "After that, he saith to the disciple: Behold thy mother. And from that hour, the disciple took her to his own."
+    }
+   ],
+   "text": "When Jesus therefore had seen his mother and the disciple standing whom he loved, he saith to his mother: Woman, behold thy son. After that, he saith to the disciple: Behold thy mother. And from that hour, the disciple took her to his own.",
+   "recite": "When Jesus therefore had seen his mother and the disciple standing whom he loved, he saith to his mother: Woman, behold thy son. After that, he saith to the disciple: Behold thy mother. And from that hour, the disciple took her to his own.",
+   "word_count": 44,
+   "context": "Jesus on the cross to his mother and the beloved disciple: the third Word.",
+   "deck": "passion",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 19,
+     "verse_start": 26,
+     "verse_end": 27
+    }
+   ],
+   "accept": [
+    "John 19:26",
+    "John 19:26-27",
+    "jn 19:26",
+    "jn 19:26-27",
+    "jo 19:26",
+    "jo 19:26-27",
+    "joh 19:26",
+    "joh 19:26-27",
+    "jhn 19:26",
+    "jhn 19:26-27"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  }
+ ],
+ "cards": [
+  {
+   "id": "bible-passion-01-text",
+   "item": "bible-passion-01",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "John 20:28",
+   "hint": "Thomas, seeing the risen Jesus' wounds a week after Easter.",
+   "answer_form": "the verse, word for word",
+   "back": "Thomas answered, and said to him: My Lord, and my God.",
+   "tags": [
+    "passion",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-passion-01-ref",
+   "item": "bible-passion-01",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Thomas answered, and said to him: My Lord, and my God.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "John 20:28",
+   "accept": [
+    "John 20:28",
+    "jn 20:28",
+    "jo 20:28",
+    "joh 20:28",
+    "jhn 20:28"
+   ],
+   "tags": [
+    "passion",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-passion-02-text",
+   "item": "bible-passion-02",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Philippians 2:8",
+   "hint": "St. Paul's hymn on Christ's self-emptying (sung in Holy Week).",
+   "answer_form": "the verse, word for word",
+   "back": "He humbled himself, becoming obedient unto death, even to the death of the cross.",
+   "tags": [
+    "passion",
+    "php"
+   ]
+  },
+  {
+   "id": "bible-passion-02-ref",
+   "item": "bible-passion-02",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "He humbled himself, becoming obedient unto death, even to the death of the cross.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Philippians 2:8",
+   "accept": [
+    "Philippians 2:8",
+    "phil 2:8",
+    "php 2:8",
+    "phili 2:8"
+   ],
+   "tags": [
+    "passion",
+    "php"
+   ]
+  },
+  {
+   "id": "bible-passion-03-text",
+   "item": "bible-passion-03",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "John 19:28",
+   "hint": "Jesus on the cross: the fifth of the Seven Last Words.",
+   "answer_form": "the verse, word for word",
+   "back": "Afterwards, Jesus knowing that all things were now accomplished, that the scripture might be fulfilled, said: I thirst.",
+   "tags": [
+    "passion",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-passion-03-ref",
+   "item": "bible-passion-03",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Afterwards, Jesus knowing that all things were now accomplished, that the scripture might be fulfilled, said: I thirst.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "John 19:28",
+   "accept": [
+    "John 19:28",
+    "jn 19:28",
+    "jo 19:28",
+    "joh 19:28",
+    "jhn 19:28"
+   ],
+   "tags": [
+    "passion",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-passion-04-text",
+   "item": "bible-passion-04",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Luke 23:43",
+   "hint": "Jesus on the cross to the good thief: the second Word.",
+   "answer_form": "the verse, word for word",
+   "back": "And Jesus said to him: Amen I say to thee, this day thou shalt be with me in paradise.",
+   "tags": [
+    "passion",
+    "luk"
+   ]
+  },
+  {
+   "id": "bible-passion-04-ref",
+   "item": "bible-passion-04",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And Jesus said to him: Amen I say to thee, this day thou shalt be with me in paradise.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Luke 23:43",
+   "accept": [
+    "Luke 23:43",
+    "lk 23:43",
+    "luk 23:43",
+    "lu 23:43"
+   ],
+   "tags": [
+    "passion",
+    "luk"
+   ]
+  },
+  {
+   "id": "bible-passion-05-text",
+   "item": "bible-passion-05",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Luke 23:34",
+   "hint": "Jesus on the cross, as he is crucified: the first Word.",
+   "answer_form": "the verse, word for word",
+   "back": "And Jesus said: Father, forgive them, for they know not what they do. But they, dividing his garments, cast lots.",
+   "tags": [
+    "passion",
+    "luk"
+   ]
+  },
+  {
+   "id": "bible-passion-05-ref",
+   "item": "bible-passion-05",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And Jesus said: Father, forgive them, for they know not what they do. But they, dividing his garments, cast lots.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Luke 23:34",
+   "accept": [
+    "Luke 23:34",
+    "lk 23:34",
+    "luk 23:34",
+    "lu 23:34"
+   ],
+   "tags": [
+    "passion",
+    "luk"
+   ]
+  },
+  {
+   "id": "bible-passion-06-text",
+   "item": "bible-passion-06",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "John 19:30",
+   "hint": "Jesus on the cross: the sixth Word, and his death.",
+   "answer_form": "the verse, word for word",
+   "back": "Jesus therefore, when he had taken the vinegar, said: It is consummated. And bowing his head, he gave up the ghost.",
+   "tags": [
+    "passion",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-passion-06-ref",
+   "item": "bible-passion-06",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Jesus therefore, when he had taken the vinegar, said: It is consummated. And bowing his head, he gave up the ghost.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "John 19:30",
+   "accept": [
+    "John 19:30",
+    "jn 19:30",
+    "jo 19:30",
+    "joh 19:30",
+    "jhn 19:30"
+   ],
+   "tags": [
+    "passion",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-passion-07-text",
+   "item": "bible-passion-07",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 28:6",
+   "hint": "The angel at the empty tomb, speaking to the women on Easter morning.",
+   "answer_form": "the verse, word for word",
+   "back": "He is not here, for he is risen, as he said. Come, and see the place where the Lord was laid.",
+   "tags": [
+    "passion",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-passion-07-ref",
+   "item": "bible-passion-07",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "He is not here, for he is risen, as he said. Come, and see the place where the Lord was laid.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 28:6",
+   "accept": [
+    "Matthew 28:6",
+    "matt 28:6",
+    "mat 28:6",
+    "mt 28:6"
+   ],
+   "tags": [
+    "passion",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-passion-08-text",
+   "item": "bible-passion-08",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Luke 23:46",
+   "hint": "Jesus on the cross: the seventh and last Word.",
+   "answer_form": "the verse, word for word",
+   "back": "And Jesus crying out with a loud voice, said: Father, into thy hands I commend my spirit. And saying this, he gave up the ghost.",
+   "tags": [
+    "passion",
+    "luk"
+   ]
+  },
+  {
+   "id": "bible-passion-08-ref",
+   "item": "bible-passion-08",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And Jesus crying out with a loud voice, said: Father, into thy hands I commend my spirit. And saying this, he gave up the ghost.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Luke 23:46",
+   "accept": [
+    "Luke 23:46",
+    "lk 23:46",
+    "luk 23:46",
+    "lu 23:46"
+   ],
+   "tags": [
+    "passion",
+    "luk"
+   ]
+  },
+  {
+   "id": "bible-passion-09-text",
+   "item": "bible-passion-09",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 27:46",
+   "hint": "Jesus on the cross at the ninth hour: the fourth Word.",
+   "answer_form": "the verse, word for word",
+   "back": "And about the ninth hour Jesus cried with a loud voice, saying: Eli, Eli, lamma sabacthani? that is, My God, my God, why hast thou forsaken me?",
+   "tags": [
+    "passion",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-passion-09-ref",
+   "item": "bible-passion-09",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And about the ninth hour Jesus cried with a loud voice, saying: Eli, Eli, lamma sabacthani? that is, My God, my God, why hast thou forsaken me?",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 27:46",
+   "accept": [
+    "Matthew 27:46",
+    "matt 27:46",
+    "mat 27:46",
+    "mt 27:46"
+   ],
+   "tags": [
+    "passion",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-passion-10-text",
+   "item": "bible-passion-10",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Isaias 53:5 (Isaiah 53:5 in modern Bibles)",
+   "hint": "Isaias' fourth Servant Song, read on Good Friday.",
+   "answer_form": "the verse, word for word",
+   "back": "But he was wounded for our iniquities, he was bruised for our sins: the chastisement of our peace was upon him, and by his bruises we are healed.",
+   "tags": [
+    "passion",
+    "isa"
+   ]
+  },
+  {
+   "id": "bible-passion-10-ref",
+   "item": "bible-passion-10",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "But he was wounded for our iniquities, he was bruised for our sins: the chastisement of our peace was upon him, and by his bruises we are healed.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Isaias 53:5 (Isaiah 53:5 in modern Bibles)",
+   "accept": [
+    "Isaias 53:5",
+    "Isaiah 53:5",
+    "isa 53:5",
+    "is 53:5"
+   ],
+   "tags": [
+    "passion",
+    "isa"
+   ]
+  },
+  {
+   "id": "bible-passion-11-text",
+   "item": "bible-passion-11",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 26:39",
+   "hint": "Jesus praying in the garden of Gethsemani.",
+   "answer_form": "the verse, word for word",
+   "back": "And going a little further, he fell upon his face, praying, and saying: My Father, if it be possible, let this chalice pass from me. Nevertheless not as I will, but as thou wilt.",
+   "tags": [
+    "passion",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-passion-11-ref",
+   "item": "bible-passion-11",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And going a little further, he fell upon his face, praying, and saying: My Father, if it be possible, let this chalice pass from me. Nevertheless not as I will, but as thou wilt.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 26:39",
+   "accept": [
+    "Matthew 26:39",
+    "matt 26:39",
+    "mat 26:39",
+    "mt 26:39"
+   ],
+   "tags": [
+    "passion",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-passion-12-text",
+   "item": "bible-passion-12",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Lamentations 1:12",
+   "hint": "Jerusalem lamenting her ruin; applied to Christ and Our Lady in Holy Week.",
+   "answer_form": "the verse, word for word",
+   "back": "O all ye that pass by the way, attend, and see if there be any sorrow like to my sorrow: for he hath made a vintage of me, as the Lord spoke in the day of his fierce anger.",
+   "tags": [
+    "passion",
+    "lam"
+   ]
+  },
+  {
+   "id": "bible-passion-12-ref",
+   "item": "bible-passion-12",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "O all ye that pass by the way, attend, and see if there be any sorrow like to my sorrow: for he hath made a vintage of me, as the Lord spoke in the day of his fierce anger.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Lamentations 1:12",
+   "accept": [
+    "Lamentations 1:12",
+    "lam 1:12",
+    "la 1:12"
+   ],
+   "tags": [
+    "passion",
+    "lam"
+   ]
+  },
+  {
+   "id": "bible-passion-13-text",
+   "item": "bible-passion-13",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "John 19:26–27",
+   "hint": "Jesus on the cross to his mother and the beloved disciple: the third Word.",
+   "answer_form": "the verse, word for word",
+   "back": "When Jesus therefore had seen his mother and the disciple standing whom he loved, he saith to his mother: Woman, behold thy son. After that, he saith to the disciple: Behold thy mother. And from that hour, the disciple took her to his own.",
+   "tags": [
+    "passion",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-passion-13-ref",
+   "item": "bible-passion-13",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "When Jesus therefore had seen his mother and the disciple standing whom he loved, he saith to his mother: Woman, behold thy son. After that, he saith to the disciple: Behold thy mother. And from that hour, the disciple took her to his own.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "John 19:26–27",
+   "accept": [
+    "John 19:26",
+    "John 19:26-27",
+    "jn 19:26",
+    "jn 19:26-27",
+    "jo 19:26",
+    "jo 19:26-27",
+    "joh 19:26",
+    "joh 19:26-27",
+    "jhn 19:26",
+    "jhn 19:26-27"
+   ],
+   "tags": [
+    "passion",
+    "jhn"
+   ]
+  }
+ ],
+ "lesson": "",
+ "glossary": [],
+ "quiz": []
+}

@@ -1,0 +1,1392 @@
+{
+ "unit": 3,
+ "slug": "psalms",
+ "title": "Psalms",
+ "summary": "The best-known psalms in the Douay (Vulgate/Greek) numbering, which is usually one lower than modern Bibles.",
+ "kind": "verses",
+ "items": [
+  {
+   "id": "bible-psalms-01",
+   "ref_drb": "Psalm 22:1",
+   "ref_modern": "Psalm 23:1",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 22,
+   "verse_start": 1,
+   "verse_end": 1,
+   "text": "A psalm for David. The Lord ruleth me: and I shall want nothing.",
+   "recite": "The Lord ruleth me: and I shall want nothing.",
+   "recite_prefix": "A psalm for David.",
+   "word_count": 9,
+   "context": "Psalm of David, the Good Shepherd psalm: the opening line.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 22,
+     "verse_start": 1,
+     "verse_end": 1
+    },
+    {
+     "system": "modern",
+     "chapter": 23,
+     "verse_start": 1,
+     "verse_end": 1
+    }
+   ],
+   "accept": [
+    "Psalms 22:1",
+    "ps 22:1",
+    "psa 22:1",
+    "psalm 22:1",
+    "pss 22:1",
+    "psm 22:1",
+    "pslm 22:1",
+    "Psalms 23:1",
+    "ps 23:1",
+    "psa 23:1",
+    "psalm 23:1",
+    "pss 23:1",
+    "psm 23:1",
+    "pslm 23:1"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 22:1 in the Douay is Psalm 23:1 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-02",
+   "ref_drb": "Psalm 94:8",
+   "ref_modern": "Psalm 95:7–8",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 94,
+   "verse_start": 8,
+   "verse_end": 8,
+   "text": "Today if you shall hear his voice, harden not your hearts:",
+   "recite": "Today if you shall hear his voice, harden not your hearts:",
+   "word_count": 11,
+   "context": "The Invitatory psalm (Venite) that opens the Divine Office each day.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 94,
+     "verse_start": 8,
+     "verse_end": 8
+    },
+    {
+     "system": "modern",
+     "chapter": 95,
+     "verse_start": 7,
+     "verse_end": 8
+    },
+    {
+     "system": "modern",
+     "chapter": 95,
+     "verse_start": 8,
+     "verse_end": 8
+    }
+   ],
+   "accept": [
+    "Psalms 94:8",
+    "ps 94:8",
+    "psa 94:8",
+    "psalm 94:8",
+    "pss 94:8",
+    "psm 94:8",
+    "pslm 94:8",
+    "Psalms 95:7",
+    "Psalms 95:7-8",
+    "ps 95:7",
+    "ps 95:7-8",
+    "psa 95:7",
+    "psa 95:7-8",
+    "psalm 95:7",
+    "psalm 95:7-8",
+    "pss 95:7",
+    "pss 95:7-8",
+    "psm 95:7",
+    "psm 95:7-8",
+    "pslm 95:7",
+    "pslm 95:7-8",
+    "Psalms 95:8",
+    "ps 95:8",
+    "psa 95:8",
+    "psalm 95:8",
+    "pss 95:8",
+    "psm 95:8",
+    "pslm 95:8"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 94:8 in the Douay is Psalm 95:7–8 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-03",
+   "ref_drb": "Psalm 129:1",
+   "ref_modern": "Psalm 130:1",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 129,
+   "verse_start": 1,
+   "verse_end": 1,
+   "text": "Out of the depths I have cried to thee, O Lord:",
+   "recite": "Out of the depths I have cried to thee, O Lord:",
+   "word_count": 11,
+   "context": "Opening of the De profundis, prayed for the dead.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 129,
+     "verse_start": 1,
+     "verse_end": 1
+    },
+    {
+     "system": "modern",
+     "chapter": 130,
+     "verse_start": 1,
+     "verse_end": 1
+    }
+   ],
+   "accept": [
+    "Psalms 129:1",
+    "ps 129:1",
+    "psa 129:1",
+    "psalm 129:1",
+    "pss 129:1",
+    "psm 129:1",
+    "pslm 129:1",
+    "Psalms 130:1",
+    "ps 130:1",
+    "psa 130:1",
+    "psalm 130:1",
+    "pss 130:1",
+    "psm 130:1",
+    "pslm 130:1"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 129:1 in the Douay is Psalm 130:1 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-04",
+   "ref_drb": "Psalm 118:105",
+   "ref_modern": "Psalm 119:105",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 118,
+   "verse_start": 105,
+   "verse_end": 105,
+   "text": "NUN. Thy word is a lamp to my feet, and a light to my paths.",
+   "recite": "Thy word is a lamp to my feet, and a light to my paths.",
+   "recite_prefix": "NUN.",
+   "word_count": 14,
+   "context": "The long psalm on God's law, in the section for the Hebrew letter Nun.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 118,
+     "verse_start": 105,
+     "verse_end": 105
+    },
+    {
+     "system": "modern",
+     "chapter": 119,
+     "verse_start": 105,
+     "verse_end": 105
+    }
+   ],
+   "accept": [
+    "Psalms 118:105",
+    "ps 118:105",
+    "psa 118:105",
+    "psalm 118:105",
+    "pss 118:105",
+    "psm 118:105",
+    "pslm 118:105",
+    "Psalms 119:105",
+    "ps 119:105",
+    "psa 119:105",
+    "psalm 119:105",
+    "pss 119:105",
+    "psm 119:105",
+    "pslm 119:105"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 118:105 in the Douay is Psalm 119:105 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "reviewed",
+    "review_note": "eBible prints the Hebrew acrostic letter 'NUN.' at the start of the verse; drbo.org shows it as a section heading. It is not memorized (recite_prefix)."
+   }
+  },
+  {
+   "id": "bible-psalms-05",
+   "ref_drb": "Psalm 50:12",
+   "ref_modern": "Psalm 51:10",
+   "ref_nabre": "Psalm 51:12",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 50,
+   "verse_start": 12,
+   "verse_end": 12,
+   "text": "Create a clean heart in me, O God: and renew a right spirit within my bowels.",
+   "recite": "Create a clean heart in me, O God: and renew a right spirit within my bowels.",
+   "word_count": 16,
+   "context": "The Miserere, David's psalm of repentance after his sin with Bethsabee.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 50,
+     "verse_start": 12,
+     "verse_end": 12
+    },
+    {
+     "system": "modern",
+     "chapter": 51,
+     "verse_start": 10,
+     "verse_end": 10
+    },
+    {
+     "system": "nabre",
+     "chapter": 51,
+     "verse_start": 12,
+     "verse_end": 12
+    }
+   ],
+   "accept": [
+    "Psalms 50:12",
+    "ps 50:12",
+    "psa 50:12",
+    "psalm 50:12",
+    "pss 50:12",
+    "psm 50:12",
+    "pslm 50:12",
+    "Psalms 51:10",
+    "ps 51:10",
+    "psa 51:10",
+    "psalm 51:10",
+    "pss 51:10",
+    "psm 51:10",
+    "pslm 51:10",
+    "Psalms 51:12",
+    "ps 51:12",
+    "psa 51:12",
+    "psalm 51:12",
+    "pss 51:12",
+    "psm 51:12",
+    "pslm 51:12"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 50:12 in the Douay is Psalm 51:10 in most modern Bibles (Psalm 51:12 in the NABRE).",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-06",
+   "ref_drb": "Psalm 90:11",
+   "ref_modern": "Psalm 91:11",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 90,
+   "verse_start": 11,
+   "verse_end": 11,
+   "text": "For he hath given his angels charge over thee; to keep thee in all thy ways.",
+   "recite": "For he hath given his angels charge over thee; to keep thee in all thy ways.",
+   "word_count": 16,
+   "context": "Psalm of trust (Compline); the devil quotes it when tempting Christ.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 90,
+     "verse_start": 11,
+     "verse_end": 11
+    },
+    {
+     "system": "modern",
+     "chapter": 91,
+     "verse_start": 11,
+     "verse_end": 11
+    }
+   ],
+   "accept": [
+    "Psalms 90:11",
+    "ps 90:11",
+    "psa 90:11",
+    "psalm 90:11",
+    "pss 90:11",
+    "psm 90:11",
+    "pslm 90:11",
+    "Psalms 91:11",
+    "ps 91:11",
+    "psa 91:11",
+    "psalm 91:11",
+    "pss 91:11",
+    "psm 91:11",
+    "pslm 91:11"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 90:11 in the Douay is Psalm 91:11 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-07",
+   "ref_drb": "Psalm 117:24",
+   "ref_modern": "Psalm 118:24",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 117,
+   "verse_start": 24,
+   "verse_end": 24,
+   "text": "This is the day which the Lord hath made: let us be glad and rejoice therein.",
+   "recite": "This is the day which the Lord hath made: let us be glad and rejoice therein.",
+   "word_count": 16,
+   "context": "Easter psalm, sung throughout the Easter octave.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 117,
+     "verse_start": 24,
+     "verse_end": 24
+    },
+    {
+     "system": "modern",
+     "chapter": 118,
+     "verse_start": 24,
+     "verse_end": 24
+    }
+   ],
+   "accept": [
+    "Psalms 117:24",
+    "ps 117:24",
+    "psa 117:24",
+    "psalm 117:24",
+    "pss 117:24",
+    "psm 117:24",
+    "pslm 117:24",
+    "Psalms 118:24",
+    "ps 118:24",
+    "psa 118:24",
+    "psalm 118:24",
+    "pss 118:24",
+    "psm 118:24",
+    "pslm 118:24"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 117:24 in the Douay is Psalm 118:24 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-08",
+   "ref_drb": "Psalm 33:9",
+   "ref_modern": "Psalm 34:8",
+   "ref_nabre": "Psalm 34:9",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 33,
+   "verse_start": 9,
+   "verse_end": 9,
+   "text": "O taste, and see that the Lord is sweet: blessed is the man that hopeth in him.",
+   "recite": "O taste, and see that the Lord is sweet: blessed is the man that hopeth in him.",
+   "word_count": 17,
+   "context": "David's psalm of thanksgiving, sung as a Communion chant.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 33,
+     "verse_start": 9,
+     "verse_end": 9
+    },
+    {
+     "system": "modern",
+     "chapter": 34,
+     "verse_start": 8,
+     "verse_end": 8
+    },
+    {
+     "system": "nabre",
+     "chapter": 34,
+     "verse_start": 9,
+     "verse_end": 9
+    }
+   ],
+   "accept": [
+    "Psalms 33:9",
+    "ps 33:9",
+    "psa 33:9",
+    "psalm 33:9",
+    "pss 33:9",
+    "psm 33:9",
+    "pslm 33:9",
+    "Psalms 34:8",
+    "ps 34:8",
+    "psa 34:8",
+    "psalm 34:8",
+    "pss 34:8",
+    "psm 34:8",
+    "pslm 34:8",
+    "Psalms 34:9",
+    "ps 34:9",
+    "psa 34:9",
+    "psalm 34:9",
+    "pss 34:9",
+    "psm 34:9",
+    "pslm 34:9"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 33:9 in the Douay is Psalm 34:8 in most modern Bibles (Psalm 34:9 in the NABRE).",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-09",
+   "ref_drb": "Psalm 41:2",
+   "ref_modern": "Psalm 42:1",
+   "ref_nabre": "Psalm 42:2",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 41,
+   "verse_start": 2,
+   "verse_end": 2,
+   "text": "As the hart panteth after the fountains of water; so my soul panteth after thee, O God.",
+   "recite": "As the hart panteth after the fountains of water; so my soul panteth after thee, O God.",
+   "word_count": 17,
+   "context": "Psalm of longing for God; its Latin is 'Sicut cervus'.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 41,
+     "verse_start": 2,
+     "verse_end": 2
+    },
+    {
+     "system": "modern",
+     "chapter": 42,
+     "verse_start": 1,
+     "verse_end": 1
+    },
+    {
+     "system": "nabre",
+     "chapter": 42,
+     "verse_start": 2,
+     "verse_end": 2
+    }
+   ],
+   "accept": [
+    "Psalms 41:2",
+    "ps 41:2",
+    "psa 41:2",
+    "psalm 41:2",
+    "pss 41:2",
+    "psm 41:2",
+    "pslm 41:2",
+    "Psalms 42:1",
+    "ps 42:1",
+    "psa 42:1",
+    "psalm 42:1",
+    "pss 42:1",
+    "psm 42:1",
+    "pslm 42:1",
+    "Psalms 42:2",
+    "ps 42:2",
+    "psa 42:2",
+    "psalm 42:2",
+    "pss 42:2",
+    "psm 42:2",
+    "pslm 42:2"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 41:2 in the Douay is Psalm 42:1 in most modern Bibles (Psalm 42:2 in the NABRE).",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-10",
+   "ref_drb": "Psalm 45:11",
+   "ref_modern": "Psalm 46:10",
+   "ref_nabre": "Psalm 46:11",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 45,
+   "verse_start": 11,
+   "verse_end": 11,
+   "text": "Be still and see that I am God; I will be exalted among the nations, and I will be exalted in the earth.",
+   "recite": "Be still and see that I am God; I will be exalted among the nations, and I will be exalted in the earth.",
+   "word_count": 23,
+   "context": "God speaking in a psalm of trust ('God is our refuge and strength').",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 45,
+     "verse_start": 11,
+     "verse_end": 11
+    },
+    {
+     "system": "modern",
+     "chapter": 46,
+     "verse_start": 10,
+     "verse_end": 10
+    },
+    {
+     "system": "nabre",
+     "chapter": 46,
+     "verse_start": 11,
+     "verse_end": 11
+    }
+   ],
+   "accept": [
+    "Psalms 45:11",
+    "ps 45:11",
+    "psa 45:11",
+    "psalm 45:11",
+    "pss 45:11",
+    "psm 45:11",
+    "pslm 45:11",
+    "Psalms 46:10",
+    "ps 46:10",
+    "psa 46:10",
+    "psalm 46:10",
+    "pss 46:10",
+    "psm 46:10",
+    "pslm 46:10",
+    "Psalms 46:11",
+    "ps 46:11",
+    "psa 46:11",
+    "psalm 46:11",
+    "pss 46:11",
+    "psm 46:11",
+    "pslm 46:11"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 45:11 in the Douay is Psalm 46:10 in most modern Bibles (Psalm 46:11 in the NABRE).",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-11",
+   "ref_drb": "Psalm 50:3",
+   "ref_modern": "Psalm 51:1",
+   "ref_nabre": "Psalm 51:3",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 50,
+   "verse_start": 3,
+   "verse_end": 3,
+   "text": "Have mercy on me, O God, according to thy great mercy. And according to the multitude of thy tender mercies blot out my iniquity.",
+   "recite": "Have mercy on me, O God, according to thy great mercy. And according to the multitude of thy tender mercies blot out my iniquity.",
+   "word_count": 24,
+   "context": "Opening plea of the Miserere, David's psalm of repentance.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 50,
+     "verse_start": 3,
+     "verse_end": 3
+    },
+    {
+     "system": "modern",
+     "chapter": 51,
+     "verse_start": 1,
+     "verse_end": 1
+    },
+    {
+     "system": "nabre",
+     "chapter": 51,
+     "verse_start": 3,
+     "verse_end": 3
+    }
+   ],
+   "accept": [
+    "Psalms 50:3",
+    "ps 50:3",
+    "psa 50:3",
+    "psalm 50:3",
+    "pss 50:3",
+    "psm 50:3",
+    "pslm 50:3",
+    "Psalms 51:1",
+    "ps 51:1",
+    "psa 51:1",
+    "psalm 51:1",
+    "pss 51:1",
+    "psm 51:1",
+    "pslm 51:1",
+    "Psalms 51:3",
+    "ps 51:3",
+    "psa 51:3",
+    "psalm 51:3",
+    "pss 51:3",
+    "psm 51:3",
+    "pslm 51:3"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 50:3 in the Douay is Psalm 51:1 in most modern Bibles (Psalm 51:3 in the NABRE).",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-12",
+   "ref_drb": "Psalm 26:1",
+   "ref_modern": "Psalm 27:1",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 26,
+   "verse_start": 1,
+   "verse_end": 1,
+   "text": "The psalm of David before he was anointed. The Lord is my light and my salvation, whom shall I fear? The Lord is the protector of my life: of whom shall I be afraid?",
+   "recite": "The Lord is my light and my salvation, whom shall I fear? The Lord is the protector of my life: of whom shall I be afraid?",
+   "recite_prefix": "The psalm of David before he was anointed.",
+   "word_count": 26,
+   "context": "Psalm of David's confidence in God.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 26,
+     "verse_start": 1,
+     "verse_end": 1
+    },
+    {
+     "system": "modern",
+     "chapter": 27,
+     "verse_start": 1,
+     "verse_end": 1
+    }
+   ],
+   "accept": [
+    "Psalms 26:1",
+    "ps 26:1",
+    "psa 26:1",
+    "psalm 26:1",
+    "pss 26:1",
+    "psm 26:1",
+    "pslm 26:1",
+    "Psalms 27:1",
+    "ps 27:1",
+    "psa 27:1",
+    "psalm 27:1",
+    "pss 27:1",
+    "psm 27:1",
+    "pslm 27:1"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 26:1 in the Douay is Psalm 27:1 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-psalms-13",
+   "ref_drb": "Psalm 22:4",
+   "ref_modern": "Psalm 23:4",
+   "book": "PSA",
+   "book_drb": "Psalms",
+   "book_modern": "Psalms",
+   "chapter": 22,
+   "verse_start": 4,
+   "verse_end": 4,
+   "text": "For though I should walk in the midst of the shadow of death, I will fear no evils, for thou art with me. Thy rod and thy staff, they have comforted me.",
+   "recite": "For though I should walk in the midst of the shadow of death, I will fear no evils, for thou art with me. Thy rod and thy staff, they have comforted me.",
+   "word_count": 32,
+   "context": "Psalm of David, the Good Shepherd psalm: walking through the valley of death.",
+   "deck": "psalms",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 22,
+     "verse_start": 4,
+     "verse_end": 4
+    },
+    {
+     "system": "modern",
+     "chapter": 23,
+     "verse_start": 4,
+     "verse_end": 4
+    }
+   ],
+   "accept": [
+    "Psalms 22:4",
+    "ps 22:4",
+    "psa 22:4",
+    "psalm 22:4",
+    "pss 22:4",
+    "psm 22:4",
+    "pslm 22:4",
+    "Psalms 23:4",
+    "ps 23:4",
+    "psa 23:4",
+    "psalm 23:4",
+    "pss 23:4",
+    "psm 23:4",
+    "pslm 23:4"
+   ],
+   "note": "Douay-Rheims follows the Vulgate/Greek psalm numbering, usually one lower than modern Bibles: Psalm 22:4 in the Douay is Psalm 23:4 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  }
+ ],
+ "cards": [
+  {
+   "id": "bible-psalms-01-text",
+   "item": "bible-psalms-01",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Psalm 22:1 (Psalm 23:1 in modern Bibles)",
+   "hint": "Psalm of David, the Good Shepherd psalm: the opening line.",
+   "answer_form": "the verse, word for word",
+   "back": "The Lord ruleth me: and I shall want nothing.",
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-01-ref",
+   "item": "bible-psalms-01",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "The Lord ruleth me: and I shall want nothing.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Psalm 22:1 (Psalm 23:1 in modern Bibles)",
+   "accept": [
+    "Psalms 22:1",
+    "ps 22:1",
+    "psa 22:1",
+    "psalm 22:1",
+    "pss 22:1",
+    "psm 22:1",
+    "pslm 22:1",
+    "Psalms 23:1",
+    "ps 23:1",
+    "psa 23:1",
+    "psalm 23:1",
+    "pss 23:1",
+    "psm 23:1",
+    "pslm 23:1"
+   ],
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-02-text",
+   "item": "bible-psalms-02",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Psalm 94:8 (Psalm 95:7–8 in modern Bibles)",
+   "hint": "The Invitatory psalm (Venite) that opens the Divine Office each day.",
+   "answer_form": "the verse, word for word",
+   "back": "Today if you shall hear his voice, harden not your hearts:",
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-02-ref",
+   "item": "bible-psalms-02",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Today if you shall hear his voice, harden not your hearts:",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Psalm 94:8 (Psalm 95:7–8 in modern Bibles)",
+   "accept": [
+    "Psalms 94:8",
+    "ps 94:8",
+    "psa 94:8",
+    "psalm 94:8",
+    "pss 94:8",
+    "psm 94:8",
+    "pslm 94:8",
+    "Psalms 95:7",
+    "Psalms 95:7-8",
+    "ps 95:7",
+    "ps 95:7-8",
+    "psa 95:7",
+    "psa 95:7-8",
+    "psalm 95:7",
+    "psalm 95:7-8",
+    "pss 95:7",
+    "pss 95:7-8",
+    "psm 95:7",
+    "psm 95:7-8",
+    "pslm 95:7",
+    "pslm 95:7-8",
+    "Psalms 95:8",
+    "ps 95:8",
+    "psa 95:8",
+    "psalm 95:8",
+    "pss 95:8",
+    "psm 95:8",
+    "pslm 95:8"
+   ],
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-03-text",
+   "item": "bible-psalms-03",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Psalm 129:1 (Psalm 130:1 in modern Bibles)",
+   "hint": "Opening of the De profundis, prayed for the dead.",
+   "answer_form": "the verse, word for word",
+   "back": "Out of the depths I have cried to thee, O Lord:",
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-03-ref",
+   "item": "bible-psalms-03",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Out of the depths I have cried to thee, O Lord:",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Psalm 129:1 (Psalm 130:1 in modern Bibles)",
+   "accept": [
+    "Psalms 129:1",
+    "ps 129:1",
+    "psa 129:1",
+    "psalm 129:1",
+    "pss 129:1",
+    "psm 129:1",
+    "pslm 129:1",
+    "Psalms 130:1",
+    "ps 130:1",
+    "psa 130:1",
+    "psalm 130:1",
+    "pss 130:1",
+    "psm 130:1",
+    "pslm 130:1"
+   ],
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-04-text",
+   "item": "bible-psalms-04",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Psalm 118:105 (Psalm 119:105 in modern Bibles)",
+   "hint": "The long psalm on God's law, in the section for the Hebrew letter Nun.",
+   "answer_form": "the verse, word for word",
+   "back": "Thy word is a lamp to my feet, and a light to my paths.",
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-04-ref",
+   "item": "bible-psalms-04",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Thy word is a lamp to my feet, and a light to my paths.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Psalm 118:105 (Psalm 119:105 in modern Bibles)",
+   "accept": [
+    "Psalms 118:105",
+    "ps 118:105",
+    "psa 118:105",
+    "psalm 118:105",
+    "pss 118:105",
+    "psm 118:105",
+    "pslm 118:105",
+    "Psalms 119:105",
+    "ps 119:105",
+    "psa 119:105",
+    "psalm 119:105",
+    "pss 119:105",
+    "psm 119:105",
+    "pslm 119:105"
+   ],
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-05-text",
+   "item": "bible-psalms-05",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Psalm 50:12 (Psalm 51:10 in modern Bibles)",
+   "hint": "The Miserere, David's psalm of repentance after his sin with Bethsabee.",
+   "answer_form": "the verse, word for word",
+   "back": "Create a clean heart in me, O God: and renew a right spirit within my bowels.",
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-05-ref",
+   "item": "bible-psalms-05",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Create a clean heart in me, O God: and renew a right spirit within my bowels.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Psalm 50:12 (Psalm 51:10 in modern Bibles)",
+   "accept": [
+    "Psalms 50:12",
+    "ps 50:12",
+    "psa 50:12",
+    "psalm 50:12",
+    "pss 50:12",
+    "psm 50:12",
+    "pslm 50:12",
+    "Psalms 51:10",
+    "ps 51:10",
+    "psa 51:10",
+    "psalm 51:10",
+    "pss 51:10",
+    "psm 51:10",
+    "pslm 51:10",
+    "Psalms 51:12",
+    "ps 51:12",
+    "psa 51:12",
+    "psalm 51:12",
+    "pss 51:12",
+    "psm 51:12",
+    "pslm 51:12"
+   ],
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-06-text",
+   "item": "bible-psalms-06",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Psalm 90:11 (Psalm 91:11 in modern Bibles)",
+   "hint": "Psalm of trust (Compline); the devil quotes it when tempting Christ.",
+   "answer_form": "the verse, word for word",
+   "back": "For he hath given his angels charge over thee; to keep thee in all thy ways.",
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-06-ref",
+   "item": "bible-psalms-06",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "For he hath given his angels charge over thee; to keep thee in all thy ways.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Psalm 90:11 (Psalm 91:11 in modern Bibles)",
+   "accept": [
+    "Psalms 90:11",
+    "ps 90:11",
+    "psa 90:11",
+    "psalm 90:11",
+    "pss 90:11",
+    "psm 90:11",
+    "pslm 90:11",
+    "Psalms 91:11",
+    "ps 91:11",
+    "psa 91:11",
+    "psalm 91:11",
+    "pss 91:11",
+    "psm 91:11",
+    "pslm 91:11"
+   ],
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-07-text",
+   "item": "bible-psalms-07",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Psalm 117:24 (Psalm 118:24 in modern Bibles)",
+   "hint": "Easter psalm, sung throughout the Easter octave.",
+   "answer_form": "the verse, word for word",
+   "back": "This is the day which the Lord hath made: let us be glad and rejoice therein.",
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-07-ref",
+   "item": "bible-psalms-07",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "This is the day which the Lord hath made: let us be glad and rejoice therein.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Psalm 117:24 (Psalm 118:24 in modern Bibles)",
+   "accept": [
+    "Psalms 117:24",
+    "ps 117:24",
+    "psa 117:24",
+    "psalm 117:24",
+    "pss 117:24",
+    "psm 117:24",
+    "pslm 117:24",
+    "Psalms 118:24",
+    "ps 118:24",
+    "psa 118:24",
+    "psalm 118:24",
+    "pss 118:24",
+    "psm 118:24",
+    "pslm 118:24"
+   ],
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-08-text",
+   "item": "bible-psalms-08",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Psalm 33:9 (Psalm 34:8 in modern Bibles)",
+   "hint": "David's psalm of thanksgiving, sung as a Communion chant.",
+   "answer_form": "the verse, word for word",
+   "back": "O taste, and see that the Lord is sweet: blessed is the man that hopeth in him.",
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-08-ref",
+   "item": "bible-psalms-08",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "O taste, and see that the Lord is sweet: blessed is the man that hopeth in him.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Psalm 33:9 (Psalm 34:8 in modern Bibles)",
+   "accept": [
+    "Psalms 33:9",
+    "ps 33:9",
+    "psa 33:9",
+    "psalm 33:9",
+    "pss 33:9",
+    "psm 33:9",
+    "pslm 33:9",
+    "Psalms 34:8",
+    "ps 34:8",
+    "psa 34:8",
+    "psalm 34:8",
+    "pss 34:8",
+    "psm 34:8",
+    "pslm 34:8",
+    "Psalms 34:9",
+    "ps 34:9",
+    "psa 34:9",
+    "psalm 34:9",
+    "pss 34:9",
+    "psm 34:9",
+    "pslm 34:9"
+   ],
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-09-text",
+   "item": "bible-psalms-09",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Psalm 41:2 (Psalm 42:1 in modern Bibles)",
+   "hint": "Psalm of longing for God; its Latin is 'Sicut cervus'.",
+   "answer_form": "the verse, word for word",
+   "back": "As the hart panteth after the fountains of water; so my soul panteth after thee, O God.",
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-09-ref",
+   "item": "bible-psalms-09",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "As the hart panteth after the fountains of water; so my soul panteth after thee, O God.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Psalm 41:2 (Psalm 42:1 in modern Bibles)",
+   "accept": [
+    "Psalms 41:2",
+    "ps 41:2",
+    "psa 41:2",
+    "psalm 41:2",
+    "pss 41:2",
+    "psm 41:2",
+    "pslm 41:2",
+    "Psalms 42:1",
+    "ps 42:1",
+    "psa 42:1",
+    "psalm 42:1",
+    "pss 42:1",
+    "psm 42:1",
+    "pslm 42:1",
+    "Psalms 42:2",
+    "ps 42:2",
+    "psa 42:2",
+    "psalm 42:2",
+    "pss 42:2",
+    "psm 42:2",
+    "pslm 42:2"
+   ],
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-10-text",
+   "item": "bible-psalms-10",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Psalm 45:11 (Psalm 46:10 in modern Bibles)",
+   "hint": "God speaking in a psalm of trust ('God is our refuge and strength').",
+   "answer_form": "the verse, word for word",
+   "back": "Be still and see that I am God; I will be exalted among the nations, and I will be exalted in the earth.",
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-10-ref",
+   "item": "bible-psalms-10",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Be still and see that I am God; I will be exalted among the nations, and I will be exalted in the earth.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Psalm 45:11 (Psalm 46:10 in modern Bibles)",
+   "accept": [
+    "Psalms 45:11",
+    "ps 45:11",
+    "psa 45:11",
+    "psalm 45:11",
+    "pss 45:11",
+    "psm 45:11",
+    "pslm 45:11",
+    "Psalms 46:10",
+    "ps 46:10",
+    "psa 46:10",
+    "psalm 46:10",
+    "pss 46:10",
+    "psm 46:10",
+    "pslm 46:10",
+    "Psalms 46:11",
+    "ps 46:11",
+    "psa 46:11",
+    "psalm 46:11",
+    "pss 46:11",
+    "psm 46:11",
+    "pslm 46:11"
+   ],
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-11-text",
+   "item": "bible-psalms-11",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Psalm 50:3 (Psalm 51:1 in modern Bibles)",
+   "hint": "Opening plea of the Miserere, David's psalm of repentance.",
+   "answer_form": "the verse, word for word",
+   "back": "Have mercy on me, O God, according to thy great mercy. And according to the multitude of thy tender mercies blot out my iniquity.",
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-11-ref",
+   "item": "bible-psalms-11",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Have mercy on me, O God, according to thy great mercy. And according to the multitude of thy tender mercies blot out my iniquity.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Psalm 50:3 (Psalm 51:1 in modern Bibles)",
+   "accept": [
+    "Psalms 50:3",
+    "ps 50:3",
+    "psa 50:3",
+    "psalm 50:3",
+    "pss 50:3",
+    "psm 50:3",
+    "pslm 50:3",
+    "Psalms 51:1",
+    "ps 51:1",
+    "psa 51:1",
+    "psalm 51:1",
+    "pss 51:1",
+    "psm 51:1",
+    "pslm 51:1",
+    "Psalms 51:3",
+    "ps 51:3",
+    "psa 51:3",
+    "psalm 51:3",
+    "pss 51:3",
+    "psm 51:3",
+    "pslm 51:3"
+   ],
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-12-text",
+   "item": "bible-psalms-12",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Psalm 26:1 (Psalm 27:1 in modern Bibles)",
+   "hint": "Psalm of David's confidence in God.",
+   "answer_form": "the verse, word for word",
+   "back": "The Lord is my light and my salvation, whom shall I fear? The Lord is the protector of my life: of whom shall I be afraid?",
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-12-ref",
+   "item": "bible-psalms-12",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "The Lord is my light and my salvation, whom shall I fear? The Lord is the protector of my life: of whom shall I be afraid?",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Psalm 26:1 (Psalm 27:1 in modern Bibles)",
+   "accept": [
+    "Psalms 26:1",
+    "ps 26:1",
+    "psa 26:1",
+    "psalm 26:1",
+    "pss 26:1",
+    "psm 26:1",
+    "pslm 26:1",
+    "Psalms 27:1",
+    "ps 27:1",
+    "psa 27:1",
+    "psalm 27:1",
+    "pss 27:1",
+    "psm 27:1",
+    "pslm 27:1"
+   ],
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-13-text",
+   "item": "bible-psalms-13",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Psalm 22:4 (Psalm 23:4 in modern Bibles)",
+   "hint": "Psalm of David, the Good Shepherd psalm: walking through the valley of death.",
+   "answer_form": "the verse, word for word",
+   "back": "For though I should walk in the midst of the shadow of death, I will fear no evils, for thou art with me. Thy rod and thy staff, they have comforted me.",
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  },
+  {
+   "id": "bible-psalms-13-ref",
+   "item": "bible-psalms-13",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "For though I should walk in the midst of the shadow of death, I will fear no evils, for thou art with me. Thy rod and thy staff, they have comforted me.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Psalm 22:4 (Psalm 23:4 in modern Bibles)",
+   "accept": [
+    "Psalms 22:4",
+    "ps 22:4",
+    "psa 22:4",
+    "psalm 22:4",
+    "pss 22:4",
+    "psm 22:4",
+    "pslm 22:4",
+    "Psalms 23:4",
+    "ps 23:4",
+    "psa 23:4",
+    "psalm 23:4",
+    "pss 23:4",
+    "psm 23:4",
+    "pslm 23:4"
+   ],
+   "tags": [
+    "psalms",
+    "psa"
+   ]
+  }
+ ],
+ "lesson": "",
+ "glossary": [],
+ "quiz": []
+}

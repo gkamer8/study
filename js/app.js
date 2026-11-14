@@ -3,6 +3,7 @@ import { Storage } from './storage.js';
 import { SpacedRepetition } from './spaced-repetition.js';
 import { Markdown } from './markdown.js';
 import { AnswerChecker } from './answer-checker.js';
+import { buildBookIndex, checkReference, scoreText, renderDiff, clozeScaffold } from './bible-checker.js';
 
 class StudyApp {
     constructor() {
@@ -64,6 +65,8 @@ class StudyApp {
             this.renderMatch(params.subjectId, params.unitSlug));
         this.router.on('/terms/:subjectId/:unitSlug', (params) => 
             this.renderTermsDrill(params.subjectId, params.unitSlug));
+        this.router.on('/verses/:subjectId/:unitSlug/:mode', (params) => 
+            this.renderVerseDrill(params.subjectId, params.unitSlug, params.mode));
         this.router.on('/settings', () => this.renderSettings());
     }
 
@@ -212,6 +215,43 @@ class StudyApp {
         this.cleanup();
         const index = await this.loadSubjectIndex(subjectId);
 
+        if (index.kind === 'verses') {
+            this.renderBibleSubject(subjectId, index);
+        } else {
+            this.renderRegularSubject(subjectId, index);
+        }
+    }
+
+    renderBibleSubject(subjectId, index) {
+        this.appEl.innerHTML = `
+            <h1>${index.title}</h1>
+            <p>${index.description}</p>
+            
+            <p><strong>${index.totals.items}</strong> verses, <strong>${index.totals.cards}</strong> cards. <a href="#/review/${subjectId}">Review all decks</a></p>
+            <p style="font-size: 0.9rem; color: #666;">Douay-Rheims (Challoner). Psalms use Vulgate numbering; modern numbers are accepted too.</p>
+
+            <h2>Decks</h2>
+            <div class="unit-list">
+                ${index.units.map(unit => `
+                    <div class="unit-card">
+                        <div class="unit-title">Deck ${unit.unit}: ${unit.title}</div>
+                        <div class="unit-summary">${unit.summary}</div>
+                        <div class="unit-meta">
+                            <span>${unit.card_count} cards</span>
+                        </div>
+                        <div>
+                            <a href="#/review/${subjectId}/${unit.slug}" class="btn">Review</a>
+                            <a href="#/verses/${subjectId}/${unit.slug}/text" class="btn">Reference → verse</a>
+                            <a href="#/verses/${subjectId}/${unit.slug}/ref" class="btn">Verse → reference</a>
+                            <a href="#/verses/${subjectId}/${unit.slug}/list" class="btn">Browse</a>
+                        </div>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+    }
+
+    renderRegularSubject(subjectId, index) {
         this.appEl.innerHTML = `
             <h1>${index.title}</h1>
             <p>${index.description}</p>
@@ -421,6 +461,30 @@ class StudyApp {
             const progress = Storage.getCardProgress(card.id);
             const isNew = !progress || progress.isNew;
 
+            // Verse cards have their own renderers
+            if (card.type === 'verse-ref') {
+                this.renderVerseRefCard(card, currentIndex, queue.length, subjectId, sessionStats, 
+                    () => {
+                        currentIndex++;
+                        startTime = Date.now();
+                        render();
+                    });
+                return;
+            }
+            if (card.type === 'verse-text') {
+                this.renderVerseTextCard(card, currentIndex, queue.length, subjectId, sessionStats,
+                    () => {
+                        currentIndex++;
+                        startTime = Date.now();
+                        render();
+                    },
+                    () => {
+                        // Re-render same card (for learning steps)
+                        render();
+                    });
+                return;
+            }
+
             if (typedMode) {
                 this.renderTypedAnswerCard(card, isNew, currentIndex, queue.length, answered, userAnswer, 
                     () => {
@@ -466,6 +530,11 @@ class StudyApp {
         };
 
         const keyHandler = (e) => {
+            const card = queue[currentIndex];
+            // Verse cards handle their own Esc
+            if (card && (card.type === 'verse-ref' || card.type === 'verse-text')) {
+                return;
+            }
             if (e.key === 'Escape' && typedMode && !answered) {
                 // Show answer on Esc
                 answered = true;
@@ -993,6 +1062,449 @@ class StudyApp {
         }
 
         this.startReviewSession(queue, subjectId, unitSlug, 'terms', settings.typedAnswers);
+    }
+
+    // Bible verse drills
+    async renderVerseDrill(subjectId, unitSlug, mode) {
+        this.cleanup();
+        const index = await this.loadSubjectIndex(subjectId);
+        const unitInfo = index.units.find(u => u.slug === unitSlug);
+        const unit = await this.loadUnit(subjectId, unitInfo.file);
+
+        if (mode === 'list') {
+            // Browse mode: just show a table of all verses
+            this.appEl.innerHTML = `
+                <p><a href="#/subject/${subjectId}">← Back</a></p>
+                <h1>${unit.title}</h1>
+                <p>${unit.summary}</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Reference</th>
+                            <th>Modern</th>
+                            <th>Context</th>
+                            <th>Verse</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${unit.items.map(item => `
+                            <tr>
+                                <td>${this.escapeHtml(item.ref_drb)}</td>
+                                <td>${item.ref_modern ? this.escapeHtml(item.ref_modern) : '—'}</td>
+                                <td style="font-size: 0.9rem;">${this.escapeHtml(item.context || '')}</td>
+                                <td>${this.escapeHtml(item.recite)}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
+            return;
+        }
+
+        // Build items lookup and book index
+        const itemsById = Object.fromEntries(unit.items.map(i => [i.id, i]));
+        const bookIndex = buildBookIndex(index.books);
+
+        // Build cards from items
+        const allCards = [];
+        for (const item of unit.items) {
+            allCards.push({
+                id: `${item.id}-text`,
+                type: 'verse-text',
+                item: item.id,
+                front: item.ref_drb + (item.ref_modern && item.ref_modern !== item.ref_drb ? ` (${item.ref_modern} in modern Bibles)` : ''),
+                back: item.recite,
+                hint: item.context
+            });
+            allCards.push({
+                id: `${item.id}-ref`,
+                type: 'verse-ref',
+                item: item.id,
+                front: item.recite,
+                back: item.ref_drb + (item.ref_modern && item.ref_modern !== item.ref_drb ? ` (${item.ref_modern})` : '')
+            });
+        }
+
+        // Filter by mode
+        const modeCards = mode === 'text' 
+            ? allCards.filter(c => c.type === 'verse-text')
+            : mode === 'ref'
+            ? allCards.filter(c => c.type === 'verse-ref')
+            : allCards;
+
+        const progress = Storage.getAllCardProgress();
+        const settings = Storage.getSettings();
+
+        const dueCardIds = SpacedRepetition.getDueCards(progress);
+        const dueCards = modeCards.filter(c => dueCardIds.includes(c.id));
+        
+        const newCardIds = SpacedRepetition.getNewCards(modeCards, progress, settings.newCardsPerDay);
+        let newCards = modeCards.filter(c => newCardIds.includes(c.id));
+
+        // Apply Bible queue rules
+        // Rule 1: New -ref cards wait for their sibling -text to have progress
+        newCards = newCards.filter(c => {
+            if (c.type === 'verse-ref') {
+                const siblingId = c.id.replace('-ref', '-text');
+                return progress[siblingId] !== undefined;
+            }
+            return true;
+        });
+
+        let queue = [...dueCards, ...newCards];
+
+        // Rule 2: If both -text and -ref are in the queue, put -text first and -ref at end
+        const itemsInQueue = new Set();
+        for (const c of queue) {
+            const itemId = c.item;
+            if (itemsInQueue.has(itemId)) {
+                const textIdx = queue.findIndex(x => x.item === itemId && x.type === 'verse-text');
+                const refIdx = queue.findIndex(x => x.item === itemId && x.type === 'verse-ref');
+                if (textIdx !== -1 && refIdx !== -1 && refIdx < textIdx) {
+                    // Swap: move ref to end
+                    const refCard = queue.splice(refIdx, 1)[0];
+                    queue.push(refCard);
+                }
+            }
+            itemsInQueue.add(itemId);
+        }
+
+        if (queue.length === 0) {
+            this.appEl.innerHTML = `
+                <div class="empty-state">
+                    <h2>All done</h2>
+                    <p>No cards to review right now.</p>
+                    <p><a href="#/subject/${subjectId}">Back</a></p>
+                </div>
+            `;
+            return;
+        }
+
+        // Store context for verse card renderers
+        this.bibleContext = { itemsById, bookIndex, index, unitTitle: unit.title };
+        this.startReviewSession(queue, subjectId, unitSlug, mode, true);
+    }
+
+    renderVerseRefCard(card, currentIndex, total, subjectId, sessionStats, onNext) {
+        const { itemsById, bookIndex } = this.bibleContext;
+        const item = itemsById[card.item];
+        let answered = false;
+        let userAnswer = '';
+        let verdict = null;
+        let result = null;
+
+        const render = () => {
+            const deckTitle = this.bibleContext.unitTitle;
+            this.appEl.innerHTML = `
+                <div class="flashcard-container">
+                    <div class="flashcard-info">
+                        <span>Verse → reference · ${deckTitle} · ${currentIndex + 1} / ${total}</span>
+                    </div>
+
+                    <div class="flashcard-question">
+                        <div class="flashcard-text">${this.escapeHtml(card.front)}</div>
+                    </div>
+
+                    ${!answered ? `
+                        <form id="answer-form">
+                            <input type="text" class="vt-input" id="answer-input" 
+                                   placeholder="book chapter:verse, e.g. John 3:16" autocomplete="off" autofocus>
+                            <button type="submit" class="btn">Submit (Enter)</button>
+                            <button type="button" class="btn" id="show-answer-btn">I don't know (Esc)</button>
+                        </form>
+                    ` : `
+                        <div class="answer-result ${verdict === 'correct' ? 'correct' : 'incorrect'}">
+                            <strong>${verdict === 'correct' ? 'Correct' : verdict === 'close' ? 'Close: right chapter, verse off by one' : 'Not quite'}</strong>
+                            ${result.reason === 'unparsed' ? '<p>Type book chapter:verse.</p>' : ''}
+                            <p><strong>Reference:</strong> ${this.escapeHtml(card.back)}</p>
+                            ${item.note ? `<p style="font-size: 0.9rem; color: #666;">${this.escapeHtml(item.note)}</p>` : ''}
+                            ${item.context ? `<p style="font-size: 0.9rem; margin-top: 0.5rem;">${this.escapeHtml(item.context)}</p>` : ''}
+                        </div>
+                        ${verdict !== 'correct' ? `<button class="btn" id="override-btn">I was actually right</button>` : ''}
+                        <button class="btn" id="next-btn">Next (Enter)</button>
+                    `}
+                </div>
+            `;
+
+            if (!answered) {
+                const form = document.getElementById('answer-form');
+                const input = document.getElementById('answer-input');
+                const showBtn = document.getElementById('show-answer-btn');
+
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    userAnswer = input.value.trim();
+                    if (userAnswer) {
+                        result = checkReference(userAnswer, item, bookIndex);
+                        verdict = result.verdict;
+                        answered = true;
+                        const grade = verdict === 'correct' ? 2 : verdict === 'close' ? 1 : 0;
+                        if (verdict === 'correct') sessionStats.correct++; else sessionStats.incorrect++;
+                        this.gradeCard(card, grade);
+                        render();
+                    }
+                });
+
+                showBtn.addEventListener('click', () => {
+                    userAnswer = '';
+                    result = { verdict: 'wrong', reason: 'bail' };
+                    verdict = 'wrong';
+                    answered = true;
+                    sessionStats.incorrect++;
+                    this.gradeCard(card, 0);
+                    render();
+                });
+
+                const escHandler = (e) => {
+                    if (e.key === 'Escape') {
+                        showBtn.click();
+                    }
+                };
+                document.addEventListener('keydown', escHandler);
+                this.currentCleanup = () => document.removeEventListener('keydown', escHandler);
+            } else {
+                const nextBtn = document.getElementById('next-btn');
+                const enterHandler = (e) => {
+                    if (e.key === 'Enter') {
+                        nextBtn.click();
+                    }
+                };
+                nextBtn.addEventListener('click', () => {
+                    document.removeEventListener('keydown', enterHandler);
+                    onNext();
+                });
+                document.addEventListener('keydown', enterHandler);
+
+                const overrideBtn = document.getElementById('override-btn');
+                if (overrideBtn) {
+                    overrideBtn.addEventListener('click', () => {
+                        sessionStats.incorrect--;
+                        sessionStats.correct++;
+                        this.gradeCard(card, 2);
+                        document.removeEventListener('keydown', enterHandler);
+                        onNext();
+                    });
+                }
+            }
+        };
+
+        render();
+    }
+
+    renderVerseTextCard(card, currentIndex, total, subjectId, sessionStats, onNext, onSameCard) {
+        const { itemsById, index } = this.bibleContext;
+        const item = itemsById[card.item];
+        const progress = Storage.getCardProgress(card.id);
+        let cloze = Storage.getCloze(card.id);
+        if (!progress && !cloze) {
+            cloze = { step: 0, failed: false };
+        }
+        const step = cloze ? cloze.step : 3;
+        const inCloze = cloze !== null;
+
+        let answered = false;
+        let userAnswer = '';
+        let scoreResult = null;
+        let diffResult = null;
+        let contextShown = false;
+        let failedAttempts = 0;
+
+        const render = () => {
+            const deckTitle = this.bibleContext.unitTitle;
+            const scaffold = step < 3 ? clozeScaffold(item.recite, step) : '';
+
+            this.appEl.innerHTML = `
+                <div class="flashcard-container">
+                    <div class="flashcard-info">
+                        <span>Reference → verse · ${deckTitle} · ${currentIndex + 1} / ${total}</span>
+                        ${inCloze ? `<span> · Learning step ${step + 1}/4</span>` : ''}
+                    </div>
+
+                    <div class="flashcard-question">
+                        <div class="flashcard-text">${this.escapeHtml(card.front)}</div>
+                        ${!contextShown ? `<a href="#" id="show-context-link" style="font-size: 0.9rem;">Show context</a>` : `<p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">${this.escapeHtml(card.hint || '')}</p>`}
+                        ${step < 3 ? `<div class="vt-scaffold">${this.escapeHtml(scaffold)}</div>` : ''}
+                    </div>
+
+                    ${!answered ? `
+                        <form id="answer-form">
+                            <textarea class="vt-input" id="answer-input" rows="3" 
+                                      placeholder="Type the verse..." autocomplete="off" 
+                                      spellcheck="false" autocapitalize="off" autofocus></textarea>
+                            <button type="submit" class="btn">Submit (Enter)</button>
+                            <button type="button" class="btn" id="show-answer-btn">I don't know (Esc)</button>
+                        </form>
+                    ` : `
+                        <div class="answer-result ${scoreResult.verdict === 'correct' ? 'correct' : scoreResult.verdict === 'close' ? 'close' : 'incorrect'}">
+                            <strong>${scoreResult.verdict === 'correct' ? 'Correct' : scoreResult.verdict === 'close' ? 'Close' : 'Not quite'}</strong>
+                            <span> — ${Math.round(scoreResult.score * 100)}%</span>
+                            <div class="vt-diff">
+                                ${diffResult.map(d => {
+                                    if (d.extra) {
+                                        return `<del class="vt-extra">${this.escapeHtml(d.extra)}</del>`;
+                                    }
+                                    const cls = d.status === 'ok' ? '' : d.status === 'typo' ? ' vt-typo' : ' vt-miss';
+                                    const typed = d.typed ? ` <del class="vt-typed">${this.escapeHtml(d.typed)}</del>` : '';
+                                    return `<span class="${cls}">${this.escapeHtml(d.word)}</span>${typed}`;
+                                }).join(' ')}
+                            </div>
+                            <p style="margin-top: 0.75rem;"><strong>Full verse:</strong> ${this.escapeHtml(item.recite)}</p>
+                            ${item.note ? `<p style="font-size: 0.9rem; color: #666;">${this.escapeHtml(item.note)}</p>` : ''}
+                        </div>
+                        ${inCloze && scoreResult.verdict === 'correct' && step < 3 ? `<button class="btn" id="next-step-btn">Next step (Enter)</button>` : ''}
+                        ${inCloze && scoreResult.verdict !== 'correct' ? `<button class="btn" id="try-again-btn">Try again (Enter)</button>` : ''}
+                        ${!inCloze || step === 3 ? `
+                            ${scoreResult.verdict !== 'correct' ? `<button class="btn" id="override-btn">I was actually right</button>` : ''}
+                            <button class="btn" id="next-btn">Next (Enter)</button>
+                        ` : ''}
+                    `}
+                </div>
+            `;
+
+            const showContextLink = document.getElementById('show-context-link');
+            if (showContextLink) {
+                showContextLink.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    contextShown = true;
+                    render();
+                });
+            }
+
+            if (!answered) {
+                const form = document.getElementById('answer-form');
+                const input = document.getElementById('answer-input');
+                const showBtn = document.getElementById('show-answer-btn');
+
+                input.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' && !e.shiftKey) {
+                        e.preventDefault();
+                        form.dispatchEvent(new Event('submit'));
+                    }
+                });
+
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    userAnswer = input.value.trim();
+                    scoreResult = scoreText(userAnswer, item.recite, index.scoring);
+                    diffResult = renderDiff(item.recite, scoreResult.ops, index.scoring);
+                    answered = true;
+                    render();
+                });
+
+                showBtn.addEventListener('click', () => {
+                    userAnswer = '';
+                    scoreResult = scoreText('', item.recite, index.scoring);
+                    diffResult = renderDiff(item.recite, scoreResult.ops, index.scoring);
+                    if (inCloze) {
+                        cloze.failed = true;
+                        Storage.setCloze(card.id, cloze);
+                    }
+                    answered = true;
+                    render();
+                });
+
+                const escHandler = (e) => {
+                    if (e.key === 'Escape') {
+                        showBtn.click();
+                    }
+                };
+                document.addEventListener('keydown', escHandler);
+                this.currentCleanup = () => document.removeEventListener('keydown', escHandler);
+            } else {
+                const enterHandler = (e) => {
+                    if (e.key === 'Enter') {
+                        const activeBtn = document.querySelector('#next-step-btn, #try-again-btn, #next-btn');
+                        if (activeBtn) activeBtn.click();
+                    }
+                };
+                document.addEventListener('keydown', enterHandler);
+
+                const nextStepBtn = document.getElementById('next-step-btn');
+                if (nextStepBtn) {
+                    nextStepBtn.addEventListener('click', () => {
+                        document.removeEventListener('keydown', enterHandler);
+                        cloze.step++;
+                        Storage.setCloze(card.id, cloze);
+                        answered = false;
+                        userAnswer = '';
+                        onSameCard();
+                    });
+                }
+
+                const tryAgainBtn = document.getElementById('try-again-btn');
+                if (tryAgainBtn) {
+                    tryAgainBtn.addEventListener('click', () => {
+                        document.removeEventListener('keydown', enterHandler);
+                        cloze.failed = true;
+                        failedAttempts++;
+                        if (failedAttempts >= 2 && cloze.step > 0) {
+                            cloze.step--;
+                            failedAttempts = 0;
+                        }
+                        Storage.setCloze(card.id, cloze);
+                        answered = false;
+                        userAnswer = '';
+                        onSameCard();
+                    });
+                }
+
+                const nextBtn = document.getElementById('next-btn');
+                if (nextBtn) {
+                    nextBtn.addEventListener('click', () => {
+                        document.removeEventListener('keydown', enterHandler);
+                        // Final step or review
+                        if (inCloze && step === 3) {
+                            if (scoreResult.verdict === 'correct') {
+                                const grade = cloze.failed ? 1 : 2;
+                                sessionStats.correct++;
+                                this.gradeCard(card, grade);
+                                Storage.clearCloze(card.id);
+                                onNext();
+                            } else {
+                                cloze.failed = true;
+                                cloze.step = 2;
+                                Storage.setCloze(card.id, cloze);
+                                answered = false;
+                                userAnswer = '';
+                                onSameCard();
+                            }
+                        } else if (!inCloze) {
+                            const grade = scoreResult.verdict === 'correct' ? 2 : scoreResult.verdict === 'close' ? 1 : 0;
+                            if (scoreResult.verdict === 'correct') sessionStats.correct++; else sessionStats.incorrect++;
+                            this.gradeCard(card, grade);
+                            if (grade === 0) {
+                                Storage.setCloze(card.id, { step: 2, failed: false });
+                            }
+                            onNext();
+                        }
+                    });
+                }
+
+                const overrideBtn = document.getElementById('override-btn');
+                if (overrideBtn) {
+                    overrideBtn.addEventListener('click', () => {
+                        document.removeEventListener('keydown', enterHandler);
+                        if (inCloze && step < 3) {
+                            cloze.step++;
+                            Storage.setCloze(card.id, cloze);
+                            answered = false;
+                            userAnswer = '';
+                            onSameCard();
+                        } else {
+                            if (scoreResult.verdict !== 'correct') {
+                                if (!inCloze) sessionStats.incorrect--;
+                                sessionStats.correct++;
+                            }
+                            this.gradeCard(card, 2);
+                            if (inCloze) Storage.clearCloze(card.id);
+                            onNext();
+                        }
+                    });
+                }
+            }
+        };
+
+        render();
     }
 
     slugify(text) {

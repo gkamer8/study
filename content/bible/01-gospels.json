@@ -1,0 +1,901 @@
+{
+ "unit": 1,
+ "slug": "gospels",
+ "title": "Words of Christ",
+ "summary": "Famous sayings of Jesus from the four Gospels, plus the prologue of John.",
+ "kind": "verses",
+ "items": [
+  {
+   "id": "bible-gospels-01",
+   "ref_drb": "Luke 1:37",
+   "book": "LUK",
+   "book_drb": "Luke",
+   "book_modern": "Luke",
+   "chapter": 1,
+   "verse_start": 37,
+   "verse_end": 37,
+   "text": "Because no word shall be impossible with God.",
+   "recite": "Because no word shall be impossible with God.",
+   "word_count": 8,
+   "context": "The angel Gabriel to Mary at the Annunciation, after telling her of Elizabeth's pregnancy.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 37,
+     "verse_end": 37
+    }
+   ],
+   "accept": [
+    "Luke 1:37",
+    "lk 1:37",
+    "luk 1:37",
+    "lu 1:37"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-02",
+   "ref_drb": "John 8:32",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 8,
+   "verse_start": 32,
+   "verse_end": 32,
+   "text": "And you shall know the truth, and the truth shall make you free.",
+   "recite": "And you shall know the truth, and the truth shall make you free.",
+   "word_count": 13,
+   "context": "Jesus, to the Jews who had believed in him, in the Temple.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 8,
+     "verse_start": 32,
+     "verse_end": 32
+    }
+   ],
+   "accept": [
+    "John 8:32",
+    "jn 8:32",
+    "jo 8:32",
+    "joh 8:32",
+    "jhn 8:32"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-03",
+   "ref_drb": "Matthew 11:28",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 11,
+   "verse_start": 28,
+   "verse_end": 28,
+   "text": "Come to me, all you that labour, and are burdened, and I will refresh you.",
+   "recite": "Come to me, all you that labour, and are burdened, and I will refresh you.",
+   "word_count": 15,
+   "context": "Jesus' invitation to the weary, after praising the Father for revealing things to little ones.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 11,
+     "verse_start": 28,
+     "verse_end": 28
+    }
+   ],
+   "accept": [
+    "Matthew 11:28",
+    "matt 11:28",
+    "mat 11:28",
+    "mt 11:28"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-04",
+   "ref_drb": "John 1:1",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 1,
+   "verse_start": 1,
+   "verse_end": 1,
+   "text": "In the beginning was the Word, and the Word was with God, and the Word was God.",
+   "recite": "In the beginning was the Word, and the Word was with God, and the Word was God.",
+   "word_count": 17,
+   "context": "The opening words of St. John's Gospel, about the eternal Word.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 1,
+     "verse_end": 1
+    }
+   ],
+   "accept": [
+    "John 1:1",
+    "jn 1:1",
+    "jo 1:1",
+    "joh 1:1",
+    "jhn 1:1"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-05",
+   "ref_drb": "John 15:13",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 15,
+   "verse_start": 13,
+   "verse_end": 13,
+   "text": "Greater love than this no man hath, that a man lay down his life for his friends.",
+   "recite": "Greater love than this no man hath, that a man lay down his life for his friends.",
+   "word_count": 17,
+   "context": "Jesus at the Last Supper, in the discourse on the vine and the branches.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 15,
+     "verse_start": 13,
+     "verse_end": 13
+    }
+   ],
+   "accept": [
+    "John 15:13",
+    "jn 15:13",
+    "jo 15:13",
+    "joh 15:13",
+    "jhn 15:13"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-06",
+   "ref_drb": "Mark 8:36",
+   "book": "MRK",
+   "book_drb": "Mark",
+   "book_modern": "Mark",
+   "chapter": 8,
+   "verse_start": 36,
+   "verse_end": 36,
+   "text": "For what shall it profit a man, if he gain the whole world, and suffer the loss of his soul?",
+   "recite": "For what shall it profit a man, if he gain the whole world, and suffer the loss of his soul?",
+   "word_count": 20,
+   "context": "Jesus to the crowd and disciples, after first foretelling his Passion.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 8,
+     "verse_start": 36,
+     "verse_end": 36
+    }
+   ],
+   "accept": [
+    "Mark 8:36",
+    "mk 8:36",
+    "mar 8:36",
+    "mrk 8:36",
+    "mr 8:36"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-07",
+   "ref_drb": "Matthew 18:20",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 18,
+   "verse_start": 20,
+   "verse_end": 20,
+   "text": "For where there are two or three gathered together in my name, there am I in the midst of them.",
+   "recite": "For where there are two or three gathered together in my name, there am I in the midst of them.",
+   "word_count": 20,
+   "context": "Jesus to the disciples, teaching about prayer together.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 18,
+     "verse_start": 20,
+     "verse_end": 20
+    }
+   ],
+   "accept": [
+    "Matthew 18:20",
+    "matt 18:20",
+    "mat 18:20",
+    "mt 18:20"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-08",
+   "ref_drb": "John 13:34",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 13,
+   "verse_start": 34,
+   "verse_end": 34,
+   "text": "A new commandment I give unto you: That you love one another, as I have loved you, that you also love one another.",
+   "recite": "A new commandment I give unto you: That you love one another, as I have loved you, that you also love one another.",
+   "word_count": 23,
+   "context": "Jesus at the Last Supper, after Judas had gone out.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 13,
+     "verse_start": 34,
+     "verse_end": 34
+    }
+   ],
+   "accept": [
+    "John 13:34",
+    "jn 13:34",
+    "jo 13:34",
+    "joh 13:34",
+    "jhn 13:34"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-09",
+   "ref_drb": "John 14:6",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 14,
+   "verse_start": 6,
+   "verse_end": 6,
+   "text": "Jesus saith to him: I am the way, and the truth, and the life. No man cometh to the Father, but by me.",
+   "recite": "Jesus saith to him: I am the way, and the truth, and the life. No man cometh to the Father, but by me.",
+   "word_count": 23,
+   "context": "Jesus to Thomas at the Last Supper, who asked how they could know the way.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 14,
+     "verse_start": 6,
+     "verse_end": 6
+    }
+   ],
+   "accept": [
+    "John 14:6",
+    "jn 14:6",
+    "jo 14:6",
+    "joh 14:6",
+    "jhn 14:6"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-10",
+   "ref_drb": "Luke 9:23",
+   "book": "LUK",
+   "book_drb": "Luke",
+   "book_modern": "Luke",
+   "chapter": 9,
+   "verse_start": 23,
+   "verse_end": 23,
+   "text": "And he said to all: If any man will come after me, let him deny himself, and take up his cross daily, and follow me.",
+   "recite": "And he said to all: If any man will come after me, let him deny himself, and take up his cross daily, and follow me.",
+   "word_count": 25,
+   "context": "Jesus to all, right after first foretelling his Passion.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 9,
+     "verse_start": 23,
+     "verse_end": 23
+    }
+   ],
+   "accept": [
+    "Luke 9:23",
+    "lk 9:23",
+    "luk 9:23",
+    "lu 9:23"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-11",
+   "ref_drb": "Matthew 22:37",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 22,
+   "verse_start": 37,
+   "verse_end": 37,
+   "text": "Jesus said to him: Thou shalt love the Lord thy God with thy whole heart, and with thy whole soul, and with thy whole mind.",
+   "recite": "Jesus said to him: Thou shalt love the Lord thy God with thy whole heart, and with thy whole soul, and with thy whole mind.",
+   "word_count": 25,
+   "context": "Jesus answering a Pharisee lawyer who asked which is the great commandment.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 22,
+     "verse_start": 37,
+     "verse_end": 37
+    }
+   ],
+   "accept": [
+    "Matthew 22:37",
+    "matt 22:37",
+    "mat 22:37",
+    "mt 22:37"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-12",
+   "ref_drb": "John 3:16",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 3,
+   "verse_start": 16,
+   "verse_end": 16,
+   "text": "For God so loved the world, as to give his only begotten Son; that whosoever believeth in him, may not perish, but may have life everlasting.",
+   "recite": "For God so loved the world, as to give his only begotten Son; that whosoever believeth in him, may not perish, but may have life everlasting.",
+   "word_count": 26,
+   "context": "Jesus speaking with Nicodemus, who came to him by night.",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 3,
+     "verse_start": 16,
+     "verse_end": 16
+    }
+   ],
+   "accept": [
+    "John 3:16",
+    "jn 3:16",
+    "jo 3:16",
+    "joh 3:16",
+    "jhn 3:16"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-gospels-13",
+   "ref_drb": "John 1:14",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 1,
+   "verse_start": 14,
+   "verse_end": 14,
+   "text": "And the Word was made flesh, and dwelt among us, (and we saw his glory, the glory as it were of the only begotten of the Father,) full of grace and truth.",
+   "recite": "And the Word was made flesh, and dwelt among us, (and we saw his glory, the glory as it were of the only begotten of the Father,) full of grace and truth.",
+   "word_count": 32,
+   "context": "St. John's prologue: the Incarnation (said at the Angelus and the end of the old Mass).",
+   "deck": "gospels",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 14,
+     "verse_end": 14
+    }
+   ],
+   "accept": [
+    "John 1:14",
+    "jn 1:14",
+    "jo 1:14",
+    "joh 1:14",
+    "jhn 1:14"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  }
+ ],
+ "cards": [
+  {
+   "id": "bible-gospels-01-text",
+   "item": "bible-gospels-01",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Luke 1:37",
+   "hint": "The angel Gabriel to Mary at the Annunciation, after telling her of Elizabeth's pregnancy.",
+   "answer_form": "the verse, word for word",
+   "back": "Because no word shall be impossible with God.",
+   "tags": [
+    "gospels",
+    "luk"
+   ]
+  },
+  {
+   "id": "bible-gospels-01-ref",
+   "item": "bible-gospels-01",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Because no word shall be impossible with God.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Luke 1:37",
+   "accept": [
+    "Luke 1:37",
+    "lk 1:37",
+    "luk 1:37",
+    "lu 1:37"
+   ],
+   "tags": [
+    "gospels",
+    "luk"
+   ]
+  },
+  {
+   "id": "bible-gospels-02-text",
+   "item": "bible-gospels-02",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "John 8:32",
+   "hint": "Jesus, to the Jews who had believed in him, in the Temple.",
+   "answer_form": "the verse, word for word",
+   "back": "And you shall know the truth, and the truth shall make you free.",
+   "tags": [
+    "gospels",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-gospels-02-ref",
+   "item": "bible-gospels-02",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And you shall know the truth, and the truth shall make you free.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "John 8:32",
+   "accept": [
+    "John 8:32",
+    "jn 8:32",
+    "jo 8:32",
+    "joh 8:32",
+    "jhn 8:32"
+   ],
+   "tags": [
+    "gospels",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-gospels-03-text",
+   "item": "bible-gospels-03",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 11:28",
+   "hint": "Jesus' invitation to the weary, after praising the Father for revealing things to little ones.",
+   "answer_form": "the verse, word for word",
+   "back": "Come to me, all you that labour, and are burdened, and I will refresh you.",
+   "tags": [
+    "gospels",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-gospels-03-ref",
+   "item": "bible-gospels-03",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Come to me, all you that labour, and are burdened, and I will refresh you.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 11:28",
+   "accept": [
+    "Matthew 11:28",
+    "matt 11:28",
+    "mat 11:28",
+    "mt 11:28"
+   ],
+   "tags": [
+    "gospels",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-gospels-04-text",
+   "item": "bible-gospels-04",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "John 1:1",
+   "hint": "The opening words of St. John's Gospel, about the eternal Word.",
+   "answer_form": "the verse, word for word",
+   "back": "In the beginning was the Word, and the Word was with God, and the Word was God.",
+   "tags": [
+    "gospels",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-gospels-04-ref",
+   "item": "bible-gospels-04",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "In the beginning was the Word, and the Word was with God, and the Word was God.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "John 1:1",
+   "accept": [
+    "John 1:1",
+    "jn 1:1",
+    "jo 1:1",
+    "joh 1:1",
+    "jhn 1:1"
+   ],
+   "tags": [
+    "gospels",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-gospels-05-text",
+   "item": "bible-gospels-05",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "John 15:13",
+   "hint": "Jesus at the Last Supper, in the discourse on the vine and the branches.",
+   "answer_form": "the verse, word for word",
+   "back": "Greater love than this no man hath, that a man lay down his life for his friends.",
+   "tags": [
+    "gospels",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-gospels-05-ref",
+   "item": "bible-gospels-05",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Greater love than this no man hath, that a man lay down his life for his friends.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "John 15:13",
+   "accept": [
+    "John 15:13",
+    "jn 15:13",
+    "jo 15:13",
+    "joh 15:13",
+    "jhn 15:13"
+   ],
+   "tags": [
+    "gospels",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-gospels-06-text",
+   "item": "bible-gospels-06",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Mark 8:36",
+   "hint": "Jesus to the crowd and disciples, after first foretelling his Passion.",
+   "answer_form": "the verse, word for word",
+   "back": "For what shall it profit a man, if he gain the whole world, and suffer the loss of his soul?",
+   "tags": [
+    "gospels",
+    "mrk"
+   ]
+  },
+  {
+   "id": "bible-gospels-06-ref",
+   "item": "bible-gospels-06",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "For what shall it profit a man, if he gain the whole world, and suffer the loss of his soul?",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Mark 8:36",
+   "accept": [
+    "Mark 8:36",
+    "mk 8:36",
+    "mar 8:36",
+    "mrk 8:36",
+    "mr 8:36"
+   ],
+   "tags": [
+    "gospels",
+    "mrk"
+   ]
+  },
+  {
+   "id": "bible-gospels-07-text",
+   "item": "bible-gospels-07",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 18:20",
+   "hint": "Jesus to the disciples, teaching about prayer together.",
+   "answer_form": "the verse, word for word",
+   "back": "For where there are two or three gathered together in my name, there am I in the midst of them.",
+   "tags": [
+    "gospels",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-gospels-07-ref",
+   "item": "bible-gospels-07",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "For where there are two or three gathered together in my name, there am I in the midst of them.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 18:20",
+   "accept": [
+    "Matthew 18:20",
+    "matt 18:20",
+    "mat 18:20",
+    "mt 18:20"
+   ],
+   "tags": [
+    "gospels",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-gospels-08-text",
+   "item": "bible-gospels-08",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "John 13:34",
+   "hint": "Jesus at the Last Supper, after Judas had gone out.",
+   "answer_form": "the verse, word for word",
+   "back": "A new commandment I give unto you: That you love one another, as I have loved you, that you also love one another.",
+   "tags": [
+    "gospels",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-gospels-08-ref",
+   "item": "bible-gospels-08",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "A new commandment I give unto you: That you love one another, as I have loved you, that you also love one another.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "John 13:34",
+   "accept": [
+    "John 13:34",
+    "jn 13:34",
+    "jo 13:34",
+    "joh 13:34",
+    "jhn 13:34"
+   ],
+   "tags": [
+    "gospels",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-gospels-09-text",
+   "item": "bible-gospels-09",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "John 14:6",
+   "hint": "Jesus to Thomas at the Last Supper, who asked how they could know the way.",
+   "answer_form": "the verse, word for word",
+   "back": "Jesus saith to him: I am the way, and the truth, and the life. No man cometh to the Father, but by me.",
+   "tags": [
+    "gospels",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-gospels-09-ref",
+   "item": "bible-gospels-09",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Jesus saith to him: I am the way, and the truth, and the life. No man cometh to the Father, but by me.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "John 14:6",
+   "accept": [
+    "John 14:6",
+    "jn 14:6",
+    "jo 14:6",
+    "joh 14:6",
+    "jhn 14:6"
+   ],
+   "tags": [
+    "gospels",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-gospels-10-text",
+   "item": "bible-gospels-10",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Luke 9:23",
+   "hint": "Jesus to all, right after first foretelling his Passion.",
+   "answer_form": "the verse, word for word",
+   "back": "And he said to all: If any man will come after me, let him deny himself, and take up his cross daily, and follow me.",
+   "tags": [
+    "gospels",
+    "luk"
+   ]
+  },
+  {
+   "id": "bible-gospels-10-ref",
+   "item": "bible-gospels-10",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And he said to all: If any man will come after me, let him deny himself, and take up his cross daily, and follow me.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Luke 9:23",
+   "accept": [
+    "Luke 9:23",
+    "lk 9:23",
+    "luk 9:23",
+    "lu 9:23"
+   ],
+   "tags": [
+    "gospels",
+    "luk"
+   ]
+  },
+  {
+   "id": "bible-gospels-11-text",
+   "item": "bible-gospels-11",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 22:37",
+   "hint": "Jesus answering a Pharisee lawyer who asked which is the great commandment.",
+   "answer_form": "the verse, word for word",
+   "back": "Jesus said to him: Thou shalt love the Lord thy God with thy whole heart, and with thy whole soul, and with thy whole mind.",
+   "tags": [
+    "gospels",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-gospels-11-ref",
+   "item": "bible-gospels-11",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Jesus said to him: Thou shalt love the Lord thy God with thy whole heart, and with thy whole soul, and with thy whole mind.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 22:37",
+   "accept": [
+    "Matthew 22:37",
+    "matt 22:37",
+    "mat 22:37",
+    "mt 22:37"
+   ],
+   "tags": [
+    "gospels",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-gospels-12-text",
+   "item": "bible-gospels-12",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "John 3:16",
+   "hint": "Jesus speaking with Nicodemus, who came to him by night.",
+   "answer_form": "the verse, word for word",
+   "back": "For God so loved the world, as to give his only begotten Son; that whosoever believeth in him, may not perish, but may have life everlasting.",
+   "tags": [
+    "gospels",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-gospels-12-ref",
+   "item": "bible-gospels-12",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "For God so loved the world, as to give his only begotten Son; that whosoever believeth in him, may not perish, but may have life everlasting.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "John 3:16",
+   "accept": [
+    "John 3:16",
+    "jn 3:16",
+    "jo 3:16",
+    "joh 3:16",
+    "jhn 3:16"
+   ],
+   "tags": [
+    "gospels",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-gospels-13-text",
+   "item": "bible-gospels-13",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "John 1:14",
+   "hint": "St. John's prologue: the Incarnation (said at the Angelus and the end of the old Mass).",
+   "answer_form": "the verse, word for word",
+   "back": "And the Word was made flesh, and dwelt among us, (and we saw his glory, the glory as it were of the only begotten of the Father,) full of grace and truth.",
+   "tags": [
+    "gospels",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-gospels-13-ref",
+   "item": "bible-gospels-13",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And the Word was made flesh, and dwelt among us, (and we saw his glory, the glory as it were of the only begotten of the Father,) full of grace and truth.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "John 1:14",
+   "accept": [
+    "John 1:14",
+    "jn 1:14",
+    "jo 1:14",
+    "joh 1:14",
+    "jhn 1:14"
+   ],
+   "tags": [
+    "gospels",
+    "jhn"
+   ]
+  }
+ ],
+ "lesson": "",
+ "glossary": [],
+ "quiz": []
+}

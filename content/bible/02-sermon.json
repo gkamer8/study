@@ -1,0 +1,1089 @@
+{
+ "unit": 2,
+ "slug": "sermon",
+ "title": "Sermon on the Mount",
+ "summary": "Matthew 5–7: the eight Beatitudes (one card each), the Our Father as one passage, and other famous lines.",
+ "kind": "verses",
+ "items": [
+  {
+   "id": "bible-sermon-01",
+   "ref_drb": "Matthew 7:1",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 7,
+   "verse_start": 1,
+   "verse_end": 1,
+   "text": "Judge not, that you may not be judged,",
+   "recite": "Judge not, that you may not be judged,",
+   "word_count": 8,
+   "context": "Jesus in the Sermon on the Mount, on judging others.",
+   "deck": "sermon",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 7,
+     "verse_start": 1,
+     "verse_end": 1
+    }
+   ],
+   "accept": [
+    "Matthew 7:1",
+    "matt 7:1",
+    "mat 7:1",
+    "mt 7:1"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-02",
+   "ref_drb": "Matthew 6:21",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 6,
+   "verse_start": 21,
+   "verse_end": 21,
+   "text": "For where thy treasure is, there is thy heart also.",
+   "recite": "For where thy treasure is, there is thy heart also.",
+   "word_count": 10,
+   "context": "Jesus in the Sermon on the Mount, on treasure in heaven.",
+   "deck": "sermon",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 6,
+     "verse_start": 21,
+     "verse_end": 21
+    }
+   ],
+   "accept": [
+    "Matthew 6:21",
+    "matt 6:21",
+    "mat 6:21",
+    "mt 6:21"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-03",
+   "ref_drb": "Matthew 5:48",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 5,
+   "verse_start": 48,
+   "verse_end": 48,
+   "text": "Be you therefore perfect, as also your heavenly Father is perfect.",
+   "recite": "Be you therefore perfect, as also your heavenly Father is perfect.",
+   "word_count": 11,
+   "context": "Jesus in the Sermon on the Mount, ending the teaching on loving enemies.",
+   "deck": "sermon",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 48,
+     "verse_end": 48
+    }
+   ],
+   "accept": [
+    "Matthew 5:48",
+    "matt 5:48",
+    "mat 5:48",
+    "mt 5:48"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-04",
+   "ref_drb": "Matthew 5:3",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 5,
+   "verse_start": 3,
+   "verse_end": 3,
+   "text": "Blessed are the poor in spirit: for theirs is the kingdom of heaven.",
+   "recite": "Blessed are the poor in spirit: for theirs is the kingdom of heaven.",
+   "word_count": 13,
+   "context": "The first Beatitude, opening the Sermon on the Mount.",
+   "deck": "sermon",
+   "group": "beatitudes",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 3,
+     "verse_end": 3
+    }
+   ],
+   "accept": [
+    "Matthew 5:3",
+    "matt 5:3",
+    "mat 5:3",
+    "mt 5:3"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-05",
+   "ref_drb": "Matthew 5:4",
+   "ref_modern": "Matthew 5:5",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 5,
+   "verse_start": 4,
+   "verse_end": 4,
+   "text": "Blessed are the meek: for they shall possess the land.",
+   "recite": "Blessed are the meek: for they shall possess the land.",
+   "word_count": 10,
+   "context": "The second Beatitude (the meek; the order of 5:4 and 5:5 is swapped in many modern Bibles).",
+   "deck": "sermon",
+   "group": "beatitudes",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 4,
+     "verse_end": 4
+    },
+    {
+     "system": "modern",
+     "chapter": 5,
+     "verse_start": 5,
+     "verse_end": 5
+    }
+   ],
+   "accept": [
+    "Matthew 5:4",
+    "matt 5:4",
+    "mat 5:4",
+    "mt 5:4",
+    "Matthew 5:5",
+    "matt 5:5",
+    "mat 5:5",
+    "mt 5:5"
+   ],
+   "note": "Douay-Rheims follows the Vulgate verse numbering here: Matthew 5:4 in the Douay is Matthew 5:5 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-06",
+   "ref_drb": "Matthew 5:5",
+   "ref_modern": "Matthew 5:4",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 5,
+   "verse_start": 5,
+   "verse_end": 5,
+   "text": "Blessed are they that mourn: for they shall be comforted.",
+   "recite": "Blessed are they that mourn: for they shall be comforted.",
+   "word_count": 10,
+   "context": "The third Beatitude (those that mourn; 5:4 in many modern Bibles).",
+   "deck": "sermon",
+   "group": "beatitudes",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 5,
+     "verse_end": 5
+    },
+    {
+     "system": "modern",
+     "chapter": 5,
+     "verse_start": 4,
+     "verse_end": 4
+    }
+   ],
+   "accept": [
+    "Matthew 5:5",
+    "matt 5:5",
+    "mat 5:5",
+    "mt 5:5",
+    "Matthew 5:4",
+    "matt 5:4",
+    "mat 5:4",
+    "mt 5:4"
+   ],
+   "note": "Douay-Rheims follows the Vulgate verse numbering here: Matthew 5:5 in the Douay is Matthew 5:4 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-07",
+   "ref_drb": "Matthew 5:6",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 5,
+   "verse_start": 6,
+   "verse_end": 6,
+   "text": "Blessed are they that hunger and thirst after justice: for they shall have their fill.",
+   "recite": "Blessed are they that hunger and thirst after justice: for they shall have their fill.",
+   "word_count": 15,
+   "context": "The fourth Beatitude.",
+   "deck": "sermon",
+   "group": "beatitudes",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 6,
+     "verse_end": 6
+    }
+   ],
+   "accept": [
+    "Matthew 5:6",
+    "matt 5:6",
+    "mat 5:6",
+    "mt 5:6"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-08",
+   "ref_drb": "Matthew 5:7",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 5,
+   "verse_start": 7,
+   "verse_end": 7,
+   "text": "Blessed are the merciful: for they shall obtain mercy.",
+   "recite": "Blessed are the merciful: for they shall obtain mercy.",
+   "word_count": 9,
+   "context": "The fifth Beatitude.",
+   "deck": "sermon",
+   "group": "beatitudes",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 7,
+     "verse_end": 7
+    }
+   ],
+   "accept": [
+    "Matthew 5:7",
+    "matt 5:7",
+    "mat 5:7",
+    "mt 5:7"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-09",
+   "ref_drb": "Matthew 5:8",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 5,
+   "verse_start": 8,
+   "verse_end": 8,
+   "text": "Blessed are the clean of heart: for they shall see God.",
+   "recite": "Blessed are the clean of heart: for they shall see God.",
+   "word_count": 11,
+   "context": "The sixth Beatitude.",
+   "deck": "sermon",
+   "group": "beatitudes",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 8,
+     "verse_end": 8
+    }
+   ],
+   "accept": [
+    "Matthew 5:8",
+    "matt 5:8",
+    "mat 5:8",
+    "mt 5:8"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-10",
+   "ref_drb": "Matthew 5:9",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 5,
+   "verse_start": 9,
+   "verse_end": 9,
+   "text": "Blessed are the peacemakers: for they shall be called children of God.",
+   "recite": "Blessed are the peacemakers: for they shall be called children of God.",
+   "word_count": 12,
+   "context": "The seventh Beatitude.",
+   "deck": "sermon",
+   "group": "beatitudes",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 9,
+     "verse_end": 9
+    }
+   ],
+   "accept": [
+    "Matthew 5:9",
+    "matt 5:9",
+    "mat 5:9",
+    "mt 5:9"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-11",
+   "ref_drb": "Matthew 5:10",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 5,
+   "verse_start": 10,
+   "verse_end": 10,
+   "text": "Blessed are they that suffer persecution for justice’ sake: for theirs is the kingdom of heaven.",
+   "recite": "Blessed are they that suffer persecution for justice’ sake: for theirs is the kingdom of heaven.",
+   "word_count": 16,
+   "context": "The eighth Beatitude.",
+   "deck": "sermon",
+   "group": "beatitudes",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 10,
+     "verse_end": 10
+    }
+   ],
+   "accept": [
+    "Matthew 5:10",
+    "matt 5:10",
+    "mat 5:10",
+    "mt 5:10"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-12",
+   "ref_drb": "Matthew 5:14",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 5,
+   "verse_start": 14,
+   "verse_end": 14,
+   "text": "You are the light of the world. A city seated on a mountain cannot be hid.",
+   "recite": "You are the light of the world. A city seated on a mountain cannot be hid.",
+   "word_count": 16,
+   "context": "Jesus to his disciples in the Sermon on the Mount, right after the Beatitudes.",
+   "deck": "sermon",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 14,
+     "verse_end": 14
+    }
+   ],
+   "accept": [
+    "Matthew 5:14",
+    "matt 5:14",
+    "mat 5:14",
+    "mt 5:14"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-13",
+   "ref_drb": "Matthew 6:33",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 6,
+   "verse_start": 33,
+   "verse_end": 33,
+   "text": "Seek ye therefore first the kingdom of God, and his justice, and all these things shall be added unto you.",
+   "recite": "Seek ye therefore first the kingdom of God, and his justice, and all these things shall be added unto you.",
+   "word_count": 20,
+   "context": "Jesus in the Sermon on the Mount, after the lilies of the field.",
+   "deck": "sermon",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 6,
+     "verse_start": 33,
+     "verse_end": 33
+    }
+   ],
+   "accept": [
+    "Matthew 6:33",
+    "matt 6:33",
+    "mat 6:33",
+    "mt 6:33"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-14",
+   "ref_drb": "Matthew 7:7",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 7,
+   "verse_start": 7,
+   "verse_end": 7,
+   "text": "Ask, and it shall be given you: seek, and you shall find: knock, and it shall be opened to you.",
+   "recite": "Ask, and it shall be given you: seek, and you shall find: knock, and it shall be opened to you.",
+   "word_count": 20,
+   "context": "Jesus in the Sermon on the Mount, on prayer.",
+   "deck": "sermon",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 7,
+     "verse_start": 7,
+     "verse_end": 7
+    }
+   ],
+   "accept": [
+    "Matthew 7:7",
+    "matt 7:7",
+    "mat 7:7",
+    "mt 7:7"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-sermon-15",
+   "ref_drb": "Matthew 6:9–13",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 6,
+   "verse_start": 9,
+   "verse_end": 13,
+   "verses": [
+    {
+     "verse": 9,
+     "text": "Thus therefore shall you pray: Our Father who art in heaven, hallowed be thy name."
+    },
+    {
+     "verse": 10,
+     "text": "Thy kingdom come. Thy will be done on earth as it is in heaven."
+    },
+    {
+     "verse": 11,
+     "text": "Give us this day our supersubstantial bread."
+    },
+    {
+     "verse": 12,
+     "text": "And forgive us our debts, as we also forgive our debtors."
+    },
+    {
+     "verse": 13,
+     "text": "And lead us not into temptation. But deliver us from evil. Amen."
+    }
+   ],
+   "text": "Thus therefore shall you pray: Our Father who art in heaven, hallowed be thy name. Thy kingdom come. Thy will be done on earth as it is in heaven. Give us this day our supersubstantial bread. And forgive us our debts, as we also forgive our debtors. And lead us not into temptation. But deliver us from evil. Amen.",
+   "recite": "Thus therefore shall you pray: Our Father who art in heaven, hallowed be thy name. Thy kingdom come. Thy will be done on earth as it is in heaven. Give us this day our supersubstantial bread. And forgive us our debts, as we also forgive our debtors. And lead us not into temptation. But deliver us from evil. Amen.",
+   "word_count": 59,
+   "context": "Jesus teaching the disciples how to pray: the Our Father.",
+   "deck": "sermon",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 6,
+     "verse_start": 9,
+     "verse_end": 13
+    }
+   ],
+   "accept": [
+    "Matthew 6:9",
+    "Matthew 6:9-13",
+    "matt 6:9",
+    "matt 6:9-13",
+    "mat 6:9",
+    "mat 6:9-13",
+    "mt 6:9",
+    "mt 6:9-13"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  }
+ ],
+ "cards": [
+  {
+   "id": "bible-sermon-01-text",
+   "item": "bible-sermon-01",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 7:1",
+   "hint": "Jesus in the Sermon on the Mount, on judging others.",
+   "answer_form": "the verse, word for word",
+   "back": "Judge not, that you may not be judged,",
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-01-ref",
+   "item": "bible-sermon-01",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Judge not, that you may not be judged,",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 7:1",
+   "accept": [
+    "Matthew 7:1",
+    "matt 7:1",
+    "mat 7:1",
+    "mt 7:1"
+   ],
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-02-text",
+   "item": "bible-sermon-02",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 6:21",
+   "hint": "Jesus in the Sermon on the Mount, on treasure in heaven.",
+   "answer_form": "the verse, word for word",
+   "back": "For where thy treasure is, there is thy heart also.",
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-02-ref",
+   "item": "bible-sermon-02",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "For where thy treasure is, there is thy heart also.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 6:21",
+   "accept": [
+    "Matthew 6:21",
+    "matt 6:21",
+    "mat 6:21",
+    "mt 6:21"
+   ],
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-03-text",
+   "item": "bible-sermon-03",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 5:48",
+   "hint": "Jesus in the Sermon on the Mount, ending the teaching on loving enemies.",
+   "answer_form": "the verse, word for word",
+   "back": "Be you therefore perfect, as also your heavenly Father is perfect.",
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-03-ref",
+   "item": "bible-sermon-03",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Be you therefore perfect, as also your heavenly Father is perfect.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 5:48",
+   "accept": [
+    "Matthew 5:48",
+    "matt 5:48",
+    "mat 5:48",
+    "mt 5:48"
+   ],
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-04-text",
+   "item": "bible-sermon-04",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 5:3",
+   "hint": "The first Beatitude, opening the Sermon on the Mount.",
+   "answer_form": "the verse, word for word",
+   "back": "Blessed are the poor in spirit: for theirs is the kingdom of heaven.",
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-04-ref",
+   "item": "bible-sermon-04",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Blessed are the poor in spirit: for theirs is the kingdom of heaven.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 5:3",
+   "accept": [
+    "Matthew 5:3",
+    "matt 5:3",
+    "mat 5:3",
+    "mt 5:3"
+   ],
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-05-text",
+   "item": "bible-sermon-05",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 5:4 (Matthew 5:5 in modern Bibles)",
+   "hint": "The second Beatitude (the meek; the order of 5:4 and 5:5 is swapped in many modern Bibles).",
+   "answer_form": "the verse, word for word",
+   "back": "Blessed are the meek: for they shall possess the land.",
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-05-ref",
+   "item": "bible-sermon-05",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Blessed are the meek: for they shall possess the land.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 5:4 (Matthew 5:5 in modern Bibles)",
+   "accept": [
+    "Matthew 5:4",
+    "matt 5:4",
+    "mat 5:4",
+    "mt 5:4",
+    "Matthew 5:5",
+    "matt 5:5",
+    "mat 5:5",
+    "mt 5:5"
+   ],
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-06-text",
+   "item": "bible-sermon-06",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 5:5 (Matthew 5:4 in modern Bibles)",
+   "hint": "The third Beatitude (those that mourn; 5:4 in many modern Bibles).",
+   "answer_form": "the verse, word for word",
+   "back": "Blessed are they that mourn: for they shall be comforted.",
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-06-ref",
+   "item": "bible-sermon-06",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Blessed are they that mourn: for they shall be comforted.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 5:5 (Matthew 5:4 in modern Bibles)",
+   "accept": [
+    "Matthew 5:5",
+    "matt 5:5",
+    "mat 5:5",
+    "mt 5:5",
+    "Matthew 5:4",
+    "matt 5:4",
+    "mat 5:4",
+    "mt 5:4"
+   ],
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-07-text",
+   "item": "bible-sermon-07",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 5:6",
+   "hint": "The fourth Beatitude.",
+   "answer_form": "the verse, word for word",
+   "back": "Blessed are they that hunger and thirst after justice: for they shall have their fill.",
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-07-ref",
+   "item": "bible-sermon-07",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Blessed are they that hunger and thirst after justice: for they shall have their fill.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 5:6",
+   "accept": [
+    "Matthew 5:6",
+    "matt 5:6",
+    "mat 5:6",
+    "mt 5:6"
+   ],
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-08-text",
+   "item": "bible-sermon-08",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 5:7",
+   "hint": "The fifth Beatitude.",
+   "answer_form": "the verse, word for word",
+   "back": "Blessed are the merciful: for they shall obtain mercy.",
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-08-ref",
+   "item": "bible-sermon-08",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Blessed are the merciful: for they shall obtain mercy.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 5:7",
+   "accept": [
+    "Matthew 5:7",
+    "matt 5:7",
+    "mat 5:7",
+    "mt 5:7"
+   ],
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-09-text",
+   "item": "bible-sermon-09",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 5:8",
+   "hint": "The sixth Beatitude.",
+   "answer_form": "the verse, word for word",
+   "back": "Blessed are the clean of heart: for they shall see God.",
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-09-ref",
+   "item": "bible-sermon-09",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Blessed are the clean of heart: for they shall see God.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 5:8",
+   "accept": [
+    "Matthew 5:8",
+    "matt 5:8",
+    "mat 5:8",
+    "mt 5:8"
+   ],
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-10-text",
+   "item": "bible-sermon-10",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 5:9",
+   "hint": "The seventh Beatitude.",
+   "answer_form": "the verse, word for word",
+   "back": "Blessed are the peacemakers: for they shall be called children of God.",
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-10-ref",
+   "item": "bible-sermon-10",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Blessed are the peacemakers: for they shall be called children of God.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 5:9",
+   "accept": [
+    "Matthew 5:9",
+    "matt 5:9",
+    "mat 5:9",
+    "mt 5:9"
+   ],
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-11-text",
+   "item": "bible-sermon-11",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 5:10",
+   "hint": "The eighth Beatitude.",
+   "answer_form": "the verse, word for word",
+   "back": "Blessed are they that suffer persecution for justice’ sake: for theirs is the kingdom of heaven.",
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-11-ref",
+   "item": "bible-sermon-11",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Blessed are they that suffer persecution for justice’ sake: for theirs is the kingdom of heaven.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 5:10",
+   "accept": [
+    "Matthew 5:10",
+    "matt 5:10",
+    "mat 5:10",
+    "mt 5:10"
+   ],
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-12-text",
+   "item": "bible-sermon-12",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 5:14",
+   "hint": "Jesus to his disciples in the Sermon on the Mount, right after the Beatitudes.",
+   "answer_form": "the verse, word for word",
+   "back": "You are the light of the world. A city seated on a mountain cannot be hid.",
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-12-ref",
+   "item": "bible-sermon-12",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "You are the light of the world. A city seated on a mountain cannot be hid.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 5:14",
+   "accept": [
+    "Matthew 5:14",
+    "matt 5:14",
+    "mat 5:14",
+    "mt 5:14"
+   ],
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-13-text",
+   "item": "bible-sermon-13",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 6:33",
+   "hint": "Jesus in the Sermon on the Mount, after the lilies of the field.",
+   "answer_form": "the verse, word for word",
+   "back": "Seek ye therefore first the kingdom of God, and his justice, and all these things shall be added unto you.",
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-13-ref",
+   "item": "bible-sermon-13",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Seek ye therefore first the kingdom of God, and his justice, and all these things shall be added unto you.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 6:33",
+   "accept": [
+    "Matthew 6:33",
+    "matt 6:33",
+    "mat 6:33",
+    "mt 6:33"
+   ],
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-14-text",
+   "item": "bible-sermon-14",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 7:7",
+   "hint": "Jesus in the Sermon on the Mount, on prayer.",
+   "answer_form": "the verse, word for word",
+   "back": "Ask, and it shall be given you: seek, and you shall find: knock, and it shall be opened to you.",
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-14-ref",
+   "item": "bible-sermon-14",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Ask, and it shall be given you: seek, and you shall find: knock, and it shall be opened to you.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 7:7",
+   "accept": [
+    "Matthew 7:7",
+    "matt 7:7",
+    "mat 7:7",
+    "mt 7:7"
+   ],
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-15-text",
+   "item": "bible-sermon-15",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 6:9–13",
+   "hint": "Jesus teaching the disciples how to pray: the Our Father.",
+   "answer_form": "the verse, word for word",
+   "back": "Thus therefore shall you pray: Our Father who art in heaven, hallowed be thy name. Thy kingdom come. Thy will be done on earth as it is in heaven. Give us this day our supersubstantial bread. And forgive us our debts, as we also forgive our debtors. And lead us not into temptation. But deliver us from evil. Amen.",
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-sermon-15-ref",
+   "item": "bible-sermon-15",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Thus therefore shall you pray: Our Father who art in heaven, hallowed be thy name. Thy kingdom come. Thy will be done on earth as it is in heaven. Give us this day our supersubstantial bread. And forgive us our debts, as we also forgive our debtors. And lead us not into temptation. But deliver us from evil. Amen.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 6:9–13",
+   "accept": [
+    "Matthew 6:9",
+    "Matthew 6:9-13",
+    "matt 6:9",
+    "matt 6:9-13",
+    "mat 6:9",
+    "mat 6:9-13",
+    "mt 6:9",
+    "mt 6:9-13"
+   ],
+   "tags": [
+    "sermon",
+    "mat"
+   ]
+  }
+ ],
+ "lesson": "",
+ "glossary": [],
+ "quiz": []
+}

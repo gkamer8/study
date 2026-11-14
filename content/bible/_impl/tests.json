@@ -1,0 +1,291 @@
+{
+ "reference": [
+  {
+   "item": "bible-gospels-12",
+   "input": "John 3:16",
+   "verdict": "correct",
+   "why": "canonical form (John 3:16 is gospels-12)"
+  },
+  {
+   "item": "bible-gospels-12",
+   "input": "jn 3 16",
+   "verdict": "correct",
+   "why": "abbreviation + spaces instead of colon"
+  },
+  {
+   "item": "bible-gospels-12",
+   "input": "Jo. 3.16",
+   "verdict": "correct",
+   "why": "old Catholic abbreviation 'Jo.' and period separator"
+  },
+  {
+   "item": "bible-gospels-12",
+   "input": "John 3:17",
+   "verdict": "close",
+   "why": "right chapter, verse off by one"
+  },
+  {
+   "item": "bible-gospels-12",
+   "input": "1 John 3:16",
+   "verdict": "wrong",
+   "why": "different book"
+  },
+  {
+   "item": "bible-psalms-01",
+   "input": "Psalm 22:1",
+   "verdict": "correct",
+   "why": "Douay (Vulgate) psalm number"
+  },
+  {
+   "item": "bible-psalms-01",
+   "input": "ps 23 1",
+   "verdict": "correct",
+   "system": "modern",
+   "why": "Hebrew/modern psalm number accepted, with the numbering note"
+  },
+  {
+   "item": "bible-psalms-05",
+   "input": "Psalm 51:12",
+   "verdict": "correct",
+   "system": "nabre",
+   "why": "NABRE verse numbering for the Miserere line"
+  },
+  {
+   "item": "bible-old-testament-09",
+   "input": "1 Kings 3:10",
+   "verdict": "correct",
+   "why": "DRB 1 Kings = 1 Samuel"
+  },
+  {
+   "item": "bible-old-testament-09",
+   "input": "1 Samuel 3:10",
+   "verdict": "correct",
+   "system": "drb",
+   "why": "modern book name, same numbers"
+  },
+  {
+   "item": "bible-old-testament-08",
+   "input": "3 Kings 19:12",
+   "verdict": "correct",
+   "why": "DRB 3 Kings"
+  },
+  {
+   "item": "bible-old-testament-08",
+   "input": "1 Kings 19:12",
+   "verdict": "correct",
+   "why": "modern 1 Kings = DRB 3 Kings"
+  },
+  {
+   "item": "bible-old-testament-09",
+   "input": "I Kings 3:10",
+   "verdict": "correct",
+   "why": "roman numeral book number"
+  },
+  {
+   "item": "bible-sermon-15",
+   "input": "Matthew 6:9",
+   "verdict": "correct",
+   "why": "passage: starting verse accepted"
+  },
+  {
+   "item": "bible-sermon-15",
+   "input": "Mt 6:9-13",
+   "verdict": "correct",
+   "why": "passage: full range accepted"
+  },
+  {
+   "item": "bible-sermon-15",
+   "input": "Mt 6:9-15",
+   "verdict": "wrong",
+   "why": "passage: wrong end verse"
+  },
+  {
+   "item": "bible-doctrine-14",
+   "input": "John 6:53",
+   "verdict": "correct",
+   "system": "modern",
+   "why": "modern numbering of DRB John 6:54"
+  },
+  {
+   "item": "bible-old-testament-11",
+   "input": "Song of Songs 8:6",
+   "verdict": "correct",
+   "why": "modern name of Canticle of Canticles"
+  },
+  {
+   "item": "bible-old-testament-11",
+   "input": "Cant 8:6",
+   "verdict": "correct",
+   "why": "Douay abbreviation"
+  },
+  {
+   "item": "bible-prophets-12",
+   "input": "Isaiah 9:5",
+   "verdict": "correct",
+   "system": "nabre",
+   "why": "NABRE/Hebrew verse number"
+  },
+  {
+   "item": "bible-sermon-05",
+   "input": "Matt 5:5",
+   "verdict": "correct",
+   "system": "modern",
+   "why": "Beatitude order differs: DRB 5:4 (meek) = modern 5:5"
+  },
+  {
+   "item": "bible-doctrine-05",
+   "input": "2 Macc 12:45",
+   "verdict": "correct",
+   "system": "modern",
+   "why": "RSV/NABRE number 2 Machabees 12:46 as 12:45"
+  },
+  {
+   "item": "bible-gospels-12",
+   "input": "John 3",
+   "verdict": "wrong",
+   "why": "no verse given"
+  }
+ ],
+ "text": [
+  {
+   "item": "bible-epistles-01",
+   "input": "Pray without ceasing",
+   "verdict": "correct",
+   "errors": 0,
+   "why": "punctuation ignored"
+  },
+  {
+   "item": "bible-epistles-01",
+   "input": "Pray always",
+   "verdict": "wrong",
+   "why": "short verse, 2 errors"
+  },
+  {
+   "item": "bible-gospels-12",
+   "input": "For God so loved the world, as to give his only begotten Son; that whosoever believeth in him, may not perish, but may have life everlasting.",
+   "verdict": "correct",
+   "errors": 0,
+   "why": "exact"
+  },
+  {
+   "item": "bible-gospels-12",
+   "input": "for god so loved the world as to give his only begotten son that whosoever believes in him may not perish but may have life everlasting",
+   "verdict": "correct",
+   "errors": 1,
+   "why": "case/punctuation ignored; believes vs believeth is 1 real error (distance 2), allowed"
+  },
+  {
+   "item": "bible-gospels-12",
+   "input": "For God so loved the world that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.",
+   "verdict": "wrong",
+   "why": "KJV wording is not accepted"
+  },
+  {
+   "item": "bible-gospels-12",
+   "input": "For God so loved the world, as to give his only begoten Son; that whosoever beleiveth in him, may not perish, but may have life everlasting.",
+   "verdict": "correct",
+   "errors": 0,
+   "why": "typos in long words (begoten, beleiveth) cost nothing"
+  },
+  {
+   "item": "bible-gospels-03",
+   "input": "Come to me, all you that labor, and are burdened, and I will refresh you.",
+   "verdict": "correct",
+   "errors": 0,
+   "why": "labor = labour spelling variant"
+  },
+  {
+   "item": "bible-old-testament-12",
+   "input": "And said: Naked came I out of my mothers womb, and naked shall I return thither: the Lord gave, and the Lord hath taken away: as it hath pleased the Lord so is it done: blessed be the name of the Lord.",
+   "verdict": "correct",
+   "errors": 0,
+   "why": "apostrophe dropped (mother’s / mothers)"
+  },
+  {
+   "item": "bible-gospels-12",
+   "input": "For God so loved the world, as to give his only begotten Son; that whosoever believeth in him, may not perish, but may have life.",
+   "verdict": "correct",
+   "why": "1 word missing out of 26 (96%): correct, shown in the diff",
+   "errors": 1
+  },
+  {
+   "item": "bible-gospels-12",
+   "input": "For God so loved the world, as to give his Son; that whosoever believeth in him, may not perish.",
+   "verdict": "wrong",
+   "why": "7 of 26 words missing (73%)"
+  },
+  {
+   "item": "bible-gospels-12",
+   "input": "For God so loved the world, as to give his only begotten Son; that whosoever believeth in him, may not perish, but have life.",
+   "verdict": "close",
+   "why": "3 of 26 missing (88%)"
+  },
+  {
+   "item": "bible-epistles-04",
+   "input": "I can do all these things in him who strengthens me.",
+   "verdict": "correct",
+   "errors": 1,
+   "why": "11-word verse, one wrong word allowed"
+  },
+  {
+   "item": "bible-epistles-04",
+   "input": "I can do all things in him who strengthens me.",
+   "verdict": "close",
+   "why": "11 words, 2 errors = 82%"
+  },
+  {
+   "item": "bible-epistles-04",
+   "input": "I can do all things through Christ who strengthens me.",
+   "verdict": "wrong",
+   "why": "modern wording: 4 errors"
+  },
+  {
+   "item": "bible-passion-01",
+   "input": "Thomas answered, and said to him: My Lord, and my God.",
+   "verdict": "correct",
+   "errors": 0,
+   "why": "exact"
+  },
+  {
+   "item": "bible-psalms-01",
+   "input": "The Lord ruleth me: and I shall want nothing.",
+   "verdict": "correct",
+   "errors": 0,
+   "why": "psalm title 'A psalm for David.' is not part of the recited text"
+  },
+  {
+   "item": "bible-gospels-03",
+   "input": "Come to me, all you that labour, and are burdened, and I shall refresh you.",
+   "verdict": "correct",
+   "errors": 1,
+   "why": "shall vs will is a real error (short word, no typo tolerance) but 1 of 15 is allowed"
+  }
+ ],
+ "cloze": [
+  {
+   "recite": "Blessed are the merciful: for they shall obtain mercy.",
+   "step": 0,
+   "expect": "Blessed are ___ merciful: for ____ shall obtain _____."
+  },
+  {
+   "recite": "Blessed are the merciful: for they shall obtain mercy.",
+   "step": 1,
+   "expect": "Blessed ___ the ________: for ____ shall ______ mercy."
+  },
+  {
+   "recite": "Blessed are the merciful: for they shall obtain mercy.",
+   "step": 2,
+   "expect": "B a t m: f t s o m."
+  },
+  {
+   "recite": "Naked came I out of my mother’s womb,",
+   "step": 2,
+   "expect": "N c I o o m m w,"
+  },
+  {
+   "recite": "Blessed are the merciful: for they shall obtain mercy.",
+   "step": 3,
+   "expect": ""
+  }
+ ]
+}

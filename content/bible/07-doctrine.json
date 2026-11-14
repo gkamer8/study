@@ -1,0 +1,1109 @@
+{
+ "unit": 7,
+ "slug": "doctrine",
+ "title": "Catholic doctrine and the Mass",
+ "summary": "Verses the Church cites for the papacy, the sacraments, Mary, tradition and prayer for the dead, and words said at Mass.",
+ "kind": "verses",
+ "items": [
+  {
+   "id": "bible-doctrine-01",
+   "ref_drb": "John 6:56",
+   "ref_modern": "John 6:55",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 6,
+   "verse_start": 56,
+   "verse_end": 56,
+   "text": "For my flesh is meat indeed: and my blood is drink indeed.",
+   "recite": "For my flesh is meat indeed: and my blood is drink indeed.",
+   "word_count": 12,
+   "context": "Jesus in the Bread of Life discourse at Capharnaum.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 6,
+     "verse_start": 56,
+     "verse_end": 56
+    },
+    {
+     "system": "modern",
+     "chapter": 6,
+     "verse_start": 55,
+     "verse_end": 55
+    }
+   ],
+   "accept": [
+    "John 6:56",
+    "jn 6:56",
+    "jo 6:56",
+    "joh 6:56",
+    "jhn 6:56",
+    "John 6:55",
+    "jn 6:55",
+    "jo 6:55",
+    "joh 6:55",
+    "jhn 6:55"
+   ],
+   "note": "Douay-Rheims follows the Vulgate verse numbering here: John 6:56 in the Douay is John 6:55 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-02",
+   "ref_drb": "James 2:24",
+   "book": "JAS",
+   "book_drb": "James",
+   "book_modern": "James",
+   "chapter": 2,
+   "verse_start": 24,
+   "verse_end": 24,
+   "text": "Do you see that by works a man is justified; and not by faith only?",
+   "recite": "Do you see that by works a man is justified; and not by faith only?",
+   "word_count": 15,
+   "context": "St. James on faith and works.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 2,
+     "verse_start": 24,
+     "verse_end": 24
+    }
+   ],
+   "accept": [
+    "James 2:24",
+    "jas 2:24",
+    "jm 2:24",
+    "jam 2:24",
+    "ja 2:24"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-03",
+   "ref_drb": "John 20:23",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 20,
+   "verse_start": 23,
+   "verse_end": 23,
+   "text": "Whose sins you shall forgive, they are forgiven them; and whose sins you shall retain, they are retained.",
+   "recite": "Whose sins you shall forgive, they are forgiven them; and whose sins you shall retain, they are retained.",
+   "word_count": 18,
+   "context": "The risen Jesus to the apostles on Easter evening, after breathing on them.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 20,
+     "verse_start": 23,
+     "verse_end": 23
+    }
+   ],
+   "accept": [
+    "John 20:23",
+    "jn 20:23",
+    "jo 20:23",
+    "joh 20:23",
+    "jhn 20:23"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-04",
+   "ref_drb": "2 Thessalonians 2:14",
+   "ref_modern": "2 Thessalonians 2:15",
+   "book": "2TH",
+   "book_drb": "2 Thessalonians",
+   "book_modern": "2 Thessalonians",
+   "chapter": 2,
+   "verse_start": 14,
+   "verse_end": 14,
+   "text": "Therefore, brethren, stand fast; and hold the traditions which you have learned, whether by word, or by our epistle.",
+   "recite": "Therefore, brethren, stand fast; and hold the traditions which you have learned, whether by word, or by our epistle.",
+   "word_count": 19,
+   "context": "St. Paul to the Thessalonians, on holding to apostolic tradition.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 2,
+     "verse_start": 14,
+     "verse_end": 14
+    },
+    {
+     "system": "modern",
+     "chapter": 2,
+     "verse_start": 15,
+     "verse_end": 15
+    }
+   ],
+   "accept": [
+    "2 Thessalonians 2:14",
+    "2thess 2:14",
+    "2thes 2:14",
+    "2th 2:14",
+    "2 Thessalonians 2:15",
+    "2thess 2:15",
+    "2thes 2:15",
+    "2th 2:15"
+   ],
+   "note": "Douay-Rheims follows the Vulgate verse numbering here: 2 Thessalonians 2:14 in the Douay is 2 Thessalonians 2:15 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-05",
+   "ref_drb": "2 Machabees 12:46",
+   "ref_modern": "2 Maccabees 12:45",
+   "book": "2MA",
+   "book_drb": "2 Machabees",
+   "book_modern": "2 Maccabees",
+   "chapter": 12,
+   "verse_start": 46,
+   "verse_end": 46,
+   "text": "It is therefore a holy and wholesome thought to pray for the dead, that they may be loosed from sins.",
+   "recite": "It is therefore a holy and wholesome thought to pray for the dead, that they may be loosed from sins.",
+   "word_count": 20,
+   "context": "Judas Machabeus sends an offering to Jerusalem for the fallen soldiers.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 12,
+     "verse_start": 46,
+     "verse_end": 46
+    },
+    {
+     "system": "modern",
+     "chapter": 12,
+     "verse_start": 45,
+     "verse_end": 45
+    }
+   ],
+   "accept": [
+    "2 Machabees 12:46",
+    "2 Maccabees 12:46",
+    "2mach 12:46",
+    "2mac 12:46",
+    "2macc 12:46",
+    "2ma 12:46",
+    "2mc 12:46",
+    "2 Machabees 12:45",
+    "2 Maccabees 12:45",
+    "2mach 12:45",
+    "2mac 12:45",
+    "2macc 12:45",
+    "2ma 12:45",
+    "2mc 12:45"
+   ],
+   "note": "2 Machabees is the Douay name for 2 Maccabees. Douay-Rheims follows the Vulgate verse numbering here: 2 Machabees 12:46 in the Douay is 2 Maccabees 12:45 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-06",
+   "ref_drb": "Luke 1:28",
+   "book": "LUK",
+   "book_drb": "Luke",
+   "book_modern": "Luke",
+   "chapter": 1,
+   "verse_start": 28,
+   "verse_end": 28,
+   "text": "And the angel being come in, said unto her: Hail, full of grace, the Lord is with thee: blessed art thou among women.",
+   "recite": "And the angel being come in, said unto her: Hail, full of grace, the Lord is with thee: blessed art thou among women.",
+   "word_count": 23,
+   "context": "The angel Gabriel greeting Mary at the Annunciation (first line of the Hail Mary).",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 28,
+     "verse_end": 28
+    }
+   ],
+   "accept": [
+    "Luke 1:28",
+    "lk 1:28",
+    "luk 1:28",
+    "lu 1:28"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-07",
+   "ref_drb": "Luke 1:42",
+   "book": "LUK",
+   "book_drb": "Luke",
+   "book_modern": "Luke",
+   "chapter": 1,
+   "verse_start": 42,
+   "verse_end": 42,
+   "text": "And she cried out with a loud voice, and said: Blessed art thou among women, and blessed is the fruit of thy womb.",
+   "recite": "And she cried out with a loud voice, and said: Blessed art thou among women, and blessed is the fruit of thy womb.",
+   "word_count": 23,
+   "context": "Elizabeth greeting Mary at the Visitation (second line of the Hail Mary).",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 1,
+     "verse_start": 42,
+     "verse_end": 42
+    }
+   ],
+   "accept": [
+    "Luke 1:42",
+    "lk 1:42",
+    "luk 1:42",
+    "lu 1:42"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-08",
+   "ref_drb": "Matthew 28:19",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 28,
+   "verse_start": 19,
+   "verse_end": 19,
+   "text": "Going therefore, teach ye all nations; baptizing them in the name of the Father, and of the Son, and of the Holy Ghost.",
+   "recite": "Going therefore, teach ye all nations; baptizing them in the name of the Father, and of the Son, and of the Holy Ghost.",
+   "word_count": 23,
+   "context": "The risen Jesus giving the Great Commission on a mountain in Galilee.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 28,
+     "verse_start": 19,
+     "verse_end": 19
+    }
+   ],
+   "accept": [
+    "Matthew 28:19",
+    "matt 28:19",
+    "mat 28:19",
+    "mt 28:19"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-09",
+   "ref_drb": "Matthew 16:18",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 16,
+   "verse_start": 18,
+   "verse_end": 18,
+   "text": "And I say to thee: That thou art Peter; and upon this rock I will build my church, and the gates of hell shall not prevail against it.",
+   "recite": "And I say to thee: That thou art Peter; and upon this rock I will build my church, and the gates of hell shall not prevail against it.",
+   "word_count": 28,
+   "context": "Jesus to Simon Peter at Caesarea Philippi, after Peter confesses him the Christ.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 16,
+     "verse_start": 18,
+     "verse_end": 18
+    }
+   ],
+   "accept": [
+    "Matthew 16:18",
+    "matt 16:18",
+    "mat 16:18",
+    "mt 16:18"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-10",
+   "ref_drb": "Genesis 3:15",
+   "book": "GEN",
+   "book_drb": "Genesis",
+   "book_modern": "Genesis",
+   "chapter": 3,
+   "verse_start": 15,
+   "verse_end": 15,
+   "text": "I will put enmities between thee and the woman, and thy seed and her seed: she shall crush thy head, and thou shalt lie in wait for her heel.",
+   "recite": "I will put enmities between thee and the woman, and thy seed and her seed: she shall crush thy head, and thou shalt lie in wait for her heel.",
+   "word_count": 29,
+   "context": "God to the serpent after the Fall: the Protoevangelium.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 3,
+     "verse_start": 15,
+     "verse_end": 15
+    }
+   ],
+   "accept": [
+    "Genesis 3:15",
+    "gen 3:15",
+    "ge 3:15",
+    "gn 3:15"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-11",
+   "ref_drb": "Matthew 8:8",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 8,
+   "verse_start": 8,
+   "verse_end": 8,
+   "text": "And the centurion making answer, said: Lord, I am not worthy that thou shouldst enter under my roof: but only say the word, and my servant shall be healed.",
+   "recite": "And the centurion making answer, said: Lord, I am not worthy that thou shouldst enter under my roof: but only say the word, and my servant shall be healed.",
+   "word_count": 29,
+   "context": "The centurion at Capharnaum, asking Jesus to heal his servant (said before Communion).",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 8,
+     "verse_start": 8,
+     "verse_end": 8
+    }
+   ],
+   "accept": [
+    "Matthew 8:8",
+    "matt 8:8",
+    "mat 8:8",
+    "mt 8:8"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-12",
+   "ref_drb": "Luke 22:19",
+   "book": "LUK",
+   "book_drb": "Luke",
+   "book_modern": "Luke",
+   "chapter": 22,
+   "verse_start": 19,
+   "verse_end": 19,
+   "text": "And taking bread, he gave thanks, and brake; and gave to them, saying: This is my body, which is given for you. Do this for a commemoration of me.",
+   "recite": "And taking bread, he gave thanks, and brake; and gave to them, saying: This is my body, which is given for you. Do this for a commemoration of me.",
+   "word_count": 29,
+   "context": "Jesus at the Last Supper, instituting the Eucharist.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 22,
+     "verse_start": 19,
+     "verse_end": 19
+    }
+   ],
+   "accept": [
+    "Luke 22:19",
+    "lk 22:19",
+    "luk 22:19",
+    "lu 22:19"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-13",
+   "ref_drb": "James 5:14",
+   "book": "JAS",
+   "book_drb": "James",
+   "book_modern": "James",
+   "chapter": 5,
+   "verse_start": 14,
+   "verse_end": 14,
+   "text": "Is any man sick among you? Let him bring in the priests of the church, and let them pray over him, anointing him with oil in the name of the Lord.",
+   "recite": "Is any man sick among you? Let him bring in the priests of the church, and let them pray over him, anointing him with oil in the name of the Lord.",
+   "word_count": 31,
+   "context": "St. James on the anointing of the sick.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 5,
+     "verse_start": 14,
+     "verse_end": 14
+    }
+   ],
+   "accept": [
+    "James 5:14",
+    "jas 5:14",
+    "jm 5:14",
+    "jam 5:14",
+    "ja 5:14"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-14",
+   "ref_drb": "John 6:54",
+   "ref_modern": "John 6:53",
+   "book": "JHN",
+   "book_drb": "John",
+   "book_modern": "John",
+   "chapter": 6,
+   "verse_start": 54,
+   "verse_end": 54,
+   "text": "Then Jesus said to them: Amen, amen I say unto you: Except you eat the flesh of the Son of man, and drink his blood, you shall not have life in you.",
+   "recite": "Then Jesus said to them: Amen, amen I say unto you: Except you eat the flesh of the Son of man, and drink his blood, you shall not have life in you.",
+   "word_count": 32,
+   "context": "Jesus in the Bread of Life discourse, after the Jews ask how he can give his flesh.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 6,
+     "verse_start": 54,
+     "verse_end": 54
+    },
+    {
+     "system": "modern",
+     "chapter": 6,
+     "verse_start": 53,
+     "verse_end": 53
+    }
+   ],
+   "accept": [
+    "John 6:54",
+    "jn 6:54",
+    "jo 6:54",
+    "joh 6:54",
+    "jhn 6:54",
+    "John 6:53",
+    "jn 6:53",
+    "jo 6:53",
+    "joh 6:53",
+    "jhn 6:53"
+   ],
+   "note": "Douay-Rheims follows the Vulgate verse numbering here: John 6:54 in the Douay is John 6:53 in most modern Bibles.",
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  },
+  {
+   "id": "bible-doctrine-15",
+   "ref_drb": "Matthew 16:19",
+   "book": "MAT",
+   "book_drb": "Matthew",
+   "book_modern": "Matthew",
+   "chapter": 16,
+   "verse_start": 19,
+   "verse_end": 19,
+   "text": "And I will give to thee the keys of the kingdom of heaven. And whatsoever thou shalt bind upon earth, it shall be bound also in heaven: and whatsoever thou shalt loose upon earth, it shall be loosed also in heaven.",
+   "recite": "And I will give to thee the keys of the kingdom of heaven. And whatsoever thou shalt bind upon earth, it shall be bound also in heaven: and whatsoever thou shalt loose upon earth, it shall be loosed also in heaven.",
+   "word_count": 41,
+   "context": "Jesus to Peter, right after naming him the rock: the keys of the kingdom.",
+   "deck": "doctrine",
+   "numberings": [
+    {
+     "system": "drb",
+     "chapter": 16,
+     "verse_start": 19,
+     "verse_end": 19
+    }
+   ],
+   "accept": [
+    "Matthew 16:19",
+    "matt 16:19",
+    "mat 16:19",
+    "mt 16:19"
+   ],
+   "source": {
+    "primary": "eBible.org engDRA (Douay-Rheims 1899, Challoner text)",
+    "crosscheck": "drbo.org",
+    "crosscheck_status": "exact"
+   }
+  }
+ ],
+ "cards": [
+  {
+   "id": "bible-doctrine-01-text",
+   "item": "bible-doctrine-01",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "John 6:56 (John 6:55 in modern Bibles)",
+   "hint": "Jesus in the Bread of Life discourse at Capharnaum.",
+   "answer_form": "the verse, word for word",
+   "back": "For my flesh is meat indeed: and my blood is drink indeed.",
+   "tags": [
+    "doctrine",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-doctrine-01-ref",
+   "item": "bible-doctrine-01",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "For my flesh is meat indeed: and my blood is drink indeed.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "John 6:56 (John 6:55 in modern Bibles)",
+   "accept": [
+    "John 6:56",
+    "jn 6:56",
+    "jo 6:56",
+    "joh 6:56",
+    "jhn 6:56",
+    "John 6:55",
+    "jn 6:55",
+    "jo 6:55",
+    "joh 6:55",
+    "jhn 6:55"
+   ],
+   "tags": [
+    "doctrine",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-doctrine-02-text",
+   "item": "bible-doctrine-02",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "James 2:24",
+   "hint": "St. James on faith and works.",
+   "answer_form": "the verse, word for word",
+   "back": "Do you see that by works a man is justified; and not by faith only?",
+   "tags": [
+    "doctrine",
+    "jas"
+   ]
+  },
+  {
+   "id": "bible-doctrine-02-ref",
+   "item": "bible-doctrine-02",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Do you see that by works a man is justified; and not by faith only?",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "James 2:24",
+   "accept": [
+    "James 2:24",
+    "jas 2:24",
+    "jm 2:24",
+    "jam 2:24",
+    "ja 2:24"
+   ],
+   "tags": [
+    "doctrine",
+    "jas"
+   ]
+  },
+  {
+   "id": "bible-doctrine-03-text",
+   "item": "bible-doctrine-03",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "John 20:23",
+   "hint": "The risen Jesus to the apostles on Easter evening, after breathing on them.",
+   "answer_form": "the verse, word for word",
+   "back": "Whose sins you shall forgive, they are forgiven them; and whose sins you shall retain, they are retained.",
+   "tags": [
+    "doctrine",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-doctrine-03-ref",
+   "item": "bible-doctrine-03",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Whose sins you shall forgive, they are forgiven them; and whose sins you shall retain, they are retained.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "John 20:23",
+   "accept": [
+    "John 20:23",
+    "jn 20:23",
+    "jo 20:23",
+    "joh 20:23",
+    "jhn 20:23"
+   ],
+   "tags": [
+    "doctrine",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-doctrine-04-text",
+   "item": "bible-doctrine-04",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "2 Thessalonians 2:14 (2 Thessalonians 2:15 in modern Bibles)",
+   "hint": "St. Paul to the Thessalonians, on holding to apostolic tradition.",
+   "answer_form": "the verse, word for word",
+   "back": "Therefore, brethren, stand fast; and hold the traditions which you have learned, whether by word, or by our epistle.",
+   "tags": [
+    "doctrine",
+    "2th"
+   ]
+  },
+  {
+   "id": "bible-doctrine-04-ref",
+   "item": "bible-doctrine-04",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Therefore, brethren, stand fast; and hold the traditions which you have learned, whether by word, or by our epistle.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "2 Thessalonians 2:14 (2 Thessalonians 2:15 in modern Bibles)",
+   "accept": [
+    "2 Thessalonians 2:14",
+    "2thess 2:14",
+    "2thes 2:14",
+    "2th 2:14",
+    "2 Thessalonians 2:15",
+    "2thess 2:15",
+    "2thes 2:15",
+    "2th 2:15"
+   ],
+   "tags": [
+    "doctrine",
+    "2th"
+   ]
+  },
+  {
+   "id": "bible-doctrine-05-text",
+   "item": "bible-doctrine-05",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "2 Machabees 12:46 (2 Maccabees 12:45 in modern Bibles)",
+   "hint": "Judas Machabeus sends an offering to Jerusalem for the fallen soldiers.",
+   "answer_form": "the verse, word for word",
+   "back": "It is therefore a holy and wholesome thought to pray for the dead, that they may be loosed from sins.",
+   "tags": [
+    "doctrine",
+    "2ma"
+   ]
+  },
+  {
+   "id": "bible-doctrine-05-ref",
+   "item": "bible-doctrine-05",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "It is therefore a holy and wholesome thought to pray for the dead, that they may be loosed from sins.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "2 Machabees 12:46 (2 Maccabees 12:45 in modern Bibles)",
+   "accept": [
+    "2 Machabees 12:46",
+    "2 Maccabees 12:46",
+    "2mach 12:46",
+    "2mac 12:46",
+    "2macc 12:46",
+    "2ma 12:46",
+    "2mc 12:46",
+    "2 Machabees 12:45",
+    "2 Maccabees 12:45",
+    "2mach 12:45",
+    "2mac 12:45",
+    "2macc 12:45",
+    "2ma 12:45",
+    "2mc 12:45"
+   ],
+   "tags": [
+    "doctrine",
+    "2ma"
+   ]
+  },
+  {
+   "id": "bible-doctrine-06-text",
+   "item": "bible-doctrine-06",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Luke 1:28",
+   "hint": "The angel Gabriel greeting Mary at the Annunciation (first line of the Hail Mary).",
+   "answer_form": "the verse, word for word",
+   "back": "And the angel being come in, said unto her: Hail, full of grace, the Lord is with thee: blessed art thou among women.",
+   "tags": [
+    "doctrine",
+    "luk"
+   ]
+  },
+  {
+   "id": "bible-doctrine-06-ref",
+   "item": "bible-doctrine-06",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And the angel being come in, said unto her: Hail, full of grace, the Lord is with thee: blessed art thou among women.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Luke 1:28",
+   "accept": [
+    "Luke 1:28",
+    "lk 1:28",
+    "luk 1:28",
+    "lu 1:28"
+   ],
+   "tags": [
+    "doctrine",
+    "luk"
+   ]
+  },
+  {
+   "id": "bible-doctrine-07-text",
+   "item": "bible-doctrine-07",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Luke 1:42",
+   "hint": "Elizabeth greeting Mary at the Visitation (second line of the Hail Mary).",
+   "answer_form": "the verse, word for word",
+   "back": "And she cried out with a loud voice, and said: Blessed art thou among women, and blessed is the fruit of thy womb.",
+   "tags": [
+    "doctrine",
+    "luk"
+   ]
+  },
+  {
+   "id": "bible-doctrine-07-ref",
+   "item": "bible-doctrine-07",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And she cried out with a loud voice, and said: Blessed art thou among women, and blessed is the fruit of thy womb.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Luke 1:42",
+   "accept": [
+    "Luke 1:42",
+    "lk 1:42",
+    "luk 1:42",
+    "lu 1:42"
+   ],
+   "tags": [
+    "doctrine",
+    "luk"
+   ]
+  },
+  {
+   "id": "bible-doctrine-08-text",
+   "item": "bible-doctrine-08",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 28:19",
+   "hint": "The risen Jesus giving the Great Commission on a mountain in Galilee.",
+   "answer_form": "the verse, word for word",
+   "back": "Going therefore, teach ye all nations; baptizing them in the name of the Father, and of the Son, and of the Holy Ghost.",
+   "tags": [
+    "doctrine",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-doctrine-08-ref",
+   "item": "bible-doctrine-08",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Going therefore, teach ye all nations; baptizing them in the name of the Father, and of the Son, and of the Holy Ghost.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 28:19",
+   "accept": [
+    "Matthew 28:19",
+    "matt 28:19",
+    "mat 28:19",
+    "mt 28:19"
+   ],
+   "tags": [
+    "doctrine",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-doctrine-09-text",
+   "item": "bible-doctrine-09",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 16:18",
+   "hint": "Jesus to Simon Peter at Caesarea Philippi, after Peter confesses him the Christ.",
+   "answer_form": "the verse, word for word",
+   "back": "And I say to thee: That thou art Peter; and upon this rock I will build my church, and the gates of hell shall not prevail against it.",
+   "tags": [
+    "doctrine",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-doctrine-09-ref",
+   "item": "bible-doctrine-09",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And I say to thee: That thou art Peter; and upon this rock I will build my church, and the gates of hell shall not prevail against it.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 16:18",
+   "accept": [
+    "Matthew 16:18",
+    "matt 16:18",
+    "mat 16:18",
+    "mt 16:18"
+   ],
+   "tags": [
+    "doctrine",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-doctrine-10-text",
+   "item": "bible-doctrine-10",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Genesis 3:15",
+   "hint": "God to the serpent after the Fall: the Protoevangelium.",
+   "answer_form": "the verse, word for word",
+   "back": "I will put enmities between thee and the woman, and thy seed and her seed: she shall crush thy head, and thou shalt lie in wait for her heel.",
+   "tags": [
+    "doctrine",
+    "gen"
+   ]
+  },
+  {
+   "id": "bible-doctrine-10-ref",
+   "item": "bible-doctrine-10",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "I will put enmities between thee and the woman, and thy seed and her seed: she shall crush thy head, and thou shalt lie in wait for her heel.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Genesis 3:15",
+   "accept": [
+    "Genesis 3:15",
+    "gen 3:15",
+    "ge 3:15",
+    "gn 3:15"
+   ],
+   "tags": [
+    "doctrine",
+    "gen"
+   ]
+  },
+  {
+   "id": "bible-doctrine-11-text",
+   "item": "bible-doctrine-11",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 8:8",
+   "hint": "The centurion at Capharnaum, asking Jesus to heal his servant (said before Communion).",
+   "answer_form": "the verse, word for word",
+   "back": "And the centurion making answer, said: Lord, I am not worthy that thou shouldst enter under my roof: but only say the word, and my servant shall be healed.",
+   "tags": [
+    "doctrine",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-doctrine-11-ref",
+   "item": "bible-doctrine-11",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And the centurion making answer, said: Lord, I am not worthy that thou shouldst enter under my roof: but only say the word, and my servant shall be healed.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 8:8",
+   "accept": [
+    "Matthew 8:8",
+    "matt 8:8",
+    "mat 8:8",
+    "mt 8:8"
+   ],
+   "tags": [
+    "doctrine",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-doctrine-12-text",
+   "item": "bible-doctrine-12",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Luke 22:19",
+   "hint": "Jesus at the Last Supper, instituting the Eucharist.",
+   "answer_form": "the verse, word for word",
+   "back": "And taking bread, he gave thanks, and brake; and gave to them, saying: This is my body, which is given for you. Do this for a commemoration of me.",
+   "tags": [
+    "doctrine",
+    "luk"
+   ]
+  },
+  {
+   "id": "bible-doctrine-12-ref",
+   "item": "bible-doctrine-12",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And taking bread, he gave thanks, and brake; and gave to them, saying: This is my body, which is given for you. Do this for a commemoration of me.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Luke 22:19",
+   "accept": [
+    "Luke 22:19",
+    "lk 22:19",
+    "luk 22:19",
+    "lu 22:19"
+   ],
+   "tags": [
+    "doctrine",
+    "luk"
+   ]
+  },
+  {
+   "id": "bible-doctrine-13-text",
+   "item": "bible-doctrine-13",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "James 5:14",
+   "hint": "St. James on the anointing of the sick.",
+   "answer_form": "the verse, word for word",
+   "back": "Is any man sick among you? Let him bring in the priests of the church, and let them pray over him, anointing him with oil in the name of the Lord.",
+   "tags": [
+    "doctrine",
+    "jas"
+   ]
+  },
+  {
+   "id": "bible-doctrine-13-ref",
+   "item": "bible-doctrine-13",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Is any man sick among you? Let him bring in the priests of the church, and let them pray over him, anointing him with oil in the name of the Lord.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "James 5:14",
+   "accept": [
+    "James 5:14",
+    "jas 5:14",
+    "jm 5:14",
+    "jam 5:14",
+    "ja 5:14"
+   ],
+   "tags": [
+    "doctrine",
+    "jas"
+   ]
+  },
+  {
+   "id": "bible-doctrine-14-text",
+   "item": "bible-doctrine-14",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "John 6:54 (John 6:53 in modern Bibles)",
+   "hint": "Jesus in the Bread of Life discourse, after the Jews ask how he can give his flesh.",
+   "answer_form": "the verse, word for word",
+   "back": "Then Jesus said to them: Amen, amen I say unto you: Except you eat the flesh of the Son of man, and drink his blood, you shall not have life in you.",
+   "tags": [
+    "doctrine",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-doctrine-14-ref",
+   "item": "bible-doctrine-14",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "Then Jesus said to them: Amen, amen I say unto you: Except you eat the flesh of the Son of man, and drink his blood, you shall not have life in you.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "John 6:54 (John 6:53 in modern Bibles)",
+   "accept": [
+    "John 6:54",
+    "jn 6:54",
+    "jo 6:54",
+    "joh 6:54",
+    "jhn 6:54",
+    "John 6:53",
+    "jn 6:53",
+    "jo 6:53",
+    "joh 6:53",
+    "jhn 6:53"
+   ],
+   "tags": [
+    "doctrine",
+    "jhn"
+   ]
+  },
+  {
+   "id": "bible-doctrine-15-text",
+   "item": "bible-doctrine-15",
+   "type": "verse-text",
+   "direction": "ref-to-text",
+   "front": "Matthew 16:19",
+   "hint": "Jesus to Peter, right after naming him the rock: the keys of the kingdom.",
+   "answer_form": "the verse, word for word",
+   "back": "And I will give to thee the keys of the kingdom of heaven. And whatsoever thou shalt bind upon earth, it shall be bound also in heaven: and whatsoever thou shalt loose upon earth, it shall be loosed also in heaven.",
+   "tags": [
+    "doctrine",
+    "mat"
+   ]
+  },
+  {
+   "id": "bible-doctrine-15-ref",
+   "item": "bible-doctrine-15",
+   "type": "verse-ref",
+   "direction": "text-to-ref",
+   "front": "And I will give to thee the keys of the kingdom of heaven. And whatsoever thou shalt bind upon earth, it shall be bound also in heaven: and whatsoever thou shalt loose upon earth, it shall be loosed also in heaven.",
+   "answer_form": "book chapter:verse, e.g. John 3:16",
+   "back": "Matthew 16:19",
+   "accept": [
+    "Matthew 16:19",
+    "matt 16:19",
+    "mat 16:19",
+    "mt 16:19"
+   ],
+   "tags": [
+    "doctrine",
+    "mat"
+   ]
+  }
+ ],
+ "lesson": "",
+ "glossary": [],
+ "quiz": []
+}
